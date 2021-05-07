@@ -1,0 +1,253 @@
+{
+    "level": 1,
+    "min": 0,
+    "max": 60,
+    "grade": 1,
+    "reward": {
+        "prop_type": 6,
+        "prop_id": 0,
+        "prop_num": 1,
+        "prop_color": 8,
+        "chest_type": 3
+    }
+},{
+    "level": 2,
+    "min": 60,
+    "max": 130,
+    "grade": 1,
+    "reward": {
+        "prop_type": 6,
+        "prop_id": 0,
+        "prop_num": 1,
+        "prop_color": 8,
+        "chest_type": 3
+    }
+},{
+    "level": 3,
+    "min": 130,
+    "max": 200,
+    "grade": 1,
+    "reward": {
+        "prop_type": 5,
+        "prop_id": 176,
+        "prop_num": 4,
+        "prop_color": 0,
+        "chest_type": 0
+    }
+},{
+    "level": 4,
+    "min": 200,
+    "max": 280,
+    "grade": 1,
+    "reward": {
+        "prop_type": 2,
+        "prop_id": 0,
+        "prop_num": 300,
+        "prop_color": 0,
+        "chest_type": 0
+    }
+},{
+    "level": 5,
+    "min": 280,
+    "max": 380,
+    "grade": 1,
+    "reward": {
+        "prop_type": 4,
+        "prop_id": 31,
+        "prop_num": 10,
+        "prop_color": 3,
+        "chest_type": 0
+    }
+},{
+    "level": 6,
+    "min": 380,
+    "max": 500,
+    "grade": 1,
+    "reward": {
+        "prop_type": 5,
+        "prop_id": 176,
+        "prop_num": 5,
+        "prop_color": 0,
+        "chest_type": 0
+    }
+},{
+    "level": 7,
+    "min": 500,
+    "max": 640,
+    "grade": 1,
+    "reward": {
+        "prop_type": 2,
+        "prop_id": 0,
+        "prop_num": 400,
+        "prop_color": 0,
+        "chest_type": 0
+    }
+},{
+    "level": 8,
+    "min": 640,
+    "max": 810,
+    "grade": 1,
+    "reward": {
+        "prop_type": 4,
+        "prop_id": 55,
+        "prop_num": 12,
+        "prop_color": 3,
+        "chest_type": 0
+    }
+},{
+    "level": 9,
+    "min": 810,
+    "max": 1010,
+    "grade": 1,
+    "reward": {
+        "prop_type": 5,
+        "prop_id": 176,
+        "prop_num": 6,
+        "prop_color": 0,
+        "chest_type": 0
+    }
+},{
+    "level": 10,
+    "min": 1010,
+    "max": 1250,
+    "grade": 1,
+    "reward": {
+        "prop_type": 2,
+        "prop_id": 0,
+        "prop_num": 500,
+        "prop_color": 0,
+        "chest_type": 0
+    }
+},{
+    "level": 11,
+    "min": 1250,
+    "max": 1530,
+    "grade": 1,
+    "reward": {
+        "prop_type": 4,
+        "prop_id": 31,
+        "prop_num": 14,
+        "prop_color": 3,
+        "chest_type": 0
+    }
+},{
+    "level": 12,
+    "min": 1530,
+    "max": 1850,
+    "grade": 1,
+    "reward": {
+        "prop_type": 5,
+        "prop_id": 176,
+        "prop_num": 7,
+        "prop_color": 0,
+        "chest_type": 0
+    }
+},{
+    "level": 13,
+    "min": 1850,
+    "max": 2210,
+    "grade": 1,
+    "reward": {
+        "prop_type": 6,
+        "prop_id": 0,
+        "prop_num": 1,
+        "prop_color": 5,
+        "chest_type": 3
+    }
+},{
+    "level": 14,
+    "min": 2210,
+    "max": 2620,
+    "grade": 1,
+    "reward": {
+        "prop_type": 5,
+        "prop_id": 176,
+        "prop_num": 8,
+        "prop_color": 0,
+        "chest_type": 0
+    }
+},{
+    "level": 15,
+    "min": 2620,
+    "max": 3080,
+    "grade": 1,
+    "reward": {
+        "prop_type": 3,
+        "prop_id": 0,
+        "prop_num": 10000,
+        "prop_color": 0,
+        "chest_type": 0
+    }
+},{
+    "level": 16,
+    "min": 3080,
+    "max": 3600,
+    "grade": 1,
+    "reward": {
+        "prop_type": 6,
+        "prop_id": 0,
+        "prop_num": 1,
+        "prop_color": 5,
+        "chest_type": 3
+    }
+},{
+    "level": 17,
+    "min": 3600,
+    "max": 4180,
+    "grade": 1,
+    "reward": {
+        "prop_type": 5,
+        "prop_id": 176,
+        "prop_num": 9,
+        "prop_color": 0,
+        "chest_type": 0
+    }
+},{
+    "level": 18,
+    "min": 4180,
+    "max": 4820,
+    "grade": 1,
+    "reward": {
+        "prop_type": 3,
+        "prop_id": 0,
+        "prop_num": 15000,
+        "prop_color": 0,
+        "chest_type": 0
+    }
+},{
+    "level": 19,
+    "min": 4820,
+    "max": 5520,
+    "grade": 1,
+    "reward": {
+        "prop_type": 6,
+        "prop_id": 0,
+        "prop_num": 1,
+        "prop_color": 5,
+        "chest_type": 3
+    }
+},{
+    "level": 20,
+    "min": 5520,
+    "max": 6300,
+    "grade": 1,
+    "reward": {
+        "prop_type": 5,
+        "prop_id": 176,
+        "prop_num": 10,
+        "prop_color": 0,
+        "chest_type": 0
+    }
+},{
+    "level": 21,
+    "min": 6300,
+    "max": 7170,
+    "grade": 1,
+    "reward": {
+        "prop_type": 3,
+        "prop_id": 0,
+        "prop_num": 20000,
+        "prop_color": 0,
+        "chest_type": 0
+    }
+}
