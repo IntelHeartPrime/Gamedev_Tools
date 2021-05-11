@@ -10,11 +10,6 @@
 # 所有组合买小额礼包可进档位占比， 所有组合买中中小额礼包可进档位占比，所有组合中进度条>50%占比
 # 花费前1/3的人所有组合买小额礼包可进档位占比， 花费前1/3的人所有组合买中中小额礼包可进档位占比，所有组合中进度条>50%占比
 
-# 进阶 - 粗略自动化调参 -> 机器学习
-# 主要调节各个档位的rank值，要求如下约束：1.是10的整数 2.数值逐渐变大 3.想加之和=最大积分Ticket量
-# 构造方式进行自动化调参，遍历更多情况，要求以上指标取得最佳效果
-
-# 初值
 
 import csv
 
@@ -34,7 +29,7 @@ gift3_ticket = 300
 gift4_ticket = 650
 gift5_ticket = 1100
 
-ranks = [60,130,200,280,380,500,640,810,1010,1250,1530,1850,2210,2620,3080,3600,4180,4820,5520,6300,7170]
+ranks = [80,170,260,350,450,560,690,840,1020,1240,1500,1800,2140,2530,2970,3460,4020,4650,5350,6120,6960]
 rank_count = len(ranks)
 
 # 输入列s
@@ -141,13 +136,13 @@ def get_rank_percent(sum_tickets):
 # 输出为csv
 
 
-Free = [5]
-Token = [0, 1, 2, 3, 4, 5]
-Gift1 = [0, 1, 2, 3, 4, 5]
-Gift2 = [0, 1, 2, 3, 4, 5]
-Gift3 = [0, 1, 2, 3, 4, 5]
-Gift4 = [0, 1, 2, 3, 4, 5]
-Gift5 = [0, 1, 2, 3, 4, 5]
+Free = [3]
+Token = [0, 1, 2, 3]
+Gift1 = [0, 1, 2, 3]
+Gift2 = [0, 1, 2, 3]
+Gift3 = [0, 1, 2, 3]
+Gift4 = [0, 1, 2, 3]
+Gift5 = [0, 1, 2, 3]
 
 index = 0
 
@@ -228,29 +223,8 @@ always_buy_compose = [
 # 第二档为2~4，其他为0
 
 input_lists_config = []
-'''
-for x1 in [0, 1]:
-    for x2 in [0, 1]:
-        for x3 in [0, 1]:
-            for x4 in [0, 1]:
-                for x5 in [0, 1]:
-                    list_unit = [x1, x2, x3, x4, x5]
-                    input_lists_config.append(list_unit)
 
-for x1 in [1, 2, 3, 4]:
-    for x2 in [1, 2, 3, 4]:
-        list_unit = [x1, x2, 0, 0, 0]
-        input_lists_config.append(list_unit)
 
-for x1 in [2, 3, 4]:
-    list_unit = [x1, 0, 0, 0, 0]
-    input_lists_config.append(list_unit)
-
-for x2 in [2, 3, 4]:
-    list_unit = [0, x2, 0, 0, 0]
-    input_lists_config.append(list_unit)
-
-'''
 
 ''' 
 新的经典规则  - 第一档为0~4，第二档为0~4，其他为0到1
@@ -308,6 +282,9 @@ print("typical-再购买个小额礼包(5/10)就可晋级 占比 = " + str(sum_5
 print("typical-再购买个中小额礼包(5/10/20)就可晋级 占比 = " + str(sum_5or10or20_upgrade / len(output_lists_new)))
 print()
 
+
+
+''' 将所有常见打印到Csv中 '''
 # 将所有常见情况输出打印到csv
 # 将数据写入 Csv中 csvCraneOffer
 header = ["Index", "Free", "Token", "Gift1", "Gift2", "Gift3", "Gift4", "Gift5", "index", "sum_tickets",
@@ -329,4 +306,25 @@ with open("csvCraneOffer.csv", "w", newline="") as f:
     ff.writerows(writer_final)
 
 
+
+''' 读取常见范式 -> 输出所有购买范式中的占比 '''
+# 读取常见范式的 csv 并且输出报告
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 读取常见范式的 csv 并且输出报告
 
