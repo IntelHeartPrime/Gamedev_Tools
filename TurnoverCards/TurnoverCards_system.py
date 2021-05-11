@@ -349,9 +349,9 @@ def refresh_rewards():
 
     global now_turnDiamonds_num
     global now_refreshDiamonds_num
-    global now_rechargedMoney_num
+
     global refresh_time
-    global turn_card_time
+
 
     # 更新消耗
     now_refreshDiamonds_num = now_refreshDiamonds_num + tool_getvalue(refresh_time, refresh_diamonds_list)
@@ -431,10 +431,8 @@ def refresh_rewards():
 
     return output_rewards
 
-# test
 
 
-result = refresh_rewards()
 
 
 '''
@@ -509,8 +507,16 @@ def cardsSquence(output_rewards):
     return cards_squence
 
 
-#test
-cardsSquence(result)
+''' 更新宏观参数 '''
+def updaetMacroParameters():
+
+    global turn_card_time
+    global now_fire1_num
+    global now_probability_num
+    global now_fire2_num
+    global now_consumedDiamonds_num
+    global now_legendary_location
+    global now_rechargedMoney_num
 
 
 
@@ -531,7 +537,7 @@ class MyWindow(QMainWindow):
         ''' data '''
 
         super(MyWindow, self).__init__()
-        self.resize(720, 1280)
+        self.resize(720, 920)
         # 居中
         self.center()
 
@@ -764,6 +770,13 @@ def window():
 
     win.show()
     sys.exit(app.exec())
+
+
+''' 运行时执行 '''
+result = refresh_rewards()
+cardsSquence(result)
+
+
 
 window()
 
