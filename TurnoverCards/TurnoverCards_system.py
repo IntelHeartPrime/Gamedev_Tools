@@ -627,47 +627,51 @@ class MyWindow(QMainWindow):
         # Side Bar
         self.statusBar().showMessage('Simulation of Cards Activity')
 
+        ''' 上部数据 '''
         # Lable - Fire1 Value
         self.fire1_lab = QtWidgets.QLabel(self)
-        self.fire1_lab.resize(300, 40)
+        self.fire1_lab.resize(300, 20)
         self.fire1_lab.setText("🔥FIRE1 = "+str((self.fire1_num)))
-        self.fire1_lab.move(47, 30)
-        self.fire1_lab.setFont(QFont("SansSerif", 20))
-
-        # Lable - Probability Value
-        self.probability_lab = QtWidgets.QLabel(self)
-        self.probability_lab.resize(300, 40)
-        self.probability_lab.setText("PROBABILITY = "+str((self.probability_num)))
-        self.probability_lab.move(47, 110)
-        self.probability_lab.setFont(QFont("SansSerif", 20))
+        self.fire1_lab.move(47, 10)
+        self.fire1_lab.setFont(QFont("SansSerif", 15))
 
         # Lable - Fire2 Value
         self.fire2_lab = QtWidgets.QLabel(self)
-        self.fire2_lab.resize(300, 40)
+        self.fire2_lab.resize(300, 20)
         self.fire2_lab.setText("🔥FIRE2 = "+str((self.fire2_num)))
-        self.fire2_lab.move(47, 70)
-        self.fire2_lab.setFont(QFont("SansSerif", 20))
+        self.fire2_lab.move(47, 30)
+        self.fire2_lab.setFont(QFont("SansSerif", 15))
+
+        # Lable - Probability Value
+        self.probability_lab = QtWidgets.QLabel(self)
+        self.probability_lab.resize(300, 20)
+        self.probability_lab.setText("🎲PROBABILITY = "+str((self.probability_num)))
+        self.probability_lab.move(47, 50)
+        self.probability_lab.setFont(QFont("SansSerif", 15))
+
+        # Lable - Refresh_time
+        self.refresh_time_lab = QtWidgets.QLabel(self)
+        self.refresh_time_lab.resize(300, 20)
+        self.refresh_time_lab.setText("🎰REFRESH TIME = "+ str((self.refresh_time_num)))
+        self.refresh_time_lab.move(47, 70)
+        self.refresh_time_lab.setFont(QFont("SansSerif", 15))
 
         # Lable - Comsumed Diamonds Number
         self.consumedDiamondsNum_lab = QtWidgets.QLabel(self)
-        self.consumedDiamondsNum_lab.resize(300, 40)
-        self.consumedDiamondsNum_lab.setText("CONSUMED 💎 = "+ str((self.consumedDiamonds_num)))
-        self.consumedDiamondsNum_lab.move(426, 30)
-        self.consumedDiamondsNum_lab.setFont(QFont("SansSerif", 20))
+        self.consumedDiamondsNum_lab.resize(300, 20)
+        self.consumedDiamondsNum_lab.setText("💎CONSUMED = "+ str((self.consumedDiamonds_num)))
+        self.consumedDiamondsNum_lab.move(47, 90)
+        self.consumedDiamondsNum_lab.setFont(QFont("SansSerif", 15))
 
         # Lable - Recharged_money Number
         self.rechargeNum_lab = QtWidgets.QLabel(self)
-        self.rechargeNum_lab.resize(300, 50)
-        self.rechargeNum_lab.setText("RECHARGED 💰 = "+ str((self.rechargedMoney_num)))
-        self.rechargeNum_lab.move(426, 70)
-        self.rechargeNum_lab.setFont(QFont("SansSerif", 20))
+        self.rechargeNum_lab.resize(300, 20)
+        self.rechargeNum_lab.setText("💰RECHARGED = "+ str((self.rechargedMoney_num)))
+        self.rechargeNum_lab.move(47, 110)
+        self.rechargeNum_lab.setFont(QFont("SansSerif", 15))
 
-        # Lable - Refresh_time
-        self.rechargeNum_lab = QtWidgets.QLabel(self)
-        self.rechargeNum_lab.resize(300, 50)
-        self.rechargeNum_lab.setText("REFRESH TIME = "+ str((self.refresh_time_num)))
-        self.rechargeNum_lab.move(426, 110)
-        self.rechargeNum_lab.setFont(QFont("SansSerif", 20))
+        ''' 上部数据 '''
+
 
         # Lable - turn diamonds
         self.turnDiamonds_lab = QtWidgets.QLabel(self)
@@ -793,13 +797,15 @@ class MyWindow(QMainWindow):
         ''' Cards Btns '''
     def UpdateUItext(self):
         self.fire1_lab.setText("🔥FIRE1 = "+str((self.fire1_num)))
-        self.probability_lab.setText("PROBABILITY = "+str((self.probability_num)))
+        self.probability_lab.setText("🎲PROBABILITY = "+str((self.probability_num)))
         self.fire2_lab.setText("🔥FIRE2 = "+str((self.fire2_num)))
-        self.consumedDiamondsNum_lab.setText("CONSUMED 💎 = "+ str((self.consumedDiamonds_num)))
-        self.rechargeNum_lab.setText("RECHARGED 💰 = "+ str((self.rechargedMoney_num)))
+        self.consumedDiamondsNum_lab.setText("💎CONSUMED = "+ str((self.consumedDiamonds_num)))
+        self.rechargeNum_lab.setText("💰RECHARGED = "+ str((self.rechargedMoney_num)))
+        self.refresh_time_lab.setText("🎰REFRESH TIME = "+ str((self.refresh_time_num)))
+
         self.turnDiamonds_lab.setText("TURN DIAMONDS: 💎 "+tool_getNextTurnDiamondsNum(self.turnCards_time))
         self.refresh_btn.setText("REFRESH 💎 " + str(self.refreshDiamonds_num))
-        self.rechargeNum_lab.setText("REFRESH TIME = "+ str((self.refresh_time_num)))
+
 
 
     # 为所有btn 添加 log
@@ -841,6 +847,7 @@ class MyWindow(QMainWindow):
         else:
             btn.setStyleSheet("color: black; background-color: gray")
         ''' 按照奖励的级别不同，显示不同颜色 '''
+        btn.setIcon(QIcon(""))
 
     def cardEvent1(self):
         self.turnCards_time = self.turnCards_time + 1
@@ -997,6 +1004,7 @@ def window():
     win.refreshBtnEvent()
     win.show()
     sys.exit(app.exec())
+
 
 
 
