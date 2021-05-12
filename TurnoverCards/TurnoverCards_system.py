@@ -16,14 +16,14 @@ mid_group_ranks = [3, 4, 5]
 high_group_ranks = [1, 2]
 
 # 小火与概率  {小火配置序列需概率配置序列同长度}
-fire1_list = [1,2,3,4,5,6,7,8]
+fire1_list = [1,10,20,30,50,100,160,300]
 probability_list = [0.01,0.02,0.03,0.04,0.05,0.06,0.07,0.08]
 
 # 小火参数
 money_rate = 0.01
 refresh_rate = 0.01
 refresh_add = 0.01
-overturn_card_diam_rate = 0.002
+overturn_card_diam_rate = 0.01
 overturn_add = 0.003
 
 # 大火参数
@@ -298,13 +298,42 @@ now_probability_num = 0.0
 now_fire2_num = 0.0
 now_consumedDiamonds_num = 0.0
 now_turnDiamonds_num = 0.0
-now_refreshDiamonds_num = 0.0
 now_rechargedMoney_num = 0.0
+now_refreshDiamonds_num = 0.0
 
 refresh_time = 0
 turn_card_time = 0
 
-now_legendary_location = 0  #奖励组的传奇卡位置
+now_fire1_num = fire1_origin
+now_fire2_num = fire2_origin
+
+
+'''重置逻辑'''
+def resetAllData():
+
+    global now_fire1_num
+    global now_fire2_num
+    global now_probability_num
+    global now_consumedDiamonds_num
+    global now_turnDiamonds_num
+    global now_rechargedMoney_num
+    global now_refreshDiamonds_num
+    global refresh_time
+    global turn_card_time
+
+    now_fire1_num = 0.0
+    now_probability_num = 0.0
+    now_fire2_num = 0.0
+    now_consumedDiamonds_num = 0.0
+    now_turnDiamonds_num = 0.0
+    now_rechargedMoney_num = 0.0
+    now_refreshDiamonds_num = 0.0
+
+    refresh_time = 0
+    turn_card_time = 0
+
+    now_fire1_num = fire1_origin
+    now_fire2_num = fire2_origin
 
 
 # 工具函数 - 根据 index 从list中取值，若index > count  则取最后一个值
@@ -317,11 +346,21 @@ def tool_getvalue(index, input_list):
 
 # 工具函数 - 根据传入的值，输出其对应list的index
 def tool_getlistindex(input_value, input_list):
+    result = None
     for x in range(len(input_list)):
         if input_value >= input_list[x]:
-            return x
+            result = x
     # 找不到
-    return None
+    return result
+
+# 工具函数 - 根据翻卡次数返回下一次需要的钻石值，如果超过9次则，则显示  " - "
+def tool_getNextTurnDiamondsNum(now_index):
+    result = ""
+    if(now_index <= 7):
+        result = str(tool_getvalue(now_index+1, turn_diamonds_list))
+    else:
+        result =" - "
+    return result
 
 
 # 随机函数 - 根据Fire1值随机出档位以及具体的Location
@@ -330,11 +369,15 @@ def randomRank_by_Fire(fire_value):
     # 是否能随到中等档位
     # 是 -> 再随机中等档位Location return location_num
     # 否 -> return 0
+
+    global now_probability_num
+
     probability = 0.0
 
-    probability_index = tool_getlistindex(fire_value, probability_list)
+    probability_index = tool_getlistindex(fire_value, fire1_list)
     if probability_index != None:
         probability = probability_list[probability_index]
+        now_probability_num = probability
     random_result = random.random()
     if random_result <= probability:
         # 随机到中等档位
@@ -347,17 +390,22 @@ def randomRank_by_Fire(fire_value):
 def refresh_rewards():
     #全局变量声明
 
-    global now_turnDiamonds_num
-    global now_refreshDiamonds_num
-
     global refresh_time
+    global now_fire1_num
+    global now_refreshDiamonds_num
+    global now_consumedDiamonds_num
+    global now_turnDiamonds_num
 
-
-    # 更新消耗
-    now_refreshDiamonds_num = now_refreshDiamonds_num + tool_getvalue(refresh_time, refresh_diamonds_list)
+    # 更新小火值
+    now_refreshDiamonds_num =  tool_getvalue(refresh_time, refresh_diamonds_list)
     refresh_time = refresh_time + 1
+    now_fire1_num = now_fire1_num + now_refreshDiamonds_num * money_rate + refresh_add
 
+    # 更新消耗的钻石总量
+    now_consumedDiamonds_num = now_consumedDiamonds_num + now_refreshDiamonds_num
 
+    # 重置翻卡数据
+    now_turnDiamonds_num = turn_diamonds_list[0]
 
     ''' 
     # 实现步骤
@@ -432,6 +480,41 @@ def refresh_rewards():
     return output_rewards
 
 
+''' 更新宏观参数 '''
+def updateFire2():
+
+    global now_fire1_num
+    global now_fire2_num
+    global now_probability_num
+
+    now_legendary_location = 0
+
+    # 确定传奇卡奖励位置
+    # 大火判定
+    if now_fire2_num < fire2_full:
+
+        # 小火判定
+        random_mid_location = randomRank_by_Fire(now_fire1_num)
+        if random_mid_location != 0:
+            # 小火随到中档
+            now_legendary_location = random_mid_location
+            # 小火值归零
+            now_fire1_num = 0.0
+            # 大火值 add
+            now_fire2_num = now_fire2_num + once_fire2_add
+        else:
+            # 小火未随到中档，随小档
+            now_legendary_location = random.choice(low_group_ranks)
+        print("传奇卡位置 =" + str(now_legendary_location+1) )
+
+    else:
+        # 随机到高档
+        now_legendary_location = random.choice(high_group_ranks)
+
+        # 大火值高归零
+        now_fire2_num = 0.0
+
+    return now_legendary_location
 
 
 
@@ -453,70 +536,49 @@ def listChangeValue( input_list, index1, index2):
 
 
 
-def cardsSquence(output_rewards):
 
-
-    global now_fire1_num
-    global now_probability_num
-    global now_fire2_num
-    global now_consumedDiamonds_num
-    global now_legendary_location
-
-    # 确定传奇卡奖励位置
-    # 大火判定
-    if now_fire2_num < fire2_full:
-
-        # 小火判定
-        random_mid_location = randomRank_by_Fire(now_fire1_num)
-        if random_mid_location != 0:
-            # 小火随到中档
-            now_legendary_location = random_mid_location
-            # 小火值归零
-            now_fire1_num = 0.0
-        else:
-            # 小火未随到中档，随小档
-            now_legendary_location = random.choice(low_group_ranks)
-        print("传奇卡位置 =" + str(now_legendary_location) + " | 卡顺序 = " + str(now_legendary_location+1))
+def cardsSquence(rewards_list, lengen_location):
 
 
     # 将其他奖励打乱
     # 将传奇杆奖励放在其应在的位置
-    random.shuffle(output_rewards)
+    random.shuffle(rewards_list)
 
     index_cache = 0
-    for x in range(len(output_rewards)):
-        if output_rewards[x].level == 4:
+    for x in range(len(rewards_list)):
+        if rewards_list[x].level == 4:
             index_cache = x
 
-    print( "index_cache =" + str(index_cache) )
-    cards_squence = listChangeValue(output_rewards, index_cache, now_legendary_location)
+    cards_squence = listChangeValue(rewards_list, index_cache, lengen_location)
 
     string_print = "本次奖励顺序为 = "
     for x in cards_squence:
         string_print = string_print + " [" + str(x.rewardContent) + "] "
     print(string_print)
 
-    # 更新Fire值
-
-    # 更新其他宏观参数
-
-    # 刷新所有RewardsUnit lock值
-
-
-
     return cards_squence
 
 
-''' 更新宏观参数 '''
-def updaetMacroParameters():
 
-    global turn_card_time
-    global now_fire1_num
-    global now_probability_num
-    global now_fire2_num
+''' 单次抽卡函数 '''
+
+def turnCard(cardsSequence_list, index):
+    global now_turnDiamonds_num
     global now_consumedDiamonds_num
-    global now_legendary_location
-    global now_rechargedMoney_num
+    global now_fire1_num
+
+    # 确定本次抽卡钻石消耗
+    now_turnDiamonds_num = tool_getvalue(index, turn_diamonds_list)
+    # 更新总的钻石消耗量
+    now_consumedDiamonds_num = now_consumedDiamonds_num + now_turnDiamonds_num
+
+    # 更新小火值
+    now_fire1_num = now_fire1_num + overturn_add + now_turnDiamonds_num*overturn_card_diam_rate
+
+    # 返回本次抽卡 RewardUnit
+    return cardsSequence_list[index]
+
+
 
 
 
@@ -527,13 +589,10 @@ class MyWindow(QMainWindow):
     def __init__(self):
 
         ''' data '''
-        self.fire1_num = now_fire1_num
-        self.probability_num = now_probability_num
-        self.fire2_num = now_fire2_num
-        self.consumedDiamonds_num = now_consumedDiamonds_num
-        self.turnDiamonds_num = now_turnDiamonds_num
-        self.refreshDiamonds_num = now_refreshDiamonds_num
-        self.rechargedMoney_num = now_rechargedMoney_num
+        self.initData()
+
+        # 缓存抽卡数据
+        self.cardsSequence_list = []
         ''' data '''
 
         super(MyWindow, self).__init__()
@@ -543,8 +602,25 @@ class MyWindow(QMainWindow):
 
         self.setWindowTitle("Cards Activity")
         self.setWindowIcon(QIcon("cards.png"))
+        self.resetTurnCardsTime()
         self.initUI()
 
+
+
+
+    # 刷新翻卡次数缓存
+    def resetTurnCardsTime(self):
+        self.turnCards_time = -1
+
+    def initData(self):
+        self.fire1_num = now_fire1_num
+        self.probability_num = now_probability_num
+        self.fire2_num = now_fire2_num
+        self.consumedDiamonds_num = now_consumedDiamonds_num
+        self.turnDiamonds_num = now_turnDiamonds_num
+        self.refreshDiamonds_num = now_refreshDiamonds_num
+        self.rechargedMoney_num = now_rechargedMoney_num
+        self.refresh_time_num = refresh_time
 
     def initUI(self):
 
@@ -574,22 +650,29 @@ class MyWindow(QMainWindow):
 
         # Lable - Comsumed Diamonds Number
         self.consumedDiamondsNum_lab = QtWidgets.QLabel(self)
-        self.consumedDiamondsNum_lab.resize(300, 50)
+        self.consumedDiamondsNum_lab.resize(300, 40)
         self.consumedDiamondsNum_lab.setText("CONSUMED 💎 = "+ str((self.consumedDiamonds_num)))
-        self.consumedDiamondsNum_lab.move(426, 50)
+        self.consumedDiamondsNum_lab.move(426, 30)
         self.consumedDiamondsNum_lab.setFont(QFont("SansSerif", 20))
 
         # Lable - Recharged_money Number
         self.rechargeNum_lab = QtWidgets.QLabel(self)
         self.rechargeNum_lab.resize(300, 50)
         self.rechargeNum_lab.setText("RECHARGED 💰 = "+ str((self.rechargedMoney_num)))
-        self.rechargeNum_lab.move(426, 80)
+        self.rechargeNum_lab.move(426, 70)
+        self.rechargeNum_lab.setFont(QFont("SansSerif", 20))
+
+        # Lable - Refresh_time
+        self.rechargeNum_lab = QtWidgets.QLabel(self)
+        self.rechargeNum_lab.resize(300, 50)
+        self.rechargeNum_lab.setText("REFRESH TIME = "+ str((self.refresh_time_num)))
+        self.rechargeNum_lab.move(426, 110)
         self.rechargeNum_lab.setFont(QFont("SansSerif", 20))
 
         # Lable - turn diamonds
         self.turnDiamonds_lab = QtWidgets.QLabel(self)
         self.turnDiamonds_lab.resize(300, 50)
-        self.turnDiamonds_lab.setText("TURN DIAMONDS: 💎 "+str((self.turnDiamonds_num)))
+        self.turnDiamonds_lab.setText("TURN DIAMONDS: 💎 "+tool_getNextTurnDiamondsNum(self.turnCards_time))
         self.turnDiamonds_lab.move(230, 720)
         self.turnDiamonds_lab.setFont(QFont("SansSerif", 20))
 
@@ -640,118 +723,206 @@ class MyWindow(QMainWindow):
                 self.cardsBtnsPos.append(pos)
 
         # Card_btn1
-        CardBtn1 = QtWidgets.QPushButton(self)
-        CardBtn1.resize(every_card_width, every_card_height)
-        CardBtn1.move(self.cardsBtnsPos[0][0], self.cardsBtnsPos[0][1])
-        CardBtn1.setIcon(QIcon("cards.png"))
-        CardBtn1.setText("1")
-        CardBtn1.clicked.connect(self.cardEvent1)
+        self.CardBtn1 = QtWidgets.QPushButton(self)
+        self.CardBtn1.resize(every_card_width, every_card_height)
+        self.CardBtn1.move(self.cardsBtnsPos[0][0], self.cardsBtnsPos[0][1])
+        self.CardBtn1.setIcon(QIcon("cards.png"))
+        self.CardBtn1.clicked.connect(self.cardEvent1)
 
 
         # Card_btn2
-        CardBtn2 = QtWidgets.QPushButton(self)
-        CardBtn2.resize(every_card_width, every_card_height)
-        CardBtn2.move(self.cardsBtnsPos[1][0], self.cardsBtnsPos[1][1])
-        CardBtn2.setIcon(QIcon("cards.png"))
-        CardBtn2.setText("2")
-        CardBtn2.clicked.connect(self.cardEvent2)
+        self.CardBtn2 = QtWidgets.QPushButton(self)
+        self.CardBtn2.resize(every_card_width, every_card_height)
+        self.CardBtn2.move(self.cardsBtnsPos[1][0], self.cardsBtnsPos[1][1])
+        self.CardBtn2.setIcon(QIcon("cards.png"))
+        self.CardBtn2.clicked.connect(self.cardEvent2)
 
         # Card_btn3
-        CardBtn3 = QtWidgets.QPushButton(self)
-        CardBtn3.resize(every_card_width, every_card_height)
-        CardBtn3.move(self.cardsBtnsPos[2][0], self.cardsBtnsPos[2][1])
-        CardBtn3.setIcon(QIcon("cards.png"))
-        CardBtn3.setText("3")
-        CardBtn3.clicked.connect(self.cardEvent3)
+        self.CardBtn3 = QtWidgets.QPushButton(self)
+        self.CardBtn3.resize(every_card_width, every_card_height)
+        self.CardBtn3.move(self.cardsBtnsPos[2][0], self.cardsBtnsPos[2][1])
+        self.CardBtn3.setIcon(QIcon("cards.png"))
+        self.CardBtn3.clicked.connect(self.cardEvent3)
 
         # Card_btn4
-        CardBtn4 = QtWidgets.QPushButton(self)
-        CardBtn4.resize(every_card_width, every_card_height)
-        CardBtn4.move(self.cardsBtnsPos[3][0], self.cardsBtnsPos[3][1])
-        CardBtn4.setIcon(QIcon("cards.png"))
-        CardBtn4.setText("4")
-        CardBtn4.clicked.connect(self.cardEvent4)
+        self.CardBtn4 = QtWidgets.QPushButton(self)
+        self.CardBtn4.resize(every_card_width, every_card_height)
+        self.CardBtn4.move(self.cardsBtnsPos[3][0], self.cardsBtnsPos[3][1])
+        self.CardBtn4.setIcon(QIcon("cards.png"))
+        self.CardBtn4.clicked.connect(self.cardEvent4)
 
         # Card_btn5
-        CardBtn5 = QtWidgets.QPushButton(self)
-        CardBtn5.resize(every_card_width, every_card_height)
-        CardBtn5.move(self.cardsBtnsPos[4][0], self.cardsBtnsPos[4][1])
-        CardBtn5.setIcon(QIcon("cards.png"))
-        CardBtn5.setText("5")
-        CardBtn5.clicked.connect(self.cardEvent5)
+        self.CardBtn5 = QtWidgets.QPushButton(self)
+        self.CardBtn5.resize(every_card_width, every_card_height)
+        self.CardBtn5.move(self.cardsBtnsPos[4][0], self.cardsBtnsPos[4][1])
+        self.CardBtn5.setIcon(QIcon("cards.png"))
+        self.CardBtn5.clicked.connect(self.cardEvent5)
 
         # Card_btn6
-        CardBtn6 = QtWidgets.QPushButton(self)
-        CardBtn6.resize(every_card_width, every_card_height)
-        CardBtn6.move(self.cardsBtnsPos[5][0], self.cardsBtnsPos[5][1])
-        CardBtn6.setIcon(QIcon("cards.png"))
-        CardBtn6.setText("6")
-        CardBtn6.clicked.connect(self.cardEvent6)
+        self.CardBtn6 = QtWidgets.QPushButton(self)
+        self.CardBtn6.resize(every_card_width, every_card_height)
+        self.CardBtn6.move(self.cardsBtnsPos[5][0], self.cardsBtnsPos[5][1])
+        self.CardBtn6.setIcon(QIcon("cards.png"))
+        self.CardBtn6.clicked.connect(self.cardEvent6)
 
         # Card_btn7
-        CardBtn7 = QtWidgets.QPushButton(self)
-        CardBtn7.resize(every_card_width, every_card_height)
-        CardBtn7.move(self.cardsBtnsPos[6][0], self.cardsBtnsPos[6][1])
-        CardBtn7.setIcon(QIcon("cards.png"))
-        CardBtn7.setText("7")
-        CardBtn7.clicked.connect(self.cardEvent7)
+        self.CardBtn7 = QtWidgets.QPushButton(self)
+        self.CardBtn7.resize(every_card_width, every_card_height)
+        self.CardBtn7.move(self.cardsBtnsPos[6][0], self.cardsBtnsPos[6][1])
+        self.CardBtn7.setIcon(QIcon("cards.png"))
+        self.CardBtn7.clicked.connect(self.cardEvent7)
 
         # Card_btn8
-        CardBtn8 = QtWidgets.QPushButton(self)
-        CardBtn8.resize(every_card_width, every_card_height)
-        CardBtn8.move(self.cardsBtnsPos[7][0], self.cardsBtnsPos[7][1])
-        CardBtn8.setIcon(QIcon("cards.png"))
-        CardBtn8.setText("8")
-        CardBtn8.clicked.connect(self.cardEvent8)
+        self.CardBtn8 = QtWidgets.QPushButton(self)
+        self.CardBtn8.resize(every_card_width, every_card_height)
+        self.CardBtn8.move(self.cardsBtnsPos[7][0], self.cardsBtnsPos[7][1])
+        self.CardBtn8.setIcon(QIcon("cards.png"))
+        self.CardBtn8.clicked.connect(self.cardEvent8)
 
         # Card_btn9
-        CardBtn9 = QtWidgets.QPushButton(self)
-        CardBtn9.resize(every_card_width, every_card_height)
-        CardBtn9.move(self.cardsBtnsPos[8][0], self.cardsBtnsPos[8][1])
-        CardBtn9.setIcon(QIcon("cards.png"))
-        CardBtn9.setText("9")
-        CardBtn9.clicked.connect(self.cardEvent9)
+        self.CardBtn9 = QtWidgets.QPushButton(self)
+        self.CardBtn9.resize(every_card_width, every_card_height)
+        self.CardBtn9.move(self.cardsBtnsPos[8][0], self.cardsBtnsPos[8][1])
+        self.CardBtn9.setIcon(QIcon("cards.png"))
+        self.CardBtn9.clicked.connect(self.cardEvent9)
+
+
+        #  "保存stylesheet"
+        self.stored_style_sheet = copy.deepcopy(self.CardBtn1.styleSheet())
 
         ''' Cards Btns '''
+    def UpdateUItext(self):
+        self.fire1_lab.setText("🔥FIRE1 = "+str((self.fire1_num)))
+        self.probability_lab.setText("PROBABILITY = "+str((self.probability_num)))
+        self.fire2_lab.setText("🔥FIRE2 = "+str((self.fire2_num)))
+        self.consumedDiamondsNum_lab.setText("CONSUMED 💎 = "+ str((self.consumedDiamonds_num)))
+        self.rechargeNum_lab.setText("RECHARGED 💰 = "+ str((self.rechargedMoney_num)))
+        self.turnDiamonds_lab.setText("TURN DIAMONDS: 💎 "+tool_getNextTurnDiamondsNum(self.turnCards_time))
+        self.refresh_btn.setText("REFRESH 💎 " + str(self.refreshDiamonds_num))
+        self.rechargeNum_lab.setText("REFRESH TIME = "+ str((self.refresh_time_num)))
+
 
     # 为所有btn 添加 log
     def refreshBtnEvent(self):
-        print("刷新一次")
+        print("---------------刷新一次---------------")
+
+        self.resetTurnCardsTime()
+
         cards_group = refresh_rewards()
-        cardsSquence(cards_group)
+        legen_location = updateFire2()
+        self.cardsSequence_list = cardsSquence(cards_group, legen_location)
+        self.resetAllCardBtn()
+        self.refreshAlldata_show()
+
 
     def resetBtnEvent(self):
-        print("")
+        print("----------RESET ALL-----------")
+        self.resetTurnCardsTime()
+        resetAllData()
+        self.resetAllCardBtn()
+        self.refreshAlldata_show()
+
 
     def rechargeBtnEvent(self):
         print(self.recharge_input.text())
 
+        self.refreshAlldata_show()
+
+    def SetColorbylevel(self, btn, level):
+        ''' 按照奖励的级别不同，显示不同颜色 '''
+        if level == 4:
+            btn.setStyleSheet("color: white; background-color: red")
+        elif level == 3:
+            btn.setStyleSheet("color: white; background-color: purple")
+        elif level == 2:
+            btn.setStyleSheet("color: white; background-color: orange")
+        elif level == 1:
+            btn.setStyleSheet("color: black; background-color: gray")
+        else:
+            btn.setStyleSheet("color: black; background-color: gray")
+        ''' 按照奖励的级别不同，显示不同颜色 '''
+
     def cardEvent1(self):
-        print("1")
+        self.turnCards_time = self.turnCards_time + 1
+        card = turnCard(self.cardsSequence_list, self.turnCards_time)
+        print("抽第 " + str(self.turnCards_time+1) +" 张卡 "+ " 奖励 = " + str(card.rewardContent) + " 价值 = " + str(card.value))
+        self.refreshAlldata_show()
+        self.CardBtn1.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n" + (card.rewardContent))
+
+        self.SetColorbylevel(self.CardBtn1, card.level)
+        self.CardBtn1.setDisabled(True)
 
     def cardEvent2(self):
-        print("2")
+        self.turnCards_time = self.turnCards_time + 1
+        card = turnCard(self.cardsSequence_list, self.turnCards_time)
+        print("抽第 " + str(self.turnCards_time+1) +" 张卡 "+ " 奖励 = " + str(card.rewardContent) + " 价值 = " + str(card.value))
+        self.refreshAlldata_show()
+        self.CardBtn2.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n" + (card.rewardContent))
+        self.SetColorbylevel(self.CardBtn2, card.level)
+        self.CardBtn2.setDisabled(True)
 
     def cardEvent3(self):
-        print("3")
+        self.turnCards_time = self.turnCards_time + 1
+        card = turnCard(self.cardsSequence_list, self.turnCards_time)
+        print("抽第 " + str(self.turnCards_time+1) +" 张卡 "+ " 奖励 = " + str(card.rewardContent) + " 价值 = " + str(card.value))
+        self.refreshAlldata_show()
+        self.CardBtn3.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n" + (card.rewardContent))
+        self.SetColorbylevel(self.CardBtn3, card.level)
+        self.CardBtn3.setDisabled(True)
 
     def cardEvent4(self):
-        print("4")
+        self.turnCards_time = self.turnCards_time + 1
+        card = turnCard(self.cardsSequence_list, self.turnCards_time)
+        print("抽第 " + str(self.turnCards_time+1) +" 张卡 "+ " 奖励 = " + str(card.rewardContent) + " 价值 = " + str(card.value))
+        self.refreshAlldata_show()
+        self.CardBtn4.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n" + (card.rewardContent))
+        self.SetColorbylevel(self.CardBtn4, card.level)
+        self.CardBtn4.setDisabled(True)
 
     def cardEvent5(self):
-        print("5")
+        self.turnCards_time = self.turnCards_time + 1
+        card = turnCard(self.cardsSequence_list, self.turnCards_time)
+        print("抽第 " + str(self.turnCards_time+1) +" 张卡 "+ " 奖励 = " + str(card.rewardContent) + " 价值 = " + str(card.value))
+        self.refreshAlldata_show()
+        self.CardBtn5.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n" + (card.rewardContent))
+        self.SetColorbylevel(self.CardBtn5, card.level)
+        self.CardBtn5.setDisabled(True)
 
     def cardEvent6(self):
-        print("6")
+        self.turnCards_time = self.turnCards_time + 1
+        card = turnCard(self.cardsSequence_list, self.turnCards_time)
+        print("抽第 " + str(self.turnCards_time+1) +" 张卡 "+ " 奖励 = " + str(card.rewardContent) + " 价值 = " + str(card.value))
+        self.refreshAlldata_show()
+        self.CardBtn6.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n" + (card.rewardContent))
+        self.SetColorbylevel(self.CardBtn6, card.level)
+        self.CardBtn6.setDisabled(True)
 
     def cardEvent7(self):
-        print("7")
+        self.turnCards_time = self.turnCards_time + 1
+        card = turnCard(self.cardsSequence_list, self.turnCards_time)
+        print("抽第 " + str(self.turnCards_time+1) +" 张卡 "+ " 奖励 = " + str(card.rewardContent) + " 价值 = " + str(card.value))
+        self.refreshAlldata_show()
+        self.CardBtn7.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n" + (card.rewardContent))
+        self.SetColorbylevel(self.CardBtn7, card.level)
+        self.CardBtn7.setDisabled(True)
 
     def cardEvent8(self):
-        print("8")
+        self.turnCards_time = self.turnCards_time + 1
+        card = turnCard(self.cardsSequence_list, self.turnCards_time)
+        print("抽第 " + str(self.turnCards_time+1) +" 张卡 "+ " 奖励 = " + str(card.rewardContent) + " 价值 = " + str(card.value))
+        self.refreshAlldata_show()
+        self.CardBtn8.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n" + (card.rewardContent))
+        self.SetColorbylevel(self.CardBtn8, card.level)
+        self.CardBtn8.setDisabled(True)
 
     def cardEvent9(self):
-        print("9")
+        self.turnCards_time = self.turnCards_time + 1
+        card = turnCard(self.cardsSequence_list, self.turnCards_time)
+        print("抽第 " + str(self.turnCards_time+1) +" 张卡 "+ " 奖励 = " + str(card.rewardContent) + " 价值 = " + str(card.value))
+        self.refreshAlldata_show()
+        self.CardBtn9.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n" + (card.rewardContent))
+        self.SetColorbylevel(self.CardBtn9, card.level)
+        self.CardBtn9.setDisabled(True)
 
     def center(self):
         qr = self.frameGeometry()
@@ -760,21 +931,73 @@ class MyWindow(QMainWindow):
         self.move(qr.topLeft())
 
     def refreshAlldata_show(self):
-        # 更新所有前端数值
-        # 在按钮点击后刷新
-        print("刷新所有前端显示")
+
+        self.initData()
+        self.UpdateUItext()
+
+    # 重置所有卡面状态
+    def resetAllCardBtn(self):
+
+
+        self.CardBtn1.setDisabled(False)
+        self.CardBtn1.setIcon(QIcon("cards.png"))
+        self.CardBtn1.setText("")
+        self.CardBtn1.setStyleSheet(self.stored_style_sheet)
+
+        self.CardBtn2.setDisabled(False)
+        self.CardBtn2.setIcon(QIcon("cards.png"))
+        self.CardBtn2.setText("")
+        self.CardBtn2.setStyleSheet(self.stored_style_sheet)
+
+
+        self.CardBtn3.setDisabled(False)
+        self.CardBtn3.setIcon(QIcon("cards.png"))
+        self.CardBtn3.setText("")
+        self.CardBtn3.setStyleSheet(self.stored_style_sheet)
+
+
+        self.CardBtn4.setDisabled(False)
+        self.CardBtn4.setIcon(QIcon("cards.png"))
+        self.CardBtn4.setText("")
+        self.CardBtn4.setStyleSheet(self.stored_style_sheet)
+
+
+        self.CardBtn5.setDisabled(False)
+        self.CardBtn5.setIcon(QIcon("cards.png"))
+        self.CardBtn5.setText("")
+        self.CardBtn5.setStyleSheet(self.stored_style_sheet)
+
+        self.CardBtn6.setDisabled(False)
+        self.CardBtn6.setIcon(QIcon("cards.png"))
+        self.CardBtn6.setText("")
+        self.CardBtn6.setStyleSheet(self.stored_style_sheet)
+
+
+        self.CardBtn7.setDisabled(False)
+        self.CardBtn7.setIcon(QIcon("cards.png"))
+        self.CardBtn7.setText("")
+        self.CardBtn7.setStyleSheet(self.stored_style_sheet)
+
+
+        self.CardBtn8.setDisabled(False)
+        self.CardBtn8.setIcon(QIcon("cards.png"))
+        self.CardBtn8.setText("")
+        self.CardBtn8.setStyleSheet(self.stored_style_sheet)
+
+
+        self.CardBtn9.setDisabled(False)
+        self.CardBtn9.setIcon(QIcon("cards.png"))
+        self.CardBtn9.setText("")
+        self.CardBtn9.setStyleSheet(self.stored_style_sheet)
+
 
 def window():
     app = QApplication(sys.argv)
     win = MyWindow()
-
+    win.refreshBtnEvent()
     win.show()
     sys.exit(app.exec())
 
-
-''' 运行时执行 '''
-result = refresh_rewards()
-cardsSquence(result)
 
 
 
