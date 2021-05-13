@@ -8,6 +8,12 @@ from PyQt5.QtGui import QIcon, QFont
 import sys, csv
 import random
 
+''' 限制条件配置 '''
+# 前x次必有y次大火
+fire2_time_limit = [5, 2]
+
+
+
 ''' 参数配置 '''
 
 # 低中高档区间
@@ -307,6 +313,14 @@ turn_card_time = 0
 now_fire1_num = fire1_origin
 now_fire2_num = fire2_origin
 
+keep_fire1 = False
+keep_fire2 = False
+
+# 本次档位 1-高档 2-中档 3-低档
+now_time_group_rank = 3
+
+# 已经触发的大火次数
+now_time_fire2 = 0
 
 '''重置逻辑'''
 def resetAllData():
@@ -320,6 +334,10 @@ def resetAllData():
     global now_refreshDiamonds_num
     global refresh_time
     global turn_card_time
+    global keep_fire1
+    global keep_fire2
+    global now_time_group_rank
+    global now_time_fire2
 
     now_fire1_num = 0.0
     now_probability_num = 0.0
@@ -334,6 +352,13 @@ def resetAllData():
 
     now_fire1_num = fire1_origin
     now_fire2_num = fire2_origin
+
+    keep_fire1 = False
+    keep_fire2 = False
+
+    now_time_group_rank = 3
+
+    now_time_fire2 = 0
 
 
 # 工具函数 - 根据 index 从list中取值，若index > count  则取最后一个值
@@ -480,13 +505,48 @@ def refresh_rewards():
     return output_rewards
 
 
-''' 更新宏观参数 '''
+''' 更新宏观参数 - > 更新 keep_fire1 and keep_fire2 '''
 def updateFire2():
 
     global now_fire1_num
     global now_fire2_num
-    global now_probability_num
 
+    global keep_fire1
+    global keep_fire2
+
+    global now_time_fire2
+
+    '''新Fire1 Fire2 逻辑 '''
+
+    # 小火判定
+
+    random_mid_location = randomRank_by_Fire(now_fire1_num)
+    if random_mid_location != 0:
+        # 小火随到中档
+
+        # 小火值归零
+        now_fire1_num = 0.0
+        # 大火值 add
+        now_fire2_num = now_fire2_num + once_fire2_add
+
+        keep_fire2 = False
+        keep_fire1 = True
+
+        # 大火判定
+        if now_fire2_num >= fire2_full:
+            keep_fire1 = False
+            keep_fire2 = True
+            now_fire2_num = 0.0
+
+            now_time_fire2 = now_time_fire2 + 1
+
+    else:
+        # 小火未随到中档，随小档
+        keep_fire1 = False
+        keep_fire2 = False
+
+
+    '''
     now_legendary_location = 0
 
     # 确定传奇卡奖励位置
@@ -515,12 +575,39 @@ def updateFire2():
         now_fire2_num = 0.0
 
     return now_legendary_location
+    '''
 
+''' 
+keep_fire1 and keep_fire2 决定档位 
+'''
+def KeepFire1andFire2():
+    global keep_fire1
+    global keep_fire2
+    global now_time_group_rank
+
+    if ((keep_fire1 == False) and (keep_fire2 == False)):
+        now_time_group_rank = 3
+    elif ((keep_fire1 == True) and (keep_fire2 == False)):
+        now_time_group_rank = 2
+    elif keep_fire2 == True:
+        now_time_group_rank = 1
+
+'''
+卡组环节外部限制条件同时对Fire1 与 Fire2值做干涉
+'''
+def ExtraFireLogic():
+    # 是否需要宏观参数 - 已经大火的数量
+
+    global now_time_group_rank
+    global now_time_fire2
+
+    # 前 x 次 必有 y次大火
 
 
 '''
 确定奖励位置
 '''
+
 
 # 函数交换顺序
 def listChangeValue( input_list, index1, index2):
@@ -1004,10 +1091,6 @@ def window():
     win.refreshBtnEvent()
     win.show()
     sys.exit(app.exec())
-
-
-
-
 
 window()
 
