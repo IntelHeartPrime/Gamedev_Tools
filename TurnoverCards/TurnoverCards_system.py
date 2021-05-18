@@ -1,16 +1,29 @@
 import copy
 import random
+import json
 
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QApplication, QMainWindow, QDesktopWidget
 from PyQt5.QtGui import QIcon, QFont
 
 import sys, csv
-import random
+
+''' 逻辑开关配置'''
+keep_fires = True
 
 ''' 限制条件配置 '''
 # 前x次必有y次大火
+fire2_time_limit_lock = True
 fire2_time_limit = [5, 2]
+
+limit_legen_card_card = True
+# 配置必须x次出现的配置，以及隔y次出现的逻辑 , 在刷新环节就进行运算的
+
+limit_legen_card_intermit_config = {"鲸鱼*1": [1, 1]}
+
+limit_early_compose_config_lock = True
+limit_early_compose_config = {"鲸鱼*1": [1, 1]}
+
 
 
 
@@ -259,12 +272,46 @@ for legendary_lv in [4]:
                                         if ((sum_4 == 1) and (sum_3 == 2) and (sum_2 == 3) and (sum_1 == 3)):
                                             available_composes.append(compose_mode)
 
+'''将对象输出到json的类'''
+class AvailableComposetoJson():
+    def __init__(self):
+        self.json_file_name = "Available_compose.json"
+    def print2Json(self, lists):
+        json_dict_list = []
+        for row in lists:
+            new_dict = {
+                "reward_conf": row,
+                "weight": 50,
+                "allow_first_round": False
+            }
+            json_dict_list.append(new_dict)
+
+        with open(self.json_file_name,"w") as json_file:
+            index = 0
+            for dict_unit in json_dict_list:
+                index = index + 1
+                json_str = json.dumps(dict_unit, indent=4)
+                if (index < len(json_dict_list)):
+                    json_file.write(json_str + ",")
+                else:
+                    json_file.write(json_str)
+                json_file.write("\r")
+
 
 # 打印 available_composes
 print(" all available compose： ")
 for x in available_composes:
     print(x)
+
+    ''' 将 available 写入到 json 中 '''
+
+toJson = AvailableComposetoJson()
+toJson.print2Json(available_composes)
+
+
 print("")
+
+
 
 
 # 权重list
@@ -505,6 +552,13 @@ def refresh_rewards():
     return output_rewards
 
 
+''' 补充功能 - 对传奇卡和稀有度的限制 '''
+def limitedGroup():
+    # 对传奇卡的限制
+    print("")
+
+
+
 ''' 更新宏观参数 - > 更新 keep_fire1 and keep_fire2 '''
 def updateFire2():
 
@@ -519,31 +573,32 @@ def updateFire2():
     '''新Fire1 Fire2 逻辑 '''
 
     # 小火判定
+    if keep_fire2 == False:
+        random_mid_location = randomRank_by_Fire(now_fire1_num)
+        if random_mid_location != 0:
+            # 小火随到中档
 
-    random_mid_location = randomRank_by_Fire(now_fire1_num)
-    if random_mid_location != 0:
-        # 小火随到中档
+            # 小火值归零
+            now_fire1_num = 0.0
+            # 大火值 add
+            now_fire2_num = now_fire2_num + once_fire2_add
 
-        # 小火值归零
-        now_fire1_num = 0.0
-        # 大火值 add
-        now_fire2_num = now_fire2_num + once_fire2_add
+            keep_fire2 = False
+            keep_fire1 = True
 
-        keep_fire2 = False
-        keep_fire1 = True
+            # 大火判定
+            if now_fire2_num >= fire2_full:
+                keep_fire1 = False
+                keep_fire2 = True
+                now_fire2_num = 0.0
 
-        # 大火判定
-        if now_fire2_num >= fire2_full:
-            keep_fire1 = False
-            keep_fire2 = True
-            now_fire2_num = 0.0
+                now_time_fire2 = now_time_fire2 + 1
 
-            now_time_fire2 = now_time_fire2 + 1
-
-    else:
-        # 小火未随到中档，随小档
-        keep_fire1 = False
-        keep_fire2 = False
+        else:
+            # 小火未随到中档，随小档
+            if keep_fires == False:
+                keep_fire1 = False
+                keep_fire2 = False
 
 
     '''
@@ -599,9 +654,27 @@ def ExtraFireLogic():
     # 是否需要宏观参数 - 已经大火的数量
 
     global now_time_group_rank
+    global refresh_time
     global now_time_fire2
+    global keep_fire2
+
 
     # 前 x 次 必有 y次大火
+    # 算法怎么写
+    if fire2_time_limit_lock:
+        if (now_time_fire2 < fire2_time_limit[1]):
+            flag = fire2_time_limit[0] - fire2_time_limit[1] + now_time_fire2
+            if (refresh_time == (flag + 1)):
+                  # 设置为大火
+                keep_fire2 = True
+                now_time_fire2 = now_time_fire2 + 1
+
+    if now_time_group_rank == 1:
+        return random.choice(high_group_ranks)
+    elif now_time_group_rank == 2:
+        return random.choice(mid_group_ranks)
+    else:
+        return random.choice(low_group_ranks)
 
 
 '''
@@ -620,7 +693,6 @@ def listChangeValue( input_list, index1, index2):
     result[index2] = cache_value
 
     return result
-
 
 
 
@@ -665,8 +737,9 @@ def turnCard(cardsSequence_list, index):
     # 返回本次抽卡 RewardUnit
     return cardsSequence_list[index]
 
-
-
+''' 对队列的额外限制 '''
+def limitedSequence():
+    print("")
 
 
 ''' UI 部分 -  纯前端 + 交互 '''
@@ -797,10 +870,25 @@ class MyWindow(QMainWindow):
 
         ''' Cards Btns '''
 
+        ''' 大火小火 标识'''
+        self.Fire1_status_lab = QtWidgets.QLabel(self)
+        self.Fire1_status_lab.resize(300, 20)
+        self.Fire1_status_lab.setText("🔥FIRE1 = "+str(keep_fire1))
+        self.Fire1_status_lab.move(47, 140)
+        self.Fire1_status_lab.setFont(QFont("SansSerif", 15))
+
+        self.Fire2_status_lab = QtWidgets.QLabel(self)
+        self.Fire2_status_lab.resize(300, 20)
+        self.Fire2_status_lab.setText("🔥FIRE2 = "+str(keep_fire2))
+        self.Fire2_status_lab.move(47, 160)
+        self.Fire2_status_lab.setFont(QFont("SansSerif", 15))
+
+        ''' 大火小火 标识'''
+
         # 定义 Cards List
         self.cardsBtnsPos = []
         start_pos_x = 120
-        start_pos_y = 180
+        start_pos_y = 190
         every_card_width = 150
         every_card_height = 160
         dis_x = 10
@@ -892,7 +980,8 @@ class MyWindow(QMainWindow):
 
         self.turnDiamonds_lab.setText("TURN DIAMONDS: 💎 "+tool_getNextTurnDiamondsNum(self.turnCards_time))
         self.refresh_btn.setText("REFRESH 💎 " + str(self.refreshDiamonds_num))
-
+        self.Fire1_status_lab.setText("🔥FIRE1 = "+str(keep_fire1))
+        self.Fire2_status_lab.setText("🔥FIRE2 = "+str(keep_fire2))
 
 
     # 为所有btn 添加 log
@@ -902,7 +991,9 @@ class MyWindow(QMainWindow):
         self.resetTurnCardsTime()
 
         cards_group = refresh_rewards()
-        legen_location = updateFire2()
+        updateFire2()
+        KeepFire1andFire2()
+        legen_location = ExtraFireLogic()
         self.cardsSequence_list = cardsSquence(cards_group, legen_location)
         self.resetAllCardBtn()
         self.refreshAlldata_show()
@@ -937,86 +1028,221 @@ class MyWindow(QMainWindow):
         btn.setIcon(QIcon(""))
 
     def cardEvent1(self):
+
+        global keep_fires
+        global keep_fire1
+        global keep_fire2
+
         self.turnCards_time = self.turnCards_time + 1
         card = turnCard(self.cardsSequence_list, self.turnCards_time)
-        print("抽第 " + str(self.turnCards_time+1) +" 张卡 "+ " 奖励 = " + str(card.rewardContent) + " 价值 = " + str(card.value))
-        self.refreshAlldata_show()
+        print("抽第 " + str(self.turnCards_time+1) +" 张卡 "+ " 奖励 = " + str(card.rewardContent) + " 价值 = " + str(card.value) + "稀有度 = " + str(card.level))
         self.CardBtn1.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n" + (card.rewardContent))
 
         self.SetColorbylevel(self.CardBtn1, card.level)
         self.CardBtn1.setDisabled(True)
 
+        # 如果抽到传奇卡，则重置Fire1与Fire2
+        if card.level == 4:
+            if keep_fires:
+                if keep_fire2:
+                    keep_fire2 = False
+                if keep_fire1:
+                    keep_fire1 = False
+
+        self.refreshAlldata_show()
+
+
     def cardEvent2(self):
+
+        global keep_fires
+        global keep_fire1
+        global keep_fire2
+
         self.turnCards_time = self.turnCards_time + 1
         card = turnCard(self.cardsSequence_list, self.turnCards_time)
         print("抽第 " + str(self.turnCards_time+1) +" 张卡 "+ " 奖励 = " + str(card.rewardContent) + " 价值 = " + str(card.value))
-        self.refreshAlldata_show()
         self.CardBtn2.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n" + (card.rewardContent))
         self.SetColorbylevel(self.CardBtn2, card.level)
         self.CardBtn2.setDisabled(True)
 
+        # 如果抽到传奇卡，则重置Fire1与Fire2
+        if card.level == 4:
+            if keep_fires:
+                if keep_fire2:
+                    keep_fire2 = False
+                if keep_fire1:
+                    keep_fire1 = False
+
+        self.refreshAlldata_show()
+
+
     def cardEvent3(self):
+
+        global keep_fires
+        global keep_fire1
+        global keep_fire2
+
         self.turnCards_time = self.turnCards_time + 1
         card = turnCard(self.cardsSequence_list, self.turnCards_time)
         print("抽第 " + str(self.turnCards_time+1) +" 张卡 "+ " 奖励 = " + str(card.rewardContent) + " 价值 = " + str(card.value))
-        self.refreshAlldata_show()
         self.CardBtn3.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n" + (card.rewardContent))
         self.SetColorbylevel(self.CardBtn3, card.level)
         self.CardBtn3.setDisabled(True)
 
+        # 如果抽到传奇卡，则重置Fire1与Fire2
+        if card.level == 4:
+            if keep_fires:
+                if keep_fire2:
+                    keep_fire2 = False
+                if keep_fire1:
+                    keep_fire1 = False
+
+        self.refreshAlldata_show()
+
+
     def cardEvent4(self):
+
+        global keep_fires
+        global keep_fire1
+        global keep_fire2
+
         self.turnCards_time = self.turnCards_time + 1
         card = turnCard(self.cardsSequence_list, self.turnCards_time)
         print("抽第 " + str(self.turnCards_time+1) +" 张卡 "+ " 奖励 = " + str(card.rewardContent) + " 价值 = " + str(card.value))
-        self.refreshAlldata_show()
         self.CardBtn4.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n" + (card.rewardContent))
         self.SetColorbylevel(self.CardBtn4, card.level)
         self.CardBtn4.setDisabled(True)
 
+        # 如果抽到传奇卡，则重置Fire1与Fire2
+        if card.level == 4:
+            if keep_fires:
+                if keep_fire2:
+                    keep_fire2 = False
+                if keep_fire1:
+                    keep_fire1 = False
+
+        self.refreshAlldata_show()
+
+
     def cardEvent5(self):
+
+        global keep_fires
+        global keep_fire1
+        global keep_fire2
+
         self.turnCards_time = self.turnCards_time + 1
         card = turnCard(self.cardsSequence_list, self.turnCards_time)
         print("抽第 " + str(self.turnCards_time+1) +" 张卡 "+ " 奖励 = " + str(card.rewardContent) + " 价值 = " + str(card.value))
-        self.refreshAlldata_show()
         self.CardBtn5.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n" + (card.rewardContent))
         self.SetColorbylevel(self.CardBtn5, card.level)
         self.CardBtn5.setDisabled(True)
 
+        # 如果抽到传奇卡，则重置Fire1与Fire2
+        if card.level == 4:
+            if keep_fires:
+                if keep_fire2:
+                    keep_fire2 = False
+                if keep_fire1:
+                    keep_fire1 = False
+
+        self.refreshAlldata_show()
+
+
     def cardEvent6(self):
+
+        global keep_fires
+        global keep_fire1
+        global keep_fire2
+
         self.turnCards_time = self.turnCards_time + 1
         card = turnCard(self.cardsSequence_list, self.turnCards_time)
         print("抽第 " + str(self.turnCards_time+1) +" 张卡 "+ " 奖励 = " + str(card.rewardContent) + " 价值 = " + str(card.value))
-        self.refreshAlldata_show()
         self.CardBtn6.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n" + (card.rewardContent))
         self.SetColorbylevel(self.CardBtn6, card.level)
         self.CardBtn6.setDisabled(True)
 
+        # 如果抽到传奇卡，则重置Fire1与Fire2
+        if card.level == 4:
+            if keep_fires:
+                if keep_fire2:
+                    keep_fire2 = False
+                if keep_fire1:
+                    keep_fire1 = False
+
+        self.refreshAlldata_show()
+
+
     def cardEvent7(self):
+
+        global keep_fires
+        global keep_fire1
+        global keep_fire2
+
         self.turnCards_time = self.turnCards_time + 1
         card = turnCard(self.cardsSequence_list, self.turnCards_time)
         print("抽第 " + str(self.turnCards_time+1) +" 张卡 "+ " 奖励 = " + str(card.rewardContent) + " 价值 = " + str(card.value))
-        self.refreshAlldata_show()
         self.CardBtn7.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n" + (card.rewardContent))
         self.SetColorbylevel(self.CardBtn7, card.level)
         self.CardBtn7.setDisabled(True)
 
+        # 如果抽到传奇卡，则重置Fire1与Fire2
+        if card.level == 4:
+            if keep_fires:
+                if keep_fire2:
+                    keep_fire2 = False
+                if keep_fire1:
+                    keep_fire1 = False
+
+        self.refreshAlldata_show()
+
+
     def cardEvent8(self):
+
+        global keep_fires
+        global keep_fire1
+        global keep_fire2
+
         self.turnCards_time = self.turnCards_time + 1
         card = turnCard(self.cardsSequence_list, self.turnCards_time)
         print("抽第 " + str(self.turnCards_time+1) +" 张卡 "+ " 奖励 = " + str(card.rewardContent) + " 价值 = " + str(card.value))
-        self.refreshAlldata_show()
         self.CardBtn8.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n" + (card.rewardContent))
         self.SetColorbylevel(self.CardBtn8, card.level)
         self.CardBtn8.setDisabled(True)
 
+        # 如果抽到传奇卡，则重置Fire1与Fire2
+        if card.level == 4:
+            if keep_fires:
+                if keep_fire2:
+                    keep_fire2 = False
+                if keep_fire1:
+                    keep_fire1 = False
+
+        self.refreshAlldata_show()
+
+
     def cardEvent9(self):
+
+        global keep_fires
+        global keep_fire1
+        global keep_fire2
+
         self.turnCards_time = self.turnCards_time + 1
         card = turnCard(self.cardsSequence_list, self.turnCards_time)
         print("抽第 " + str(self.turnCards_time+1) +" 张卡 "+ " 奖励 = " + str(card.rewardContent) + " 价值 = " + str(card.value))
-        self.refreshAlldata_show()
         self.CardBtn9.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n" + (card.rewardContent))
         self.SetColorbylevel(self.CardBtn9, card.level)
         self.CardBtn9.setDisabled(True)
+
+        # 如果抽到传奇卡，则重置Fire1与Fire2
+        if card.level == 4:
+            if keep_fires:
+                if keep_fire2:
+                    keep_fire2 = False
+                if keep_fire1:
+                    keep_fire1 = False
+
+        self.refreshAlldata_show()
+
 
     def center(self):
         qr = self.frameGeometry()
