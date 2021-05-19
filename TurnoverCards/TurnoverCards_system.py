@@ -18,14 +18,12 @@ fire2_time_limit = [5, 2]
 
 limit_legen_card_card = True
 # 配置必须x次出现的配置，以及隔y次出现的逻辑 , 在刷新环节就进行运算的
-
-limit_legen_card_intermit_config = {"鲸鱼*1": [1, 1]}
+# 第三位记录目前此杆出现的次数
+limit_legen_card_intermit_config = {"鲸鱼*1": [3, 5, 0], "蝙蝠*1": [2, 4, 0]}
 
 limit_early_compose_config_lock = True
-limit_early_compose_config = {"鲸鱼*1": [1, 1]}
-
-
-
+#第三位记录目前此杆出现的次数
+limit_early_compose_config = {"鲸鱼*1": [1, 1, 0]}
 
 ''' 参数配置 '''
 
@@ -200,7 +198,6 @@ def readRewardConfigCsv():
             if rewardType == 3:
                 coin_rewards.append(reward_unit)
 
-
 # 操作-读取配置
 readRewardConfigCsv()
 
@@ -251,26 +248,34 @@ for legendary_lv in [4]:
                             coin_unit2 = [coin_lv2, 3, 0]
                             for coin_lv3 in [1, 2, 3]:
                                 coin_unit3 = [coin_lv3, 3, 0]
-                                for otherCard_lv in [1, 2, 3]:
+                                for otherCard_lv in [1, 2]:
                                     for otherCard_color in [1,2,3]:
-                                        otherCard_unit = [otherCard_lv, 4, otherCard_color]
-                                        compose_mode = [legen_unit, diamond_unit, epic_unit, ball_unit1, ball_unit2, coin_unit1, coin_unit2, coin_unit3,otherCard_unit]
-                                        # 判定该组合是否符合要求
-                                        sum_4 = 0
-                                        sum_3 = 0
-                                        sum_2 = 0
-                                        sum_1 = 0
-                                        for x in compose_mode:
-                                            if x[0] == 4:
-                                                sum_4 = sum_4 + 1
-                                            elif x[0] == 3:
-                                                sum_3 = sum_3 + 1
-                                            elif x[0] == 2:
-                                                sum_2 = sum_2 + 1
-                                            elif x[0] == 1:
-                                                sum_1 = sum_1 + 1
-                                        if ((sum_4 == 1) and (sum_3 == 2) and (sum_2 == 3) and (sum_1 == 3)):
-                                            available_composes.append(compose_mode)
+                                        #排除2级奖励中的白卡
+                                        if (otherCard_lv!=2) and (otherCard_color!=1):
+                                            otherCard_unit = [otherCard_lv, 4, otherCard_color]
+                                            compose_mode = [legen_unit, diamond_unit, epic_unit, ball_unit1, ball_unit2, coin_unit1, coin_unit2, coin_unit3,otherCard_unit]
+                                            # 判定该组合是否符合要求
+                                            sum_4 = 0
+                                            sum_3 = 0
+                                            sum_2 = 0
+                                            sum_1 = 0
+                                            for x in compose_mode:
+                                                if x[0] == 4:
+                                                    sum_4 = sum_4 + 1
+                                                elif x[0] == 3:
+                                                    sum_3 = sum_3 + 1
+                                                elif x[0] == 2:
+                                                    sum_2 = sum_2 + 1
+                                                elif x[0] == 1:
+                                                    sum_1 = sum_1 + 1
+                                            if ((sum_4 == 1) and (sum_3 == 2) and (sum_2 == 3) and (sum_1 == 3)):
+                                                available_composes.append(compose_mode)
+
+
+'''初始配置组合'''
+origin_compose_list = []
+
+
 
 '''将对象输出到json的类'''
 class AvailableComposetoJson():
@@ -310,7 +315,6 @@ toJson.print2Json(available_composes)
 
 
 print("")
-
 
 
 
@@ -553,10 +557,28 @@ def refresh_rewards():
 
 
 ''' 补充功能 - 对传奇卡和稀有度的限制 '''
-def limitedGroup():
+def limitedGroup(input_rewards):
     # 对传奇卡的限制
-    print("")
+    legen_name = ""
+    for x in input_rewards:
+        if x.level == 4:
+            legen_name = x.rewardContent
 
+    if limit_early_compose_config_lock:
+        for x in limit_legen_card_intermit_config.keys():
+            # 计算间隔值
+            limit_legen_card_intermit_config[x][2] = limit_legen_card_intermit_config[x][2] + 1
+
+            if x == legen_name:
+                limit_legen_card_intermit_config[x][2] = limit_legen_card_intermit_config[x][2] + 1
+            # 进行相关数值判定
+            # 最小间隔，最大间隔
+            # 对字典进行遍历
+            # 每次都3号位+1 代表间隔标识
+            # 判断3号位置是否<1号位，如果是，则不应出此卡，重新随机且将各类值倒档位
+            # 判断3号位置是否>2号位置-1，如果是，则强行令本次卡组传奇卡重置为此卡 并退出循环
+            ''' 这块还挺复杂的  '''
+            ''' 确实复杂'''
 
 
 ''' 更新宏观参数 - > 更新 keep_fire1 and keep_fire2 '''
@@ -742,6 +764,7 @@ def limitedSequence():
     print("")
 
 
+
 ''' UI 部分 -  纯前端 + 交互 '''
 
 class MyWindow(QMainWindow):
@@ -764,8 +787,6 @@ class MyWindow(QMainWindow):
         self.setWindowIcon(QIcon("cards.png"))
         self.resetTurnCardsTime()
         self.initUI()
-
-
 
 
     # 刷新翻卡次数缓存
@@ -998,6 +1019,18 @@ class MyWindow(QMainWindow):
         self.resetAllCardBtn()
         self.refreshAlldata_show()
 
+
+        self.statusBar().showMessage('Simulation of Cards Activity')
+
+        string_other = ""
+        string_legen = ""
+        for x in cards_group:
+            if x.level == 4:
+
+                string_legen = "【"+x.rewardContent+"】"
+            else:
+                string_other = string_other + " [" + str(x.rewardContent) + "] "
+        self.statusBar().showMessage("组合奖励 = "+string_legen+string_other)
 
     def resetBtnEvent(self):
         print("----------RESET ALL-----------")
