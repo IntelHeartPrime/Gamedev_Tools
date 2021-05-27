@@ -12,6 +12,11 @@ import sys, csv
 keep_fires = True
 
 ''' 限制条件配置 '''
+
+# 暂时不需开发的逻辑
+# 玩家钻石存量> n 时，每轮开卡的前m次都不会开出钻石
+# 玩家钻石存量< n 时，有q%的概率在每轮开卡的前M次开出钻石
+
 # 前x次必有y次大火
 fire2_time_limit_lock = True
 fire2_time_limit = [5, 2]
@@ -19,10 +24,10 @@ fire2_time_limit = [5, 2]
 limit_legen_card_card = True
 # 配置必须x次出现的配置，以及隔y次出现的逻辑 , 在刷新环节就进行运算的
 # 第三位记录目前此杆出现的次数
-limit_legen_card_intermit_config = {"鲸鱼*1": [3, 5, 0], "蝙蝠*1": [2, 4, 0]}
+limit_legen_card_intermit_config = {"鲸鱼*1": [2, 5, 0], "蝙蝠*1": [2, 4, 0]}
 
 limit_early_compose_config_lock = True
-#第三位记录目前此杆出现的次数
+#第三位记录目前此杆出现的次数 【0】前x轮 【1】必出现y次
 limit_early_compose_config = {"鲸鱼*1": [1, 1, 0]}
 
 ''' 参数配置 '''
@@ -173,30 +178,34 @@ coin = 3
 def readRewardConfigCsv():
     with open(csv_file_path) as f:
         f_csv = csv.reader(f)
-        for row in f_csv:
-            reward_unit = RewardUnit()
-            reward_unit.rewardContent = row[0]
-            reward_unit.num = float(row[1])
-            reward_unit.weight = float(row[2])
-            reward_unit.level = int(row[3])
-            reward_unit.value = float(row[4])
-            reward_unit.lock = False
+        index = 0
+        for row in (f_csv):
+            index = index + 1
+            if index>1:
+                reward_unit = RewardUnit()
+                reward_unit.rewardContent = row[0]
+                reward_unit.num = float(row[1])
+                reward_unit.weight = float(row[2])
+                reward_unit.level = int(row[3])
+                reward_unit.value = float(row[4])
+                reward_unit.lock = False
 
-            rewardType = int(row[5])
-            if rewardType == 44:
-                legendary_cards_rewards.append(reward_unit)
-            if rewardType == 43:
-                epic_cards_rewards.append(reward_unit)
-            if rewardType == 42:
-                rare_cards_rewards.append(reward_unit)
-            if rewardType == 41:
-                common_cards_rewards.append(reward_unit)
-            if rewardType == 2:
-                diamonds_rewards.append(reward_unit)
-            if rewardType == 5:
-                ball_rewards.append(reward_unit)
-            if rewardType == 3:
-                coin_rewards.append(reward_unit)
+                rewardType = int(row[5])
+                if rewardType == 44:
+                    legendary_cards_rewards.append(reward_unit)
+                if rewardType == 43:
+                    epic_cards_rewards.append(reward_unit)
+                if rewardType == 42:
+                    rare_cards_rewards.append(reward_unit)
+                if rewardType == 41:
+                    common_cards_rewards.append(reward_unit)
+                if rewardType == 2:
+                    diamonds_rewards.append(reward_unit)
+                if rewardType == 5:
+                    ball_rewards.append(reward_unit)
+                if rewardType == 3:
+                    coin_rewards.append(reward_unit)
+
 
 # 操作-读取配置
 readRewardConfigCsv()
@@ -275,7 +284,15 @@ for legendary_lv in [4]:
 '''初始配置组合'''
 origin_compose_list = []
 
+''' 将对象输出到csv的类'''
+class AvailableComposetoCsv():
+    def __init__(self):
+        self.csv_file_name = "Avaiable_compose.csv"
+    def print2csv(self, lists):
+        # 定义csv格式 - 「 csv
+        print("")
 
+''' 读取csv 转化为 list 与 json 的类'''
 
 '''将对象输出到json的类'''
 class AvailableComposetoJson():
@@ -540,7 +557,7 @@ def refresh_rewards():
             output_rewards.append(reward_coin_card)
 
     # 输出本次奖励
-    string_print = "本次获得组合奖励为 = "
+    string_print = "本次获得组合初始奖励为 = "
     for x in output_rewards:
         string_print = string_print + " [" + str(x.rewardContent) + "] "
     print(string_print)
@@ -560,25 +577,101 @@ def refresh_rewards():
 def limitedGroup(input_rewards):
     # 对传奇卡的限制
     legen_name = ""
+
     for x in input_rewards:
         if x.level == 4:
             legen_name = x.rewardContent
 
-    if limit_early_compose_config_lock:
+
+    # 设置一个缓冲奖池
+    # 缓冲奖池 = 传奇卡奖池
+    # 当进行再随机时从缓冲卡池中随机
+    # 将不满足要求的从缓冲卡池中剔除
+
+    # 初始化缓冲卡池
+    cache_pool = []
+
+    # 最后定义的奖励
+    last_legen_card = None
+
+    if limit_legen_card_card:
         for x in limit_legen_card_intermit_config.keys():
             # 计算间隔值
             limit_legen_card_intermit_config[x][2] = limit_legen_card_intermit_config[x][2] + 1
 
+            # 如果抽到了
             if x == legen_name:
-                limit_legen_card_intermit_config[x][2] = limit_legen_card_intermit_config[x][2] + 1
-            # 进行相关数值判定
-            # 最小间隔，最大间隔
-            # 对字典进行遍历
-            # 每次都3号位+1 代表间隔标识
-            # 判断3号位置是否<1号位，如果是，则不应出此卡，重新随机且将各类值倒档位
-            # 判断3号位置是否>2号位置-1，如果是，则强行令本次卡组传奇卡重置为此卡 并退出循环
-            ''' 这块还挺复杂的  '''
-            ''' 确实复杂'''
+                if limit_legen_card_intermit_config[x][2] <= limit_legen_card_intermit_config[x][0]:
+                    # 重新定义缓冲池
+                    cache_pool.clear()
+                    for card in legendary_cards_rewards:
+                        if card.rewardContent != x:
+                            cache_pool.append(card)
+                    # 重新随机
+                    last_legen_card = random.choice(cache_pool)
+                    print("超过 「" + str(x) + "」的最小限制"+" 再随机奖励为 「"+str(last_legen_card.rewardContent)+"」")
+                else:
+                    limit_legen_card_intermit_config[x][2] = 0
+            # 如果没抽到
+            else:
+                if limit_legen_card_intermit_config[x][2] >= limit_legen_card_intermit_config[x][1]:
+                    #强行使得最终奖励为其
+
+                    print("超过 「" + str(x) + "」的最大限制")
+
+                    for card in legendary_cards_rewards:
+
+                        card_reward = card.rewardContent
+                        if str(card_reward) == str(x):
+                            print("找到特定杆")
+                            last_legen_card = card
+                    if last_legen_card == None:
+                        print("未能在奖励库中找到特定杆")
+
+                    limit_legen_card_intermit_config[x][2] = 0
+
+
+
+    '''日志-遍历一遍字典'''
+    #for x in limit_legen_card_intermit_config.keys():
+        #print("奖励限制=" + str(x)+ " value =" + str(limit_legen_card_intermit_config[x]))
+
+
+    '''前x轮必然出现某杆'''
+    if limit_early_compose_config_lock:
+        #与大小火逻辑的实现方式一致
+        for x in limit_early_compose_config.keys():
+            if limit_early_compose_config[x][2] < limit_early_compose_config[x][1]:
+                flag = limit_early_compose_config[x][0] - limit_early_compose_config[x][1] + limit_early_compose_config[x][2]
+                if(refresh_time == (flag + 1)):
+                    #强行使得奖励设置为此
+                    print("触发逻辑：前"+str(limit_early_compose_config[x][0]) + "轮必然出现"+ str(limit_early_compose_config[x][1]) +"个"+"「" + str(x) + "」")
+                    limit_early_compose_config[x][2] = 0
+                    for card in legendary_cards_rewards:
+                        card_reward = card.rewardContent
+                        if str(card_reward) == str(x):
+                            print("找到特定杆")
+                            last_legen_card = card
+                    if last_legen_card == None:
+                        print("未能在奖励库中找到特定杆")
+
+    if last_legen_card != None:
+        for x in range(len(input_rewards)):
+            if input_rewards[x].level == 4:
+                input_rewards[x] = last_legen_card
+            print("传奇卡奖励被替换为: {" + str(last_legen_card.rewardContent) + "}")
+
+
+    string_print = "本次经过限制的奖励组合 = "
+    for x in input_rewards:
+        string_print = string_print + " [" + str(x.rewardContent) + "]"
+    print(string_print)
+
+
+    return input_rewards
+
+
+
 
 
 ''' 更新宏观参数 - > 更新 keep_fire1 and keep_fire2 '''
@@ -621,38 +714,6 @@ def updateFire2():
             if keep_fires == False:
                 keep_fire1 = False
                 keep_fire2 = False
-
-
-    '''
-    now_legendary_location = 0
-
-    # 确定传奇卡奖励位置
-    # 大火判定
-    if now_fire2_num < fire2_full:
-
-        # 小火判定
-        random_mid_location = randomRank_by_Fire(now_fire1_num)
-        if random_mid_location != 0:
-            # 小火随到中档
-            now_legendary_location = random_mid_location
-            # 小火值归零
-            now_fire1_num = 0.0
-            # 大火值 add
-            now_fire2_num = now_fire2_num + once_fire2_add
-        else:
-            # 小火未随到中档，随小档
-            now_legendary_location = random.choice(low_group_ranks)
-        print("传奇卡位置 =" + str(now_legendary_location+1) )
-
-    else:
-        # 随机到高档
-        now_legendary_location = random.choice(high_group_ranks)
-
-        # 大火值高归零
-        now_fire2_num = 0.0
-
-    return now_legendary_location
-    '''
 
 ''' 
 keep_fire1 and keep_fire2 决定档位 
@@ -1012,10 +1073,11 @@ class MyWindow(QMainWindow):
         self.resetTurnCardsTime()
 
         cards_group = refresh_rewards()
+        cards_group_adjust = limitedGroup(cards_group)
         updateFire2()
         KeepFire1andFire2()
         legen_location = ExtraFireLogic()
-        self.cardsSequence_list = cardsSquence(cards_group, legen_location)
+        self.cardsSequence_list = cardsSquence(cards_group_adjust, legen_location)
         self.resetAllCardBtn()
         self.refreshAlldata_show()
 
@@ -1352,4 +1414,5 @@ def window():
     sys.exit(app.exec())
 
 window()
+
 

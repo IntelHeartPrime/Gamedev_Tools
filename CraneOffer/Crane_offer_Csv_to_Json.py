@@ -48,3 +48,4 @@ with open("Crane_offer_tickets_rewards.json", "w") as json_file:
             json_file.write(json_str)
         json_file.write("\r")
 
+
