@@ -25,11 +25,11 @@ fire2_time_limit = [5, 2]
 limit_legen_card_card = True
 # 配置必须x次出现的配置，以及隔y次出现的逻辑 , 在刷新环节就进行运算的
 # 第三位记录目前此杆出现的次数
-limit_legen_card_intermit_config = {"鲸鱼*1": [2, 5, 0], "蝙蝠*1": [2, 4, 0]}
+limit_legen_card_intermit_config = {"鲸鱼杆": [2, 5, 0], "蝙蝠杆": [2, 4, 0]}
 
 limit_early_compose_config_lock = True
 #第三位记录目前此杆出现的次数 【0】前x轮 【1】必出现y次
-limit_early_compose_config = {"鲸鱼*1": [1, 1, 0]}
+limit_early_compose_config = {"鲸鱼杆": [1, 1, 0]}
 
 
 # 前n次必走专配组合
@@ -184,42 +184,69 @@ ball = 5
 coin = 3
 
 '''
-# 逐行读取，依据type将其分配到不同奖励List内
+# 从配置文件 Excel 中读取配置
+def readRewardConfigXls():
 
-def readRewardConfigCsv():
-    with open(csv_file_path) as f:
-        f_csv = csv.reader(f)
-        index = 0
-        for row in (f_csv):
-            index = index + 1
-            if index>1:
+    from openpyxl import load_workbook
+    wb = load_workbook("翻卡礼包数值规划.xlsx")
+    ws = wb.active
+
+    '''
+    row >=3
+    
+    chapter1 col 1 to 6
+    chapter2 col 7 to 12
+    chapter3 col 13 to 18
+    chapter4 col 19 to 24
+    
+    '''
+    row_start = 3
+    row_end = 100
+
+    lv4 = [1,6]
+    lv3 = [7,12]
+    lv2 = [13,18]
+    lv1 = [19,24]
+
+    lvs = [lv4, lv3, lv2, lv1]
+    for chapter in lvs:
+        for row in range(row_start, row_end):
+            if ws.cell(row, chapter[0]).value != None and ws.cell(row, chapter[0]).value != "":
                 reward_unit = RewardUnit()
-                reward_unit.rewardContent = row[0]
-                reward_unit.num = float(row[1])
-                reward_unit.weight = float(row[2])
-                reward_unit.level = int(row[3])
-                reward_unit.value = float(row[4])
-                reward_unit.lock = False
+                unit_type = None
+                for col in range(chapter[0], chapter[1]+1):
+                        if ws.cell(2,col).value == "名称":
+                            reward_unit.rewardContent = ws.cell(row, col).value
+                        if ws.cell(2,col).value == "数量":
+                            reward_unit.num = ws.cell(row, col).value
+                        if ws.cell(2,col).value == "权重":
+                            reward_unit.weight = ws.cell(row, col).value
+                        if ws.cell(2,col).value == "价值":
+                            reward_unit.value = ws.cell(row, col).value
+                        if ws.cell(2,col).value == "等级":
+                            reward_unit.level = ws.cell(row, col).value
+                        if ws.cell(2,col).value == "类型":
+                            unit_type = ws.cell(row,col).value
 
-                rewardType = int(row[5])
-                if rewardType == 44:
+                reward_unit.lock = False
+                if unit_type == 44:
                     legendary_cards_rewards.append(reward_unit)
-                if rewardType == 43:
+                if unit_type == 43:
                     epic_cards_rewards.append(reward_unit)
-                if rewardType == 42:
+                if unit_type == 42:
                     rare_cards_rewards.append(reward_unit)
-                if rewardType == 41:
+                if unit_type == 41:
                     common_cards_rewards.append(reward_unit)
-                if rewardType == 2:
+                if unit_type == 2:
                     diamonds_rewards.append(reward_unit)
-                if rewardType == 5:
+                if unit_type == 5:
                     ball_rewards.append(reward_unit)
-                if rewardType == 3:
+                if unit_type == 3:
                     coin_rewards.append(reward_unit)
 
 
 # 操作-读取配置
-readRewardConfigCsv()
+readRewardConfigXls()
 
 # 构建奖励类
 lengen_rewards_class = RewardRandom("lengendary", legendary_cards_rewards)
@@ -256,7 +283,7 @@ for legendary_lv in [4]:
     legen_unit = [legendary_lv, 4, 4]
     for diamond_lv in [3]:
         diamond_unit = [diamond_lv, 2, 0]
-        for epic_lv in [1,2,3]:
+        for epic_lv in [2,3]:
             epic_unit = [epic_lv, 4, 3]
             for ball_lv1 in [1, 2, 3]:
                 ball_unit1 = [ball_lv1, 5, 0]
@@ -477,6 +504,17 @@ def tool_getNextTurnDiamondsNum(now_index):
         result =" - "
     return result
 
+# 工具函数 根据输入的函数得到 now_probability
+def getNowProbability(fire_value):
+
+    global now_probability_num
+    probability_index = tool_getlistindex(fire_value, fire1_list)
+    if probability_index != None:
+        probability = probability_list[probability_index]
+        now_probability_num = probability
+        return now_probability_num
+    else:
+        return 0
 
 # 随机函数 - 根据Fire1值随机出档位以及具体的Location
 def randomRank_by_Fire(fire_value):
@@ -487,14 +525,11 @@ def randomRank_by_Fire(fire_value):
 
     global now_probability_num
 
-    probability = 0.0
 
-    probability_index = tool_getlistindex(fire_value, fire1_list)
-    if probability_index != None:
-        probability = probability_list[probability_index]
-        now_probability_num = probability
+    getNowProbability(fire_value)
+
     random_result = random.random()
-    if random_result <= probability:
+    if random_result <= now_probability_num:
         # 随机到中等档位
         location = random.choice(mid_group_ranks)
         return location
@@ -511,10 +546,14 @@ def refresh_rewards():
     global now_consumedDiamonds_num
     global now_turnDiamonds_num
 
+    print("之前小火值 = " + str(now_fire1_num))
+
     # 更新小火值
     now_refreshDiamonds_num =  tool_getvalue(refresh_time, refresh_diamonds_list)
     refresh_time = refresh_time + 1
-    now_fire1_num = now_fire1_num + now_refreshDiamonds_num * money_rate + refresh_add
+    now_fire1_num = now_fire1_num + now_refreshDiamonds_num * refresh_rate + refresh_add
+
+    print("刷新后小火值 = " + str(now_fire1_num))
 
     # 更新消耗的钻石总量
     now_consumedDiamonds_num = now_consumedDiamonds_num + now_refreshDiamonds_num
@@ -692,7 +731,7 @@ def limitedGroup(input_rewards):
         for x in range(len(input_rewards)):
             if input_rewards[x].level == 4:
                 input_rewards[x] = last_legen_card
-            print("传奇卡奖励被替换为: {" + str(last_legen_card.rewardContent) + "}")
+                print("传奇卡奖励被替换为: {" + str(last_legen_card.rewardContent) + "}")
 
 
     string_print = "本次经过限制的奖励组合 = "
@@ -721,6 +760,7 @@ def updateFire2():
     # 小火判定
     if keep_fire2 == False:
         random_mid_location = randomRank_by_Fire(now_fire1_num)
+        print("random_mid_location = " + str(random_mid_location))
         if random_mid_location != 0:
             # 小火随到中档
 
@@ -732,6 +772,7 @@ def updateFire2():
             keep_fire2 = False
             keep_fire1 = True
 
+            print("【触发小火！】")
             # 大火判定
             if now_fire2_num >= fire2_full:
                 keep_fire1 = False
@@ -739,6 +780,8 @@ def updateFire2():
                 now_fire2_num = 0.0
 
                 now_time_fire2 = now_time_fire2 + 1
+
+                print("【小火晋升到大火】！")
 
         else:
             # 小火未随到中档，随小档
@@ -771,6 +814,7 @@ def ExtraFireLogic():
     global refresh_time
     global now_time_fire2
     global keep_fire2
+    global keep_fire1
 
 
     # 前 x 次 必有 y次大火
@@ -780,8 +824,11 @@ def ExtraFireLogic():
             flag = fire2_time_limit[0] - fire2_time_limit[1] + now_time_fire2
             if (refresh_time == (flag + 1)):
                   # 设置为大火
+                keep_fire1 = False
                 keep_fire2 = True
                 now_time_fire2 = now_time_fire2 + 1
+                now_time_group_rank = 1
+                print("【强制设置为大火！】")
 
     if now_time_group_rank == 1:
         return random.choice(high_group_ranks)
@@ -839,6 +886,7 @@ def turnCard(cardsSequence_list, index):
     global now_turnDiamonds_num
     global now_consumedDiamonds_num
     global now_fire1_num
+    global now_probability_num
 
     # 确定本次抽卡钻石消耗
     now_turnDiamonds_num = tool_getvalue(index, turn_diamonds_list)
@@ -847,6 +895,10 @@ def turnCard(cardsSequence_list, index):
 
     # 更新小火值
     now_fire1_num = now_fire1_num + overturn_add + now_turnDiamonds_num*overturn_card_diam_rate
+
+    # 更新概率值
+    getNowProbability(now_fire1_num)
+
 
     # 返回本次抽卡 RewardUnit
     return cardsSequence_list[index]
@@ -1134,7 +1186,15 @@ class MyWindow(QMainWindow):
 
 
     def rechargeBtnEvent(self):
-        print(self.recharge_input.text())
+        global now_fire1_num
+        global now_rechargedMoney_num
+        recharge_input_num = int(self.recharge_input.text())
+        print(str(recharge_input_num))
+        if recharge_input_num > 0:
+            now_rechargedMoney_num = now_rechargedMoney_num + recharge_input_num
+            now_fire1_num = now_fire1_num + recharge_input_num * money_rate
+
+            getNowProbability(now_fire1_num)
 
         self.refreshAlldata_show()
 
