@@ -7,6 +7,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QDesktopWidget
 from PyQt5.QtGui import QIcon, QFont
 
 import sys, csv
+import ReadComposeConfig
 
 ''' 逻辑开关配置'''
 keep_fires = True
@@ -30,6 +31,11 @@ limit_early_compose_config_lock = True
 #第三位记录目前此杆出现的次数 【0】前x轮 【1】必出现y次
 limit_early_compose_config = {"鲸鱼*1": [1, 1, 0]}
 
+
+# 前n次必走专配组合
+limit_early_compose = True
+limit_early_compose_time_count = 5
+
 ''' 参数配置 '''
 
 # 低中高档区间
@@ -38,15 +44,15 @@ mid_group_ranks = [3, 4, 5]
 high_group_ranks = [1, 2]
 
 # 小火与概率  {小火配置序列需概率配置序列同长度}
-fire1_list = [1,10,20,30,50,100,160,300]
-probability_list = [0.01,0.02,0.03,0.04,0.05,0.06,0.07,0.08]
+fire1_list = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95]
+probability_list = [0.05,0.06,0.07,0.08,0.09,0.1,0.11,0.12,0.13,0.14,0.15,0.16,0.17,0.18,0.19,0.2,0.21,0.22,0.23,0.24,0.25,0.26,0.27,0.28,0.29,0.3,0.31,0.32,0.33,0.34,0.35,0.36,0.37,0.38,0.39,0.4,0.41,0.42,0.43,0.44,0.45,0.46,0.47,0.48,0.49,0.5,0.51,0.52,0.53,0.54,0.55,0.56,0.57,0.58,0.59,0.6,0.61,0.62,0.63,0.64,0.65,0.66,0.67,0.68,0.69,0.7,0.71,0.72,0.73,0.74,0.75,0.76,0.77,0.78,0.79,0.8,0.81,0.82,0.83,0.84,0.85,0.86,0.87,0.88,0.89,0.9,0.91,0.92,0.93,0.94,0.95,0.96,0.969999999999999,0.979999999999999,0.99,1]
 
 # 小火参数
-money_rate = 0.01
-refresh_rate = 0.01
-refresh_add = 0.01
-overturn_card_diam_rate = 0.01
-overturn_add = 0.003
+money_rate = 0.6
+refresh_rate = 0.008163265
+refresh_add = 2
+overturn_card_diam_rate = 0.006467662
+overturn_add = 1
 
 # 大火参数
 once_fire2_add = 0.5
@@ -58,8 +64,13 @@ fire1_origin = 0.0
 fire2_origin = 0.0
 
 # 钻石消耗配置
-refresh_diamonds_list = range(100,200)
-turn_diamonds_list = [100,200,300,400,500,600,700,800,900]
+refresh_diamonds_list = [90,190,290,390,490,590,690,790,890,990]
+turn_diamonds_list = [90,190,290,490,590,690,790,890,990]
+
+# 普通组合权重
+simple_compose_weight = 50
+# 早起组合权重
+early_compose_weight = 5
 
 '''
 
@@ -282,31 +293,37 @@ for legendary_lv in [4]:
 
 
 '''初始配置组合'''
-origin_compose_list = []
+early_compose_list = []
+if limit_early_compose:
+    early_compose_list = ReadComposeConfig.readEarlyConfig()
 
-''' 将对象输出到csv的类'''
-class AvailableComposetoCsv():
-    def __init__(self):
-        self.csv_file_name = "Avaiable_compose.csv"
-    def print2csv(self, lists):
-        # 定义csv格式 - 「 csv
-        print("")
 
-''' 读取csv 转化为 list 与 json 的类'''
 
 '''将对象输出到json的类'''
 class AvailableComposetoJson():
-    def __init__(self):
+    def __init__(self, simple_weight, early_weight,ifLimitEarly):
         self.json_file_name = "Available_compose.json"
-    def print2Json(self, lists):
+        self.simple_weight = simple_weight
+        self.early_weight = early_weight
+        self.ifLimitEarly= ifLimitEarly
+
+    def print2Json(self, lists, early_lists):
         json_dict_list = []
         for row in lists:
             new_dict = {
                 "reward_conf": row,
-                "weight": 50,
+                "weight": self.simple_weight,
                 "allow_first_round": False
             }
             json_dict_list.append(new_dict)
+        if self.ifLimitEarly:
+            for row in early_lists:
+                new_dict = {
+                    "reward_conf": row,
+                    "weight": self.early_weight,
+                    "allow_first_round": True
+                }
+                json_dict_list.append(new_dict)
 
         with open(self.json_file_name,"w") as json_file:
             index = 0
@@ -320,6 +337,7 @@ class AvailableComposetoJson():
                 json_file.write("\r")
 
 
+
 # 打印 available_composes
 print(" all available compose： ")
 for x in available_composes:
@@ -327,18 +345,22 @@ for x in available_composes:
 
     ''' 将 available 写入到 json 中 '''
 
-toJson = AvailableComposetoJson()
-toJson.print2Json(available_composes)
+toJson = AvailableComposetoJson(simple_compose_weight,early_compose_weight,limit_early_compose)
+toJson.print2Json(available_composes,early_compose_list)
 
 
 print("")
 
 
-
-# 权重list
+# 初始组合权重list
 available_composes_weight = []
 for x in range(len(available_composes)):
-    available_composes_weight.append(10)
+    available_composes_weight.append(simple_compose_weight)
+
+# 早期组合权重list
+early_weight_list = []
+for x in range(len(early_compose_list)):
+    early_weight_list.append(early_compose_weight)
 
 
 # 将available_compose 输出为可用格式： lv:rewardType, lv:rewardType, ....
@@ -509,9 +531,20 @@ def refresh_rewards():
     '''
     # 根据限制条件筛选组合库
 
+    '''
+    前x个回合从指定组合中随机
+    '''
 
-    # 根据权重获取配置模式
-    random_compose_list = random.choices(available_composes, weights = available_composes_weight, k = 1)
+    random_compose_list = []
+
+    if limit_early_compose:
+        if refresh_time <= limit_early_compose_time_count:
+            random_compose_list = random.choices(early_compose_list, weights= early_weight_list, k =1)
+            print (" [ !!! early compose ]")
+        else:
+            # 根据权重获取配置模式
+            random_compose_list = random.choices(available_composes, weights = available_composes_weight, k = 1)
+
     random_compose = random_compose_list[0]
     print("本次refresh组合id = " + str(refresh_time)+ "组合 = " + str(random_compose))
 
@@ -669,8 +702,6 @@ def limitedGroup(input_rewards):
 
 
     return input_rewards
-
-
 
 
 
@@ -1131,7 +1162,7 @@ class MyWindow(QMainWindow):
         self.turnCards_time = self.turnCards_time + 1
         card = turnCard(self.cardsSequence_list, self.turnCards_time)
         print("抽第 " + str(self.turnCards_time+1) +" 张卡 "+ " 奖励 = " + str(card.rewardContent) + " 价值 = " + str(card.value) + "稀有度 = " + str(card.level))
-        self.CardBtn1.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n" + (card.rewardContent))
+        self.CardBtn1.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n \n" + (card.rewardContent) + "\n" + str(int(card.num)))
 
         self.SetColorbylevel(self.CardBtn1, card.level)
         self.CardBtn1.setDisabled(True)
@@ -1156,7 +1187,7 @@ class MyWindow(QMainWindow):
         self.turnCards_time = self.turnCards_time + 1
         card = turnCard(self.cardsSequence_list, self.turnCards_time)
         print("抽第 " + str(self.turnCards_time+1) +" 张卡 "+ " 奖励 = " + str(card.rewardContent) + " 价值 = " + str(card.value))
-        self.CardBtn2.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n" + (card.rewardContent))
+        self.CardBtn2.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n \n" + (card.rewardContent) + "\n" + str(int(card.num)))
         self.SetColorbylevel(self.CardBtn2, card.level)
         self.CardBtn2.setDisabled(True)
 
@@ -1180,7 +1211,7 @@ class MyWindow(QMainWindow):
         self.turnCards_time = self.turnCards_time + 1
         card = turnCard(self.cardsSequence_list, self.turnCards_time)
         print("抽第 " + str(self.turnCards_time+1) +" 张卡 "+ " 奖励 = " + str(card.rewardContent) + " 价值 = " + str(card.value))
-        self.CardBtn3.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n" + (card.rewardContent))
+        self.CardBtn3.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n \n" + (card.rewardContent) + "\n" + str(int(card.num)))
         self.SetColorbylevel(self.CardBtn3, card.level)
         self.CardBtn3.setDisabled(True)
 
@@ -1204,7 +1235,7 @@ class MyWindow(QMainWindow):
         self.turnCards_time = self.turnCards_time + 1
         card = turnCard(self.cardsSequence_list, self.turnCards_time)
         print("抽第 " + str(self.turnCards_time+1) +" 张卡 "+ " 奖励 = " + str(card.rewardContent) + " 价值 = " + str(card.value))
-        self.CardBtn4.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n" + (card.rewardContent))
+        self.CardBtn4.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n \n" + (card.rewardContent) + "\n" + str(int(card.num)))
         self.SetColorbylevel(self.CardBtn4, card.level)
         self.CardBtn4.setDisabled(True)
 
@@ -1228,7 +1259,7 @@ class MyWindow(QMainWindow):
         self.turnCards_time = self.turnCards_time + 1
         card = turnCard(self.cardsSequence_list, self.turnCards_time)
         print("抽第 " + str(self.turnCards_time+1) +" 张卡 "+ " 奖励 = " + str(card.rewardContent) + " 价值 = " + str(card.value))
-        self.CardBtn5.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n" + (card.rewardContent))
+        self.CardBtn5.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n \n" + (card.rewardContent) + "\n" + str(int(card.num)))
         self.SetColorbylevel(self.CardBtn5, card.level)
         self.CardBtn5.setDisabled(True)
 
@@ -1252,7 +1283,7 @@ class MyWindow(QMainWindow):
         self.turnCards_time = self.turnCards_time + 1
         card = turnCard(self.cardsSequence_list, self.turnCards_time)
         print("抽第 " + str(self.turnCards_time+1) +" 张卡 "+ " 奖励 = " + str(card.rewardContent) + " 价值 = " + str(card.value))
-        self.CardBtn6.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n" + (card.rewardContent))
+        self.CardBtn6.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n \n" + (card.rewardContent) + "\n" + str(int(card.num)))
         self.SetColorbylevel(self.CardBtn6, card.level)
         self.CardBtn6.setDisabled(True)
 
@@ -1276,7 +1307,7 @@ class MyWindow(QMainWindow):
         self.turnCards_time = self.turnCards_time + 1
         card = turnCard(self.cardsSequence_list, self.turnCards_time)
         print("抽第 " + str(self.turnCards_time+1) +" 张卡 "+ " 奖励 = " + str(card.rewardContent) + " 价值 = " + str(card.value))
-        self.CardBtn7.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n" + (card.rewardContent))
+        self.CardBtn7.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n \n " + (card.rewardContent) + "\n" + str(int(card.num)))
         self.SetColorbylevel(self.CardBtn7, card.level)
         self.CardBtn7.setDisabled(True)
 
@@ -1300,7 +1331,7 @@ class MyWindow(QMainWindow):
         self.turnCards_time = self.turnCards_time + 1
         card = turnCard(self.cardsSequence_list, self.turnCards_time)
         print("抽第 " + str(self.turnCards_time+1) +" 张卡 "+ " 奖励 = " + str(card.rewardContent) + " 价值 = " + str(card.value))
-        self.CardBtn8.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n" + (card.rewardContent))
+        self.CardBtn8.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n \n" + (card.rewardContent) + "\n" + str(int(card.num)))
         self.SetColorbylevel(self.CardBtn8, card.level)
         self.CardBtn8.setDisabled(True)
 
@@ -1324,7 +1355,7 @@ class MyWindow(QMainWindow):
         self.turnCards_time = self.turnCards_time + 1
         card = turnCard(self.cardsSequence_list, self.turnCards_time)
         print("抽第 " + str(self.turnCards_time+1) +" 张卡 "+ " 奖励 = " + str(card.rewardContent) + " 价值 = " + str(card.value))
-        self.CardBtn9.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n" + (card.rewardContent))
+        self.CardBtn9.setText("第" + str(self.turnCards_time+1) + "张卡 ：\n \n " + (card.rewardContent) + "\n" + str(int(card.num)))
         self.SetColorbylevel(self.CardBtn9, card.level)
         self.CardBtn9.setDisabled(True)
 
