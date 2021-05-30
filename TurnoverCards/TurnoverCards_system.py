@@ -49,9 +49,9 @@ probability_list = [0.05,0.06,0.07,0.08,0.09,0.1,0.11,0.12,0.13,0.14,0.15,0.16,0
 
 # 小火参数
 money_rate = 0.6
-refresh_rate = 0.008163265
+refresh_rate = 0.01
 refresh_add = 2
-overturn_card_diam_rate = 0.006467662
+overturn_card_diam_rate = 0.007
 overturn_add = 1
 
 # 大火参数
@@ -64,8 +64,8 @@ fire1_origin = 0.0
 fire2_origin = 0.0
 
 # 钻石消耗配置
-refresh_diamonds_list = [90,190,290,390,490,590,690,790,890,990]
-turn_diamonds_list = [90,190,290,490,590,690,790,890,990]
+refresh_diamonds_list = [60,100,160,260,360,460,560,660,760]
+turn_diamonds_list = [60,100,160,260,360,460,560,660,760]
 
 # 普通组合权重
 simple_compose_weight = 50
@@ -829,6 +829,7 @@ def ExtraFireLogic():
                 now_time_fire2 = now_time_fire2 + 1
                 now_time_group_rank = 1
                 print("【强制设置为大火！】")
+                now_fire2_num = 0
 
     if now_time_group_rank == 1:
         return random.choice(high_group_ranks)
@@ -1504,6 +1505,110 @@ def window():
     win.show()
     sys.exit(app.exec())
 
-window()
 
+
+
+# 每次刷新必然翻卡，翻到传奇卡后再刷新
+
+'''汇总值'''
+lowRankTimes = 0
+fire1Times = 0
+fire2Times = 0
+
+Values_consume = 0
+Values_get = 0
+
+def RunMutipleTimes( run_times ):
+    # 要输出的指标
+    # 获得的价值/消耗的价值 总值
+    # 获得的小火数量/总次数 总值
+    # 获得的大火数量/总次数 总量
+    # 传奇卡名称，传奇卡位置 每一次
+
+    global Values_get
+    global Values_consume
+
+    global fire1Times
+    global fire2Times
+    global lowRankTimes
+
+    global keep_fires
+    global keep_fire1
+    global keep_fire2
+
+    nowTimeValuesGet = 0
+    nowTimeValuesConsumed = 0
+
+    for index in range(run_times):
+        print("")
+        print(" ---------------- 1次刷新 ---------------- ")
+        '''钻石消耗添加刷新项'''
+        # refreshDiamonds = tool_getvalue(index, refresh_diamonds_list)
+        # Values_consume = Values_consume + refreshDiamonds
+
+        ''' 奖励组合 '''
+        cards_group = refresh_rewards()
+        cards_group_adjust = limitedGroup(cards_group)
+        updateFire2()
+        KeepFire1andFire2()
+        legen_location = ExtraFireLogic()
+        cardsSequence_list = cardsSquence(cards_group_adjust, legen_location)
+        ''' 奖励组合 '''
+
+        '''判断大小火'''
+        if legen_location in low_group_ranks:
+            print("【"+" 无火 " + " 传奇卡位置 ： " + str(legen_location) + "】")
+            lowRankTimes = lowRankTimes + 1
+        elif legen_location in mid_group_ranks:
+            print("【"+"小火" + " 传奇卡位置 ： " + str(legen_location)+"】")
+            fire1Times = fire1Times + 1
+        elif legen_location in high_group_ranks:
+            print("【"+"大火" + " 传奇卡位置 ： " + str(legen_location)+"】")
+            fire2Times = fire2Times + 1
+
+        ''' 开始翻卡 '''
+        index = 0
+        for x in cardsSequence_list:
+            nowTimeValuesGet = nowTimeValuesGet + x.value
+            nowTimeValuesConsumed = nowTimeValuesConsumed + turn_diamonds_list[index]
+
+            Values_get = Values_get + x.value
+            Values_consume = Values_consume + turn_diamonds_list[index]
+            index = index + 1
+            if x.level == 4:
+                print("【"+"本次抽到传奇卡： " + str(x.rewardContent)+"】")
+                print("本次获得价值 = "+str(nowTimeValuesGet) + "  本次赔率 = " + str(nowTimeValuesGet/nowTimeValuesConsumed))
+                if keep_fires:
+                    if keep_fire2:
+                        keep_fire2 = False
+                    if keep_fire1:
+                        keep_fire1 = False
+                break
+
+        nowTimeValuesGet = 0
+        nowTimeValuesConsumed = 0
+        ''' 翻到传奇卡停止 '''
+
+    # 输出总报告
+    print("")
+    print(" TOTALL:")
+    print(" Diamonds got/consumed = " + str(Values_get/Values_consume))
+    print("Fire1Times = " + str(fire1Times))
+    print("Fire2Times = " + str(fire2Times))
+
+    print(" runTimes/Fire1Times = " + str(run_times/fire1Times))
+    print(" runTimes/Fire2Times = " + str(run_times/fire2Times))
+    print(" runTimes/FIRETIMES =" + str(run_times/(fire1Times+fire2Times)))
+    print("")
+    print("设计指标 LOWRANKTIMES/FIRE1TIMES =" + str(lowRankTimes/(fire1Times)))
+
+# 输出N次模拟数据 - 存储于Csv中
+ifReport = False
+
+run_times = 5
+
+if ifReport == False:
+    window()
+else:
+    RunMutipleTimes(run_times)
 
