@@ -19,17 +19,18 @@ keep_fires = True
 # 玩家钻石存量< n 时，有q%的概率在每轮开卡的前M次开出钻石
 
 # 前x次必有y次大火
-fire2_time_limit_lock = True
-fire2_time_limit = [5, 2]
+fire2_time_limit_lock = False
+fire2_time_limit = [5, 1]
 
 limit_legen_card_card = True
 # 配置必须x次出现的配置，以及隔y次出现的逻辑 , 在刷新环节就进行运算的
 # 第三位记录目前此杆出现的次数
-limit_legen_card_intermit_config = {"鲸鱼杆": [2, 5, 0], "蝙蝠杆": [2, 4, 0]}
+limit_legen_card_intermit_config = { "蝙蝠杆": [3, 10, 0],"红雀杆":[1,8,0]}
+good_cards = ["鲸鱼杆","凤凰杆","蝙蝠杆","红雀杆"]
 
 limit_early_compose_config_lock = True
 #第三位记录目前此杆出现的次数 【0】前x轮 【1】必出现y次
-limit_early_compose_config = {"鲸鱼杆": [1, 1, 0]}
+limit_early_compose_config = {"蝙蝠杆": [1, 1, 0]}
 
 
 # 前n次必走专配组合
@@ -64,8 +65,8 @@ fire1_origin = 0.0
 fire2_origin = 0.0
 
 # 钻石消耗配置
-refresh_diamonds_list = [60,100,160,260,360,460,560,660,760]
-turn_diamonds_list = [60,100,160,260,360,460,560,660,760]
+refresh_diamonds_list = [0,60,120,180,240,300,360,420,480,540,600]
+turn_diamonds_list = [90,190,290,390,490,590,690,790,890]
 
 # 普通组合权重
 simple_compose_weight = 50
@@ -585,7 +586,7 @@ def refresh_rewards():
             random_compose_list = random.choices(available_composes, weights = available_composes_weight, k = 1)
 
     random_compose = random_compose_list[0]
-    print("本次refresh组合id = " + str(refresh_time)+ "组合 = " + str(random_compose))
+    print("第 【" + str(refresh_time) +"】次刷新 "+ "组合 = " + str(random_compose))
 
     # 随机出所有奖励
 
@@ -645,6 +646,33 @@ def refresh_rewards():
     return output_rewards
 
 
+def reRandomACard(input_card):
+
+    # 是否在判定区内
+    # 判定 input_card 是否符合要求
+    for x in limit_legen_card_intermit_config.keys():
+        if x == input_card.rewardContent:
+            # 证明有判定的必要
+            if (limit_legen_card_intermit_config[x][2] >= limit_legen_card_intermit_config[x][0]) and (limit_legen_card_intermit_config[x][2] <= limit_legen_card_intermit_config[x][1]):
+                # 符合要求，奖值归0
+                limit_legen_card_intermit_config[x][2] = 0
+                return input_card
+            else:
+                weight_list = []
+                for x in legendary_cards_rewards:
+                    weight_list.append(x.weight)
+                new_card = random.choices(legendary_cards_rewards,weight_list,k=1)[0]
+                print("『「『" + str(input_card.rewardContent) + " 也不符合要求，再随机为 " + str(new_card.rewardContent) + "』」』")
+                return reRandomACard(new_card)
+
+    # 符合，return
+        # 不符合 重新随机
+            # 重新随机的卡reRandom 判定
+
+    # 不在判定区内，直接return
+    return input_card
+
+
 ''' 补充功能 - 对传奇卡和稀有度的限制 '''
 def limitedGroup(input_rewards):
     # 对传奇卡的限制
@@ -667,10 +695,12 @@ def limitedGroup(input_rewards):
     last_legen_card = None
 
     if limit_legen_card_card:
+
+        # 先把间隔值全部计算一遍
         for x in limit_legen_card_intermit_config.keys():
-            # 计算间隔值
             limit_legen_card_intermit_config[x][2] = limit_legen_card_intermit_config[x][2] + 1
 
+        for x in limit_legen_card_intermit_config.keys():
             # 如果抽到了
             if x == legen_name:
                 if limit_legen_card_intermit_config[x][2] <= limit_legen_card_intermit_config[x][0]:
@@ -680,8 +710,17 @@ def limitedGroup(input_rewards):
                         if card.rewardContent != x:
                             cache_pool.append(card)
                     # 重新随机
-                    last_legen_card = random.choice(cache_pool)
+                    weight_list = []
+                    for x in cache_pool:
+                        weight_list.append(x.weight)
+
+                    last_legen_card_cache= random.choices(cache_pool,weight_list,k=1)
+                    last_legen_card = reRandomACard(last_legen_card_cache[0])
                     print("超过 「" + str(x) + "」的最小限制"+" 再随机奖励为 「"+str(last_legen_card.rewardContent)+"」")
+                    # 这里需要一个循环机制
+                    # 关键是再随机的随机之后要再进行一次判定
+                    break
+
                 else:
                     limit_legen_card_intermit_config[x][2] = 0
             # 如果没抽到
@@ -701,6 +740,8 @@ def limitedGroup(input_rewards):
                         print("未能在奖励库中找到特定杆")
 
                     limit_legen_card_intermit_config[x][2] = 0
+
+                    break
 
 
 
@@ -724,6 +765,11 @@ def limitedGroup(input_rewards):
                         if str(card_reward) == str(x):
                             print("找到特定杆")
                             last_legen_card = card
+
+                            # 再判断此杆是否在次数限制杆中，是则清零之
+                            for card_name in limit_legen_card_intermit_config.keys():
+                                if last_legen_card.rewardContent == card_name:
+                                    limit_legen_card_intermit_config[card_name][2] = 0
                     if last_legen_card == None:
                         print("未能在奖励库中找到特定杆")
 
@@ -830,6 +876,14 @@ def ExtraFireLogic():
                 now_time_group_rank = 1
                 print("【强制设置为大火！】")
                 now_fire2_num = 0
+
+
+    # 第一次Fire
+    if refresh_time == 1:
+        print(" 第一次 - 设置为默认档位： " + str(default_group))
+        keep_fire1 = True
+        keep_fire2 = False
+        return random.choice(default_group)
 
     if now_time_group_rank == 1:
         return random.choice(high_group_ranks)
@@ -1518,7 +1572,16 @@ fire2Times = 0
 Values_consume = 0
 Values_get = 0
 
-def RunMutipleTimes( run_times ):
+good_cards_count = 0
+
+truth_refresh_time = 0
+
+good_cards_count_list = {}
+for x in good_cards:
+    good_cards_count_list.update({x:0})
+
+
+def RunMutipleTimes( run_times, ifOnlyGetGoodCard):
     # 要输出的指标
     # 获得的价值/消耗的价值 总值
     # 获得的小火数量/总次数 总值
@@ -1536,15 +1599,22 @@ def RunMutipleTimes( run_times ):
     global keep_fire1
     global keep_fire2
 
+    global good_cards_count
+
+    global truth_refresh_time
+
     nowTimeValuesGet = 0
     nowTimeValuesConsumed = 0
 
     for index in range(run_times):
         print("")
-        print(" ---------------- 1次刷新 ---------------- ")
+        print(" ---------------- 1次 ---------------- ")
+
+        truth_refresh_time = truth_refresh_time + 1
+
         '''钻石消耗添加刷新项'''
-        # refreshDiamonds = tool_getvalue(index, refresh_diamonds_list)
-        # Values_consume = Values_consume + refreshDiamonds
+        refreshDiamonds = tool_getvalue(index, refresh_diamonds_list)
+        Values_consume = Values_consume + refreshDiamonds
 
         ''' 奖励组合 '''
         cards_group = refresh_rewards()
@@ -1553,7 +1623,39 @@ def RunMutipleTimes( run_times ):
         KeepFire1andFire2()
         legen_location = ExtraFireLogic()
         cardsSequence_list = cardsSquence(cards_group_adjust, legen_location)
+
+        legen_card = ""
+        ''' 判断是否有好卡 '''
+        if ifOnlyGetGoodCard:
+
+            for card in cardsSequence_list:
+                if card.level == 4:
+                    legen_card = card.rewardContent
+
+            while (legen_card in good_cards) == False:
+                print("")
+                print("不是好卡，再随机一次")
+
+                truth_refresh_time = truth_refresh_time + 1
+
+                refreshDiamonds = tool_getvalue(index, refresh_diamonds_list)
+                Values_consume = Values_consume + refreshDiamonds
+
+                cards_group = refresh_rewards()
+                cards_group_adjust = limitedGroup(cards_group)
+                updateFire2()
+                KeepFire1andFire2()
+                legen_location = ExtraFireLogic()
+                cardsSequence_list = cardsSquence(cards_group_adjust, legen_location)
+
+                for card in cardsSequence_list:
+                    if card.level == 4:
+                        legen_card = card.rewardContent
+                print("")
+
         ''' 奖励组合 '''
+
+
 
         '''判断大小火'''
         if legen_location in low_group_ranks:
@@ -1583,6 +1685,16 @@ def RunMutipleTimes( run_times ):
                         keep_fire2 = False
                     if keep_fire1:
                         keep_fire1 = False
+
+                '''判断是否为好卡'''
+                for y in good_cards:
+                    if x.rewardContent == y:
+                        good_cards_count = good_cards_count + 1
+                        for card_name in good_cards_count_list.keys():
+                            if card_name == x.rewardContent:
+                                good_cards_count_list[card_name] = good_cards_count_list[card_name] + 1
+                        print("收获一枚好卡")
+                        break
                 break
 
         nowTimeValuesGet = 0
@@ -1591,24 +1703,49 @@ def RunMutipleTimes( run_times ):
 
     # 输出总报告
     print("")
-    print(" TOTALL:")
+    print("| ----------------TOTALL---------------- |")
     print(" Diamonds got/consumed = " + str(Values_get/Values_consume))
-    print("Fire1Times = " + str(fire1Times))
-    print("Fire2Times = " + str(fire2Times))
+    print(" Fire1Times = " + str(fire1Times))
+    print(" Fire2Times = " + str(fire2Times))
 
-    print(" runTimes/Fire1Times = " + str(run_times/fire1Times))
-    print(" runTimes/Fire2Times = " + str(run_times/fire2Times))
-    print(" runTimes/FIRETIMES =" + str(run_times/(fire1Times+fire2Times)))
     print("")
-    print("设计指标 LOWRANKTIMES/FIRE1TIMES =" + str(lowRankTimes/(fire1Times)))
+
+    if fire1Times>0:
+        print(" runTimes/Fire1Times = " + str(truth_refresh_time/fire1Times))
+    if fire2Times>0:
+        print(" runTimes/Fire2Times = " + str(truth_refresh_time/fire2Times))
+    if fire1Times>0 and fire2Times > 0:
+        print(" runTimes/FIRETIMES = " + str(truth_refresh_time/(fire1Times+fire2Times)))
+    if fire1Times>0:
+        print("")
+        print("设计指标 LOWRANKTIMES/FIRE1TIMES = " + str(lowRankTimes/(fire1Times)))
+
+    print("实际抽了 " + str(truth_refresh_time) + " 次")
+
+    if good_cards_count>0:
+        print("共抽到好卡 " + str(good_cards_count)+ " 枚")
+        print("抽到每张好卡平均消费的钻石 = " + str(Values_consume/good_cards_count))
+        print("平均每 "+ str(truth_refresh_time/good_cards_count) + " 次抽到1张好卡")
+        print("得到好卡的比率 = " + str(good_cards_count/truth_refresh_time))
+
+    print("")
+    print (good_cards_count_list)
+    for x in good_cards_count_list.keys():
+        if good_cards_count_list[x] > 0:
+            print(str(x)+ " 出现的频率为 " + str(truth_refresh_time/good_cards_count_list[x]) + " 次出现1张")
+
 
 # 输出N次模拟数据 - 存储于Csv中
-ifReport = False
+ifReport = True
 
-run_times = 5
+# 是否有好卡才抽
+ifOnlyGetGoodCard = True
+
+run_times = 1000
 
 if ifReport == False:
     window()
 else:
-    RunMutipleTimes(run_times)
+    RunMutipleTimes(run_times, ifOnlyGetGoodCard)
+
 
