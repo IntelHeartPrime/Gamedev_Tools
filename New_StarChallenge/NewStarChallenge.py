@@ -31,8 +31,9 @@ def getAllDaysStars():
     # 3 最高第二级玩家
     # 4 最高第三级玩家
 
+    '''胜率 = 1 的玩家 '''
 
-    times = [1, 1.25, 1.5, 1.75, 2]
+    times = [1, 1.5, 2]
     ''' 正常升级玩家 '''
 
     unlock_medium = 0
@@ -42,18 +43,27 @@ def getAllDaysStars():
     all_days_star = 0.0
     now_rank = "easy"
 
+    inter_flag = 0
+
     for t in range(len(times)):
         for x in range(1, 8):
             for y in range(int(day_tickets*times[t])):
+
                 once_star_get = 0
                 if now_rank == "easy":
                     once_star_get = easy_lv_star
                 elif now_rank == "medium":
                     once_star_get = medium_lv_star
                 elif now_rank == "hard":
-                    once_star_get = hard_lv_star
+                    inter_flag = inter_flag + 1
+                    if inter_flag == 2:
+                        once_star_get = hard_lv_star
+                        inter_flag = 0
                 elif now_rank == "nightmare":
-                    once_star_get = nightmare_lv_star
+                    inter_flag = inter_flag + 1
+                    if inter_flag == 2:
+                        once_star_get = nightmare_lv_star
+                        inter_flag = 0
 
                 if (all_days_star + once_star_get) >= easy_lock_star:
                     now_rank = "easy"
@@ -69,13 +79,12 @@ def getAllDaysStars():
                     now_rank = "nightmare"
                     if unlock_nightmare == 0:
                         unlock_nightmare = x
-
                 all_days_star = all_days_star + once_star_get
             print("today is " + str(x) + " all_star = " + str(all_days_star))
-            ws.cell(24+x, 2+t).value = all_days_star
-            ws.cell(25,9).value = unlock_medium
-            ws.cell(26,9).value = unlock_hard
-            ws.cell(27,9).value = unlock_hard
+            ws.cell(24+x, 2*(t+1)).value = all_days_star
+            ws.cell(25,10).value = unlock_medium
+            ws.cell(26,10).value = unlock_hard
+            ws.cell(27,10).value = unlock_nightmare
 
             wb.save("NewStarChallenge.xlsx")
         all_days_star = 0
@@ -95,7 +104,7 @@ def getAllDaysStars():
 
                     all_days_star = all_days_star + once_star_get
                 print("today is " + str(x) + " all_star = " + str(all_days_star))
-                ws.cell(33 + x, 2 + t).value = all_days_star
+                ws.cell(33 + x, 2*(t+1)).value = all_days_star
                 wb.save("NewStarChallenge.xlsx")
             all_days_star = 0
 
@@ -125,8 +134,8 @@ def getAllDaysStars():
 
                 all_days_star = all_days_star + once_star_get
             print("today is " + str(x) + " all_star = " + str(all_days_star))
-            ws.cell(42+x, 2+t).value = all_days_star
-            ws.cell(43,9).value = unlock_medium
+            ws.cell(42+x, 2*(t+1)).value = all_days_star
+            ws.cell(43,10).value = unlock_medium
 
             wb.save("NewStarChallenge.xlsx")
         all_days_star = 0
@@ -143,13 +152,17 @@ def getAllDaysStars():
         for t in range(len(times)):
             for x in range(1, 8):
                 for y in range(int(day_tickets * times[t])):
+
                     once_star_get = 0
                     if now_rank == "easy":
                         once_star_get = easy_lv_star
                     elif now_rank == "medium":
                         once_star_get = medium_lv_star
                     elif now_rank == "hard":
-                        once_star_get = hard_lv_star
+                        inter_flag = inter_flag + 1
+                        if inter_flag == 2:
+                            once_star_get = hard_lv_star
+                            inter_flag = 0
 
 
                     if (all_days_star + once_star_get) >= easy_lock_star:
@@ -165,9 +178,9 @@ def getAllDaysStars():
 
                     all_days_star = all_days_star + once_star_get
                 print("today is " + str(x) + " all_star = " + str(all_days_star))
-                ws.cell(51 + x, 2 + t).value = all_days_star
-                ws.cell(52,9).value = unlock_medium
-                ws.cell(53,9).value = unlock_hard
+                ws.cell(51 + x, 2*(t+1)).value = all_days_star
+                ws.cell(52,10).value = unlock_medium
+                ws.cell(53,10).value = unlock_hard
 
                 wb.save("NewStarChallenge.xlsx")
             all_days_star = 0
