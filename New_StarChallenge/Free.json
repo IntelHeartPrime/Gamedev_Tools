@@ -2,11 +2,11 @@
     "level": 1,
     "star": 0,
     "reward": {
-        "chest_type": 3,
+        "chest_type": 0,
         "prop_num": 1,
-        "prop_color": 8,
+        "prop_color": 0,
         "prop_id": 0,
-        "prop_type": 6
+        "prop_type": 23
     }
 },{
     "level": 2,
@@ -102,7 +102,7 @@
     "level": 11,
     "star": 80,
     "reward": {
-        "chest_type": 6,
+        "chest_type": 3,
         "prop_num": 1,
         "prop_color": 4,
         "prop_id": 0,
@@ -302,7 +302,7 @@
     "level": 31,
     "star": 430,
     "reward": {
-        "chest_type": 6,
+        "chest_type": 3,
         "prop_num": 1,
         "prop_color": 5,
         "prop_id": 0,
@@ -402,7 +402,7 @@
     "level": 41,
     "star": 830,
     "reward": {
-        "chest_type": 6,
+        "chest_type": 3,
         "prop_num": 1,
         "prop_color": 5,
         "prop_id": 0,
@@ -512,7 +512,7 @@
     "level": 52,
     "star": 1340,
     "reward": {
-        "chest_type": 6,
+        "chest_type": 3,
         "prop_num": 1,
         "prop_color": 3,
         "prop_id": 0,
@@ -552,7 +552,7 @@
     "level": 56,
     "star": 1820,
     "reward": {
-        "chest_type": 6,
+        "chest_type": 3,
         "prop_num": 1,
         "prop_color": 3,
         "prop_id": 0,
@@ -592,7 +592,7 @@
     "level": 60,
     "star": 2300,
     "reward": {
-        "chest_type": 6,
+        "chest_type": 3,
         "prop_num": 1,
         "prop_color": 3,
         "prop_id": 0,
@@ -632,7 +632,7 @@
     "level": 64,
     "star": 2780,
     "reward": {
-        "chest_type": 6,
+        "chest_type": 3,
         "prop_num": 1,
         "prop_color": 3,
         "prop_id": 0,
@@ -672,7 +672,7 @@
     "level": 68,
     "star": 3260,
     "reward": {
-        "chest_type": 6,
+        "chest_type": 3,
         "prop_num": 1,
         "prop_color": 3,
         "prop_id": 0,
@@ -712,7 +712,7 @@
     "level": 72,
     "star": 3740,
     "reward": {
-        "chest_type": 6,
+        "chest_type": 3,
         "prop_num": 1,
         "prop_color": 3,
         "prop_id": 0,
@@ -752,7 +752,7 @@
     "level": 76,
     "star": 4220,
     "reward": {
-        "chest_type": 6,
+        "chest_type": 3,
         "prop_num": 1,
         "prop_color": 3,
         "prop_id": 0,
@@ -792,7 +792,7 @@
     "level": 80,
     "star": 4700,
     "reward": {
-        "chest_type": 6,
+        "chest_type": 3,
         "prop_num": 1,
         "prop_color": 3,
         "prop_id": 0,
@@ -832,7 +832,7 @@
     "level": 84,
     "star": 5180,
     "reward": {
-        "chest_type": 6,
+        "chest_type": 3,
         "prop_num": 1,
         "prop_color": 3,
         "prop_id": 0,
@@ -872,7 +872,7 @@
     "level": 88,
     "star": 5660,
     "reward": {
-        "chest_type": 6,
+        "chest_type": 3,
         "prop_num": 1,
         "prop_color": 3,
         "prop_id": 0,
@@ -912,7 +912,7 @@
     "level": 92,
     "star": 6140,
     "reward": {
-        "chest_type": 6,
+        "chest_type": 3,
         "prop_num": 1,
         "prop_color": 3,
         "prop_id": 0,
@@ -952,7 +952,7 @@
     "level": 96,
     "star": 6620,
     "reward": {
-        "chest_type": 6,
+        "chest_type": 3,
         "prop_num": 1,
         "prop_color": 3,
         "prop_id": 0,
@@ -992,7 +992,7 @@
     "level": 100,
     "star": 7100,
     "reward": {
-        "chest_type": 6,
+        "chest_type": 3,
         "prop_num": 1,
         "prop_color": 3,
         "prop_id": 0,
@@ -1032,7 +1032,7 @@
     "level": 104,
     "star": 7580,
     "reward": {
-        "chest_type": 6,
+        "chest_type": 3,
         "prop_num": 1,
         "prop_color": 3,
         "prop_id": 0,
@@ -1072,7 +1072,7 @@
     "level": 108,
     "star": 8060,
     "reward": {
-        "chest_type": 6,
+        "chest_type": 3,
         "prop_num": 1,
         "prop_color": 3,
         "prop_id": 0,
@@ -1112,7 +1112,7 @@
     "level": 112,
     "star": 8540,
     "reward": {
-        "chest_type": 6,
+        "chest_type": 3,
         "prop_num": 1,
         "prop_color": 3,
         "prop_id": 0,
@@ -1152,7 +1152,7 @@
     "level": 116,
     "star": 9020,
     "reward": {
-        "chest_type": 6,
+        "chest_type": 3,
         "prop_num": 1,
         "prop_color": 3,
         "prop_id": 0,
@@ -1192,7 +1192,7 @@
     "level": 120,
     "star": 9500,
     "reward": {
-        "chest_type": 6,
+        "chest_type": 3,
         "prop_num": 1,
         "prop_color": 3,
         "prop_id": 0,
