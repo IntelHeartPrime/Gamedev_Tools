@@ -1,0 +1,1231 @@
+{
+    "level": 0,
+    "star": 0,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 1,
+    "star": 5,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 2,
+    "star": 10,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 3,
+    "star": 15,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 4,
+    "star": 20,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 5,
+    "star": 30,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 6,
+    "star": 40,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 7,
+    "star": 50,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 8,
+    "star": 60,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 9,
+    "star": 70,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 10,
+    "star": 80,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 11,
+    "star": 95,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 12,
+    "star": 110,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 13,
+    "star": 125,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 14,
+    "star": 140,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 15,
+    "star": 155,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 16,
+    "star": 170,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 17,
+    "star": 185,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 18,
+    "star": 200,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 19,
+    "star": 215,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 20,
+    "star": 230,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 21,
+    "star": 250,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 22,
+    "star": 270,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 23,
+    "star": 290,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 24,
+    "star": 310,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 25,
+    "star": 330,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 26,
+    "star": 350,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 27,
+    "star": 370,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 28,
+    "star": 390,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 29,
+    "star": 410,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 30,
+    "star": 430,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 31,
+    "star": 460,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 32,
+    "star": 490,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 33,
+    "star": 520,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 34,
+    "star": 550,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 35,
+    "star": 580,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 36,
+    "star": 630,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 37,
+    "star": 680,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 38,
+    "star": 730,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 39,
+    "star": 780,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 40,
+    "star": 830,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 41,
+    "star": 890,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 42,
+    "star": 950,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 43,
+    "star": 1010,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 44,
+    "star": 1070,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 45,
+    "star": 1130,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 46,
+    "star": 1190,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 47,
+    "star": 1250,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 48,
+    "star": 1310,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 49,
+    "star": 1370,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 50,
+    "star": 1430,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 51,
+    "star": 1340,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 52,
+    "star": 1460,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 53,
+    "star": 1580,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 54,
+    "star": 1700,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 55,
+    "star": 1820,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 56,
+    "star": 1940,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 57,
+    "star": 2060,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 58,
+    "star": 2180,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 59,
+    "star": 2300,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 60,
+    "star": 2420,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 61,
+    "star": 2540,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 62,
+    "star": 2660,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 63,
+    "star": 2780,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 64,
+    "star": 2900,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 65,
+    "star": 3020,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 66,
+    "star": 3140,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 67,
+    "star": 3260,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 68,
+    "star": 3380,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 69,
+    "star": 3500,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 70,
+    "star": 3620,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 71,
+    "star": 3740,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 72,
+    "star": 3860,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 73,
+    "star": 3980,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 74,
+    "star": 4100,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 75,
+    "star": 4220,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 76,
+    "star": 4340,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 77,
+    "star": 4460,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 78,
+    "star": 4580,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 79,
+    "star": 4700,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 80,
+    "star": 4820,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 81,
+    "star": 4940,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 82,
+    "star": 5060,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 83,
+    "star": 5180,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 84,
+    "star": 5300,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 85,
+    "star": 5420,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 86,
+    "star": 5540,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 87,
+    "star": 5660,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 88,
+    "star": 5780,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 89,
+    "star": 5900,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 90,
+    "star": 6020,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 91,
+    "star": 6140,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 92,
+    "star": 6260,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 93,
+    "star": 6380,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 94,
+    "star": 6500,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 95,
+    "star": 6620,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 96,
+    "star": 6740,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 97,
+    "star": 6860,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 98,
+    "star": 6980,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 99,
+    "star": 7100,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 100,
+    "star": 7220,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 101,
+    "star": 7340,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 102,
+    "star": 7460,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 103,
+    "star": 7580,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 104,
+    "star": 7700,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 105,
+    "star": 7820,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 106,
+    "star": 7940,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 107,
+    "star": 8060,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 108,
+    "star": 8180,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 109,
+    "star": 8300,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 110,
+    "star": 8420,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 111,
+    "star": 8540,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 112,
+    "star": 8660,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 113,
+    "star": 8780,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 114,
+    "star": 8900,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 115,
+    "star": 9020,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 116,
+    "star": 9140,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 117,
+    "star": 9260,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 118,
+    "star": 9380,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 119,
+    "star": 9500,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 120,
+    "star": 9620,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 121,
+    "star": 9740,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+},{
+    "level": 122,
+    "star": 9860,
+    "reward": {
+        "chest_type": 1,
+        "prop_num": 2,
+        "prop_color": 3,
+        "prop_id": 4,
+        "prop_type": 5
+    }
+}
