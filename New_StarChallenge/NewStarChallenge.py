@@ -24,6 +24,9 @@ medium_lock_star = float(ws.cell(2,3).value)
 hard_lock_star = float(ws.cell(2,4).value)
 nightmare_lock_star = float(ws.cell(2,5).value)
 
+wb_write = load_workbook("NewStarChallenge.xlsx")
+ws = wb_write.active
+
 def getAllDaysStars():
     global ws
     # player_type 1 正常升级玩家
@@ -61,7 +64,7 @@ def getAllDaysStars():
                         inter_flag = 0
                 elif now_rank == "nightmare":
                     inter_flag = inter_flag + 1
-                    if inter_flag == 2:
+                    if inter_flag == 3:
                         once_star_get = nightmare_lv_star
                         inter_flag = 0
 
