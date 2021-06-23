@@ -1,6 +1,7 @@
 from openpyxl import load_workbook
 import json
 
+
 wb = load_workbook("Config.xlsx")
 ws = wb.active
 
