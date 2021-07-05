@@ -22,22 +22,24 @@ row_index = 3
 dicts_list = []
 
 
-while ws.cell(row_index,2).value != None:
+while ws.cell(row_index,3).value != None:
     unit_dic = {}
-    unit_dic.update({"id": ws.cell(row_index, 2).value})
-    unit_dic.update({"type": ws.cell(row_index, 3).value})
-    unit_dic.update({"name": ws.cell(row_index, 4).value})
-    unit_dic.update({"icon": ws.cell(row_index, 5).value})
-    unit_dic.update({"shop_prefab": ws.cell(row_index, 6).value})
-    unit_dic.update({"game_prefab": ws.cell(row_index, 7).value})
-    unit_dic.update({"sort": ws.cell(row_index, 8).value})
-    unit_dic.update({"free": ws.cell(row_index, 9).value})
-    unit_dic.update({"rarity": ws.cell(row_index, 10).value})
+    unit_dic.update({"id": ws.cell(row_index, 3).value})
+    unit_dic.update({"type": ws.cell(row_index, 4).value})
+    unit_dic.update({"name": ws.cell(row_index, 5).value})
+    unit_dic.update({"icon": ws.cell(row_index, 6).value})
+    unit_dic.update({"shop_prefab": ws.cell(row_index, 7).value})
+    unit_dic.update({"game_prefab": ws.cell(row_index, 8).value})
+    unit_dic.update({"sort": ws.cell(row_index, 9).value})
+    unit_dic.update({"free": ws.cell(row_index, 10).value})
+    unit_dic.update({"rarity": ws.cell(row_index, 11).value})
+    unit_dic.update({"cover": ws.cell(row_index, 12).value})
+
 
     skill_list = []
-    for x in range(6):
-        if(ws.cell(row_index, 11+x*2).value != None) and (ws.cell(row_index,11+x*2).value != ""):
-            skill_list.append(ws.cell(row_index, 11+x*2).value)
+    for x in range(8):
+        if(ws.cell(row_index, 13+x*2).value != None) and (ws.cell(row_index,13+x*2).value != ""):
+            skill_list.append(ws.cell(row_index, 13+x*2).value)
 
     unit_dic.update({"skill_list" : skill_list})
 
