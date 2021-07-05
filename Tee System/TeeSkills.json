@@ -1,0 +1,217 @@
+{
+    "skill_id": 1,
+    "skill_level": 1,
+    "match_type": 1,
+    "buff_list": [
+        {
+            "type": 1,
+            "rate": 1,
+            "value": 1
+        }
+    ],
+    "prize_list": [
+        {
+            "type": 1,
+            "condition": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "rate": 1,
+            "extra_trophy": 1,
+            "trophy_shield": 1,
+            "kingdom_extra_score": 1,
+            "kingdom_score_shield": 1,
+            "reward_list": [
+                {
+                    "prop_id": 1,
+                    "prop_type": 1,
+                    "prop_color": 1,
+                    "prop_num": 1,
+                    "chest_type": 1
+                },
+                {
+                    "prop_id": 1,
+                    "prop_type": 1,
+                    "prop_color": 1,
+                    "prop_num": 1,
+                    "chest_type": 1
+                },
+                {
+                    "prop_id": 1,
+                    "prop_type": 1,
+                    "prop_color": 1,
+                    "prop_num": 1,
+                    "chest_type": 1
+                },
+                {
+                    "prop_id": 1,
+                    "prop_type": 1,
+                    "prop_color": 1,
+                    "prop_num": 1,
+                    "chest_type": 1
+                },
+                {
+                    "prop_id": 1,
+                    "prop_type": 1,
+                    "prop_color": 1,
+                    "prop_num": 1,
+                    "chest_type": 1
+                },
+                {
+                    "prop_id": 1,
+                    "prop_type": 1,
+                    "prop_color": 1,
+                    "prop_num": 1,
+                    "chest_type": 1
+                }
+            ]
+        }
+    ]
+},{
+    "skill_id": 2,
+    "skill_level": 2,
+    "match_type": 2,
+    "buff_list": [
+        {
+            "type": 2,
+            "rate": 2,
+            "value": 2
+        }
+    ],
+    "prize_list": [
+        {
+            "type": 2,
+            "condition": [
+                2,
+                2,
+                2,
+                2,
+                2
+            ],
+            "rate": 2,
+            "extra_trophy": 2,
+            "trophy_shield": 2,
+            "kingdom_extra_score": 2,
+            "kingdom_score_shield": 2,
+            "reward_list": [
+                {
+                    "prop_id": 2,
+                    "prop_type": 2,
+                    "prop_color": 2,
+                    "prop_num": 2,
+                    "chest_type": 2
+                },
+                {
+                    "prop_id": 2,
+                    "prop_type": 2,
+                    "prop_color": 2,
+                    "prop_num": 2,
+                    "chest_type": 2
+                },
+                {
+                    "prop_id": 2,
+                    "prop_type": 2,
+                    "prop_color": 2,
+                    "prop_num": 2,
+                    "chest_type": 2
+                },
+                {
+                    "prop_id": 2,
+                    "prop_type": 2,
+                    "prop_color": 2,
+                    "prop_num": 2,
+                    "chest_type": 2
+                },
+                {
+                    "prop_id": 2,
+                    "prop_type": 2,
+                    "prop_color": 2,
+                    "prop_num": 2,
+                    "chest_type": 2
+                },
+                {
+                    "prop_id": 2,
+                    "prop_type": 2,
+                    "prop_color": 2,
+                    "prop_num": 2,
+                    "chest_type": 2
+                }
+            ]
+        }
+    ]
+},{
+    "skill_id": 3,
+    "skill_level": 3,
+    "match_type": 3,
+    "buff_list": [
+        {
+            "type": 3,
+            "rate": 3,
+            "value": 3
+        }
+    ],
+    "prize_list": [
+        {
+            "type": 3,
+            "condition": [
+                3,
+                3,
+                3,
+                3,
+                3
+            ],
+            "rate": 3,
+            "extra_trophy": 3,
+            "trophy_shield": 3,
+            "kingdom_extra_score": 3,
+            "kingdom_score_shield": 3,
+            "reward_list": [
+                {
+                    "prop_id": 3,
+                    "prop_type": 3,
+                    "prop_color": 3,
+                    "prop_num": 3,
+                    "chest_type": 3
+                },
+                {
+                    "prop_id": 3,
+                    "prop_type": 3,
+                    "prop_color": 3,
+                    "prop_num": 3,
+                    "chest_type": 3
+                },
+                {
+                    "prop_id": 3,
+                    "prop_type": 3,
+                    "prop_color": 3,
+                    "prop_num": 3,
+                    "chest_type": 3
+                },
+                {
+                    "prop_id": 3,
+                    "prop_type": 3,
+                    "prop_color": 3,
+                    "prop_num": 3,
+                    "chest_type": 3
+                },
+                {
+                    "prop_id": 3,
+                    "prop_type": 3,
+                    "prop_color": 3,
+                    "prop_num": 3,
+                    "chest_type": 3
+                },
+                {
+                    "prop_id": 3,
+                    "prop_type": 3,
+                    "prop_color": 3,
+                    "prop_num": 3,
+                    "chest_type": 3
+                }
+            ]
+        }
+    ]
+}
