@@ -36,12 +36,14 @@ while ws.cell(row_index,2).value != None:
     buff_dic.update({"value": ws.cell(row_index, 7).value})
 
     buff_list.append(buff_dic)
-    unit_dic.update({"buff_list" : buff_list})
+    if(ws.cell(row_index, 5).value != None):
+        unit_dic.update({"buff_list" : buff_list})
 
     pirze_list = []
     prize_dict = {}
 
-    prize_dict.update({"type": ws.cell(row_index,8).value})
+    if(ws.cell(row_index,8).value!= None):
+        prize_dict.update({"type": ws.cell(row_index,8).value})
     condition_list = []
     condition_list.append(ws.cell(row_index,9).value)
     condition_list.append(ws.cell(row_index,10).value)
@@ -51,10 +53,14 @@ while ws.cell(row_index,2).value != None:
     prize_dict.update({"condition": condition_list})
     prize_dict.update(({"rate": ws.cell(row_index,14).value}))
 
-    prize_dict.update(({"extra_trophy": ws.cell(row_index,15).value}))
-    prize_dict.update(({"trophy_shield": ws.cell(row_index,16).value}))
-    prize_dict.update(({"kingdom_extra_score": ws.cell(row_index,17).value}))
-    prize_dict.update(({"kingdom_score_shield": ws.cell(row_index,18).value}))
+    if(ws.cell(row_index,15).value!= None):
+        prize_dict.update(({"extra_trophy": ws.cell(row_index,15).value}))
+    if(ws.cell(row_index,16).value!= None):
+        prize_dict.update(({"trophy_shield": ws.cell(row_index,16).value}))
+    if(ws.cell(row_index,17).value!= None):
+        prize_dict.update(({"kingdom_extra_score": ws.cell(row_index,17).value}))
+    if(ws.cell(row_index,18).value!= None):
+        prize_dict.update(({"kingdom_score_shield": ws.cell(row_index,18).value}))
 
     reward_list = []
     for x in range(6):

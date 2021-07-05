@@ -1,6 +1,19 @@
 from openpyxl import load_workbook
 import json
 
+
+# 工具
+
+def clean_null(input_value):
+    empty_value = ""
+    if input_value == None:
+        return empty_value
+    return input_value
+
+
+
+
+
 import os
 work_dir = os.getcwd()
 xlsx_dir = "TeeConfig.xlsx"
@@ -24,16 +37,16 @@ dicts_list = []
 
 while ws.cell(row_index,3).value != None:
     unit_dic = {}
-    unit_dic.update({"id": ws.cell(row_index, 3).value})
-    unit_dic.update({"type": ws.cell(row_index, 4).value})
-    unit_dic.update({"name": ws.cell(row_index, 5).value})
-    unit_dic.update({"icon": ws.cell(row_index, 6).value})
-    unit_dic.update({"shop_prefab": ws.cell(row_index, 7).value})
-    unit_dic.update({"game_prefab": ws.cell(row_index, 8).value})
-    unit_dic.update({"sort": ws.cell(row_index, 9).value})
-    unit_dic.update({"free": ws.cell(row_index, 10).value})
-    unit_dic.update({"rarity": ws.cell(row_index, 11).value})
-    unit_dic.update({"cover": ws.cell(row_index, 12).value})
+    unit_dic.update({"id": clean_null(ws.cell(row_index, 3).value)})
+    unit_dic.update({"type": clean_null(ws.cell(row_index, 4).value)})
+    unit_dic.update({"name": clean_null(ws.cell(row_index, 5).value)})
+    unit_dic.update({"icon": clean_null(ws.cell(row_index, 6).value)})
+    unit_dic.update({"shop_prefab": clean_null(ws.cell(row_index, 7).value)})
+    unit_dic.update({"game_prefab": clean_null(ws.cell(row_index, 8).value)})
+    unit_dic.update({"sort": clean_null(ws.cell(row_index, 9).value)})
+    unit_dic.update({"free": clean_null(ws.cell(row_index, 10).value)})
+    unit_dic.update({"rarity": clean_null(ws.cell(row_index, 11).value)})
+    unit_dic.update({"cover": clean_null(ws.cell(row_index, 12).value)})
 
 
     skill_list = []
@@ -61,6 +74,7 @@ with open(json_dir, "w") as json_file:
 '''
 如果id一致，则共同配置于同一Tee之下
 '''
+
 
 
 
