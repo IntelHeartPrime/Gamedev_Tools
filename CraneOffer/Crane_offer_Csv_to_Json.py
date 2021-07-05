@@ -7,15 +7,24 @@ import csv
 # Csv配置格式 level, min, max, grade, prop_type, prop_id, prop_num, prop_color, chest_type
 # 读取Csv后按照逐行写进Json中
 
-
+import os
+work_dir = os.getcwd()
 csv_file_path = "csvCraneOfferRewards.csv"
+
+csv_dir = os.path.join(work_dir, csv_file_path)
+print(csv_dir)
+
+json_file_name = "Crane_offer_tickets_rewards.json"
+json_dir = os.path.join(work_dir, json_file_name)
+print(json_dir)
+
 
 # 字典List
 json_dict_list = []
 
 
 def readcsvtodict():
-    with open(csv_file_path) as f:
+    with open(csv_dir) as f:
         f_csv = csv.reader(f)
         for row in f_csv:
             # 将row中信息存入Object中
@@ -37,7 +46,7 @@ def readcsvtodict():
 # 对象进行实例化输出到Json
 
 readcsvtodict()
-with open("Crane_offer_tickets_rewards.json", "w") as json_file:
+with open(json_dir, "w") as json_file:
     index = 0
     for dict_unit in json_dict_list:
         index = index + 1

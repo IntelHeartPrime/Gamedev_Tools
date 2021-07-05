@@ -1,0 +1,55 @@
+{
+    "id": 1,
+    "type": 1,
+    "name": 1,
+    "icon": 1,
+    "shop_prefab": 1,
+    "game_prefab": 1,
+    "sort": 1,
+    "free": 1,
+    "rarity": 1,
+    "skill_list": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+    ]
+},{
+    "id": 2,
+    "type": 2,
+    "name": 2,
+    "icon": 2,
+    "shop_prefab": 2,
+    "game_prefab": 2,
+    "sort": 2,
+    "free": 2,
+    "rarity": 2,
+    "skill_list": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+    ]
+},{
+    "id": 3,
+    "type": 3,
+    "name": 3,
+    "icon": 3,
+    "shop_prefab": 3,
+    "game_prefab": 3,
+    "sort": 3,
+    "free": 3,
+    "rarity": 3,
+    "skill_list": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+    ]
+}
