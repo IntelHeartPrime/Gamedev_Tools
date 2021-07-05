@@ -12,8 +12,6 @@ def clean_null(input_value):
 
 
 
-
-
 import os
 work_dir = os.getcwd()
 xlsx_dir = "TeeConfig.xlsx"
@@ -33,9 +31,10 @@ ws = wb.active
 row_index = 3
 
 dicts_list = []
-
+unit_dic_front = {}
 
 while ws.cell(row_index,3).value != None:
+
     unit_dic = {}
     unit_dic.update({"id": clean_null(ws.cell(row_index, 3).value)})
     unit_dic.update({"type": clean_null(ws.cell(row_index, 4).value)})
@@ -55,11 +54,18 @@ while ws.cell(row_index,3).value != None:
             skill_list.append(ws.cell(row_index, 13+x*2).value)
 
     unit_dic.update({"skill_list" : skill_list})
+    unit_dic_front.update({str(ws.cell(row_index,3).value): unit_dic})
+
+    # dicts_list.append(unit_dic_front)
 
     row_index = row_index + 1
-    dicts_list.append(unit_dic)
+
 
 with open(json_dir, "w") as json_file:
+    json_str = json.dumps(unit_dic_front, indent=4)
+    json_file.write(json_str)
+
+    '''
     index = 0
     for dict_unit in dicts_list:
         index = index + 1
@@ -69,7 +75,7 @@ with open(json_dir, "w") as json_file:
         else:
             json_file.write(json_str)
         json_file.write("\r")
-
+    '''
 
 '''
 如果id一致，则共同配置于同一Tee之下

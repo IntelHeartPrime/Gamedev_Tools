@@ -19,13 +19,12 @@ ws = wb.active
 
 row_index = 5
 
-dicts_list = []
-
+unit_dic_front = {}
 
 while ws.cell(row_index,2).value != None:
 
     unit_dic = {}
-    unit_dic.update({"skill_id": ws.cell(row_index, 2).value})
+    unit_dic.update({"id": ws.cell(row_index, 2).value})
     unit_dic.update({"skill_level": ws.cell(row_index, 3).value})
     unit_dic.update({"match_type": ws.cell(row_index, 4).value})
 
@@ -70,7 +69,8 @@ while ws.cell(row_index,2).value != None:
             reward_dic.update({"prop_type": ws.cell(row_index, 20+5*x).value})
             reward_dic.update({"prop_color": ws.cell(row_index, 21+5*x).value})
             reward_dic.update({"prop_num": ws.cell(row_index, 22+5*x).value})
-            reward_dic.update({"chest_type": ws.cell(row_index, 23+5*x).value})
+            if(ws.cell(row_index, 23+5*x).value!= None):
+                reward_dic.update({"chest_type": ws.cell(row_index, 23+5*x).value})
             reward_list.append(reward_dic)
 
     prize_dict.update({"reward_list" : reward_list})
@@ -79,10 +79,16 @@ while ws.cell(row_index,2).value != None:
     unit_dic.update({"prize_list": pirze_list})
 
 
+
+    unit_dic_front.update({str(ws.cell(row_index,2).value): unit_dic})
+
     row_index = row_index + 1
-    dicts_list.append(unit_dic)
+
 
 with open(json_dir, "w") as json_file:
+    json_str = json.dumps(unit_dic_front, indent=4)
+    json_file.write(json_str)
+    '''
     index = 0
     for dict_unit in dicts_list:
 
@@ -93,7 +99,7 @@ with open(json_dir, "w") as json_file:
         else:
             json_file.write(json_str)
         json_file.write("\r")
-
+    '''
 
 
 
