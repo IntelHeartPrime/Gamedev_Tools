@@ -3,285 +3,289 @@
         "id": 1001,
         "skill_level": 1,
         "match_type": -1,
-        "prize_list": [
-            {
-                "type": "extra_coins",
-                "condition": [
-                    -1,
-                    -1,
-                    -99,
-                    -1,
-                    -1
-                ],
-                "rate": 100,
-                "reward_list": [
-                    {
-                        "prop_id": 0,
-                        "prop_type": 3,
-                        "prop_color": 0,
-                        "prop_num": 10
-                    }
-                ]
-            }
-        ]
+        "prize": {
+            "type": "extra_coins",
+            "condition": [
+                -1,
+                -1,
+                -99,
+                -1,
+                -1
+            ],
+            "rate": 100,
+            "reward_list": [
+                {
+                    "prop_id": 0,
+                    "prop_type": 3,
+                    "prop_color": 0,
+                    "prop_num": 10
+                }
+            ]
+        }
     },
     "1002": {
         "id": 1002,
         "skill_level": 2,
         "match_type": -1,
-        "prize_list": [
-            {
-                "type": "extra_coins",
-                "condition": [
-                    -1,
-                    -1,
-                    -99,
-                    -1,
-                    -1
-                ],
-                "rate": 100,
-                "reward_list": [
-                    {
-                        "prop_id": 0,
-                        "prop_type": 3,
-                        "prop_color": 0,
-                        "prop_num": 20
-                    }
-                ]
-            }
-        ]
+        "prize": {
+            "type": "extra_coins",
+            "condition": [
+                -1,
+                -1,
+                -99,
+                -1,
+                -1
+            ],
+            "rate": 100,
+            "reward_list": [
+                {
+                    "prop_id": 0,
+                    "prop_type": 3,
+                    "prop_color": 0,
+                    "prop_num": 20
+                }
+            ]
+        }
     },
     "1003": {
         "id": 1003,
         "skill_level": 3,
         "match_type": -1,
-        "prize_list": [
-            {
-                "type": "extra_coins",
-                "condition": [
-                    -1,
-                    -1,
-                    -99,
-                    -1,
-                    -1
-                ],
-                "rate": 100,
-                "reward_list": [
-                    {
-                        "prop_id": 0,
-                        "prop_type": 3,
-                        "prop_color": 0,
-                        "prop_num": 30
-                    }
-                ]
-            }
-        ]
+        "prize": {
+            "type": "extra_coins",
+            "condition": [
+                -1,
+                -1,
+                -99,
+                -1,
+                -1
+            ],
+            "rate": 100,
+            "reward_list": [
+                {
+                    "prop_id": 0,
+                    "prop_type": 3,
+                    "prop_color": 0,
+                    "prop_num": 30
+                }
+            ]
+        }
     },
     "1004": {
         "id": 1004,
         "skill_level": 4,
         "match_type": -1,
-        "prize_list": [
-            {
-                "type": "extra_coins",
-                "condition": [
-                    -1,
-                    -1,
-                    -99,
-                    -1,
-                    -1
-                ],
-                "rate": 100,
-                "reward_list": [
-                    {
-                        "prop_id": 0,
-                        "prop_type": 3,
-                        "prop_color": 0,
-                        "prop_num": 40
-                    }
-                ]
-            }
-        ]
+        "prize": {
+            "type": "extra_coins",
+            "condition": [
+                -1,
+                -1,
+                -99,
+                -1,
+                -1
+            ],
+            "rate": 100,
+            "reward_list": [
+                {
+                    "prop_id": 0,
+                    "prop_type": 3,
+                    "prop_color": 0,
+                    "prop_num": 40
+                }
+            ]
+        }
     },
     "1005": {
         "id": 1005,
         "skill_level": 1,
         "match_type": -1,
-        "prize_list": [
-            {
-                "type": "extra_cards",
-                "condition": [
-                    -1,
-                    -1,
-                    -99,
-                    -2,
-                    -1
-                ],
-                "rate": 100,
-                "reward_list": [
-                    {
-                        "prop_id": 0,
-                        "prop_type": 7,
-                        "prop_color": 3,
-                        "prop_num": 2
-                    }
-                ]
-            }
-        ]
+        "prize": {
+            "type": "extra_cards",
+            "condition": [
+                -1,
+                -1,
+                -99,
+                -2,
+                -1
+            ],
+            "rate": 100,
+            "reward_list": [
+                {
+                    "prop_id": 0,
+                    "prop_type": 7,
+                    "prop_color": 3,
+                    "prop_num": 2
+                }
+            ]
+        }
     },
     "1006": {
         "id": 1006,
         "skill_level": 2,
         "match_type": -1,
-        "prize_list": [
-            {
-                "type": "extra_cards",
-                "condition": [
-                    -1,
-                    -1,
-                    -99,
-                    -2,
-                    -1
-                ],
-                "rate": 100,
-                "reward_list": [
-                    {
-                        "prop_id": 0,
-                        "prop_type": 7,
-                        "prop_color": 3,
-                        "prop_num": 4
-                    }
-                ]
-            }
-        ]
+        "prize": {
+            "type": "extra_cards",
+            "condition": [
+                -1,
+                -1,
+                -99,
+                -2,
+                -1
+            ],
+            "rate": 100,
+            "reward_list": [
+                {
+                    "prop_id": 0,
+                    "prop_type": 7,
+                    "prop_color": 3,
+                    "prop_num": 4
+                }
+            ]
+        }
     },
     "1007": {
         "id": 1007,
         "skill_level": 3,
         "match_type": -1,
-        "prize_list": [
-            {
-                "type": "extra_cards",
-                "condition": [
-                    -1,
-                    -1,
-                    -99,
-                    -2,
-                    -1
-                ],
-                "rate": 100,
-                "reward_list": [
-                    {
-                        "prop_id": 0,
-                        "prop_type": 7,
-                        "prop_color": 3,
-                        "prop_num": 6
-                    }
-                ]
-            }
-        ]
+        "prize": {
+            "type": "extra_cards",
+            "condition": [
+                -1,
+                -1,
+                -99,
+                -2,
+                -1
+            ],
+            "rate": 100,
+            "reward_list": [
+                {
+                    "prop_id": 0,
+                    "prop_type": 7,
+                    "prop_color": 3,
+                    "prop_num": 6
+                }
+            ]
+        }
     },
     "1008": {
         "id": 1008,
         "skill_level": 4,
         "match_type": -1,
-        "prize_list": [
-            {
-                "type": "extra_cards",
-                "condition": [
-                    -1,
-                    -1,
-                    -99,
-                    -2,
-                    -1
-                ],
-                "rate": 100,
-                "reward_list": [
-                    {
-                        "prop_id": 0,
-                        "prop_type": 7,
-                        "prop_color": 3,
-                        "prop_num": 8
-                    }
-                ]
-            }
-        ]
+        "prize": {
+            "type": "extra_cards",
+            "condition": [
+                -1,
+                -1,
+                -99,
+                -2,
+                -1
+            ],
+            "rate": 100,
+            "reward_list": [
+                {
+                    "prop_id": 0,
+                    "prop_type": 7,
+                    "prop_color": 3,
+                    "prop_num": 8
+                }
+            ]
+        }
     },
     "1009": {
         "id": 1009,
         "skill_level": 3,
         "match_type": -1,
-        "prize_list": [
-            {
-                "type": "extra_balls_pro",
-                "condition": [
-                    -1,
-                    1,
-                    -99,
-                    99,
-                    -1
-                ],
-                "rate": 100,
-                "reward_list": []
-            }
-        ]
+        "prize": {
+            "type": "extra_balls_pro",
+            "condition": [
+                -1,
+                1,
+                -99,
+                99,
+                -1
+            ],
+            "rate": 100,
+            "reward_list": [
+                {
+                    "prop_id": 8,
+                    "prop_type": 5,
+                    "prop_color": 0,
+                    "prop_num": 4
+                }
+            ]
+        }
     },
     "1010": {
         "id": 1010,
         "skill_level": 3,
         "match_type": -1,
-        "prize_list": [
-            {
-                "type": "extra_balls_pro",
-                "condition": [
-                    -1,
-                    -1,
-                    -3,
-                    -3,
-                    -1
-                ],
-                "rate": 100,
-                "reward_list": []
-            }
-        ]
+        "prize": {
+            "type": "extra_balls_pro",
+            "condition": [
+                -1,
+                -1,
+                -3,
+                -3,
+                -1
+            ],
+            "rate": 100,
+            "reward_list": [
+                {
+                    "prop_id": 8,
+                    "prop_type": 5,
+                    "prop_color": 0,
+                    "prop_num": 3
+                }
+            ]
+        }
     },
     "1011": {
         "id": 1011,
         "skill_level": 3,
         "match_type": -1,
-        "prize_list": [
-            {
-                "type": "extra_balls_pro",
-                "condition": [
-                    -1,
-                    -1,
-                    -2,
-                    -2,
-                    -1
-                ],
-                "rate": 100,
-                "reward_list": []
-            }
-        ]
+        "prize": {
+            "type": "extra_balls_pro",
+            "condition": [
+                -1,
+                -1,
+                -2,
+                -2,
+                -1
+            ],
+            "rate": 100,
+            "reward_list": [
+                {
+                    "prop_id": 8,
+                    "prop_type": 5,
+                    "prop_color": 0,
+                    "prop_num": 2
+                }
+            ]
+        }
     },
     "1012": {
         "id": 1012,
         "skill_level": 3,
         "match_type": -1,
-        "prize_list": [
-            {
-                "type": "extra_balls_pro",
-                "condition": [
-                    -1,
-                    -1,
-                    -1,
-                    -1,
-                    -1
-                ],
-                "rate": 100,
-                "reward_list": []
-            }
-        ]
+        "prize": {
+            "type": "extra_balls_pro",
+            "condition": [
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "rate": 100,
+            "reward_list": [
+                {
+                    "prop_id": 8,
+                    "prop_type": 5,
+                    "prop_color": 0,
+                    "prop_num": 1
+                }
+            ]
+        }
     },
     "1013": {
         "id": 1013,
@@ -294,19 +298,16 @@
                 "value": 5
             }
         ],
-        "prize_list": [
-            {
-                "condition": [
-                    -1,
-                    -1,
-                    -99,
-                    99,
-                    -1
-                ],
-                "rate": 100,
-                "reward_list": []
-            }
-        ]
+        "prize": {
+            "condition": [
+                -1,
+                -1,
+                -99,
+                99,
+                -1
+            ],
+            "rate": 100
+        }
     },
     "1014": {
         "id": 1014,
@@ -319,19 +320,16 @@
                 "value": 10
             }
         ],
-        "prize_list": [
-            {
-                "condition": [
-                    -1,
-                    -1,
-                    -99,
-                    99,
-                    -1
-                ],
-                "rate": 100,
-                "reward_list": []
-            }
-        ]
+        "prize": {
+            "condition": [
+                -1,
+                -1,
+                -99,
+                99,
+                -1
+            ],
+            "rate": 100
+        }
     },
     "1015": {
         "id": 1015,
@@ -344,19 +342,16 @@
                 "value": 15
             }
         ],
-        "prize_list": [
-            {
-                "condition": [
-                    -1,
-                    -1,
-                    -99,
-                    99,
-                    -1
-                ],
-                "rate": 100,
-                "reward_list": []
-            }
-        ]
+        "prize": {
+            "condition": [
+                -1,
+                -1,
+                -99,
+                99,
+                -1
+            ],
+            "rate": 100
+        }
     },
     "1016": {
         "id": 1016,
@@ -369,358 +364,360 @@
                 "value": 20
             }
         ],
-        "prize_list": [
-            {
-                "condition": [
-                    -1,
-                    -1,
-                    -99,
-                    99,
-                    -1
-                ],
-                "rate": 100,
-                "reward_list": []
-            }
-        ]
+        "prize": {
+            "condition": [
+                -1,
+                -1,
+                -99,
+                99,
+                -1
+            ],
+            "rate": 100
+        }
     },
     "2001": {
         "id": 2001,
         "skill_level": 1,
         "match_type": 0,
-        "prize_list": [
-            {
-                "type": "extra_trophy",
-                "condition": [
-                    1,
-                    -1,
-                    -99,
-                    99,
-                    -1
-                ],
-                "rate": 100,
-                "extra_trophy": 10,
-                "reward_list": []
-            }
-        ]
+        "prize": {
+            "type": "extra_trophy",
+            "condition": [
+                1,
+                -1,
+                -99,
+                99,
+                -1
+            ],
+            "rate": 100,
+            "extra_trophy": 10
+        }
     },
     "2002": {
         "id": 2002,
         "skill_level": 2,
         "match_type": 0,
-        "prize_list": [
-            {
-                "type": "extra_trophy",
-                "condition": [
-                    1,
-                    -1,
-                    -99,
-                    99,
-                    -1
-                ],
-                "rate": 100,
-                "extra_trophy": 20,
-                "reward_list": []
-            }
-        ]
+        "prize": {
+            "type": "extra_trophy",
+            "condition": [
+                1,
+                -1,
+                -99,
+                99,
+                -1
+            ],
+            "rate": 100,
+            "extra_trophy": 20
+        }
     },
     "2003": {
         "id": 2003,
         "skill_level": 3,
         "match_type": 0,
-        "prize_list": [
-            {
-                "type": "extra_trophy",
-                "condition": [
-                    1,
-                    -1,
-                    -99,
-                    99,
-                    -1
-                ],
-                "rate": 100,
-                "extra_trophy": 30,
-                "reward_list": []
-            }
-        ]
+        "prize": {
+            "type": "extra_trophy",
+            "condition": [
+                1,
+                -1,
+                -99,
+                99,
+                -1
+            ],
+            "rate": 100,
+            "extra_trophy": 30
+        }
     },
     "2004": {
         "id": 2004,
         "skill_level": 4,
         "match_type": 0,
-        "prize_list": [
-            {
-                "type": "extra_trophy",
-                "condition": [
-                    1,
-                    -1,
-                    -99,
-                    99,
-                    -1
-                ],
-                "rate": 100,
-                "extra_trophy": 40,
-                "reward_list": []
-            }
-        ]
+        "prize": {
+            "type": "extra_trophy",
+            "condition": [
+                1,
+                -1,
+                -99,
+                99,
+                -1
+            ],
+            "rate": 100,
+            "extra_trophy": 40
+        }
     },
     "2005": {
         "id": 2005,
         "skill_level": 1,
         "match_type": 0,
-        "prize_list": [
-            {
-                "type": "trophy_shield",
-                "condition": [
-                    0,
-                    -1,
-                    -99,
-                    99,
-                    -1
-                ],
-                "rate": 100,
-                "trophy_shield": 10,
-                "reward_list": []
-            }
-        ]
+        "prize": {
+            "type": "trophy_shield",
+            "condition": [
+                0,
+                -1,
+                -99,
+                99,
+                -1
+            ],
+            "rate": 100,
+            "trophy_shield": 10
+        }
     },
     "2006": {
         "id": 2006,
         "skill_level": 2,
         "match_type": 0,
-        "prize_list": [
-            {
-                "type": "trophy_shield",
-                "condition": [
-                    0,
-                    -1,
-                    -99,
-                    99,
-                    -1
-                ],
-                "rate": 100,
-                "trophy_shield": 20,
-                "reward_list": []
-            }
-        ]
+        "prize": {
+            "type": "trophy_shield",
+            "condition": [
+                0,
+                -1,
+                -99,
+                99,
+                -1
+            ],
+            "rate": 100,
+            "trophy_shield": 20
+        }
     },
     "2007": {
         "id": 2007,
         "skill_level": 3,
         "match_type": 0,
-        "prize_list": [
-            {
-                "type": "trophy_shield",
-                "condition": [
-                    0,
-                    -1,
-                    -99,
-                    99,
-                    -1
-                ],
-                "rate": 100,
-                "trophy_shield": 30,
-                "reward_list": []
-            }
-        ]
+        "prize": {
+            "type": "trophy_shield",
+            "condition": [
+                0,
+                -1,
+                -99,
+                99,
+                -1
+            ],
+            "rate": 100,
+            "trophy_shield": 30
+        }
     },
     "2008": {
         "id": 2008,
         "skill_level": 4,
         "match_type": 0,
-        "prize_list": [
-            {
-                "type": "trophy_shield",
-                "condition": [
-                    0,
-                    -1,
-                    -99,
-                    99,
-                    -1
-                ],
-                "rate": 100,
-                "trophy_shield": 40,
-                "reward_list": []
-            }
-        ]
+        "prize": {
+            "type": "trophy_shield",
+            "condition": [
+                0,
+                -1,
+                -99,
+                99,
+                -1
+            ],
+            "rate": 100,
+            "trophy_shield": 40
+        }
     },
     "2009": {
         "id": 2009,
         "skill_level": 4,
         "match_type": 4,
-        "prize_list": [
-            {
-                "type": "extra_balls_pro",
-                "condition": [
-                    -1,
-                    1,
-                    -99,
-                    99,
-                    1
-                ],
-                "rate": 100,
-                "reward_list": []
-            }
-        ]
+        "prize": {
+            "type": "extra_balls_pro",
+            "condition": [
+                -1,
+                1,
+                -99,
+                99,
+                1
+            ],
+            "rate": 100,
+            "reward_list": [
+                {
+                    "prop_id": 8,
+                    "prop_type": 5,
+                    "prop_color": 0,
+                    "prop_num": 5
+                }
+            ]
+        }
     },
     "2010": {
         "id": 2010,
         "skill_level": 4,
         "match_type": 4,
-        "prize_list": [
-            {
-                "type": "extra_balls_pro",
-                "condition": [
-                    -1,
-                    -1,
-                    -3,
-                    -3,
-                    1
-                ],
-                "rate": 100,
-                "reward_list": []
-            }
-        ]
+        "prize": {
+            "type": "extra_balls_pro",
+            "condition": [
+                -1,
+                -1,
+                -3,
+                -3,
+                1
+            ],
+            "rate": 100,
+            "reward_list": [
+                {
+                    "prop_id": 8,
+                    "prop_type": 5,
+                    "prop_color": 0,
+                    "prop_num": 4
+                }
+            ]
+        }
     },
     "2011": {
         "id": 2011,
         "skill_level": 4,
         "match_type": 4,
-        "prize_list": [
-            {
-                "type": "extra_balls_pro",
-                "condition": [
-                    -1,
-                    -1,
-                    -2,
-                    -2,
-                    1
-                ],
-                "rate": 100,
-                "reward_list": []
-            }
-        ]
+        "prize": {
+            "type": "extra_balls_pro",
+            "condition": [
+                -1,
+                -1,
+                -2,
+                -2,
+                1
+            ],
+            "rate": 100,
+            "reward_list": [
+                {
+                    "prop_id": 8,
+                    "prop_type": 5,
+                    "prop_color": 0,
+                    "prop_num": 3
+                }
+            ]
+        }
     },
     "2012": {
         "id": 2012,
         "skill_level": 4,
         "match_type": 4,
-        "prize_list": [
-            {
-                "type": "extra_balls_pro",
-                "condition": [
-                    -1,
-                    -1,
-                    -1,
-                    -1,
-                    1
-                ],
-                "rate": 100,
-                "reward_list": []
-            }
-        ]
+        "prize": {
+            "type": "extra_balls_pro",
+            "condition": [
+                -1,
+                -1,
+                -1,
+                -1,
+                1
+            ],
+            "rate": 100,
+            "reward_list": [
+                {
+                    "prop_id": 8,
+                    "prop_type": 5,
+                    "prop_color": 0,
+                    "prop_num": 2
+                }
+            ]
+        }
     },
     "2013": {
         "id": 2013,
         "skill_level": 1,
         "match_type": 4,
-        "prize_list": [
-            {
-                "type": "extra_diamonds",
-                "condition": [
-                    -1,
-                    -1,
-                    -99,
-                    -2,
-                    -1
-                ],
-                "rate": 100,
-                "reward_list": [
-                    {
-                        "prop_id": 0,
-                        "prop_type": 2,
-                        "prop_color": 0,
-                        "prop_num": 5
-                    }
-                ]
-            }
-        ]
+        "prize": {
+            "type": "extra_diamonds",
+            "condition": [
+                -1,
+                -1,
+                -99,
+                -2,
+                -1
+            ],
+            "rate": 100,
+            "reward_list": [
+                {
+                    "prop_id": 0,
+                    "prop_type": 2,
+                    "prop_color": 0,
+                    "prop_num": 5
+                }
+            ]
+        }
     },
     "2014": {
         "id": 2014,
         "skill_level": 2,
         "match_type": 4,
-        "prize_list": [
-            {
-                "type": "extra_diamonds",
-                "condition": [
-                    -1,
-                    -1,
-                    -99,
-                    -2,
-                    -1
-                ],
-                "rate": 100,
-                "reward_list": [
-                    {
-                        "prop_id": 0,
-                        "prop_type": 2,
-                        "prop_color": 0,
-                        "prop_num": 10
-                    }
-                ]
-            }
-        ]
+        "prize": {
+            "type": "extra_diamonds",
+            "condition": [
+                -1,
+                -1,
+                -99,
+                -2,
+                -1
+            ],
+            "rate": 100,
+            "reward_list": [
+                {
+                    "prop_id": 0,
+                    "prop_type": 2,
+                    "prop_color": 0,
+                    "prop_num": 10
+                }
+            ]
+        }
     },
     "2015": {
         "id": 2015,
         "skill_level": 3,
         "match_type": 4,
-        "prize_list": [
-            {
-                "type": "extra_diamonds",
-                "condition": [
-                    -1,
-                    -1,
-                    -99,
-                    -2,
-                    -1
-                ],
-                "rate": 100,
-                "reward_list": [
-                    {
-                        "prop_id": 0,
-                        "prop_type": 2,
-                        "prop_color": 0,
-                        "prop_num": 15
-                    }
-                ]
-            }
-        ]
+        "prize": {
+            "type": "extra_diamonds",
+            "condition": [
+                -1,
+                -1,
+                -99,
+                -2,
+                -1
+            ],
+            "rate": 100,
+            "reward_list": [
+                {
+                    "prop_id": 0,
+                    "prop_type": 2,
+                    "prop_color": 0,
+                    "prop_num": 15
+                }
+            ]
+        }
     },
     "2016": {
         "id": 2016,
         "skill_level": 4,
         "match_type": 4,
-        "prize_list": [
-            {
-                "type": "extra_diamonds",
-                "condition": [
-                    -1,
-                    -1,
-                    -99,
-                    -2,
-                    -1
-                ],
-                "rate": 100,
-                "reward_list": [
-                    {
-                        "prop_id": 0,
-                        "prop_type": 2,
-                        "prop_color": 0,
-                        "prop_num": 20
-                    }
-                ]
-            }
-        ]
+        "prize": {
+            "type": "extra_diamonds",
+            "condition": [
+                -1,
+                -1,
+                -99,
+                -2,
+                -1
+            ],
+            "rate": 100,
+            "reward_list": [
+                {
+                    "prop_id": 0,
+                    "prop_type": 2,
+                    "prop_color": 0,
+                    "prop_num": 20
+                }
+            ]
+        }
+    },
+    "1017": {
+        "id": 1017,
+        "skill_level": 4,
+        "match_type": -1,
+        "prize": {
+            "type": "reback_ball",
+            "condition": [
+                -1,
+                -1,
+                -99,
+                -2,
+                -1
+            ],
+            "rate": 100,
+            "reback_ball": 1
+        }
     }
 }

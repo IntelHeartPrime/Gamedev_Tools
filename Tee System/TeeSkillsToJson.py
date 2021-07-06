@@ -38,7 +38,6 @@ while ws.cell(row_index,2).value != None:
     if(ws.cell(row_index, 5).value != None):
         unit_dic.update({"buff_list" : buff_list})
 
-    pirze_list = []
     prize_dict = {}
 
     if(ws.cell(row_index,8).value!= None):
@@ -60,23 +59,26 @@ while ws.cell(row_index,2).value != None:
         prize_dict.update(({"kingdom_extra_score": ws.cell(row_index,17).value}))
     if(ws.cell(row_index,18).value!= None):
         prize_dict.update(({"kingdom_score_shield": ws.cell(row_index,18).value}))
+    if(ws.cell(row_index,19).value!= None):
+        prize_dict.update(({"reback_ball": ws.cell(row_index,19).value}))
+    if(ws.cell(row_index,20).value!= None):
+        prize_dict.update(({"reback_challenge_shield": ws.cell(row_index,20).value}))
 
     reward_list = []
     for x in range(6):
-        if(ws.cell(row_index, 19+5*x).value != None) and (ws.cell(row_index, 19+x).value != ""):
+        if(ws.cell(row_index, 21+5*x).value != None) and (ws.cell(row_index, 21+x).value != ""):
             reward_dic = {}
-            reward_dic.update({"prop_id": ws.cell(row_index, 19+5*x).value})
-            reward_dic.update({"prop_type": ws.cell(row_index, 20+5*x).value})
-            reward_dic.update({"prop_color": ws.cell(row_index, 21+5*x).value})
-            reward_dic.update({"prop_num": ws.cell(row_index, 22+5*x).value})
-            if(ws.cell(row_index, 23+5*x).value!= None):
-                reward_dic.update({"chest_type": ws.cell(row_index, 23+5*x).value})
+            reward_dic.update({"prop_id": ws.cell(row_index, 21+5*x).value})
+            reward_dic.update({"prop_type": ws.cell(row_index, 22+5*x).value})
+            reward_dic.update({"prop_color": ws.cell(row_index, 23+5*x).value})
+            reward_dic.update({"prop_num": ws.cell(row_index, 24+5*x).value})
+            if(ws.cell(row_index, 25+5*x).value!= None):
+                reward_dic.update({"chest_type": ws.cell(row_index, 25+5*x).value})
             reward_list.append(reward_dic)
+    if(len(reward_list) > 0):
+        prize_dict.update({"reward_list" : reward_list})
 
-    prize_dict.update({"reward_list" : reward_list})
-    pirze_list.append(prize_dict)
-
-    unit_dic.update({"prize_list": pirze_list})
+    unit_dic.update({"prize": prize_dict})
 
 
 
