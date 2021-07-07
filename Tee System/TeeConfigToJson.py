@@ -65,21 +65,7 @@ with open(json_dir, "w") as json_file:
     json_str = json.dumps(unit_dic_front, indent=4)
     json_file.write(json_str)
 
-    '''
-    index = 0
-    for dict_unit in dicts_list:
-        index = index + 1
-        json_str = json.dumps(dict_unit, indent=4)
-        if( index < len(dicts_list)):
-            json_file.write(json_str + ",")
-        else:
-            json_file.write(json_str)
-        json_file.write("\r")
-    '''
 
-'''
-如果id一致，则共同配置于同一Tee之下
-'''
 
 
 
