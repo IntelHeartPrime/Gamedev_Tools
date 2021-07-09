@@ -22,12 +22,11 @@ ws = wb.active
 
 
 
-row_index = 2
+row_index = 1
 
 dicts_front = {}
-dicts_list = []
 
-while ws.cell(row_index,2).value != None:
+while ws.cell(row_index,1).value != None:
 
     unit_dic = {}
     unit_dic.update({"id": clean_null(ws.cell(row_index, 1).value)})
@@ -43,15 +42,15 @@ while ws.cell(row_index,2).value != None:
     unit_dic.update({"order": clean_null(ws.cell(row_index, 11).value)})
     unit_dic.update({"model_name": clean_null(ws.cell(row_index, 12).value)})
 
+    dicts_front.update({str(ws.cell(row_index, 1).value): unit_dic})
 
     row_index = row_index + 1
-
-    dicts_front.update({str(ws.cell(row_index,1).value): unit_dic})
-    #dicts_list.append(unit_dic)
 
 
 with open(json_file_name, "w") as json_file:
     json_str = json.dumps(dicts_front, indent=4)
+    json_file.write(json_str)
+
     '''
     index = 0
     for dict_unit in dicts_list:
