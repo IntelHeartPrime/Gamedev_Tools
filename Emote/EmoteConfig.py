@@ -24,6 +24,7 @@ ws = wb.active
 
 row_index = 2
 
+dicts_front = {}
 dicts_list = []
 
 while ws.cell(row_index,2).value != None:
@@ -45,10 +46,13 @@ while ws.cell(row_index,2).value != None:
 
     row_index = row_index + 1
 
-    dicts_list.append(unit_dic)
+    dicts_front.update({str(ws.cell(row_index,1).value): unit_dic})
+    #dicts_list.append(unit_dic)
 
 
 with open(json_file_name, "w") as json_file:
+    json_str = json.dumps(dicts_front, indent=4)
+    '''
     index = 0
     for dict_unit in dicts_list:
         index = index + 1
@@ -58,7 +62,7 @@ with open(json_file_name, "w") as json_file:
         else:
             json_file.write(json_str)
         json_file.write("\r")
-
+    '''
 
 
 
