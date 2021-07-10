@@ -2,7 +2,7 @@
     "1": {
         "id": 1,
         "type": 26,
-        "name": "",
+        "name": "tee_name_basic",
         "icon": "",
         "shop_prefab": "",
         "game_prefab": "",
@@ -10,216 +10,166 @@
         "free": 1,
         "rarity": 1,
         "cover": 0,
-        "skill_list": [
-            1001,
-            2001
-        ]
+        "skill_list": []
     },
-    "2": {
-        "id": 2,
+    "101": {
+        "id": 101,
         "type": 26,
-        "name": "",
-        "icon": "",
-        "shop_prefab": "",
-        "game_prefab": "",
-        "sort": 2,
-        "free": 0,
-        "rarity": 2,
-        "cover": 0,
-        "skill_list": [
-            1002,
-            2002
-        ]
-    },
-    "3": {
-        "id": 3,
-        "type": 26,
-        "name": "",
-        "icon": "",
-        "shop_prefab": "",
-        "game_prefab": "",
-        "sort": 3,
-        "free": 0,
-        "rarity": 3,
-        "cover": 0,
-        "skill_list": [
-            1003,
-            2003
-        ]
-    },
-    "4": {
-        "id": 4,
-        "type": 26,
-        "name": "",
-        "icon": "",
-        "shop_prefab": "",
-        "game_prefab": "",
-        "sort": 4,
-        "free": 0,
-        "rarity": 4,
-        "cover": 0,
-        "skill_list": [
-            1004,
-            2004
-        ]
-    },
-    "5": {
-        "id": 5,
-        "type": 26,
-        "name": "",
-        "icon": "",
-        "shop_prefab": "",
-        "game_prefab": "",
-        "sort": 5,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            1005,
-            2005
-        ]
-    },
-    "6": {
-        "id": 6,
-        "type": 26,
-        "name": "",
-        "icon": "",
-        "shop_prefab": "",
-        "game_prefab": "",
-        "sort": 6,
-        "free": 0,
-        "rarity": 2,
-        "cover": 0,
-        "skill_list": [
-            1006,
-            2006
-        ]
-    },
-    "7": {
-        "id": 7,
-        "type": 26,
-        "name": "",
-        "icon": "",
-        "shop_prefab": "",
-        "game_prefab": "",
-        "sort": 7,
-        "free": 0,
-        "rarity": 3,
-        "cover": 0,
-        "skill_list": [
-            1007,
-            2007
-        ]
-    },
-    "8": {
-        "id": 8,
-        "type": 26,
-        "name": "",
-        "icon": "",
-        "shop_prefab": "",
-        "game_prefab": "",
-        "sort": 8,
-        "free": 0,
-        "rarity": 4,
-        "cover": 0,
-        "skill_list": [
-            1008,
-            2008
-        ]
-    },
-    "9": {
-        "id": 9,
-        "type": 26,
-        "name": "",
-        "icon": "",
-        "shop_prefab": "",
-        "game_prefab": "",
-        "sort": 9,
-        "free": 0,
-        "rarity": 4,
-        "cover": 1,
-        "skill_list": [
-            1009,
-            2009
-        ]
-    },
-    "10": {
-        "id": 10,
-        "type": 26,
-        "name": "",
-        "icon": "",
-        "shop_prefab": "",
-        "game_prefab": "",
-        "sort": 10,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            1010,
-            2010
-        ]
-    },
-    "11": {
-        "id": 11,
-        "type": 26,
-        "name": "",
-        "icon": "",
-        "shop_prefab": "",
-        "game_prefab": "",
-        "sort": 11,
-        "free": 0,
-        "rarity": 2,
-        "cover": 0,
-        "skill_list": [
-            1011,
-            2011
-        ]
-    },
-    "12": {
-        "id": 12,
-        "type": 26,
-        "name": "",
+        "name": "tee_name_coin_stage_eagle_ball_lv1",
         "icon": "",
         "shop_prefab": "",
         "game_prefab": "",
         "sort": 12,
         "free": 0,
-        "rarity": 3,
+        "rarity": 1,
         "cover": 0,
         "skill_list": [
-            1012,
-            2012
+            1001,
+            1013
         ]
     },
-    "13": {
-        "id": 13,
+    "102": {
+        "id": 102,
         "type": 26,
-        "name": "",
+        "name": "tee_name_coin_stage_eagle_ball_lv2",
         "icon": "",
         "shop_prefab": "",
         "game_prefab": "",
         "sort": 13,
         "free": 0,
-        "rarity": 4,
+        "rarity": 2,
         "cover": 0,
         "skill_list": [
-            1013,
-            2013
+            1002,
+            1014
         ]
     },
-    "14": {
-        "id": 14,
+    "103": {
+        "id": 103,
         "type": 26,
-        "name": "",
+        "name": "tee_name_coin_stage_eagle_ball_lv3",
         "icon": "",
         "shop_prefab": "",
         "game_prefab": "",
         "sort": 14,
         "free": 0,
+        "rarity": 3,
+        "cover": 0,
+        "skill_list": [
+            1003,
+            1015
+        ]
+    },
+    "104": {
+        "id": 104,
+        "type": 26,
+        "name": "tee_name_coin_stage_eagle_ball_lv4",
+        "icon": "",
+        "shop_prefab": "",
+        "game_prefab": "",
+        "sort": 15,
+        "free": 0,
         "rarity": 4,
         "cover": 0,
         "skill_list": [
-            1014
+            1004,
+            1016
+        ]
+    },
+    "105": {
+        "id": 105,
+        "type": 26,
+        "name": "tee_name_coin_stage_excitation_ball_lv4",
+        "icon": "",
+        "shop_prefab": "",
+        "game_prefab": "",
+        "sort": 16,
+        "free": 0,
+        "rarity": 4,
+        "cover": 0,
+        "skill_list": [
+            1004,
+            1021
+        ]
+    },
+    "106": {
+        "id": 106,
+        "type": 26,
+        "name": "tee_name_coin_kingdom_eagle_ball_lv1",
+        "icon": "",
+        "shop_prefab": "",
+        "game_prefab": "",
+        "sort": 17,
+        "free": 0,
+        "rarity": 1,
+        "cover": 0,
+        "skill_list": [
+            1001,
+            1017
+        ]
+    },
+    "107": {
+        "id": 107,
+        "type": 26,
+        "name": "tee_name_coin_kingdom_eagle_ball_lv2",
+        "icon": "",
+        "shop_prefab": "",
+        "game_prefab": "",
+        "sort": 18,
+        "free": 0,
+        "rarity": 2,
+        "cover": 0,
+        "skill_list": [
+            1002,
+            1018
+        ]
+    },
+    "108": {
+        "id": 108,
+        "type": 26,
+        "name": "tee_name_coin_kingdom_eagle_ball_lv3",
+        "icon": "",
+        "shop_prefab": "",
+        "game_prefab": "",
+        "sort": 19,
+        "free": 0,
+        "rarity": 3,
+        "cover": 0,
+        "skill_list": [
+            1003,
+            1019
+        ]
+    },
+    "109": {
+        "id": 109,
+        "type": 26,
+        "name": "tee_name_coin_kingdom_eagle_ball_lv4",
+        "icon": "",
+        "shop_prefab": "",
+        "game_prefab": "",
+        "sort": 20,
+        "free": 0,
+        "rarity": 4,
+        "cover": 0,
+        "skill_list": [
+            1004,
+            1020
+        ]
+    },
+    "110": {
+        "id": 110,
+        "type": 26,
+        "name": "tee_name_coin_kingdom_excitation_ball_lv4",
+        "icon": "",
+        "shop_prefab": "",
+        "game_prefab": "",
+        "sort": 21,
+        "free": 0,
+        "rarity": 4,
+        "cover": 0,
+        "skill_list": [
+            1004,
+            1021
         ]
     }
 }
