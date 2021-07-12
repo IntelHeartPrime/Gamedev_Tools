@@ -2,10 +2,10 @@
     "1": {
         "id": 1,
         "type": 26,
-        "name": "tee_name_basic",
-        "icon": "",
+        "name": "tee_Basic_name",
+        "icon": "Icon_tee_lv1_flag",
         "shop_prefab": "",
-        "game_prefab": "",
+        "game_prefab": "pre_tee_Flag",
         "sort": 1,
         "free": 1,
         "rarity": 1,
@@ -15,10 +15,172 @@
     "101": {
         "id": 101,
         "type": 26,
-        "name": "tee_name_coin_stage_eagle_ball_lv1",
-        "icon": "",
+        "name": "tee_Burn_name",
+        "icon": "Icon_tee_lv1_burn",
         "shop_prefab": "",
-        "game_prefab": "",
+        "game_prefab": "pre_tee_Burm",
+        "sort": 2,
+        "free": 0,
+        "rarity": 1,
+        "cover": 0,
+        "skill_list": [
+            1001,
+            1005
+        ]
+    },
+    "102": {
+        "id": 102,
+        "type": 26,
+        "name": "tee_Booster01_name",
+        "icon": "Icon_tee_lv2_booster01",
+        "shop_prefab": "",
+        "game_prefab": "pre_tee_Booster01",
+        "sort": 3,
+        "free": 0,
+        "rarity": 2,
+        "cover": 0,
+        "skill_list": [
+            1002,
+            1006
+        ]
+    },
+    "103": {
+        "id": 103,
+        "type": 26,
+        "name": "tee_Fortress_name",
+        "icon": "Icon_tee_lv3_fortress",
+        "shop_prefab": "",
+        "game_prefab": "pre_tee_Fortress",
+        "sort": 4,
+        "free": 0,
+        "rarity": 3,
+        "cover": 0,
+        "skill_list": [
+            1003,
+            1007
+        ]
+    },
+    "104": {
+        "id": 104,
+        "type": 26,
+        "name": "tee_MechArmor_name",
+        "icon": "Icon_tee_lv4_mecharmor",
+        "shop_prefab": "",
+        "game_prefab": "pre_tee_mecharmor",
+        "sort": 5,
+        "free": 0,
+        "rarity": 4,
+        "cover": 0,
+        "skill_list": [
+            1004,
+            1008
+        ]
+    },
+    "105": {
+        "id": 105,
+        "type": 26,
+        "name": "tee_Iceberg_name",
+        "icon": "Icon_tee_lv4_Iceberg",
+        "shop_prefab": "",
+        "game_prefab": "pre_tee_Iceberg",
+        "sort": 6,
+        "free": 0,
+        "rarity": 4,
+        "cover": 0,
+        "skill_list": [
+            1004,
+            2001,
+            1008
+        ]
+    },
+    "106": {
+        "id": 106,
+        "type": 26,
+        "name": "tee_Triangle_name",
+        "icon": "Icon_tee_lv1_Triangle",
+        "shop_prefab": "",
+        "game_prefab": "pre_tee_Triangle",
+        "sort": 7,
+        "free": 0,
+        "rarity": 1,
+        "cover": 0,
+        "skill_list": [
+            1001,
+            1009
+        ]
+    },
+    "107": {
+        "id": 107,
+        "type": 26,
+        "name": "tee_Horn_name",
+        "icon": "Icon_tee_lv2_horn",
+        "shop_prefab": "",
+        "game_prefab": "pre_tee_horn",
+        "sort": 8,
+        "free": 0,
+        "rarity": 2,
+        "cover": 0,
+        "skill_list": [
+            1002,
+            1010
+        ]
+    },
+    "108": {
+        "id": 108,
+        "type": 26,
+        "name": "tee_Sharp_name",
+        "icon": "Icon_tee_lv3_sharp",
+        "shop_prefab": "",
+        "game_prefab": "pre_tee_Sharp",
+        "sort": 9,
+        "free": 0,
+        "rarity": 3,
+        "cover": 0,
+        "skill_list": [
+            1003,
+            1011
+        ]
+    },
+    "109": {
+        "id": 109,
+        "type": 26,
+        "name": "tee_EgyptianSoldier_name",
+        "icon": "Icon_tee_lv4_egyptian_soldier",
+        "shop_prefab": "",
+        "game_prefab": "pre_tee_egyptiansoldier",
+        "sort": 10,
+        "free": 0,
+        "rarity": 4,
+        "cover": 0,
+        "skill_list": [
+            1004,
+            1012
+        ]
+    },
+    "110": {
+        "id": 110,
+        "type": 26,
+        "name": "tee_MetalDrill_name",
+        "icon": "Icon_tee_lv4_metaldrill",
+        "shop_prefab": "",
+        "game_prefab": "pre_tee_metaldrill",
+        "sort": 11,
+        "free": 0,
+        "rarity": 4,
+        "cover": 0,
+        "skill_list": [
+            1004,
+            2001,
+            1012
+        ]
+    },
+    "111": {
+        "id": 111,
+        "type": 26,
+        "name": "tee_Joker_name",
+        "icon": "Icon_tee_lv1_joker",
+        "shop_prefab": "",
+        "game_prefab": "pre_tee_Joker",
         "sort": 12,
         "free": 0,
         "rarity": 1,
@@ -28,13 +190,13 @@
             1013
         ]
     },
-    "102": {
-        "id": 102,
+    "112": {
+        "id": 112,
         "type": 26,
-        "name": "tee_name_coin_stage_eagle_ball_lv2",
-        "icon": "",
+        "name": "tee_Broom_name",
+        "icon": "Icon_tee_lv2_broom",
         "shop_prefab": "",
-        "game_prefab": "",
+        "game_prefab": "pre_tee_broom",
         "sort": 13,
         "free": 0,
         "rarity": 2,
@@ -44,13 +206,13 @@
             1014
         ]
     },
-    "103": {
-        "id": 103,
+    "113": {
+        "id": 113,
         "type": 26,
-        "name": "tee_name_coin_stage_eagle_ball_lv3",
-        "icon": "",
+        "name": "tee_Cliff_name",
+        "icon": "Icon_tee_lv3_cliff",
         "shop_prefab": "",
-        "game_prefab": "",
+        "game_prefab": "pre_tee_Cliff",
         "sort": 14,
         "free": 0,
         "rarity": 3,
@@ -60,13 +222,13 @@
             1015
         ]
     },
-    "104": {
-        "id": 104,
+    "114": {
+        "id": 114,
         "type": 26,
-        "name": "tee_name_coin_stage_eagle_ball_lv4",
-        "icon": "",
+        "name": "tee_Cavalry_name",
+        "icon": "Icon_tee_lv4_cavalry",
         "shop_prefab": "",
-        "game_prefab": "",
+        "game_prefab": "pre_tee_Cavalry",
         "sort": 15,
         "free": 0,
         "rarity": 4,
@@ -76,13 +238,13 @@
             1016
         ]
     },
-    "105": {
-        "id": 105,
+    "115": {
+        "id": 115,
         "type": 26,
-        "name": "tee_name_coin_stage_excitation_ball_lv4",
-        "icon": "",
+        "name": "tee_HolyGrail_name",
+        "icon": "Icon_tee_lv4_Holy_Grail",
         "shop_prefab": "",
-        "game_prefab": "",
+        "game_prefab": "pre_tee_holygrail",
         "sort": 16,
         "free": 0,
         "rarity": 4,
@@ -92,13 +254,13 @@
             1021
         ]
     },
-    "106": {
-        "id": 106,
+    "116": {
+        "id": 116,
         "type": 26,
-        "name": "tee_name_coin_kingdom_eagle_ball_lv1",
-        "icon": "",
+        "name": "tee_TheFlash_name",
+        "icon": "Icon_tee_lv1_The_Flash",
         "shop_prefab": "",
-        "game_prefab": "",
+        "game_prefab": "pre_tee_Theflash",
         "sort": 17,
         "free": 0,
         "rarity": 1,
@@ -108,13 +270,13 @@
             1017
         ]
     },
-    "107": {
-        "id": 107,
+    "117": {
+        "id": 117,
         "type": 26,
-        "name": "tee_name_coin_kingdom_eagle_ball_lv2",
-        "icon": "",
+        "name": "tee_Traveller5_name",
+        "icon": "Icon_tee_lv2_Teaveller_5",
         "shop_prefab": "",
-        "game_prefab": "",
+        "game_prefab": "pre_tee_traveller5",
         "sort": 18,
         "free": 0,
         "rarity": 2,
@@ -124,13 +286,13 @@
             1018
         ]
     },
-    "108": {
-        "id": 108,
+    "118": {
+        "id": 118,
         "type": 26,
-        "name": "tee_name_coin_kingdom_eagle_ball_lv3",
-        "icon": "",
+        "name": "tee_Carrot_name",
+        "icon": "Icon_tee_lv3_carrot",
         "shop_prefab": "",
-        "game_prefab": "",
+        "game_prefab": "pre_tee_carrot",
         "sort": 19,
         "free": 0,
         "rarity": 3,
@@ -140,13 +302,13 @@
             1019
         ]
     },
-    "109": {
-        "id": 109,
+    "119": {
+        "id": 119,
         "type": 26,
-        "name": "tee_name_coin_kingdom_eagle_ball_lv4",
-        "icon": "",
+        "name": "tee_DemonSword_name",
+        "icon": "Icon_tee_lv4_demonsword",
         "shop_prefab": "",
-        "game_prefab": "",
+        "game_prefab": "pre_tee_DemonSword",
         "sort": 20,
         "free": 0,
         "rarity": 4,
@@ -156,13 +318,13 @@
             1020
         ]
     },
-    "110": {
-        "id": 110,
+    "120": {
+        "id": 120,
         "type": 26,
-        "name": "tee_name_coin_kingdom_excitation_ball_lv4",
-        "icon": "",
+        "name": "tee_Froggie_name",
+        "icon": "Icon_tee_lv4_froggie",
         "shop_prefab": "",
-        "game_prefab": "",
+        "game_prefab": "pre_tee_froggie",
         "sort": 21,
         "free": 0,
         "rarity": 4,
