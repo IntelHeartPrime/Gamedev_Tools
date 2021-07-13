@@ -92,86 +92,6 @@
             1008
         ]
     },
-    "106": {
-        "id": 106,
-        "type": 26,
-        "name": "tee_Triangle_name",
-        "icon": "Icon_tee_lv1_Triangle",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_Triangle",
-        "sort": 7,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            1001
-        ]
-    },
-    "107": {
-        "id": 107,
-        "type": 26,
-        "name": "tee_Horn_name",
-        "icon": "Icon_tee_lv2_horn",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_horn",
-        "sort": 8,
-        "free": 0,
-        "rarity": 2,
-        "cover": 0,
-        "skill_list": [
-            1002,
-            1010
-        ]
-    },
-    "108": {
-        "id": 108,
-        "type": 26,
-        "name": "tee_Sharp_name",
-        "icon": "Icon_tee_lv3_sharp",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_Sharp",
-        "sort": 9,
-        "free": 0,
-        "rarity": 3,
-        "cover": 0,
-        "skill_list": [
-            1003,
-            1011
-        ]
-    },
-    "109": {
-        "id": 109,
-        "type": 26,
-        "name": "tee_EgyptianSoldier_name",
-        "icon": "Icon_tee_lv4_egyptian_soldier",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_egyptiansoldier",
-        "sort": 10,
-        "free": 0,
-        "rarity": 4,
-        "cover": 0,
-        "skill_list": [
-            1004,
-            1012
-        ]
-    },
-    "110": {
-        "id": 110,
-        "type": 26,
-        "name": "tee_MetalDrill_name",
-        "icon": "Icon_tee_lv4_metaldrill",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_metaldrill",
-        "sort": 11,
-        "free": 0,
-        "rarity": 4,
-        "cover": 0,
-        "skill_list": [
-            1004,
-            2001,
-            1012
-        ]
-    },
     "111": {
         "id": 111,
         "type": 26,
@@ -179,7 +99,7 @@
         "icon": "Icon_tee_lv1_joker",
         "shop_prefab": "",
         "game_prefab": "pre_tee_Joker",
-        "sort": 12,
+        "sort": 7,
         "free": 0,
         "rarity": 1,
         "cover": 0,
@@ -194,7 +114,7 @@
         "icon": "Icon_tee_lv2_broom",
         "shop_prefab": "",
         "game_prefab": "pre_tee_broom",
-        "sort": 13,
+        "sort": 8,
         "free": 0,
         "rarity": 2,
         "cover": 0,
@@ -210,7 +130,7 @@
         "icon": "Icon_tee_lv3_cliff",
         "shop_prefab": "",
         "game_prefab": "pre_tee_Cliff",
-        "sort": 14,
+        "sort": 9,
         "free": 0,
         "rarity": 3,
         "cover": 0,
@@ -226,7 +146,7 @@
         "icon": "Icon_tee_lv4_cavalry",
         "shop_prefab": "",
         "game_prefab": "pre_tee_Cavalry",
-        "sort": 15,
+        "sort": 10,
         "free": 0,
         "rarity": 4,
         "cover": 0,
@@ -242,13 +162,93 @@
         "icon": "Icon_tee_lv4_Holy_Grail",
         "shop_prefab": "",
         "game_prefab": "pre_tee_holygrail",
-        "sort": 16,
+        "sort": 11,
         "free": 0,
         "rarity": 4,
         "cover": 0,
         "skill_list": [
             1004,
             1021
+        ]
+    },
+    "106": {
+        "id": 106,
+        "type": 26,
+        "name": "tee_Triangle_name",
+        "icon": "Icon_tee_lv1_Triangle",
+        "shop_prefab": "",
+        "game_prefab": "pre_tee_Triangle",
+        "sort": 12,
+        "free": 0,
+        "rarity": 1,
+        "cover": 0,
+        "skill_list": [
+            1001
+        ]
+    },
+    "107": {
+        "id": 107,
+        "type": 26,
+        "name": "tee_Horn_name",
+        "icon": "Icon_tee_lv2_horn",
+        "shop_prefab": "",
+        "game_prefab": "pre_tee_horn",
+        "sort": 13,
+        "free": 0,
+        "rarity": 2,
+        "cover": 0,
+        "skill_list": [
+            1002,
+            1010
+        ]
+    },
+    "108": {
+        "id": 108,
+        "type": 26,
+        "name": "tee_Sharp_name",
+        "icon": "Icon_tee_lv3_sharp",
+        "shop_prefab": "",
+        "game_prefab": "pre_tee_Sharp",
+        "sort": 14,
+        "free": 0,
+        "rarity": 3,
+        "cover": 0,
+        "skill_list": [
+            1003,
+            1011
+        ]
+    },
+    "109": {
+        "id": 109,
+        "type": 26,
+        "name": "tee_EgyptianSoldier_name",
+        "icon": "Icon_tee_lv4_egyptian_soldier",
+        "shop_prefab": "",
+        "game_prefab": "pre_tee_egyptiansoldier",
+        "sort": 15,
+        "free": 0,
+        "rarity": 4,
+        "cover": 0,
+        "skill_list": [
+            1004,
+            1012
+        ]
+    },
+    "110": {
+        "id": 110,
+        "type": 26,
+        "name": "tee_MetalDrill_name",
+        "icon": "Icon_tee_lv4_metaldrill",
+        "shop_prefab": "",
+        "game_prefab": "pre_tee_metaldrill",
+        "sort": 16,
+        "free": 0,
+        "rarity": 4,
+        "cover": 0,
+        "skill_list": [
+            1004,
+            2001,
+            1012
         ]
     },
     "116": {
@@ -328,559 +328,6 @@
         "skill_list": [
             1004,
             1021
-        ]
-    },
-    "10001": {
-        "id": 10001,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv1_flag",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_Flag",
-        "sort": 10001,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10001
-        ]
-    },
-    "10002": {
-        "id": 10002,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv1_verdigo",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_Verdigo",
-        "sort": 10002,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10002
-        ]
-    },
-    "10003": {
-        "id": 10003,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv1_Danger",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_Danger",
-        "sort": 10003,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10003
-        ]
-    },
-    "10004": {
-        "id": 10004,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv1_Pyramid",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_Pyramid",
-        "sort": 10004,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10004
-        ]
-    },
-    "10005": {
-        "id": 10005,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv1_stinger",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_Stinger",
-        "sort": 10005,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10005
-        ]
-    },
-    "10006": {
-        "id": 10006,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv1_dragon",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_Dragon",
-        "sort": 10006,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10006
-        ]
-    },
-    "10007": {
-        "id": 10007,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv2_sundae",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_Sundae",
-        "sort": 10007,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10007
-        ]
-    },
-    "10008": {
-        "id": 10008,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv2_lemon",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_Lemon",
-        "sort": 10008,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10008
-        ]
-    },
-    "10009": {
-        "id": 10009,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv2_booster02",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_Booster02",
-        "sort": 10009,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10009
-        ]
-    },
-    "10010": {
-        "id": 10010,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv2_ark_core",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_arkcore",
-        "sort": 10010,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10010
-        ]
-    },
-    "10011": {
-        "id": 10011,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv2_Beacon_Jungle",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_beaconjungle",
-        "sort": 10011,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10011
-        ]
-    },
-    "10012": {
-        "id": 10012,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv2_Beacon_Oceane",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_beaconocean",
-        "sort": 10012,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10012
-        ]
-    },
-    "10013": {
-        "id": 10013,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv3_spiral",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_Spiral",
-        "sort": 10013,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10013
-        ]
-    },
-    "10014": {
-        "id": 10014,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv3_beestinger",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_BeeStinger",
-        "sort": 10014,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10014
-        ]
-    },
-    "10015": {
-        "id": 10015,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv3_Fire_Lotus",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_FireLotus",
-        "sort": 10015,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10015
-        ]
-    },
-    "10016": {
-        "id": 10016,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv3_Cloak",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_Cloak",
-        "sort": 10016,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10016
-        ]
-    },
-    "10017": {
-        "id": 10017,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv3_airvehicle",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_AirVehicle",
-        "sort": 10017,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10017
-        ]
-    },
-    "10018": {
-        "id": 10018,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv3_emperor",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_Emperor",
-        "sort": 10018,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10018
-        ]
-    },
-    "10019": {
-        "id": 10019,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv4_Lion",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_lion",
-        "sort": 10019,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10019
-        ]
-    },
-    "10020": {
-        "id": 10020,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv4_Torch",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_torch",
-        "sort": 10020,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10020
-        ]
-    },
-    "10021": {
-        "id": 10021,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv1_flag",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_Flag",
-        "sort": "",
-        "free": "",
-        "rarity": "",
-        "cover": "",
-        "skill_list": []
-    },
-    "10022": {
-        "id": 10022,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv1_verdigo",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_Verdigo",
-        "sort": 10021,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10021
-        ]
-    },
-    "10023": {
-        "id": 10023,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv1_Danger",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_Danger",
-        "sort": 10022,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10022
-        ]
-    },
-    "10024": {
-        "id": 10024,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv1_Pyramid",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_Pyramid",
-        "sort": 10023,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10023
-        ]
-    },
-    "10025": {
-        "id": 10025,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv1_stinger",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_Stinger",
-        "sort": 10024,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10024
-        ]
-    },
-    "10026": {
-        "id": 10026,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv1_dragon",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_Dragon",
-        "sort": 10025,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10025
-        ]
-    },
-    "10027": {
-        "id": 10027,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv2_sundae",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_Sundae",
-        "sort": 10026,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10026
-        ]
-    },
-    "10028": {
-        "id": 10028,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv2_lemon",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_Lemon",
-        "sort": 10027,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10027
-        ]
-    },
-    "10029": {
-        "id": 10029,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv2_booster02",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_Booster02",
-        "sort": 10028,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10028
-        ]
-    },
-    "10030": {
-        "id": 10030,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv2_ark_core",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_arkcore",
-        "sort": 10029,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10029
-        ]
-    },
-    "10031": {
-        "id": 10031,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv2_Beacon_Jungle",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_beaconjungle",
-        "sort": 10030,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10030
-        ]
-    },
-    "10032": {
-        "id": 10032,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv2_Beacon_Oceane",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_beaconocean",
-        "sort": 10031,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10031
-        ]
-    },
-    "10033": {
-        "id": 10033,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv3_spiral",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_Spiral",
-        "sort": 10032,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10032
-        ]
-    },
-    "10034": {
-        "id": 10034,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv3_beestinger",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_BeeStinger",
-        "sort": 10033,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10033
-        ]
-    },
-    "10035": {
-        "id": 10035,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv3_Fire_Lotus",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_FireLotus",
-        "sort": 10034,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10034
-        ]
-    },
-    "10036": {
-        "id": 10036,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv3_Cloak",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_Cloak",
-        "sort": 10035,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10035
-        ]
-    },
-    "10037": {
-        "id": 10037,
-        "type": 26,
-        "name": "test_tee",
-        "icon": "Icon_tee_lv3_airvehicle",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_AirVehicle",
-        "sort": 10036,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            10036
         ]
     }
 }

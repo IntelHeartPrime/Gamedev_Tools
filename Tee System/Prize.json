@@ -355,7 +355,7 @@
             "prop_id": 1,
             "prop_type": 27,
             "prop_color": 0,
-            "prop_num": 10
+            "prop_num": 14
         }
     },
     "10024": {
@@ -376,7 +376,7 @@
             "prop_id": 1,
             "prop_type": 27,
             "prop_color": 0,
-            "prop_num": 8
+            "prop_num": 12
         }
     },
     "10025": {
@@ -397,7 +397,7 @@
             "prop_id": 1,
             "prop_type": 27,
             "prop_color": 0,
-            "prop_num": 6
+            "prop_num": 10
         }
     },
     "10026": {
@@ -418,7 +418,7 @@
             "prop_id": 1,
             "prop_type": 27,
             "prop_color": 0,
-            "prop_num": 4
+            "prop_num": 8
         }
     },
     "10027": {
@@ -1115,7 +1115,7 @@
             "prop_id": 1,
             "prop_type": 27,
             "prop_color": 0,
-            "prop_num": 10
+            "prop_num": 14
         }
     },
     "100024": {
@@ -1136,7 +1136,7 @@
             "prop_id": 1,
             "prop_type": 27,
             "prop_color": 0,
-            "prop_num": 8
+            "prop_num": 12
         }
     },
     "100025": {
@@ -1157,7 +1157,7 @@
             "prop_id": 1,
             "prop_type": 27,
             "prop_color": 0,
-            "prop_num": 6
+            "prop_num": 10
         }
     },
     "100026": {
@@ -1178,7 +1178,7 @@
             "prop_id": 1,
             "prop_type": 27,
             "prop_color": 0,
-            "prop_num": 4
+            "prop_num": 8
         }
     },
     "100027": {
