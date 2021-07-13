@@ -44,7 +44,7 @@
         "skill_level": 3,
         "match_type": -1,
         "icon": "Icon_c_tee_skill_zzjs",
-        "name": "",
+        "name": "reduce_needle_speed_name",
         "buff_list": [
             {
                 "type": "reduce_speed",
@@ -239,6 +239,391 @@
             10024,
             10025,
             10026
+        ]
+    },
+    "10001": {
+        "id": 10001,
+        "skill_level": 1,
+        "match_type": -1,
+        "icon": "",
+        "name": "tee_skill_name_win_coin_add",
+        "prize_list": [
+            100001
+        ]
+    },
+    "10002": {
+        "id": 10002,
+        "skill_level": 1,
+        "match_type": 0,
+        "icon": "",
+        "name": "tee_skill_name_ball_add",
+        "prize_list": [
+            100002
+        ]
+    },
+    "10003": {
+        "id": 10003,
+        "skill_level": 1,
+        "match_type": 0,
+        "icon": "",
+        "name": "tee_skill_name_diamond_add",
+        "prize_list": [
+            100003
+        ]
+    },
+    "10004": {
+        "id": 10004,
+        "skill_level": 1,
+        "match_type": 0,
+        "icon": "",
+        "name": "tee_skill_name_epic_card_add",
+        "prize_list": [
+            100004
+        ]
+    },
+    "10005": {
+        "id": 10005,
+        "skill_level": 1,
+        "match_type": 0,
+        "icon": "",
+        "name": "tee_skill_name_token_add",
+        "prize_list": [
+            100005
+        ]
+    },
+    "10006": {
+        "id": 10006,
+        "skill_level": 1,
+        "match_type": 0,
+        "icon": "",
+        "name": "tee_skill_name_reback_ball",
+        "prize_list": [
+            100006
+        ]
+    },
+    "10007": {
+        "id": 10007,
+        "skill_level": 1,
+        "match_type": 0,
+        "icon": "",
+        "name": "tee_skill_name_trophy_shield",
+        "prize_list": [
+            100007
+        ]
+    },
+    "10008": {
+        "id": 10008,
+        "skill_level": 1,
+        "match_type": -1,
+        "icon": "",
+        "name": "reduce_needle_speed_name",
+        "buff_list": [
+            {
+                "type": "reduce_speed",
+                "name": "reduce_needle_speed_name",
+                "desc": "reduce_needle_speed_desc",
+                "value": 30
+            }
+        ],
+        "prize_list": []
+    },
+    "10009": {
+        "id": 10009,
+        "skill_level": 1,
+        "match_type": 4,
+        "icon": "",
+        "name": "tee_skill_name_epic_card_add",
+        "prize_list": [
+            100004
+        ]
+    },
+    "10010": {
+        "id": 10010,
+        "skill_level": 1,
+        "match_type": 4,
+        "icon": "",
+        "name": "tee_skill_name_ball_add",
+        "prize_list": [
+            100002
+        ]
+    },
+    "10011": {
+        "id": 10011,
+        "skill_level": 1,
+        "match_type": 4,
+        "icon": "",
+        "name": "tee_skill_name_diamond_add",
+        "prize_list": [
+            100003
+        ]
+    },
+    "10012": {
+        "id": 10012,
+        "skill_level": 1,
+        "match_type": 4,
+        "icon": "",
+        "name": "tee_skill_name_token_add",
+        "prize_list": [
+            100005
+        ]
+    },
+    "10013": {
+        "id": 10013,
+        "skill_level": 1,
+        "match_type": 4,
+        "icon": "",
+        "name": "tee_skill_name_reback_ball",
+        "prize_list": [
+            100006
+        ]
+    },
+    "10014": {
+        "id": 10014,
+        "skill_level": 1,
+        "match_type": 4,
+        "icon": "",
+        "name": "tee_skill_kingdom_win_points",
+        "prize_list": [
+            100008
+        ]
+    },
+    "10015": {
+        "id": 10015,
+        "skill_level": 1,
+        "match_type": 4,
+        "icon": "",
+        "name": "tee_skill_kingdom_points_shield",
+        "prize_list": [
+            100009
+        ]
+    },
+    "10016": {
+        "id": 10016,
+        "skill_level": 1,
+        "match_type": 3,
+        "icon": "",
+        "name": "tee_skill_name_diamond_add",
+        "prize_list": [
+            100010
+        ]
+    },
+    "10017": {
+        "id": 10017,
+        "skill_level": 1,
+        "match_type": 3,
+        "icon": "",
+        "name": "tee_skill_name_epic_card_add",
+        "prize_list": [
+            100011
+        ]
+    },
+    "10018": {
+        "id": 10018,
+        "skill_level": 1,
+        "match_type": 3,
+        "icon": "",
+        "name": "tee_skill_name_ball_add",
+        "prize_list": [
+            100012
+        ]
+    },
+    "10019": {
+        "id": 10019,
+        "skill_level": 1,
+        "match_type": 3,
+        "icon": "",
+        "name": "tee_skill_name_reback_ball",
+        "prize_list": [
+            100013
+        ]
+    },
+    "10020": {
+        "id": 10020,
+        "skill_level": 1,
+        "match_type": 3,
+        "icon": "",
+        "name": "tee_skill_name_token_add",
+        "prize_list": [
+            100014
+        ]
+    },
+    "10021": {
+        "id": 10021,
+        "skill_level": 1,
+        "match_type": 3,
+        "icon": "",
+        "name": "tee_skill_arena_extra_live",
+        "prize_list": [
+            100016
+        ]
+    },
+    "10022": {
+        "id": 10022,
+        "skill_level": 1,
+        "match_type": 3,
+        "icon": "",
+        "name": "tee_skill_arena_extra_wolf_coin",
+        "prize_list": [
+            100015
+        ]
+    },
+    "10023": {
+        "id": 10023,
+        "skill_level": 1,
+        "match_type": 5,
+        "icon": "",
+        "name": "tee_skill_name_diamond_add",
+        "prize_list": [
+            100003
+        ]
+    },
+    "10024": {
+        "id": 10024,
+        "skill_level": 1,
+        "match_type": 5,
+        "icon": "",
+        "name": "tee_skill_name_epic_card_add",
+        "prize_list": [
+            100004
+        ]
+    },
+    "10025": {
+        "id": 10025,
+        "skill_level": 1,
+        "match_type": 5,
+        "icon": "",
+        "name": "tee_skill_name_ball_add",
+        "prize_list": [
+            100002
+        ]
+    },
+    "10026": {
+        "id": 10026,
+        "skill_level": 1,
+        "match_type": 5,
+        "icon": "",
+        "name": "tee_skill_name_reback_ball",
+        "prize_list": [
+            100006
+        ]
+    },
+    "10027": {
+        "id": 10027,
+        "skill_level": 1,
+        "match_type": 5,
+        "icon": "",
+        "name": "tee_skill_name_token_add",
+        "prize_list": [
+            100005
+        ]
+    },
+    "10028": {
+        "id": 10028,
+        "skill_level": 1,
+        "match_type": 5,
+        "icon": "",
+        "name": "tee_skill_name_sp_live_shield",
+        "prize_list": [
+            100017
+        ]
+    },
+    "10029": {
+        "id": 10029,
+        "skill_level": 1,
+        "match_type": 6,
+        "icon": "",
+        "name": "tee_skill_name_diamond_add",
+        "prize_list": [
+            100003
+        ]
+    },
+    "10030": {
+        "id": 10030,
+        "skill_level": 1,
+        "match_type": 6,
+        "icon": "",
+        "name": "tee_skill_name_diamond_add",
+        "prize_list": [
+            100004
+        ]
+    },
+    "10031": {
+        "id": 10031,
+        "skill_level": 1,
+        "match_type": 6,
+        "icon": "",
+        "name": "tee_skill_name_epic_card_add",
+        "prize_list": [
+            100002
+        ]
+    },
+    "10032": {
+        "id": 10032,
+        "skill_level": 1,
+        "match_type": 6,
+        "icon": "",
+        "name": "tee_skill_name_ball_add",
+        "prize_list": [
+            100006
+        ]
+    },
+    "10033": {
+        "id": 10033,
+        "skill_level": 1,
+        "match_type": 6,
+        "icon": "",
+        "name": "tee_skill_name_token_add",
+        "prize_list": [
+            100005
+        ]
+    },
+    "10034": {
+        "id": 10034,
+        "skill_level": 1,
+        "match_type": 6,
+        "icon": "",
+        "name": "tee_skill_tournament_replay_add",
+        "prize_list": [
+            100018
+        ]
+    },
+    "10035": {
+        "id": 10035,
+        "skill_level": 1,
+        "match_type": -1,
+        "icon": "",
+        "name": "tee_skill_excitation_epic_cards",
+        "prize_list": [
+            100019,
+            "=L61+1",
+            "=N61+1",
+            "=P61+1"
+        ]
+    },
+    "10036": {
+        "id": 10036,
+        "skill_level": 1,
+        "match_type": -1,
+        "icon": "",
+        "name": "tee_skill_name_excitation_balls",
+        "prize_list": [
+            100023,
+            "=L62+1",
+            "=N62+1",
+            "=P62+1"
+        ]
+    },
+    "10037": {
+        "id": 10037,
+        "skill_level": 1,
+        "match_type": -1,
+        "icon": "",
+        "name": "tee_skill_name_excitation_diamonds",
+        "prize_list": [
+            100027,
+            "=L63+1",
+            "=N63+1",
+            "=P63+1"
         ]
     }
 }

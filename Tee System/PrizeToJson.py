@@ -61,15 +61,17 @@ while ws.cell(row_index,1).value != None:
         unit_dic.update(({"kingdom_extra_score": ws.cell(row_index,17).value}))
     if(ws.cell(row_index,18).value!= None):
         unit_dic.update(({"kingdom_score_shield": ws.cell(row_index,18).value}))
+    if(ws.cell(row_index,19).value!= None):
+        unit_dic.update(({"special_challenge_live_shield": ws.cell(row_index,19).value}))
 
-    if(ws.cell(row_index, 19).value!= None) and (ws.cell(row_index, 19).value!= ""):
+    if(ws.cell(row_index, 20).value!= None) and (ws.cell(row_index, 20).value!= ""):
         reward_dic = {}
-        reward_dic.update({"prop_id": ws.cell(row_index, 19).value})
-        reward_dic.update({"prop_type": ws.cell(row_index, 20).value})
-        reward_dic.update({"prop_color": ws.cell(row_index, 21).value})
-        reward_dic.update({"prop_num": ws.cell(row_index, 22).value})
-        if(ws.cell(row_index, 23).value!= None):
-            reward_dic.update({"chest_type": ws.cell(row_index, 23).value})
+        reward_dic.update({"prop_id": ws.cell(row_index, 20).value})
+        reward_dic.update({"prop_type": ws.cell(row_index, 21).value})
+        reward_dic.update({"prop_color": ws.cell(row_index, 22).value})
+        reward_dic.update({"prop_num": ws.cell(row_index, 23).value})
+        if(ws.cell(row_index, 24).value!= None):
+            reward_dic.update({"chest_type": ws.cell(row_index, 24).value})
         unit_dic.update({"reward": reward_dic})
 
     unit_dic_front.update({str(ws.cell(row_index,1).value): unit_dic})
