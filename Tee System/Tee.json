@@ -199,6 +199,7 @@
         "cover": 0,
         "skill_list": [
             1002,
+            1006,
             1010
         ]
     },
@@ -215,6 +216,7 @@
         "cover": 0,
         "skill_list": [
             1003,
+            1007,
             1011
         ]
     },
@@ -231,6 +233,7 @@
         "cover": 0,
         "skill_list": [
             1004,
+            1008,
             1012
         ]
     },
@@ -247,87 +250,8 @@
         "cover": 0,
         "skill_list": [
             1004,
-            2001,
-            1012
-        ]
-    },
-    "116": {
-        "id": 116,
-        "type": 26,
-        "name": "tee_TheFlash_name",
-        "icon": "Icon_tee_lv1_The_Flash",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_Theflash",
-        "sort": 17,
-        "free": 0,
-        "rarity": 1,
-        "cover": 0,
-        "skill_list": [
-            1001
-        ]
-    },
-    "117": {
-        "id": 117,
-        "type": 26,
-        "name": "tee_Traveller5_name",
-        "icon": "Icon_tee_lv2_Teaveller_5",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_traveller5",
-        "sort": 18,
-        "free": 0,
-        "rarity": 2,
-        "cover": 0,
-        "skill_list": [
-            1002,
-            1018
-        ]
-    },
-    "118": {
-        "id": 118,
-        "type": 26,
-        "name": "tee_Carrot_name",
-        "icon": "Icon_tee_lv3_carrot",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_carrot",
-        "sort": 19,
-        "free": 0,
-        "rarity": 3,
-        "cover": 0,
-        "skill_list": [
-            1003,
-            1019
-        ]
-    },
-    "119": {
-        "id": 119,
-        "type": 26,
-        "name": "tee_DemonSword_name",
-        "icon": "Icon_tee_lv4_demonsword",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_DemonSword",
-        "sort": 20,
-        "free": 0,
-        "rarity": 4,
-        "cover": 0,
-        "skill_list": [
-            1004,
-            1020
-        ]
-    },
-    "120": {
-        "id": 120,
-        "type": 26,
-        "name": "tee_Froggie_name",
-        "icon": "Icon_tee_lv4_froggie",
-        "shop_prefab": "",
-        "game_prefab": "pre_tee_froggie",
-        "sort": 21,
-        "free": 0,
-        "rarity": 4,
-        "cover": 0,
-        "skill_list": [
-            1004,
-            1021
+            1023,
+            1024
         ]
     }
 }
