@@ -272,10 +272,10 @@
         "icon": "Icon_c_tee_skill_ewzk",
         "name": "tee_skill_excitation_epic_cards",
         "prize_list": [
-            10032,
-            10033,
+            10035,
             10034,
-            10035
+            10033,
+            10032
         ]
     },
     "1024": {
@@ -286,10 +286,10 @@
         "icon": "Icon_c_tee_skill_ewzk",
         "name": "tee_skill_excitation_epic_cards",
         "prize_list": [
-            10032,
-            10033,
+            10035,
             10034,
-            10035
+            10033,
+            10032
         ]
     }
 }
