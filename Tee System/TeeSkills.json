@@ -291,5 +291,85 @@
             10033,
             10032
         ]
+    },
+    "1025": {
+        "id": 1025,
+        "skill_level": 2,
+        "skill_type": 0,
+        "match_type": 4,
+        "icon": "Icon_c_tee_skill_ewzk",
+        "name": "tee_skill_name_epic_card_add",
+        "prize_list": [
+            10008
+        ]
+    },
+    "1026": {
+        "id": 1026,
+        "skill_level": 3,
+        "skill_type": 0,
+        "match_type": 4,
+        "icon": "Icon_c_tee_skill_ewzk",
+        "name": "tee_skill_name_epic_card_add",
+        "prize_list": [
+            10009
+        ]
+    },
+    "1027": {
+        "id": 1027,
+        "skill_level": 4,
+        "skill_type": 0,
+        "match_type": 4,
+        "icon": "Icon_c_tee_skill_ewzk",
+        "name": "tee_skill_name_epic_card_add",
+        "prize_list": [
+            10010
+        ]
+    },
+    "1028": {
+        "id": 1028,
+        "skill_level": 4,
+        "skill_type": 1,
+        "match_type": 4,
+        "icon": "Icon_c_tee_skill_ewzk",
+        "name": "tee_skill_excitation_epic_cards",
+        "prize_list": [
+            10035,
+            10034,
+            10033,
+            10032
+        ]
+    },
+    "1029": {
+        "id": 1029,
+        "skill_level": 2,
+        "skill_type": 0,
+        "match_type": 4,
+        "icon": "Icon_c_tee_skill_ewds",
+        "name": "tee_skill_kingdom_win_points",
+        "prize_list": [
+            10040
+        ]
+    },
+    "1030": {
+        "id": 1030,
+        "skill_level": 3,
+        "skill_type": 0,
+        "match_type": 4,
+        "icon": "Icon_c_tee_skill_ewds",
+        "name": "tee_skill_kingdom_win_points",
+        "prize_list": [
+            10041
+        ]
+    },
+    "1031": {
+        "id": 1031,
+        "skill_level": 4,
+        "skill_type": 0,
+        "match_type": 4,
+        "icon": "Icon_c_tee_skill_ewds",
+        "name": "tee_skill_kingdom_win_points",
+        "prize_list": [
+            10042
+        ]
     }
 }

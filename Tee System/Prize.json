@@ -688,5 +688,53 @@
             "prop_color": 0,
             "prop_num": 8
         }
+    },
+    "10040": {
+        "id": 10040,
+        "name": "tee_prize_kingdom_point_add",
+        "type": 12,
+        "desc_type": "tee_prize_kingdom_point_add_value",
+        "desc_sign": "+",
+        "condition": [
+            1,
+            -1,
+            -99,
+            99,
+            -1
+        ],
+        "rate": 100,
+        "kingdom_extra_score": 10
+    },
+    "10041": {
+        "id": 10041,
+        "name": "tee_prize_kingdom_point_add",
+        "type": 12,
+        "desc_type": "tee_prize_kingdom_point_add_value",
+        "desc_sign": "+",
+        "condition": [
+            1,
+            -1,
+            -99,
+            99,
+            -1
+        ],
+        "rate": 100,
+        "kingdom_extra_score": 15
+    },
+    "10042": {
+        "id": 10042,
+        "name": "tee_prize_kingdom_point_add",
+        "type": 12,
+        "desc_type": "tee_prize_kingdom_point_add_value",
+        "desc_sign": "+",
+        "condition": [
+            1,
+            -1,
+            -99,
+            99,
+            -1
+        ],
+        "rate": 100,
+        "kingdom_extra_score": 20
     }
 }
