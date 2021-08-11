@@ -5,7 +5,7 @@
     "start_time": 1628838000,
     "end_time": 1629097200,
     "begin_time": 1628492400,
-    "refresh_interval": 600,
+    "refresh_interval": 86400,
     "ticket_conf_list": [
         {
             "min_stage": 2,
@@ -1109,7 +1109,7 @@
             "type": "token",
             "offer_id": 0,
             "consume_type": 17,
-            "consume_num": 70,
+            "consume_num": 100,
             "reward_list": [
                 {
                     "prop_type": 18,

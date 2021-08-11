@@ -156,7 +156,6 @@ while ws.cell(row_index, 1).value!= None:
                 reward_list_unit_dic.update({"chest_type": ws.cell(row_index, 9+diff).value})
 
                 reward_list.append(reward_list_unit_dic)
-                print(row_index)
 
     offer_list.append(offer_list_unit_dic)
 
