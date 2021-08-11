@@ -1,10 +1,10 @@
 {
-    "id": 119,
+    "id": 19,
     "name": "The Octopus Offer!",
     "coin_rate": 30,
-    "start_time": 1628665200,
-    "end_time": 1628676000,
-    "begin_time": 1628676000,
+    "start_time": 1628838000,
+    "end_time": 1629097200,
+    "begin_time": 1628492400,
     "refresh_interval": 600,
     "ticket_conf_list": [
         {
@@ -1362,7 +1362,7 @@
             "login": {
                 "available": true,
                 "days": 1,
-                "limit": 2
+                "limit": 1
             }
         },
         "B": {
