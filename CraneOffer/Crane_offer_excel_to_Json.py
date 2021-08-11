@@ -36,6 +36,8 @@ container_dic.update({"end_time": ws.cell(8, 2).value})
 container_dic.update({"begin_time": ws.cell(9, 2).value})
 container_dic.update({"refresh_interval": ws.cell(10, 2).value})
 
+print(" 总配置完成 ")
+
 # 小奖励配置
 ticket_conf_list = []
 container_dic.update({"ticket_conf_list": ticket_conf_list})
@@ -60,17 +62,18 @@ for x in range(3):
             reward_dic = {}
             ticket_levels_unit_dict.update({"reward": reward_dic})
 
-            reward_dic.update({"prop_type": ws.cell(row, 5+diff).value})
-            reward_dic.update({"prop_id": ws.cell(row, 6+diff).value})
-            reward_dic.update({"prop_num": ws.cell(row, 7+diff).value})
-            reward_dic.update({"prop_color": ws.cell(row, 8+diff).value})
-            reward_dic.update({"chest_type": ws.cell(row, 9+diff).value})
+            reward_dic.update({"prop_type": ws.cell(row_index, 5+diff).value})
+            reward_dic.update({"prop_id": ws.cell(row_index, 6+diff).value})
+            reward_dic.update({"prop_num": ws.cell(row_index, 7+diff).value})
+            reward_dic.update({"prop_color": ws.cell(row_index, 8+diff).value})
+            reward_dic.update({"chest_type": ws.cell(row_index, 9+diff).value})
 
             ticket_levels_list.append(ticket_levels_unit_dict)
 
             row_index = row_index + 1
         ticket_conf_list.append(ticket_conf_list_unit_dic)
 
+print("小奖励配置完成")
 
 # 大奖励配置
 big_reward_list = []
@@ -92,11 +95,11 @@ for x in range(3):
             big_reward_unit_dic.update({"unlock_level": ws.cell(row_index,1+diff).value})
 
             reward_dic = {}
-            reward_dic.update({"prop_type": ws.cell(row, 2+diff).value})
-            reward_dic.update({"prop_id": ws.cell(row, 3+diff).value})
-            reward_dic.update({"prop_num": ws.cell(row, 4+diff).value})
-            reward_dic.update({"prop_color": ws.cell(row, 5+diff).value})
-            reward_dic.update({"chest_type": ws.cell(row, 6+diff).value})
+            reward_dic.update({"prop_type": ws.cell(row_index, 2+diff).value})
+            reward_dic.update({"prop_id": ws.cell(row_index, 3+diff).value})
+            reward_dic.update({"prop_num": ws.cell(row_index, 4+diff).value})
+            reward_dic.update({"prop_color": ws.cell(row_index, 5+diff).value})
+            reward_dic.update({"chest_type": ws.cell(row_index, 6+diff).value})
 
             big_reward_unit_dic.update({"reward": reward_dic})
 
@@ -105,6 +108,8 @@ for x in range(3):
             row_index = row_index + 1
 
         big_reward_list.append(big_reward_list_unit_dic)
+
+print("大奖励配置完成")
 
 
 # offer配置
@@ -139,19 +144,99 @@ while ws.cell(row_index, 1).value!= None:
 
     row_index = row_index + 1
 
+print("Offer配置完成")
+
 
 # UI相关配置
 
 # ticket_reward_bg_list
+ticket_reward_bg_list = []
+container_dic.update({"ticket_reward_bg_list": ticket_reward_bg_list})
+
+column_index = 4
+
+for x in range(3):
+    diff = x*5
+    if ws.cell( 98, column_index+diff).value != None:
+        ticket_reward_bg_list_unt_dic = {}
+        ticket_reward_bg_list_unt_dic.update({"min_stage": ws.cell(98, column_index+diff).value})
+        ticket_reward_bg_list_unt_dic.update({"max_stage": ws.cell(99, column_index+diff).value})
+
+        ticket_reward_bg = {}
+        ticket_reward_bg_list_unt_dic.update({"ticket_reward_bg": ticket_reward_bg})
+
+        ticket_reward_bg.update({"main_bg_icon": ws.cell(100,column_index+diff).value})
+        ticket_reward_bg.update({"title_bg_icon": ws.cell(101,column_index+diff).value})
+        ticket_reward_bg.update({"tab_btn_icon_normal": ws.cell(102,column_index+diff).value})
+        ticket_reward_bg.update({"tab_btn_icon_select": ws.cell(103,column_index+diff).value})
+        ticket_reward_bg.update({"tiao_fu_icon": ws.cell(104,column_index+diff).value})
+        ticket_reward_bg.update({"big_reward_progress_effcet": ws.cell(105,column_index+diff).value})
+        ticket_reward_bg.update({"big_reward_progress_bg": ws.cell(106,column_index+diff).value})
+
+        tabRGB = []
+        tabRGB_sel = []
+        tabRGB_outline_sel = []
+        outlineRGB = []
+        projectionRGB = []
+        Gradienttop = []
+        Gradientdown = []
+        ticket_reward_bg.update({"tabRGB": tabRGB})
+        ticket_reward_bg.update({"tabRGB_sel": tabRGB_sel})
+        ticket_reward_bg.update({"tabRGB_outline_sel": tabRGB_outline_sel})
+        ticket_reward_bg.update({"outlineRGB": outlineRGB})
+        ticket_reward_bg.update({"projectionRGB": projectionRGB})
+        ticket_reward_bg.update({"Gradienttop": Gradienttop})
+        ticket_reward_bg.update({"Gradientdown": Gradientdown})
+
+        tabRGB = [ws.cell(107, column_index+diff).value, ws.cell(107, column_index+diff+1).value, ws.cell(107, column_index+diff+2).value, ws.cell(107, column_index+diff+3).value]
+        tabRGB_sel = [ws.cell(108, column_index+diff).value, ws.cell(108, column_index+diff+1).value, ws.cell(108, column_index+diff+2).value, ws.cell(108, column_index+diff+3).value]
+        tabRGB_outline_sel = [ws.cell(109, column_index+diff).value, ws.cell(109, column_index+diff+1).value, ws.cell(109, column_index+diff+2).value, ws.cell(109, column_index+diff+3).value]
+        outlineRGB = [ws.cell(110, column_index+diff).value, ws.cell(110, column_index+diff+1).value, ws.cell(110, column_index+diff+2).value, ws.cell(110, column_index+diff+3).value]
+        projectionRGB = [ws.cell(111, column_index+diff).value, ws.cell(111, column_index+diff+1).value, ws.cell(111, column_index+diff+2).value, ws.cell(111, column_index+diff+3).value]
+        Gradienttop = [ws.cell(112, column_index+diff).value, ws.cell(112, column_index+diff+1).value, ws.cell(112, column_index+diff+2).value, ws.cell(112, column_index+diff+3).value]
+        Gradientdown = [ws.cell(113, column_index+diff).value, ws.cell(113, column_index+diff+1).value, ws.cell(113, column_index+diff+2).value, ws.cell(113, column_index+diff+3).value]
+
+        ticket_reward_bg_list.append(ticket_reward_bg_list_unt_dic)
+
+
+# notify
+
+notify_dic = {}
+container_dic.update({"notify": notify_dic})
+
+notify_dic.update({"start_content": ws.cell(118, 3).value})
+notify_dic.update({"refresh_content": ws.cell(119, 3).value})
+notify_dic.update({"end_content": ws.cell(120, 3).value})
+notify_dic.update({"time_before_end": ws.cell(121, 3).value})
+
+
+# ui_conf
+
+ui_conf_dic = {}
+container_dic.update({"ui_conf": ui_conf_dic})
+
+ui_conf_dic.update({"token_icon": ws.cell(125, 3).value})
+ui_conf_dic.update({"token_icon_dui": ws.cell(126, 3).value})
+ui_conf_dic.update({"token_model_effect": ws.cell(127, 3).value})
+
+# ear_open
+
+ear_open_dic = {}
+container_dic.update({"ear_open": ear_open_dic})
+
+ear_open_dic.update({"A": ws.cell(130, 3).value})
+ear_open_dic.update({"B": ws.cell(131, 3).value})
+
+print("UI配置完成")
 
 
 
+# 输出json
 
 
-
-
-
-
+with open(json_dir, "w") as json_file:
+    json_str = json.dumps(container_dic, indent=4)
+    json_file.write(json_str)
 
 
 
