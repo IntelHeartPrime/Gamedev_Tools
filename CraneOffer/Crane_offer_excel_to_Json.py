@@ -24,6 +24,18 @@ def clean_null(input_value):
     return input_value
 
 
+def get_bool(input_string):
+    '''
+    input_string = "true" return true
+    input_string = "false" return false
+    '''
+    if input_string == "true":
+        return True
+    elif input_string == "false":
+        return  False
+    else:
+        return  False
+
 
 container_dic = {}
 
@@ -75,6 +87,8 @@ for x in range(3):
 
 print("小奖励配置完成")
 
+
+
 # 大奖励配置
 big_reward_list = []
 container_dic.update({"big_reward_list": big_reward_list})
@@ -112,9 +126,11 @@ for x in range(3):
 print("大奖励配置完成")
 
 
+
 # offer配置
 
-offer_list =[]
+offer_list = []
+
 container_dic.update({"offer_list": offer_list})
 
 row_index = 80
@@ -125,20 +141,22 @@ while ws.cell(row_index, 1).value!= None:
     offer_list_unit_dic.update( {"consume_type": ws.cell(row_index, 3).value})
     offer_list_unit_dic.update( {"consume_num": ws.cell(row_index, 4).value})
 
-    reward_list = []
-    offer_list_unit_dic.update({"reward_list": reward_list})
+    if ws.cell(row_index,5).value!=None:
+        reward_list = []
+        offer_list_unit_dic.update({"reward_list": reward_list})
 
-    for x in range(3):
-        while ws.cell(row_index, 5+x*5).value!= None:
-            diff = x*5
-            reward_list_unit_dic = {}
-            reward_list_unit_dic.update({"prop_type": ws.cell(row_index, 5+diff)})
-            reward_list_unit_dic.update({"prop_id": ws.cell(row_index, 6+diff)})
-            reward_list_unit_dic.update({"prop_num": ws.cell(row_index, 7+diff)})
-            reward_list_unit_dic.update({"prop_color": ws.cell(row_index, 8+diff)})
-            reward_list_unit_dic.update({"chest_type": ws.cell(row_index, 9+diff)})
+        for x in range(3):
+            if ws.cell(row_index, 5+x*5).value!= None:
+                diff = x*5
+                reward_list_unit_dic = {}
+                reward_list_unit_dic.update({"prop_type": ws.cell(row_index, 5+diff).value})
+                reward_list_unit_dic.update({"prop_id": ws.cell(row_index, 6+diff).value})
+                reward_list_unit_dic.update({"prop_num": ws.cell(row_index, 7+diff).value})
+                reward_list_unit_dic.update({"prop_color": ws.cell(row_index, 8+diff).value})
+                reward_list_unit_dic.update({"chest_type": ws.cell(row_index, 9+diff).value})
 
-            reward_list.append(reward_list_unit_dic)
+                reward_list.append(reward_list_unit_dic)
+                print(row_index)
 
     offer_list.append(offer_list_unit_dic)
 
@@ -180,13 +198,6 @@ for x in range(3):
         projectionRGB = []
         Gradienttop = []
         Gradientdown = []
-        ticket_reward_bg.update({"tabRGB": tabRGB})
-        ticket_reward_bg.update({"tabRGB_sel": tabRGB_sel})
-        ticket_reward_bg.update({"tabRGB_outline_sel": tabRGB_outline_sel})
-        ticket_reward_bg.update({"outlineRGB": outlineRGB})
-        ticket_reward_bg.update({"projectionRGB": projectionRGB})
-        ticket_reward_bg.update({"Gradienttop": Gradienttop})
-        ticket_reward_bg.update({"Gradientdown": Gradientdown})
 
         tabRGB = [ws.cell(107, column_index+diff).value, ws.cell(107, column_index+diff+1).value, ws.cell(107, column_index+diff+2).value, ws.cell(107, column_index+diff+3).value]
         tabRGB_sel = [ws.cell(108, column_index+diff).value, ws.cell(108, column_index+diff+1).value, ws.cell(108, column_index+diff+2).value, ws.cell(108, column_index+diff+3).value]
@@ -195,6 +206,14 @@ for x in range(3):
         projectionRGB = [ws.cell(111, column_index+diff).value, ws.cell(111, column_index+diff+1).value, ws.cell(111, column_index+diff+2).value, ws.cell(111, column_index+diff+3).value]
         Gradienttop = [ws.cell(112, column_index+diff).value, ws.cell(112, column_index+diff+1).value, ws.cell(112, column_index+diff+2).value, ws.cell(112, column_index+diff+3).value]
         Gradientdown = [ws.cell(113, column_index+diff).value, ws.cell(113, column_index+diff+1).value, ws.cell(113, column_index+diff+2).value, ws.cell(113, column_index+diff+3).value]
+
+        ticket_reward_bg.update({"tabRGB": tabRGB})
+        ticket_reward_bg.update({"tabRGB_sel": tabRGB_sel})
+        ticket_reward_bg.update({"tabRGB_outline_sel": tabRGB_outline_sel})
+        ticket_reward_bg.update({"outlineRGB": outlineRGB})
+        ticket_reward_bg.update({"projectionRGB": projectionRGB})
+        ticket_reward_bg.update({"Gradienttop": Gradienttop})
+        ticket_reward_bg.update({"Gradientdown": Gradientdown})
 
         ticket_reward_bg_list.append(ticket_reward_bg_list_unt_dic)
 
@@ -227,12 +246,58 @@ container_dic.update({"ear_open": ear_open_dic})
 ear_open_dic.update({"A": ws.cell(130, 3).value})
 ear_open_dic.update({"B": ws.cell(131, 3).value})
 
+#   popup_config_ab
+
+
+popup_config_ab_dic = {}
+container_dic.update({"popup_config_ab": popup_config_ab_dic})
+
+A_dic = {}
+popup_config_ab_dic.update({"A": A_dic})
+
+after_club_upgrade_dic = {}
+A_dic.update({"after_club_upgrade": after_club_upgrade_dic})
+after_club_upgrade_dic.update({"available": get_bool(ws.cell(136, 5).value)})
+after_club_upgrade_dic.update({"days": ws.cell(137, 5).value})
+after_club_upgrade_dic.update({"limit": ws.cell(138, 5).value})
+
+after_open_chest_dic = {}
+A_dic.update({"after_open_chest": after_open_chest_dic})
+after_open_chest_dic.update({"available": get_bool(ws.cell(139, 5).value)})
+after_open_chest_dic.update({"days": ws.cell(140, 5).value})
+after_open_chest_dic.update({"limit": ws.cell(141, 5).value})
+
+login_dic = {}
+A_dic.update({"login": login_dic})
+login_dic.update({"available": get_bool(ws.cell(142, 5).value)})
+login_dic.update({"days": ws.cell(143, 5).value})
+login_dic.update({"limit": ws.cell(144, 5).value})
+
+B_dic = {}
+popup_config_ab_dic.update({"B": B_dic})
+
+after_club_upgrade_dic = {}
+B_dic.update({"after_club_upgrade": after_club_upgrade_dic})
+after_club_upgrade_dic.update({"available": get_bool(ws.cell(145, 5).value)})
+after_club_upgrade_dic.update({"days": ws.cell(146, 5).value})
+after_club_upgrade_dic.update({"limit": ws.cell(147, 5).value})
+
+after_open_chest_dic = {}
+B_dic.update({"after_open_chest": after_open_chest_dic})
+after_open_chest_dic.update({"available": get_bool(ws.cell(148, 5).value)})
+after_open_chest_dic.update({"days": ws.cell(149, 5).value})
+after_open_chest_dic.update({"limit": ws.cell(150, 5).value})
+
+login_dic = {}
+B_dic.update({"login": login_dic})
+login_dic.update({"available": get_bool(ws.cell(151, 5).value)})
+login_dic.update({"days": ws.cell(152, 5).value})
+login_dic.update({"limit": ws.cell(153, 5).value})
+
 print("UI配置完成")
 
 
-
 # 输出json
-
 
 with open(json_dir, "w") as json_file:
     json_str = json.dumps(container_dic, indent=4)

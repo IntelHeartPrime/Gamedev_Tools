@@ -1,740 +1,145 @@
 {
-    "10001": {
-        "id": 10001,
-        "name": "tee_prize_coin_add",
-        "type": 3,
-        "desc_type": "tee_prize_coin_add_value",
-        "desc_sign": "+",
+    "\u80dc\u5229 + \u91d1\u5e01 80": {
+        "id": "\u80dc\u5229 + \u91d1\u5e01 80",
+        "name": 106,
+        "type": 26,
+        "desc_type": "tee_Triangle_name",
+        "desc_sign": "Icon_tee_lv1_Triangle",
         "condition": [
-            1,
-            -1,
-            -99,
-            99,
-            -1
-        ],
-        "rate": 100,
-        "reward": {
-            "prop_id": 0,
-            "prop_type": 3,
-            "prop_color": 0,
-            "prop_num": 80
-        }
-    },
-    "10002": {
-        "id": 10002,
-        "name": "tee_prize_coin_add",
-        "type": 3,
-        "desc_type": "tee_prize_coin_add_value",
-        "desc_sign": "+",
-        "condition": [
-            1,
-            -1,
-            -99,
-            99,
-            -1
-        ],
-        "rate": 100,
-        "reward": {
-            "prop_id": 0,
-            "prop_type": 3,
-            "prop_color": 0,
-            "prop_num": 120
-        }
-    },
-    "10003": {
-        "id": 10003,
-        "name": "tee_prize_coin_add",
-        "type": 3,
-        "desc_type": "tee_prize_coin_add_value",
-        "desc_sign": "+",
-        "condition": [
-            1,
-            -1,
-            -99,
-            99,
-            -1
-        ],
-        "rate": 100,
-        "reward": {
-            "prop_id": 0,
-            "prop_type": 3,
-            "prop_color": 0,
-            "prop_num": 160
-        }
-    },
-    "10004": {
-        "id": 10004,
-        "name": "tee_prize_coin_add",
-        "type": 3,
-        "desc_type": "tee_prize_coin_add_value",
-        "desc_sign": "+",
-        "condition": [
-            1,
-            -1,
-            -99,
-            99,
-            -1
-        ],
-        "rate": 100,
-        "reward": {
-            "prop_id": 0,
-            "prop_type": 3,
-            "prop_color": 0,
-            "prop_num": 200
-        }
-    },
-    "10005": {
-        "id": 10005,
-        "name": "tee_prize_epic_card_add",
-        "type": 4,
-        "desc_type": "tee_prize_epic_card_add_value",
-        "desc_sign": "+",
-        "condition": [
-            -1,
-            -1,
-            -99,
-            -1,
-            -1
-        ],
-        "rate": 100,
-        "reward": {
-            "prop_id": 0,
-            "prop_type": 7,
-            "prop_color": 3,
-            "prop_num": 1
-        }
-    },
-    "10006": {
-        "id": 10006,
-        "name": "tee_prize_epic_card_add",
-        "type": 4,
-        "desc_type": "tee_prize_epic_card_add_value",
-        "desc_sign": "+",
-        "condition": [
-            -1,
-            -1,
-            -99,
-            -1,
-            -1
-        ],
-        "rate": 100,
-        "reward": {
-            "prop_id": 0,
-            "prop_type": 7,
-            "prop_color": 3,
-            "prop_num": 2
-        }
-    },
-    "10007": {
-        "id": 10007,
-        "name": "tee_prize_epic_card_add",
-        "type": 4,
-        "desc_type": "tee_prize_epic_card_add_value",
-        "desc_sign": "+",
-        "condition": [
-            -1,
-            -1,
-            -99,
-            -1,
-            -1
-        ],
-        "rate": 100,
-        "reward": {
-            "prop_id": 0,
-            "prop_type": 7,
-            "prop_color": 3,
-            "prop_num": 3
-        }
-    },
-    "10008": {
-        "id": 10008,
-        "name": "tee_prize_epic_card_add",
-        "type": 4,
-        "desc_type": "tee_prize_epic_card_add_value",
-        "desc_sign": "+",
-        "condition": [
-            -1,
-            -1,
-            -99,
-            -1,
-            -1
-        ],
-        "rate": 100,
-        "reward": {
-            "prop_id": 0,
-            "prop_type": 7,
-            "prop_color": 3,
-            "prop_num": 4
-        }
-    },
-    "10009": {
-        "id": 10009,
-        "name": "tee_prize_epic_card_add",
-        "type": 4,
-        "desc_type": "tee_prize_epic_card_add_value",
-        "desc_sign": "+",
-        "condition": [
-            -1,
-            -1,
-            -99,
-            -1,
-            -1
-        ],
-        "rate": 100,
-        "reward": {
-            "prop_id": 0,
-            "prop_type": 7,
-            "prop_color": 3,
-            "prop_num": 6
-        }
-    },
-    "10010": {
-        "id": 10010,
-        "name": "tee_prize_epic_card_add",
-        "type": 4,
-        "desc_type": "tee_prize_epic_card_add_value",
-        "desc_sign": "+",
-        "condition": [
-            -1,
-            -1,
-            -99,
-            -1,
-            -1
-        ],
-        "rate": 100,
-        "reward": {
-            "prop_id": 0,
-            "prop_type": 7,
-            "prop_color": 3,
-            "prop_num": 8
-        }
-    },
-    "10015": {
-        "id": 10015,
-        "name": "tee_prize_trophy_add",
-        "type": 1,
-        "desc_type": "tee_prize_trophy_add_value",
-        "desc_sign": "+",
-        "condition": [
-            1,
-            -1,
-            -99,
-            99,
-            -1
-        ],
-        "rate": 100,
-        "extra_trophy": 10
-    },
-    "10016": {
-        "id": 10016,
-        "name": "tee_prize_trophy_add",
-        "type": 1,
-        "desc_type": "tee_prize_trophy_add_value",
-        "desc_sign": "+",
-        "condition": [
-            1,
-            -1,
-            -99,
-            99,
-            -1
-        ],
-        "rate": 100,
-        "extra_trophy": 20
-    },
-    "10017": {
-        "id": 10017,
-        "name": "tee_prize_trophy_add",
-        "type": 1,
-        "desc_type": "tee_prize_trophy_add_value",
-        "desc_sign": "+",
-        "condition": [
-            1,
-            -1,
-            -99,
-            99,
-            -1
-        ],
-        "rate": 100,
-        "extra_trophy": 30
-    },
-    "10018": {
-        "id": 10018,
-        "name": "tee_prize_trophy_add",
-        "type": 1,
-        "desc_type": "tee_prize_trophy_add_value",
-        "desc_sign": "+",
-        "condition": [
-            1,
-            -1,
-            -99,
-            99,
-            -1
-        ],
-        "rate": 100,
-        "extra_trophy": 40
-    },
-    "10019": {
-        "id": 10019,
-        "name": "tee_prize_trophy_shield",
-        "type": 6,
-        "desc_type": "",
-        "desc_sign": "",
-        "condition": [
+            null,
+            "pre_tee_Triangle",
+            12,
             0,
-            -1,
-            -99,
-            99,
-            -1
+            1
         ],
-        "rate": 100,
-        "trophy_shield": 20
+        "rate": 0,
+        "extra_trophy": 1001,
+        "trophy_shield": "=IF(M14<>\"\",VLOOKUP(M14,Skill\u8868!A:B,2,FALSE),\"\")",
+        "reback_challenge_shield": "=IF(O14<>\"\",VLOOKUP(O14,Skill\u8868!A:B,2,FALSE),\"\")",
+        "kingdom_score_shield": "=IF(Q14<>\"\",VLOOKUP(Q14,Skill\u8868!A:B,2,FALSE),\"\")"
     },
-    "10020": {
-        "id": 10020,
-        "name": "tee_prize_trophy_shield",
-        "type": 6,
-        "desc_type": "",
-        "desc_sign": "",
+    "\u80dc\u5229 + \u91d1\u5e01 120": {
+        "id": "\u80dc\u5229 + \u91d1\u5e01 120",
+        "name": 107,
+        "type": 26,
+        "desc_type": "tee_Horn_name",
+        "desc_sign": "Icon_tee_lv2_horn",
         "condition": [
+            null,
+            "pre_tee_horn",
+            13,
             0,
-            -1,
-            -99,
-            99,
-            -1
+            2
         ],
-        "rate": 100,
-        "trophy_shield": 40
+        "rate": 0,
+        "extra_trophy": 1002,
+        "trophy_shield": "=IF(M15<>\"\",VLOOKUP(M15,Skill\u8868!A:B,2,FALSE),\"\")",
+        "reback_ball": 1025,
+        "reback_challenge_shield": "=IF(O15<>\"\",VLOOKUP(O15,Skill\u8868!A:B,2,FALSE),\"\")",
+        "kingdom_extra_score": 1029,
+        "kingdom_score_shield": "=IF(Q15<>\"\",VLOOKUP(Q15,Skill\u8868!A:B,2,FALSE),\"\")"
     },
-    "10021": {
-        "id": 10021,
-        "name": "tee_prize_trophy_shield",
-        "type": 6,
-        "desc_type": "",
-        "desc_sign": "",
+    "\u80dc\u5229 + \u91d1\u5e01 160": {
+        "id": "\u80dc\u5229 + \u91d1\u5e01 160",
+        "name": 108,
+        "type": 26,
+        "desc_type": "tee_FireLotus_name",
+        "desc_sign": "Icon_tee_lv3_Fire_Lotus",
         "condition": [
+            null,
+            "pre_tee_FireLotus",
+            14,
             0,
-            -1,
-            -99,
-            99,
-            -1
+            3
         ],
-        "rate": 100,
-        "trophy_shield": 60
+        "rate": 0,
+        "extra_trophy": 1003,
+        "trophy_shield": "=IF(M16<>\"\",VLOOKUP(M16,Skill\u8868!A:B,2,FALSE),\"\")",
+        "reback_ball": 1026,
+        "reback_challenge_shield": "=IF(O16<>\"\",VLOOKUP(O16,Skill\u8868!A:B,2,FALSE),\"\")",
+        "kingdom_extra_score": 1030,
+        "kingdom_score_shield": "=IF(Q16<>\"\",VLOOKUP(Q16,Skill\u8868!A:B,2,FALSE),\"\")"
     },
-    "10022": {
-        "id": 10022,
-        "name": "tee_prize_trophy_shield",
-        "type": 6,
-        "desc_type": "",
-        "desc_sign": "",
+    "\u80dc\u5229 + \u91d1\u5e01 200": {
+        "id": "\u80dc\u5229 + \u91d1\u5e01 200",
+        "name": 109,
+        "type": 26,
+        "desc_type": "tee_EgyptianSoldier_name",
+        "desc_sign": "Icon_tee_lv4_egyptian_soldier",
         "condition": [
+            null,
+            "pre_tee_egyptiansoldier",
+            15,
             0,
-            -1,
-            -99,
-            99,
-            -1
+            4
         ],
-        "rate": 100,
-        "trophy_shield": 80
+        "rate": 0,
+        "extra_trophy": 1004,
+        "trophy_shield": "=IF(M17<>\"\",VLOOKUP(M17,Skill\u8868!A:B,2,FALSE),\"\")",
+        "reback_ball": 1027,
+        "reback_challenge_shield": "=IF(O17<>\"\",VLOOKUP(O17,Skill\u8868!A:B,2,FALSE),\"\")",
+        "kingdom_extra_score": 1031,
+        "kingdom_score_shield": "=IF(Q17<>\"\",VLOOKUP(Q17,Skill\u8868!A:B,2,FALSE),\"\")"
     },
-    "10023": {
-        "id": 10023,
-        "name": "tee_prize_ball_add",
-        "type": 5,
-        "desc_type": "tee_prize_ball_add_value",
-        "desc_sign": "+",
+    "\u80dc\u5229+ \u91d1\u5e01 200 +  \u6307\u9488\u901f\u5ea6\u51cf\u5c1130%": {
+        "id": "\u80dc\u5229+ \u91d1\u5e01 200 +  \u6307\u9488\u901f\u5ea6\u51cf\u5c1130%",
+        "name": 105,
+        "type": 26,
+        "desc_type": "tee_Iceberg_name",
+        "desc_sign": "Icon_tee_lv4_Iceberg",
         "condition": [
-            -1,
-            1,
-            -99,
-            99,
-            -1
+            null,
+            "pre_tee_Iceberg",
+            6,
+            0,
+            4
         ],
-        "rate": 100,
-        "reward": {
-            "prop_id": 1,
-            "prop_type": 27,
-            "prop_color": 0,
-            "prop_num": 14
-        }
+        "rate": 0,
+        "extra_trophy": 1004,
+        "trophy_shield": "=IF(M8<>\"\",VLOOKUP(M8,Skill\u8868!A:B,2,FALSE),\"\")",
+        "reback_ball": 2001,
+        "reback_challenge_shield": "=IF(O8<>\"\",VLOOKUP(O8,Skill\u8868!A:B,2,FALSE),\"\")",
+        "kingdom_extra_score": 1008,
+        "kingdom_score_shield": "=IF(Q8<>\"\",VLOOKUP(Q8,Skill\u8868!A:B,2,FALSE),\"\")"
     },
-    "10024": {
-        "id": 10024,
-        "name": "tee_prize_ball_add",
-        "type": 5,
-        "desc_type": "tee_prize_ball_add_value",
-        "desc_sign": "+",
+    "\u80dc\u5229 + \u91d1\u5e0180": {
+        "id": "\u80dc\u5229 + \u91d1\u5e0180",
+        "name": 111,
+        "type": 26,
+        "desc_type": "tee_Joker_name",
+        "desc_sign": "Icon_tee_lv1_joker",
         "condition": [
-            -1,
-            -1,
-            -3,
-            -3,
-            -1
+            null,
+            "pre_tee_Joker",
+            7,
+            0,
+            1
         ],
-        "rate": 100,
-        "reward": {
-            "prop_id": 1,
-            "prop_type": 27,
-            "prop_color": 0,
-            "prop_num": 12
-        }
+        "rate": 0,
+        "extra_trophy": 1001,
+        "trophy_shield": "=IF(M9<>\"\",VLOOKUP(M9,Skill\u8868!A:B,2,FALSE),\"\")",
+        "reback_challenge_shield": "=IF(O9<>\"\",VLOOKUP(O9,Skill\u8868!A:B,2,FALSE),\"\")",
+        "kingdom_score_shield": "=IF(Q9<>\"\",VLOOKUP(Q9,Skill\u8868!A:B,2,FALSE),\"\")"
     },
-    "10025": {
-        "id": 10025,
-        "name": "tee_prize_ball_add",
-        "type": 5,
-        "desc_type": "tee_prize_ball_add_value",
-        "desc_sign": "+",
+    "\u80dc\u5229+ \u91d1\u5e01 200": {
+        "id": "\u80dc\u5229+ \u91d1\u5e01 200",
+        "name": 110,
+        "type": 26,
+        "desc_type": "tee_MetalDrill_name",
+        "desc_sign": "Icon_tee_lv4_metaldrill",
         "condition": [
-            -1,
-            -1,
-            -2,
-            -2,
-            -1
+            null,
+            "pre_tee_metaldrill",
+            16,
+            0,
+            4
         ],
-        "rate": 100,
-        "reward": {
-            "prop_id": 1,
-            "prop_type": 27,
-            "prop_color": 0,
-            "prop_num": 10
-        }
-    },
-    "10026": {
-        "id": 10026,
-        "name": "tee_prize_ball_add",
-        "type": 5,
-        "desc_type": "tee_prize_ball_add_value",
-        "desc_sign": "+",
-        "condition": [
-            -1,
-            -1,
-            -1,
-            -1,
-            -1
-        ],
-        "rate": 100,
-        "reward": {
-            "prop_id": 1,
-            "prop_type": 27,
-            "prop_color": 0,
-            "prop_num": 8
-        }
-    },
-    "10027": {
-        "id": 10027,
-        "name": "tee_prize_diamond_add",
-        "type": 2,
-        "desc_type": "tee_prize_diamond_add_value",
-        "desc_sign": "+",
-        "condition": [
-            -1,
-            -1,
-            -99,
-            -1,
-            -1
-        ],
-        "rate": 100,
-        "reward": {
-            "prop_id": 0,
-            "prop_type": 2,
-            "prop_color": 0,
-            "prop_num": 50
-        }
-    },
-    "10028": {
-        "id": 10028,
-        "name": "tee_prize_diamond_add",
-        "type": 2,
-        "desc_type": "tee_prize_diamond_add_value",
-        "desc_sign": "+",
-        "condition": [
-            -1,
-            -1,
-            -99,
-            -1,
-            -1
-        ],
-        "rate": 100,
-        "reward": {
-            "prop_id": 0,
-            "prop_type": 2,
-            "prop_color": 0,
-            "prop_num": 100
-        }
-    },
-    "10029": {
-        "id": 10029,
-        "name": "tee_prize_diamond_add",
-        "type": 2,
-        "desc_type": "tee_prize_diamond_add_value",
-        "desc_sign": "+",
-        "condition": [
-            -1,
-            -1,
-            -99,
-            -1,
-            -1
-        ],
-        "rate": 100,
-        "reward": {
-            "prop_id": 0,
-            "prop_type": 2,
-            "prop_color": 0,
-            "prop_num": 160
-        }
-    },
-    "10030": {
-        "id": 10030,
-        "name": "tee_prize_diamond_add",
-        "type": 2,
-        "desc_type": "tee_prize_diamond_add_value",
-        "desc_sign": "+",
-        "condition": [
-            -1,
-            -1,
-            -99,
-            -1,
-            -1
-        ],
-        "rate": 100,
-        "reward": {
-            "prop_id": 0,
-            "prop_type": 2,
-            "prop_color": 0,
-            "prop_num": 200
-        }
-    },
-    "10031": {
-        "id": 10031,
-        "name": "tee_prize_ball_add",
-        "type": 7,
-        "desc_type": "tee_prize_ball_add_value",
-        "desc_sign": "+",
-        "condition": [
-            -1,
-            -1,
-            -99,
-            -2,
-            -1
-        ],
-        "rate": 100,
-        "reback_ball": 1
-    },
-    "10032": {
-        "id": 10032,
-        "name": "tee_prize_epic_card_add",
-        "type": 4,
-        "desc_type": "tee_prize_epic_card_add_value",
-        "desc_sign": "+",
-        "condition": [
-            -1,
-            -1,
-            -1,
-            -1,
-            -1
-        ],
-        "rate": 100,
-        "reward": {
-            "prop_id": 0,
-            "prop_type": 7,
-            "prop_color": 3,
-            "prop_num": 8
-        }
-    },
-    "10033": {
-        "id": 10033,
-        "name": "tee_prize_epic_card_add",
-        "type": 4,
-        "desc_type": "tee_prize_epic_card_add_value",
-        "desc_sign": "+",
-        "condition": [
-            -1,
-            -1,
-            -2,
-            -2,
-            -1
-        ],
-        "rate": 100,
-        "reward": {
-            "prop_id": 0,
-            "prop_type": 7,
-            "prop_color": 3,
-            "prop_num": 10
-        }
-    },
-    "10034": {
-        "id": 10034,
-        "name": "tee_prize_epic_card_add",
-        "type": 4,
-        "desc_type": "tee_prize_epic_card_add_value",
-        "desc_sign": "+",
-        "condition": [
-            -1,
-            -1,
-            -3,
-            -3,
-            -1
-        ],
-        "rate": 100,
-        "reward": {
-            "prop_id": 0,
-            "prop_type": 7,
-            "prop_color": 3,
-            "prop_num": 12
-        }
-    },
-    "10035": {
-        "id": 10035,
-        "name": "tee_prize_epic_card_add",
-        "type": 4,
-        "desc_type": "tee_prize_epic_card_add_value",
-        "desc_sign": "+",
-        "condition": [
-            -1,
-            1,
-            -99,
-            99,
-            -1
-        ],
-        "rate": 100,
-        "reward": {
-            "prop_id": 0,
-            "prop_type": 7,
-            "prop_color": 3,
-            "prop_num": 14
-        }
-    },
-    "10036": {
-        "id": 10036,
-        "name": "tee_prize_ball_add",
-        "type": 5,
-        "desc_type": "tee_prize_ball_add_value",
-        "desc_sign": "+",
-        "condition": [
-            -1,
-            -1,
-            -99,
-            -1,
-            -1
-        ],
-        "rate": 100,
-        "reward": {
-            "prop_id": 1,
-            "prop_type": 27,
-            "prop_color": 0,
-            "prop_num": 2
-        }
-    },
-    "10037": {
-        "id": 10037,
-        "name": "tee_prize_ball_add",
-        "type": 5,
-        "desc_type": "tee_prize_ball_add_value",
-        "desc_sign": "+",
-        "condition": [
-            -1,
-            -1,
-            -99,
-            -1,
-            -1
-        ],
-        "rate": 100,
-        "reward": {
-            "prop_id": 1,
-            "prop_type": 27,
-            "prop_color": 0,
-            "prop_num": 4
-        }
-    },
-    "10038": {
-        "id": 10038,
-        "name": "tee_prize_ball_add",
-        "type": 5,
-        "desc_type": "tee_prize_ball_add_value",
-        "desc_sign": "+",
-        "condition": [
-            -1,
-            -1,
-            -99,
-            -1,
-            -1
-        ],
-        "rate": 100,
-        "reward": {
-            "prop_id": 1,
-            "prop_type": 27,
-            "prop_color": 0,
-            "prop_num": 6
-        }
-    },
-    "10039": {
-        "id": 10039,
-        "name": "tee_prize_ball_add",
-        "type": 5,
-        "desc_type": "tee_prize_ball_add_value",
-        "desc_sign": "+",
-        "condition": [
-            -1,
-            -1,
-            -99,
-            -1,
-            -1
-        ],
-        "rate": 100,
-        "reward": {
-            "prop_id": 1,
-            "prop_type": 27,
-            "prop_color": 0,
-            "prop_num": 8
-        }
-    },
-    "10040": {
-        "id": 10040,
-        "name": "tee_prize_kingdom_point_add",
-        "type": 12,
-        "desc_type": "tee_prize_kingdom_point_add_value",
-        "desc_sign": "+",
-        "condition": [
-            1,
-            -1,
-            -99,
-            99,
-            -1
-        ],
-        "rate": 100,
-        "kingdom_extra_score": 10
-    },
-    "10041": {
-        "id": 10041,
-        "name": "tee_prize_kingdom_point_add",
-        "type": 12,
-        "desc_type": "tee_prize_kingdom_point_add_value",
-        "desc_sign": "+",
-        "condition": [
-            1,
-            -1,
-            -99,
-            99,
-            -1
-        ],
-        "rate": 100,
-        "kingdom_extra_score": 15
-    },
-    "10042": {
-        "id": 10042,
-        "name": "tee_prize_kingdom_point_add",
-        "type": 12,
-        "desc_type": "tee_prize_kingdom_point_add_value",
-        "desc_sign": "+",
-        "condition": [
-            1,
-            -1,
-            -99,
-            99,
-            -1
-        ],
-        "rate": 100,
-        "kingdom_extra_score": 20
+        "rate": 0,
+        "extra_trophy": 1004,
+        "trophy_shield": "=IF(M18<>\"\",VLOOKUP(M18,Skill\u8868!A:B,2,FALSE),\"\")",
+        "reback_ball": 1028,
+        "reback_challenge_shield": "=IF(O18<>\"\",VLOOKUP(O18,Skill\u8868!A:B,2,FALSE),\"\")",
+        "kingdom_extra_score": 1031,
+        "kingdom_score_shield": "=IF(Q18<>\"\",VLOOKUP(Q18,Skill\u8868!A:B,2,FALSE),\"\")"
     }
 }
