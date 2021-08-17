@@ -1,10 +1,10 @@
 {
-    "id": 19,
-    "name": "The Octopus Offer!",
+    "id": 21,
+    "name": "The Detour Offer!",
     "coin_rate": 30,
-    "start_time": 1628838000,
-    "end_time": 1629097200,
-    "begin_time": 1628492400,
+    "start_time": 1629442800,
+    "end_time": 1629702000,
+    "begin_time": 1629097200,
     "refresh_interval": 86400,
     "ticket_conf_list": [
         {
@@ -18,7 +18,7 @@
                     "grade": 1,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 182,
+                        "prop_id": 129,
                         "prop_num": 2,
                         "prop_color": 0,
                         "chest_type": 0
@@ -31,7 +31,7 @@
                     "grade": 1,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 183,
+                        "prop_id": 130,
                         "prop_num": 3,
                         "prop_color": 0,
                         "chest_type": 0
@@ -44,7 +44,7 @@
                     "grade": 1,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 195,
+                        "prop_id": 200,
                         "prop_num": 4,
                         "prop_color": 0,
                         "chest_type": 0
@@ -58,7 +58,7 @@
                     "reward": {
                         "prop_type": 2,
                         "prop_id": 0,
-                        "prop_num": 300,
+                        "prop_num": 100,
                         "prop_color": 0,
                         "chest_type": 0
                     }
@@ -83,7 +83,7 @@
                     "grade": 1,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 195,
+                        "prop_id": 200,
                         "prop_num": 5,
                         "prop_color": 0,
                         "chest_type": 0
@@ -97,7 +97,7 @@
                     "reward": {
                         "prop_type": 2,
                         "prop_id": 0,
-                        "prop_num": 400,
+                        "prop_num": 150,
                         "prop_color": 0,
                         "chest_type": 0
                     }
@@ -122,7 +122,7 @@
                     "grade": 1,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 195,
+                        "prop_id": 200,
                         "prop_num": 6,
                         "prop_color": 0,
                         "chest_type": 0
@@ -136,7 +136,7 @@
                     "reward": {
                         "prop_type": 2,
                         "prop_id": 0,
-                        "prop_num": 500,
+                        "prop_num": 200,
                         "prop_color": 0,
                         "chest_type": 0
                     }
@@ -161,7 +161,7 @@
                     "grade": 1,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 195,
+                        "prop_id": 200,
                         "prop_num": 7,
                         "prop_color": 0,
                         "chest_type": 0
@@ -187,7 +187,7 @@
                     "grade": 1,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 195,
+                        "prop_id": 200,
                         "prop_num": 8,
                         "prop_color": 0,
                         "chest_type": 0
@@ -226,7 +226,7 @@
                     "grade": 1,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 195,
+                        "prop_id": 200,
                         "prop_num": 9,
                         "prop_color": 0,
                         "chest_type": 0
@@ -265,7 +265,7 @@
                     "grade": 1,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 195,
+                        "prop_id": 200,
                         "prop_num": 10,
                         "prop_color": 0,
                         "chest_type": 0
@@ -297,7 +297,7 @@
                     "grade": 1,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 182,
+                        "prop_id": 129,
                         "prop_num": 2,
                         "prop_color": 0,
                         "chest_type": 0
@@ -310,7 +310,7 @@
                     "grade": 1,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 183,
+                        "prop_id": 130,
                         "prop_num": 3,
                         "prop_color": 0,
                         "chest_type": 0
@@ -323,7 +323,7 @@
                     "grade": 1,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 195,
+                        "prop_id": 200,
                         "prop_num": 4,
                         "prop_color": 0,
                         "chest_type": 0
@@ -337,7 +337,7 @@
                     "reward": {
                         "prop_type": 2,
                         "prop_id": 0,
-                        "prop_num": 300,
+                        "prop_num": 100,
                         "prop_color": 0,
                         "chest_type": 0
                     }
@@ -362,7 +362,7 @@
                     "grade": 1,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 195,
+                        "prop_id": 200,
                         "prop_num": 5,
                         "prop_color": 0,
                         "chest_type": 0
@@ -376,7 +376,7 @@
                     "reward": {
                         "prop_type": 2,
                         "prop_id": 0,
-                        "prop_num": 400,
+                        "prop_num": 150,
                         "prop_color": 0,
                         "chest_type": 0
                     }
@@ -401,7 +401,7 @@
                     "grade": 1,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 195,
+                        "prop_id": 200,
                         "prop_num": 6,
                         "prop_color": 0,
                         "chest_type": 0
@@ -415,7 +415,7 @@
                     "reward": {
                         "prop_type": 2,
                         "prop_id": 0,
-                        "prop_num": 500,
+                        "prop_num": 200,
                         "prop_color": 0,
                         "chest_type": 0
                     }
@@ -440,7 +440,7 @@
                     "grade": 1,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 195,
+                        "prop_id": 200,
                         "prop_num": 7,
                         "prop_color": 0,
                         "chest_type": 0
@@ -466,7 +466,7 @@
                     "grade": 1,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 195,
+                        "prop_id": 200,
                         "prop_num": 8,
                         "prop_color": 0,
                         "chest_type": 0
@@ -505,7 +505,7 @@
                     "grade": 1,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 195,
+                        "prop_id": 200,
                         "prop_num": 9,
                         "prop_color": 0,
                         "chest_type": 0
@@ -544,7 +544,7 @@
                     "grade": 1,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 195,
+                        "prop_id": 200,
                         "prop_num": 10,
                         "prop_color": 0,
                         "chest_type": 0
@@ -576,7 +576,7 @@
                     "grade": 1,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 182,
+                        "prop_id": 129,
                         "prop_num": 2,
                         "prop_color": 0,
                         "chest_type": 0
@@ -589,7 +589,7 @@
                     "grade": 1,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 183,
+                        "prop_id": 130,
                         "prop_num": 3,
                         "prop_color": 0,
                         "chest_type": 0
@@ -602,7 +602,7 @@
                     "grade": 1,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 195,
+                        "prop_id": 200,
                         "prop_num": 4,
                         "prop_color": 0,
                         "chest_type": 0
@@ -616,7 +616,7 @@
                     "reward": {
                         "prop_type": 2,
                         "prop_id": 0,
-                        "prop_num": 300,
+                        "prop_num": 100,
                         "prop_color": 0,
                         "chest_type": 0
                     }
@@ -641,7 +641,7 @@
                     "grade": 1,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 195,
+                        "prop_id": 200,
                         "prop_num": 5,
                         "prop_color": 0,
                         "chest_type": 0
@@ -655,7 +655,7 @@
                     "reward": {
                         "prop_type": 2,
                         "prop_id": 0,
-                        "prop_num": 400,
+                        "prop_num": 150,
                         "prop_color": 0,
                         "chest_type": 0
                     }
@@ -680,7 +680,7 @@
                     "grade": 1,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 195,
+                        "prop_id": 200,
                         "prop_num": 6,
                         "prop_color": 0,
                         "chest_type": 0
@@ -694,7 +694,7 @@
                     "reward": {
                         "prop_type": 2,
                         "prop_id": 0,
-                        "prop_num": 500,
+                        "prop_num": 200,
                         "prop_color": 0,
                         "chest_type": 0
                     }
@@ -719,7 +719,7 @@
                     "grade": 1,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 195,
+                        "prop_id": 200,
                         "prop_num": 7,
                         "prop_color": 0,
                         "chest_type": 0
@@ -745,7 +745,7 @@
                     "grade": 1,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 195,
+                        "prop_id": 200,
                         "prop_num": 8,
                         "prop_color": 0,
                         "chest_type": 0
@@ -784,7 +784,7 @@
                     "grade": 1,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 195,
+                        "prop_id": 200,
                         "prop_num": 9,
                         "prop_color": 0,
                         "chest_type": 0
@@ -823,7 +823,7 @@
                     "grade": 1,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 195,
+                        "prop_id": 200,
                         "prop_num": 10,
                         "prop_color": 0,
                         "chest_type": 0
@@ -854,7 +854,7 @@
                     "unlock_level": 3,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 120,
+                        "prop_id": 124,
                         "prop_num": 5,
                         "prop_color": 0,
                         "chest_type": 0
@@ -864,7 +864,7 @@
                     "unlock_level": 6,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 182,
+                        "prop_id": 129,
                         "prop_num": 10,
                         "prop_color": 0,
                         "chest_type": 0
@@ -874,7 +874,7 @@
                     "unlock_level": 9,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 183,
+                        "prop_id": 130,
                         "prop_num": 10,
                         "prop_color": 0,
                         "chest_type": 0
@@ -884,7 +884,7 @@
                     "unlock_level": 12,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 120,
+                        "prop_id": 124,
                         "prop_num": 10,
                         "prop_color": 0,
                         "chest_type": 0
@@ -894,7 +894,7 @@
                     "unlock_level": 15,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 182,
+                        "prop_id": 129,
                         "prop_num": 20,
                         "prop_color": 0,
                         "chest_type": 0
@@ -904,7 +904,7 @@
                     "unlock_level": 18,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 183,
+                        "prop_id": 130,
                         "prop_num": 20,
                         "prop_color": 0,
                         "chest_type": 0
@@ -914,7 +914,7 @@
                     "unlock_level": 21,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 120,
+                        "prop_id": 124,
                         "prop_num": 20,
                         "prop_color": 0,
                         "chest_type": 0
@@ -930,7 +930,7 @@
                     "unlock_level": 3,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 120,
+                        "prop_id": 124,
                         "prop_num": 5,
                         "prop_color": 0,
                         "chest_type": 0
@@ -940,7 +940,7 @@
                     "unlock_level": 6,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 182,
+                        "prop_id": 129,
                         "prop_num": 10,
                         "prop_color": 0,
                         "chest_type": 0
@@ -950,7 +950,7 @@
                     "unlock_level": 9,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 183,
+                        "prop_id": 130,
                         "prop_num": 10,
                         "prop_color": 0,
                         "chest_type": 0
@@ -960,7 +960,7 @@
                     "unlock_level": 12,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 120,
+                        "prop_id": 124,
                         "prop_num": 10,
                         "prop_color": 0,
                         "chest_type": 0
@@ -970,7 +970,7 @@
                     "unlock_level": 15,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 182,
+                        "prop_id": 129,
                         "prop_num": 20,
                         "prop_color": 0,
                         "chest_type": 0
@@ -980,7 +980,7 @@
                     "unlock_level": 18,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 183,
+                        "prop_id": 130,
                         "prop_num": 20,
                         "prop_color": 0,
                         "chest_type": 0
@@ -990,7 +990,7 @@
                     "unlock_level": 21,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 120,
+                        "prop_id": 124,
                         "prop_num": 20,
                         "prop_color": 0,
                         "chest_type": 0
@@ -1006,7 +1006,7 @@
                     "unlock_level": 3,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 120,
+                        "prop_id": 124,
                         "prop_num": 5,
                         "prop_color": 0,
                         "chest_type": 0
@@ -1016,7 +1016,7 @@
                     "unlock_level": 6,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 182,
+                        "prop_id": 129,
                         "prop_num": 10,
                         "prop_color": 0,
                         "chest_type": 0
@@ -1026,7 +1026,7 @@
                     "unlock_level": 9,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 183,
+                        "prop_id": 130,
                         "prop_num": 10,
                         "prop_color": 0,
                         "chest_type": 0
@@ -1036,7 +1036,7 @@
                     "unlock_level": 12,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 120,
+                        "prop_id": 124,
                         "prop_num": 10,
                         "prop_color": 0,
                         "chest_type": 0
@@ -1046,7 +1046,7 @@
                     "unlock_level": 15,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 182,
+                        "prop_id": 129,
                         "prop_num": 20,
                         "prop_color": 0,
                         "chest_type": 0
@@ -1056,7 +1056,7 @@
                     "unlock_level": 18,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 183,
+                        "prop_id": 130,
                         "prop_num": 20,
                         "prop_color": 0,
                         "chest_type": 0
@@ -1066,7 +1066,7 @@
                     "unlock_level": 21,
                     "reward": {
                         "prop_type": 5,
-                        "prop_id": 120,
+                        "prop_id": 124,
                         "prop_num": 20,
                         "prop_color": 0,
                         "chest_type": 0
@@ -1136,31 +1136,31 @@
         },
         {
             "type": "v1",
-            "offer_id": 201761,
+            "offer_id": 201791,
             "consume_type": 1,
             "consume_num": 4.99
         },
         {
             "type": "v2",
-            "offer_id": 201762,
+            "offer_id": 201792,
             "consume_type": 1,
             "consume_num": 9.99
         },
         {
             "type": "v3",
-            "offer_id": 201763,
+            "offer_id": 201793,
             "consume_type": 1,
             "consume_num": 19.99
         },
         {
             "type": "v4",
-            "offer_id": 201764,
+            "offer_id": 201794,
             "consume_type": 1,
             "consume_num": 49.99
         },
         {
             "type": "v5",
-            "offer_id": 201765,
+            "offer_id": 201795,
             "consume_type": 1,
             "consume_num": 99.99
         }
@@ -1333,14 +1333,14 @@
         }
     ],
     "notify": {
-        "start_content": "The Octopus Offer Event has started!",
+        "start_content": "The Detour Offer Event has started!",
         "refresh_content": "The event offer has been refreshed! Come and collect the reward!",
-        "end_content": "The Octopus Offer Event is about to end! Come and win more rewards!",
+        "end_content": "The Detour Offer Event is about to end! Come and win more rewards!",
         "time_before_end": 28800
     },
     "ui_conf": {
-        "token_icon": "Icon_xlb_token_17",
-        "token_icon_dui": "Icon_xlb_token_dui_17",
+        "token_icon": "Icon_xlb_token_19",
+        "token_icon_dui": "Icon_xlb_token_dui_19",
         "token_model_effect": "gfx_golf_coin"
     },
     "ear_open": {
@@ -1368,18 +1368,18 @@
         "B": {
             "after_club_upgrade": {
                 "available": true,
-                "days": 1,
-                "limit": 2
+                "days": 0.5,
+                "limit": 1
             },
             "after_open_chest": {
                 "available": true,
-                "days": 1,
-                "limit": 2
+                "days": 0.5,
+                "limit": 1
             },
             "login": {
                 "available": true,
-                "days": 1,
-                "limit": 2
+                "days": 0.5,
+                "limit": 1
             }
         }
     }
