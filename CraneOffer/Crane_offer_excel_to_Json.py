@@ -16,7 +16,7 @@ wb = load_workbook(workbook_dir)
 ws = wb.active
 
 
-file_name_string = str(ws.cell(4,2).value) + "_" + str(ws.cell(5,2).value) + "holes_" + str(ws.cell(7, 2).value) + "_to_" + str(ws.cell(8,2).value) + ".json" 
+file_name_string = str(ws.cell(4,2).value) + "_" + str(ws.cell(5,2).value) + "_" + str(ws.cell(7, 2).value) + "_to_" + str(ws.cell(8,2).value) + ".json" 
 if file_name_string!= "":
     json_file_name = file_name_string
 

@@ -1,0 +1,477 @@
+{
+    "name": "Great Ruins (1)",
+    "id": 70546,
+    "start_time": 1629010800,
+    "end_time": 1629356400,
+    "chance": 3,
+    "chance_fee": 200,
+    "diamond_offer_trigger_num": 500,
+    "battle_limit": {
+        "balls": [
+            110,
+            198,
+            199
+        ],
+        "club_color": [
+            1,
+            2
+        ],
+        "clubs": [
+            55,
+            62
+        ]
+    },
+    "match_rules": {
+        "tour_id_list": [
+            {
+                "process_max": 4,
+                "process_min": 1,
+                "tee": 1,
+                "tour_id": 60341,
+                "wind_max": 10,
+                "wind_min": 6
+            },
+            {
+                "process_max": 8,
+                "process_min": 5,
+                "tee": 2,
+                "tour_id": 60342,
+                "wind_max": 12,
+                "wind_min": 8
+            },
+            {
+                "process_max": 4,
+                "process_min": 1,
+                "tee": 1,
+                "tour_id": 60343,
+                "wind_max": 18,
+                "wind_min": 10
+            }
+        ]
+    },
+    "offer": {
+        "diamond": [
+            {
+                "duration": 172800,
+                "money": 0,
+                "offer_id": 800001
+            },
+            {
+                "duration": 172800,
+                "money": 4,
+                "offer_id": 80002
+            },
+            {
+                "duration": 172800,
+                "money": 7,
+                "offer_id": 80003
+            },
+            {
+                "duration": 172800,
+                "money": 10,
+                "offer_id": 80004
+            }
+        ],
+        "normal": [
+            {
+                "club_level": 0,
+                "duration": 259200,
+                "offer_id": 70211
+            },
+            {
+                "club_level": 31,
+                "duration": 259200,
+                "offer_id": 70212
+            },
+            {
+                "club_level": 32,
+                "duration": 259200,
+                "offer_id": 70213
+            },
+            {
+                "club_level": 33,
+                "duration": 259200,
+                "offer_id": 70214
+            },
+            {
+                "club_level": 34,
+                "duration": 259200,
+                "offer_id": 70215
+            }
+        ]
+    },
+    "push": {
+        "days_end": 1,
+        "text_end": "Great Ruins challenge is about to end! Seize the time!",
+        "text_start": "Great Ruins challenge has begun! Join and win the rewards!"
+    },
+    "show_conf": {
+        "bag_rule_tip_content_1": "",
+        "bag_rule_tip_content_2": "",
+        "bag_rule_tip_title": "",
+        "bag_title": "",
+        "btn_bottom_tip": "greatruins_challenge_panel_subdesc_1",
+        "course_info": [
+            {
+                "courses": "1~4",
+                "mph": "6-10",
+                "tee": 1
+            },
+            {
+                "courses": "5~8",
+                "mph": "8-12",
+                "tee": 2
+            },
+            {
+                "courses": "9~12",
+                "mph": "10-18",
+                "tee": 3
+            }
+        ],
+        "icon": "",
+        "icon_pos": "",
+        "icon_2": "",
+        "icon_2_pos": "",
+        "icon_bg": "Bg_event_sc_sta_01",
+        "name_param": "",
+        "name_param_2": "",
+        "name": "greatruins_challenge_panel_title1",
+        "reward_show_desc": "clubs_challenge_reward_desc",
+        "reward_show_title": "clubs_reward_name",
+        "free_reward_btn_name": "CLAIM GIFTS",
+        "free_reward_panel_title": "Great Ruins Gifts ",
+        "free_reward_panel_desc": "Welcome to Pompeii Rebuilt!",
+        "icon_level_bg": "Pnl_event_sc_tongji_11",
+        "icon_stripe_bg": "Pnl_event_sc_banner_11",
+        "icon_top_bg": "Pnl_event_sc_bt11",
+        "icon_big_bg": "Bg_challenge_stage",
+        "icon_btn_bg": "Btn_event_battle_11",
+        "rules": [
+            {
+                "sub_desc": "greatruins_challenge_panel_subdesc_2",
+                "sub_icon": "Icon_event_sc_rome",
+                "sub_title": "greatruins_challenge_panel_title1"
+            },
+            {
+                "sub_desc": "clubs_challenge_panel_subdesc_2",
+                "sub_icon": "Icon_event_sc_lose",
+                "sub_title": "clubs_challenge_panel_subtitle_2"
+            },
+            {
+                "sub_desc": "clubs_challenge_panel_subdesc_3",
+                "sub_icon": "Icon_jinbiaosai_stage7",
+                "sub_title": "clubs_challenge_panel_subtitle_3"
+            }
+        ],
+        "sign_icon": "Icon_event_sc_rome",
+        "tip": "greatruins_challenge_panel_title1",
+        "show_limited_ball": 1
+    },
+    "show_time_start": 1627542000,
+    "show_time_end": 1627974000,
+    "unlock_conditions": {
+        "min_level": 9,
+        "prepare_id": 0
+    },
+    "win_count": 12,
+    "win_reward": [
+        {
+            "process_id": 1,
+            "num": 0,
+            "prop_color": 0,
+            "prop_id": 0,
+            "prop_type": 19,
+            "chest_type": 0,
+            "group": [
+                {
+                    "chest_type": 0,
+                    "num": 1,
+                    "prop_color": 0,
+                    "prop_id": 110,
+                    "prop_type": 5
+                },
+                {
+                    "chest_type": 0,
+                    "num": 6,
+                    "prop_color": 0,
+                    "prop_id": 0,
+                    "prop_type": 17
+                }
+            ]
+        },
+        {
+            "process_id": 2,
+            "num": 0,
+            "prop_color": 0,
+            "prop_id": 0,
+            "prop_type": 19,
+            "chest_type": 0,
+            "group": [
+                {
+                    "chest_type": 0,
+                    "num": 1,
+                    "prop_color": 0,
+                    "prop_id": 110,
+                    "prop_type": 5
+                },
+                {
+                    "chest_type": 0,
+                    "num": 6,
+                    "prop_color": 0,
+                    "prop_id": 0,
+                    "prop_type": 17
+                }
+            ]
+        },
+        {
+            "process_id": 3,
+            "num": 0,
+            "prop_color": 0,
+            "prop_id": 0,
+            "prop_type": 19,
+            "chest_type": 0,
+            "group": [
+                {
+                    "chest_type": 0,
+                    "num": 1,
+                    "prop_color": 0,
+                    "prop_id": 110,
+                    "prop_type": 5
+                },
+                {
+                    "chest_type": 0,
+                    "num": 6,
+                    "prop_color": 0,
+                    "prop_id": 0,
+                    "prop_type": 17
+                }
+            ]
+        },
+        {
+            "process_id": 4,
+            "num": 0,
+            "prop_color": 0,
+            "prop_id": 0,
+            "prop_type": 19,
+            "chest_type": 0,
+            "group": [
+                {
+                    "chest_type": 0,
+                    "num": 1,
+                    "prop_color": 0,
+                    "prop_id": 110,
+                    "prop_type": 5
+                },
+                {
+                    "chest_type": 0,
+                    "num": 6,
+                    "prop_color": 0,
+                    "prop_id": 0,
+                    "prop_type": 17
+                }
+            ]
+        },
+        {
+            "process_id": 5,
+            "num": 0,
+            "prop_color": 0,
+            "prop_id": 0,
+            "prop_type": 19,
+            "chest_type": 0,
+            "group": [
+                {
+                    "chest_type": 0,
+                    "num": 1,
+                    "prop_color": 0,
+                    "prop_id": 110,
+                    "prop_type": 5
+                },
+                {
+                    "chest_type": 0,
+                    "num": 6,
+                    "prop_color": 0,
+                    "prop_id": 0,
+                    "prop_type": 17
+                }
+            ]
+        },
+        {
+            "process_id": 6,
+            "num": 0,
+            "prop_color": 0,
+            "prop_id": 0,
+            "prop_type": 19,
+            "chest_type": 0,
+            "group": [
+                {
+                    "chest_type": 0,
+                    "num": 1,
+                    "prop_color": 0,
+                    "prop_id": 110,
+                    "prop_type": 5
+                },
+                {
+                    "chest_type": 0,
+                    "num": 6,
+                    "prop_color": 0,
+                    "prop_id": 0,
+                    "prop_type": 17
+                }
+            ]
+        },
+        {
+            "process_id": 7,
+            "num": 0,
+            "prop_color": 0,
+            "prop_id": 0,
+            "prop_type": 19,
+            "chest_type": 0,
+            "group": [
+                {
+                    "chest_type": 0,
+                    "num": 1,
+                    "prop_color": 0,
+                    "prop_id": 110,
+                    "prop_type": 5
+                },
+                {
+                    "chest_type": 0,
+                    "num": 6,
+                    "prop_color": 0,
+                    "prop_id": 0,
+                    "prop_type": 17
+                }
+            ]
+        },
+        {
+            "process_id": 8,
+            "num": 0,
+            "prop_color": 0,
+            "prop_id": 0,
+            "prop_type": 19,
+            "chest_type": 0,
+            "group": [
+                {
+                    "chest_type": 0,
+                    "num": 1,
+                    "prop_color": 0,
+                    "prop_id": 110,
+                    "prop_type": 5
+                },
+                {
+                    "chest_type": 0,
+                    "num": 6,
+                    "prop_color": 0,
+                    "prop_id": 0,
+                    "prop_type": 17
+                }
+            ]
+        },
+        {
+            "process_id": 9,
+            "num": 0,
+            "prop_color": 0,
+            "prop_id": 0,
+            "prop_type": 19,
+            "chest_type": 0,
+            "group": [
+                {
+                    "chest_type": 0,
+                    "num": 1,
+                    "prop_color": 0,
+                    "prop_id": 110,
+                    "prop_type": 5
+                },
+                {
+                    "chest_type": 0,
+                    "num": 6,
+                    "prop_color": 0,
+                    "prop_id": 0,
+                    "prop_type": 17
+                }
+            ]
+        },
+        {
+            "process_id": 10,
+            "num": 0,
+            "prop_color": 0,
+            "prop_id": 0,
+            "prop_type": 19,
+            "chest_type": 0,
+            "group": [
+                {
+                    "chest_type": 0,
+                    "num": 1,
+                    "prop_color": 0,
+                    "prop_id": 110,
+                    "prop_type": 5
+                },
+                {
+                    "chest_type": 0,
+                    "num": 6,
+                    "prop_color": 0,
+                    "prop_id": 0,
+                    "prop_type": 17
+                }
+            ]
+        },
+        {
+            "process_id": 11,
+            "num": 0,
+            "prop_color": 0,
+            "prop_id": 0,
+            "prop_type": 19,
+            "chest_type": 0,
+            "group": [
+                {
+                    "chest_type": 0,
+                    "num": 1,
+                    "prop_color": 0,
+                    "prop_id": 110,
+                    "prop_type": 5
+                },
+                {
+                    "chest_type": 0,
+                    "num": 6,
+                    "prop_color": 0,
+                    "prop_id": 0,
+                    "prop_type": 17
+                }
+            ]
+        },
+        {
+            "process_id": 12,
+            "num": 0,
+            "prop_color": 0,
+            "prop_id": 0,
+            "prop_type": 19,
+            "chest_type": 0,
+            "group": [
+                {
+                    "chest_type": 0,
+                    "num": 1,
+                    "prop_color": 0,
+                    "prop_id": 110,
+                    "prop_type": 5
+                },
+                {
+                    "chest_type": 0,
+                    "num": 6,
+                    "prop_color": 0,
+                    "prop_id": 0,
+                    "prop_type": 17
+                }
+            ]
+        }
+    ],
+    "free_reward": [
+        {
+            "chest_type": 0,
+            "num": 5,
+            "process_id": 1,
+            "prop_color": 0,
+            "prop_id": 110,
+            "prop_type": 5
+        }
+    ]
+}

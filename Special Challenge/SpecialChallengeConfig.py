@@ -1,5 +1,6 @@
 from openpyxl import load_workbook
 import json
+import time
 
 import os
 work_dir = os.getcwd()
@@ -9,11 +10,21 @@ workbook_dir = os.path.join(work_dir, xlsx_dir)
 print(workbook_dir)
 
 json_file_name = "SpeicalChallengeConfig.Json"
-json_dir = os.path.join(work_dir, json_file_name)
-print(json_dir)
+
 
 wb = load_workbook(workbook_dir)
 ws = wb.active
+
+
+file_name_string = str(ws.cell(3,2).value) + "_" + str(ws.cell(5, 2).value) + "_to_" + str(ws.cell(6,2).value) + ".json" 
+if file_name_string!= "":
+    json_file_name = file_name_string
+
+
+
+json_dir = os.path.join(work_dir, json_file_name)
+print(json_dir)
+
 
 # 工具
 
@@ -35,13 +46,34 @@ def get_bool(input_string):
     else:
         return  False
 
+
+def time2timestamp(input_string):
+    '''
+    输入格式：2021-08-22 15:00:00
+    '''
+    # 转换为时间数组
+    timeArray = time.strptime(input_string, "%Y-%m-%d %H:%M:%S")
+    # 转换成时间戳
+    timestamp = time.mktime(timeArray)
+
+    print(input_string + " —转化为: " + str(int(timestamp)))
+    return int(timestamp)
+
+
+''' 因为Speical Challenge 线上工具可改时间 ,这里不对时间戳做太多更新'''
+
+
 container_dic = {}
 
 #总配置
 container_dic.update({"name": ws.cell(3, 2).value})
 container_dic.update({"id": ws.cell(4, 2).value})
-container_dic.update({"start_time": ws.cell(5, 2).value})
-container_dic.update({"end_time": ws.cell(6, 2).value})
+
+start_time = str(ws.cell(5, 2).value)
+end_time = str(ws.cell(6, 2).value)
+
+container_dic.update({"start_time": time2timestamp(start_time)})
+container_dic.update({"end_time": time2timestamp(end_time)})
 container_dic.update({"chance": ws.cell(8, 2).value})
 container_dic.update({"chance_fee": ws.cell(9, 2).value})
 container_dic.update({"diamond_offer_trigger_num": ws.cell(10, 2).value})
@@ -264,7 +296,7 @@ while ws.cell(135, column_index).value!= None:
 
 print("免费奖励配置完成")
 
-print(container_dic)
+# print(container_dic)
 # 输出json
 
 with open(json_dir, "w") as json_file:
