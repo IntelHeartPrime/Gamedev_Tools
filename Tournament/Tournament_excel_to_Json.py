@@ -10,11 +10,7 @@ workbook_dir = os.path.join(work_dir, xlsx_dir)
 print(workbook_dir)
 
 
-''' 每次配置时可更改此Json名称得以保存多份配置文件'''
-''' '''
 json_file_name = "TournamentConfig.json"
-
-''' '''
 
 wb = load_workbook(workbook_dir)
 ws = wb.active

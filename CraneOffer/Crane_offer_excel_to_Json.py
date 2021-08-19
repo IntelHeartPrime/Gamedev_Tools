@@ -1,5 +1,6 @@
 from openpyxl import load_workbook
 import json
+import time
 
 import os
 work_dir = os.getcwd()
@@ -9,11 +10,21 @@ workbook_dir = os.path.join(work_dir, xlsx_dir)
 print(workbook_dir)
 
 json_file_name = "CraneOfferConfig.json"
-json_dir = os.path.join(work_dir, json_file_name)
-print(json_dir)
+
 
 wb = load_workbook(workbook_dir)
 ws = wb.active
+
+
+file_name_string = str(ws.cell(4,2).value) + "_" + str(ws.cell(5,2).value) + "holes_" + str(ws.cell(7, 2).value) + "_to_" + str(ws.cell(8,2).value) + ".json" 
+if file_name_string!= "":
+    json_file_name = file_name_string
+
+
+json_dir = os.path.join(work_dir, json_file_name)
+print(json_dir)
+
+
 
 # 工具
 
@@ -37,15 +48,36 @@ def get_bool(input_string):
         return  False
 
 
+def time2timestamp(input_string):
+    '''
+    输入格式：2021-08-22 15:00:00
+    '''
+    # 转换为时间数组
+    timeArray = time.strptime(input_string, "%Y-%m-%d %H:%M:%S")
+    # 转换成时间戳
+    timestamp = time.mktime(timeArray)
+
+    print(input_string + " —转化为: " + str(int(timestamp)))
+    return int(timestamp)
+
+
+
 container_dic = {}
 
 # 总配置
 container_dic.update({"id": ws.cell(4, 2).value})
 container_dic.update({"name": ws.cell(5, 2).value})
 container_dic.update({"coin_rate": ws.cell(6, 2).value})
-container_dic.update({"start_time": ws.cell(7, 2).value})
-container_dic.update({"end_time": ws.cell(8, 2).value})
-container_dic.update({"begin_time": ws.cell(9, 2).value})
+
+start_time =  str(ws.cell(7, 2).value)
+end_time = str(ws.cell(8, 2).value)
+begin_time = str(ws.cell(9,2).value)
+
+
+container_dic.update({"start_time": time2timestamp(start_time)})
+container_dic.update({"end_time": time2timestamp(end_time)})
+container_dic.update({"begin_time": time2timestamp(begin_time)})
+
 container_dic.update({"refresh_interval": ws.cell(10, 2).value})
 
 print(" 总配置完成 ")
