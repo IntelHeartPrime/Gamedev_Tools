@@ -109,7 +109,7 @@ print("限定配置 配置完成")
 
 # match_rule
 match_rules = {}
-container_dic.update({"match_rules": match_rules})
+container_dic.update({"match_rule": match_rules})
 
 tour_id_list = []
 match_rules.update({"tour_id_list": tour_id_list})

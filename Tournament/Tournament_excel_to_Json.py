@@ -78,7 +78,7 @@ container_dic.update({"id": ws.cell(3, 2).value})
 container_dic.update({"name": ws.cell(4, 2).value})
 
 start_time = str(ws.cell(5, 2).value)
-end_time = str(ws.cell(5, 2).value)
+end_time = str(ws.cell(6, 2).value)
 
 
 container_dic.update({"start_time": time2timestamp(start_time)})
