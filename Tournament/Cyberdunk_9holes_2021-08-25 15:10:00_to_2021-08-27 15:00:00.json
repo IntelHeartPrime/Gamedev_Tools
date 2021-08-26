@@ -1,0 +1,423 @@
+{
+    "id": 834,
+    "name": "Cyberdunk",
+    "start_time": 1629875400,
+    "end_time": 1630047600,
+    "tour_type": 4,
+    "ui_config": {
+        "main_bg": "Bg_event_zs_08",
+        "time_bg": "Pnl_event_zs_jl_08",
+        "event_bg_icon": "Bg_event_zs_rk_9",
+        "icon": "Icon_zs_bt_09"
+    },
+    "types": [
+        {
+            "battle_times": 9,
+            "chance": 1,
+            "entry_fee": {
+                "consume_num": 500,
+                "consume_type": 3
+            },
+            "finish_offer_id_list": [],
+            "max_replay_times": 99,
+            "new_holes": [],
+            "open_stage": 7,
+            "prize": [
+                {
+                    "start_target": -2,
+                    "end_target": 10086,
+                    "reward": {
+                        "id": 461,
+                        "number": 1,
+                        "type": 6
+                    }
+                },
+                {
+                    "start_target": -4,
+                    "end_target": -3,
+                    "reward": {
+                        "id": 462,
+                        "number": 1,
+                        "type": 6
+                    }
+                },
+                {
+                    "start_target": -6,
+                    "end_target": -5,
+                    "reward": {
+                        "id": 463,
+                        "number": 1,
+                        "type": 6
+                    }
+                },
+                {
+                    "start_target": -8,
+                    "end_target": -7,
+                    "reward": {
+                        "id": 464,
+                        "number": 1,
+                        "type": 6
+                    }
+                },
+                {
+                    "start_target": -10,
+                    "end_target": -9,
+                    "reward": {
+                        "id": 465,
+                        "number": 1,
+                        "type": 6
+                    }
+                },
+                {
+                    "start_target": -12,
+                    "end_target": -11,
+                    "reward": {
+                        "id": 466,
+                        "number": 1,
+                        "type": 6
+                    }
+                },
+                {
+                    "start_target": -14,
+                    "end_target": -13,
+                    "reward": {
+                        "id": 467,
+                        "number": 1,
+                        "type": 6
+                    }
+                },
+                {
+                    "start_target": -10086,
+                    "end_target": -15,
+                    "reward": {
+                        "id": 468,
+                        "number": 1,
+                        "type": 6
+                    }
+                }
+            ],
+            "replay_fee": {
+                "consume_num": 0,
+                "consume_num_step": 0,
+                "consume_offer_id": 120001,
+                "consume_type": 1
+            },
+            "replay_offers": [
+                120021,
+                120022
+            ],
+            "replay_type": 2,
+            "scene_id": [
+                20109,
+                21009,
+                10609,
+                10309,
+                20509,
+                20609,
+                20209,
+                10509,
+                20909
+            ],
+            "signup_offer_id": "",
+            "signup_offer_id_list": [
+                {
+                    "money": 0,
+                    "offer_id": 110241
+                },
+                {
+                    "money": 2,
+                    "offer_id": 110242
+                },
+                {
+                    "money": 4,
+                    "offer_id": 110243
+                },
+                {
+                    "money": 6,
+                    "offer_id": 110244
+                },
+                {
+                    "money": 10,
+                    "offer_id": 110245
+                }
+            ],
+            "stage": 39001,
+            "tee": 1,
+            "type": 1,
+            "wind_max": 9,
+            "wind_min": 5
+        },
+        {
+            "battle_times": 9,
+            "chance": 1,
+            "entry_fee": {
+                "consume_num": 2000,
+                "consume_type": 3
+            },
+            "finish_offer_id_list": [],
+            "max_replay_times": 99,
+            "new_holes": [],
+            "open_stage": 10,
+            "prize": [
+                {
+                    "start_target": -5,
+                    "end_target": 10086,
+                    "reward": {
+                        "id": 471,
+                        "number": 1,
+                        "type": 6
+                    }
+                },
+                {
+                    "start_target": -7,
+                    "end_target": -6,
+                    "reward": {
+                        "id": 472,
+                        "number": 1,
+                        "type": 6
+                    }
+                },
+                {
+                    "start_target": -9,
+                    "end_target": -8,
+                    "reward": {
+                        "id": 473,
+                        "number": 1,
+                        "type": 6
+                    }
+                },
+                {
+                    "start_target": -11,
+                    "end_target": -10,
+                    "reward": {
+                        "id": 474,
+                        "number": 1,
+                        "type": 6
+                    }
+                },
+                {
+                    "start_target": -13,
+                    "end_target": -12,
+                    "reward": {
+                        "id": 475,
+                        "number": 1,
+                        "type": 6
+                    }
+                },
+                {
+                    "start_target": -15,
+                    "end_target": -14,
+                    "reward": {
+                        "id": 476,
+                        "number": 1,
+                        "type": 6
+                    }
+                },
+                {
+                    "start_target": -17,
+                    "end_target": -16,
+                    "reward": {
+                        "id": 477,
+                        "number": 1,
+                        "type": 6
+                    }
+                },
+                {
+                    "start_target": -10086,
+                    "end_target": -18,
+                    "reward": {
+                        "id": 478,
+                        "number": 1,
+                        "type": 6
+                    }
+                }
+            ],
+            "replay_fee": {
+                "consume_num": 0,
+                "consume_num_step": 0,
+                "consume_offer_id": 120001,
+                "consume_type": 1
+            },
+            "replay_offers": [
+                120021,
+                120022
+            ],
+            "replay_type": 2,
+            "scene_id": [
+                20111,
+                21011,
+                10611,
+                10311,
+                20511,
+                20611,
+                20211,
+                10511,
+                20911
+            ],
+            "signup_offer_id": "",
+            "signup_offer_id_list": [
+                {
+                    "money": 0,
+                    "offer_id": 110251
+                },
+                {
+                    "money": 4,
+                    "offer_id": 110252
+                },
+                {
+                    "money": 6,
+                    "offer_id": 110253
+                },
+                {
+                    "money": 10,
+                    "offer_id": 110254
+                },
+                {
+                    "money": 15,
+                    "offer_id": 110255
+                }
+            ],
+            "stage": 39002,
+            "tee": 2,
+            "type": 2,
+            "wind_max": 12,
+            "wind_min": 6
+        },
+        {
+            "battle_times": 9,
+            "chance": 1,
+            "entry_fee": {
+                "consume_num": 5000,
+                "consume_type": 3
+            },
+            "finish_offer_id_list": [],
+            "max_replay_times": 99,
+            "new_holes": [],
+            "open_stage": 13,
+            "prize": [
+                {
+                    "start_target": -8,
+                    "end_target": 10086,
+                    "reward": {
+                        "id": 481,
+                        "number": 1,
+                        "type": 6
+                    }
+                },
+                {
+                    "start_target": -10,
+                    "end_target": -9,
+                    "reward": {
+                        "id": 482,
+                        "number": 1,
+                        "type": 6
+                    }
+                },
+                {
+                    "start_target": -12,
+                    "end_target": -11,
+                    "reward": {
+                        "id": 483,
+                        "number": 1,
+                        "type": 6
+                    }
+                },
+                {
+                    "start_target": -14,
+                    "end_target": -13,
+                    "reward": {
+                        "id": 484,
+                        "number": 1,
+                        "type": 6
+                    }
+                },
+                {
+                    "start_target": -16,
+                    "end_target": -15,
+                    "reward": {
+                        "id": 485,
+                        "number": 1,
+                        "type": 6
+                    }
+                },
+                {
+                    "start_target": -18,
+                    "end_target": -17,
+                    "reward": {
+                        "id": 486,
+                        "number": 1,
+                        "type": 6
+                    }
+                },
+                {
+                    "start_target": -20,
+                    "end_target": -19,
+                    "reward": {
+                        "id": 487,
+                        "number": 1,
+                        "type": 6
+                    }
+                },
+                {
+                    "start_target": -10086,
+                    "end_target": -21,
+                    "reward": {
+                        "id": 488,
+                        "number": 1,
+                        "type": 6
+                    }
+                }
+            ],
+            "replay_fee": {
+                "consume_num": 0,
+                "consume_num_step": 0,
+                "consume_offer_id": 120001,
+                "consume_type": 1
+            },
+            "replay_offers": [
+                120021,
+                120022
+            ],
+            "replay_type": 2,
+            "scene_id": [
+                20113,
+                21013,
+                10900,
+                10313,
+                20513,
+                20613,
+                20213,
+                10513,
+                20913
+            ],
+            "signup_offer_id": "",
+            "signup_offer_id_list": [
+                {
+                    "money": 0,
+                    "offer_id": 110261
+                },
+                {
+                    "money": 6,
+                    "offer_id": 110262
+                },
+                {
+                    "money": 10,
+                    "offer_id": 110263
+                },
+                {
+                    "money": 15,
+                    "offer_id": 110264
+                },
+                {
+                    "money": 30,
+                    "offer_id": 110265
+                }
+            ],
+            "stage": 39003,
+            "tee": 3,
+            "type": 3,
+            "wind_max": 18,
+            "wind_min": 10
+        }
+    ]
+}

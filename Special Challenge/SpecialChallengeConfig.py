@@ -20,7 +20,9 @@ file_name_string = str(ws.cell(3,2).value) + "_" + str(ws.cell(5, 2).value) + "_
 if file_name_string!= "":
     json_file_name = file_name_string
 
-
+file_name_string = file_name_string.replace(" ","-")
+file_name_string = file_name_string.replace(":","-")
+      
 
 json_dir = os.path.join(work_dir, json_file_name)
 print(json_dir)
@@ -123,6 +125,11 @@ while ws.cell(29, column_index).value!= None:
     unit_dic.update({"tour_id": ws.cell(32, column_index).value})
     unit_dic.update({"wind_max": ws.cell(33, column_index).value})
     unit_dic.update({"wind_min": ws.cell(34, column_index).value})
+
+    if ws.cell(35, column_index).value != None:
+        unit_dic.update({"angle_start": clean_null(ws.cell(35, column_index).value)})
+    if ws.cell(36, column_index).value != None:
+        unit_dic.update({"angle_end": clean_null(ws.cell(36, column_index).value)})
 
     tour_id_list.append(unit_dic)
     column_index = column_index + 1

@@ -1,20 +1,20 @@
 {
-    "68": {
-        "id": 68,
-        "name": "Cassis Inlets",
-        "start_time": 1629702600,
-        "end_time": 1629874800,
+    "834": {
+        "id": 834,
+        "name": "Cyberdunk",
+        "start_time": 1629875400,
+        "end_time": 1630047600,
         "tour_type": 4,
         "ui_config": {
-            "main_bg": "Bg_event_zs_07",
-            "time_bg": "Pnl_event_zs_jl_07",
-            "event_bg_icon": "Bg_event_zs_rk_8",
-            "icon": "Icon_zs_bt_08"
+            "main_bg": "Bg_event_zs_08",
+            "time_bg": "Pnl_event_zs_jl_08",
+            "event_bg_icon": "Bg_event_zs_rk_9",
+            "icon": "Icon_zs_bt_09"
         },
         "types": [
             {
                 "battle_times": 9,
-                "chance": 2,
+                "chance": 1,
                 "entry_fee": {
                     "consume_num": 500,
                     "consume_type": 3
@@ -109,40 +109,40 @@
                 ],
                 "replay_type": 2,
                 "scene_id": [
-                    200809,
-                    200609,
-                    200709,
-                    201109,
-                    201309,
-                    200509,
-                    201609,
-                    201009,
-                    200909
+                    20109,
+                    21009,
+                    10609,
+                    10309,
+                    20509,
+                    20609,
+                    20209,
+                    10509,
+                    20909
                 ],
                 "signup_offer_id": "",
                 "signup_offer_id_list": [
                     {
                         "money": 0,
-                        "offer_id": 110211
+                        "offer_id": 110241
                     },
                     {
                         "money": 2,
-                        "offer_id": 110212
+                        "offer_id": 110242
                     },
                     {
                         "money": 4,
-                        "offer_id": 110213
+                        "offer_id": 110243
                     },
                     {
                         "money": 6,
-                        "offer_id": 110214
+                        "offer_id": 110244
                     },
                     {
                         "money": 10,
-                        "offer_id": 110215
+                        "offer_id": 110245
                     }
                 ],
-                "stage": 38004,
+                "stage": 39001,
                 "tee": 1,
                 "type": 1,
                 "wind_max": 9,
@@ -150,7 +150,7 @@
             },
             {
                 "battle_times": 9,
-                "chance": 2,
+                "chance": 1,
                 "entry_fee": {
                     "consume_num": 2000,
                     "consume_type": 3
@@ -245,40 +245,40 @@
                 ],
                 "replay_type": 2,
                 "scene_id": [
-                    200811,
-                    200611,
-                    200711,
-                    201111,
-                    201311,
-                    200511,
-                    201611,
-                    201011,
-                    200911
+                    20111,
+                    21011,
+                    10611,
+                    10311,
+                    20511,
+                    20611,
+                    20211,
+                    10511,
+                    20911
                 ],
                 "signup_offer_id": "",
                 "signup_offer_id_list": [
                     {
                         "money": 0,
-                        "offer_id": 110221
+                        "offer_id": 110251
                     },
                     {
                         "money": 4,
-                        "offer_id": 110222
+                        "offer_id": 110252
                     },
                     {
                         "money": 6,
-                        "offer_id": 110223
+                        "offer_id": 110253
                     },
                     {
                         "money": 10,
-                        "offer_id": 110224
+                        "offer_id": 110254
                     },
                     {
                         "money": 15,
-                        "offer_id": 110225
+                        "offer_id": 110255
                     }
                 ],
-                "stage": 38005,
+                "stage": 39002,
                 "tee": 2,
                 "type": 2,
                 "wind_max": 12,
@@ -286,7 +286,7 @@
             },
             {
                 "battle_times": 9,
-                "chance": 2,
+                "chance": 1,
                 "entry_fee": {
                     "consume_num": 5000,
                     "consume_type": 3
@@ -381,40 +381,40 @@
                 ],
                 "replay_type": 2,
                 "scene_id": [
-                    200813,
-                    200613,
-                    200713,
-                    201113,
-                    201313,
-                    200513,
-                    201613,
-                    201013,
-                    200913
+                    20113,
+                    21013,
+                    10900,
+                    10313,
+                    20513,
+                    20613,
+                    20213,
+                    10513,
+                    20913
                 ],
                 "signup_offer_id": "",
                 "signup_offer_id_list": [
                     {
                         "money": 0,
-                        "offer_id": 110231
+                        "offer_id": 110261
                     },
                     {
                         "money": 6,
-                        "offer_id": 110232
+                        "offer_id": 110262
                     },
                     {
                         "money": 10,
-                        "offer_id": 110233
+                        "offer_id": 110263
                     },
                     {
                         "money": 15,
-                        "offer_id": 110234
+                        "offer_id": 110264
                     },
                     {
                         "money": 30,
-                        "offer_id": 110235
+                        "offer_id": 110265
                     }
                 ],
-                "stage": 38006,
+                "stage": 39003,
                 "tee": 3,
                 "type": 3,
                 "wind_max": 18,

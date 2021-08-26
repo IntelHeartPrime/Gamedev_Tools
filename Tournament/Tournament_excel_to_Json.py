@@ -22,7 +22,20 @@ ws = wb.active
 自动生成名称以确保本地配置正确保留
 
 '''
-file_name_string = str(ws.cell(4,2).value) + "_" + str(ws.cell(18,2).value) + "holes_" + str(ws.cell(5, 2).value) + "_to_" + str(ws.cell(6,2).value) + ".json" 
+
+# 沙箱工具
+# file_name_string = str(ws.cell(4,2).value) + "_" + str(ws.cell(18,2).value) + "holes_" + str(ws.cell(5, 2).value) + "_to_" + str(ws.cell(6,2).value) + ".json" 
+
+# 线上工具
+file_name_string = str(ws.cell(4,2).value) + "_" + str(ws.cell(18,2).value) + "holes_" + str(ws.cell(5, 2).value) + "_to_" + str(ws.cell(6,2).value) + "_online_.json" 
+
+#将空格与:用-替换掉
+file_name_string = file_name_string.replace(" ","-")
+file_name_string = file_name_string.replace(":","-")
+
+
+print( file_name_string )
+
 if file_name_string!= "":
     json_file_name = file_name_string
 
@@ -41,7 +54,7 @@ def clean_null(input_value):
     return input_value
 
 
-def get_bool(input_string):
+def get_bool(input_string): 
     '''
     input_string = "true" return true
     input_string = "false" return false

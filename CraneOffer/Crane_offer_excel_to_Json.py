@@ -21,6 +21,10 @@ if file_name_string!= "":
     json_file_name = file_name_string
 
 
+file_name_string = file_name_string.replace(" ","-")
+file_name_string = file_name_string.replace(":","-")
+
+
 json_dir = os.path.join(work_dir, json_file_name)
 print(json_dir)
 
