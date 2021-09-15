@@ -1,22 +1,22 @@
 {
-    "67": {
-        "id": 67,
-        "name": "Cassis Inlets",
-        "start_time": 1629529200,
-        "end_time": 1629615600,
-        "tour_type": 4,
+    "63": {
+        "id": 63,
+        "name": "Coast to Coast",
+        "start_time": 1631085000,
+        "end_time": 1631257200,
+        "tour_type": 1,
         "ui_config": {
-            "main_bg": "Bg_event_zs_07",
-            "time_bg": "Pnl_event_zs_jl_07",
-            "event_bg_icon": "Bg_event_zs_rk_8",
-            "icon": "Icon_zs_bt_08"
+            "main_bg": "Bg_event_zs_01",
+            "time_bg": "Pnl_event_zs_jl_01",
+            "event_bg_icon": "Bg_event_zs_rk_1",
+            "icon": "Icon_zs_bt_01"
         },
         "types": [
             {
-                "battle_times": 18,
-                "chance": 2,
+                "battle_times": 9,
+                "chance": 1,
                 "entry_fee": {
-                    "consume_num": 1000,
+                    "consume_num": 500,
                     "consume_type": 3
                 },
                 "finish_offer_id_list": [],
@@ -25,73 +25,73 @@
                 "open_stage": 7,
                 "prize": [
                     {
-                        "start_target": -8,
+                        "start_target": -2,
                         "end_target": 10086,
                         "reward": {
-                            "id": 431,
+                            "id": 461,
                             "number": 1,
                             "type": 6
                         }
                     },
                     {
-                        "start_target": -13,
+                        "start_target": -4,
+                        "end_target": -3,
+                        "reward": {
+                            "id": 462,
+                            "number": 1,
+                            "type": 6
+                        }
+                    },
+                    {
+                        "start_target": -6,
+                        "end_target": -5,
+                        "reward": {
+                            "id": 463,
+                            "number": 1,
+                            "type": 6
+                        }
+                    },
+                    {
+                        "start_target": -8,
+                        "end_target": -7,
+                        "reward": {
+                            "id": 464,
+                            "number": 1,
+                            "type": 6
+                        }
+                    },
+                    {
+                        "start_target": -10,
                         "end_target": -9,
                         "reward": {
-                            "id": 432,
+                            "id": 465,
                             "number": 1,
                             "type": 6
                         }
                     },
                     {
-                        "start_target": -17,
-                        "end_target": -14,
+                        "start_target": -12,
+                        "end_target": -11,
                         "reward": {
-                            "id": 433,
+                            "id": 466,
                             "number": 1,
                             "type": 6
                         }
                     },
                     {
-                        "start_target": -20,
-                        "end_target": -18,
+                        "start_target": -14,
+                        "end_target": -13,
                         "reward": {
-                            "id": 434,
-                            "number": 1,
-                            "type": 6
-                        }
-                    },
-                    {
-                        "start_target": -23,
-                        "end_target": -21,
-                        "reward": {
-                            "id": 435,
-                            "number": 1,
-                            "type": 6
-                        }
-                    },
-                    {
-                        "start_target": -26,
-                        "end_target": -24,
-                        "reward": {
-                            "id": 436,
-                            "number": 1,
-                            "type": 6
-                        }
-                    },
-                    {
-                        "start_target": -29,
-                        "end_target": -27,
-                        "reward": {
-                            "id": 437,
+                            "id": 467,
                             "number": 1,
                             "type": 6
                         }
                     },
                     {
                         "start_target": -10086,
-                        "end_target": -30,
+                        "end_target": -15,
                         "reward": {
-                            "id": 438,
+                            "id": 468,
                             "number": 1,
                             "type": 6
                         }
@@ -100,7 +100,7 @@
                 "replay_fee": {
                     "consume_num": 0,
                     "consume_num_step": 0,
-                    "consume_offer_id": 120002,
+                    "consume_offer_id": 120001,
                     "consume_type": 1
                 },
                 "replay_offers": [
@@ -109,51 +109,50 @@
                 ],
                 "replay_type": 2,
                 "scene_id": [
-                    200809,
-                    200609,
-                    200709,
-                    201109,
-                    201309,
-                    200509,
-                    201609,
-                    201009,
-                    200909,
-                    200809,
-                    200609,
-                    200709,
-                    201109,
-                    201309,
-                    200509,
-                    201609,
-                    201009,
-                    200909
+                    102704,
+                    1503,
+                    304707,
+                    303607,
+                    100201,
+                    100807,
+                    2503,
+                    1207,
+                    100501
                 ],
                 "signup_offer_id": "",
                 "signup_offer_id_list": [
                     {
                         "money": 0,
-                        "offer_id": 110211
+                        "offer_id": 110001
                     },
                     {
                         "money": 2,
-                        "offer_id": 110212
+                        "offer_id": 110002
                     },
                     {
                         "money": 4,
-                        "offer_id": 110213
+                        "offer_id": 110003
+                    },
+                    {
+                        "money": 6,
+                        "offer_id": 110004
+                    },
+                    {
+                        "money": 10,
+                        "offer_id": 110005
                     }
                 ],
-                "stage": 38001,
+                "stage": 31001,
                 "tee": 1,
                 "type": 1,
                 "wind_max": 9,
                 "wind_min": 5
             },
             {
-                "battle_times": 18,
-                "chance": 2,
+                "battle_times": 9,
+                "chance": 1,
                 "entry_fee": {
-                    "consume_num": 5000,
+                    "consume_num": 2000,
                     "consume_type": 3
                 },
                 "finish_offer_id_list": [],
@@ -162,73 +161,73 @@
                 "open_stage": 10,
                 "prize": [
                     {
-                        "start_target": -17,
+                        "start_target": -5,
                         "end_target": 10086,
                         "reward": {
-                            "id": 441,
+                            "id": 471,
                             "number": 1,
                             "type": 6
                         }
                     },
                     {
-                        "start_target": -20,
-                        "end_target": -18,
+                        "start_target": -7,
+                        "end_target": -6,
                         "reward": {
-                            "id": 442,
+                            "id": 472,
                             "number": 1,
                             "type": 6
                         }
                     },
                     {
-                        "start_target": -23,
-                        "end_target": -21,
+                        "start_target": -9,
+                        "end_target": -8,
                         "reward": {
-                            "id": 443,
+                            "id": 473,
                             "number": 1,
                             "type": 6
                         }
                     },
                     {
-                        "start_target": -26,
-                        "end_target": -24,
+                        "start_target": -11,
+                        "end_target": -10,
                         "reward": {
-                            "id": 444,
+                            "id": 474,
                             "number": 1,
                             "type": 6
                         }
                     },
                     {
-                        "start_target": -29,
-                        "end_target": -27,
+                        "start_target": -13,
+                        "end_target": -12,
                         "reward": {
-                            "id": 445,
+                            "id": 475,
                             "number": 1,
                             "type": 6
                         }
                     },
                     {
-                        "start_target": -32,
-                        "end_target": -30,
+                        "start_target": -15,
+                        "end_target": -14,
                         "reward": {
-                            "id": 446,
+                            "id": 476,
                             "number": 1,
                             "type": 6
                         }
                     },
                     {
-                        "start_target": -35,
-                        "end_target": -33,
+                        "start_target": -17,
+                        "end_target": -16,
                         "reward": {
-                            "id": 447,
+                            "id": 477,
                             "number": 1,
                             "type": 6
                         }
                     },
                     {
                         "start_target": -10086,
-                        "end_target": -36,
+                        "end_target": -18,
                         "reward": {
-                            "id": 448,
+                            "id": 478,
                             "number": 1,
                             "type": 6
                         }
@@ -237,7 +236,7 @@
                 "replay_fee": {
                     "consume_num": 0,
                     "consume_num_step": 0,
-                    "consume_offer_id": 120002,
+                    "consume_offer_id": 120001,
                     "consume_type": 1
                 },
                 "replay_offers": [
@@ -246,51 +245,50 @@
                 ],
                 "replay_type": 2,
                 "scene_id": [
-                    200811,
-                    200611,
-                    200711,
-                    201111,
-                    201311,
-                    200511,
-                    201611,
-                    201011,
-                    200911,
-                    200811,
-                    200611,
-                    200711,
-                    201111,
-                    201311,
-                    200511,
-                    201611,
-                    201011,
-                    200911
+                    102707,
+                    1507,
+                    304709,
+                    303609,
+                    100207,
+                    100809,
+                    2507,
+                    1209,
+                    100507
                 ],
                 "signup_offer_id": "",
                 "signup_offer_id_list": [
                     {
                         "money": 0,
-                        "offer_id": 110221
+                        "offer_id": 110011
                     },
                     {
                         "money": 4,
-                        "offer_id": 110222
+                        "offer_id": 110012
                     },
                     {
                         "money": 6,
-                        "offer_id": 110223
+                        "offer_id": 110013
+                    },
+                    {
+                        "money": 10,
+                        "offer_id": 110014
+                    },
+                    {
+                        "money": 15,
+                        "offer_id": 110015
                     }
                 ],
-                "stage": 38002,
+                "stage": 31011,
                 "tee": 2,
                 "type": 2,
                 "wind_max": 12,
                 "wind_min": 6
             },
             {
-                "battle_times": 18,
-                "chance": 2,
+                "battle_times": 9,
+                "chance": 1,
                 "entry_fee": {
-                    "consume_num": 10000,
+                    "consume_num": 5000,
                     "consume_type": 3
                 },
                 "finish_offer_id_list": [],
@@ -299,73 +297,73 @@
                 "open_stage": 13,
                 "prize": [
                     {
-                        "start_target": -28,
+                        "start_target": -8,
                         "end_target": 10086,
                         "reward": {
-                            "id": 451,
+                            "id": 481,
                             "number": 1,
                             "type": 6
                         }
                     },
                     {
-                        "start_target": -32,
-                        "end_target": -29,
+                        "start_target": -10,
+                        "end_target": -9,
                         "reward": {
-                            "id": 432,
+                            "id": 482,
                             "number": 1,
                             "type": 6
                         }
                     },
                     {
-                        "start_target": -35,
-                        "end_target": -33,
+                        "start_target": -12,
+                        "end_target": -11,
                         "reward": {
-                            "id": 433,
+                            "id": 483,
                             "number": 1,
                             "type": 6
                         }
                     },
                     {
-                        "start_target": -38,
-                        "end_target": -36,
+                        "start_target": -14,
+                        "end_target": -13,
                         "reward": {
-                            "id": 434,
+                            "id": 484,
                             "number": 1,
                             "type": 6
                         }
                     },
                     {
-                        "start_target": -41,
-                        "end_target": -39,
+                        "start_target": -16,
+                        "end_target": -15,
                         "reward": {
-                            "id": 435,
+                            "id": 485,
                             "number": 1,
                             "type": 6
                         }
                     },
                     {
-                        "start_target": -44,
-                        "end_target": -42,
+                        "start_target": -18,
+                        "end_target": -17,
                         "reward": {
-                            "id": 436,
+                            "id": 486,
                             "number": 1,
                             "type": 6
                         }
                     },
                     {
-                        "start_target": -47,
-                        "end_target": -45,
+                        "start_target": -20,
+                        "end_target": -19,
                         "reward": {
-                            "id": 437,
+                            "id": 487,
                             "number": 1,
                             "type": 6
                         }
                     },
                     {
                         "start_target": -10086,
-                        "end_target": -48,
+                        "end_target": -21,
                         "reward": {
-                            "id": 438,
+                            "id": 488,
                             "number": 1,
                             "type": 6
                         }
@@ -374,7 +372,7 @@
                 "replay_fee": {
                     "consume_num": 0,
                     "consume_num_step": 0,
-                    "consume_offer_id": 120002,
+                    "consume_offer_id": 120001,
                     "consume_type": 1
                 },
                 "replay_offers": [
@@ -383,41 +381,40 @@
                 ],
                 "replay_type": 2,
                 "scene_id": [
-                    200813,
-                    200613,
-                    200713,
-                    201113,
-                    201313,
-                    200513,
-                    201613,
-                    201013,
-                    200913,
-                    200813,
-                    200613,
-                    200713,
-                    201113,
-                    201313,
-                    200513,
-                    201613,
-                    201013,
-                    200913
+                    102710,
+                    1510,
+                    304711,
+                    303611,
+                    100210,
+                    100811,
+                    2510,
+                    1211,
+                    100510
                 ],
                 "signup_offer_id": "",
                 "signup_offer_id_list": [
                     {
                         "money": 0,
-                        "offer_id": 110231
+                        "offer_id": 110021
                     },
                     {
                         "money": 6,
-                        "offer_id": 110232
+                        "offer_id": 110022
                     },
                     {
                         "money": 10,
-                        "offer_id": 110233
+                        "offer_id": 110023
+                    },
+                    {
+                        "money": 15,
+                        "offer_id": 110024
+                    },
+                    {
+                        "money": 30,
+                        "offer_id": 110025
                     }
                 ],
-                "stage": 38003,
+                "stage": 31021,
                 "tee": 3,
                 "type": 3,
                 "wind_max": 18,

@@ -4,13 +4,13 @@ import time
 
 import os
 work_dir = os.getcwd()
-xlsx_dir = "TournamentConfig.xlsx"
+xlsx_dir = "Tournament/TournamentConfig.xlsx"
 
 workbook_dir = os.path.join(work_dir, xlsx_dir)
 print(workbook_dir)
 
 
-json_file_name = "TournamentConfig.json"
+json_file_name = "/Tournament/TournamentConfig.json"
 
 wb = load_workbook(workbook_dir)
 ws = wb.active
@@ -23,11 +23,8 @@ ws = wb.active
 
 '''
 
-# 沙箱工具
-# file_name_string = str(ws.cell(4,2).value) + "_" + str(ws.cell(18,2).value) + "holes_" + str(ws.cell(5, 2).value) + "_to_" + str(ws.cell(6,2).value) + ".json" 
-
 # 线上工具
-file_name_string = str(ws.cell(4,2).value) + "_" + str(ws.cell(18,2).value) + "holes_" + str(ws.cell(5, 2).value) + "_to_" + str(ws.cell(6,2).value) + "_online_.json" 
+file_name_string = str(ws.cell(4,2).value) + "_" + str(ws.cell(18,2).value) + "holes_" + "_online_.json" 
 
 #将空格与:用-替换掉
 file_name_string = file_name_string.replace(" ","-")
@@ -80,12 +77,12 @@ def time2timestamp(input_string):
     return int(timestamp)
 
 
-container_Parent_dic = {}
+# container_Parent_dic = {}
 
 container_dic = {}
 
 # 总配置
-container_Parent_dic.update({ws.cell(3, 2).value: container_dic})
+# container_Parent_dic.update({ws.cell(3, 2).value: container_dic})
 
 container_dic.update({"id": ws.cell(3, 2).value})
 container_dic.update({"name": ws.cell(4, 2).value})
@@ -189,23 +186,52 @@ for x in range(3):
         row_index = row_index + 1
 
 
-    types_list_unit_dic.update({"signup_offer_id": clean_null(ws.cell(73, diff+2).value)})
+    types_list_unit_dic.update({"signup_offer_id": clean_null(ws.cell(89, diff+2).value)})
 
-    signup_offer_id_list = []
-    types_list_unit_dic.update({"signup_offer_id_list": signup_offer_id_list})
 
-    for y in range(2+diff, 8+diff):
-        if ws.cell(92, y).value != None:
-            unit_dic = {}
-            unit_dic.update({"money": ws.cell(92, y).value})
-            unit_dic.update({"offer_id": ws.cell(93, y).value})
-            signup_offer_id_list.append(unit_dic)
+    # 判断开关是否开启
+    if ws.cell(93, diff+1).value!= None:
+        #开关开
+        signup_offer_list = []
+        types_list_unit_dic.update({"signup_offer_list": signup_offer_list})
+        
+        index = 0
+        while ws.cell(94+index*6, diff+2).value!= None:
+            signup_offer_list_unit_dic ={}
+            signup_offer_list_unit_dic.update({"money": ws.cell(94+index*6, diff+2).value})
+            signup_offer_list_unit_dic.update({"type": ws.cell(95+index*6, diff+2).value})
 
-    types_list_unit_dic.update({"stage": ws.cell(95, diff+2).value})
-    types_list_unit_dic.update({"tee": ws.cell(96, diff+2).value})
-    types_list_unit_dic.update({"type": ws.cell(97, diff+2).value})
-    types_list_unit_dic.update({"wind_max": ws.cell(98, diff+2).value})
-    types_list_unit_dic.update({"wind_min": ws.cell(99, diff+2).value})
+            signup_offer_id_list = []
+            signup_offer_list_unit_dic.update({"signup_offer_id_list": signup_offer_id_list})
+
+            for y in range(2+diff, 8+diff):
+                if ws.cell(97+index*6, y).value != None:
+                    unit_dic = {}
+                    unit_dic.update({"money": ws.cell(97+index*6, y).value})
+                    unit_dic.update({"offer_id": ws.cell(98+index*6, y).value})
+                    signup_offer_id_list.append(unit_dic)
+            
+            signup_offer_list.append(signup_offer_list_unit_dic)
+            index = index + 1
+    
+    else:
+        #开关关
+        signup_offer_id_list = []
+        types_list_unit_dic.update({"signup_offer_id_list": signup_offer_id_list})
+
+        for y in range(2+diff, 8+diff):
+            if ws.cell(97, y).value != None:
+                unit_dic = {}
+                unit_dic.update({"money": ws.cell(97, y).value})
+                unit_dic.update({"offer_id": ws.cell(98, y).value})
+                signup_offer_id_list.append(unit_dic)
+
+
+    types_list_unit_dic.update({"stage": ws.cell(120, diff+2).value})
+    types_list_unit_dic.update({"tee": ws.cell(121, diff+2).value})
+    types_list_unit_dic.update({"type": ws.cell(122, diff+2).value})
+    types_list_unit_dic.update({"wind_max": ws.cell(123, diff+2).value})
+    types_list_unit_dic.update({"wind_min": ws.cell(124, diff+2).value})
 
 
     types_list.append(types_list_unit_dic)
@@ -217,13 +243,8 @@ print("奖励配置完成")
 # print(container_Parent_dic)
 
 with open(json_dir, "w") as json_file:
-    json_str = json.dumps(container_Parent_dic, indent=4)
+    json_str = json.dumps(container_dic, indent=4)
     json_file.write(json_str)
-
-
-
-
-
 
 
 
