@@ -311,6 +311,3 @@ with open(json_dir, "w") as json_file:
     json_file.write(json_str)
 
 
-
-
-
