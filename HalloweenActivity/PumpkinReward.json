@@ -1,0 +1,442 @@
+[
+    {
+        "require_coins": 20,
+        "reward": {
+            "prop_id": 1,
+            "prop_num": 2,
+            "prop_type": 5,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 60,
+        "reward": {
+            "prop_id": 26,
+            "prop_num": 2,
+            "prop_type": 4,
+            "prop_color": 3,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 40,
+        "reward": {
+            "prop_id": 2,
+            "prop_num": 1,
+            "prop_type": 5,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 50,
+        "reward": {
+            "prop_id": 0,
+            "prop_num": 300,
+            "prop_type": 3,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 120,
+        "reward": {
+            "prop_id": 5,
+            "prop_num": 5,
+            "prop_type": 5,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 40,
+        "reward": {
+            "prop_id": 0,
+            "prop_num": 2,
+            "prop_type": 28,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 150,
+        "reward": {
+            "prop_id": 0,
+            "prop_num": 3,
+            "prop_type": 7,
+            "prop_color": 3,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 500,
+        "reward": {
+            "prop_id": 0,
+            "prop_num": 1,
+            "prop_type": 6,
+            "prop_color": 8,
+            "chest_type": 3
+        }
+    },
+    {
+        "require_coins": 80,
+        "reward": {
+            "prop_id": 1,
+            "prop_num": 3,
+            "prop_type": 5,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 50,
+        "reward": {
+            "prop_id": 0,
+            "prop_num": 2,
+            "prop_type": 28,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 80,
+        "reward": {
+            "prop_id": 0,
+            "prop_num": 200,
+            "prop_type": 3,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 100,
+        "reward": {
+            "prop_id": 0,
+            "prop_num": 3,
+            "prop_type": 7,
+            "prop_color": 3,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 70,
+        "reward": {
+            "prop_id": 2,
+            "prop_num": 3,
+            "prop_type": 5,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 500,
+        "reward": {
+            "prop_id": 0,
+            "prop_num": 1,
+            "prop_type": 6,
+            "prop_color": 8,
+            "chest_type": 3
+        }
+    },
+    {
+        "require_coins": 100,
+        "reward": {
+            "prop_id": 0,
+            "prop_num": 60,
+            "prop_type": 2,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 60,
+        "reward": {
+            "prop_id": 0,
+            "prop_num": 2,
+            "prop_type": 28,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 40,
+        "reward": {
+            "prop_id": 0,
+            "prop_num": 250,
+            "prop_type": 3,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 120,
+        "reward": {
+            "prop_id": 0,
+            "prop_num": 5,
+            "prop_type": 28,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 80,
+        "reward": {
+            "prop_id": 2,
+            "prop_num": 4,
+            "prop_type": 5,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 50,
+        "reward": {
+            "prop_id": 0,
+            "prop_num": 3,
+            "prop_type": 7,
+            "prop_color": 3,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 80,
+        "reward": {
+            "prop_id": 1,
+            "prop_num": 3,
+            "prop_type": 4,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 100,
+        "reward": {
+            "prop_id": 0,
+            "prop_num": 80,
+            "prop_type": 2,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 60,
+        "reward": {
+            "prop_id": 1,
+            "prop_num": 4,
+            "prop_type": 5,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 50,
+        "reward": {
+            "prop_id": 2,
+            "prop_num": 4,
+            "prop_type": 5,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 500,
+        "reward": {
+            "prop_id": 0,
+            "prop_num": 1,
+            "prop_type": 6,
+            "prop_color": 8,
+            "chest_type": 3
+        }
+    },
+    {
+        "require_coins": 30,
+        "reward": {
+            "prop_id": 0,
+            "prop_num": 1,
+            "prop_type": 28,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 90,
+        "reward": {
+            "prop_id": 0,
+            "prop_num": 70,
+            "prop_type": 2,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 90,
+        "reward": {
+            "prop_id": 0,
+            "prop_num": 4,
+            "prop_type": 7,
+            "prop_color": 3,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 60,
+        "reward": {
+            "prop_id": 1,
+            "prop_num": 4,
+            "prop_type": 5,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 100,
+        "reward": {
+            "prop_id": 2,
+            "prop_num": 4,
+            "prop_type": 5,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 500,
+        "reward": {
+            "prop_id": 0,
+            "prop_num": 1,
+            "prop_type": 6,
+            "prop_color": 8,
+            "chest_type": 3
+        }
+    },
+    {
+        "require_coins": 30,
+        "reward": {
+            "prop_id": 0,
+            "prop_num": 1,
+            "prop_type": 28,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 60,
+        "reward": {
+            "prop_id": 0,
+            "prop_num": 60,
+            "prop_type": 2,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 50,
+        "reward": {
+            "prop_id": 0,
+            "prop_num": 200,
+            "prop_type": 3,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 110,
+        "reward": {
+            "prop_id": 0,
+            "prop_num": 3,
+            "prop_type": 7,
+            "prop_color": 3,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 70,
+        "reward": {
+            "prop_id": 1,
+            "prop_num": 2,
+            "prop_type": 5,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 30,
+        "reward": {
+            "prop_id": 0,
+            "prop_num": 1,
+            "prop_type": 28,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 60,
+        "reward": {
+            "prop_id": 0,
+            "prop_num": 200,
+            "prop_type": 3,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 90,
+        "reward": {
+            "prop_id": 1,
+            "prop_num": 3,
+            "prop_type": 5,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 120,
+        "reward": {
+            "prop_id": 0,
+            "prop_num": 3,
+            "prop_type": 7,
+            "prop_color": 3,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 80,
+        "reward": {
+            "prop_id": 2,
+            "prop_num": 3,
+            "prop_type": 5,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 60,
+        "reward": {
+            "prop_id": 0,
+            "prop_num": 2,
+            "prop_type": 28,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 40,
+        "reward": {
+            "prop_id": 0,
+            "prop_num": 40,
+            "prop_type": 2,
+            "prop_color": 0,
+            "chest_type": 0
+        }
+    },
+    {
+        "require_coins": 500,
+        "reward": {
+            "prop_id": 0,
+            "prop_num": 1,
+            "prop_type": 6,
+            "prop_color": 8,
+            "chest_type": 3
+        }
+    }
+]
