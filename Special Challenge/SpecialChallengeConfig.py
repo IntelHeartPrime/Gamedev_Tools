@@ -119,12 +119,15 @@ match_rules.update({"tour_id_list": tour_id_list})
 column_index = 2
 while ws.cell(29, column_index).value!= None:
     unit_dic = {}
+    if ws.cell(28, column_index).value!= None:
+        unit_dic.update({"needle_speed": ws.cell(28, column_index).value})
     unit_dic.update({"process_max": ws.cell(29, column_index).value})
     unit_dic.update({"process_min": ws.cell(30, column_index).value})
     unit_dic.update({"tee": ws.cell(31, column_index).value})
     unit_dic.update({"tour_id": ws.cell(32, column_index).value})
     unit_dic.update({"wind_max": ws.cell(33, column_index).value})
     unit_dic.update({"wind_min": ws.cell(34, column_index).value})
+
 
     if ws.cell(35, column_index).value != None:
         unit_dic.update({"angle_start": clean_null(ws.cell(35, column_index).value)})
