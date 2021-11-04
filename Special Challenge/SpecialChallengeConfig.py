@@ -24,7 +24,7 @@ file_name_string = file_name_string.replace(" ","-")
 file_name_string = file_name_string.replace(":","-")
       
 
-json_dir = os.path.join(work_dir, json_file_name)
+json_dir = os.path.join(work_dir, file_name_string)
 print(json_dir)
 
 
