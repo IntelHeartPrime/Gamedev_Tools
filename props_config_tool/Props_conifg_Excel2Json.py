@@ -2,7 +2,7 @@
 from openpyxl import load_workbook
 import json
 
-wb = load_workbook("props_config_tool/Props_config.xlsx")
+wb = load_workbook("Props_config.xlsx")
 ws = wb.active
 
 json_dir = "Props_config.json"
@@ -32,10 +32,15 @@ while ws.cell(row_index,1).value != None:
                 props_list_unit.update({"balls": list_empty})
             clubs_list = []
             props_list_unit.update({"clubs": clubs_list})
-            clubs_list_unit1 = {"id": ws.cell(row_index,5*x+5).value, "level": ws.cell(row_index,5*x+6).value}
-            clubs_list_unit2 = {"id": ws.cell(row_index,5*x+7).value, "level": ws.cell(row_index,5*x+8).value}
+            if(ws.cell(row_index,5*x+5).value!=None):
+                clubs_list_unit1 = {"id": ws.cell(row_index,5*x+5).value, "level": ws.cell(row_index,5*x+6).value}
+                clubs_list.append(clubs_list_unit1)
+
             clubs_list.append(clubs_list_unit1)
-            clubs_list.append(clubs_list_unit2)
+            if(ws.cell(row_index,5*x+7).value!=None):
+                clubs_list_unit2 = {"id": ws.cell(row_index,5*x+7).value, "level": ws.cell(row_index,5*x+8).value}
+                clubs_list.append(clubs_list_unit2)
+
             props_list.append(props_list_unit)
     dicts_list.append(unit_dic)
     print("complete " + str(row_index) + " line")
