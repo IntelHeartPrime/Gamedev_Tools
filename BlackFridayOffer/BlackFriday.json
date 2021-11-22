@@ -1,0 +1,1094 @@
+{
+    "id": 3,
+    "start_time": 1637424000,
+    "update_time": 1637424000,
+    "end_time": 1637769600,
+    "open_step": 86400,
+    "show_conf": {
+        "discount_sign_change": 70,
+        "final_reward_des": "black_friday_offer_freegift_desc",
+        "final_reward_title": "black_friday_offer_freegift_title",
+        "title_name": "new_year_offer_title",
+        "title_sub_name": "black_friday_offer_desc",
+        "slots_show": {
+            "1": {
+                "banner_icon": "Pnl_jjlb_tf_01",
+                "center_icon": "Pnl_jjlb_diban_01"
+            },
+            "2": {
+                "banner_icon": "Pnl_jjlb_tf_02",
+                "center_icon": "Pnl_jjlb_diban_02"
+            },
+            "3": {
+                "banner_icon": "Pnl_jjlb_tf_03",
+                "center_icon": "Pnl_jjlb_diban_03"
+            },
+            "4": {
+                "banner_icon": "Pnl_jjlb_tf_04",
+                "center_icon": "Pnl_jjlb_diban_04"
+            },
+            "5": {
+                "banner_icon": "Pnl_jjlb_tf_05",
+                "center_icon": "Pnl_jjlb_diban_05"
+            }
+        }
+    },
+    "types": [
+        {
+            "open_stage": 6,
+            "type": 1,
+            "free_reward": [
+                {
+                    "prop_type": 4,
+                    "prop_id": 38,
+                    "prop_num": 1,
+                    "prop_color": 4,
+                    "chest_type": 0
+                },
+                {
+                    "prop_type": 5,
+                    "prop_id": 1,
+                    "prop_num": 10,
+                    "prop_color": 0,
+                    "chest_type": 0
+                },
+                {
+                    "prop_type": 4,
+                    "prop_id": 37,
+                    "prop_num": 1,
+                    "prop_color": 4,
+                    "chest_type": 0
+                }
+            ],
+            "offer_slots": {
+                "1": {
+                    "day": 1,
+                    "slots": {
+                        "1": {
+                            "prop_type": 2,
+                            "prop_id": 0,
+                            "prop_num": 100,
+                            "prop_color": 0,
+                            "chest_type": 0,
+                            "id": 101,
+                            "offer_id": 0,
+                            "rarity": 1,
+                            "sale_tag": "",
+                            "slot": 1,
+                            "consume_type": 0,
+                            "consume_num": 0
+                        },
+                        "2": {
+                            "prop_type": 5,
+                            "prop_id": 1,
+                            "prop_num": 2,
+                            "prop_color": 0,
+                            "chest_type": 0,
+                            "id": 102,
+                            "offer_id": 0,
+                            "rarity": 2,
+                            "sale_tag": 40,
+                            "slot": 2,
+                            "consume_type": 1,
+                            "consume_num": 50
+                        },
+                        "3": {
+                            "prop_type": 4,
+                            "prop_id": 19,
+                            "prop_num": 60,
+                            "prop_color": 2,
+                            "chest_type": 0,
+                            "id": 103,
+                            "offer_id": 0,
+                            "rarity": 2,
+                            "sale_tag": 50,
+                            "slot": 3,
+                            "consume_type": 1,
+                            "consume_num": 150
+                        }
+                    }
+                },
+                "2": {
+                    "day": 2,
+                    "slots": {
+                        "1": {
+                            "prop_type": 3,
+                            "prop_id": 0,
+                            "prop_num": 6000,
+                            "prop_color": 0,
+                            "chest_type": 0,
+                            "id": 201,
+                            "offer_id": 0,
+                            "rarity": 2,
+                            "sale_tag": 40,
+                            "slot": 1,
+                            "consume_type": 0,
+                            "consume_num": 150
+                        },
+                        "2": {
+                            "prop_type": 4,
+                            "prop_id": 13,
+                            "prop_num": 12,
+                            "prop_color": 3,
+                            "chest_type": 0,
+                            "id": 202,
+                            "offer_id": 0,
+                            "rarity": 3,
+                            "sale_tag": 50,
+                            "slot": 2,
+                            "consume_type": 1,
+                            "consume_num": 300
+                        },
+                        "3": {
+                            "prop_type": 4,
+                            "prop_id": 38,
+                            "prop_num": 1,
+                            "prop_color": 4,
+                            "chest_type": 0,
+                            "id": 203,
+                            "offer_id": 0,
+                            "rarity": 4,
+                            "sale_tag": 75,
+                            "slot": 3,
+                            "consume_type": 1,
+                            "consume_num": 500
+                        }
+                    }
+                },
+                "3": {
+                    "day": 3,
+                    "slots": {
+                        "1": {
+                            "prop_type": 6,
+                            "prop_id": 0,
+                            "prop_num": 1,
+                            "prop_color": 7,
+                            "chest_type": 3,
+                            "id": 301,
+                            "offer_id": 0,
+                            "rarity": 3,
+                            "sale_tag": 40,
+                            "slot": 1,
+                            "consume_type": 1,
+                            "consume_num": 400
+                        },
+                        "2": {
+                            "prop_type": 5,
+                            "prop_id": 2,
+                            "prop_num": 20,
+                            "prop_color": 0,
+                            "chest_type": 0,
+                            "id": 302,
+                            "offer_id": 0,
+                            "rarity": 2,
+                            "sale_tag": 50,
+                            "slot": 2,
+                            "consume_type": 1,
+                            "consume_num": 400
+                        },
+                        "3": {
+                            "prop_type": 4,
+                            "prop_id": 37,
+                            "prop_num": 1,
+                            "prop_color": 4,
+                            "chest_type": 0,
+                            "id": 303,
+                            "offer_id": 0,
+                            "rarity": 4,
+                            "sale_tag": 75,
+                            "slot": 3,
+                            "consume_type": 1,
+                            "consume_num": 4.99
+                        }
+                    }
+                },
+                "4": {
+                    "day": 4,
+                    "slots": {
+                        "1": {
+                            "prop_type": 3,
+                            "prop_id": 0,
+                            "prop_num": 20000,
+                            "prop_color": 0,
+                            "chest_type": 0,
+                            "id": 401,
+                            "offer_id": 0,
+                            "rarity": 3,
+                            "sale_tag": 50,
+                            "slot": 1,
+                            "consume_type": 1,
+                            "consume_num": 500
+                        },
+                        "2": {
+                            "prop_type": 4,
+                            "prop_id": 26,
+                            "prop_num": 20,
+                            "prop_color": 3,
+                            "chest_type": 0,
+                            "id": 402,
+                            "offer_id": 0,
+                            "rarity": 3,
+                            "sale_tag": 60,
+                            "slot": 2,
+                            "consume_type": 1,
+                            "consume_num": 4.99
+                        },
+                        "3": {
+                            "prop_type": 4,
+                            "prop_id": 39,
+                            "prop_num": 2,
+                            "prop_color": 4,
+                            "chest_type": 0,
+                            "id": 403,
+                            "offer_id": 0,
+                            "rarity": 4,
+                            "sale_tag": 75,
+                            "slot": 3,
+                            "consume_type": 1,
+                            "consume_num": 9.99
+                        }
+                    }
+                },
+                "5": {
+                    "day": 5,
+                    "slots": {
+                        "1": {
+                            "prop_type": 6,
+                            "prop_id": 0,
+                            "prop_num": 2,
+                            "prop_color": 8,
+                            "chest_type": 3,
+                            "id": 501,
+                            "offer_id": 0,
+                            "rarity": 3,
+                            "sale_tag": 50,
+                            "slot": 1,
+                            "consume_type": 1,
+                            "consume_num": 9.99
+                        },
+                        "2": {
+                            "prop_type": 4,
+                            "prop_id": 38,
+                            "prop_num": 3,
+                            "prop_color": 4,
+                            "chest_type": 0,
+                            "id": 502,
+                            "offer_id": 0,
+                            "rarity": 4,
+                            "sale_tag": 60,
+                            "slot": 2,
+                            "consume_type": 1,
+                            "consume_num": 19.99
+                        },
+                        "3": {
+                            "prop_type": 5,
+                            "prop_id": 1,
+                            "prop_num": 30,
+                            "prop_color": 0,
+                            "chest_type": 0,
+                            "id": 503,
+                            "offer_id": 0,
+                            "rarity": 4,
+                            "sale_tag": 75,
+                            "slot": 3,
+                            "consume_type": 1,
+                            "consume_num": 29.99
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "open_stage": 8,
+            "type": 2,
+            "free_reward": [
+                {
+                    "prop_type": 4,
+                    "prop_id": 38,
+                    "prop_num": 1,
+                    "prop_color": 4,
+                    "chest_type": 0
+                },
+                {
+                    "prop_type": 5,
+                    "prop_id": 1,
+                    "prop_num": 10,
+                    "prop_color": 0,
+                    "chest_type": 0
+                },
+                {
+                    "prop_type": 4,
+                    "prop_id": 37,
+                    "prop_num": 1,
+                    "prop_color": 4,
+                    "chest_type": 0
+                }
+            ],
+            "offer_slots": {
+                "1": {
+                    "day": 1,
+                    "slots": {
+                        "1": {
+                            "prop_type": 2,
+                            "prop_id": 0,
+                            "prop_num": 100,
+                            "prop_color": 0,
+                            "chest_type": 0,
+                            "id": 101,
+                            "offer_id": 0,
+                            "rarity": 1,
+                            "sale_tag": "",
+                            "slot": 1,
+                            "consume_type": 0,
+                            "consume_num": 0
+                        },
+                        "2": {
+                            "prop_type": 5,
+                            "prop_id": 1,
+                            "prop_num": 2,
+                            "prop_color": 0,
+                            "chest_type": 0,
+                            "id": 102,
+                            "offer_id": 0,
+                            "rarity": 2,
+                            "sale_tag": 40,
+                            "slot": 2,
+                            "consume_type": 1,
+                            "consume_num": 50
+                        },
+                        "3": {
+                            "prop_type": 4,
+                            "prop_id": 31,
+                            "prop_num": 6,
+                            "prop_color": 3,
+                            "chest_type": 0,
+                            "id": 103,
+                            "offer_id": 0,
+                            "rarity": 2,
+                            "sale_tag": 50,
+                            "slot": 3,
+                            "consume_type": 1,
+                            "consume_num": 150
+                        }
+                    }
+                },
+                "2": {
+                    "day": 2,
+                    "slots": {
+                        "1": {
+                            "prop_type": 3,
+                            "prop_id": 0,
+                            "prop_num": 6000,
+                            "prop_color": 0,
+                            "chest_type": 0,
+                            "id": 201,
+                            "offer_id": 0,
+                            "rarity": 2,
+                            "sale_tag": 40,
+                            "slot": 1,
+                            "consume_type": 0,
+                            "consume_num": 150
+                        },
+                        "2": {
+                            "prop_type": 4,
+                            "prop_id": 26,
+                            "prop_num": 12,
+                            "prop_color": 3,
+                            "chest_type": 0,
+                            "id": 202,
+                            "offer_id": 0,
+                            "rarity": 3,
+                            "sale_tag": 50,
+                            "slot": 2,
+                            "consume_type": 1,
+                            "consume_num": 300
+                        },
+                        "3": {
+                            "prop_type": 4,
+                            "prop_id": 38,
+                            "prop_num": 1,
+                            "prop_color": 4,
+                            "chest_type": 0,
+                            "id": 203,
+                            "offer_id": 0,
+                            "rarity": 4,
+                            "sale_tag": 75,
+                            "slot": 3,
+                            "consume_type": 1,
+                            "consume_num": 500
+                        }
+                    }
+                },
+                "3": {
+                    "day": 3,
+                    "slots": {
+                        "1": {
+                            "prop_type": 6,
+                            "prop_id": 0,
+                            "prop_num": 1,
+                            "prop_color": 7,
+                            "chest_type": 3,
+                            "id": 301,
+                            "offer_id": 0,
+                            "rarity": 3,
+                            "sale_tag": 40,
+                            "slot": 1,
+                            "consume_type": 1,
+                            "consume_num": 400
+                        },
+                        "2": {
+                            "prop_type": 5,
+                            "prop_id": 2,
+                            "prop_num": 20,
+                            "prop_color": 0,
+                            "chest_type": 0,
+                            "id": 302,
+                            "offer_id": 0,
+                            "rarity": 2,
+                            "sale_tag": 50,
+                            "slot": 2,
+                            "consume_type": 1,
+                            "consume_num": 400
+                        },
+                        "3": {
+                            "prop_type": 4,
+                            "prop_id": 37,
+                            "prop_num": 1,
+                            "prop_color": 4,
+                            "chest_type": 0,
+                            "id": 303,
+                            "offer_id": 0,
+                            "rarity": 4,
+                            "sale_tag": 75,
+                            "slot": 3,
+                            "consume_type": 1,
+                            "consume_num": 4.99
+                        }
+                    }
+                },
+                "4": {
+                    "day": 4,
+                    "slots": {
+                        "1": {
+                            "prop_type": 3,
+                            "prop_id": 0,
+                            "prop_num": 20000,
+                            "prop_color": 0,
+                            "chest_type": 0,
+                            "id": 401,
+                            "offer_id": 0,
+                            "rarity": 3,
+                            "sale_tag": 50,
+                            "slot": 1,
+                            "consume_type": 1,
+                            "consume_num": 500
+                        },
+                        "2": {
+                            "prop_type": 4,
+                            "prop_id": 32,
+                            "prop_num": 20,
+                            "prop_color": 3,
+                            "chest_type": 0,
+                            "id": 402,
+                            "offer_id": 0,
+                            "rarity": 3,
+                            "sale_tag": 60,
+                            "slot": 2,
+                            "consume_type": 1,
+                            "consume_num": 4.99
+                        },
+                        "3": {
+                            "prop_type": 4,
+                            "prop_id": 39,
+                            "prop_num": 2,
+                            "prop_color": 4,
+                            "chest_type": 0,
+                            "id": 403,
+                            "offer_id": 0,
+                            "rarity": 4,
+                            "sale_tag": 75,
+                            "slot": 3,
+                            "consume_type": 1,
+                            "consume_num": 9.99
+                        }
+                    }
+                },
+                "5": {
+                    "day": 5,
+                    "slots": {
+                        "1": {
+                            "prop_type": 6,
+                            "prop_id": 0,
+                            "prop_num": 2,
+                            "prop_color": 8,
+                            "chest_type": 3,
+                            "id": 501,
+                            "offer_id": 0,
+                            "rarity": 3,
+                            "sale_tag": 50,
+                            "slot": 1,
+                            "consume_type": 1,
+                            "consume_num": 9.99
+                        },
+                        "2": {
+                            "prop_type": 4,
+                            "prop_id": 38,
+                            "prop_num": 3,
+                            "prop_color": 4,
+                            "chest_type": 0,
+                            "id": 502,
+                            "offer_id": 0,
+                            "rarity": 4,
+                            "sale_tag": 60,
+                            "slot": 2,
+                            "consume_type": 1,
+                            "consume_num": 19.99
+                        },
+                        "3": {
+                            "prop_type": 5,
+                            "prop_id": 1,
+                            "prop_num": 30,
+                            "prop_color": 0,
+                            "chest_type": 0,
+                            "id": 503,
+                            "offer_id": 0,
+                            "rarity": 4,
+                            "sale_tag": 75,
+                            "slot": 3,
+                            "consume_type": 1,
+                            "consume_num": 29.99
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "open_stage": 10,
+            "type": 3,
+            "free_reward": [
+                {
+                    "prop_type": 4,
+                    "prop_id": 63,
+                    "prop_num": 1,
+                    "prop_color": 4,
+                    "chest_type": 0
+                },
+                {
+                    "prop_type": 5,
+                    "prop_id": 1,
+                    "prop_num": 10,
+                    "prop_color": 0,
+                    "chest_type": 0
+                },
+                {
+                    "prop_type": 4,
+                    "prop_id": 37,
+                    "prop_num": 1,
+                    "prop_color": 4,
+                    "chest_type": 0
+                }
+            ],
+            "offer_slots": {
+                "1": {
+                    "day": 1,
+                    "slots": {
+                        "1": {
+                            "prop_type": 2,
+                            "prop_id": 0,
+                            "prop_num": 100,
+                            "prop_color": 0,
+                            "chest_type": 0,
+                            "id": 101,
+                            "offer_id": 0,
+                            "rarity": 1,
+                            "sale_tag": "",
+                            "slot": 1,
+                            "consume_type": 0,
+                            "consume_num": 0
+                        },
+                        "2": {
+                            "prop_type": 5,
+                            "prop_id": 1,
+                            "prop_num": 2,
+                            "prop_color": 0,
+                            "chest_type": 0,
+                            "id": 102,
+                            "offer_id": 0,
+                            "rarity": 2,
+                            "sale_tag": 40,
+                            "slot": 2,
+                            "consume_type": 1,
+                            "consume_num": 50
+                        },
+                        "3": {
+                            "prop_type": 4,
+                            "prop_id": 31,
+                            "prop_num": 6,
+                            "prop_color": 3,
+                            "chest_type": 0,
+                            "id": 103,
+                            "offer_id": 0,
+                            "rarity": 2,
+                            "sale_tag": 50,
+                            "slot": 3,
+                            "consume_type": 1,
+                            "consume_num": 150
+                        }
+                    }
+                },
+                "2": {
+                    "day": 2,
+                    "slots": {
+                        "1": {
+                            "prop_type": 3,
+                            "prop_id": 0,
+                            "prop_num": 6000,
+                            "prop_color": 0,
+                            "chest_type": 0,
+                            "id": 201,
+                            "offer_id": 0,
+                            "rarity": 2,
+                            "sale_tag": 40,
+                            "slot": 1,
+                            "consume_type": 0,
+                            "consume_num": 150
+                        },
+                        "2": {
+                            "prop_type": 4,
+                            "prop_id": 26,
+                            "prop_num": 12,
+                            "prop_color": 3,
+                            "chest_type": 0,
+                            "id": 202,
+                            "offer_id": 0,
+                            "rarity": 3,
+                            "sale_tag": 50,
+                            "slot": 2,
+                            "consume_type": 1,
+                            "consume_num": 300
+                        },
+                        "3": {
+                            "prop_type": 4,
+                            "prop_id": 63,
+                            "prop_num": 1,
+                            "prop_color": 4,
+                            "chest_type": 0,
+                            "id": 203,
+                            "offer_id": 0,
+                            "rarity": 4,
+                            "sale_tag": 75,
+                            "slot": 3,
+                            "consume_type": 1,
+                            "consume_num": 500
+                        }
+                    }
+                },
+                "3": {
+                    "day": 3,
+                    "slots": {
+                        "1": {
+                            "prop_type": 6,
+                            "prop_id": 0,
+                            "prop_num": 1,
+                            "prop_color": 7,
+                            "chest_type": 3,
+                            "id": 301,
+                            "offer_id": 0,
+                            "rarity": 3,
+                            "sale_tag": 40,
+                            "slot": 1,
+                            "consume_type": 1,
+                            "consume_num": 400
+                        },
+                        "2": {
+                            "prop_type": 5,
+                            "prop_id": 2,
+                            "prop_num": 20,
+                            "prop_color": 0,
+                            "chest_type": 0,
+                            "id": 302,
+                            "offer_id": 0,
+                            "rarity": 2,
+                            "sale_tag": 50,
+                            "slot": 2,
+                            "consume_type": 1,
+                            "consume_num": 400
+                        },
+                        "3": {
+                            "prop_type": 4,
+                            "prop_id": 37,
+                            "prop_num": 1,
+                            "prop_color": 4,
+                            "chest_type": 0,
+                            "id": 303,
+                            "offer_id": 0,
+                            "rarity": 4,
+                            "sale_tag": 75,
+                            "slot": 3,
+                            "consume_type": 1,
+                            "consume_num": 4.99
+                        }
+                    }
+                },
+                "4": {
+                    "day": 4,
+                    "slots": {
+                        "1": {
+                            "prop_type": 3,
+                            "prop_id": 0,
+                            "prop_num": 20000,
+                            "prop_color": 0,
+                            "chest_type": 0,
+                            "id": 401,
+                            "offer_id": 0,
+                            "rarity": 3,
+                            "sale_tag": 50,
+                            "slot": 1,
+                            "consume_type": 1,
+                            "consume_num": 500
+                        },
+                        "2": {
+                            "prop_type": 4,
+                            "prop_id": 32,
+                            "prop_num": 20,
+                            "prop_color": 3,
+                            "chest_type": 0,
+                            "id": 402,
+                            "offer_id": 0,
+                            "rarity": 3,
+                            "sale_tag": 60,
+                            "slot": 2,
+                            "consume_type": 1,
+                            "consume_num": 4.99
+                        },
+                        "3": {
+                            "prop_type": 4,
+                            "prop_id": 40,
+                            "prop_num": 2,
+                            "prop_color": 4,
+                            "chest_type": 0,
+                            "id": 403,
+                            "offer_id": 0,
+                            "rarity": 4,
+                            "sale_tag": 75,
+                            "slot": 3,
+                            "consume_type": 1,
+                            "consume_num": 9.99
+                        }
+                    }
+                },
+                "5": {
+                    "day": 5,
+                    "slots": {
+                        "1": {
+                            "prop_type": 6,
+                            "prop_id": 0,
+                            "prop_num": 2,
+                            "prop_color": 8,
+                            "chest_type": 3,
+                            "id": 501,
+                            "offer_id": 0,
+                            "rarity": 3,
+                            "sale_tag": 50,
+                            "slot": 1,
+                            "consume_type": 1,
+                            "consume_num": 9.99
+                        },
+                        "2": {
+                            "prop_type": 4,
+                            "prop_id": 38,
+                            "prop_num": 3,
+                            "prop_color": 4,
+                            "chest_type": 0,
+                            "id": 502,
+                            "offer_id": 0,
+                            "rarity": 4,
+                            "sale_tag": 60,
+                            "slot": 2,
+                            "consume_type": 1,
+                            "consume_num": 19.99
+                        },
+                        "3": {
+                            "prop_type": 5,
+                            "prop_id": 1,
+                            "prop_num": 30,
+                            "prop_color": 0,
+                            "chest_type": 0,
+                            "id": 503,
+                            "offer_id": 0,
+                            "rarity": 4,
+                            "sale_tag": 75,
+                            "slot": 3,
+                            "consume_type": 1,
+                            "consume_num": 29.99
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "open_stage": 12,
+            "type": 4,
+            "free_reward": [
+                {
+                    "prop_type": 4,
+                    "prop_id": 63,
+                    "prop_num": 1,
+                    "prop_color": 4,
+                    "chest_type": 0
+                },
+                {
+                    "prop_type": 5,
+                    "prop_id": 1,
+                    "prop_num": 10,
+                    "prop_color": 0,
+                    "chest_type": 0
+                },
+                {
+                    "prop_type": 4,
+                    "prop_id": 64,
+                    "prop_num": 1,
+                    "prop_color": 4,
+                    "chest_type": 0
+                }
+            ],
+            "offer_slots": {
+                "1": {
+                    "day": 1,
+                    "slots": {
+                        "1": {
+                            "prop_type": 2,
+                            "prop_id": 0,
+                            "prop_num": 100,
+                            "prop_color": 0,
+                            "chest_type": 0,
+                            "id": 101,
+                            "offer_id": 0,
+                            "rarity": 1,
+                            "sale_tag": "",
+                            "slot": 1,
+                            "consume_type": 0,
+                            "consume_num": 0
+                        },
+                        "2": {
+                            "prop_type": 5,
+                            "prop_id": 1,
+                            "prop_num": 2,
+                            "prop_color": 0,
+                            "chest_type": 0,
+                            "id": 102,
+                            "offer_id": 0,
+                            "rarity": 2,
+                            "sale_tag": 40,
+                            "slot": 2,
+                            "consume_type": 1,
+                            "consume_num": 50
+                        },
+                        "3": {
+                            "prop_type": 4,
+                            "prop_id": 31,
+                            "prop_num": 6,
+                            "prop_color": 3,
+                            "chest_type": 0,
+                            "id": 103,
+                            "offer_id": 0,
+                            "rarity": 2,
+                            "sale_tag": 50,
+                            "slot": 3,
+                            "consume_type": 1,
+                            "consume_num": 150
+                        }
+                    }
+                },
+                "2": {
+                    "day": 2,
+                    "slots": {
+                        "1": {
+                            "prop_type": 3,
+                            "prop_id": 0,
+                            "prop_num": 6000,
+                            "prop_color": 0,
+                            "chest_type": 0,
+                            "id": 201,
+                            "offer_id": 0,
+                            "rarity": 2,
+                            "sale_tag": 40,
+                            "slot": 1,
+                            "consume_type": 0,
+                            "consume_num": 150
+                        },
+                        "2": {
+                            "prop_type": 4,
+                            "prop_id": 32,
+                            "prop_num": 12,
+                            "prop_color": 3,
+                            "chest_type": 0,
+                            "id": 202,
+                            "offer_id": 0,
+                            "rarity": 3,
+                            "sale_tag": 50,
+                            "slot": 2,
+                            "consume_type": 1,
+                            "consume_num": 300
+                        },
+                        "3": {
+                            "prop_type": 4,
+                            "prop_id": 37,
+                            "prop_num": 11,
+                            "prop_color": 4,
+                            "chest_type": 0,
+                            "id": 203,
+                            "offer_id": 0,
+                            "rarity": 4,
+                            "sale_tag": 75,
+                            "slot": 3,
+                            "consume_type": 1,
+                            "consume_num": 500
+                        }
+                    }
+                },
+                "3": {
+                    "day": 3,
+                    "slots": {
+                        "1": {
+                            "prop_type": 6,
+                            "prop_id": 0,
+                            "prop_num": 1,
+                            "prop_color": 7,
+                            "chest_type": 3,
+                            "id": 301,
+                            "offer_id": 0,
+                            "rarity": 3,
+                            "sale_tag": 40,
+                            "slot": 1,
+                            "consume_type": 1,
+                            "consume_num": 400
+                        },
+                        "2": {
+                            "prop_type": 5,
+                            "prop_id": 2,
+                            "prop_num": 20,
+                            "prop_color": 0,
+                            "chest_type": 0,
+                            "id": 302,
+                            "offer_id": 0,
+                            "rarity": 2,
+                            "sale_tag": 50,
+                            "slot": 2,
+                            "consume_type": 1,
+                            "consume_num": 400
+                        },
+                        "3": {
+                            "prop_type": 4,
+                            "prop_id": null,
+                            "prop_num": 1,
+                            "prop_color": 4,
+                            "chest_type": 0,
+                            "id": 303,
+                            "offer_id": 0,
+                            "rarity": 4,
+                            "sale_tag": 75,
+                            "slot": 3,
+                            "consume_type": 1,
+                            "consume_num": 4.99
+                        }
+                    }
+                },
+                "4": {
+                    "day": 4,
+                    "slots": {
+                        "1": {
+                            "prop_type": 3,
+                            "prop_id": 0,
+                            "prop_num": 20000,
+                            "prop_color": 0,
+                            "chest_type": 0,
+                            "id": 401,
+                            "offer_id": 0,
+                            "rarity": 3,
+                            "sale_tag": 50,
+                            "slot": 1,
+                            "consume_type": 1,
+                            "consume_num": 500
+                        },
+                        "2": {
+                            "prop_type": 4,
+                            "prop_id": 55,
+                            "prop_num": 20,
+                            "prop_color": 3,
+                            "chest_type": 0,
+                            "id": 402,
+                            "offer_id": 0,
+                            "rarity": 3,
+                            "sale_tag": 60,
+                            "slot": 2,
+                            "consume_type": 1,
+                            "consume_num": 4.99
+                        },
+                        "3": {
+                            "prop_type": 4,
+                            "prop_id": 40,
+                            "prop_num": 2,
+                            "prop_color": 4,
+                            "chest_type": 0,
+                            "id": 403,
+                            "offer_id": 0,
+                            "rarity": 4,
+                            "sale_tag": 75,
+                            "slot": 3,
+                            "consume_type": 1,
+                            "consume_num": 9.99
+                        }
+                    }
+                },
+                "5": {
+                    "day": 5,
+                    "slots": {
+                        "1": {
+                            "prop_type": 6,
+                            "prop_id": 0,
+                            "prop_num": 2,
+                            "prop_color": 8,
+                            "chest_type": 3,
+                            "id": 501,
+                            "offer_id": 0,
+                            "rarity": 3,
+                            "sale_tag": 50,
+                            "slot": 1,
+                            "consume_type": 1,
+                            "consume_num": 9.99
+                        },
+                        "2": {
+                            "prop_type": 4,
+                            "prop_id": 38,
+                            "prop_num": 3,
+                            "prop_color": 4,
+                            "chest_type": 0,
+                            "id": 502,
+                            "offer_id": 0,
+                            "rarity": 4,
+                            "sale_tag": 60,
+                            "slot": 2,
+                            "consume_type": 1,
+                            "consume_num": 19.99
+                        },
+                        "3": {
+                            "prop_type": 5,
+                            "prop_id": 1,
+                            "prop_num": 30,
+                            "prop_color": 0,
+                            "chest_type": 0,
+                            "id": 503,
+                            "offer_id": 0,
+                            "rarity": 4,
+                            "sale_tag": 75,
+                            "slot": 3,
+                            "consume_type": 1,
+                            "consume_num": 29.99
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

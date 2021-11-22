@@ -26,7 +26,9 @@ while ws.cell(row_index,1).value != None:
         if(ws.cell(row_index,5*x+5).value!= None) and (ws.cell(row_index,5*x+5).value != ""):
             props_list_unit = {}
             if (ws.cell(row_index,5*x+4).value!= None) and (ws.cell(row_index,5*x+4).value!=""):
-                props_list_unit.update({"balls": ws.cell(row_index,5*x+4).value})
+                list_ball = []
+                list_ball.append(ws.cell(row_index,5*x+4).value)
+                props_list_unit.update({"balls": list_ball})
             else:
                 list_empty=[]
                 props_list_unit.update({"balls": list_empty})
