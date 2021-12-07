@@ -31,6 +31,8 @@ show_conf.update({"final_reward_des": ws.cell(11,2).value})
 show_conf.update({"final_reward_title": ws.cell(12,2).value})
 show_conf.update({"title_name": ws.cell(14,2).value})
 show_conf.update({"title_sub_name": ws.cell(15,2).value})
+show_conf.update({"top_skin": ws.cell(16,2).value})
+
 
 slots_show ={}
 show_conf.update({"slots_show":slots_show})

@@ -1,9 +1,9 @@
 {
-    "id": 77,
-    "start_time": 1637424000,
-    "update_time": 1637640275,
-    "end_time": 1637769600,
-    "open_step": 86400,
+    "id": 3,
+    "start_time": 1637826178,
+    "update_time": 1637826178,
+    "end_time": 1637827800,
+    "open_step": 60,
     "show_conf": {
         "discount_sign_change": 70,
         "final_reward_des": "black_friday_offer_freegift_desc",
