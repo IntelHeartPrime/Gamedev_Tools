@@ -1,0 +1,999 @@
+{
+    "id": 10028,
+    "show_time_start": 1639292400,
+    "start_time": 1639364400,
+    "show_time_end": 1639810800,
+    "end_time": 1639810800,
+    "join_before_end_time": 600,
+    "unlock_conditions": {
+        "min_level": 7
+    },
+    "replay_shop": [
+        {
+            "type": 1,
+            "consume_num": 100,
+            "consume_type": 2,
+            "get_num": 1,
+            "value_off": ""
+        },
+        {
+            "type": 2,
+            "consume_num": 450,
+            "consume_type": 2,
+            "get_num": 5,
+            "value_off": 10
+        }
+    ],
+    "update_min": [
+        420
+    ],
+    "basic_reward": [
+        {
+            "min_dis": 0,
+            "max_dis": 2,
+            "reward_coins": 16
+        },
+        {
+            "min_dis": 2,
+            "max_dis": 5,
+            "reward_coins": 15
+        },
+        {
+            "min_dis": 5,
+            "max_dis": 10,
+            "reward_coins": 14
+        }
+    ],
+    "cumulative_reward_repeat_index": "",
+    "cumulative_reward": [
+        {
+            "require_coins": 20,
+            "reward": {
+                "prop_id": 1,
+                "prop_num": 1,
+                "prop_type": 5,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 40,
+            "reward": {
+                "prop_id": 2,
+                "prop_num": 1,
+                "prop_type": 5,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 50,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 300,
+                "prop_type": 3,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 120,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 5,
+                "prop_type": 34,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        }
+    ],
+    "ai_rule": [
+        {
+            "count": 2,
+            "min": 0,
+            "max": 10
+        },
+        {
+            "count": 5,
+            "min": 10,
+            "max": 50
+        },
+        {
+            "count": 1,
+            "min": 50,
+            "max": 100
+        }
+    ],
+    "show_limited_ball": 1,
+    "ui_config": {
+        "game_timeline_config": [
+            {
+                "time": 0,
+                "type": 2,
+                "index": 1,
+                "path": "External/Prefabs/Prebaf",
+                "offSet": {
+                    "x": 0,
+                    "y": 0.2,
+                    "z": 0
+                }
+            },
+            {
+                "time": 0,
+                "type": 3,
+                "index": 2,
+                "path": "Ghost",
+                "is_loop": false
+            },
+            {
+                "time": 2.2,
+                "type": 1,
+                "index": 3,
+                "path": "",
+                "is_main": false,
+                "offSet": {
+                    "x": 0,
+                    "y": -1.5,
+                    "z": 0
+                }
+            },
+            {
+                "time": 2.2,
+                "type": 2,
+                "index": 4,
+                "path": "",
+                "offSet": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            }
+        ]
+    },
+    "event_list": [
+        {
+            "round": 1,
+            "unlock_rules": {},
+            "quanlifying": 1,
+            "battle_limit": {
+                "club_color": [],
+                "clubs": [],
+                "balls": []
+            },
+            "start_time": 1639364400,
+            "settle_before_next_min": 3000,
+            "default_play": [
+                10,
+                1
+            ],
+            "rank_score": [
+                1600,
+                1700,
+                1800
+            ],
+            "num_per_group": 4,
+            "promote_rank": 3,
+            "unlock_group_hole": 6,
+            "types": [
+                {
+                    "type": 1,
+                    "unlock_stage": 7,
+                    "name": "Normal",
+                    "tip": "You will not be able to change",
+                    "group_rule_list": [
+                        {
+                            "min_trophy": "",
+                            "max_trophy": 0
+                        }
+                    ],
+                    "prize_list": [
+                        {
+                            "rank": 1,
+                            "reward": {
+                                "prop_id": 100041,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        }
+                    ],
+                    "tour_id": 80051,
+                    "signup_offer_list": [
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 0,
+                                    "offer_id": 320006
+                                },
+                                {
+                                    "money": 9,
+                                    "offer_id": 32007
+                                },
+                                {
+                                    "money": 49,
+                                    "offer_id": 32009
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 0,
+                                    "offer_id": 320006
+                                },
+                                {
+                                    "money": 9,
+                                    "offer_id": 32007
+                                },
+                                {
+                                    "money": 49,
+                                    "offer_id": 32009
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 0,
+                                    "offer_id": 320006
+                                },
+                                {
+                                    "money": 9,
+                                    "offer_id": 32007
+                                },
+                                {
+                                    "money": 49,
+                                    "offer_id": 32009
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 0,
+                                    "offer_id": 320006
+                                },
+                                {
+                                    "money": 9,
+                                    "offer_id": 32007
+                                },
+                                {
+                                    "money": 49,
+                                    "offer_id": 32009
+                                }
+                            ]
+                        }
+                    ],
+                    "scene_list": [
+                        {
+                            "id": 1110082,
+                            "min_dis": 40,
+                            "max_dis": 40
+                        },
+                        {
+                            "id": 1110083,
+                            "min_dis": 30,
+                            "max_dis": 30
+                        },
+                        {
+                            "id": 1110088,
+                            "min_dis": 28,
+                            "max_dis": 28,
+                            "reward": [
+                                {
+                                    "prop_id": 0,
+                                    "prop_color": 3,
+                                    "prop_type": 7,
+                                    "prop_num": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": 2,
+                    "unlock_stage": 10,
+                    "name": "hard",
+                    "tip": "You will not be able to change",
+                    "group_rule_list": [
+                        {
+                            "min_trophy": 0,
+                            "max_trophy": 92000
+                        }
+                    ],
+                    "prize_list": [
+                        {
+                            "rank": 1,
+                            "reward": {
+                                "prop_id": 100041,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        }
+                    ],
+                    "tour_id": 80051,
+                    "signup_offer_list": [
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 0,
+                                    "offer_id": 320006
+                                },
+                                {
+                                    "money": 9,
+                                    "offer_id": 32007
+                                },
+                                {
+                                    "money": 49,
+                                    "offer_id": 32009
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 0,
+                                    "offer_id": 320006
+                                },
+                                {
+                                    "money": 9,
+                                    "offer_id": 32007
+                                },
+                                {
+                                    "money": 49,
+                                    "offer_id": 32009
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 0,
+                                    "offer_id": 320006
+                                },
+                                {
+                                    "money": 9,
+                                    "offer_id": 32007
+                                },
+                                {
+                                    "money": 49,
+                                    "offer_id": 32009
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 0,
+                                    "offer_id": 320006
+                                },
+                                {
+                                    "money": 9,
+                                    "offer_id": 32007
+                                },
+                                {
+                                    "money": 49,
+                                    "offer_id": 32009
+                                }
+                            ]
+                        },
+                        {
+                            "money": 1,
+                            "type": "",
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 0,
+                                    "offer_id": 320006
+                                },
+                                {
+                                    "money": 9,
+                                    "offer_id": 32007
+                                },
+                                {
+                                    "money": 49,
+                                    "offer_id": 32009
+                                }
+                            ]
+                        },
+                        {
+                            "money": 1,
+                            "type": "",
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 0,
+                                    "offer_id": 320006
+                                },
+                                {
+                                    "money": 9,
+                                    "offer_id": 32007
+                                },
+                                {
+                                    "money": 49,
+                                    "offer_id": 32009
+                                }
+                            ]
+                        },
+                        {
+                            "money": 1,
+                            "type": "",
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 0,
+                                    "offer_id": 320006
+                                },
+                                {
+                                    "money": 9,
+                                    "offer_id": 32007
+                                },
+                                {
+                                    "money": 49,
+                                    "offer_id": 32009
+                                }
+                            ]
+                        },
+                        {
+                            "money": 1,
+                            "type": "",
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 0,
+                                    "offer_id": 320006
+                                },
+                                {
+                                    "money": 9,
+                                    "offer_id": 32007
+                                },
+                                {
+                                    "money": 49,
+                                    "offer_id": 32009
+                                }
+                            ]
+                        },
+                        {
+                            "money": 1,
+                            "type": "",
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 0,
+                                    "offer_id": 320006
+                                },
+                                {
+                                    "money": 9,
+                                    "offer_id": 32007
+                                },
+                                {
+                                    "money": 49,
+                                    "offer_id": 32009
+                                }
+                            ]
+                        },
+                        {
+                            "money": 1,
+                            "type": "",
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 0,
+                                    "offer_id": 320006
+                                },
+                                {
+                                    "money": 9,
+                                    "offer_id": 32007
+                                },
+                                {
+                                    "money": 49,
+                                    "offer_id": 32009
+                                }
+                            ]
+                        }
+                    ],
+                    "scene_list": [
+                        {
+                            "id": 1110082,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 1110083,
+                            "min_dis": 30,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 1110088,
+                            "min_dis": 28,
+                            "max_dis": 40,
+                            "reward": [
+                                {
+                                    "prop_id": 0,
+                                    "prop_color": 3,
+                                    "prop_type": 7,
+                                    "prop_num": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "round": 2,
+            "unlock_rules": {
+                "unlock_holes": 9,
+                "unlock_seperator": 86400
+            },
+            "quanlifying": 1,
+            "battle_limit": {
+                "club_color": [],
+                "clubs": [],
+                "balls": []
+            },
+            "start_time": 1639364400,
+            "settle_before_next_min": "",
+            "default_play": [
+                10,
+                1
+            ],
+            "rank_score": [
+                1600,
+                1700,
+                1800
+            ],
+            "num_per_group": 4,
+            "promote_rank": 3,
+            "unlock_group_hole": 6,
+            "types": [
+                {
+                    "type": 1,
+                    "unlock_stage": 7,
+                    "name": "Normal",
+                    "tip": "You will not be able to change",
+                    "group_rule_list": [
+                        {
+                            "min_trophy": "",
+                            "max_trophy": 0
+                        }
+                    ],
+                    "prize_list3": [
+                        {}
+                    ],
+                    "tour_id": 80051,
+                    "signup_offer_list": [
+                        {
+                            "money": 1,
+                            "type": "",
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 0,
+                                    "offer_id": 320006
+                                },
+                                {
+                                    "money": 9,
+                                    "offer_id": 32007
+                                },
+                                {
+                                    "money": 49,
+                                    "offer_id": 32009
+                                }
+                            ]
+                        },
+                        {
+                            "money": 1,
+                            "type": "",
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 0,
+                                    "offer_id": 320006
+                                },
+                                {
+                                    "money": 9,
+                                    "offer_id": 32007
+                                },
+                                {
+                                    "money": 49,
+                                    "offer_id": 32009
+                                }
+                            ]
+                        },
+                        {
+                            "money": 1,
+                            "type": "",
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 0,
+                                    "offer_id": 320006
+                                },
+                                {
+                                    "money": 9,
+                                    "offer_id": 32007
+                                },
+                                {
+                                    "money": 49,
+                                    "offer_id": 32009
+                                }
+                            ]
+                        },
+                        {
+                            "money": 1,
+                            "type": "",
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 0,
+                                    "offer_id": 320006
+                                },
+                                {
+                                    "money": 9,
+                                    "offer_id": 32007
+                                },
+                                {
+                                    "money": 49,
+                                    "offer_id": 32009
+                                }
+                            ]
+                        }
+                    ],
+                    "scene_list": [
+                        {
+                            "id": 1110082,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 1110083,
+                            "min_dis": 30,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 1110088,
+                            "min_dis": 28,
+                            "max_dis": 40,
+                            "reward": [
+                                {
+                                    "prop_id": 0,
+                                    "prop_color": 3,
+                                    "prop_type": 7,
+                                    "prop_num": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": 2,
+                    "unlock_stage": 10,
+                    "name": "normal",
+                    "tip": "You will not be able to change",
+                    "group_rule_list": [
+                        {
+                            "min_trophy": "",
+                            "max_trophy": 0
+                        }
+                    ],
+                    "prize_list": [
+                        {
+                            "rank": 1,
+                            "reward": {
+                                "prop_id": 100041,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        }
+                    ],
+                    "tour_id": 80051,
+                    "signup_offer_list": [
+                        {
+                            "money": 1,
+                            "type": "",
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 0,
+                                    "offer_id": 320006
+                                },
+                                {
+                                    "money": 9,
+                                    "offer_id": 32007
+                                },
+                                {
+                                    "money": 49,
+                                    "offer_id": 32009
+                                }
+                            ]
+                        }
+                    ],
+                    "scene_list": [
+                        {
+                            "id": 1110082,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 1110083,
+                            "min_dis": 30,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 1110088,
+                            "min_dis": 28,
+                            "max_dis": 40,
+                            "reward": [
+                                {
+                                    "prop_id": 0,
+                                    "prop_color": 3,
+                                    "prop_type": 7,
+                                    "prop_num": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "round": 3,
+            "unlock_rules": {
+                "unlock_holes": 9,
+                "unlock_seperator": 86400
+            },
+            "quanlifying": 1,
+            "battle_limit": {
+                "club_color": [],
+                "clubs": [],
+                "balls": []
+            },
+            "start_time": 1639364400,
+            "settle_before_next_min": 3000,
+            "default_play": [
+                10,
+                1
+            ],
+            "rank_score": [
+                1600,
+                1700,
+                1800
+            ],
+            "num_per_group": 4,
+            "promote_rank": 3,
+            "unlock_group_hole": 6,
+            "types": [
+                {
+                    "type": 1,
+                    "unlock_stage": 7,
+                    "name": "Normal",
+                    "tip": "You will not be able to change",
+                    "group_rule_list": [
+                        {
+                            "min_trophy": "",
+                            "max_trophy": 0
+                        }
+                    ],
+                    "prize_list": [
+                        {
+                            "reward": {
+                                "prop_id": 100041,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        }
+                    ],
+                    "tour_id": 80051,
+                    "signup_offer_list": [
+                        {
+                            "money": 1,
+                            "type": "",
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 0,
+                                    "offer_id": 320006
+                                },
+                                {
+                                    "money": 9,
+                                    "offer_id": 32007
+                                },
+                                {
+                                    "money": 49,
+                                    "offer_id": 32009
+                                }
+                            ]
+                        },
+                        {
+                            "money": 1,
+                            "type": "",
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 0,
+                                    "offer_id": 320006
+                                },
+                                {
+                                    "money": 9,
+                                    "offer_id": 32007
+                                },
+                                {
+                                    "money": 49,
+                                    "offer_id": 32009
+                                }
+                            ]
+                        },
+                        {
+                            "money": 1,
+                            "type": "",
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 0,
+                                    "offer_id": 320006
+                                },
+                                {
+                                    "money": 9,
+                                    "offer_id": 32007
+                                },
+                                {
+                                    "money": 49,
+                                    "offer_id": 32009
+                                }
+                            ]
+                        },
+                        {
+                            "money": 1,
+                            "type": "",
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 0,
+                                    "offer_id": 320006
+                                },
+                                {
+                                    "money": 9,
+                                    "offer_id": 32007
+                                },
+                                {
+                                    "money": 49,
+                                    "offer_id": 32009
+                                }
+                            ]
+                        }
+                    ],
+                    "scene_list": [
+                        {
+                            "id": 1110082,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 1110083,
+                            "min_dis": 30,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 1110088,
+                            "min_dis": 28,
+                            "max_dis": 40,
+                            "reward": [
+                                {
+                                    "prop_id": 0,
+                                    "prop_color": 3,
+                                    "prop_type": 7,
+                                    "prop_num": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": 2,
+                    "unlock_stage": 10,
+                    "name": "normal",
+                    "tip": "You will not be able to change",
+                    "group_rule_list": [
+                        {
+                            "min_trophy": "",
+                            "max_trophy": 0
+                        }
+                    ],
+                    "prize_list": [
+                        {
+                            "rank": 1,
+                            "reward": {
+                                "prop_id": 100041,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        }
+                    ],
+                    "tour_id": 80051,
+                    "signup_offer_list": [
+                        {
+                            "money": 1,
+                            "type": "",
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 0,
+                                    "offer_id": 320006
+                                },
+                                {
+                                    "money": 9,
+                                    "offer_id": 32007
+                                },
+                                {
+                                    "money": 49,
+                                    "offer_id": 32009
+                                }
+                            ]
+                        }
+                    ],
+                    "scene_list": [
+                        {
+                            "id": 1110082,
+                            "min_dis": 40,
+                            "max_dis": 60,
+                            "reward": [
+                                {
+                                    "prop_id": "",
+                                    "prop_color": "",
+                                    "prop_type": "",
+                                    "prop_num": ""
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1110083,
+                            "min_dis": 30,
+                            "max_dis": 60,
+                            "reward": [
+                                {
+                                    "prop_id": "",
+                                    "prop_color": "",
+                                    "prop_type": "",
+                                    "prop_num": ""
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1110088,
+                            "min_dis": 28,
+                            "max_dis": 40,
+                            "reward": [
+                                {
+                                    "prop_id": 0,
+                                    "prop_color": 3,
+                                    "prop_type": 7,
+                                    "prop_num": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "push": {
+        "round_end_content": "snowman",
+        "round_start_content": "peak",
+        "push_before_end_min": 1,
+        "refresh_ticket_connect": "snowman",
+        "unlock_holes_content": "snowman"
+    },
+    "mail_title": "snowman peak event prizes",
+    "mail_content": "due to unexpected",
+    "mail_rank_content": "congratulation",
+    "battle_limit": {
+        "club_color": [],
+        "clubs": [],
+        "balls": []
+    }
+}
