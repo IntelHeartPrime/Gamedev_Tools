@@ -1,0 +1,146 @@
+{
+    "100001": {
+        "id": 100001,
+        "type": 31,
+        "prop_list": [
+            {
+                "prop_id": 1002,
+                "prop_num": 1,
+                "prop_type": 29,
+                "prop_color": 0
+            },
+            {
+                "prop_id": 64,
+                "prop_num": 1,
+                "prop_type": 4,
+                "prop_color": 4
+            },
+            {
+                "prop_id": 2,
+                "prop_num": 80,
+                "prop_type": 32,
+                "prop_color": 0
+            },
+            {
+                "prop_id": 2,
+                "prop_num": 80,
+                "prop_type": 32,
+                "prop_color": 0
+            },
+            {
+                "prop_id": 2,
+                "prop_num": 80,
+                "prop_type": 32,
+                "prop_color": 0
+            }
+        ]
+    },
+    "100002": {
+        "id": 100002,
+        "type": 31,
+        "prop_list": [
+            {
+                "prop_id": 1002,
+                "prop_num": 2,
+                "prop_type": 29,
+                "prop_color": 0
+            },
+            {
+                "prop_id": 1002,
+                "prop_num": 2,
+                "prop_type": 29,
+                "prop_color": 0
+            },
+            {
+                "prop_id": 1002,
+                "prop_num": 2,
+                "prop_type": 29,
+                "prop_color": 0
+            },
+            {
+                "prop_id": 1002,
+                "prop_num": 2,
+                "prop_type": 29,
+                "prop_color": 0
+            },
+            {
+                "prop_id": 1002,
+                "prop_num": 2,
+                "prop_type": 29,
+                "prop_color": 0
+            }
+        ]
+    },
+    "100003": {
+        "id": 100003,
+        "type": 31,
+        "prop_list": [
+            {
+                "prop_id": 1002,
+                "prop_num": 3,
+                "prop_type": 29,
+                "prop_color": 0
+            },
+            {
+                "prop_id": 1002,
+                "prop_num": 3,
+                "prop_type": 29,
+                "prop_color": 0
+            },
+            {
+                "prop_id": 1002,
+                "prop_num": 3,
+                "prop_type": 29,
+                "prop_color": 0
+            },
+            {
+                "prop_id": 1002,
+                "prop_num": 3,
+                "prop_type": 29,
+                "prop_color": 0
+            },
+            {
+                "prop_id": 1002,
+                "prop_num": 3,
+                "prop_type": 29,
+                "prop_color": 0
+            }
+        ]
+    },
+    "100004": {
+        "id": 100004,
+        "type": 31,
+        "prop_list": [
+            {
+                "prop_id": 1002,
+                "prop_num": 4,
+                "prop_type": 29,
+                "prop_color": 0
+            },
+            {
+                "prop_id": 1002,
+                "prop_num": 4,
+                "prop_type": 29,
+                "prop_color": 0
+            },
+            {
+                "prop_id": 1002,
+                "prop_num": 4,
+                "prop_type": 29,
+                "prop_color": 0
+            },
+            {
+                "prop_id": 1002,
+                "prop_num": 4,
+                "prop_type": 29,
+                "prop_color": 0
+            },
+            {
+                "prop_id": 1002,
+                "prop_num": 4,
+                "prop_type": 29,
+                "prop_color": 0
+            }
+        ]
+    }
+}
