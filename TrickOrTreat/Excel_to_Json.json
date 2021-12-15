@@ -3,7 +3,7 @@
     "show_time_start": 1639292400,
     "start_time": 1639364400,
     "show_time_end": 1639810800,
-    "end_time": 1639810800,
+    "end_time": 1639638000,
     "join_before_end_time": 600,
     "unlock_conditions": {
         "min_level": 7
@@ -42,6 +42,46 @@
             "min_dis": 5,
             "max_dis": 10,
             "reward_coins": 14
+        },
+        {
+            "min_dis": 10,
+            "max_dis": 15,
+            "reward_coins": 13
+        },
+        {
+            "min_dis": 15,
+            "max_dis": 25,
+            "reward_coins": 12
+        },
+        {
+            "min_dis": 25,
+            "max_dis": 35,
+            "reward_coins": 11
+        },
+        {
+            "min_dis": 35,
+            "max_dis": 45,
+            "reward_coins": 10
+        },
+        {
+            "min_dis": 45,
+            "max_dis": 60,
+            "reward_coins": 8
+        },
+        {
+            "min_dis": 60,
+            "max_dis": 80,
+            "reward_coins": 6
+        },
+        {
+            "min_dis": 80,
+            "max_dis": 100,
+            "reward_coins": 4
+        },
+        {
+            "min_dis": 100,
+            "max_dis": 10000,
+            "reward_coins": 2
         }
     ],
     "cumulative_reward_repeat_index": "",
@@ -53,6 +93,16 @@
                 "prop_num": 1,
                 "prop_type": 5,
                 "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 60,
+            "reward": {
+                "prop_id": 26,
+                "prop_num": 2,
+                "prop_type": 4,
+                "prop_color": 3,
                 "chest_type": 0
             }
         },
@@ -79,11 +129,401 @@
         {
             "require_coins": 120,
             "reward": {
-                "prop_id": 0,
-                "prop_num": 5,
-                "prop_type": 34,
+                "prop_id": 5,
+                "prop_num": 4,
+                "prop_type": 5,
                 "prop_color": 0,
                 "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 40,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 2,
+                "prop_type": 28,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 150,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 3,
+                "prop_type": 7,
+                "prop_color": 3,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 500,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 1,
+                "prop_type": 6,
+                "prop_color": 8,
+                "chest_type": 3
+            }
+        },
+        {
+            "require_coins": 80,
+            "reward": {
+                "prop_id": 1,
+                "prop_num": 3,
+                "prop_type": 5,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 50,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 2,
+                "prop_type": 28,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 80,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 200,
+                "prop_type": 3,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 100,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 3,
+                "prop_type": 7,
+                "prop_color": 3,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 70,
+            "reward": {
+                "prop_id": 2,
+                "prop_num": 3,
+                "prop_type": 5,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 500,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 1,
+                "prop_type": 6,
+                "prop_color": 8,
+                "chest_type": 3
+            }
+        },
+        {
+            "require_coins": 100,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 60,
+                "prop_type": 2,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 60,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 2,
+                "prop_type": 28,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 40,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 250,
+                "prop_type": 3,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 120,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 5,
+                "prop_type": 28,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 80,
+            "reward": {
+                "prop_id": 2,
+                "prop_num": 4,
+                "prop_type": 5,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 50,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 3,
+                "prop_type": 7,
+                "prop_color": 3,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 80,
+            "reward": {
+                "prop_id": 1,
+                "prop_num": 3,
+                "prop_type": 4,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 100,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 80,
+                "prop_type": 2,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 60,
+            "reward": {
+                "prop_id": 1,
+                "prop_num": 4,
+                "prop_type": 5,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 50,
+            "reward": {
+                "prop_id": 2,
+                "prop_num": 4,
+                "prop_type": 5,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 500,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 1,
+                "prop_type": 6,
+                "prop_color": 8,
+                "chest_type": 3
+            }
+        },
+        {
+            "require_coins": 30,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 1,
+                "prop_type": 28,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 90,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 70,
+                "prop_type": 2,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 90,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 4,
+                "prop_type": 7,
+                "prop_color": 3,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 60,
+            "reward": {
+                "prop_id": 1,
+                "prop_num": 4,
+                "prop_type": 5,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 100,
+            "reward": {
+                "prop_id": 2,
+                "prop_num": 4,
+                "prop_type": 5,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 500,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 1,
+                "prop_type": 6,
+                "prop_color": 8,
+                "chest_type": 3
+            }
+        },
+        {
+            "require_coins": 30,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 1,
+                "prop_type": 28,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 60,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 60,
+                "prop_type": 2,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 50,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 200,
+                "prop_type": 3,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 110,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 3,
+                "prop_type": 7,
+                "prop_color": 3,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 70,
+            "reward": {
+                "prop_id": 1,
+                "prop_num": 2,
+                "prop_type": 5,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 30,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 1,
+                "prop_type": 28,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 60,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 200,
+                "prop_type": 3,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 90,
+            "reward": {
+                "prop_id": 1,
+                "prop_num": 3,
+                "prop_type": 5,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 120,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 3,
+                "prop_type": 7,
+                "prop_color": 3,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 80,
+            "reward": {
+                "prop_id": 2,
+                "prop_num": 3,
+                "prop_type": 5,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 60,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 2,
+                "prop_type": 28,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 40,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 40,
+                "prop_type": 2,
+                "prop_color": 0,
+                "chest_type": 0
+            }
+        },
+        {
+            "require_coins": 500,
+            "reward": {
+                "prop_id": 0,
+                "prop_num": 1,
+                "prop_type": 6,
+                "prop_color": 8,
+                "chest_type": 3
             }
         }
     ],
@@ -104,14 +544,14 @@
             "max": 100
         }
     ],
-    "show_limited_ball": 1,
+    "show_limited_ball": 0,
     "ui_config": {
         "game_timeline_config": [
             {
                 "time": 0,
                 "type": 2,
                 "index": 1,
-                "path": "External/Prefabs/Prebaf",
+                "path": "External/Prefabs/Prefab_Eff/gfx_Halloween",
                 "offSet": {
                     "x": 0,
                     "y": 0.2,
@@ -122,14 +562,14 @@
                 "time": 0,
                 "type": 3,
                 "index": 2,
-                "path": "Ghost",
+                "path": "GhostPowerCollect",
                 "is_loop": false
             },
             {
                 "time": 2.2,
                 "type": 1,
                 "index": 3,
-                "path": "",
+                "path": "External/Prefabs/Prefab_Eff/Ghost",
                 "is_main": false,
                 "offSet": {
                     "x": 0,
@@ -141,12 +581,68 @@
                 "time": 2.2,
                 "type": 2,
                 "index": 4,
+                "path": "External/Prefabs/Prefab_Eff/gfx_Halloween_03",
+                "offSet": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            },
+            {
+                "time": 2.2,
+                "type": 5,
+                "index": 5,
                 "path": "",
                 "offSet": {
                     "x": 0,
                     "y": 0,
                     "z": 0
                 }
+            },
+            {
+                "time": 2.2,
+                "type": 3,
+                "index": 6,
+                "path": "GhostAppear",
+                "is_loop": false
+            },
+            {
+                "time": 4.03,
+                "type": 2,
+                "index": 7,
+                "path": "External/Prefabs/Prefab_Eff/gfx_Halloween_02",
+                "offSet": {
+                    "x": 0,
+                    "y": 0.2,
+                    "z": 0,
+                    "destory_index": 5
+                }
+            },
+            {
+                "time": 4.03,
+                "type": 4,
+                "index": 8,
+                "path": ""
+            },
+            {
+                "time": 4.03,
+                "type": 6,
+                "index": 9,
+                "path": ""
+            },
+            {
+                "time": 4.03,
+                "type": 3,
+                "index": 10,
+                "path": "GhostThrowing",
+                "is_loop": false
+            },
+            {
+                "time": 5.2,
+                "type": 3,
+                "index": 11,
+                "path": "GhostMoving",
+                "is_loop": false
             }
         ]
     },
@@ -163,23 +659,50 @@
             "start_time": 1639364400,
             "settle_before_next_min": 3000,
             "default_play": [
-                10,
+                5,
                 1
             ],
             "rank_score": [
-                1600,
-                1700,
-                1800
+                5000,
+                4990,
+                4970,
+                4940,
+                4900,
+                4850,
+                4790,
+                4720,
+                4640,
+                4550,
+                4450,
+                4340,
+                4220,
+                4090,
+                3950,
+                3800,
+                3640,
+                3470,
+                3270,
+                3060,
+                2840,
+                2610,
+                2370,
+                2110,
+                1810,
+                1490,
+                1150,
+                790,
+                410,
+                10
             ],
-            "num_per_group": 4,
-            "promote_rank": 3,
-            "unlock_group_hole": 6,
+            "num_per_group": 30,
+            "promote_rank": 15,
+            "unlock_group_hole": 3,
             "types": [
                 {
                     "type": 1,
                     "unlock_stage": 7,
                     "name": "Normal",
-                    "tip": "You will not be able to change",
+                    "tip": "You will not be able to change the difficulty level after sign up.",
                     "group_rule_list": [
                         {
                             "min_trophy": "",
@@ -195,25 +718,294 @@
                                 "prop_type": 31,
                                 "prop_color": 0
                             }
+                        },
+                        {
+                            "rank": 2,
+                            "reward": {
+                                "prop_id": 100042,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 3,
+                            "reward": {
+                                "prop_id": 100043,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 4,
+                            "reward": {
+                                "prop_id": 100044,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 5,
+                            "reward": {
+                                "prop_id": 100045,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 6,
+                            "reward": {
+                                "prop_id": 100046,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 7,
+                            "reward": {
+                                "prop_id": 100047,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 8,
+                            "reward": {
+                                "prop_id": 100048,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 9,
+                            "reward": {
+                                "prop_id": 100049,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 10,
+                            "reward": {
+                                "prop_id": 100050,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 11,
+                            "reward": {
+                                "prop_id": 100051,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 12,
+                            "reward": {
+                                "prop_id": 100052,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 13,
+                            "reward": {
+                                "prop_id": 100053,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 14,
+                            "reward": {
+                                "prop_id": 100054,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 15,
+                            "reward": {
+                                "prop_id": 100055,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 16,
+                            "reward": {
+                                "prop_id": 100056,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 17,
+                            "reward": {
+                                "prop_id": 100057,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 18,
+                            "reward": {
+                                "prop_id": 100058,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 19,
+                            "reward": {
+                                "prop_id": 100059,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 20,
+                            "reward": {
+                                "prop_id": 100060,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 21,
+                            "reward": {
+                                "prop_id": 100061,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 22,
+                            "reward": {
+                                "prop_id": 100062,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 23,
+                            "reward": {
+                                "prop_id": 100063,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 24,
+                            "reward": {
+                                "prop_id": 100064,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 25,
+                            "reward": {
+                                "prop_id": 100065,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 26,
+                            "reward": {
+                                "prop_id": 100066,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 27,
+                            "reward": {
+                                "prop_id": 100067,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 28,
+                            "reward": {
+                                "prop_id": 100068,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 29,
+                            "reward": {
+                                "prop_id": 100069,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 30,
+                            "reward": {
+                                "prop_id": 100115,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
                         }
                     ],
-                    "tour_id": 80051,
+                    "tour_id": 80031,
                     "signup_offer_list": [
                         {
                             "money": 0,
                             "type": 1,
                             "signup_offer_id_list": [
                                 {
-                                    "money": 0,
-                                    "offer_id": 320006
+                                    "money": 1.99,
+                                    "offer_id": 208001
                                 },
                                 {
-                                    "money": 9,
-                                    "offer_id": 32007
+                                    "money": 4.99,
+                                    "offer_id": 208002
                                 },
                                 {
-                                    "money": 49,
-                                    "offer_id": 32009
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
                                 }
                             ]
                         },
@@ -222,16 +1014,24 @@
                             "type": 1,
                             "signup_offer_id_list": [
                                 {
-                                    "money": 0,
-                                    "offer_id": 320006
+                                    "money": 1.99,
+                                    "offer_id": 208001
                                 },
                                 {
-                                    "money": 9,
-                                    "offer_id": 32007
+                                    "money": 4.99,
+                                    "offer_id": 208002
                                 },
                                 {
-                                    "money": 49,
-                                    "offer_id": 32009
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
                                 }
                             ]
                         },
@@ -240,16 +1040,24 @@
                             "type": 1,
                             "signup_offer_id_list": [
                                 {
-                                    "money": 0,
-                                    "offer_id": 320006
+                                    "money": 1.99,
+                                    "offer_id": 208001
                                 },
                                 {
-                                    "money": 9,
-                                    "offer_id": 32007
+                                    "money": 4.99,
+                                    "offer_id": 208002
                                 },
                                 {
-                                    "money": 49,
-                                    "offer_id": 32009
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
                                 }
                             ]
                         },
@@ -258,33 +1066,119 @@
                             "type": 1,
                             "signup_offer_id_list": [
                                 {
-                                    "money": 0,
-                                    "offer_id": 320006
+                                    "money": 1.99,
+                                    "offer_id": 208001
                                 },
                                 {
-                                    "money": 9,
-                                    "offer_id": 32007
+                                    "money": 4.99,
+                                    "offer_id": 208002
                                 },
                                 {
-                                    "money": 49,
-                                    "offer_id": 32009
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
                                 }
                             ]
                         }
                     ],
                     "scene_list": [
                         {
-                            "id": 1110082,
+                            "id": 1110022,
                             "min_dis": 40,
                             "max_dis": 40
                         },
                         {
-                            "id": 1110083,
+                            "id": 1110022,
                             "min_dis": 30,
                             "max_dis": 30
                         },
                         {
-                            "id": 1110088,
+                            "id": 1110005,
                             "min_dis": 28,
                             "max_dis": 28,
                             "reward": [
@@ -295,14 +1189,37 @@
                                     "prop_num": 1
                                 }
                             ]
+                        },
+                        {
+                            "id": 1110023,
+                            "min_dis": 40,
+                            "max_dis": 40
+                        },
+                        {
+                            "id": 1130001,
+                            "min_dis": 40,
+                            "max_dis": 40
+                        },
+                        {
+                            "id": 1130002,
+                            "min_dis": 50,
+                            "max_dis": 50,
+                            "reward": [
+                                {
+                                    "prop_id": 0,
+                                    "prop_color": 0,
+                                    "prop_type": 2,
+                                    "prop_num": 150
+                                }
+                            ]
                         }
                     ]
                 },
                 {
                     "type": 2,
                     "unlock_stage": 10,
-                    "name": "hard",
-                    "tip": "You will not be able to change",
+                    "name": "HARD",
+                    "tip": "You will not be able to change the difficulty level after sign up.",
                     "group_rule_list": [
                         {
                             "min_trophy": 0,
@@ -313,30 +1230,299 @@
                         {
                             "rank": 1,
                             "reward": {
-                                "prop_id": 100041,
+                                "prop_id": 1000146,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 2,
+                            "reward": {
+                                "prop_id": 1000147,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 3,
+                            "reward": {
+                                "prop_id": 1000148,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 4,
+                            "reward": {
+                                "prop_id": 1000149,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 5,
+                            "reward": {
+                                "prop_id": 1000150,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 6,
+                            "reward": {
+                                "prop_id": 1000151,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 7,
+                            "reward": {
+                                "prop_id": 1000152,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 8,
+                            "reward": {
+                                "prop_id": 1000153,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 9,
+                            "reward": {
+                                "prop_id": 1000154,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 10,
+                            "reward": {
+                                "prop_id": 1000155,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 11,
+                            "reward": {
+                                "prop_id": 1000156,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 12,
+                            "reward": {
+                                "prop_id": 1000157,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 13,
+                            "reward": {
+                                "prop_id": 1000158,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 14,
+                            "reward": {
+                                "prop_id": 1000159,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 15,
+                            "reward": {
+                                "prop_id": 1000160,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 16,
+                            "reward": {
+                                "prop_id": 1000161,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 17,
+                            "reward": {
+                                "prop_id": 1000162,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 18,
+                            "reward": {
+                                "prop_id": 1000163,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 19,
+                            "reward": {
+                                "prop_id": 1000164,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 20,
+                            "reward": {
+                                "prop_id": 1000165,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 21,
+                            "reward": {
+                                "prop_id": 1000166,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 22,
+                            "reward": {
+                                "prop_id": 1000167,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 23,
+                            "reward": {
+                                "prop_id": 1000168,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 24,
+                            "reward": {
+                                "prop_id": 1000169,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 25,
+                            "reward": {
+                                "prop_id": 1000170,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 26,
+                            "reward": {
+                                "prop_id": 1000171,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 27,
+                            "reward": {
+                                "prop_id": 1000172,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 28,
+                            "reward": {
+                                "prop_id": 1000173,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 29,
+                            "reward": {
+                                "prop_id": 1000174,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 30,
+                            "reward": {
+                                "prop_id": 1000175,
                                 "prop_num": 1,
                                 "prop_type": 31,
                                 "prop_color": 0
                             }
                         }
                     ],
-                    "tour_id": 80051,
+                    "tour_id": 80041,
                     "signup_offer_list": [
                         {
                             "money": 0,
                             "type": 1,
                             "signup_offer_id_list": [
                                 {
-                                    "money": 0,
-                                    "offer_id": 320006
+                                    "money": 1.99,
+                                    "offer_id": 208001
                                 },
                                 {
-                                    "money": 9,
-                                    "offer_id": 32007
+                                    "money": 4.99,
+                                    "offer_id": 208002
                                 },
                                 {
-                                    "money": 49,
-                                    "offer_id": 32009
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
                                 }
                             ]
                         },
@@ -345,16 +1531,24 @@
                             "type": 1,
                             "signup_offer_id_list": [
                                 {
-                                    "money": 0,
-                                    "offer_id": 320006
+                                    "money": 1.99,
+                                    "offer_id": 208001
                                 },
                                 {
-                                    "money": 9,
-                                    "offer_id": 32007
+                                    "money": 4.99,
+                                    "offer_id": 208002
                                 },
                                 {
-                                    "money": 49,
-                                    "offer_id": 32009
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
                                 }
                             ]
                         },
@@ -363,16 +1557,24 @@
                             "type": 1,
                             "signup_offer_id_list": [
                                 {
-                                    "money": 0,
-                                    "offer_id": 320006
+                                    "money": 1.99,
+                                    "offer_id": 208001
                                 },
                                 {
-                                    "money": 9,
-                                    "offer_id": 32007
+                                    "money": 4.99,
+                                    "offer_id": 208002
                                 },
                                 {
-                                    "money": 49,
-                                    "offer_id": 32009
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
                                 }
                             ]
                         },
@@ -381,136 +1583,816 @@
                             "type": 1,
                             "signup_offer_id_list": [
                                 {
-                                    "money": 0,
-                                    "offer_id": 320006
+                                    "money": 1.99,
+                                    "offer_id": 208001
                                 },
                                 {
-                                    "money": 9,
-                                    "offer_id": 32007
+                                    "money": 4.99,
+                                    "offer_id": 208002
                                 },
                                 {
-                                    "money": 49,
-                                    "offer_id": 32009
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
                                 }
                             ]
                         },
                         {
-                            "money": 1,
-                            "type": "",
+                            "money": 0,
+                            "type": 1,
                             "signup_offer_id_list": [
                                 {
-                                    "money": 0,
-                                    "offer_id": 320006
+                                    "money": 1.99,
+                                    "offer_id": 208001
                                 },
                                 {
-                                    "money": 9,
-                                    "offer_id": 32007
+                                    "money": 4.99,
+                                    "offer_id": 208002
                                 },
                                 {
-                                    "money": 49,
-                                    "offer_id": 32009
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
                                 }
                             ]
                         },
                         {
-                            "money": 1,
-                            "type": "",
+                            "money": 0,
+                            "type": 1,
                             "signup_offer_id_list": [
                                 {
-                                    "money": 0,
-                                    "offer_id": 320006
+                                    "money": 1.99,
+                                    "offer_id": 208001
                                 },
                                 {
-                                    "money": 9,
-                                    "offer_id": 32007
+                                    "money": 4.99,
+                                    "offer_id": 208002
                                 },
                                 {
-                                    "money": 49,
-                                    "offer_id": 32009
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
                                 }
                             ]
                         },
                         {
-                            "money": 1,
-                            "type": "",
+                            "money": 0,
+                            "type": 1,
                             "signup_offer_id_list": [
                                 {
-                                    "money": 0,
-                                    "offer_id": 320006
+                                    "money": 1.99,
+                                    "offer_id": 208001
                                 },
                                 {
-                                    "money": 9,
-                                    "offer_id": 32007
+                                    "money": 4.99,
+                                    "offer_id": 208002
                                 },
                                 {
-                                    "money": 49,
-                                    "offer_id": 32009
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
                                 }
                             ]
                         },
                         {
-                            "money": 1,
-                            "type": "",
+                            "money": 0,
+                            "type": 1,
                             "signup_offer_id_list": [
                                 {
-                                    "money": 0,
-                                    "offer_id": 320006
+                                    "money": 4.99,
+                                    "offer_id": 208006
                                 },
                                 {
-                                    "money": 9,
-                                    "offer_id": 32007
+                                    "money": 9.99,
+                                    "offer_id": 208007
                                 },
                                 {
-                                    "money": 49,
-                                    "offer_id": 32009
+                                    "money": 19.99,
+                                    "offer_id": 208008
+                                },
+                                {
+                                    "money": 29.99,
+                                    "offer_id": 208009
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208010
                                 }
                             ]
                         },
                         {
-                            "money": 1,
-                            "type": "",
+                            "money": 0,
+                            "type": 1,
                             "signup_offer_id_list": [
                                 {
-                                    "money": 0,
-                                    "offer_id": 320006
+                                    "money": 4.99,
+                                    "offer_id": 208006
                                 },
                                 {
-                                    "money": 9,
-                                    "offer_id": 32007
+                                    "money": 9.99,
+                                    "offer_id": 208007
                                 },
                                 {
-                                    "money": 49,
-                                    "offer_id": 32009
+                                    "money": 19.99,
+                                    "offer_id": 208008
+                                },
+                                {
+                                    "money": 29.99,
+                                    "offer_id": 208009
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208010
                                 }
                             ]
                         },
                         {
-                            "money": 1,
-                            "type": "",
+                            "money": 0,
+                            "type": 1,
                             "signup_offer_id_list": [
                                 {
-                                    "money": 0,
-                                    "offer_id": 320006
+                                    "money": 4.99,
+                                    "offer_id": 208006
                                 },
                                 {
-                                    "money": 9,
-                                    "offer_id": 32007
+                                    "money": 9.99,
+                                    "offer_id": 208007
                                 },
                                 {
-                                    "money": 49,
-                                    "offer_id": 32009
+                                    "money": 19.99,
+                                    "offer_id": 208008
+                                },
+                                {
+                                    "money": 29.99,
+                                    "offer_id": 208009
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208010
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208006
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208007
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208008
+                                },
+                                {
+                                    "money": 29.99,
+                                    "offer_id": 208009
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208010
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208006
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208007
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208008
+                                },
+                                {
+                                    "money": 29.99,
+                                    "offer_id": 208009
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208010
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208006
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208007
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208008
+                                },
+                                {
+                                    "money": 29.99,
+                                    "offer_id": 208009
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208010
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208006
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208007
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208008
+                                },
+                                {
+                                    "money": 29.99,
+                                    "offer_id": 208009
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208010
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208006
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208007
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208008
+                                },
+                                {
+                                    "money": 29.99,
+                                    "offer_id": 208009
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208010
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208006
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208007
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208008
+                                },
+                                {
+                                    "money": 29.99,
+                                    "offer_id": 208009
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208010
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
                                 }
                             ]
                         }
                     ],
                     "scene_list": [
                         {
-                            "id": 1110082,
+                            "id": 1110093,
                             "min_dis": 40,
                             "max_dis": 60
                         },
                         {
-                            "id": 1110083,
+                            "id": 1110090,
                             "min_dis": 30,
                             "max_dis": 60
                         },
@@ -524,6 +2406,29 @@
                                     "prop_color": 3,
                                     "prop_type": 7,
                                     "prop_num": 1
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1110091,
+                            "min_dis": 40,
+                            "max_dis": 70
+                        },
+                        {
+                            "id": 1130029,
+                            "min_dis": 40,
+                            "max_dis": 70
+                        },
+                        {
+                            "id": 1110086,
+                            "min_dis": 50,
+                            "max_dis": 65,
+                            "reward": [
+                                {
+                                    "prop_id": 0,
+                                    "prop_color": 0,
+                                    "prop_type": 2,
+                                    "prop_num": 150
                                 }
                             ]
                         }
@@ -543,124 +2448,337 @@
                 "clubs": [],
                 "balls": []
             },
-            "start_time": 1639364400,
+            "start_time": 1639551600,
             "settle_before_next_min": "",
             "default_play": [
-                10,
+                5,
                 1
             ],
             "rank_score": [
-                1600,
-                1700,
-                1800
+                5000,
+                4990,
+                4970,
+                4940,
+                4900,
+                4850,
+                4790,
+                4720,
+                4640,
+                4550,
+                4450,
+                4340,
+                4220,
+                4090,
+                3950,
+                3800,
+                3640,
+                3470,
+                3270,
+                3060,
+                2840,
+                2610,
+                2370,
+                2110,
+                1810,
+                1490,
+                1150,
+                790,
+                410,
+                10
             ],
-            "num_per_group": 4,
-            "promote_rank": 3,
+            "num_per_group": 30,
+            "promote_rank": 15,
             "unlock_group_hole": 6,
             "types": [
                 {
                     "type": 1,
                     "unlock_stage": 7,
                     "name": "Normal",
-                    "tip": "You will not be able to change",
+                    "tip": "You will not be able to change the difficulty level after sign up.",
                     "group_rule_list": [
                         {
                             "min_trophy": "",
                             "max_trophy": 0
                         }
                     ],
-                    "prize_list3": [
-                        {}
-                    ],
-                    "tour_id": 80051,
+                    "prize_list": [],
+                    "tour_id": 80032,
                     "signup_offer_list": [
                         {
-                            "money": 1,
-                            "type": "",
+                            "money": 0,
+                            "type": 1,
                             "signup_offer_id_list": [
                                 {
-                                    "money": 0,
-                                    "offer_id": 320006
+                                    "money": 4.99,
+                                    "offer_id": 208006
                                 },
                                 {
-                                    "money": 9,
-                                    "offer_id": 32007
+                                    "money": 9.99,
+                                    "offer_id": 208007
                                 },
                                 {
-                                    "money": 49,
-                                    "offer_id": 32009
+                                    "money": 19.99,
+                                    "offer_id": 208008
+                                },
+                                {
+                                    "money": 29.99,
+                                    "offer_id": 208009
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208010
                                 }
                             ]
                         },
                         {
-                            "money": 1,
-                            "type": "",
+                            "money": 0,
+                            "type": 1,
                             "signup_offer_id_list": [
                                 {
-                                    "money": 0,
-                                    "offer_id": 320006
+                                    "money": 4.99,
+                                    "offer_id": 208006
                                 },
                                 {
-                                    "money": 9,
-                                    "offer_id": 32007
+                                    "money": 9.99,
+                                    "offer_id": 208007
                                 },
                                 {
-                                    "money": 49,
-                                    "offer_id": 32009
+                                    "money": 19.99,
+                                    "offer_id": 208008
+                                },
+                                {
+                                    "money": 29.99,
+                                    "offer_id": 208009
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208010
                                 }
                             ]
                         },
                         {
-                            "money": 1,
-                            "type": "",
+                            "money": 0,
+                            "type": 1,
                             "signup_offer_id_list": [
                                 {
-                                    "money": 0,
-                                    "offer_id": 320006
+                                    "money": 4.99,
+                                    "offer_id": 208006
                                 },
                                 {
-                                    "money": 9,
-                                    "offer_id": 32007
+                                    "money": 9.99,
+                                    "offer_id": 208007
                                 },
                                 {
-                                    "money": 49,
-                                    "offer_id": 32009
+                                    "money": 19.99,
+                                    "offer_id": 208008
+                                },
+                                {
+                                    "money": 29.99,
+                                    "offer_id": 208009
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208010
                                 }
                             ]
                         },
                         {
-                            "money": 1,
-                            "type": "",
+                            "money": 0,
+                            "type": 1,
                             "signup_offer_id_list": [
                                 {
-                                    "money": 0,
-                                    "offer_id": 320006
+                                    "money": 4.99,
+                                    "offer_id": 208006
                                 },
                                 {
-                                    "money": 9,
-                                    "offer_id": 32007
+                                    "money": 9.99,
+                                    "offer_id": 208007
                                 },
                                 {
-                                    "money": 49,
-                                    "offer_id": 32009
+                                    "money": 19.99,
+                                    "offer_id": 208008
+                                },
+                                {
+                                    "money": 29.99,
+                                    "offer_id": 208009
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208010
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208006
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208007
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208008
+                                },
+                                {
+                                    "money": 29.99,
+                                    "offer_id": 208009
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208010
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208006
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208007
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208008
+                                },
+                                {
+                                    "money": 29.99,
+                                    "offer_id": 208009
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208010
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208006
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208007
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208008
+                                },
+                                {
+                                    "money": 29.99,
+                                    "offer_id": 208009
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208010
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208006
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208007
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208008
+                                },
+                                {
+                                    "money": 29.99,
+                                    "offer_id": 208009
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208010
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208006
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208007
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208008
+                                },
+                                {
+                                    "money": 29.99,
+                                    "offer_id": 208009
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208010
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208006
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208007
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208008
+                                },
+                                {
+                                    "money": 29.99,
+                                    "offer_id": 208009
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208010
                                 }
                             ]
                         }
                     ],
                     "scene_list": [
                         {
-                            "id": 1110082,
-                            "min_dis": 40,
+                            "id": 1120011,
+                            "min_dis": 50,
                             "max_dis": 60
                         },
                         {
-                            "id": 1110083,
+                            "id": 1130006,
+                            "min_dis": 60,
+                            "max_dis": 70
+                        },
+                        {
+                            "id": 1110024,
                             "min_dis": 30,
-                            "max_dis": 60
-                        },
-                        {
-                            "id": 1110088,
-                            "min_dis": 28,
                             "max_dis": 40,
                             "reward": [
                                 {
@@ -670,14 +2788,60 @@
                                     "prop_num": 1
                                 }
                             ]
+                        },
+                        {
+                            "id": 1110025,
+                            "min_dis": 30,
+                            "max_dis": 40
+                        },
+                        {
+                            "id": 1130007,
+                            "min_dis": 50,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 1120012,
+                            "min_dis": 70,
+                            "max_dis": 100,
+                            "reward": [
+                                {
+                                    "prop_id": 0,
+                                    "prop_color": 0,
+                                    "prop_type": 34,
+                                    "prop_num": 1
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1110026,
+                            "min_dis": 45,
+                            "max_dis": 90
+                        },
+                        {
+                            "id": 1130004,
+                            "min_dis": 60,
+                            "max_dis": 70
+                        },
+                        {
+                            "id": 1110027,
+                            "min_dis": 40,
+                            "max_dis": 60,
+                            "reward": [
+                                {
+                                    "prop_id": 2,
+                                    "prop_color": 0,
+                                    "prop_type": 27,
+                                    "prop_num": 3
+                                }
+                            ]
                         }
                     ]
                 },
                 {
                     "type": 2,
                     "unlock_stage": 10,
-                    "name": "normal",
-                    "tip": "You will not be able to change",
+                    "name": "HARD",
+                    "tip": "You will not be able to change the difficulty level after sign up.",
                     "group_rule_list": [
                         {
                             "min_trophy": "",
@@ -688,55 +2852,370 @@
                         {
                             "rank": 1,
                             "reward": {
-                                "prop_id": 100041,
+                                "prop_id": 100177,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 2,
+                            "reward": {
+                                "prop_id": 100178,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 3,
+                            "reward": {
+                                "prop_id": 100179,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 4,
+                            "reward": {
+                                "prop_id": 100180,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 5,
+                            "reward": {
+                                "prop_id": 100181,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 6,
+                            "reward": {
+                                "prop_id": 100182,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 7,
+                            "reward": {
+                                "prop_id": 100183,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 8,
+                            "reward": {
+                                "prop_id": 100184,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 9,
+                            "reward": {
+                                "prop_id": 100185,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 10,
+                            "reward": {
+                                "prop_id": 100186,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 11,
+                            "reward": {
+                                "prop_id": 100187,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 12,
+                            "reward": {
+                                "prop_id": 100188,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 13,
+                            "reward": {
+                                "prop_id": 100189,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 14,
+                            "reward": {
+                                "prop_id": 100190,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 15,
+                            "reward": {
+                                "prop_id": 100191,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 16,
+                            "reward": {
+                                "prop_id": 100192,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 17,
+                            "reward": {
+                                "prop_id": 100193,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 18,
+                            "reward": {
+                                "prop_id": 100194,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 19,
+                            "reward": {
+                                "prop_id": 100195,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 20,
+                            "reward": {
+                                "prop_id": 100196,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 21,
+                            "reward": {
+                                "prop_id": 100197,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 22,
+                            "reward": {
+                                "prop_id": 100198,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 23,
+                            "reward": {
+                                "prop_id": 100199,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 24,
+                            "reward": {
+                                "prop_id": 100200,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 25,
+                            "reward": {
+                                "prop_id": 100201,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 26,
+                            "reward": {
+                                "prop_id": 100202,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 27,
+                            "reward": {
+                                "prop_id": 100203,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 28,
+                            "reward": {
+                                "prop_id": 100204,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 29,
+                            "reward": {
+                                "prop_id": 100205,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 30,
+                            "reward": {
+                                "prop_id": 100206,
                                 "prop_num": 1,
                                 "prop_type": 31,
                                 "prop_color": 0
                             }
                         }
                     ],
-                    "tour_id": 80051,
+                    "tour_id": 80042,
                     "signup_offer_list": [
                         {
-                            "money": 1,
-                            "type": "",
+                            "money": 0,
+                            "type": 1,
                             "signup_offer_id_list": [
                                 {
-                                    "money": 0,
-                                    "offer_id": 320006
+                                    "money": 4.99,
+                                    "offer_id": 208006
                                 },
                                 {
-                                    "money": 9,
-                                    "offer_id": 32007
+                                    "money": 9.99,
+                                    "offer_id": 208007
                                 },
                                 {
-                                    "money": 49,
-                                    "offer_id": 32009
+                                    "money": 19.99,
+                                    "offer_id": 208008
+                                },
+                                {
+                                    "money": 29.99,
+                                    "offer_id": 208009
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208010
                                 }
                             ]
                         }
                     ],
                     "scene_list": [
                         {
-                            "id": 1110082,
-                            "min_dis": 40,
-                            "max_dis": 60
+                            "id": 1130026,
+                            "min_dis": 60,
+                            "max_dis": 150
+                        },
+                        {
+                            "id": 1110084,
+                            "min_dis": 60,
+                            "max_dis": 90
                         },
                         {
                             "id": 1110083,
-                            "min_dis": 30,
-                            "max_dis": 60
-                        },
-                        {
-                            "id": 1110088,
-                            "min_dis": 28,
-                            "max_dis": 40,
+                            "min_dis": 45,
+                            "max_dis": 65,
                             "reward": [
                                 {
                                     "prop_id": 0,
                                     "prop_color": 3,
                                     "prop_type": 7,
                                     "prop_num": 1
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1110082,
+                            "min_dis": 35,
+                            "max_dis": 50
+                        },
+                        {
+                            "id": 1130024,
+                            "min_dis": 50,
+                            "max_dis": 65
+                        },
+                        {
+                            "id": 1110097,
+                            "min_dis": 50,
+                            "max_dis": 90,
+                            "reward": [
+                                {
+                                    "prop_id": 0,
+                                    "prop_color": 0,
+                                    "prop_type": 34,
+                                    "prop_num": 1
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1120025,
+                            "min_dis": 28,
+                            "max_dis": 40
+                        },
+                        {
+                            "id": 1120022,
+                            "min_dis": 40,
+                            "max_dis": 70
+                        },
+                        {
+                            "id": 1110085,
+                            "min_dis": 50,
+                            "max_dis": 120,
+                            "reward": [
+                                {
+                                    "prop_id": 2,
+                                    "prop_color": 0,
+                                    "prop_type": 27,
+                                    "prop_num": 3
                                 }
                             ]
                         }
@@ -756,26 +3235,53 @@
                 "clubs": [],
                 "balls": []
             },
-            "start_time": 1639364400,
-            "settle_before_next_min": 3000,
+            "start_time": 1639620000,
+            "settle_before_next_min": 172800,
             "default_play": [
                 10,
                 1
             ],
             "rank_score": [
-                1600,
-                1700,
-                1800
+                5000,
+                4990,
+                4970,
+                4940,
+                4900,
+                4850,
+                4790,
+                4720,
+                4640,
+                4550,
+                4450,
+                4340,
+                4220,
+                4090,
+                3950,
+                3800,
+                3640,
+                3470,
+                3270,
+                3060,
+                2840,
+                2610,
+                2370,
+                2110,
+                1810,
+                1490,
+                1150,
+                790,
+                410,
+                10
             ],
-            "num_per_group": 4,
-            "promote_rank": 3,
+            "num_per_group": 30,
+            "promote_rank": 30,
             "unlock_group_hole": 6,
             "types": [
                 {
                     "type": 1,
                     "unlock_stage": 7,
-                    "name": "Normal",
-                    "tip": "You will not be able to change",
+                    "name": "NORMAL",
+                    "tip": "You will not be able to change the difficulty level after sign up.",
                     "group_rule_list": [
                         {
                             "min_trophy": "",
@@ -785,102 +3291,756 @@
                     "prize_list": [
                         {
                             "reward": {
-                                "prop_id": 100041,
+                                "prop_id": 100116,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "reward": {
+                                "prop_id": 100117,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "reward": {
+                                "prop_id": 100118,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "reward": {
+                                "prop_id": 100119,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "reward": {
+                                "prop_id": 100120,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "reward": {
+                                "prop_id": 100121,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "reward": {
+                                "prop_id": 100122,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "reward": {
+                                "prop_id": 100123,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "reward": {
+                                "prop_id": 100124,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "reward": {
+                                "prop_id": 100125,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "reward": {
+                                "prop_id": 100126,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "reward": {
+                                "prop_id": 100127,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "reward": {
+                                "prop_id": 100128,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "reward": {
+                                "prop_id": 100129,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "reward": {
+                                "prop_id": 100130,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "reward": {
+                                "prop_id": 100131,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "reward": {
+                                "prop_id": 100132,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "reward": {
+                                "prop_id": 100133,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "reward": {
+                                "prop_id": 100134,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "reward": {
+                                "prop_id": 100135,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "reward": {
+                                "prop_id": 100136,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "reward": {
+                                "prop_id": 100137,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "reward": {
+                                "prop_id": 100138,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "reward": {
+                                "prop_id": 100139,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "reward": {
+                                "prop_id": 100140,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "reward": {
+                                "prop_id": 100141,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "reward": {
+                                "prop_id": 100142,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "reward": {
+                                "prop_id": 100143,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "reward": {
+                                "prop_id": 100144,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "reward": {
+                                "prop_id": 100145,
                                 "prop_num": 1,
                                 "prop_type": 31,
                                 "prop_color": 0
                             }
                         }
                     ],
-                    "tour_id": 80051,
+                    "tour_id": 80033,
                     "signup_offer_list": [
                         {
-                            "money": 1,
-                            "type": "",
+                            "money": 0,
+                            "type": 1,
                             "signup_offer_id_list": [
                                 {
-                                    "money": 0,
-                                    "offer_id": 320006
+                                    "money": 4.99,
+                                    "offer_id": 208011
                                 },
                                 {
-                                    "money": 9,
-                                    "offer_id": 32007
+                                    "money": 9.99,
+                                    "offer_id": 208012
                                 },
                                 {
-                                    "money": 49,
-                                    "offer_id": 32009
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
                                 }
                             ]
                         },
                         {
-                            "money": 1,
-                            "type": "",
+                            "money": 0,
+                            "type": 1,
                             "signup_offer_id_list": [
                                 {
-                                    "money": 0,
-                                    "offer_id": 320006
+                                    "money": 4.99,
+                                    "offer_id": 208011
                                 },
                                 {
-                                    "money": 9,
-                                    "offer_id": 32007
+                                    "money": 9.99,
+                                    "offer_id": 208012
                                 },
                                 {
-                                    "money": 49,
-                                    "offer_id": 32009
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
                                 }
                             ]
                         },
                         {
-                            "money": 1,
-                            "type": "",
+                            "money": 0,
+                            "type": 1,
                             "signup_offer_id_list": [
                                 {
-                                    "money": 0,
-                                    "offer_id": 320006
+                                    "money": 4.99,
+                                    "offer_id": 208011
                                 },
                                 {
-                                    "money": 9,
-                                    "offer_id": 32007
+                                    "money": 9.99,
+                                    "offer_id": 208012
                                 },
                                 {
-                                    "money": 49,
-                                    "offer_id": 32009
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
                                 }
                             ]
                         },
                         {
-                            "money": 1,
-                            "type": "",
+                            "money": 0,
+                            "type": 1,
                             "signup_offer_id_list": [
                                 {
-                                    "money": 0,
-                                    "offer_id": 320006
+                                    "money": 4.99,
+                                    "offer_id": 208011
                                 },
                                 {
-                                    "money": 9,
-                                    "offer_id": 32007
+                                    "money": 9.99,
+                                    "offer_id": 208012
                                 },
                                 {
-                                    "money": 49,
-                                    "offer_id": 32009
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208011
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208012
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
                                 }
                             ]
                         }
                     ],
                     "scene_list": [
                         {
-                            "id": 1110082,
-                            "min_dis": 40,
+                            "id": 1130009,
+                            "min_dis": 50,
                             "max_dis": 60
                         },
                         {
-                            "id": 1110083,
+                            "id": 1110028,
+                            "min_dis": 50,
+                            "max_dis": 100
+                        },
+                        {
+                            "id": 1130003,
                             "min_dis": 30,
-                            "max_dis": 60
-                        },
-                        {
-                            "id": 1110088,
-                            "min_dis": 28,
                             "max_dis": 40,
                             "reward": [
                                 {
@@ -890,14 +4050,121 @@
                                     "prop_num": 1
                                 }
                             ]
+                        },
+                        {
+                            "id": 1120014,
+                            "min_dis": 60,
+                            "max_dis": 70
+                        },
+                        {
+                            "id": 1110029,
+                            "min_dis": 30,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 1130008,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 1120013,
+                            "min_dis": 40,
+                            "max_dis": 50
+                        },
+                        {
+                            "id": 1110030,
+                            "min_dis": 20,
+                            "max_dis": 25
+                        },
+                        {
+                            "id": 1110031,
+                            "min_dis": 90,
+                            "max_dis": 140,
+                            "reward": [
+                                {
+                                    "prop_id": 0,
+                                    "prop_color": 0,
+                                    "prop_type": 34,
+                                    "prop_num": 1
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1120015,
+                            "min_dis": 40,
+                            "max_dis": 50
+                        },
+                        {
+                            "id": 1110032,
+                            "min_dis": 30,
+                            "max_dis": 40
+                        },
+                        {
+                            "id": 1110033,
+                            "min_dis": 70,
+                            "max_dis": 130,
+                            "reward": [
+                                {
+                                    "prop_id": 2,
+                                    "prop_color": 0,
+                                    "prop_type": 27,
+                                    "prop_num": 3
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1120016,
+                            "min_dis": 60,
+                            "max_dis": 70
+                        },
+                        {
+                            "id": 1110034,
+                            "min_dis": 50,
+                            "max_dis": 90
+                        },
+                        {
+                            "id": 1110035,
+                            "min_dis": 50,
+                            "max_dis": 70,
+                            "reward": [
+                                {
+                                    "prop_id": 0,
+                                    "prop_color": 0,
+                                    "prop_type": 34,
+                                    "prop_num": 1
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1110036,
+                            "min_dis": 60,
+                            "max_dis": 120
+                        },
+                        {
+                            "id": 1110037,
+                            "min_dis": 40,
+                            "max_dis": 75
+                        },
+                        {
+                            "id": 1110038,
+                            "min_dis": 60,
+                            "max_dis": 100,
+                            "reward": [
+                                {
+                                    "prop_id": 0,
+                                    "prop_color": 0,
+                                    "prop_type": 2,
+                                    "prop_num": 150
+                                }
+                            ]
                         }
                     ]
                 },
                 {
                     "type": 2,
                     "unlock_stage": 10,
-                    "name": "normal",
-                    "tip": "You will not be able to change",
+                    "name": "HARD",
+                    "tip": "You will not be able to change the difficulty level after sign up.",
                     "group_rule_list": [
                         {
                             "min_trophy": "",
@@ -908,52 +4175,308 @@
                         {
                             "rank": 1,
                             "reward": {
-                                "prop_id": 100041,
+                                "prop_id": 100206,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 2,
+                            "reward": {
+                                "prop_id": 100207,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 3,
+                            "reward": {
+                                "prop_id": 100208,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 4,
+                            "reward": {
+                                "prop_id": 100209,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 5,
+                            "reward": {
+                                "prop_id": 100210,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 6,
+                            "reward": {
+                                "prop_id": 100211,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 7,
+                            "reward": {
+                                "prop_id": 100212,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 8,
+                            "reward": {
+                                "prop_id": 100213,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 9,
+                            "reward": {
+                                "prop_id": 100214,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 10,
+                            "reward": {
+                                "prop_id": 100215,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 11,
+                            "reward": {
+                                "prop_id": 100216,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 12,
+                            "reward": {
+                                "prop_id": 100217,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 13,
+                            "reward": {
+                                "prop_id": 100218,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 14,
+                            "reward": {
+                                "prop_id": 100219,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 15,
+                            "reward": {
+                                "prop_id": 100220,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 16,
+                            "reward": {
+                                "prop_id": 100221,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 17,
+                            "reward": {
+                                "prop_id": 100222,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 18,
+                            "reward": {
+                                "prop_id": 100223,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 19,
+                            "reward": {
+                                "prop_id": 100224,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 20,
+                            "reward": {
+                                "prop_id": 100225,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 21,
+                            "reward": {
+                                "prop_id": 100226,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 22,
+                            "reward": {
+                                "prop_id": 100227,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 23,
+                            "reward": {
+                                "prop_id": 100228,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 24,
+                            "reward": {
+                                "prop_id": 100229,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 25,
+                            "reward": {
+                                "prop_id": 100230,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 26,
+                            "reward": {
+                                "prop_id": 100231,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 27,
+                            "reward": {
+                                "prop_id": 100232,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 28,
+                            "reward": {
+                                "prop_id": 100233,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 29,
+                            "reward": {
+                                "prop_id": 100234,
+                                "prop_num": 1,
+                                "prop_type": 31,
+                                "prop_color": 0
+                            }
+                        },
+                        {
+                            "rank": 30,
+                            "reward": {
+                                "prop_id": 100235,
                                 "prop_num": 1,
                                 "prop_type": 31,
                                 "prop_color": 0
                             }
                         }
                     ],
-                    "tour_id": 80051,
+                    "tour_id": 80043,
                     "signup_offer_list": [
                         {
-                            "money": 1,
-                            "type": "",
+                            "money": 0,
+                            "type": 1,
                             "signup_offer_id_list": [
                                 {
-                                    "money": 0,
-                                    "offer_id": 320006
+                                    "money": 4.99,
+                                    "offer_id": 208011
                                 },
                                 {
-                                    "money": 9,
-                                    "offer_id": 32007
+                                    "money": 9.99,
+                                    "offer_id": 208012
                                 },
                                 {
-                                    "money": 49,
-                                    "offer_id": 32009
+                                    "money": 19.99,
+                                    "offer_id": 208013
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208014
+                                },
+                                {
+                                    "money": 99.99,
+                                    "offer_id": 208015
                                 }
                             ]
                         }
                     ],
                     "scene_list": [
                         {
-                            "id": 1110082,
-                            "min_dis": 40,
-                            "max_dis": 60,
-                            "reward": [
-                                {
-                                    "prop_id": "",
-                                    "prop_color": "",
-                                    "prop_type": "",
-                                    "prop_num": ""
-                                }
-                            ]
-                        },
-                        {
-                            "id": 1110083,
+                            "id": 1130028,
                             "min_dis": 30,
-                            "max_dis": 60,
+                            "max_dis": 45,
                             "reward": [
                                 {
                                     "prop_id": "",
@@ -964,15 +4487,223 @@
                             ]
                         },
                         {
-                            "id": 1110088,
-                            "min_dis": 28,
-                            "max_dis": 40,
+                            "id": 1110089,
+                            "min_dis": 30,
+                            "max_dis": 50,
+                            "reward": [
+                                {
+                                    "prop_id": "",
+                                    "prop_color": "",
+                                    "prop_type": "",
+                                    "prop_num": ""
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1110095,
+                            "min_dis": 40,
+                            "max_dis": 70,
                             "reward": [
                                 {
                                     "prop_id": 0,
                                     "prop_color": 3,
                                     "prop_type": 7,
                                     "prop_num": 1
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1130025,
+                            "min_dis": 40,
+                            "max_dis": 110,
+                            "reward": [
+                                {
+                                    "prop_id": "",
+                                    "prop_color": "",
+                                    "prop_type": "",
+                                    "prop_num": ""
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1110087,
+                            "min_dis": 30,
+                            "max_dis": 45,
+                            "reward": [
+                                {
+                                    "prop_id": "",
+                                    "prop_color": "",
+                                    "prop_type": "",
+                                    "prop_num": ""
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1120021,
+                            "min_dis": 40,
+                            "max_dis": 65,
+                            "reward": [
+                                {
+                                    "prop_id": "",
+                                    "prop_color": "",
+                                    "prop_type": "",
+                                    "prop_num": ""
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1110094,
+                            "min_dis": 50,
+                            "max_dis": 90,
+                            "reward": [
+                                {
+                                    "prop_id": "",
+                                    "prop_color": "",
+                                    "prop_type": "",
+                                    "prop_num": ""
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1120023,
+                            "min_dis": 20,
+                            "max_dis": 30,
+                            "reward": [
+                                {
+                                    "prop_id": "",
+                                    "prop_color": "",
+                                    "prop_type": "",
+                                    "prop_num": ""
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1110092,
+                            "min_dis": 40,
+                            "max_dis": 85,
+                            "reward": [
+                                {
+                                    "prop_id": 0,
+                                    "prop_color": 0,
+                                    "prop_type": 34,
+                                    "prop_num": 1
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1120024,
+                            "min_dis": 50,
+                            "max_dis": 60,
+                            "reward": [
+                                {
+                                    "prop_id": "",
+                                    "prop_color": "",
+                                    "prop_type": "",
+                                    "prop_num": ""
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1120026,
+                            "min_dis": 50,
+                            "max_dis": 60,
+                            "reward": [
+                                {
+                                    "prop_id": "",
+                                    "prop_color": "",
+                                    "prop_type": "",
+                                    "prop_num": ""
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1130022,
+                            "min_dis": 30,
+                            "max_dis": 45,
+                            "reward": [
+                                {
+                                    "prop_id": 2,
+                                    "prop_color": 0,
+                                    "prop_type": 27,
+                                    "prop_num": 3
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1130021,
+                            "min_dis": 30,
+                            "max_dis": 50,
+                            "reward": [
+                                {
+                                    "prop_id": "",
+                                    "prop_color": "",
+                                    "prop_type": "",
+                                    "prop_num": ""
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1110096,
+                            "min_dis": 60,
+                            "max_dis": 100,
+                            "reward": [
+                                {
+                                    "prop_id": "",
+                                    "prop_color": "",
+                                    "prop_type": "",
+                                    "prop_num": ""
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1130023,
+                            "min_dis": 45,
+                            "max_dis": 65,
+                            "reward": [
+                                {
+                                    "prop_id": 0,
+                                    "prop_color": 0,
+                                    "prop_type": 34,
+                                    "prop_num": 1
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1110098,
+                            "min_dis": 50,
+                            "max_dis": 90,
+                            "reward": [
+                                {
+                                    "prop_id": "",
+                                    "prop_color": "",
+                                    "prop_type": "",
+                                    "prop_num": ""
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1110081,
+                            "min_dis": 20,
+                            "max_dis": 30,
+                            "reward": [
+                                {
+                                    "prop_id": "",
+                                    "prop_color": "",
+                                    "prop_type": "",
+                                    "prop_num": ""
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1130027,
+                            "min_dis": 60,
+                            "max_dis": 160,
+                            "reward": [
+                                {
+                                    "prop_id": 0,
+                                    "prop_color": 0,
+                                    "prop_type": 2,
+                                    "prop_num": 150
                                 }
                             ]
                         }
@@ -982,15 +4713,15 @@
         }
     ],
     "push": {
-        "round_end_content": "snowman",
-        "round_start_content": "peak",
-        "push_before_end_min": 1,
-        "refresh_ticket_connect": "snowman",
-        "unlock_holes_content": "snowman"
+        "round_end_content": "Snowman Peak the %s is about to end, come and get the rest of the reward!",
+        "round_start_content": "Snowman Peak the %s has begun! Come and get rewards!",
+        "push_before_end_min": 30,
+        "refresh_ticket_connect": "Snowman Peak tickets have been replenished, go make some shots!",
+        "unlock_holes_content": "nowman Peak's new Back 9 has been unlocked, go challenge it now!"
     },
-    "mail_title": "snowman peak event prizes",
-    "mail_content": "due to unexpected",
-    "mail_rank_content": "congratulation",
+    "mail_title": "Snowman Peak Event Prizes",
+    "mail_content": "Due to unexpected circumstances, please charge for the prizes you haven't received.",
+    "mail_rank_content": "Congratulations on getting Snowman Peak %s schedule %d place, please claim your prizes.",
     "battle_limit": {
         "club_color": [],
         "clubs": [],

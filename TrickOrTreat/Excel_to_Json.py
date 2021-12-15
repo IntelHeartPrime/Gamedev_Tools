@@ -369,11 +369,12 @@ if ws.cell(143, 2).value != None:
     rule_list3.update({"min_trophy": clean_null(ws.cell(167, 2).value)})
     rule_list3.update({"max_trophy": clean_null(ws.cell(168, 2).value)})
     prize_list3 = []
-    type3.update({"prize_list3": prize_list3})
+    type3.update({"prize_list": prize_list3})
     rank_column = 2
     while ws.cell(171, rank_column).value != None:
-        rank3 = {}
-        prize_list3.append(rank3)
+        if(ws.cell(170,rank_column).value != None):
+            rank3 = {}
+            prize_list3.append(rank3)
         rank.update({"rank": clean_null(ws.cell(171, rank_column).value)})
         reward3 = {}
         rank.update(({"reward": reward3}))
