@@ -16,15 +16,44 @@ max_rank = 30
 buff_value = 0.20
 const_max_shield = 3
 
+tier_upgrade_score = 100
+tier_delegation_score = 0
+
 ''' 常量 '''
 
+# 数据容器 ########################
+win_points_list = [10,20,30] #胜利获得点数
+fail_points_list = [10,20,30] #失败获得点数
+
+win_streak_list = [0,2,3] #连胜获得点数
+
+rank_points_sum_list = [0,100,200,300,400,500] #rankid对应总点数
+
+''' [Bat1][Bat2][Bat3][Bat4]...
+    [Bat2]
+    [Bat3]
+    [Bat4]
+    ...
+
+'''
+WinRateMatrix_list = []
+
+''' [Bat1][Bat2][Bat3][Bat4]...
+    [Kight5]
+    [Kight4]
+    ...
+'''
+
+Distribution_start_list = [] #赛前开始的人数分布 2维list  参数 "distribution"
+DailyActive_list = [] #各类玩家的日活 2维list 参数 "dailyActive"
+MatchPoolId_list = [] #各类玩家的匹配池编号 2维list 参数 "matchPoolId"
+
+Mission2Condition = []
+Mission3Condition = []
+
+##################################
 
 ''' 工具 - 根据段位获取胜负的点数'''
-
-# 数据容器
-win_points_list = [10,20,30]
-fail_points_list = [10,20,30]
-
 def Tool_GetPointsDiffbyRank( rank_id,result ):
     '''
     :param rank_id:  int 返回Rank_id
@@ -41,10 +70,6 @@ def Tool_GetPointsDiffbyRank( rank_id,result ):
         return value_output
 
 ''' 工具 - 根据连胜获取额外点数 '''
-
-# 数据容器
-win_streak_list = [0,2,3]
-
 def Tool_GetExtraPointsbyWinStreak( win_streak ):
     '''
     :param win_streak: int 当前连胜
@@ -60,13 +85,9 @@ def Tool_GetExtraPointsbyWinStreak( win_streak ):
         return value_output
 
 ''' 工具 - 根据当前段位，当前点数，点数增删判断是否触发晋级赛 '''
-
-# 数据容器
-tier_upgrade_score = 100
-
 def Tool_GetIfTriggerByRankInfo(now_rank, now_rank_points, points_diff):
     '''
-    :param now_rrank: 当前段位
+    :param now_rank: 当前段位
     :param now_rank_points: 当前段位积分
     :param points_diff: 添加积分
     :return: bool True:触发 False: 不触发
@@ -79,8 +100,6 @@ def Tool_GetIfTriggerByRankInfo(now_rank, now_rank_points, points_diff):
         return False
 
 ''' 工具 - 根据当前点数，点数增删判断是否触发保级赛'''
-tier_delegation_score = 0
-
 def Tool_GetIfDelegationByRankInfo(now_rank, now_rank_points, points_diff):
     '''
 
@@ -97,10 +116,6 @@ def Tool_GetIfDelegationByRankInfo(now_rank, now_rank_points, points_diff):
         return False
 
 ''' 工具 - 根据总点数返回段位id '''
-
-# 数据容器 - 总点数范围
-rank_points_sum_list = [0,100,200,300,400,500]
-
 def Tool_GetRankbyTotalPoints(now_points,promotion_status,delegation_status):
     '''
     :param now_points:  传入的总点数
@@ -139,17 +154,6 @@ def Tool_GetRankbyTotalPoints(now_points,promotion_status,delegation_status):
                 return index+1
 
 ''' 工具 - 根据传入的两方的Bat等级，得出胜负 '''
-
-# 数据容器 - 2维列表
-''' [Bat1][Bat2][Bat3][Bat4]...
-    [Bat2]
-    [Bat3]
-    [Bat4]
-    ...
-
-'''
-WinRateMatrix_list = []
-
 def Tool_GetResultByBatLevel(a_bat_level, b_bat_level):
     '''
     :param a_bat_level: 左方bat等级 - 行号
@@ -169,18 +173,6 @@ def Tool_GetResultByBatLevel(a_bat_level, b_bat_level):
 
 
 ''' 工具 - 根据传入的 Rank_id 与 Bat等级，返回人数分布 / 每日场数分布 / 编号等'''
-
-# 数据容器  - 2维列表
-''' [Bat1][Bat2][Bat3][Bat4]...
-    [Kight5]
-    [Kight4]
-    ...
-'''
-
-Distribution_start_list = [] #赛前开始的人数分布 2维list  参数 "distribution"
-DailyActive_list = [] #各类玩家的日活 2维list 参数 "dailyActive"
-MatchPoolId_list = [] #各类玩家的匹配池编号 2维list 参数 "matchPoolId"
-
 def Tool_GetValueByRankBatLv( rank_id, bat_level, type_string):
     '''
     :param rank_id:  段位id
@@ -204,6 +196,15 @@ def Tool_GetValueByRankBatLv( rank_id, bat_level, type_string):
         print("rank_id  =" + str(rank_id) + " bat_level = " + str(bat_level) +  " matchPoolId = " + str(output_value))
         return output_value
 
+''' 工具 - 根据传入的RankId 返回对应的任务2完成条件 '''
+def Tool_GetConditionbyRank2( rank_id ):
+    print("rank_id = " + str(rank_id) + " mission2_condition = " + str(Mission2Condition[rank_id -1]))
+    return Mission2Condition[rank_id -1]
+
+''' 工具 - 根据传入的RankId 返回对应的任务3完成条件 '''
+def Tool_GetConditionbyRank3( rank_id ):
+    print("rank_id = " + str(rank_id) + " mission3_condition = " + str(Mission3Condition[rank_id -1]))
+    return Mission3Condition[rank_id -1]
 
 # Player
 class Player:
@@ -255,6 +256,8 @@ class Player:
     def __init__(self,  id, origin_rank, daily_active, bat_level, buy_pass):
         self.id = id
         self.origin_rank = origin_rank
+        self.now_rank = self.origin_rank
+
         self.bat_level = bat_level
         self.daily_active = daily_active
         self.buy_pass = buy_pass
@@ -283,7 +286,7 @@ class Player:
             # 判断连胜
             self.now_win_streak = self.now_win_streak + 1
             # 根据连胜判断添加的额外点数
-            streak_extra_points = Tool_GetPointsDiffbyRank(self.now_win_streak)
+            streak_extra_points = Tool_GetExtraPointsbyWinStreak(self.now_win_streak)
             self.points_diff = self.points_diff + streak_extra_points
 
             # 判断是否触发晋级赛
@@ -342,13 +345,17 @@ class Player:
         self.total_games_cnt = self.total_games_cnt + 1
 
 
-        ''' 刷新所有任务 '''
+        ''' 刷新所有任务 -  任务逻辑已经完成 '''
+
+        self.mission2_complete_condition = Tool_GetConditionbyRank2(self.now_rank)
+        self.mission3_complete_condition = Tool_GetConditionbyRank3(self.now_rank)
+
         if self.mission2_status == False:
             if self.daily_games_cnt_dic[day_id] >= self.mission2_complete_condition:
                 self.mission2_status = True
                 # 任务2收获奖励，获取双倍卡  or 段位保护卡
                 reward_list = ["protect_card", "double_card"]
-                reward = mkl_random.choice(reward_list)
+                reward = random.choice(reward_list)
                 if reward == "protect_card":
                     self.now_shield = self.now_shield + 1
                     print("完成任务2： 获得段位保护卡一张 - 现在总数为：" + str(self.now_shield))
@@ -359,13 +366,15 @@ class Player:
                     self.double_points_card_cnt = self.double_points_card_cnt + 1
                     print("完成任务2： 获得段位双倍卡一张 - 现在总数为：" + str(self.double_points_card_cnt))
 
-
+        # 如果购买Pass，且任务3完成，激活Buff，否则buff消失
         if self.buy_pass:
             if self.mission3_status == False:
                 if self.daily_games_cnt_dic[day_id] >= self.mission3_complete_condition:
                     # 任务3收获奖励，获取buff
                     self.buff_active = True
                     print("完成任务3：激活buff" )
+        else:
+            self.buff_active = False
 
 
 # 堆栈
@@ -512,7 +521,6 @@ class FileReader:
         return list_outside
 
 
-
     # 读取胜利点数/失败点数list
     def ReadWinOrFailPoints(self):
         '''
@@ -520,7 +528,7 @@ class FileReader:
         '''
         output_win_list = []
         output_fail_list = []
-        row_start = 7
+        row_start = 5
         row_end = 34
         win_column= 18
         fail_column = 19
@@ -543,32 +551,65 @@ class FileReader:
         '''
         :return: 返回1个list, win_streak_list
         '''
+        output_list = []
+        start_row = 5
+        end_row = 10
+        column_index = 22
+
+        for row in range(start_row, end_row+1):
+            output_list.append(ws.range((row,column_index)).value)
+        print("win_streak_list =" )
+        print(output_list)
+
+        return  output_list
 
 
     # 读取任务数据
-    # 任务条件
-    def ReadMissionCondition2(self):
+    def ReadMission2Condition(self):
         '''
         :return: 返回1个list, 任务2条件
         '''
+        output_list = []
+        row_index = 9
+        start_column = 27
+        end_column = 56
+        for column in range(start_column,end_column+1):
+            output_list.append(ws.range((row_index,column)).value)
+        print("Mission2 condition = ")
+        print(output_list)
 
-    def ReadMissionCondition3(self):
+        return output_list
+
+    def ReadMission3Condition(self):
         '''
         :return: 返回1个list, 任务3条件
         '''
+        output_list = []
+        row_index = 10
+        start_column = 27
+        end_column = 56
+        for column in range(start_column,end_column+1):
+            output_list.append(ws.range((row_index,column)).value)
+        print("Mission3 condition = ")
+        print(output_list)
 
+        return output_list
 
-    # --------------------
-    # 匹配算法矩阵函数 -> 应写为工具函数
-    def ReadMatchPoolsMatrix(self, input_id):
+    def ReadSumPoints(self):
         '''
-        :param input_id:  输入匹配池类的id
-        :return: 返回两个list，分别对应该 input_id 下对应的 matched_pool(list) 与 matched_pools_probability(list)
+        :return: 返回总点数list
         '''
+        output_list = []
+        row_start = 5
+        row_end = 34
+        column_index = 17
+        for row in range(row_start,row_end +1):
+            output_list.append(ws.range((row,column_index)).value)
 
+        print(" rank_points_sum_list = ")
+        print(output_list)
 
-test1 = FileReader()
-win_points_list, fail_points_list = test1.ReadWinOrFailPoints()
+        return output_list
 
 
 ''' 主循环 
@@ -578,3 +619,4 @@ win_points_list, fail_points_list = test1.ReadWinOrFailPoints()
 4.返回指标
 
 '''
+
