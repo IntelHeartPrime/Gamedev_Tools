@@ -206,6 +206,28 @@ def Tool_GetConditionbyRank3( rank_id ):
     print("rank_id = " + str(rank_id) + " mission3_condition = " + str(Mission3Condition[rank_id -1]))
     return Mission3Condition[rank_id -1]
 
+''' 工具 - 根据MatchPoolId 返回其 rank_id 与 bat_level '''
+def Tool_GetRankIdBatLvByMatchPoolId( MatchPoolId):
+    '''
+    :param MatchPoolId: 匹配池id
+    :return: rank_id ; bat_level
+    '''
+    bat_level = MatchPoolId % 8
+    rank_id = (MatchPoolId // 8) + 1
+
+    return rank_id, bat_level
+
+
+''' 工具 - 根据输入的MatchPoolId，返回其可匹配到MatchPool以及对应概率'''
+def ToolGetMatchPoolProbabilitybyId(MatchPoolId):
+    '''
+    :param MatchPoolId: 匹配池id
+    :return: MatchPoolId_list : list 能匹配到的MatchPool 的id ；  Probability_list : list
+    '''
+    rank_id, bat_level = Tool_GetRankIdBatLvByMatchPoolId(MatchPoolId)
+    rank_id_left =
+
+
 # Player
 class Player:
     #Attributes
@@ -613,10 +635,37 @@ class FileReader:
 
 
 ''' 主循环 
-1.读取数据
+1.读取数据 
 2.创建好匹配池，创建好玩家
 3.根据天数进行匹配
 4.返回指标
 
 '''
+
+fileReader1 = FileReader()
+win_points_list, fail_points_list = fileReader1.ReadWinOrFailPoints()
+win_streak_list = fileReader1.ReadWinStreakPoints()
+rank_points_sum_list  = fileReader1.ReadSumPoints()
+WinRateMatrix_list = fileReader1.ReadWinRateMatrix()
+Distribution_start_list = fileReader1.ReadDistributionMatrix()
+DailyActive_list = fileReader1.ReadDailyActiveMatrix()
+MatchPoolId_list = fileReader1.ReadMatchPoolIdMatrix()
+
+Mission2Condition = fileReader1.ReadMission2Condition()
+Mission3Condition = fileReader1.ReadMission3Condition()
+
+
+matchPools = []
+rank_id_cache = 0
+for x in MatchPoolId_list:
+    rank_id_cache = rank_id_cache + 1
+    bat_level_cache = 0
+    for y in x:
+        bat_level_cache = bat_level_cache + 1
+        matchPoolUnit = MatchPool()
+        matchPoolUnit.bat_level = bat_level_cache
+        matchPoolUnit.rank_id = rank_id_cache
+        matchPoolUnit.id = int(y)
+
+        # 可匹配到MatchPoolId
 
