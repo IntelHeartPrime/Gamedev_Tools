@@ -489,6 +489,7 @@ class FileReader:
 
         return list_outside
 
+    # 读取匹配池id矩阵
     def ReadMatchPoolIdMatrix(self):
         '''
         :return: 返回一个2维list， 存储匹配池id
@@ -510,13 +511,6 @@ class FileReader:
 
         return list_outside
 
-    # 匹配算法矩阵函数 -> 应写为工具函数
-    def ReadMatchPoolsMatrix(self, input_id):
-        '''
-        :param input_id:  输入匹配池类的id
-        :return: 返回两个list，分别对应该 input_id 下对应的 matched_pool(list) 与 matched_pools_probability(list)
-        '''
-
 
 
     # 读取胜利点数/失败点数list
@@ -524,12 +518,32 @@ class FileReader:
         '''
         :return: 返回2个list，win_points_list， fail_points_list
         '''
+        output_win_list = []
+        output_fail_list = []
+        row_start = 7
+        row_end = 34
+        win_column= 18
+        fail_column = 19
+
+        for row in range(row_start,row_end +1):
+            output_win_list.append(ws.range((row,win_column)).value)
+        for row in range(row_start,row_end +1):
+            output_fail_list.append(ws.range((row,fail_column)).value)
+
+        print(" win_points_list = ")
+        print(output_win_list)
+
+        print(" fail_points_list = ")
+        print(output_fail_list)
+
+        return output_fail_list,output_fail_list
 
     # 读取连胜数据
     def ReadWinStreakPoints(self):
         '''
         :return: 返回1个list, win_streak_list
         '''
+
 
     # 读取任务数据
     # 任务条件
@@ -544,14 +558,17 @@ class FileReader:
         '''
 
 
-test1 = FileReader()
-Distribution_start_list = test1.ReadDistributionMatrix()
-DailyActive_list = test1.ReadDailyActiveMatrix()
-MatchPoolId_list = test1.ReadMatchPoolIdMatrix()
+    # --------------------
+    # 匹配算法矩阵函数 -> 应写为工具函数
+    def ReadMatchPoolsMatrix(self, input_id):
+        '''
+        :param input_id:  输入匹配池类的id
+        :return: 返回两个list，分别对应该 input_id 下对应的 matched_pool(list) 与 matched_pools_probability(list)
+        '''
 
-a1 = Tool_GetValueByRankBatLv(1,8,"distribution")
-a2 = Tool_GetValueByRankBatLv(1,8,"matchPoolId")
-a3 = Tool_GetValueByRankBatLv(1,8,"dailyActive")
+
+test1 = FileReader()
+win_points_list, fail_points_list = test1.ReadWinOrFailPoints()
 
 
 ''' 主循环 
