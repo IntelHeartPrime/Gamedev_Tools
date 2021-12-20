@@ -191,17 +191,17 @@ def Tool_GetValueByRankBatLv( rank_id, bat_level, type_string):
 
     if type_string == "distribution":
         output_value = Distribution_start_list[rank_id-1][bat_level-1]
-        print("rank_id  =" + str(rank_id) + " bat_level = " + str(bat_level) +  "distrubtion = " + str(output_value))
+        print("rank_id  =" + str(rank_id) + " bat_level = " + str(bat_level) +  " distrubtion = " + str(output_value))
         return output_value
 
     if type_string == "dailyActive":
-        output_value = Distribution_start_list[rank_id-1][bat_level-1]
-        print("rank_id  =" + str(rank_id) + " bat_level = " + str(bat_level) +  "dailyActive = " + str(output_value))
+        output_value = DailyActive_list[rank_id-1][bat_level-1]
+        print("rank_id  =" + str(rank_id) + " bat_level = " + str(bat_level) +  " dailyActive = " + str(output_value))
         return output_value
 
     if type_string == "matchPoolId":
-        output_value = Distribution_start_list[rank_id-1][bat_level-1]
-        print("rank_id  =" + str(rank_id) + " bat_level = " + str(bat_level) +  "matchPoolId = " + str(output_value))
+        output_value = MatchPoolId_list[rank_id-1][bat_level-1]
+        print("rank_id  =" + str(rank_id) + " bat_level = " + str(bat_level) +  " matchPoolId = " + str(output_value))
         return output_value
 
 
@@ -489,12 +489,9 @@ class FileReader:
 
         return list_outside
 
-
-    # 匹配算法矩阵函数
-    def ReadMatchPoolsMatrix(self, input_id):
+    def ReadMatchPoolIdMatrix(self):
         '''
-        :param input_id:  输入匹配池类的id
-        :return: 返回两个list，分别对应该 input_id 下对应的 matched_pool(list) 与 matched_pools_probability(list)
+        :return: 返回一个2维list， 存储匹配池id
         '''
         list_outside = []
         row_index_start = 88
@@ -512,6 +509,14 @@ class FileReader:
             print(unit)
 
         return list_outside
+
+    # 匹配算法矩阵函数 -> 应写为工具函数
+    def ReadMatchPoolsMatrix(self, input_id):
+        '''
+        :param input_id:  输入匹配池类的id
+        :return: 返回两个list，分别对应该 input_id 下对应的 matched_pool(list) 与 matched_pools_probability(list)
+        '''
+
 
 
     # 读取胜利点数/失败点数list
@@ -542,7 +547,7 @@ class FileReader:
 test1 = FileReader()
 Distribution_start_list = test1.ReadDistributionMatrix()
 DailyActive_list = test1.ReadDailyActiveMatrix()
-MatchPoolId_list = test1.ReadMatchPoolsMatrix()
+MatchPoolId_list = test1.ReadMatchPoolIdMatrix()
 
 a1 = Tool_GetValueByRankBatLv(1,8,"distribution")
 a2 = Tool_GetValueByRankBatLv(1,8,"matchPoolId")
