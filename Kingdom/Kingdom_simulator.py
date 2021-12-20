@@ -1,10 +1,15 @@
+import xlwings as xw
+
+wb = xw.Book("KingdomSimulator.xlsx")
+ws = wb.sheets['Sheet1']
+
 # How to simulate
 # Output: log.csv ; Chart
 
 # Tools
 
 ''' 常量 '''
-import mkl_random
+import random
 
 min_rank = 1
 max_rank = 30
@@ -298,26 +303,49 @@ class Player:
                     print("完成任务3：激活buff" )
 
 
-
-# MatchManager
-class MatchManager:
-    id = 0
-
+# 堆栈
+class Stack(object):
+    ''' 堆栈 '''
     def __init__(self):
-        #根据段位+杆等级进行匹配
-        #所有处于活跃状态的玩家
-        #进行逐个匹配并更新状态
-        #优化算法，每次不需要完全遍历
-        #每完成一对匹配，直接输出比赛结果，更新所有状态
-        #并打印所有信息
-        self.id = 0
+        self.items = []
 
-        '''
-        匹配规则
-        优先从同段位处匹配，匹不到则两端+1，再匹不到两端+2，... 直到+5 
-        
-        '''
+    def is_empty(self):
+        '''判断是否为空'''
+        return self.items == []
 
+    def push(self, item):
+        ''' 加入元素'''
+        self.items.append(item)
+
+    def pop(self):
+        ''' 弹出元素 '''
+        ''' 并返回元素'''
+        return self.items.pop()
+
+    def peek(self):
+        ''' 返回栈顶元素'''
+        return self.items[len(self.items)-1]
+
+    def size(self):
+        '''返回栈的大小'''
+        return len(self.items)
+
+
+# MatchPool
+class MatchPool:
+    '''
+    匹配算法的基本数据结构
+    '''
+    id = 0
+    bat_level = 1
+    rank_id = 1
+    matched_pools_list = [] # 存储对应rank_id 可匹配到的 MatchPool id
+    matched_pools_probability = [] # 对应id下匹配到的概率
+
+    #  三堆栈
+    stack1_ready_match = Stack()
+    stack2_matched = Stack()
+    stack3_unActive = Stack()
 
 class FileReader:
     '''
@@ -325,25 +353,67 @@ class FileReader:
     方法的包装
     直接调用
     '''
+    def __init__(self):
+        print("初始化 FileReader")
 
     # 读取胜率矩阵
+    def ReadWinRateMatrix(self):
+        '''
+        :return:  返回一个2维list ，存储胜率数据
+        '''
+        # list[index1][index2] index1为行号，index2为列号
+        list_outside = []
+
+
 
     # 读取人数分布矩阵
+    def ReadDistributionMatrix(self):
+        '''
+        :return: 返回一个2维list， 存储人数分布数据
+        '''
 
     # 读取日活矩阵
+    def ReadDailyActiveMatrix(self):
+        '''
+        :return: 返回一个2维list， 存储日活数据
+        '''
+
+    # 匹配算法矩阵函数
+    def ReadMatchPoolsMatrix(self, input_id):
+        '''
+        :param input_id:  输入匹配池类的id
+        :return: 返回两个list，分别对应该 input_id 下对应的 matched_pool(list) 与 matched_pools_probability(list)
+        '''
 
     # 读取胜利点数/失败点数list
+    def ReadWinOrFailPoints(self):
+        '''
+        :return: 返回2个list，win_points_list， fail_points_list
+        '''
 
     # 读取连胜数据
+    def ReadWinStreakPoints(self):
+        '''
+        :return: 返回1个list, win_streak_list
+        '''
 
     # 读取任务数据
-        # 任务条件
-        # 任务1奖励
-        # 任务2奖励
-        # 任务3奖励
+    # 任务条件
+    def ReadMissionCondition2(self):
+        '''
+        :return: 返回1个list, 任务2条件
+        '''
+
+    def ReadMissionCondition3(self):
+        '''
+        :return: 返回1个list, 任务3条件
+        '''
 
 
+''' 主循环 
+1.读取数据
+2.创建好匹配池，创建好玩家
+3.根据天数进行匹配
+4.返回指标
 
-
-''' 匹配逻辑 '''
-# 数据容器
+'''
