@@ -138,6 +138,71 @@ def Tool_GetRankbyTotalPoints(now_points,promotion_status,delegation_status):
                 print("本轮结束后段位id = " + str(index + 1))
                 return index+1
 
+''' 工具 - 根据传入的两方的Bat等级，得出胜负 '''
+
+# 数据容器 - 2维列表
+''' [Bat1][Bat2][Bat3][Bat4]...
+    [Bat2]
+    [Bat3]
+    [Bat4]
+    ...
+
+'''
+WinRateMatrix_list = []
+
+def Tool_GetResultByBatLevel(a_bat_level, b_bat_level):
+    '''
+    :param a_bat_level: 左方bat等级 - 行号
+    :param b_bat_level: 右方bat等级 - 列号
+    :return: bool True a胜利 False b胜利
+    '''
+
+    a_win_rate = WinRateMatrix_list[a_bat_level-1][b_bat_level-1]
+    print(" A vs B win_rate = " + str(a_win_rate))
+    random_value = random.random()
+    if random_value <= a_win_rate:
+        print(" a 获胜 ")
+        return True
+    else:
+        print("b 获胜")
+        return False
+
+
+''' 工具 - 根据传入的 Rank_id 与 Bat等级，返回人数分布 / 每日场数分布 / 编号等'''
+
+# 数据容器  - 2维列表
+''' [Bat1][Bat2][Bat3][Bat4]...
+    [Kight5]
+    [Kight4]
+    ...
+'''
+
+Distribution_start_list = [] #赛前开始的人数分布 2维list  参数 "distribution"
+DailyActive_list = [] #各类玩家的日活 2维list 参数 "dailyActive"
+MatchPoolId_list = [] #各类玩家的匹配池编号 2维list 参数 "matchPoolId"
+
+def Tool_GetValueByRankBatLv( rank_id, bat_level, type_string):
+    '''
+    :param rank_id:  段位id
+    :param bat_level:  变幅杆等级
+    :param type_string:  distribution/dailyActive/matchPoolId
+    :return: 返回相应的值
+    '''
+
+    if type_string == "distribution":
+        output_value = Distribution_start_list[rank_id-1][bat_level-1]
+        print("rank_id  =" + str(rank_id) + " bat_level = " + str(bat_level) +  "distrubtion = " + str(output_value))
+        return output_value
+
+    if type_string == "dailyActive":
+        output_value = Distribution_start_list[rank_id-1][bat_level-1]
+        print("rank_id  =" + str(rank_id) + " bat_level = " + str(bat_level) +  "dailyActive = " + str(output_value))
+        return output_value
+
+    if type_string == "matchPoolId":
+        output_value = Distribution_start_list[rank_id-1][bat_level-1]
+        print("rank_id  =" + str(rank_id) + " bat_level = " + str(bat_level) +  "matchPoolId = " + str(output_value))
+        return output_value
 
 
 # Player
@@ -363,7 +428,21 @@ class FileReader:
         '''
         # list[index1][index2] index1为行号，index2为列号
         list_outside = []
+        row_index_start = 7
+        row_index_end = 14
+        column_index_start = 4
+        column_index_end = 11
+        for row in range(row_index_start, row_index_end + 1):
+            list_inner = []
+            for column in range ( column_index_start, column_index_end + 1):
+                list_inner.append(ws.range((row,column)).value)
+            list_outside.append(list_inner)
 
+        print("完成胜率矩阵读取")
+        for unit in list_outside:
+            print(unit)
+
+        return list_outside
 
 
     # 读取人数分布矩阵
@@ -371,12 +450,45 @@ class FileReader:
         '''
         :return: 返回一个2维list， 存储人数分布数据
         '''
+        list_outside = []
+        row_index_start = 20
+        row_index_end = 49
+        column_index_start = 4
+        column_index_end = 11
+        for row in range(row_index_start, row_index_end + 1):
+            list_inner = []
+            for column in range ( column_index_start, column_index_end + 1):
+                list_inner.append(ws.range((row,column)).value)
+            list_outside.append(list_inner)
+
+        print("完成人数分布矩阵读取")
+        for unit in list_outside:
+            print(unit)
+
+        return list_outside
 
     # 读取日活矩阵
     def ReadDailyActiveMatrix(self):
         '''
         :return: 返回一个2维list， 存储日活数据
         '''
+        list_outside = []
+        row_index_start = 54
+        row_index_end = 83
+        column_index_start = 4
+        column_index_end = 11
+        for row in range(row_index_start, row_index_end + 1):
+            list_inner = []
+            for column in range ( column_index_start, column_index_end + 1):
+                list_inner.append(ws.range((row,column)).value)
+            list_outside.append(list_inner)
+
+        print("完成日活矩阵读取")
+        for unit in list_outside:
+            print(unit)
+
+        return list_outside
+
 
     # 匹配算法矩阵函数
     def ReadMatchPoolsMatrix(self, input_id):
@@ -384,6 +496,23 @@ class FileReader:
         :param input_id:  输入匹配池类的id
         :return: 返回两个list，分别对应该 input_id 下对应的 matched_pool(list) 与 matched_pools_probability(list)
         '''
+        list_outside = []
+        row_index_start = 88
+        row_index_end = 117
+        column_index_start = 4
+        column_index_end = 11
+        for row in range(row_index_start, row_index_end + 1):
+            list_inner = []
+            for column in range ( column_index_start, column_index_end + 1):
+                list_inner.append(ws.range((row,column)).value)
+            list_outside.append(list_inner)
+
+        print("完成匹配池ID矩阵读取")
+        for unit in list_outside:
+            print(unit)
+
+        return list_outside
+
 
     # 读取胜利点数/失败点数list
     def ReadWinOrFailPoints(self):
@@ -408,6 +537,16 @@ class FileReader:
         '''
         :return: 返回1个list, 任务3条件
         '''
+
+
+test1 = FileReader()
+Distribution_start_list = test1.ReadDistributionMatrix()
+DailyActive_list = test1.ReadDailyActiveMatrix()
+MatchPoolId_list = test1.ReadMatchPoolsMatrix()
+
+a1 = Tool_GetValueByRankBatLv(1,8,"distribution")
+a2 = Tool_GetValueByRankBatLv(1,8,"matchPoolId")
+a3 = Tool_GetValueByRankBatLv(1,8,"dailyActive")
 
 
 ''' 主循环 
