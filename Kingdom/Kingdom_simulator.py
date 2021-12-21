@@ -11,6 +11,7 @@ ws = wb.sheets['Sheet1']
 ''' 常量 '''
 import random
 
+days = 30
 min_rank = 1
 max_rank = 30
 buff_value = 0.20
@@ -51,7 +52,89 @@ MatchPoolId_list = [] #各类玩家的匹配池编号 2维list 参数 "matchPool
 Mission2Condition = []
 Mission3Condition = []
 
+matchPools = []   # 单元为matchPool的list
 ##################################
+
+''' 工具 - 传入对象到特定的id的matchPoolUnit的matched_stack中  用于晋级/掉级'''
+def Tool_PushItemIntoStackByMatchPoolId(matchPoolId, player):
+    '''
+    依赖数据容器 matchPools
+    :param matchPoolId: 对应的matchPoolId
+    :param player: 传入的player对象
+    :return: None
+    '''
+    matchPools[matchPoolId-1].stack2_matched.pop(player)
+
+''' 工具 - 返回Stack中player状态为ready_match 的人数'''
+def Tool_GetPlayerCntfromStack(matchPoolId):
+    num = 0
+    list1 = matchPools[int(matchPoolId-1)].stack1_ready_match.items
+    for x in list1:
+        if x.player_status == "ready_match":
+            num = num +1
+    return num
+
+''' 工具 - 匹配函数 - 根据传入的matchUnit对象返回匹配到的matchUnitId'''
+def Tool_GetMatchResult(matchPoolId):
+    '''
+    :param matchPoolId: 需要匹配的matchPoolId
+    :return: output_id : int 匹配到的matchPoolId
+    '''
+    # 获取能匹配到的id列表
+    # 获取对应的概率列表
+    # 筛选掉人数不够的匹配池
+
+    matched_pools_list = matchPools[matchPoolId-1].matched_pools_list
+    matched_pools_probability = matchPools[matchPoolId-1].matched_pools_probability
+
+    matched_pools_list_new = []
+    matched_pools_probability_new = []
+    index = 0
+    for id in matched_pools_list:
+        len_list = Tool_GetPlayerCntfromStack(id)
+        if len_list >= 1:
+            matched_pools_list_new.append(id)
+            matched_pools_probability_new.append(matched_pools_probability[index])
+        index = index + 1
+
+    if len(matched_pools_list_new)<1:
+        print("匹配不到任何玩家")
+        return None
+    else:
+        # 随机出结果并输出
+        return Tool_GetRandomItemByWeight(matched_pools_list_new, matched_pools_probability_new)
+
+''' 工具 - 按照传入的id_list, weight_list 随机选择1个id输出 '''
+def Tool_GetRandomItemByWeight(id_list, weight_list):
+    '''
+    :param id_list: list 传入的id列表，从中按照权重选择一个值
+    :param weight_list: 权重列表
+    :return: id :int 返回匹配池id
+    '''
+
+    if (len(id_list)) > 1:
+        output_value = random.choices(id_list, weights=weight_list, k=1)
+        print("匹配到 " + str(output_value) )
+        return output_value[0]
+    elif len((id_list)) == 1:
+        output_value = id_list[0]
+        print("匹配到 " + str(output_value) )
+        return output_value
+    else:
+        print("匹配不到任何")
+        return None
+
+''' 工具 - 返回所有DailyActive中的最大值 '''
+def Tool_GetMaxValueDailyActive():
+    max_value = 0
+    for x in DailyActive_list:
+        for y in x:
+            if y> max_value:
+                max_value = y
+    print(" 最大帧数 = " + str(max_value))
+    return max_value
+
+
 
 ''' 工具 - 根据段位获取胜负的点数'''
 def Tool_GetPointsDiffbyRank( rank_id,result ):
@@ -65,6 +148,7 @@ def Tool_GetPointsDiffbyRank( rank_id,result ):
         print( "rank: " + str(rank_id) + " points + " + str(value_output) )
         return value_output
     else:
+
         value_output = -fail_points_list[rank_id-1]
         print( "rank: " + str(rank_id) + " change " + str(value_output) )
         return value_output
@@ -153,6 +237,17 @@ def Tool_GetRankbyTotalPoints(now_points,promotion_status,delegation_status):
                 print("本轮结束后段位id = " + str(index + 1))
                 return index+1
 
+''' 工具 - 根据传入的当前总点数，当前段位id，得出当前段位点数'''
+def Tool_GetNowRankPoints( sum_points, now_rank):
+    '''
+    :param sum_points: int 当前总点数
+    :param now_rank: int 当前段位id
+    :return: now_rank_points: 当前段位点数
+    '''
+    output_value = sum_points - rank_points_sum_list[int(now_rank)-1]
+    print("当前段位点数 = " + str(output_value))
+    return output_value
+
 ''' 工具 - 根据传入的两方的Bat等级，得出胜负 '''
 def Tool_GetResultByBatLevel(a_bat_level, b_bat_level):
     '''
@@ -183,7 +278,7 @@ def Tool_GetValueByRankBatLv( rank_id, bat_level, type_string):
 
     if type_string == "distribution":
         output_value = Distribution_start_list[rank_id-1][bat_level-1]
-        print("rank_id  =" + str(rank_id) + " bat_level = " + str(bat_level) +  " distrubtion = " + str(output_value))
+        print("rank_id  =" + str(rank_id) + " bat_level = " + str(bat_level) +  " distriubtion = " + str(output_value))
         return output_value
 
     if type_string == "dailyActive":
@@ -260,13 +355,12 @@ def Tool_GetMatchPoolProbabilitybyId(MatchPoolId):
     print("概率 = " + str(Probability_list))
 
     return MatchPool_list, Probability_list
-    # 此函数需要测试
-
 
 # Player
 class Player:
     #Attributes
 
+    player_status = "ready_match"   # ready_match / matched / unactive
     #初始信息
     id = 0
     origin_rank = 0
@@ -330,6 +424,7 @@ class Player:
         ''' 点数增删 '''
         self.points_diff = Tool_GetPointsDiffbyRank(self.now_rank, result)
 
+
         # 胜利
         if result == True:
 
@@ -357,8 +452,14 @@ class Player:
 
         # 失败
         else:
+
+            # 如果段位id = 1 且 掉分后为负值
+            # 则不掉段，最好包装在一个函数内
+
+
             # 连胜清零
             self.now_win_streak = 0
+            print("输掉比赛，连胜清零")
 
             # 判断保护盾
             if self.now_shield > 0:
@@ -383,10 +484,16 @@ class Player:
         ''' 刷新点数，刷新段位 '''
         # 总点数变化
         self.now_points = self.now_points + self.points_diff
+
+        print("最后总点数 = " + str(self.now_points))
+
         # 根据总点数刷新段位与now_rank_points
         now_rank = Tool_GetRankbyTotalPoints(self.now_points,self.next_round_promotion,self.next_round_relegation)
         self.now_rank = now_rank
-
+        print("self.now_rank = " +str(self.now_rank))
+        # 刷新now_rank_points
+        self.now_rank_points = Tool_GetNowRankPoints(self.now_points,self.now_rank)
+        print("本局后段位为 " + str(self.now_rank) + " 当前点数为 "+ str(self.now_rank_points))
 
         ''' 时间控制更新 '''
         # 天数变化后当日比赛场数更新，刷新所有任务状态，buff状态
@@ -433,6 +540,30 @@ class Player:
         else:
             self.buff_active = False
 
+        # 刷新状态
+
+        # 返回结算后rank_id
+
+    def GameMatch(self, day_id, matchPoolid):
+        '''
+        :param day_id: 传入的day_id
+        :param matchPoolid: 匹配到的matchPoolid
+        :return: None
+        返回胜负，更新self状态，通过matchPools 更新对应玩家状态
+        '''
+        bat_level_enemy = matchPools[matchPoolid - 1].bat_level
+        self_win = Tool_GetResultByBatLevel(self.bat_level, bat_level_enemy)
+        self.GameSettlement(self_win,day_id)
+
+        enemy_win = False
+        if self_win:
+            enemy_win = False
+        else:
+            enemy_win = True
+
+        matchPools[matchPoolid -1].stack1_ready_match.peek().GameSettlement(enemy_win, day_id)
+
+
 
 # 堆栈
 class Stack(object):
@@ -473,10 +604,8 @@ class MatchPool:
     matched_pools_list = [] # 存储对应rank_id 可匹配到的 MatchPool id
     matched_pools_probability = [] # 对应id下匹配到的概率
 
-    #  三堆栈
+    #堆栈
     stack1_ready_match = Stack()
-    stack2_matched = Stack()
-    stack3_unActive = Stack()
 
 class FileReader:
     '''
@@ -690,6 +819,7 @@ Mission2Condition = fileReader1.ReadMission2Condition()
 Mission3Condition = fileReader1.ReadMission3Condition()
 
 
+
 # 创建匹配池
 matchPools = []
 rank_id_cache = 0
@@ -701,6 +831,7 @@ for x in MatchPoolId_list:
     for y in x:
         bat_level_cache = bat_level_cache + 1
         matchPoolUnit = MatchPool()
+        matchPoolUnit.stack1_ready_match = Stack()
         matchPoolUnit.bat_level = bat_level_cache
         matchPoolUnit.rank_id = rank_id_cache
         matchPoolUnit.id = int(y)
@@ -709,16 +840,46 @@ for x in MatchPoolId_list:
         matchPoolUnit.matched_pools_list, matchPoolUnit.matched_pools_probability = Tool_GetMatchPoolProbabilitybyId(matchPoolUnit.id)
 
         # 创建玩家
-        players_num = Tool_GetValueByRankBatLv(matchPoolUnit.rank_id, matchPoolUnit.bat_level, "distrubtion")
+        players_num = Tool_GetValueByRankBatLv(matchPoolUnit.rank_id, matchPoolUnit.bat_level, "distribution")
+        print("playes_num =" + str(players_num))
         players_dailyActive = Tool_GetValueByRankBatLv(matchPoolUnit.rank_id, matchPoolUnit.bat_level, "dailyActive")
-        for y in range(players_num):
-            playerUnit = Player(player_id, matchPoolUnit.rank_id, players_dailyActive, playerUnit.bat_level,True)
-            matchPoolUnit.stack1_ready_match.push(playerUnit)
+        for y in range(int(players_num)):
+            playerUnit = Player(player_id, matchPoolUnit.rank_id, players_dailyActive, matchPoolUnit.bat_level,True)
             playerUnit.mission2_complete_condition = Tool_GetConditionbyRank2(matchPoolUnit.rank_id)
             playerUnit.mission3_complete_condition = Tool_GetConditionbyRank3(matchPoolUnit.rank_id)
-
             player_id = player_id + 1
+            matchPoolUnit.stack1_ready_match.push(playerUnit)
+
+        matchPools.append(matchPoolUnit)
 
         print("匹配池创建完成 " + " rank_id = " + str(matchPoolUnit.rank_id)  + " bat_level = " + str(matchPoolUnit.bat_level))
 
+
+print("matchPools 长度 = " + str(len(matchPools)))
+for unit in matchPools:
+    print(" ****** 匹配池id = " + str(unit.id)+ " ******")
+    print( " rank_id = " + str(unit.rank_id) + " bat_level = " + str(unit.bat_level))
+    print("玩家数量 = " + str(len(unit.stack1_ready_match.items)))
+
+
+
+max_frame = Tool_GetMaxValueDailyActive()
 # 时间控制 - 开始Play
+for day in range(days):
+    print(" --------------------------")
+    print("第" + str(day) +" 天")
+    # 每天遍历所有玩家，执行匹配逻辑，并返回结果
+    for frame in range(int(max_frame)):
+        for matchUnit in matchPools:
+            # 先把可匹配list中玩家筛出
+            print("开始匹配 id = " + str(matchUnit.id))
+            # 开始匹配
+            for player in matchUnit.stack1_ready_match.items:
+                print(type(player))
+                if player.player_status == "ready_match":
+                    print("玩家" + str(player.id) + "开始匹配")
+                    resultMatchPoolId = Tool_GetMatchResult(matchUnit.id)
+                    player.GameSettlement(day,resultMatchPoolId)
+                    # 匹配成功 - 更新所有关联matchUnit
+
+            
