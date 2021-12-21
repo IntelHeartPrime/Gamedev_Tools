@@ -219,13 +219,48 @@ def Tool_GetRankIdBatLvByMatchPoolId( MatchPoolId):
 
 
 ''' 工具 - 根据输入的MatchPoolId，返回其可匹配到MatchPool以及对应概率'''
-def ToolGetMatchPoolProbabilitybyId(MatchPoolId):
+def Tool_GetMatchPoolProbabilitybyId(MatchPoolId):
     '''
     :param MatchPoolId: 匹配池id
     :return: MatchPoolId_list : list 能匹配到的MatchPool 的id ；  Probability_list : list
     '''
     rank_id, bat_level = Tool_GetRankIdBatLvByMatchPoolId(MatchPoolId)
-    rank_id_left =
+
+    MatchPool_list = []
+    Probability_list = []
+
+    rank_id_left = rank_id - 1
+    rank_id_right = rank_id + 1
+    bat_level_left = bat_level - 1
+    bat_level_right = bat_level + 1
+    if rank_id_left < 1:
+        rank_id_left = 1
+    if rank_id_right>30:
+        rank_id_right = 30
+    if bat_level_left < 1:
+        bat_level_left = 1
+    if bat_level_right > 8:
+        bat_level_right = 8
+    for lv in range(bat_level_left,bat_level_right+1):
+        for rank in range(rank_id_left, rank_id_right):
+            pool_id = Tool_GetValueByRankBatLv(rank,lv,"matchPoolId")
+            MatchPool_list.append(pool_id)
+            #概率计算
+            num1 = abs(lv - bat_level)
+            num2 = abs(rank - rank_id)
+            num_para = num1+num2
+            if num_para == 0:
+                Probability_list.append(0.4)
+            if num_para == 1:
+                Probability_list.append(0.1)
+            if num_para == 2:
+                Probability_list.append(0.05)
+    print("MatchPoolId = " + str(MatchPoolId) + " rank_id = " + str(rank_id) + " bat_level = " + str(bat_level) + " 的玩家能匹配到：")
+    print(MatchPool_list)
+    print("概率 = " + str(Probability_list))
+
+    return MatchPool_list, Probability_list
+    # 此函数需要测试
 
 
 # Player
@@ -655,8 +690,11 @@ Mission2Condition = fileReader1.ReadMission2Condition()
 Mission3Condition = fileReader1.ReadMission3Condition()
 
 
+# 创建匹配池
 matchPools = []
 rank_id_cache = 0
+player_id = 1
+
 for x in MatchPoolId_list:
     rank_id_cache = rank_id_cache + 1
     bat_level_cache = 0
@@ -668,4 +706,19 @@ for x in MatchPoolId_list:
         matchPoolUnit.id = int(y)
 
         # 可匹配到MatchPoolId
+        matchPoolUnit.matched_pools_list, matchPoolUnit.matched_pools_probability = Tool_GetMatchPoolProbabilitybyId(matchPoolUnit.id)
 
+        # 创建玩家
+        players_num = Tool_GetValueByRankBatLv(matchPoolUnit.rank_id, matchPoolUnit.bat_level, "distrubtion")
+        players_dailyActive = Tool_GetValueByRankBatLv(matchPoolUnit.rank_id, matchPoolUnit.bat_level, "dailyActive")
+        for y in range(players_num):
+            playerUnit = Player(player_id, matchPoolUnit.rank_id, players_dailyActive, playerUnit.bat_level,True)
+            matchPoolUnit.stack1_ready_match.push(playerUnit)
+            playerUnit.mission2_complete_condition = Tool_GetConditionbyRank2(matchPoolUnit.rank_id)
+            playerUnit.mission3_complete_condition = Tool_GetConditionbyRank3(matchPoolUnit.rank_id)
+
+            player_id = player_id + 1
+
+        print("匹配池创建完成 " + " rank_id = " + str(matchPoolUnit.rank_id)  + " bat_level = " + str(matchPoolUnit.bat_level))
+
+# 时间控制 - 开始Play
