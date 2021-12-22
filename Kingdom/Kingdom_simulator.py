@@ -538,6 +538,7 @@ class Player:
         # 胜利
         if result == True:
             # 判断是否是晋级赛
+            self.next_round_relegation = False
             if self.next_round_promotion:
                 #是
                 self.next_round_promotion = False
@@ -555,12 +556,12 @@ class Player:
                 self.points_diff = int(self.points_diff + streak_extra_points)
 
                 # 判断是否会再次触发晋级赛
-                if self.now_rank_points + self.points_diff >= 100 :
+                if self.points_diff >= 100 :
                     print("会【再】一次触发晋级赛")
                     print("now_rank_points = "+ str(self.now_rank_points)+" points_diff = "+str(self.points_diff)+ " 胜利后点数会超100")
                     self.next_round_promotion = True
                     self.next_round_relegation = False
-                    self.points_diff = int(100 - self.now_rank_points)
+                    self.points_diff = 100
                     print("点数被强平为 points_diff = " + str(self.points_diff))
 
             else:
@@ -589,6 +590,7 @@ class Player:
 
         # 失败
         else:
+            self.next_round_promotion = False
             # 是否为保级赛
             if self.next_round_relegation:
                 # 是

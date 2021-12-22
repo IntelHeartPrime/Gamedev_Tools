@@ -546,12 +546,15 @@ class Player:
         print("当前护盾数 = " + str(self.now_shield) + " 当前双倍卡数 = " + str(self.double_points_card_cnt))
 
         print("当其buff状态 = " + str(self.buff_active))
+        print(" 本局开始之前 " + "晋级赛？ " + str(self.next_round_promotion) + " 保级赛？ " + str(self.next_round_relegation))
         print("")
 
         self.points_diff = Tool_GetPointsDiffbyRank(self.now_rank, result)
 
         # 胜利
         if result == True:
+            self.next_round_relegation = False
+
             # 判断是否是晋级赛
             if self.next_round_promotion:
                 # 是
@@ -573,13 +576,13 @@ class Player:
                     self.points_diff = int(self.points_diff + streak_extra_points)
 
                 # 判断是否会再次触发晋级赛
-                if self.now_rank_points + self.points_diff >= 100:
+                if  self.points_diff >= 100:
                     print("会【再】一次触发晋级赛")
                     print("now_rank_points = " + str(self.now_rank_points) + " points_diff = " + str(
                         self.points_diff) + " 胜利后点数会超100")
                     self.next_round_promotion = True
                     self.next_round_relegation = False
-                    self.points_diff = int(100 - self.now_rank_points)
+                    self.points_diff = 100
                     print("点数被强平为 points_diff = " + str(self.points_diff))
 
             else:
@@ -612,6 +615,7 @@ class Player:
 
         # 失败
         else:
+            self.next_round_promotion = False
             # 是否为保级赛
             if self.next_round_relegation:
                 # 是
@@ -662,8 +666,9 @@ class Player:
                         self.points_diff = 0
                         self.now_shield = int(self.now_shield - 1)
                         print(" 触发保护盾 - 点数归为 : " + str(self.points_diff))
-                        self.next_round_relegation = True
-                        self.next_round_promotion = False
+                        if self.now_rank_points == 100:
+                            # 特殊情况，在晋级赛时输掉比赛，有保护卡，则恢复晋级赛状态
+                            self.next_round_promotion = True
 
                     # 判断buff
                     if self.buff_active:
@@ -1090,12 +1095,11 @@ for unit in matchPools:
 
 # 创建一个玩家
 rank_1 = 1
-daily_active_1 = 8
+daily_active_1 = 7
 bat_level_1 = 5
 buy_pass = 1
 days = 30
 
-player1 = Player(1, rank_1, daily_active_1, bat_level_1, buy_pass)
 
 
 def Tool_GetMatchResultSingle(player):
@@ -1123,25 +1127,129 @@ def Tool_GetMatchResultSingle(player):
         print(" 结果输了 ")
     return a_win
 
+days_points_con = []
+for index in range(100):
+    # 开启模式
+    day_points = []
+    player1 = Player(1, rank_1, daily_active_1, bat_level_1, buy_pass)
 
-day_points = []
-# 时间控制 - 开始Play
-for day in range(days):
-    print(" --------------------------")
-    print(" 【【【【【【【【 第" + str(day) + " 天 】】】】】】】】")
+    # 时间控制 - 开始Play
+    for day in range(days):
+        print(" --------------------------")
+        print(" 【【【【【【【【 第" + str(day) + " 天 】】】】】】】】")
 
-    # 每天遍历所有玩家，执行匹配逻辑，并返回结果
-    for frame in range(int(daily_active_1)):
-        print(" ")
-        print(" +++++++++++++++++++++ 第" + str(frame) + " 帧 +++++++++++++++++++++++++++++++ ")
-        a_win = Tool_GetMatchResultSingle(player1)
-        player1.GameSettlement(a_win, day, frame)
-    day_points.append(player1.now_points)
+        # 每天遍历所有玩家，执行匹配逻辑，并返回结果
+        for frame in range(int(daily_active_1)):
+            print(" ")
+            print(" +++++++++++++++++++++ 第" + str(frame) + " 帧 +++++++++++++++++++++++++++++++ ")
+            a_win = Tool_GetMatchResultSingle(player1)
+            player1.GameSettlement(a_win, day, frame)
+        day_points.append(player1.now_points)
+    days_points_con.append(day_points)
+
+days_points_sum = []
+for x in range(30):
+    days_points_sum.append(0)
+for x in days_points_con:
+    for h in range(len(x)):
+        days_points_sum[h] =  days_points_sum[h] + x[h]
+
+days_points_ave = []
+
+for x in days_points_sum:
+    ave= x/100
+    days_points_ave.append(ave)
+
+
+
+# 关闭模式
+days_points_lock_con = []
+for index in range(100):
+
+    day_points_lock = []
+    player2 = Player(2, rank_1, daily_active_1, bat_level_1, buy_pass= True)
+    player2.function_lock = False
+    days2= 30
+
+    # 时间控制 - 开始Play
+    for day in range(days2):
+        print(" --------------------------")
+        print(" 【【【【【【【【 第" + str(day) + " 天 】】】】】】】】")
+
+        # 每天遍历所有玩家，执行匹配逻辑，并返回结果
+        for frame in range(int(daily_active_1)):
+            print(" ")
+            print(" +++++++++++++++++++++ 第" + str(frame) + " 帧 +++++++++++++++++++++++++++++++ ")
+            a_win = Tool_GetMatchResultSingle(player2)
+            player2.GameSettlement(a_win, day, frame)
+
+        day_points_lock.append(player2.now_points)
+    days_points_lock_con.append(day_points_lock)
+
+days_points_lock_sum = []
+for x in range(30):
+    days_points_lock_sum.append(0)
+for x in days_points_lock_con:
+    for h in range(len(x)):
+        days_points_lock_sum[h] =  days_points_lock_sum[h] + x[h]
+
+days_points_lock_ave = []
+for x in days_points_lock_sum:
+    ave= x/100
+    days_points_lock_ave.append(ave)
+
+
+# 更活跃模式
+days_points_active_con = []
+for index in range(100):
+    day_points_more_active = []
+    active_2 = daily_active_1 + 2
+    # active_2 = daily_active_1
+    player3 = Player(3, rank_1, active_2, bat_level= bat_level_1, buy_pass=True )
+    days3= 30
+
+    # 时间控制 - 开始Play
+    for day in range(days3):
+        print(" --------------------------")
+        print(" 【【【【【【【【 第" + str(day) + " 天 】】】】】】】】")
+
+        # 每天遍历所有玩家，执行匹配逻辑，并返回结果
+        for frame in range(int(active_2)):
+            print(" ")
+            print(" +++++++++++++++++++++ 第" + str(frame) + " 帧 +++++++++++++++++++++++++++++++ ")
+            a_win = Tool_GetMatchResultSingle(player3)
+            player3.GameSettlement(a_win, day, frame)
+
+        day_points_more_active.append(player3.now_points)
+    days_points_active_con.append(day_points_more_active)
+
+
+days_points_active_sum = []
+for x in range(30):
+    days_points_active_sum.append(0)
+for x in days_points_active_con:
+    for h in range(len(x)):
+        days_points_active_sum[h] =  days_points_active_sum[h] + x[h]
+
+days_points_active_ave = []
+
+for x in days_points_active_sum:
+    ave= x/100
+    days_points_active_ave.append(ave)
+
 
 import matplotlib.pyplot as plt
 import numpy as np
 
-ypoints = np.array(day_points)
+ypoints = np.array(days_points_ave)
+ypoints2 = np.array(days_points_lock_ave)
+ypoints3 = np.array(days_points_active_ave)
 
-plt.plot(ypoints, c='#8FBC8F')
+
+
+plt.plot(ypoints, color = "g")
+plt.plot(ypoints2, color = "r")
+plt.plot(ypoints3, color = "b")
+
+
 plt.show()
