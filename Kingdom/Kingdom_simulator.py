@@ -672,7 +672,7 @@ class Player:
             self.daily_games_cnt_dic[str(day_id)] = self.daily_games_cnt_dic[str(day_id)] + 1
         else:
             self.daily_games_cnt_dic.update({str(day_id): 1})
-            print("新的一天 -" + str(day_id))
+            print("新的一天 -" + str(day_id) + "刷新重置所有任务状态")
             self.mission2_status = False
             self.mission3_status = False
             self.buff_active = False
@@ -1123,9 +1123,6 @@ for day in range(days):
                 player.relegation_victory = False
                 player.moved = False
 
-
-
-        # 遍历匹配池，使得所有对象的状态更新
             # 写晋升大段后赠送排位保护卡
             # 写根据origin_rank进行report daily_average_points 的操作，可考虑使用一个class进行包装
             # ReportPools类
