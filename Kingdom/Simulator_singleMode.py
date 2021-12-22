@@ -11,7 +11,6 @@ ws = wb.sheets['Sheet1']
 ''' 常量 '''
 import random
 
-days = 2
 min_rank = 1
 max_rank = 30
 buff_value = 0.20
@@ -57,7 +56,9 @@ matchPools = []  # 单元为matchPool的list
 
 
 ''' 工具 - 根据晋级 or 掉级 将相应的player 移动到对应的 matchPools中'''
-def Tool_MovePlayerToMatchPools( player, promotionOrRelegation):
+
+
+def Tool_MovePlayerToMatchPools(player, promotionOrRelegation):
     '''
     :param player: 传入的player对象
     :param promotionOrRelegation: True，代表晋级； False，代表掉段
@@ -71,19 +72,22 @@ def Tool_MovePlayerToMatchPools( player, promotionOrRelegation):
     if promotionOrRelegation:
         if rank_id > 30:
             rank_id = 30
-        matchpool_id = MatchPoolId_list[rank_id -1][bat_level-1]
-        matchPools[int(matchpool_id)-1].stack1_ready_match.items.append(player)
+        matchpool_id = MatchPoolId_list[rank_id - 1][bat_level - 1]
+        matchPools[int(matchpool_id) - 1].stack1_ready_match.items.append(player)
 
-        print("【晋级移动】玩家 player_id = " + str(player.id) + "   origin_rank = " + str(player.origin_rank) + " now_rank = " + str(player.now_rank) + " bat_level = " + str(player.bat_level) + " 的玩家移动到 matchPoolId为" + str(matchpool_id) + " 的匹配池")
+        print("【晋级移动】玩家 player_id = " + str(player.id) + "   origin_rank = " + str(
+            player.origin_rank) + " now_rank = " + str(player.now_rank) + " bat_level = " + str(
+            player.bat_level) + " 的玩家移动到 matchPoolId为" + str(matchpool_id) + " 的匹配池")
         return None
     else:
         if rank_id < 1:
             rank_id = 1
-        matchpool_id = MatchPoolId_list[rank_id -1][bat_level-1]
-        matchPools[int(matchpool_id)-1].stack1_ready_match.items.append(player)
-        print("【降级移动】玩家 player_id = " + str(player.id) + "origin_rank = " + str(player.origin_rank) + " now_rank = " + str(player.now_rank) +  " bat_level = " + str(player.bat_level) + " 的玩家移动到 matchPoolId为" + str(matchpool_id) + " 的匹配池")
+        matchpool_id = MatchPoolId_list[rank_id - 1][bat_level - 1]
+        matchPools[int(matchpool_id) - 1].stack1_ready_match.items.append(player)
+        print("【降级移动】玩家 player_id = " + str(player.id) + "origin_rank = " + str(
+            player.origin_rank) + " now_rank = " + str(player.now_rank) + " bat_level = " + str(
+            player.bat_level) + " 的玩家移动到 matchPoolId为" + str(matchpool_id) + " 的匹配池")
         return None
-
 
 
 ''' 工具 - 传入对象到特定的id的matchPoolUnit的matched_stack中  用于晋级/掉级'''
@@ -103,14 +107,15 @@ def Tool_PushItemIntoStackByMatchPoolId(matchPoolId, player):
 
 
 def Tool_GetPlayerCntfromStack(matchPoolId):
-    num = matchPools[int(matchPoolId-1)].stack1_ready_match.getSumReadyMatchPlayer()
+    num = matchPools[int(matchPoolId - 1)].stack1_ready_match.getSumReadyMatchPlayer()
     print("匹配池" + str(matchPoolId) + " 中的活跃玩家有 " + str(num) + "个")
     return num
+
 
 ''' 工具 - 匹配函数 - 根据传入的matchUnit对象返回匹配到的matchUnitId'''
 
 
-def Tool_GetMatchResult(player,matchPoolId):
+def Tool_GetMatchResult(player, matchPoolId):
     '''
     :param player: 传入的player对象
     :param matchPoolId: 需要匹配的matchPoolId
@@ -130,7 +135,7 @@ def Tool_GetMatchResult(player,matchPoolId):
         len_list = Tool_GetPlayerCntfromStack(id)
         if len_list >= 1:
             # 当传入的playerid与对应的matchPool下的 batLv & rank_id 对应时，且数量=1 ，则排除此list
-            rank_id_c,bat_lv_c = Tool_GetRankIdBatLvByMatchPoolId(id)
+            rank_id_c, bat_lv_c = Tool_GetRankIdBatLvByMatchPoolId(id)
             if (player.now_rank == rank_id_c and player.bat_level == bat_lv_c and len_list == 1) == False:
                 matched_pools_list_new.append(id)
                 matched_pools_probability_new.append(matched_pools_probability[index])
@@ -276,7 +281,8 @@ def Tool_GetRankbyTotalPoints(now_points, promotion_status, delegation_status):
                 rankId_output = index
                 print("当前处于 晋级赛 状态，本轮结束后段位id = " + str(rankId_output))
                 if rankId_output == 0:
-                    print(" 危 " + " 参数now_points = " + str(now_points) + " 参数 promotion_status= " + str(promotion_status) + " 参数 delegation_status = " + str(delegation_status))
+                    print(" 危 " + " 参数now_points = " + str(now_points) + " 参数 promotion_status= " + str(
+                        promotion_status) + " 参数 delegation_status = " + str(delegation_status))
                 return rankId_output
             # 保级赛，则为上一级
             if delegation_status:
@@ -299,7 +305,6 @@ def Tool_GetRankbyTotalPoints(now_points, promotion_status, delegation_status):
             if now_points > rank_points_sum_list[index] and now_points < rank_points_sum_list[index + 1]:
                 print("本轮结束后段位id = " + str(index + 1))
                 return index + 1
-
 
 
 ''' 工具 - 根据传入的当前总点数，当前段位id，得出当前段位点数'''
@@ -326,7 +331,7 @@ def Tool_GetResultByBatLevel(a_bat_level, b_bat_level):
     :return: bool True a胜利 False b胜利
     '''
 
-    a_win_rate = WinRateMatrix_list[a_bat_level - 1][b_bat_level - 1]
+    a_win_rate = WinRateMatrix_list[int(a_bat_level) - 1][int(b_bat_level) - 1]
     print(" A vs B win_rate = " + str(a_win_rate))
     random_value = random.random()
     if random_value <= a_win_rate:
@@ -445,6 +450,9 @@ def Tool_GetMatchPoolProbabilitybyId(MatchPoolId):
 class Player:
     # Attributes
 
+    # 特殊功能开关
+    function_lock = True
+
     player_status = "ready_match"  # ready_match / matched / unactive
     # 初始信息
     id = 0
@@ -503,10 +511,9 @@ class Player:
         self.daily_active = daily_active
         self.buy_pass = buy_pass
 
-        self.now_points = rank_points_sum_list[int(origin_rank)-1]+20
+        self.now_points = rank_points_sum_list[int(origin_rank) - 1] + 20
         self.now_rank_points = 20
         self.daily_games_cnt_dic = {}
-
 
     def GameSettlement(self, result, day_id, frame_id):
         '''
@@ -520,7 +527,7 @@ class Player:
         ''' 时间控制更新 '''
         # 天数变化后当日比赛场数更新，刷新所有任务状态，buff状态
         if str(day_id) in self.daily_games_cnt_dic.keys():
-            print("日 "+str(day_id) + " 活跃+ 1")
+            print("日 " + str(day_id) + " 活跃+ 1")
             self.daily_games_cnt_dic[str(day_id)] = self.daily_games_cnt_dic[str(day_id)] + 1
         else:
             self.daily_games_cnt_dic.update({str(day_id): 1})
@@ -532,56 +539,72 @@ class Player:
         ''' 点数增删 '''
 
         # 打印战斗前点数
-        print("第[" + str(day_id)+ "】天战斗" + " 第 ["+ str(frame_id)+ "]帧 id = " + str(self.id) + " 玩家原始段位 = " +str(self.origin_rank) +  " 玩家当前段位 = " + str(self.now_rank) + " 玩家战斗前总点数 = " + str(self.now_points) + " 玩家当前段位点数 = " + str(self.now_rank_points))
+        print("")
+        print("第[" + str(day_id) + "】天战斗" + " 第 [" + str(frame_id) + "]帧 id = " + str(self.id) + " 玩家原始段位 = " + str(
+            self.origin_rank) + " 玩家当前段位 = " + str(self.now_rank) + " 玩家战斗前总点数 = " + str(
+            self.now_points) + " 玩家当前段位点数 = " + str(self.now_rank_points))
+        print("当前护盾数 = " + str(self.now_shield) + " 当前双倍卡数 = " + str(self.double_points_card_cnt))
+
+        print("当其buff状态 = " + str(self.buff_active))
+        print("")
+
         self.points_diff = Tool_GetPointsDiffbyRank(self.now_rank, result)
 
         # 胜利
         if result == True:
             # 判断是否是晋级赛
             if self.next_round_promotion:
-                #是
+                # 是
                 self.next_round_promotion = False
-                # 判断双倍卡
-                if self.double_points_card_cnt > 0:
-                    # 根据当前段位拿到胜利点数与失败点数
-                    self.points_diff = int(self.points_diff * 2)
-                    print(" 触发双倍卡 - 点数翻倍为: " + str(self.points_diff))
-                    self.double_points_card_cnt = int(self.double_points_card_cnt - 1)
 
-                # 判断连胜
-                self.now_win_streak = int(self.now_win_streak + 1)
-                # 根据连胜判断添加的额外点数
-                streak_extra_points = int(Tool_GetExtraPointsbyWinStreak(self.now_win_streak))
-                self.points_diff = int(self.points_diff + streak_extra_points)
+                if self.function_lock:
+                    # 判断双倍卡
+                    if self.double_points_card_cnt > 0:
+                        # 根据当前段位拿到胜利点数与失败点数
+                        self.points_diff = int(self.points_diff * 2)
+                        print(" 触发双倍卡 - 点数翻倍为: " + str(self.points_diff))
+                        self.double_points_card_cnt = int(self.double_points_card_cnt - 1)
+
+                    # 判断连胜
+                    self.now_win_streak = int(self.now_win_streak + 1)
+                    print(" 当前连胜 = " + str(self.now_win_streak))
+                    # 根据连胜判断添加的额外点数
+                    streak_extra_points = int(Tool_GetExtraPointsbyWinStreak(self.now_win_streak))
+                    self.points_diff = int(self.points_diff + streak_extra_points)
 
                 # 判断是否会再次触发晋级赛
-                if self.now_rank_points + self.points_diff >= 100 :
+                if self.now_rank_points + self.points_diff >= 100:
                     print("会【再】一次触发晋级赛")
-                    print("now_rank_points = "+ str(self.now_rank_points)+" points_diff = "+str(self.points_diff)+ " 胜利后点数会超100")
+                    print("now_rank_points = " + str(self.now_rank_points) + " points_diff = " + str(
+                        self.points_diff) + " 胜利后点数会超100")
                     self.next_round_promotion = True
                     self.next_round_relegation = False
                     self.points_diff = int(100 - self.now_rank_points)
                     print("点数被强平为 points_diff = " + str(self.points_diff))
 
             else:
-                #否
-                # 判断双倍卡
-                if self.double_points_card_cnt > 0:
-                    # 根据当前段位拿到胜利点数与失败点数
-                    self.points_diff = int(self.points_diff * 2)
-                    print(" 触发双倍卡 - 点数翻倍为: " + str(self.points_diff))
-                    self.double_points_card_cnt = int(self.double_points_card_cnt - 1)
+                # 否
 
-                # 判断连胜
-                self.now_win_streak = int(self.now_win_streak + 1)
-                # 根据连胜判断添加的额外点数
-                streak_extra_points = int(Tool_GetExtraPointsbyWinStreak(self.now_win_streak))
-                self.points_diff = int(self.points_diff + streak_extra_points)
+                if self.function_lock:
+
+                    # 判断双倍卡
+                    if self.double_points_card_cnt > 0:
+                        # 根据当前段位拿到胜利点数与失败点数
+                        self.points_diff = int(self.points_diff * 2)
+                        print(" 触发双倍卡 - 点数翻倍为: " + str(self.points_diff))
+                        self.double_points_card_cnt = int(self.double_points_card_cnt - 1)
+
+                    # 判断连胜
+                    self.now_win_streak = int(self.now_win_streak + 1)
+                    # 根据连胜判断添加的额外点数
+                    streak_extra_points = int(Tool_GetExtraPointsbyWinStreak(self.now_win_streak))
+                    self.points_diff = int(self.points_diff + streak_extra_points)
 
                 # 判断是否会触发晋级赛
-                if self.now_rank_points + self.points_diff >= 100 :
+                if self.now_rank_points + self.points_diff >= 100:
                     print("会触发晋级赛")
-                    print("now_rank_points = "+ str(self.now_rank_points)+" points_diff = "+str(self.points_diff)+ " 胜利后点数会超100")
+                    print("now_rank_points = " + str(self.now_rank_points) + " points_diff = " + str(
+                        self.points_diff) + " 胜利后点数会超100")
                     self.next_round_promotion = True
                     self.next_round_relegation = False
                     self.points_diff = int(100 - self.now_rank_points)
@@ -603,19 +626,20 @@ class Player:
                 self.now_win_streak = 0
                 print("输掉比赛，连胜清零")
 
-                # 判断保护盾
-                if self.now_shield > 0:
-                    self.points_diff = 0
-                    self.now_shield = int(self.now_shield - 1)
-                    print(" 触发保护盾 - 点数归为 : " + str(self.points_diff))
-                    print("因此保护卡的存在又一次触发了保级赛")
-                    self.next_round_relegation= True
-                    self.next_round_promotion = False
+                if self.function_lock:
+                    # 判断保护盾
+                    if self.now_shield > 0:
+                        self.points_diff = 0
+                        self.now_shield = int(self.now_shield - 1)
+                        print(" 触发保护盾 - 点数归为 : " + str(self.points_diff))
+                        print("因此保护卡的存在又一次触发了保级赛")
+                        self.next_round_relegation = True
+                        self.next_round_promotion = False
 
-                # 判断buff
-                if self.buff_active:
-                    self.points_diff = int(self.points_diff * (1 - self.now_points_protection_buff))
-                    print("触发buff，点数归为：" + str(self.points_diff))
+                    # 判断buff
+                    if self.buff_active:
+                        self.points_diff = int(self.points_diff * (1 - self.now_points_protection_buff))
+                        print("触发buff，点数归为：" + str(self.points_diff))
 
                 # 判断是否因为保级卡的存在又一次触发了保级赛
 
@@ -631,21 +655,23 @@ class Player:
                 self.now_win_streak = 0
                 print("输掉比赛，连胜清零")
 
-                # 判断保护盾
-                if self.now_shield > 0:
-                    self.points_diff = 0
-                    self.now_shield = int(self.now_shield - 1)
-                    print(" 触发保护盾 - 点数归为 : " + str(self.points_diff))
-                    self.next_round_relegation= True
-                    self.next_round_promotion = False
+                if self.function_lock:
 
-                # 判断buff
-                if self.buff_active:
-                    self.points_diff = int(self.points_diff * (1 - self.now_points_protection_buff))
-                    print("触发buff，点数归为：" + str(self.points_diff))
+                    # 判断保护盾
+                    if self.now_shield > 0:
+                        self.points_diff = 0
+                        self.now_shield = int(self.now_shield - 1)
+                        print(" 触发保护盾 - 点数归为 : " + str(self.points_diff))
+                        self.next_round_relegation = True
+                        self.next_round_promotion = False
+
+                    # 判断buff
+                    if self.buff_active:
+                        self.points_diff = int(self.points_diff * (1 - self.now_points_protection_buff))
+                        print("触发buff，点数归为：" + str(self.points_diff))
 
                 # 判断是否触发了保级赛
-                if self.now_rank_points + self.points_diff <= 0 :
+                if self.now_rank_points + self.points_diff <= 0:
                     print("触发保级赛")
                     self.points_diff = - int(self.now_rank_points)
                     print("点数被强平为 = " + str(self.points_diff))
@@ -675,7 +701,6 @@ class Player:
         # 刷新now_rank_points
         self.now_rank_points = int(Tool_GetNowRankPoints(self.now_points, self.now_rank))
         print("本局后段位为 " + str(self.now_rank) + " 当前点数为 " + str(self.now_rank_points))
-
 
         self.total_games_cnt = self.total_games_cnt + 1
 
@@ -720,7 +745,7 @@ class Player:
         else:
             self.player_status = "matched"
 
-    def GameMatch(self, day_id, matchPoolid,frame_id):
+    def GameMatch(self, day_id, matchPoolid, frame_id):
         '''
         :param day_id: 传入的day_id
         :param matchPoolid: 匹配到的matchPoolid
@@ -749,7 +774,8 @@ class Player:
         enemy_index_in_items = matchPools[int(matchPoolid) - 1].stack1_ready_match.getIndexByPlayerId(enemy_id)
         print("匹配到玩家 ：" + str(enemy_id) + " 该玩家在items中index = " + str(enemy_index_in_items))
 
-        matchPools[int(matchPoolid) - 1].stack1_ready_match.items[enemy_index_in_items].GameSettlement(enemy_win, day_id,frame_id)
+        matchPools[int(matchPoolid) - 1].stack1_ready_match.items[enemy_index_in_items].GameSettlement(enemy_win,
+                                                                                                       day_id, frame_id)
 
 
 # 堆栈
@@ -779,6 +805,7 @@ class Stack(object):
     def size(self):
         '''返回栈的大小'''
         return len(self.items)
+
     def getRandomReadyMatchPlayer(self):
         list_cache = []
         for player in self.items:
@@ -788,12 +815,14 @@ class Stack(object):
         output_id_random = random.choice(list_cache)
         print("匹配到玩家" + str(output_id_random))
         return output_id_random
+
     def getIndexByPlayerId(self, player_id):
         index = 0
         for player in self.items:
             if player_id == player.id:
                 return index
             index = index + 1
+
     def getSumReadyMatchPlayer(self):
         value = 0
         for player in self.items:
@@ -949,7 +978,7 @@ class FileReader:
         '''
         output_list = []
         start_row = 5
-        end_row = 10
+        end_row = 9
         column_index = 22
 
         for row in range(start_row, end_row + 1):
@@ -1047,18 +1076,6 @@ for x in MatchPoolId_list:
         matchPoolUnit.matched_pools_list, matchPoolUnit.matched_pools_probability = Tool_GetMatchPoolProbabilitybyId(
             matchPoolUnit.id)
 
-        # 创建玩家
-        players_num = Tool_GetValueByRankBatLv(matchPoolUnit.rank_id, matchPoolUnit.bat_level, "distribution")
-        print("playes_num =" + str(players_num))
-        players_dailyActive = Tool_GetValueByRankBatLv(matchPoolUnit.rank_id, matchPoolUnit.bat_level, "dailyActive")
-        for y in range(int(players_num)):
-            playerUnit = Player(player_id, matchPoolUnit.rank_id, players_dailyActive, matchPoolUnit.bat_level, True)
-            playerUnit.mission2_complete_condition = Tool_GetConditionbyRank2(matchPoolUnit.rank_id)
-            playerUnit.mission3_complete_condition = Tool_GetConditionbyRank3(matchPoolUnit.rank_id)
-            playerUnit.daily_active = players_dailyActive
-            player_id = player_id + 1
-            matchPoolUnit.stack1_ready_match.push(playerUnit)
-
         matchPools.append(matchPoolUnit)
 
         print("匹配池创建完成 " + " rank_id = " + str(matchPoolUnit.rank_id) + " bat_level = " + str(matchPoolUnit.bat_level))
@@ -1069,64 +1086,62 @@ for unit in matchPools:
     print(" rank_id = " + str(unit.rank_id) + " bat_level = " + str(unit.bat_level))
     print("玩家数量 = " + str(len(unit.stack1_ready_match.items)))
 
-max_frame = Tool_GetMaxValueDailyActive()
+###########################################################
+
+# 创建一个玩家
+rank_1 = 1
+daily_active_1 = 8
+bat_level_1 = 5
+buy_pass = 1
+days = 30
+
+player1 = Player(1, rank_1, daily_active_1, bat_level_1, buy_pass)
+
+
+def Tool_GetMatchResultSingle(player):
+    '''
+    :param player: 传入的player对象
+    :return: win or lose : 输出匹配的结果
+    '''
+
+    # 获取对应player下信息对应的 matchPoolId
+    matchPoolId = int(MatchPoolId_list[player.now_rank - 1][player.bat_level - 1])
+
+    # 获取能匹配到的id列表
+    matched_pools_list = matchPools[matchPoolId - 1].matched_pools_list
+    matched_pools_probability = matchPools[matchPoolId - 1].matched_pools_probability
+
+    # 随机到特定的库
+    matched_pool_id = Tool_GetRandomItemByWeight(matched_pools_list, matched_pools_probability)
+    rank_id, bat_level = Tool_GetRankIdBatLvByMatchPoolId(matched_pool_id)
+
+    print(" 匹配到一个 " + "rank_id = " + str(rank_id) + " bat_level = " + str(bat_level) + "的玩家")
+    a_win = Tool_GetResultByBatLevel(player.bat_level, bat_level)
+    if (a_win):
+        print(" 结果赢了 ")
+    else:
+        print(" 结果输了 ")
+    return a_win
+
+
+day_points = []
 # 时间控制 - 开始Play
 for day in range(days):
     print(" --------------------------")
     print(" 【【【【【【【【 第" + str(day) + " 天 】】】】】】】】")
 
-    #  将每个玩家的状态设置为 ready_match
-    for matchUnit in matchPools:
-        for player in matchUnit.stack1_ready_match.items:
-            player.player_status = "ready_match"
-    print(" 将所有玩家设置重置为 ready_match ")
-
     # 每天遍历所有玩家，执行匹配逻辑，并返回结果
-    for frame in range(int(max_frame)):
+    for frame in range(int(daily_active_1)):
+        print(" ")
+        print(" +++++++++++++++++++++ 第" + str(frame) + " 帧 +++++++++++++++++++++++++++++++ ")
+        a_win = Tool_GetMatchResultSingle(player1)
+        player1.GameSettlement(a_win, day, frame)
+    day_points.append(player1.now_points)
 
-        print(" +++++++ 第" + str(frame) + " 帧 ++++++ ")
+import matplotlib.pyplot as plt
+import numpy as np
 
-        for matchUnit in matchPools:
-            # 开始匹配
-            for player in matchUnit.stack1_ready_match.items:
-                if player.player_status == "ready_match":
-                    print(" ------------玩家匹配开始-----------------  ")
-                    print("玩家" + str(player.id) + "开始匹配")
-                    resultMatchPoolId = Tool_GetMatchResult(player,matchUnit.id)
-                    if resultMatchPoolId is not None:
-                        player.GameMatch(day, resultMatchPoolId,frame)
-                    print(" -------------玩家匹配结束----------------  ")
+ypoints = np.array(day_points)
 
-                    # 匹配成功 - 更新所有关联matchUnit
-            # 再一次遍历，将所有非unactive 状态激活为 ready_match
-            for player in matchUnit.stack1_ready_match.items:
-                if player.player_status != "unactive":
-                    player.player_status = "ready_match"
-
-        # 写最难的操作 -- 更换匹配对象池
-        for matchUnit in matchPools:
-            # 移动
-            for player in matchUnit.stack1_ready_match.items:
-                if player.promotion_victory == True and player.moved == False:
-                    Tool_MovePlayerToMatchPools(player, True)
-                if player.relegation_victory == True and player.moved == False:
-                    Tool_MovePlayerToMatchPools(player, False)
-            # 移除
-            list_cache = []
-            for player in matchUnit.stack1_ready_match.items:
-                if player.promotion_victory != True and player.relegation_victory != True:
-                    list_cache.append(player)
-            matchUnit.stack1_ready_match.items = list_cache
-
-        for matchUnit in matchPools:
-            for player in matchUnit.stack1_ready_match.items:
-                player.promotion_victory = False
-                player.relegation_victory = False
-                player.moved = False
-
-            # 写晋升大段后赠送排位保护卡
-            # 写根据origin_rank进行report daily_average_points 的操作，可考虑使用一个class进行包装
-            # ReportPools类
-
-
-
+plt.plot(ypoints, c='#8FBC8F')
+plt.show()
