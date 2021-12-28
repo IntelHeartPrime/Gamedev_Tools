@@ -26,4 +26,3 @@ with open(json_dir, "w") as json_file:
     json_str = json.dumps(list, indent=4)
     json_file.write(json_str)
 
-
