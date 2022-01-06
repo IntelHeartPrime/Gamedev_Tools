@@ -4,14 +4,14 @@ import time
 
 import os
 work_dir = os.getcwd()
-xlsx_dir = "CraneOffer/CraneOfferconfigs.xlsx"
+xlsx_dir = "CraneOfferconfigs.xlsx"
 
 print(work_dir)
 
 workbook_dir = os.path.join(work_dir, xlsx_dir)
 print(workbook_dir)
 
-json_file_name = "CraneOffer/CraneOfferConfig.json"
+json_file_name = "CraneOfferConfig.json"
 
 
 wb = load_workbook(workbook_dir)
