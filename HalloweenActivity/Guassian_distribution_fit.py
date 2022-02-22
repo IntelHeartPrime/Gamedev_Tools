@@ -9,7 +9,7 @@ import csv
 #import csv
 yourList = []
 
-csv_file_path = "data.csv"
+csv_file_path = "AlbatrossNew.csv"
 with open(csv_file_path) as csvfile:
     f_csv = csv.reader(csvfile)
     index = 0
