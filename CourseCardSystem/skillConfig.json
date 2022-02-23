@@ -1,0 +1,93 @@
+{
+    "1001": {
+        "Note": "jump ball power +3%",
+        "skill_id": 1001,
+        "skill_type": 1,
+        "skill_desc": "skill_power",
+        "skill_value": 3
+    },
+    "1002": {
+        "Note": "jump ball power +6%",
+        "skill_id": 1002,
+        "skill_type": 1,
+        "skill_desc": "skill_power",
+        "skill_value": 6
+    },
+    "1003": {
+        "Note": "jump ball power +3%",
+        "skill_id": 1003,
+        "skill_type": 1,
+        "skill_desc": "skill_power",
+        "skill_value": 9
+    },
+    "1004": {
+        "Note": "jump ball power +6%",
+        "skill_id": 1004,
+        "skill_type": 1,
+        "skill_desc": "skill_power",
+        "skill_value": 12
+    },
+    "1005": {
+        "Note": "jump ball power +3%",
+        "skill_id": 1005,
+        "skill_type": 1,
+        "skill_desc": "skill_power",
+        "skill_value": 15
+    },
+    "1006": {
+        "Note": "jump ball power +6%",
+        "skill_id": 1006,
+        "skill_type": 1,
+        "skill_desc": "skill_power",
+        "skill_value": 18
+    },
+    "1007": {
+        "Note": "jump ball power +3%",
+        "skill_id": 1007,
+        "skill_type": 1,
+        "skill_desc": "skill_power",
+        "skill_value": 21
+    },
+    "1008": {
+        "Note": "jump ball power +6%",
+        "skill_id": 1008,
+        "skill_type": 1,
+        "skill_desc": "skill_power",
+        "skill_value": 24
+    },
+    "1009": {
+        "Note": "jump ball power +3%",
+        "skill_id": 1009,
+        "skill_type": 1,
+        "skill_desc": "skill_power",
+        "skill_value": 27
+    },
+    "1010": {
+        "Note": "jump ball power +6%",
+        "skill_id": 1010,
+        "skill_type": 1,
+        "skill_desc": "skill_power",
+        "skill_value": 30
+    },
+    "1011": {
+        "Note": "need_speed -10%",
+        "skill_id": 1011,
+        "skill_type": 2,
+        "skill_desc": "skill_power",
+        "skill_value": 10
+    },
+    "1012": {
+        "Note": "need_speed -20%",
+        "skill_id": 1012,
+        "skill_type": 2,
+        "skill_desc": "reduce_needle_speed",
+        "skill_value": 20
+    },
+    "1013": {
+        "Note": "need_speed -30%",
+        "skill_id": 1013,
+        "skill_type": 2,
+        "skill_desc": "reduce_needle_speed",
+        "skill_value": 30
+    }
+}

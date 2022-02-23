@@ -29,5 +29,3 @@ def getProbabilityFromData(file_name, column_index, column_output_index):
     # 逐行遍历 csv
     # 当其处于特定区间内时，特定区间 Value+1
     # 最后输出为特定区间的权重
-
-    
