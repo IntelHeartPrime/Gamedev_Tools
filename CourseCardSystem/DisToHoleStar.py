@@ -17,10 +17,10 @@ ws = wb.sheets['Sheet1']
 '''
 
 # 玩家A 与 玩家B
-playerA_lv = 10
+playerA_lv = 9
 playerB_lv = 9
 
-games_cnt = 100000
+games_cnt = 1000
 
 # 定义类 game_record
 '''
@@ -78,7 +78,7 @@ class GameRecord:
 # 加载距离星星权重数据
 
 
-# 函数 LvX的玩家在LvY的场景中随机出杆数
+# 函数 LvX的玩家在LvY的场景中随机出各个杆数的权重
 def GetWeightPlayerIntoCourse(playerLv, courseLv):
     '''
     :param playerLv:  玩家等级
@@ -96,10 +96,15 @@ def GetWeightPlayerIntoCourse(playerLv, courseLv):
     eagle_weight = ws.range( (4+(courseLv)*3 + 1, playerLv +4) ).value
     albatross_weight = ws.range( (4+(courseLv)*3 + 2, playerLv +4) ).value
 
-    print(" ------ 加载Lv= " + str(playerLv) + " 打Lv= " + str(courseLv) + " 级场权重数据" )
+    '''
+    print(" ------ 加载Lv= " + str(playerLv) + " 打Lv= " + str(courseLv) + " 级场权重数据 ------" )
     print("Birde_weight = " + str(birde_weight))
     print("Eagle_weight = " + str(eagle_weight))
     print("Albatross_weight = " + str(albatross_weight))
+
+    print(" ------ 权重随机END ------- ")
+    print("")
+    '''
 
     result_list = [birde_weight,eagle_weight,albatross_weight]
     return result_list
@@ -131,12 +136,160 @@ def GetRandomResultByWeight(weight_list):
 
 
 # 函数 根据胜利杆数按照权重随机出距离并获得星星
+def GetStarByRandomDistance(result):
+
+    # 根据结果index选择不同的随机区间
+    # 0 Birde weight-18 & star-17
+    # 1 Eagle weight-22 & star-21
+    # 2 Albatross weight-26 & star-25
+
+    # Birde
+    if result == 0:
+        row_index = 3
+        dis_weight_list = []
+        while ws.range((row_index, 18)).value !=None:
+            dis_weight_list.append(ws.range((row_index, 18)).value)
+            row_index = row_index + 1
+        index_output = GetRandomResultByWeight(dis_weight_list)
+
+        star_result = ws.range((index_output + 3, 17)).value
+        print(" birde " + " dis < " + str(ws.range((index_output+3, 16)).value) + " star = " + str(star_result))
+
+        return star_result
+
+    # Eagle
+    if result == 1:
+        row_index = 3
+        dis_weight_list = []
+        while ws.range((row_index, 22)).value != None:
+            dis_weight_list.append(ws.range((row_index, 22)).value)
+            row_index = row_index + 1
+        index_output = GetRandomResultByWeight(dis_weight_list)
+
+        star_result = ws.range((index_output + 3, 21)).value
+        print(" eagle " + " dis < " + str(ws.range((index_output+3, 20)).value) + " star = " + str(star_result))
+
+        return star_result
+
+    # Albatross
+    if result == 2:
+        row_index = 3
+        dis_weight_list = []
+        while ws.range((row_index, 26)).value != None:
+            dis_weight_list.append(ws.range((row_index, 26)).value)
+            row_index = row_index + 1
+        index_output = GetRandomResultByWeight(dis_weight_list)
+
+        star_result = ws.range((index_output + 3, 25)).value
+        print(" albatross " + " dis < " + str(ws.range((index_output+3, 24)).value) + " star = " + str(star_result))
+
+        return star_result
 
 
+tie_cnt = 0
 
-# for game_index in games_cnt:
+for game_index in range(games_cnt):
+
+    print("")
+    print(" ----- 开始第 " + str(game_index) + " 场比赛 ----- ")
+    print(" 第一局比赛 A主场 ")
 
     # 第一场比赛 A的主场
     # 随机出 A的杆数， 再随机出B的杆数
-for game in games_cnt:
+
+    # 0 Birde
+    # 1 Eagle
+    # 2 Albatross
+
+    a_score = 0
+    b_score = 0
+    a_star = 0
+    b_star = 0
+
+
+    a_result_1 = GetRandomResultByWeight(GetWeightPlayerIntoCourse(playerA_lv, playerA_lv))
+    b_result_1 = GetRandomResultByWeight(GetWeightPlayerIntoCourse(playerB_lv, playerA_lv))
+    a_star_1 = GetStarByRandomDistance(a_result_1)
+    b_star_1 = GetStarByRandomDistance(b_result_1)
+
+    if a_result_1 == b_result_1:
+        a_score = a_score + 0.5
+        b_score = b_score + 0.5
+        a_star = a_star + a_star_1
+        b_star = b_star + b_star_1
+
+        print("平局" + "0.5 : 0.5 " + " star " + str(a_star_1) + " : " + str(b_star_1) )
+
+    else:
+        if a_result_1 > b_result_1:
+            a_score = a_score + 1
+            a_star = a_star + a_star_1
+
+            print("A胜利" + "1 : 0.5 " + " star " + str(a_star_1) + " : " + str(b_star_1))
+
+        if a_result_1 < b_result_1:
+            b_score = b_score + 1
+            b_star = b_star + b_star_1
+
+            print("B胜利" + "0.5 : 1 " + " star " + str(a_star_1) + " : " + str(b_star_1))
+
+
+    print(" 第一局比赛结束")
+    print(" A score = " + str(a_score) + " A star = " + str(a_star))
+    print(" B score = " + str(b_score) + " B star = " + str(b_star))
+    print("")
+
+    print(" 第二局比赛 B主场 ")
+
+    a_result_2 = GetRandomResultByWeight(GetWeightPlayerIntoCourse(playerA_lv, playerB_lv))
+    b_result_2 = GetRandomResultByWeight(GetWeightPlayerIntoCourse(playerB_lv, playerB_lv))
+    a_star_2 = GetStarByRandomDistance(a_result_2)
+    b_star_2 = GetStarByRandomDistance(b_result_2)
+
+    if a_result_2 == b_result_2:
+        a_score = a_score + 0.5
+        b_score = b_score + 0.5
+        a_star = a_star + a_star_2
+        b_star = b_star + b_star_2
+
+        print("平局" + "0.5 : 0.5 " + " star " + str(a_star_2) + " : " + str(b_star_2) )
+
+    else:
+        if a_result_2 > b_result_2:
+            a_score = a_score + 1
+            a_star = a_star + a_star_2
+
+            print("A胜利" + "1 : 0.5 " + " star " + str(a_star_2) + " : " + str(b_star_2))
+
+
+        if a_result_2 < b_result_2:
+            b_score = b_score + 1
+            b_star = b_star + b_star_2
+
+            print("B胜利" + "0.5 : 1 " + " star " + str(a_star_2) + " : " + str(b_star_2))
+
+    print(" 第二局比赛结束")
+    print(" A score = " + str(a_score) + " A star = " + str(a_star))
+    print(" B score = " + str(b_score) + " B star = " + str(b_star))
+
+    if a_score > b_score:
+        print (" A 胜利  - 比分胜利 ")
+    if b_score > a_score:
+        print (" B 胜利  - 比分胜利 ")
+    if a_score == b_score:
+        if a_star > b_star:
+            print(" A 胜利  - 星星胜利 ")
+        if b_star > a_star:
+            print(" B 胜利  - 星星胜利 ")
+        if a_star == b_star:
+            print(" 平局 - 比分一致 ， 星星一致 ")
+            tie_cnt = tie_cnt + 1
+
+    print(" ----- 第 " + str(game_index) + " 场比赛结束----- ")
+    print("")
+
+tie_rate  = tie_cnt /games_cnt
+print(" 平均率 = " + str(tie_rate))
+
+
 
