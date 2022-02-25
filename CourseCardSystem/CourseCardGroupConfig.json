@@ -1,0 +1,18 @@
+{
+    "1": {
+        "id": 1,
+        "name": "stage1",
+        "is_active": "true",
+        "course_card": [
+            {
+                "id": 1
+            },
+            {
+                "id": 2
+            },
+            {
+                "id": 3
+            }
+        ]
+    }
+}

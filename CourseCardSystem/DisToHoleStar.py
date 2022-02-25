@@ -292,4 +292,3 @@ tie_rate  = tie_cnt /games_cnt
 print(" 平均率 = " + str(tie_rate))
 
 
-
