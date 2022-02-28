@@ -7,7 +7,7 @@
         "icon_big": "Icon_hole_285",
         "atlas_name": "atlas_sceneminimap",
         "type": 2,
-        "color": 1,
+        "color": 4,
         "wind_min": 1,
         "wind_max": 5,
         "debuff_k": 0.0,
