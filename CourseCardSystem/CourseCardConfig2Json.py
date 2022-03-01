@@ -77,6 +77,8 @@ while ws1.range((row_index,4)).value != None:
     unit_dic_inner.update({"eagle_dis": ws1.range((row_index, 16)).value})
     unit_dic_inner.update({"flag_bounce": ws1.range((row_index, 17)).value})
 
+    unit_dic_inner.update({"camera_height": int(ws1.range((row_index, 21)).value)})
+
 
     # Config ability # Waiting..
 
@@ -150,7 +152,10 @@ while ws1.range((row_index,4)).value != None:
         column_start_index = int(ws3.range((info_row_index, 4)).value)
         print("列索引 = " + str(column_start_index))
         evaluation_row_index = 4
+        print("ws4中 行 = " + str(evaluation_row_index) + " 列 = " + str(column_start_index) + " 的值 = ")
+        print("[ " + str(ws4.range((evaluation_row_index,column_start_index)).value) + " ]")
         while ws4.range((evaluation_row_index,column_start_index)).value != None:
+            print("开始处理 evaluation_rule...")
             evaluation_list = []
             star_value = int(ws4.range((evaluation_row_index, column_start_index)).value)
             par_value = int(ws4.range((evaluation_row_index, column_start_index+1)).value)

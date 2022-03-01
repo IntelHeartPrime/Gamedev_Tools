@@ -17,6 +17,7 @@
         "par_dis": 51.3,
         "eagle_dis": 30.0,
         "flag_bounce": 0.2,
+        "camera_height": 700,
         "ability": [
             {
                 "level": 1,
@@ -908,3 +909,4 @@
         ]
     }
 }
+
