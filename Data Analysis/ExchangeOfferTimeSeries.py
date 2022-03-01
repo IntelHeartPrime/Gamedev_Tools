@@ -7,4 +7,3 @@ import os
 import csv
 
 # todo continue later
-
