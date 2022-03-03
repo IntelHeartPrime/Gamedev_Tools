@@ -1,11 +1,22 @@
 # 奖SkillConfig 从Excel转化为 Json
 
 import xlwings as xw
+import requests
+
+# 1. 下载
+# 2. 覆盖本地
+# 3. 开始转换
+
+url_download = 'https://docs.google.com/spreadsheets/d/1y5lsly6S_ELAoXatQEurS-g_Tt9C80qxZCXthsevAzs/export?format=xlsx'
+xlsx_file = requests.get(url_download)
+open('CourseCardConfig.xlsx', 'wb').write(xlsx_file.content)
+
+
 wb = xw.Book("CourseCardConfig.xlsx")
 ws1 = wb.sheets['Sheet1']
 ws2 = wb.sheets['ability1']
 ws3 = wb.sheets['cardstageinfo1']
-ws4 = wb.sheets['evaluation_rule']
+ws4 = wb.sheets[3]    # 用这个api就好了？？？？  直接使用id而不是名字
 
 
 import json

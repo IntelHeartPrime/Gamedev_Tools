@@ -1,6 +1,16 @@
 # 奖SkillConfig 从Excel转化为 Json
 
 import xlwings as xw
+import requests
+
+# 1. 下载
+# 2. 覆盖本地
+# 3. 开始转换
+
+url_download = 'https://docs.google.com/spreadsheets/d/1wo9ct33xEV0QaiR3c2_U5Ew30WBxpUF8p6Be6wuYR6o/export?format=xlsx'
+xlsx_file = requests.get(url_download)
+open('CourseCardGroupConfig.xlsx', 'wb').write(xlsx_file.content)
+
 wb = xw.Book("CourseCardGroupConfig.xlsx")
 ws = wb.sheets['Sheet1']
 
@@ -48,11 +58,14 @@ while ws.range((row_index,1)).value != None:
         column_index_start = column_index_start + 1
 
     row_index = row_index + 1
+    print("输出第 " + str(row_index)+ " 行数据")
 
 
 with open(json_dir, "w") as json_file:
     json_str = json.dumps(unit_dic, indent=4)
     json_file.write(json_str)
+
+    print("Group 配置完毕")
 
 
 
