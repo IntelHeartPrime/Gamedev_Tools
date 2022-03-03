@@ -7,7 +7,7 @@
 import os
 import csv
 
-csv_file_path = "data.csv"
+csv_file_path = "data_doubleBallOffer.csv"
 
 # read csv
 
@@ -140,7 +140,7 @@ with open("output_data.csv", "w", newline= "" ) as f:
 
 '''
 
-'''
+
 # 处理数据2  - 只计算付费玩家
 data_result = []
 
@@ -169,8 +169,8 @@ with open("output_data_paid_player.csv", "w", newline= "" ) as f:
 
     ff.writerow(header)
     ff.writerows(data_result)
-    
-'''
+
+
 
 
 with open(csv_file_path) as csvfile:
@@ -202,3 +202,4 @@ with open(csv_file_path) as csvfile:
 
 
 # TODO add cdate tag  ex: day1-free, day1-token ....
+
