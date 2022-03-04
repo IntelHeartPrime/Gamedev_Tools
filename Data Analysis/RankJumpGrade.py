@@ -37,17 +37,44 @@ def get_rank_precent_byValue( input_value ):
 
     return rank,precent
 
+# 每次购买之前所看到的那个奖励为显示+1
+def get_viewed_ranks_by_start_points(start_points):
+    start_rank, start_precent = get_rank_precent_byValue(start_points)
+    if start_rank< len(progress_points) - 1:
+        start_rank = start_rank + 1
+        # 这就是被跳过的档位
+    return start_rank
+
+
+
+
 # 根据输入的开始值与结束值返回跳过的档位list
 def get_jumped_ranks_by_start_end_points(start_points, end_points):
 
     start_rank, start_precent = get_rank_precent_byValue(start_points)
     end_rank, end_precent = get_rank_precent_byValue(end_points)
 
+    start_rank_float = float(start_rank) + start_precent
+    end_rank_float = float(end_rank) + end_precent
+
+    # 静止状态下能看到的不算跳过
+    start_rank_float = start_rank_float + 1.0
+    print(" start_rank_float = " + str(start_rank_float) + " end_rank_float = " + str(end_rank_float))
     jumped_rank = []
-    if end_rank >= start_rank:
-        
+    if end_rank_float >= start_rank_float:
 
+        # 求两者之间的整数
+        # 即为跳过的档位
 
+        for y in range(len(progress_points)):
+            if float(y) > start_rank_float and float(y) <= end_rank_float:
+                # 则 y档是跳过档
+                jumped_rank.append(y)
+
+    print("跳过档位" + str(jumped_rank))
+    return jumped_rank
+
+print(get_jumped_ranks_by_start_end_points(100,1000))
 
 
 import csv
@@ -85,8 +112,25 @@ with open(csv_file_path) as csvfile:
                     sum_points= sum_points + gift5
 
                 end_points = sum_points
-                print("origin_points = " + str(origin_points) + " end_points = " + str(end_points))
+                # print("origin_points = " + str(origin_points) + " end_points = " + str(end_points))
                 # 判断本次跳过了哪些档位
+                jumped_list_cache = get_jumped_ranks_by_start_end_points(origin_points, end_points)
+
+                # 看有多少档位被看到？？？
+                viewed_rank = get_viewed_ranks_by_start_points(origin_points)
+
+                # 对本次跳过进行统计
+                for value in jumped_list_cache:
+                    jump_times[value] = jump_times[value] + 1
+
+                jump_times[viewed_rank] = jump_times[viewed_rank] - 1
+
+
+        index = index + 1
+
+# 输出最后结果
+for x in jump_times:
+    print(x)
 
 
 

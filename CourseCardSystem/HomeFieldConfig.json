@@ -1,0 +1,2790 @@
+[
+    {
+        "id": 13,
+        "name": "Home Field Challenge I",
+        "show_time_start": 1614150279,
+        "start_time": 1614150279,
+        "show_time_end": 1677222279,
+        "end_time": 1677222279,
+        "signup_offer_list": {
+            "pve": [
+                {
+                    "money": 0,
+                    "type": 1,
+                    "signup_offer_id_list": [
+                        {
+                            "money": 1.99,
+                            "offer_id": 208001
+                        },
+                        {
+                            "money": 4.99,
+                            "offer_id": 208002
+                        },
+                        {
+                            "money": 9.99,
+                            "offer_id": 208003
+                        },
+                        {
+                            "money": 19.99,
+                            "offer_id": 208004
+                        },
+                        {
+                            "money": 29.99,
+                            "offer_id": 208005
+                        }
+                    ]
+                }
+            ],
+            "pvp": [
+                {
+                    "money": 0,
+                    "type": 1,
+                    "signup_offer_id_list": [
+                        {
+                            "money": 1.99,
+                            "offer_id": 208001
+                        },
+                        {
+                            "money": 4.99,
+                            "offer_id": 208002
+                        },
+                        {
+                            "money": 9.99,
+                            "offer_id": 208003
+                        },
+                        {
+                            "money": 19.99,
+                            "offer_id": 208004
+                        },
+                        {
+                            "money": 29.99,
+                            "offer_id": 208005
+                        }
+                    ]
+                }
+            ]
+        },
+        "unlock_conditions": {
+            "stage": 11
+        },
+        "course_level_upgrade_rules": [
+            {
+                "level": 0,
+                "need_exp": 0
+            },
+            {
+                "level": 1,
+                "need_exp": 1500
+            },
+            {
+                "level": 2,
+                "need_exp": 2500
+            },
+            {
+                "level": 3,
+                "need_exp": 3500
+            },
+            {
+                "level": 4,
+                "need_exp": 4500
+            },
+            {
+                "level": 5,
+                "need_exp": 5500
+            },
+            {
+                "level": 6,
+                "need_exp": 6500
+            },
+            {
+                "level": 7,
+                "need_exp": 7500
+            },
+            {
+                "level": 8,
+                "need_exp": 8500
+            }
+        ],
+        "pve_conf": {
+            "on_hook": 200,
+            "tickets_update_mins": [
+                420
+            ],
+            "default_tickets": 50,
+            "tickets_shop": [
+                {
+                    "type": 1,
+                    "consume_num": 100,
+                    "consume_type": 2,
+                    "get_num": 1
+                },
+                {
+                    "type": 2,
+                    "consume_num": 900,
+                    "consume_type": 2,
+                    "get_num": 10
+                }
+            ],
+            "chapter_list": [
+                {
+                    "id": 1,
+                    "name": "chapter one",
+                    "checkpoint": [
+                        {
+                            "id": 1,
+                            "scene_id": 1,
+                            "level": 1,
+                            "side_story": 0,
+                            "ticket_cost": 1,
+                            "battle_limit": {
+                                "home_field_level": 0,
+                                "star_limit": 0
+                            },
+                            "basic_reward": [
+                                {
+                                    "star": 1,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 3,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 5,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 7,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 9,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 11,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "chapter one",
+                    "checkpoint": [
+                        {
+                            "id": 1,
+                            "scene_id": 1,
+                            "level": 2,
+                            "side_story": 0,
+                            "ticket_cost": 1,
+                            "battle_limit": {
+                                "home_field_level": 0,
+                                "star_limit": 0
+                            },
+                            "basic_reward": [
+                                {
+                                    "star": 1,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 3,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 5,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 7,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 9,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 11,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "chapter one",
+                    "checkpoint": [
+                        {
+                            "id": 1,
+                            "scene_id": 1,
+                            "level": 3,
+                            "side_story": 0,
+                            "ticket_cost": 1,
+                            "battle_limit": {
+                                "home_field_level": 0,
+                                "star_limit": 0
+                            },
+                            "basic_reward": [
+                                {
+                                    "star": 1,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 3,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 5,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 7,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 9,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 11,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "name": "chapter one",
+                    "checkpoint": [
+                        {
+                            "id": 1,
+                            "scene_id": 1,
+                            "level": 4,
+                            "side_story": 0,
+                            "ticket_cost": 1,
+                            "battle_limit": {
+                                "home_field_level": 0,
+                                "star_limit": 0
+                            },
+                            "basic_reward": [
+                                {
+                                    "star": 1,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 3,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 5,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 7,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 9,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 11,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "name": "chapter one",
+                    "side_story_start": 1,
+                    "checkpoint": [
+                        {
+                            "id": 1,
+                            "scene_id": 1,
+                            "level": 5,
+                            "ticket_cost": 1,
+                            "battle_limit": {
+                                "home_field_level": 0,
+                                "star_limit": 0
+                            },
+                            "basic_reward": [
+                                {
+                                    "star": 1,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 3,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 5,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 7,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 9,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 11,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },  {
+                            "id": 2,
+                            "scene_id": 1,
+                            "level": 5,
+                            "side_story": 0,
+                            "ticket_cost": 1,
+                            "battle_limit": {
+                                "home_field_level": 0,
+                                "star_limit": 0
+                            },
+                            "basic_reward": [
+                                {
+                                    "star": 1,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 3,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 5,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 7,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 9,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 11,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "side_chapter": [
+                        "side"
+                    ]
+                },
+                {
+                    "id": 6,
+                    "name": "chapter one",
+                    "checkpoint": [
+                        {
+                            "id": 1,
+                            "scene_id": 1,
+                            "level": 6,
+                            "side_story": 0,
+                            "ticket_cost": 1,
+                            "battle_limit": {
+                                "home_field_level": 0,
+                                "star_limit": 0
+                            },
+                            "basic_reward": [
+                                {
+                                    "star": 1,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 3,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 5,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 7,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 9,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 11,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 7,
+                    "name": "chapter one",
+                    "checkpoint": [
+                        {
+                            "id": 1,
+                            "scene_id": 1,
+                            "level": 7,
+                            "side_story": 0,
+                            "ticket_cost": 1,
+                            "battle_limit": {
+                                "home_field_level": 0,
+                                "star_limit": 0
+                            },
+                            "basic_reward": [
+                                {
+                                    "star": 1,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 3,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 5,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 7,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 9,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 11,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 8,
+                    "name": "chapter one",
+                    "checkpoint": [
+                        {
+                            "id": 1,
+                            "scene_id": 1,
+                            "level": 8,
+                            "side_story": 0,
+                            "ticket_cost": 1,
+                            "battle_limit": {
+                                "home_field_level": 0,
+                                "star_limit": 0
+                            },
+                            "basic_reward": [
+                                {
+                                    "star": 1,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 3,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 5,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 7,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 9,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 11,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 9,
+                    "name": "chapter one",
+                    "checkpoint": [
+                        {
+                            "id": 1,
+                            "scene_id": 1,
+                            "level": 9,
+                            "side_story": 0,
+                            "ticket_cost": 1,
+                            "battle_limit": {
+                                "home_field_level": 0,
+                                "star_limit": 0
+                            },
+                            "basic_reward": [
+                                {
+                                    "star": 1,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 3,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 5,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 7,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 9,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 11,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 10,
+                    "name": "chapter one",
+                    "checkpoint": [
+                        {
+                            "id": 1,
+                            "scene_id": 1,
+                            "level": 10,
+                            "side_story": 0,
+                            "ticket_cost": 1,
+                            "battle_limit": {
+                                "home_field_level": 0,
+                                "star_limit": 0
+                            },
+                            "basic_reward": [
+                                {
+                                    "star": 1,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 3,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 5,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 7,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 9,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 11,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 11,
+                    "name": "chapter one",
+                    "checkpoint": [
+                        {
+                            "id": 1,
+                            "scene_id": 1,
+                            "level": 1,
+                            "side_story": 0,
+                            "ticket_cost": 1,
+                            "battle_limit": {
+                                "home_field_level": 0,
+                                "star_limit": 0
+                            },
+                            "basic_reward": [
+                                {
+                                    "star": 1,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 3,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 5,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 7,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 9,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 11,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 12,
+                    "name": "chapter one",
+                    "checkpoint": [
+                        {
+                            "id": 1,
+                            "scene_id": 1,
+                            "level": 1,
+                            "side_story": 0,
+                            "ticket_cost": 1,
+                            "battle_limit": {
+                                "home_field_level": 0,
+                                "star_limit": 0
+                            },
+                            "basic_reward": [
+                                {
+                                    "star": 1,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 3,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 5,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 7,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 9,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 11,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 13,
+                    "name": "chapter one",
+                    "checkpoint": [
+                        {
+                            "id": 1,
+                            "scene_id": 1,
+                            "level": 1,
+                            "side_story": 0,
+                            "ticket_cost": 1,
+                            "battle_limit": {
+                                "home_field_level": 0,
+                                "star_limit": 0
+                            },
+                            "basic_reward": [
+                                {
+                                    "star": 1,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 3,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 5,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 7,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 9,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "star": 11,
+                                    "reward": [
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 3,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 100,
+                                            "prop_type": 40,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        },
+                                        {
+                                            "prop_id": 0,
+                                            "prop_num": 200,
+                                            "prop_type": 41,
+                                            "prop_color": 0,
+                                            "chest_type": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "process_rewards": [
+                {
+                    "star_num": 5,
+                    "is_big_reward": 0,
+                    "reward": {
+                        "prop_id": 0,
+                        "prop_num": 100,
+                        "prop_type": 3,
+                        "prop_color": 0,
+                        "chest_type": 0
+                    }
+                },
+                {
+                    "star_num": 10,
+                    "is_big_reward": 0,
+                    "reward": {
+                        "prop_id": 0,
+                        "prop_num": 100,
+                        "prop_type": 41,
+                        "prop_color": 0,
+                        "chest_type": 0
+                    }
+                },
+                {
+                    "star_num": 15,
+                    "is_big_reward": 0,
+                    "reward": {
+                        "prop_id": 0,
+                        "prop_num": 100,
+                        "prop_type": 40,
+                        "prop_color": 0,
+                        "chest_type": 0
+                    }
+                },
+                {
+                    "star_num": 15,
+                    "is_big_reward": 1,
+                    "reward": {
+                        "prop_id": 0,
+                        "prop_num": 100,
+                        "prop_type": 2,
+                        "prop_color": 0,
+                        "chest_type": 0
+                    }
+                },
+                {
+                    "star_num": 20,
+                    "is_big_reward": 0,
+                    "reward": {
+                        "prop_id": 0,
+                        "prop_num": 100,
+                        "prop_type": 3,
+                        "prop_color": 0,
+                        "chest_type": 0
+                    }
+                },
+                {
+                    "star_num": 25,
+                    "is_big_reward": 0,
+                    "reward": {
+                        "prop_id": 0,
+                        "prop_num": 100,
+                        "prop_type": 40,
+                        "prop_color": 0,
+                        "chest_type": 0
+                    }
+                },
+                {
+                    "star_num": 30,
+                    "is_big_reward": 0,
+                    "reward": {
+                        "prop_id": 0,
+                        "prop_num": 100,
+                        "prop_type": 41,
+                        "prop_color": 0,
+                        "chest_type": 0
+                    }
+                },
+                {
+                    "star_num": 35,
+                    "is_big_reward": 0,
+                    "reward": {
+                        "prop_id": 0,
+                        "prop_num": 20,
+                        "prop_type": 2,
+                        "prop_color": 0,
+                        "chest_type": 0
+                    }
+                },
+                {
+                    "star_num": 35,
+                    "is_big_reward": 1,
+                    "reward": {
+                        "prop_id": 0,
+                        "prop_num": 100,
+                        "prop_type": 2,
+                        "prop_color": 0,
+                        "chest_type": 0
+                    }
+                },
+                {
+                    "star_num": 50,
+                    "is_big_reward": 0,
+                    "reward": {
+                        "prop_id": 0,
+                        "prop_num": 100,
+                        "prop_type": 3,
+                        "prop_color": 0,
+                        "chest_type": 0
+                    }
+                },
+                {
+                    "star_num": 70,
+                    "is_big_reward": 0,
+                    "reward": {
+                        "prop_id": 0,
+                        "prop_num": 100,
+                        "prop_type": 40,
+                        "prop_color": 0,
+                        "chest_type": 0
+                    }
+                },
+                {
+                    "star_num": 100,
+                    "is_big_reward": 0,
+                    "reward": {
+                        "prop_id": 0,
+                        "prop_num": 100,
+                        "prop_type": 41,
+                        "prop_color": 0,
+                        "chest_type": 0
+                    }
+                },
+                {
+                    "star_num": 200,
+                    "is_big_reward": 0,
+                    "reward": {
+                        "prop_id": 0,
+                        "prop_num": 20,
+                        "prop_type": 2,
+                        "prop_color": 0,
+                        "chest_type": 0
+                    }
+                },
+                {
+                    "star_num": 200,
+                    "is_big_reward": 1,
+                    "reward": {
+                        "prop_id": 0,
+                        "prop_num": 100,
+                        "prop_type": 2,
+                        "prop_color": 0,
+                        "chest_type": 0
+                    }
+                }
+            ],
+            "ui_config": []
+        },
+        "pvp_conf": {
+            "start_time": 1614150279,
+            "settle_start": 1677222279,
+            "end_time": 1677222279,
+            "battle_limit": {
+                "home_field_level": 0,
+                "star": 500
+            },
+            "stage_conf": [
+                {
+                    "id": 1,
+                    "grade": 1,
+                    "small_level": 1,
+                    "upgrade_score": 0,
+                    "home_field_level_remote_limit": 0,
+                    "score_rules": {
+                        "big_win": 25,
+                        "small_win": 10,
+                        "draw": 5,
+                        "small_lose": 10,
+                        "big_lose": 25
+                    },
+                    "reward": {
+                        "prop_id": 0,
+                        "prop_num": 100,
+                        "prop_type": 2,
+                        "prop_color": 0,
+                        "chest_type": 0
+                    }
+                }
+            ]
+        },
+        "store_box_list": [
+            {
+                "pos": 1,
+                "color": 0,
+                "consume_type": 0,
+                "consume_num": 0,
+                "goodsId": 0
+            },
+            {
+                "pos": 2,
+                "color": 0,
+                "consume_type": 0,
+                "consume_num": 0,
+                "goodsId": 0
+            },
+            {
+                "pos": 3,
+                "color": 0,
+                "consume_type": 0,
+                "consume_num": 0,
+                "goodsId": 0
+            }
+        ]
+    }
+]

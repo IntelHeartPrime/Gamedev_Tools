@@ -13,8 +13,7 @@
             "type": 1,
             "consume_num": 100,
             "consume_type": 2,
-            "get_num": 1,
-            "value_off": ""
+            "get_num": 1
         },
         {
             "type": 2,
@@ -24,8 +23,9 @@
             "value_off": 10
         }
     ],
-    "update_min": [
-        420
+    "update_mins": [
+        420,
+        450
     ],
     "basic_reward": [
         {
@@ -84,7 +84,7 @@
             "reward_coins": 2
         }
     ],
-    "cumulative_reward_repeat_index": "",
+    "cumulative_reward_repeat_index": 37,
     "cumulative_reward": [
         {
             "require_coins": 20,

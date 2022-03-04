@@ -54,7 +54,7 @@ Unit_lit_List = []
 sceneId = -1
 while ws.cell(row_index, 2).value is not None:
     Unit_Mid_Dic = {}
-    Unit_Mid_Dic.update({"SceneId": int(ws.cell(row_index, 1).value)})
+    Unit_Mid_Dic.update({"sceneId": int(ws.cell(row_index, 1).value)})
     Unit_lit_List = []
     Unit_Mid_Dic.update({"rules": Unit_lit_List})
     Unit_lit_List.append([int(ws.cell(row_index, 2).value), int(ws.cell(row_index, 3).value), ws.cell(row_index, 4).value])

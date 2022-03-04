@@ -37,7 +37,8 @@ while ws.cell(11,column_index).value!=None:
     unit.update(({"consume_num": clean_null(ws.cell(12,column_index).value)}))
     unit.update(({"consume_type": clean_null(ws.cell(13,column_index).value)}))
     unit.update(({"get_num": clean_null(ws.cell(14,column_index).value)}))
-    unit.update(({"value_off": clean_null(ws.cell(15,column_index).value)}))
+    if ws.cell(15,column_index).value != None:
+        unit.update(({"value_off": clean_null(ws.cell(15,column_index).value)}))
     replay_shop.append(unit)
     column_index += 1
 
@@ -46,7 +47,7 @@ column_index2 = 2
 while ws.cell(17,column_index2).value!=None:
     update_min.append(ws.cell(17,column_index2).value)
     column_index2 += 1
-unit_dic.update({"update_min": update_min})
+unit_dic.update({"update_mins": update_min})
 
 basic_reward = []
 unit_dic.update({"basic_reward": basic_reward})
@@ -59,7 +60,7 @@ while ws.cell(20,column_index3).value!=None:
     basic_reward.append(reward)
     column_index3 += 1
 
-unit_dic.update({"cumulative_reward_repeat_index": clean_null(ws.cell(24,column_index).value)})
+unit_dic.update({"cumulative_reward_repeat_index": ws.cell(24, 2).value})
 
 cumulative_reward = []
 unit_dic.update({"cumulative_reward":cumulative_reward})

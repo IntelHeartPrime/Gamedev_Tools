@@ -1,7 +1,12 @@
+
+# HomeFieldConfig 配置转换
+
 # 奖SkillConfig 从Excel转化为 Json
 
 import xlwings as xw
 import requests
+
+# TODO  continue later
 
 # 1. 下载
 # 2. 覆盖本地
@@ -161,11 +166,11 @@ while ws1.range((row_index,4)).value != None:
 
         # evaluation_rule list添加
         # 获取 列索引
-        column_start_index_str = ws3.range((info_row_index, 4)).value
+        column_start_index_str = int(ws3.range((info_row_index, 4)).value)
         split_column_start_index_str = column_start_index_str.split(',')
 
-        row_start_index = int(split_column_start_index_str[0])
-        column_start_index = int(split_column_start_index_str[1])
+        row_start_index = split_column_start_index_str[0]
+        column_start_index = split_column_start_index_str[1]
         print("行索引 = " + str(row_start_index) +" 列索引 = " + str(column_start_index))
         evaluation_row_index = row_start_index
         print("ws4中 行 = " + str(evaluation_row_index) + " 列 = " + str(column_start_index) + " 的值 = ")
