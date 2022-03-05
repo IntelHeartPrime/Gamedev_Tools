@@ -228,7 +228,8 @@ if ws.cell(58,2).value!=None:
         signup_offer_list.append(offer)
         scene.update({"id": clean_null(ws.cell(102, scene_column).value)})
         scene.update({"min_dis": clean_null(ws.cell(103, scene_column).value)})
-        scene.update({"max_dis": clean_null(ws.cell(103, scene_column).value)})
+        scene.update({"max_dis": clean_null(ws.cell(104, scene_column).value)})
+
         if ws.cell(106, scene_column).value != None:
             scene_reward = []
             prop = {}

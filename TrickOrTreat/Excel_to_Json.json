@@ -1164,54 +1164,875 @@
                                     "offer_id": 208005
                                 }
                             ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
+                        },
+                        {
+                            "money": 0,
+                            "type": 1,
+                            "signup_offer_id_list": [
+                                {
+                                    "money": 1.99,
+                                    "offer_id": 208001
+                                },
+                                {
+                                    "money": 4.99,
+                                    "offer_id": 208002
+                                },
+                                {
+                                    "money": 9.99,
+                                    "offer_id": 208003
+                                },
+                                {
+                                    "money": 19.99,
+                                    "offer_id": 208004
+                                },
+                                {
+                                    "money": 49.99,
+                                    "offer_id": 208005
+                                }
+                            ]
                         }
                     ],
                     "scene_list": [
                         {
-                            "id": 1110022,
+                            "id": 1110098,
                             "min_dis": 40,
-                            "max_dis": 40
+                            "max_dis": 60
                         },
                         {
-                            "id": 1110022,
-                            "min_dis": 30,
-                            "max_dis": 30
-                        },
-                        {
-                            "id": 1110005,
-                            "min_dis": 28,
-                            "max_dis": 28,
-                            "reward": [
-                                {
-                                    "prop_id": 0,
-                                    "prop_color": 3,
-                                    "prop_type": 7,
-                                    "prop_num": 1
-                                }
-                            ]
-                        },
-                        {
-                            "id": 1110023,
+                            "id": 341016,
                             "min_dis": 40,
-                            "max_dis": 40
+                            "max_dis": 60
                         },
                         {
-                            "id": 1130001,
+                            "id": 1110095,
                             "min_dis": 40,
-                            "max_dis": 40
+                            "max_dis": 60
                         },
                         {
-                            "id": 1130002,
-                            "min_dis": 50,
-                            "max_dis": 50,
-                            "reward": [
-                                {
-                                    "prop_id": 0,
-                                    "prop_color": 0,
-                                    "prop_type": 2,
-                                    "prop_num": 150
-                                }
-                            ]
+                            "id": 341016,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 341003,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 1110089,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 1130028,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 341017,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 341002,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 1120021,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 341012,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 341004,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 341015,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 1120023,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 1130025,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 341011,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 1110087,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 341001,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 341014,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 1110085,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 341009,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 1110082,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 341010,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 1110084,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 1130026,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 1130024,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 341008,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 1110091,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 341005,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 1110092,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 1110086,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 341006,
+                            "min_dis": 40,
+                            "max_dis": 60
+                        },
+                        {
+                            "id": 341007,
+                            "min_dis": 40,
+                            "max_dis": 60
                         }
                     ]
                 },
