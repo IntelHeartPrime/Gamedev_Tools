@@ -43,9 +43,9 @@ row_index = 3
 
 unit_dic = {}
 
-while ws.cell(row_index,4).value != None:
+while ws.cell(row_index,5).value != None:
     unit_dic_inner = {}
-    unit_dic.update({str(ws.cell(row_index, 4).value): unit_dic_inner})
+    unit_dic.update({str(ws.cell(row_index, 5).value): unit_dic_inner})
     unit_dic_inner.update({"Note": clean_null(str(ws.cell(row_index, 5).value))})
     unit_dic_inner.update({"skill_id": int(ws.cell(row_index, 6).value)})
     unit_dic_inner.update({"skill_type": int(clean_null(ws.cell(row_index, 7).value))})

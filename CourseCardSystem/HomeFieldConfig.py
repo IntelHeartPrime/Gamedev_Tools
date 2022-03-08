@@ -6,8 +6,7 @@
 import xlwings as xw
 import requests
 
-# TODO  continue later
-
+'''
 # 1. 下载
 # 2. 覆盖本地
 # 3. 开始转换
@@ -15,14 +14,13 @@ import requests
 url_download = 'https://docs.google.com/spreadsheets/d/1y5lsly6S_ELAoXatQEurS-g_Tt9C80qxZCXthsevAzs/export?format=xlsx'
 xlsx_file = requests.get(url_download)
 open('CourseCardConfig.xlsx', 'wb').write(xlsx_file.content)
+'''
 
-
-wb = xw.Book("CourseCardConfig.xlsx")
+wb = xw.Book("HomeFieldConfig.xlsx")
 ws1 = wb.sheets['Sheet1']
-ws2 = wb.sheets['ability1']
-ws3 = wb.sheets['cardstageinfo1']
-ws4 = wb.sheets[3]    # 用这个api就好了？？？？  直接使用id而不是名字
-
+wsPVE = wb.sheets['pve']
+wsPVP = wb.sheets['pvp']
+wsReward = wb.sheets['reward_config']
 
 import json
 
@@ -41,7 +39,6 @@ json_dir = os.path.join(work_dir, json_file_name)
 print(json_dir)
 
 # 工具
-
 def clean_null(input_value):
     empty_value = ""
     if input_value == None:
@@ -70,17 +67,45 @@ def ParsingStringPathPos( path_pos_str ):
 
 row_index = 3
 
-unit_dic = {}
+HomeFieldConfig_list = []
 
 while ws1.range((row_index,4)).value != None:
     unit_dic_inner = {}
-    unit_dic.update({int(ws1.range((row_index,1)).value): unit_dic_inner})
-    unit_dic_inner.update({"id": int(ws1.range((row_index, 1)).value)})
-    unit_dic_inner.update({"name": ws1.range((row_index, 2)).value})
-    unit_dic_inner.update({"scene_name": ws1.range((row_index, 3)).value})
-    unit_dic_inner.update({"icon_small": ws1.range((row_index, 4)).value})
-    unit_dic_inner.update({"icon_big": ws1.range((row_index, 5)).value})
-    unit_dic_inner.update({"atlas_name": ws1.range((row_index, 6)).value})
+    HomeFieldConfig_list.append(unit_dic_inner)
+
+    unit_dic_inner.update({"id": int(ws1.range((3, 2)).value)})
+    unit_dic_inner.update({"name": ws1.range((4, 2)).value})
+    unit_dic_inner.update({"show_time_start": ws1.range((5, 2)).value})
+    unit_dic_inner.update({"show_time_end": ws1.range((6, 2)).value})
+
+    unit_dic_inner.update({"start_time": ws1.range((8, 2)).value})
+    unit_dic_inner.update({"end-time": ws1.range((9, 2)).value})
+
+    dic_unlock_condition = {}
+    unit_dic_inner.update({"unlock_conditions": dic_unlock_condition})
+    dic_unlock_condition.update({"stage": ws1.range((12,2)).value})
+
+    # signup_offer_list
+    sign_offer_list_dic = {}
+    unit_dic_inner.update({"sign_offer_list": sign_offer_list_dic})
+
+    pve_list = []
+    pvp_list = []
+
+    sign_offer_list_dic.update({"pve": pve_list})
+    sign_offer_list_dic.update({"pvp": pvp_list})
+
+    pay_rank_index = 0
+
+    while ws1.range((pay_rank_index*7 + 2, 2).value) != None:
+        
+
+    ## pve config
+
+
+    ## pvp config
+
+
     unit_dic_inner.update({"type": int(ws1.range((row_index, 7)).value)})
     unit_dic_inner.update({"color": int(ws1.range((row_index, 8)).value)})
     unit_dic_inner.update({"wind_min": int(ws1.range((row_index, 9)).value)})
@@ -92,12 +117,10 @@ while ws1.range((row_index,4)).value != None:
     unit_dic_inner.update({"par_dis": ws1.range((row_index, 15)).value})
     unit_dic_inner.update({"eagle_dis": ws1.range((row_index, 16)).value})
     unit_dic_inner.update({"flag_bounce": ws1.range((row_index, 17)).value})
-
     unit_dic_inner.update({"camera_height": int(ws1.range((row_index, 21)).value)})
 
 
     # Config ability # Waiting..
-
     ability_list = []
     unit_dic_inner.update({"ability": ability_list})
 
