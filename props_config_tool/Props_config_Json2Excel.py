@@ -27,7 +27,6 @@ wb= xw.Book("Props_config.xlsx")
 ws = wb.sheets['Sheet1']
 
 json_file_name = "Props_config.json"
-
 data_object =[]
 
 # 读取Json & 输出到 Excel
@@ -39,7 +38,7 @@ with open(json_file_name) as json_file:
     print(data_object)
 
 # 遍历写入Excel
-
+'''
 row_index= 1
 for unit in data_object:
 
@@ -62,4 +61,4 @@ for unit in data_object:
     row_index = row_index + 1
 
 
-
+'''

@@ -24,6 +24,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/CraneOffer/csvCraneOffer.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/Data Analysis/output_data.csv">
           <value>
             <Attribute>
@@ -52,7 +59,42 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/HalloweenActivity/197dis2hole.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/HalloweenActivity/2008dis2hole.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/HalloweenActivity/2016dis2hole.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/HalloweenActivity/57dis2hole.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/HalloweenActivity/data.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Tournament/tournament_data.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
