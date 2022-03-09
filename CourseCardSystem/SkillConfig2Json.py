@@ -45,15 +45,44 @@ unit_dic = {}
 
 while ws.cell(row_index,5).value != None:
     unit_dic_inner = {}
-    unit_dic.update({str(ws.cell(row_index, 5).value): unit_dic_inner})
-    unit_dic_inner.update({"Note": clean_null(str(ws.cell(row_index, 5).value))})
-    unit_dic_inner.update({"skill_id": int(ws.cell(row_index, 6).value)})
-    unit_dic_inner.update({"skill_type": int(clean_null(ws.cell(row_index, 7).value))})
-    unit_dic_inner.update({"skill_desc": clean_null(ws.cell(row_index, 8).value)})
-    unit_dic_inner.update({"skill_value": int(clean_null(ws.cell(row_index, 9).value))})
+
+    print(" ")
+    print( "------- 技能id = " + str(int(ws.cell(row_index, 5).value)) + " -------")
+
+    # 内容
+    unit_dic.update({str(int(ws.cell(row_index, 5).value)): unit_dic_inner})
+    unit_dic_inner.update({"skill_id": int(ws.cell(row_index, 5).value)})
+    unit_dic_inner.update({"skill_desc": clean_null(ws.cell(row_index, 6).value)})
+    unit_dic_inner.update({"skill_type": int(clean_null(int(ws.cell(row_index, 7).value)))})
+    unit_dic_inner.update({"skill_value": int(clean_null(int(ws.cell(row_index, 8).value)))})
+    unit_dic_inner.update({"skill_value_type": int(clean_null(int(ws.cell(row_index, 9).value)))})
+
+    # clubs
+    clubs_list = []
+    unit_dic_inner.update({"club_ids": clubs_list})
+    clubs_str = ws.cell(row_index, 10).value
+    if clubs_str != None:
+        if str(type(clubs_str)) != "<class 'float'>":
+            print( type(clubs_str))
+            clubs_list = clubs_str.split(',')
+            print( "技能id = " + str(int(ws.cell(row_index, 5).value)) +  " 分拆后 clubs_list = " + str(clubs_list))
+        else:
+            clubs_list.append( int( clubs_str ))
+
+    # ball_types
+    ball_types_list = []
+    unit_dic_inner.update({"ball_types": ball_types_list})
+    ball_types_str = ws.cell(row_index, 11).value
+    if ball_types_str != None:
+        if str(type(ball_types_str)) != "<class 'float'>":
+            ball_types_list = ball_types_str.split(',')
+            print( "技能id = " + str(int(ws.cell(row_index, 5).value)) +  " 分拆后 ball_types_list = " + \
+                str(ball_types_list))
+        else:
+            ball_types_list.append( int( ball_types_str ))
 
 
-    print("配置 id= " + str(int(ws.cell(row_index, 6).value))+ " 的数据")
+    unit_dic_inner.update({"Note": clean_null(str(ws.cell(row_index, 12).value))})
 
     row_index = row_index + 1
 
@@ -63,6 +92,5 @@ with open(json_dir, "w") as json_file:
 
     print("输出完毕")
 
- 、
 
 
