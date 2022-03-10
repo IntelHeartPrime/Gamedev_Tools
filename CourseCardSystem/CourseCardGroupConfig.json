@@ -1,9 +1,9 @@
 {
-    "1": {
-        "id": 1,
+    "99": {
+        "id": 99,
         "name": "stage1",
         "is_active": true,
-        "course_card": [
+        "course_cards": [
             {
                 "id": 1
             },
@@ -12,6 +12,9 @@
             },
             {
                 "id": 3
+            },
+            {
+                "id": 4
             }
         ]
     }

@@ -23,7 +23,7 @@ xlsx_dir = "SkillConfig.xlsx"
 workbook_dir = os.path.join(work_dir, xlsx_dir)
 print(workbook_dir)
 
-json_file_name = "skillConfig.json"
+json_file_name = "CourseCardSkillConfig.json"
 json_dir = os.path.join(work_dir, json_file_name)
 print(json_dir)
 

@@ -18,7 +18,6 @@ ws2 = wb.sheets['ability1']
 ws3 = wb.sheets['cardstageinfo1']
 ws4 = wb.sheets[3]    # 用这个api就好了？？？？  直接使用id而不是名字
 
-
 import json
 
 # 支持输出中文

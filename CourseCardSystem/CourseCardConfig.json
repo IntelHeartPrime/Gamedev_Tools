@@ -2,7 +2,7 @@
     "1": {
         "id": 1,
         "name": "card_name_lighthouse",
-        "scene_name": "game_S1_1003n",
+        "scene_name": "game_HF_01n",
         "icon_small": "Icon_hole_285",
         "icon_big": "Icon_hole_285",
         "atlas_name": "atlas_sceneminimap",
@@ -31,7 +31,7 @@
                     1001
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_1",
+                    "show_prefab": "game_HF_01n_LV1",
                     "path_pos": [
                         {
                             "x": 2624.183,
@@ -92,7 +92,7 @@
                     1002
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_2",
+                    "show_prefab": "game_HF_01n_LV2",
                     "path_pos": [
                         {
                             "x": 2624.183,
@@ -153,7 +153,7 @@
                     1003
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_3",
+                    "show_prefab": "game_HF_01n_LV3",
                     "path_pos": [
                         {
                             "x": 2624.183,
@@ -215,7 +215,7 @@
                     1011
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_4",
+                    "show_prefab": "game_HF_01n_LV4",
                     "path_pos": [
                         {
                             "x": 2624.183,
@@ -273,10 +273,11 @@
                 "tee": 2,
                 "par": 5,
                 "skills": [
-                    1005
+                    1005,
+                    1011
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_5",
+                    "show_prefab": "game_HF_01n_LV5",
                     "path_pos": [
                         {
                             "x": 2624.183,
@@ -334,10 +335,11 @@
                 "tee": 2,
                 "par": 5,
                 "skills": [
-                    1006
+                    1006,
+                    1011
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_6",
+                    "show_prefab": "game_HF_01n_LV6",
                     "path_pos": [
                         {
                             "x": 2624.183,
@@ -399,7 +401,7 @@
                     1012
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_7",
+                    "show_prefab": "game_HF_01n_LV7",
                     "path_pos": [
                         {
                             "x": 2624.183,
@@ -457,10 +459,11 @@
                 "tee": 3,
                 "par": 5,
                 "skills": [
-                    1008
+                    1008,
+                    1012
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_8",
+                    "show_prefab": "game_HF_01n_LV8",
                     "path_pos": [
                         {
                             "x": 2624.183,
@@ -518,10 +521,11 @@
                 "tee": 3,
                 "par": 5,
                 "skills": [
-                    1009
+                    1009,
+                    1012
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_9",
+                    "show_prefab": "game_HF_01n_LV9",
                     "path_pos": [
                         {
                             "x": 2624.183,
@@ -583,7 +587,7 @@
                     1013
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_10",
+                    "show_prefab": "game_HF_01n_LV10",
                     "path_pos": [
                         {
                             "x": 2624.183,
@@ -911,7 +915,7 @@
     "2": {
         "id": 2,
         "name": "card_name_tide",
-        "scene_name": "game_S1_1004n",
+        "scene_name": "Demo_test_HF_03",
         "icon_small": "Icon_hole_285",
         "icon_big": "Icon_hole_285",
         "atlas_name": "atlas_sceneminimap",
@@ -937,10 +941,538 @@
                 "tee": 1,
                 "par": 5,
                 "skills": [
-                    1001
+                    1014
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_1",
+                    "show_prefab": "Demo_test_HF_03_LV1",
+                    "path_pos": [
+                        {
+                            "x": -128.8,
+                            "y": -102.9
+                        }
+                    ]
+                }
+            },
+            {
+                "level": 2,
+                "max_star": 12,
+                "update_card": 0,
+                "update_price": 0,
+                "provide_exp": 100,
+                "tee": 1,
+                "par": 5,
+                "skills": [
+                    1015
+                ],
+                "scene_show_dic": {
+                    "show_prefab": "Demo_test_HF_03_LV2",
+                    "path_pos": [
+                        {
+                            "x": -128.8,
+                            "y": -102.9
+                        }
+                    ]
+                }
+            },
+            {
+                "level": 3,
+                "max_star": 12,
+                "update_card": 0,
+                "update_price": 0,
+                "provide_exp": 100,
+                "tee": 1,
+                "par": 5,
+                "skills": [
+                    1016
+                ],
+                "scene_show_dic": {
+                    "show_prefab": "Demo_test_HF_03_LV3",
+                    "path_pos": [
+                        {
+                            "x": -128.8,
+                            "y": -102.9
+                        }
+                    ]
+                }
+            },
+            {
+                "level": 4,
+                "max_star": 13,
+                "update_card": 0,
+                "update_price": 0,
+                "provide_exp": 100,
+                "tee": 2,
+                "par": 5,
+                "skills": [
+                    1017,
+                    1021,
+                    1028,
+                    1025
+                ],
+                "scene_show_dic": {
+                    "show_prefab": "Demo_test_HF_03_LV4",
+                    "path_pos": [
+                        {
+                            "x": -128.8,
+                            "y": -102.9
+                        }
+                    ]
+                }
+            },
+            {
+                "level": 5,
+                "max_star": 13,
+                "update_card": 0,
+                "update_price": 0,
+                "provide_exp": 100,
+                "tee": 2,
+                "par": 5,
+                "skills": [
+                    1018,
+                    1021,
+                    1028,
+                    1025
+                ],
+                "scene_show_dic": {
+                    "show_prefab": "Demo_test_HF_03_LV5",
+                    "path_pos": [
+                        {
+                            "x": -128.8,
+                            "y": -102.9
+                        }
+                    ]
+                }
+            },
+            {
+                "level": 6,
+                "max_star": 13,
+                "update_card": 0,
+                "update_price": 0,
+                "provide_exp": 100,
+                "tee": 2,
+                "par": 5,
+                "skills": [
+                    1019,
+                    1021,
+                    1028,
+                    1025
+                ],
+                "scene_show_dic": {
+                    "show_prefab": "Demo_test_HF_03_LV6",
+                    "path_pos": [
+                        {
+                            "x": -128.8,
+                            "y": -102.9
+                        }
+                    ]
+                }
+            },
+            {
+                "level": 7,
+                "max_star": 14,
+                "update_card": 0,
+                "update_price": 0,
+                "provide_exp": 100,
+                "tee": 3,
+                "par": 5,
+                "skills": [
+                    1020,
+                    1022,
+                    1029,
+                    1026
+                ],
+                "scene_show_dic": {
+                    "show_prefab": "Demo_test_HF_03_LV7",
+                    "path_pos": [
+                        {
+                            "x": -128.8,
+                            "y": -102.9
+                        }
+                    ]
+                }
+            },
+            {
+                "level": 8,
+                "max_star": 14,
+                "update_card": 0,
+                "update_price": 0,
+                "provide_exp": 100,
+                "tee": 3,
+                "par": 5,
+                "skills": [
+                    1020,
+                    1023,
+                    1030,
+                    1026
+                ],
+                "scene_show_dic": {
+                    "show_prefab": "Demo_test_HF_03_LV8",
+                    "path_pos": [
+                        {
+                            "x": -128.8,
+                            "y": -102.9
+                        }
+                    ]
+                }
+            },
+            {
+                "level": 9,
+                "max_star": 14,
+                "update_card": 0,
+                "update_price": 0,
+                "provide_exp": 100,
+                "tee": 3,
+                "par": 5,
+                "skills": [
+                    1020,
+                    1024,
+                    1031,
+                    1026
+                ],
+                "scene_show_dic": {
+                    "show_prefab": "Demo_test_HF_03_LV9",
+                    "path_pos": [
+                        {
+                            "x": -128.8,
+                            "y": -102.9
+                        }
+                    ]
+                }
+            },
+            {
+                "level": 10,
+                "max_star": 15,
+                "update_card": 0,
+                "update_price": 0,
+                "provide_exp": 100,
+                "tee": 4,
+                "par": 5,
+                "skills": [
+                    1020,
+                    1024,
+                    1031,
+                    1026,
+                    1027
+                ],
+                "scene_show_dic": {
+                    "show_prefab": "Demo_test_HF_03_LV10",
+                    "path_pos": [
+                        {
+                            "x": -128.8,
+                            "y": -102.9
+                        }
+                    ]
+                }
+            }
+        ],
+        "card_stage_infos": [
+            {
+                "start_pos": {
+                    "x": -172.0,
+                    "y": -909.0
+                },
+                "evaluation_rule": [
+                    [
+                        1,
+                        -1,
+                        -1
+                    ],
+                    [
+                        2,
+                        -1,
+                        200
+                    ],
+                    [
+                        3,
+                        -1,
+                        100
+                    ],
+                    [
+                        4,
+                        -1,
+                        50
+                    ],
+                    [
+                        5,
+                        -2,
+                        -1
+                    ],
+                    [
+                        6,
+                        -2,
+                        200
+                    ],
+                    [
+                        7,
+                        -2,
+                        100
+                    ],
+                    [
+                        8,
+                        -2,
+                        50
+                    ],
+                    [
+                        9,
+                        -3,
+                        -1
+                    ],
+                    [
+                        10,
+                        -3,
+                        200
+                    ],
+                    [
+                        11,
+                        -3,
+                        100
+                    ],
+                    [
+                        12,
+                        -3,
+                        50
+                    ]
+                ]
+            },
+            {
+                "start_pos": {
+                    "x": -178.0,
+                    "y": -983.0
+                },
+                "evaluation_rule": [
+                    [
+                        2,
+                        -1,
+                        -1
+                    ],
+                    [
+                        3,
+                        -1,
+                        200
+                    ],
+                    [
+                        4,
+                        -1,
+                        100
+                    ],
+                    [
+                        5,
+                        -1,
+                        50
+                    ],
+                    [
+                        6,
+                        -2,
+                        -1
+                    ],
+                    [
+                        7,
+                        -2,
+                        200
+                    ],
+                    [
+                        8,
+                        -2,
+                        100
+                    ],
+                    [
+                        9,
+                        -2,
+                        50
+                    ],
+                    [
+                        10,
+                        -3,
+                        -1
+                    ],
+                    [
+                        11,
+                        -3,
+                        200
+                    ],
+                    [
+                        12,
+                        -3,
+                        100
+                    ],
+                    [
+                        13,
+                        -3,
+                        50
+                    ]
+                ]
+            },
+            {
+                "start_pos": {
+                    "x": -131.0,
+                    "y": -1061.0
+                },
+                "evaluation_rule": [
+                    [
+                        3,
+                        -1,
+                        -1
+                    ],
+                    [
+                        4,
+                        -1,
+                        200
+                    ],
+                    [
+                        5,
+                        -1,
+                        100
+                    ],
+                    [
+                        6,
+                        -1,
+                        50
+                    ],
+                    [
+                        7,
+                        -2,
+                        -1
+                    ],
+                    [
+                        8,
+                        -2,
+                        200
+                    ],
+                    [
+                        9,
+                        -2,
+                        100
+                    ],
+                    [
+                        10,
+                        -2,
+                        50
+                    ],
+                    [
+                        11,
+                        -3,
+                        -1
+                    ],
+                    [
+                        12,
+                        -3,
+                        200
+                    ],
+                    [
+                        13,
+                        -3,
+                        100
+                    ],
+                    [
+                        14,
+                        -3,
+                        50
+                    ]
+                ]
+            },
+            {
+                "start_pos": {
+                    "x": -126.0,
+                    "y": -1117.0
+                },
+                "evaluation_rule": [
+                    [
+                        4,
+                        -1,
+                        -1
+                    ],
+                    [
+                        5,
+                        -1,
+                        200
+                    ],
+                    [
+                        6,
+                        -1,
+                        100
+                    ],
+                    [
+                        7,
+                        -1,
+                        50
+                    ],
+                    [
+                        8,
+                        -2,
+                        -1
+                    ],
+                    [
+                        9,
+                        -2,
+                        200
+                    ],
+                    [
+                        10,
+                        -2,
+                        100
+                    ],
+                    [
+                        11,
+                        -2,
+                        50
+                    ],
+                    [
+                        12,
+                        -3,
+                        -1
+                    ],
+                    [
+                        13,
+                        -3,
+                        200
+                    ],
+                    [
+                        14,
+                        -3,
+                        100
+                    ],
+                    [
+                        15,
+                        -3,
+                        50
+                    ]
+                ]
+            }
+        ]
+    },
+    "3": {
+        "id": 3,
+        "name": "card_name_freedom",
+        "scene_name": "Demo_test_HF_08",
+        "icon_small": "Icon_hole_285",
+        "icon_big": "Icon_hole_285",
+        "atlas_name": "atlas_sceneminimap",
+        "type": 2,
+        "color": 2,
+        "wind_min": 1,
+        "wind_max": 5,
+        "debuff_k": 0.0,
+        "needle_speed_K": 0.8,
+        "hole": 2,
+        "hole_size": 0.41,
+        "par_dis": 51.3,
+        "eagle_dis": 30.0,
+        "flag_bounce": 0.2,
+        "camera_height": 1000,
+        "ability": [
+            {
+                "level": 1,
+                "max_star": 12,
+                "update_card": 0,
+                "update_price": 0,
+                "provide_exp": 100,
+                "tee": 1,
+                "par": 5,
+                "skills": [
+                    1050
+                ],
+                "scene_show_dic": {
+                    "show_prefab": "Demo_test_HF_08_LV1",
                     "path_pos": [
                         {
                             "x": 0.0,
@@ -958,10 +1490,10 @@
                 "tee": 1,
                 "par": 5,
                 "skills": [
-                    1002
+                    1051
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_2",
+                    "show_prefab": "Demo_test_HF_08_LV2",
                     "path_pos": [
                         {
                             "x": 0.0,
@@ -979,10 +1511,11 @@
                 "tee": 1,
                 "par": 5,
                 "skills": [
-                    1003
+                    1052,
+                    1053
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_3",
+                    "show_prefab": "Demo_test_HF_08_LV3",
                     "path_pos": [
                         {
                             "x": 0.0,
@@ -1000,11 +1533,12 @@
                 "tee": 2,
                 "par": 5,
                 "skills": [
-                    1004,
-                    1011
+                    1054,
+                    1053,
+                    1062
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_4",
+                    "show_prefab": "Demo_test_HF_08_LV4",
                     "path_pos": [
                         {
                             "x": 0.0,
@@ -1022,10 +1556,12 @@
                 "tee": 2,
                 "par": 5,
                 "skills": [
-                    1005
+                    1055,
+                    1053,
+                    1062
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_5",
+                    "show_prefab": "Demo_test_HF_08_LV5",
                     "path_pos": [
                         {
                             "x": 0.0,
@@ -1043,10 +1579,12 @@
                 "tee": 2,
                 "par": 5,
                 "skills": [
-                    1006
+                    1056,
+                    1053,
+                    1062
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_6",
+                    "show_prefab": "Demo_test_HF_08_LV6",
                     "path_pos": [
                         {
                             "x": 0.0,
@@ -1064,11 +1602,14 @@
                 "tee": 3,
                 "par": 5,
                 "skills": [
-                    1007,
-                    1012
+                    1056,
+                    1053,
+                    1057,
+                    1062,
+                    1097
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_7",
+                    "show_prefab": "Demo_test_HF_08_LV7",
                     "path_pos": [
                         {
                             "x": 0.0,
@@ -1086,10 +1627,14 @@
                 "tee": 3,
                 "par": 5,
                 "skills": [
-                    1008
+                    1058,
+                    1053,
+                    1057,
+                    1062,
+                    1097
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_8",
+                    "show_prefab": "Demo_test_HF_08_LV8",
                     "path_pos": [
                         {
                             "x": 0.0,
@@ -1107,10 +1652,14 @@
                 "tee": 3,
                 "par": 5,
                 "skills": [
-                    1009
+                    1061,
+                    1053,
+                    1060,
+                    1062,
+                    1097
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_9",
+                    "show_prefab": "Demo_test_HF_08_LV9",
                     "path_pos": [
                         {
                             "x": 0.0,
@@ -1128,11 +1677,15 @@
                 "tee": 4,
                 "par": 5,
                 "skills": [
-                    1010,
-                    1013
+                    1061,
+                    1053,
+                    1060,
+                    1059,
+                    1062,
+                    1097
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_10",
+                    "show_prefab": "Demo_test_HF_08_LV10",
                     "path_pos": [
                         {
                             "x": 0.0,
@@ -1417,15 +1970,15 @@
             }
         ]
     },
-    "3": {
-        "id": 3,
-        "name": "card_name_beijing",
-        "scene_name": "game_S1_1008n",
+    "4": {
+        "id": 4,
+        "name": "card_name_track",
+        "scene_name": "Demo_test_HF_05",
         "icon_small": "Icon_hole_285",
         "icon_big": "Icon_hole_285",
         "atlas_name": "atlas_sceneminimap",
         "type": 2,
-        "color": 2,
+        "color": 3,
         "wind_min": 1,
         "wind_max": 5,
         "debuff_k": 0.0,
@@ -1435,7 +1988,7 @@
         "par_dis": 51.3,
         "eagle_dis": 30.0,
         "flag_bounce": 0.2,
-        "camera_height": 1000,
+        "camera_height": 1100,
         "ability": [
             {
                 "level": 1,
@@ -1446,10 +1999,10 @@
                 "tee": 1,
                 "par": 5,
                 "skills": [
-                    1001
+                    1032
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_1",
+                    "show_prefab": "Demo_test_HF_05_LV1",
                     "path_pos": [
                         {
                             "x": 0.0,
@@ -1467,10 +2020,10 @@
                 "tee": 1,
                 "par": 5,
                 "skills": [
-                    1002
+                    1033
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_2",
+                    "show_prefab": "Demo_test_HF_05_LV2",
                     "path_pos": [
                         {
                             "x": 0.0,
@@ -1488,10 +2041,10 @@
                 "tee": 1,
                 "par": 5,
                 "skills": [
-                    1003
+                    1034
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_3",
+                    "show_prefab": "Demo_test_HF_05_LV3",
                     "path_pos": [
                         {
                             "x": 0.0,
@@ -1509,11 +2062,13 @@
                 "tee": 2,
                 "par": 5,
                 "skills": [
-                    1004,
-                    1011
+                    1034,
+                    1035,
+                    1044,
+                    1045
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_4",
+                    "show_prefab": "Demo_test_HF_05_LV4",
                     "path_pos": [
                         {
                             "x": 0.0,
@@ -1531,10 +2086,13 @@
                 "tee": 2,
                 "par": 5,
                 "skills": [
-                    1005
+                    1035,
+                    1036,
+                    1044,
+                    1045
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_5",
+                    "show_prefab": "Demo_test_HF_05_LV5",
                     "path_pos": [
                         {
                             "x": 0.0,
@@ -1552,10 +2110,13 @@
                 "tee": 2,
                 "par": 5,
                 "skills": [
-                    1006
+                    1036,
+                    1037,
+                    1044,
+                    1045
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_6",
+                    "show_prefab": "Demo_test_HF_05_LV6",
                     "path_pos": [
                         {
                             "x": 0.0,
@@ -1573,11 +2134,15 @@
                 "tee": 3,
                 "par": 5,
                 "skills": [
-                    1007,
-                    1012
+                    1036,
+                    1037,
+                    1038,
+                    1047,
+                    1046,
+                    1039
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_7",
+                    "show_prefab": "Demo_test_HF_05_LV7",
                     "path_pos": [
                         {
                             "x": 0.0,
@@ -1595,10 +2160,15 @@
                 "tee": 3,
                 "par": 5,
                 "skills": [
-                    1008
+                    1036,
+                    1037,
+                    1044,
+                    1047,
+                    1046,
+                    1041
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_8",
+                    "show_prefab": "Demo_test_HF_05_LV8",
                     "path_pos": [
                         {
                             "x": 0.0,
@@ -1616,10 +2186,15 @@
                 "tee": 3,
                 "par": 5,
                 "skills": [
-                    1009
+                    1036,
+                    1037,
+                    1044,
+                    1047,
+                    1046,
+                    1042
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_9",
+                    "show_prefab": "Demo_test_HF_05_LV9",
                     "path_pos": [
                         {
                             "x": 0.0,
@@ -1637,11 +2212,15 @@
                 "tee": 4,
                 "par": 5,
                 "skills": [
-                    1010,
-                    1013
+                    1036,
+                    1037,
+                    1044,
+                    1049,
+                    1043,
+                    1048
                 ],
                 "scene_show_dic": {
-                    "show_prefab": "Prefab_10",
+                    "show_prefab": "Demo_test_HF_05_LV10",
                     "path_pos": [
                         {
                             "x": 0.0,
@@ -1651,6 +2230,279 @@
                 }
             }
         ],
-        "card_stage_infos": []
+        "card_stage_infos": [
+            {
+                "start_pos": {
+                    "x": -44.4,
+                    "y": -347.5
+                },
+                "evaluation_rule": [
+                    [
+                        1,
+                        -1,
+                        -1
+                    ],
+                    [
+                        2,
+                        -1,
+                        200
+                    ],
+                    [
+                        3,
+                        -1,
+                        100
+                    ],
+                    [
+                        4,
+                        -1,
+                        50
+                    ],
+                    [
+                        5,
+                        -2,
+                        -1
+                    ],
+                    [
+                        6,
+                        -2,
+                        200
+                    ],
+                    [
+                        7,
+                        -2,
+                        100
+                    ],
+                    [
+                        8,
+                        -2,
+                        50
+                    ],
+                    [
+                        9,
+                        -3,
+                        -1
+                    ],
+                    [
+                        10,
+                        -3,
+                        200
+                    ],
+                    [
+                        11,
+                        -3,
+                        100
+                    ],
+                    [
+                        12,
+                        -3,
+                        50
+                    ]
+                ]
+            },
+            {
+                "start_pos": {
+                    "x": -44.8,
+                    "y": -404.8
+                },
+                "evaluation_rule": [
+                    [
+                        2,
+                        -1,
+                        -1
+                    ],
+                    [
+                        3,
+                        -1,
+                        200
+                    ],
+                    [
+                        4,
+                        -1,
+                        100
+                    ],
+                    [
+                        5,
+                        -1,
+                        50
+                    ],
+                    [
+                        6,
+                        -2,
+                        -1
+                    ],
+                    [
+                        7,
+                        -2,
+                        200
+                    ],
+                    [
+                        8,
+                        -2,
+                        100
+                    ],
+                    [
+                        9,
+                        -2,
+                        50
+                    ],
+                    [
+                        10,
+                        -3,
+                        -1
+                    ],
+                    [
+                        11,
+                        -3,
+                        200
+                    ],
+                    [
+                        12,
+                        -3,
+                        100
+                    ],
+                    [
+                        13,
+                        -3,
+                        50
+                    ]
+                ]
+            },
+            {
+                "start_pos": {
+                    "x": -23.3,
+                    "y": -445.6
+                },
+                "evaluation_rule": [
+                    [
+                        3,
+                        -1,
+                        -1
+                    ],
+                    [
+                        4,
+                        -1,
+                        200
+                    ],
+                    [
+                        5,
+                        -1,
+                        100
+                    ],
+                    [
+                        6,
+                        -1,
+                        50
+                    ],
+                    [
+                        7,
+                        -2,
+                        -1
+                    ],
+                    [
+                        8,
+                        -2,
+                        200
+                    ],
+                    [
+                        9,
+                        -2,
+                        100
+                    ],
+                    [
+                        10,
+                        -2,
+                        50
+                    ],
+                    [
+                        11,
+                        -3,
+                        -1
+                    ],
+                    [
+                        12,
+                        -3,
+                        200
+                    ],
+                    [
+                        13,
+                        -3,
+                        100
+                    ],
+                    [
+                        14,
+                        -3,
+                        50
+                    ]
+                ]
+            },
+            {
+                "start_pos": {
+                    "x": -30.0,
+                    "y": -503.0
+                },
+                "evaluation_rule": [
+                    [
+                        4,
+                        -1,
+                        -1
+                    ],
+                    [
+                        5,
+                        -1,
+                        200
+                    ],
+                    [
+                        6,
+                        -1,
+                        100
+                    ],
+                    [
+                        7,
+                        -1,
+                        50
+                    ],
+                    [
+                        8,
+                        -2,
+                        -1
+                    ],
+                    [
+                        9,
+                        -2,
+                        200
+                    ],
+                    [
+                        10,
+                        -2,
+                        100
+                    ],
+                    [
+                        11,
+                        -2,
+                        50
+                    ],
+                    [
+                        12,
+                        -3,
+                        -1
+                    ],
+                    [
+                        13,
+                        -3,
+                        200
+                    ],
+                    [
+                        14,
+                        -3,
+                        100
+                    ],
+                    [
+                        15,
+                        -3,
+                        50
+                    ]
+                ]
+            }
+        ]
     }
 }

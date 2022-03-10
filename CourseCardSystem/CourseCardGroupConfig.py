@@ -48,7 +48,7 @@ while ws.range((row_index,1)).value != None:
     unit_dic_inner.update({"is_active": ws.range((row_index, 3)).value})
 
     course_card = []
-    unit_dic_inner.update({"course_card" : course_card})
+    unit_dic_inner.update({"course_cards" : course_card})
 
     column_index_start = 4
     while ws.range((row_index, column_index_start)).value != None:
