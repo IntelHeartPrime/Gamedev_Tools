@@ -7559,5 +7559,659 @@
                 ]
             }
         ]
+    },
+    {
+        "tour": 16,
+        "course_id": 30900,
+        "id": 30900,
+        "props": [
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 37,
+                        "level": 5
+                    },
+                    {
+                        "id": 37,
+                        "level": 5
+                    },
+                    {
+                        "id": 38,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 31,
+                        "level": 10
+                    },
+                    {
+                        "id": 31,
+                        "level": 10
+                    },
+                    {
+                        "id": 38,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 37,
+                        "level": 5
+                    },
+                    {
+                        "id": 37,
+                        "level": 5
+                    },
+                    {
+                        "id": 63,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 31,
+                        "level": 10
+                    },
+                    {
+                        "id": 31,
+                        "level": 10
+                    },
+                    {
+                        "id": 63,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 64,
+                        "level": 5
+                    },
+                    {
+                        "id": 64,
+                        "level": 5
+                    },
+                    {
+                        "id": 63,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 64,
+                        "level": 5
+                    },
+                    {
+                        "id": 64,
+                        "level": 5
+                    },
+                    {
+                        "id": 38,
+                        "level": 5
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tour": 16,
+        "course_id": 31200,
+        "id": 31200,
+        "props": [
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 37,
+                        "level": 5
+                    },
+                    {
+                        "id": 37,
+                        "level": 5
+                    },
+                    {
+                        "id": 38,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 31,
+                        "level": 10
+                    },
+                    {
+                        "id": 31,
+                        "level": 10
+                    },
+                    {
+                        "id": 38,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 37,
+                        "level": 5
+                    },
+                    {
+                        "id": 37,
+                        "level": 5
+                    },
+                    {
+                        "id": 63,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 31,
+                        "level": 10
+                    },
+                    {
+                        "id": 31,
+                        "level": 10
+                    },
+                    {
+                        "id": 63,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 64,
+                        "level": 5
+                    },
+                    {
+                        "id": 64,
+                        "level": 5
+                    },
+                    {
+                        "id": 63,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 64,
+                        "level": 5
+                    },
+                    {
+                        "id": 64,
+                        "level": 5
+                    },
+                    {
+                        "id": 38,
+                        "level": 5
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tour": 16,
+        "course_id": 31100,
+        "id": 31100,
+        "props": [
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 37,
+                        "level": 5
+                    },
+                    {
+                        "id": 37,
+                        "level": 5
+                    },
+                    {
+                        "id": 38,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 31,
+                        "level": 10
+                    },
+                    {
+                        "id": 31,
+                        "level": 10
+                    },
+                    {
+                        "id": 38,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 37,
+                        "level": 5
+                    },
+                    {
+                        "id": 37,
+                        "level": 5
+                    },
+                    {
+                        "id": 63,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 31,
+                        "level": 10
+                    },
+                    {
+                        "id": 31,
+                        "level": 10
+                    },
+                    {
+                        "id": 63,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 64,
+                        "level": 5
+                    },
+                    {
+                        "id": 64,
+                        "level": 5
+                    },
+                    {
+                        "id": 63,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 64,
+                        "level": 5
+                    },
+                    {
+                        "id": 64,
+                        "level": 5
+                    },
+                    {
+                        "id": 38,
+                        "level": 5
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tour": 16,
+        "course_id": 31000,
+        "id": 31000,
+        "props": [
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 37,
+                        "level": 5
+                    },
+                    {
+                        "id": 37,
+                        "level": 5
+                    },
+                    {
+                        "id": 38,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 31,
+                        "level": 10
+                    },
+                    {
+                        "id": 31,
+                        "level": 10
+                    },
+                    {
+                        "id": 38,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 37,
+                        "level": 5
+                    },
+                    {
+                        "id": 37,
+                        "level": 5
+                    },
+                    {
+                        "id": 63,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 31,
+                        "level": 10
+                    },
+                    {
+                        "id": 31,
+                        "level": 10
+                    },
+                    {
+                        "id": 63,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 64,
+                        "level": 5
+                    },
+                    {
+                        "id": 64,
+                        "level": 5
+                    },
+                    {
+                        "id": 63,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 64,
+                        "level": 5
+                    },
+                    {
+                        "id": 64,
+                        "level": 5
+                    },
+                    {
+                        "id": 38,
+                        "level": 5
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tour": 16,
+        "course_id": 31300,
+        "id": 31300,
+        "props": [
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 37,
+                        "level": 5
+                    },
+                    {
+                        "id": 37,
+                        "level": 5
+                    },
+                    {
+                        "id": 38,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 31,
+                        "level": 10
+                    },
+                    {
+                        "id": 31,
+                        "level": 10
+                    },
+                    {
+                        "id": 38,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 37,
+                        "level": 5
+                    },
+                    {
+                        "id": 37,
+                        "level": 5
+                    },
+                    {
+                        "id": 63,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 31,
+                        "level": 10
+                    },
+                    {
+                        "id": 31,
+                        "level": 10
+                    },
+                    {
+                        "id": 63,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 64,
+                        "level": 5
+                    },
+                    {
+                        "id": 64,
+                        "level": 5
+                    },
+                    {
+                        "id": 63,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 64,
+                        "level": 5
+                    },
+                    {
+                        "id": 64,
+                        "level": 5
+                    },
+                    {
+                        "id": 38,
+                        "level": 5
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tour": 16,
+        "course_id": 31400,
+        "id": 31400,
+        "props": [
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 37,
+                        "level": 5
+                    },
+                    {
+                        "id": 37,
+                        "level": 5
+                    },
+                    {
+                        "id": 38,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 31,
+                        "level": 10
+                    },
+                    {
+                        "id": 31,
+                        "level": 10
+                    },
+                    {
+                        "id": 38,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 37,
+                        "level": 5
+                    },
+                    {
+                        "id": 37,
+                        "level": 5
+                    },
+                    {
+                        "id": 63,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 31,
+                        "level": 10
+                    },
+                    {
+                        "id": 31,
+                        "level": 10
+                    },
+                    {
+                        "id": 63,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 64,
+                        "level": 5
+                    },
+                    {
+                        "id": 64,
+                        "level": 5
+                    },
+                    {
+                        "id": 63,
+                        "level": 5
+                    }
+                ]
+            },
+            {
+                "balls": [],
+                "clubs": [
+                    {
+                        "id": 64,
+                        "level": 5
+                    },
+                    {
+                        "id": 64,
+                        "level": 5
+                    },
+                    {
+                        "id": 38,
+                        "level": 5
+                    }
+                ]
+            }
+        ]
     }
 ]

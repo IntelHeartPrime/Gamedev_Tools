@@ -70,6 +70,9 @@ while ws1.range((row_index,4)).value != None:
     unit_dic_inner = {}
     unit_dic.update({int(ws1.range((row_index,1)).value): unit_dic_inner})
     unit_dic_inner.update({"id": int(ws1.range((row_index, 1)).value)})
+
+    print(" 开始进行球场配置转化  id = " + str(int(ws1.range((row_index, 1)).value)))
+
     unit_dic_inner.update({"name": ws1.range((row_index, 2)).value})
     unit_dic_inner.update({"scene_name": ws1.range((row_index, 3)).value})
     unit_dic_inner.update({"icon_small": ws1.range((row_index, 4)).value})
@@ -77,17 +80,23 @@ while ws1.range((row_index,4)).value != None:
     unit_dic_inner.update({"atlas_name": ws1.range((row_index, 6)).value})
     unit_dic_inner.update({"type": int(ws1.range((row_index, 7)).value)})
     unit_dic_inner.update({"color": int(ws1.range((row_index, 8)).value)})
-    unit_dic_inner.update({"wind_min": int(ws1.range((row_index, 9)).value)})
-    unit_dic_inner.update({"wind_max": int(ws1.range((row_index, 10)).value)})
-    unit_dic_inner.update({"debuff_k": ws1.range((row_index, 11)).value})
-    unit_dic_inner.update({"needle_speed_K": ws1.range((row_index, 12)).value})
-    unit_dic_inner.update({"hole": int(ws1.range((row_index, 13)).value)})
-    unit_dic_inner.update({"hole_size": ws1.range((row_index, 14)).value})
-    unit_dic_inner.update({"par_dis": ws1.range((row_index, 15)).value})
-    unit_dic_inner.update({"eagle_dis": ws1.range((row_index, 16)).value})
-    unit_dic_inner.update({"flag_bounce": ws1.range((row_index, 17)).value})
 
-    unit_dic_inner.update({"camera_height": int(ws1.range((row_index, 21)).value)})
+    ''' delete later '''
+    '''
+    unit_dic_inner.update({"wind_min": int(ws1.range((row_index, 19)).value)})
+    unit_dic_inner.update({"wind_max": int(ws1.range((row_index, 20)).value)})
+    unit_dic_inner.update({"debuff_k": ws1.range((row_index, 21)).value})
+    unit_dic_inner.update({"needle_speed_K": ws1.range((row_index, 22)).value})
+    '''
+    ''' delete later'''
+
+    unit_dic_inner.update({"hole": int(ws1.range((row_index, 9)).value)})
+    unit_dic_inner.update({"hole_size": ws1.range((row_index, 10)).value})
+    unit_dic_inner.update({"par_dis": ws1.range((row_index, 11)).value})
+    unit_dic_inner.update({"eagle_dis": ws1.range((row_index, 12)).value})
+    unit_dic_inner.update({"flag_bounce": ws1.range((row_index, 13)).value})
+
+    unit_dic_inner.update({"camera_height": int(ws1.range((row_index, 17)).value)})
 
 
     # Config ability # Waiting..
@@ -96,8 +105,8 @@ while ws1.range((row_index,4)).value != None:
     unit_dic_inner.update({"ability": ability_list})
 
     # 获取 Ability 的索引列
-    card_row_index = int(ws1.range((row_index, 18)).value)
-    print(" card_row_index = " + str(card_row_index))
+    card_row_index = int(ws1.range((row_index, 14)).value)
+    print("开始配置 Ability card_row_index = " + str(card_row_index))
     while ws2.range((card_row_index, 1)).value != None:
         dic_ability = {}
         ability_list.append(dic_ability)
@@ -118,13 +127,27 @@ while ws1.range((row_index,4)).value != None:
             ability_column_start_index = ability_column_start_index + 1
 
         scene_show_dic = {}
-        dic_ability.update({"scene_show_dic" : scene_show_dic})
+        dic_ability.update({"scene_show" : scene_show_dic})
         scene_show_dic.update({"show_prefab": ws2.range((card_row_index, 15)).value})
+
+        ''' recover later '''
+        dic_ability.update({"wind_min": int(ws2.range((card_row_index, 16)).value)})
+        dic_ability.update({"wind_max": int(ws2.range((card_row_index, 17)).value)})
+        dic_ability.update({"debuff_k": ws2.range((card_row_index, 18)).value})
+        dic_ability.update({"needle_speed_k": ws2.range((card_row_index, 19)).value})
+
+
         path_pos_list = []
         scene_show_dic.update({"path_pos": path_pos_list})
 
+        hole_pos_list = str(ws2.range((card_row_index, 20)).value).split(",")
+        hole_pos_dic ={}
+        scene_show_dic.update({"hole_pos": hole_pos_dic})
+        hole_pos_dic.update({"x": hole_pos_list[0]})
+        hole_pos_dic.update({"y": hole_pos_list[1]})
+
         # path_pos 解析字符串  (a,b),(b,c),(c,d)...
-        string_path_pos = str(ws2.range((int(card_row_index), 16)).value)
+        string_path_pos = str(ws2.range((int(card_row_index), 21)).value)
         path_pos_list_cache = ParsingStringPathPos(string_path_pos)
 
         for unit in path_pos_list_cache:
@@ -143,8 +166,8 @@ while ws1.range((row_index,4)).value != None:
     card_stage_infos_list = []
     unit_dic_inner.update({"card_stage_infos": card_stage_infos_list})
 
-    info_row_index = int(ws1.range((row_index, 19)).value)
-    print("info_row_index = " + str(info_row_index))
+    info_row_index = int(ws1.range((row_index, 15)).value)
+    print("开始配置 card_stage_infos info_row_index = " + str(info_row_index))
     while ws3.range((info_row_index, 1)).value != None:
         card_stage_dic ={}
         card_stage_infos_list.append(card_stage_dic)
