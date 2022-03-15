@@ -4170,7 +4170,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 2,
+                            "scene_id": 1003,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
@@ -4569,7 +4569,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 2,
+                            "scene_id": 1003,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
@@ -4968,7 +4968,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 2,
+                            "scene_id": 1003,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
@@ -5367,7 +5367,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 2,
+                            "scene_id": 1003,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
@@ -5766,7 +5766,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 2,
+                            "scene_id": 1003,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
@@ -6165,7 +6165,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 2,
+                            "scene_id": 1003,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
@@ -6564,7 +6564,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 2,
+                            "scene_id": 1003,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
@@ -6963,7 +6963,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 2,
+                            "scene_id": 1003,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
@@ -7362,7 +7362,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 2,
+                            "scene_id": 1003,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
@@ -7761,7 +7761,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 2,
+                            "scene_id": 1003,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
@@ -8160,7 +8160,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 3,
+                            "scene_id": 2,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
@@ -8559,7 +8559,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 3,
+                            "scene_id": 2,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
@@ -8958,7 +8958,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 3,
+                            "scene_id": 2,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
@@ -9357,7 +9357,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 3,
+                            "scene_id": 2,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
@@ -9756,7 +9756,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 3,
+                            "scene_id": 2,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
@@ -10155,7 +10155,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 3,
+                            "scene_id": 2,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
@@ -10554,7 +10554,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 3,
+                            "scene_id": 2,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
@@ -10953,7 +10953,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 3,
+                            "scene_id": 2,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
@@ -11352,7 +11352,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 3,
+                            "scene_id": 2,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
@@ -11751,7 +11751,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 3,
+                            "scene_id": 2,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
@@ -12150,7 +12150,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 4,
+                            "scene_id": 1005,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
@@ -12549,7 +12549,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 4,
+                            "scene_id": 1005,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
@@ -12948,7 +12948,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 4,
+                            "scene_id": 1005,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
@@ -13347,7 +13347,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 4,
+                            "scene_id": 1005,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
@@ -13746,7 +13746,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 4,
+                            "scene_id": 1005,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
@@ -14145,7 +14145,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 4,
+                            "scene_id": 1005,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
@@ -14544,7 +14544,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 4,
+                            "scene_id": 1005,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
@@ -14943,7 +14943,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 4,
+                            "scene_id": 1005,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
@@ -15342,7 +15342,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 4,
+                            "scene_id": 1005,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
@@ -15741,7 +15741,7 @@
                     "checkpoint": [
                         {
                             "id": 1,
-                            "scene_id": 4,
+                            "scene_id": 1005,
                             "side_story": 0,
                             "ticket_cost": 1,
                             "battle_limit": {
