@@ -18,7 +18,6 @@ gift3 = 300
 gift4 = 650
 gift5 = 1100
 
-
 # 根据输入的值输出rank与precent
 def get_rank_precent_byValue( input_value ):
     rank = 0

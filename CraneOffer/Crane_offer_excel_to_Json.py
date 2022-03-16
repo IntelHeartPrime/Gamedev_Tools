@@ -1,10 +1,25 @@
 from openpyxl import load_workbook
 import json
 import time
-
 import os
+
+
+'''
+# 1. 下载
+# 2. 覆盖本地
+# 3. 开始转换
+url_download = 'https://docs.google.com/spreadsheets/d/1qRCofncJSH2bKQtcnMSfFoqHHhRE3OEUzscD2A9M-HQ/export?format=xlsx'
+xlsx_file = requests.get(url_download)
+open('CraneOfferconfigs.xlsx', 'wb').write(xlsx_file.content)
+
+# https://docs.google.com/spreadsheets/d/1TRqi3_w6ssi6n1E0Tv9qkrj0eHATvm6Uvzn9TALJGRE/edit?usp=sharing
+
+'''
+
 work_dir = os.getcwd()
 xlsx_dir = "CraneOfferconfigs.xlsx"
+
+
 
 print(work_dir)
 
