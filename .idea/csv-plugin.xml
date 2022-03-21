@@ -17,13 +17,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="/CourseCardSystem/Birde_data.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="/CraneOffer/csvCraneOffer.csv">
           <value>
             <Attribute>
