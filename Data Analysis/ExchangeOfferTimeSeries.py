@@ -201,5 +201,3 @@ with open(csv_file_path) as csvfile:
     print("gift5 = " + str(gift5_cnt))
 
 
-# TODO add cdate tag  ex: day1-free, day1-token ....
-

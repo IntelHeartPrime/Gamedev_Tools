@@ -143,8 +143,8 @@ while ws1.range((row_index,4)).value != None:
         hole_pos_list = str(ws2.range((card_row_index, 20)).value).split(",")
         hole_pos_dic ={}
         scene_show_dic.update({"hole_pos": hole_pos_dic})
-        hole_pos_dic.update({"x": hole_pos_list[0]})
-        hole_pos_dic.update({"y": hole_pos_list[1]})
+        hole_pos_dic.update({"x": float(hole_pos_list[0])})
+        hole_pos_dic.update({"y": float(hole_pos_list[1])})
 
         # path_pos 解析字符串  (a,b),(b,c),(c,d)...
         string_path_pos = str(ws2.range((int(card_row_index), 21)).value)
