@@ -72,7 +72,7 @@ while ws1.range((row_start, 3)).value != None:
     row_index_cardDepository = 30 + card_lv
     ws1.range((row_index_cardDepository, col_index)).color = dic_color[key_str]
 
-    
+
     row_start = row_start + 1
 
 
