@@ -400,18 +400,21 @@ print("pvp配置完成")
 
 store_box_list = []
 unit_dic_inner.update({"store_box_list": store_box_list})
-column_index_store = 2
-while wsPVP.range((52, column_index_store)).value != None:
+row_index_store = 53
+while wsPVP.range((row_index_store, 1)).value != None:
     dic = {}
-    dic.update({"pos": int(wsPVP.range((52, column_index_store)).value)})
-    dic.update({"type": int(wsPVP.range((53, column_index_store)).value)})
-    dic.update({"color": int(wsPVP.range((54, column_index_store)).value)})
-    dic.update({"consume_type": int(wsPVP.range((55, column_index_store)).value)})
-    dic.update({"consume_num": int(wsPVP.range((56, column_index_store)).value)})
-    dic.update({"goodsId": int(wsPVP.range((57, column_index_store)).value)})
+    dic.update({"pos": int(wsPVP.range((row_index_store, 1)).value)})
+    dic.update({"consume_type": int(wsPVP.range((row_index_store, 2)).value)})
+    dic.update({"consume_num": int(wsPVP.range((row_index_store, 3)).value)})
 
+    chest_dic = {}
+    chest_dic.update({"prop_id": int(wsPVP.range((row_index_store, 4)).value)})
+    chest_dic.update({"prop_num": int(wsPVP.range((row_index_store, 5)).value)})
+    chest_dic.update({"prop_color": int(wsPVP.range((row_index_store, 6)).value)})
+    chest_dic.update({"chest_type": int(wsPVP.range((row_index_store, 7)).value)})
+    dic.update({"chest": chest_dic})
     store_box_list.append(dic)
-    column_index_store = column_index_store + 1
+    row_index_store = row_index_store + 1
 
 with open(json_dir, "w") as json_file:
     json_str = json.dumps(HomeFieldConfig_list, indent=4)
