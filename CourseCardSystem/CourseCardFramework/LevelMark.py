@@ -19,14 +19,14 @@ ws1 = wb.sheets['Dungeon']
 # row = 5  column = 3
 # 卡片库 row = 30 column 13 ~ 20
 dic_cardDepository = {}
-dic_cardDepository.update({"橙1": 13})
-dic_cardDepository.update({"橙2": 14})
-dic_cardDepository.update({"紫1": 15})
-dic_cardDepository.update({"紫2": 16})
-dic_cardDepository.update({"紫3": 17})
-dic_cardDepository.update({"紫4": 18})
-dic_cardDepository.update({"传奇1": 19})
-dic_cardDepository.update({"传奇2": 20})
+dic_cardDepository.update({"橙1": 14})
+dic_cardDepository.update({"橙2": 15})
+dic_cardDepository.update({"紫1": 16})
+dic_cardDepository.update({"紫2": 17})
+dic_cardDepository.update({"紫3": 18})
+dic_cardDepository.update({"紫4": 19})
+dic_cardDepository.update({"传奇1": 20})
+dic_cardDepository.update({"传奇2": 21})
 
 dic_color = {}
 dic_color.update({"橙1": (255,165,79)})
