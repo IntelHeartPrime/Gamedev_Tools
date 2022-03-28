@@ -8,8 +8,6 @@ Rare: 255,165,79
 
 '''
 
-
-
 import xlwings as xw
 import requests
 wb = xw.Book("CourseCardSystemThink.xlsx")
@@ -37,6 +35,17 @@ dic_color.update({"紫3": (132,112,255)})
 dic_color.update({"紫4": (132,112,255)})
 dic_color.update({"传奇1": (255,130,171)})
 dic_color.update({"传奇2": (255,130,171)})
+
+dic_nowLevel = {}
+dic_nowLevel.update({"橙1": 0})
+dic_nowLevel.update({"橙2": 0})
+dic_nowLevel.update({"紫1": 0})
+dic_nowLevel.update({"紫2": 0})
+dic_nowLevel.update({"紫3": 0})
+dic_nowLevel.update({"紫4": 0})
+dic_nowLevel.update({"传奇1": 0})
+dic_nowLevel.update({"传奇2": 0})
+
 
 # 关卡颜色清零
 
@@ -75,6 +84,8 @@ while ws1.range((row_start, 3)).value != None:
 
     row_start = row_start + 1
 
+
+# 列出所有进度需要的卡片等级
 
 
 
