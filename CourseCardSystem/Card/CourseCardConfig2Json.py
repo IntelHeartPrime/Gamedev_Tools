@@ -118,6 +118,8 @@ while ws1.range((row_index,4)).value != None:
         dic_ability.update({"provide_exp": int(ws2.range((card_row_index, 5)).value)})
         dic_ability.update({"tee": int(ws2.range((card_row_index, 6)).value)})
         dic_ability.update({"par": int(ws2.range((card_row_index, 7)).value)})
+        dic_ability.update({"map_icon": ws2.range((card_row_index, 23)).value})
+
 
         skills_list = []
         dic_ability.update({"skills": skills_list})
