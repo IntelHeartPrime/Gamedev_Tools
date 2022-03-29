@@ -1,8 +1,20 @@
 from openpyxl import load_workbook
 import json
 import time
-
 import os
+import requests
+
+
+
+# 1. 下载
+# 2. 覆盖本地
+# 3. 开始转换
+url_download = 'https://docs.google.com/spreadsheets/d/1461Lk2oM94a_wyKr8aU2ktUOj3OS6uYSc6EJtIGizrI/export?format=xlsx'
+
+xlsx_file = requests.get(url_download)
+open('SpcecialChallengeconfig.xlsx', 'wb').write(xlsx_file.content)
+
+
 work_dir = os.getcwd()
 xlsx_dir = "SpcecialChallengeconfig.xlsx"
 
@@ -16,9 +28,7 @@ wb = load_workbook(workbook_dir)
 ws = wb.active
 
 
-file_name_string = str(ws.cell(3,2).value) + "_" + str(ws.cell(5, 2).value) + "_to_" + str(ws.cell(6,2).value) + ".json" 
-if file_name_string!= "":
-    json_file_name = file_name_string
+file_name_string = str(ws.cell(3,2).value) + ".json"
 
 file_name_string = file_name_string.replace(" ","-")
 file_name_string = file_name_string.replace(":","-")
@@ -69,16 +79,16 @@ container_dic = {}
 
 #总配置
 container_dic.update({"name": ws.cell(3, 2).value})
-container_dic.update({"id": ws.cell(4, 2).value})
+container_dic.update({"id": int(ws.cell(4, 2).value)})
 
 start_time = str(ws.cell(5, 2).value)
 end_time = str(ws.cell(6, 2).value)
 
 container_dic.update({"start_time": time2timestamp(start_time)})
 container_dic.update({"end_time": time2timestamp(end_time)})
-container_dic.update({"chance": ws.cell(8, 2).value})
-container_dic.update({"chance_fee": ws.cell(9, 2).value})
-container_dic.update({"diamond_offer_trigger_num": ws.cell(10, 2).value})
+container_dic.update({"chance": int(ws.cell(8, 2).value)})
+container_dic.update({"chance_fee": int(ws.cell(9, 2).value)})
+container_dic.update({"diamond_offer_trigger_num": int(ws.cell(10, 2).value)})
 
 print("总配置 配置完成")
 
@@ -91,20 +101,20 @@ balls = []
 battle_limit.update({"balls": balls})
 column_index = 2
 while ws.cell(15, column_index).value!= None:
-    balls.append(ws.cell(15, column_index).value)
+    balls.append(int(ws.cell(15, column_index).value))
     column_index = column_index + 1
 
 club_color = []
 battle_limit.update({"club_color": club_color})
 column_index = 2
 while ws.cell(19, column_index).value!= None:
-    club_color.append(ws.cell(19, column_index).value)
+    club_color.append(int(ws.cell(19, column_index).value))
     column_index = column_index + 1
 
 clubs = []
 battle_limit.update({"clubs": clubs})
 while ws.cell(23, column_index).value!= None:
-    clubs.append(ws.cell(23, column_index).value)
+    clubs.append(int(ws.cell(23, column_index).value))
     column_index = column_index + 1
 
 print("限定配置 配置完成")
@@ -121,12 +131,12 @@ while ws.cell(29, column_index).value!= None:
     unit_dic = {}
     if ws.cell(28, column_index).value!= None:
         unit_dic.update({"needle_speed": ws.cell(28, column_index).value})
-    unit_dic.update({"process_max": ws.cell(29, column_index).value})
-    unit_dic.update({"process_min": ws.cell(30, column_index).value})
-    unit_dic.update({"tee": ws.cell(31, column_index).value})
-    unit_dic.update({"tour_id": ws.cell(32, column_index).value})
-    unit_dic.update({"wind_max": ws.cell(33, column_index).value})
-    unit_dic.update({"wind_min": ws.cell(34, column_index).value})
+    unit_dic.update({"process_max": int(ws.cell(29, column_index).value)})
+    unit_dic.update({"process_min": int(ws.cell(30, column_index).value)})
+    unit_dic.update({"tee": int(ws.cell(31, column_index).value)})
+    unit_dic.update({"tour_id": int(ws.cell(32, column_index).value)})
+    unit_dic.update({"wind_max": int(ws.cell(33, column_index).value)})
+    unit_dic.update({"wind_min": int(ws.cell(34, column_index).value)})
 
 
     if ws.cell(35, column_index).value != None:
@@ -149,9 +159,9 @@ offer.update({"diamond": diamond})
 column_index = 2
 while ws.cell(39, column_index).value!= None:
     unit_dic = {}
-    unit_dic.update({"duration": ws.cell(39, column_index).value})
+    unit_dic.update({"duration": int(ws.cell(39, column_index).value)})
     unit_dic.update({"money": ws.cell(40, column_index).value})
-    unit_dic.update({"offer_id": ws.cell(41, column_index).value})
+    unit_dic.update({"offer_id": int(ws.cell(41, column_index).value)})
     diamond.append(unit_dic)
 
     column_index = column_index+1
@@ -161,9 +171,9 @@ offer.update({"normal": normal})
 column_index = 2
 while ws.cell(44, column_index).value!= None:
     unit_dic = {}
-    unit_dic.update({"club_level": ws.cell(44, column_index).value})
-    unit_dic.update({"duration": ws.cell(45, column_index).value})
-    unit_dic.update({"offer_id": ws.cell(46, column_index).value})
+    unit_dic.update({"club_level": int(ws.cell(44, column_index).value)})
+    unit_dic.update({"duration": int(ws.cell(45, column_index).value)})
+    unit_dic.update({"offer_id": int(ws.cell(46, column_index).value)})
     normal.append(unit_dic)
     column_index = column_index+1
 
@@ -174,7 +184,7 @@ print("offer 配置完成")
 # push
 push = {}
 container_dic.update({"push": push})
-push.update({"days_end": ws.cell(50, 2).value})
+push.update({"days_end": int(ws.cell(50, 2).value)})
 push.update({"text_end": ws.cell(51, 2).value})
 push.update({"text_start": ws.cell(52, 2).value})
 
@@ -197,7 +207,7 @@ while ws.cell(62,column_index).value!= None:
     unit_dic = {}
     unit_dic.update({"courses": ws.cell(62, column_index).value})
     unit_dic.update({"mph": ws.cell(63, column_index).value})
-    unit_dic.update({"tee": ws.cell(64, column_index).value})
+    unit_dic.update({"tee": int(ws.cell(64, column_index).value)})
     course_info.append(unit_dic)
     column_index = column_index+1
 
@@ -235,7 +245,7 @@ while ws.cell(62, column_index).value!= None:
 
 show_conf.update({"sign_icon": clean_null(ws.cell(90, 2).value)})
 show_conf.update({"tip": clean_null(ws.cell(91, 2).value)})
-show_conf.update({"show_limited_ball": clean_null(ws.cell(92, 2).value)})
+show_conf.update({"show_limited_ball": clean_null(int(ws.cell(92, 2).value))})
 
 print("show_conf配置完成")
 
@@ -248,14 +258,14 @@ print("其他显示配置完成")
 # 解锁条件
 unlock_conditions = {}
 container_dic.update({"unlock_conditions": unlock_conditions})
-unlock_conditions.update({"min_level": ws.cell(100, 2).value})
-unlock_conditions.update({"prepare_id": ws.cell(101, 2).value})
+unlock_conditions.update({"min_level": int(ws.cell(100, 2).value)})
+unlock_conditions.update({"prepare_id": int(ws.cell(101, 2).value)})
 
 print("解锁条件配置完成")
 
 
 # Reward
-container_dic.update({"win_count": ws.cell(105, 2).value})
+container_dic.update({"win_count": int(ws.cell(105, 2).value)})
 
 win_reward =[]
 container_dic.update({"win_reward": win_reward})
@@ -263,21 +273,21 @@ container_dic.update({"win_reward": win_reward})
 row_index = 109
 while ws.cell(row_index, 1).value!= None:
     unit_dic = {}
-    unit_dic.update({"process_id": ws.cell(row_index, 1).value})
-    unit_dic.update({"num": ws.cell(row_index, 2).value})
-    unit_dic.update({"prop_color": ws.cell(row_index, 3).value})
-    unit_dic.update({"prop_id": ws.cell(row_index, 4).value})
-    unit_dic.update({"prop_type": ws.cell(row_index, 5).value})
-    unit_dic.update({"chest_type": ws.cell(row_index, 6).value})
+    unit_dic.update({"process_id": int(ws.cell(row_index, 1).value)})
+    unit_dic.update({"num": int(ws.cell(row_index, 2).value)})
+    unit_dic.update({"prop_color": int(ws.cell(row_index, 3).value)})
+    unit_dic.update({"prop_id": int(ws.cell(row_index, 4).value)})
+    unit_dic.update({"prop_type": int(ws.cell(row_index, 5).value)})
+    unit_dic.update({"chest_type": int(ws.cell(row_index, 6).value)})
     group = []
     unit_dic.update({"group": group})
     for x in range(2):
         sub_unit_dic = {}
-        sub_unit_dic.update({"chest_type": ws.cell(row_index, 7+x*5).value})
-        sub_unit_dic.update({"num": ws.cell(row_index, 8+x*5).value})
-        sub_unit_dic.update({"prop_color": ws.cell(row_index, 9+x*5).value})
-        sub_unit_dic.update({"prop_id": ws.cell(row_index, 10+x*5).value})
-        sub_unit_dic.update({"prop_type": ws.cell(row_index, 11+x*5).value})
+        sub_unit_dic.update({"chest_type": int(ws.cell(row_index, 7+x*5).value)})
+        sub_unit_dic.update({"num": int(ws.cell(row_index, 8+x*5).value)})
+        sub_unit_dic.update({"prop_color": int(ws.cell(row_index, 9+x*5).value)})
+        sub_unit_dic.update({"prop_id": int(ws.cell(row_index, 10+x*5).value)})
+        sub_unit_dic.update({"prop_type": int(ws.cell(row_index, 11+x*5).value)})
 
         group.append(sub_unit_dic)
 
@@ -294,12 +304,12 @@ container_dic.update({"free_reward": free_reward})
 column_index = 2
 while ws.cell(135, column_index).value!= None:
     unit_dic ={}
-    unit_dic.update({"chest_type": ws.cell(135, column_index).value})
-    unit_dic.update({"num": ws.cell(136, column_index).value})
-    unit_dic.update({"process_id": ws.cell(137, column_index).value})
-    unit_dic.update({"prop_color": ws.cell(138, column_index).value})
-    unit_dic.update({"prop_id": ws.cell(139, column_index).value})
-    unit_dic.update({"prop_type": ws.cell(140, column_index).value})
+    unit_dic.update({"chest_type": int(ws.cell(135, column_index).value)})
+    unit_dic.update({"num": int(ws.cell(136, column_index).value)})
+    unit_dic.update({"process_id": int(ws.cell(137, column_index).value)})
+    unit_dic.update({"prop_color": int(ws.cell(138, column_index).value)})
+    unit_dic.update({"prop_id": int(ws.cell(139, column_index).value)})
+    unit_dic.update({"prop_type": int(ws.cell(140, column_index).value)})
     free_reward.append(unit_dic)
     column_index = column_index+1
 
