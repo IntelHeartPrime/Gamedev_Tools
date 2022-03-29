@@ -2,45 +2,36 @@ from openpyxl import load_workbook
 import json
 import time
 import os
+import requests
 
 
-'''
 # 1. 下载
 # 2. 覆盖本地
 # 3. 开始转换
-url_download = 'https://docs.google.com/spreadsheets/d/1qRCofncJSH2bKQtcnMSfFoqHHhRE3OEUzscD2A9M-HQ/export?format=xlsx'
+url_download = 'https://docs.google.com/spreadsheets/d/1TRqi3_w6ssi6n1E0Tv9qkrj0eHATvm6Uvzn9TALJGRE/export?format=xlsx'
 xlsx_file = requests.get(url_download)
-open('CraneOfferconfigs.xlsx', 'wb').write(xlsx_file.content)
-
-# https://docs.google.com/spreadsheets/d/1TRqi3_w6ssi6n1E0Tv9qkrj0eHATvm6Uvzn9TALJGRE/edit?usp=sharing
-
-'''
+open('exchangeOffer.xlsx', 'wb').write(xlsx_file.content)
 
 work_dir = os.getcwd()
-xlsx_dir = "CraneOfferconfigs.xlsx"
-
-
+xlsx_dir = "exchangeOffer.xlsx"
 
 print(work_dir)
 
 workbook_dir = os.path.join(work_dir, xlsx_dir)
 print(workbook_dir)
 
-json_file_name = "CraneOfferConfig.json"
+json_file_name = "exchangeOffer.json"
 
 
 wb = load_workbook(workbook_dir)
 ws = wb.active
 
 
-file_name_string = str(ws.cell(4,2).value) + "_" + str(ws.cell(5,2).value) + "_" + str(ws.cell(7, 2).value) + "_to_" + str(ws.cell(8,2).value) + ".json" 
-if file_name_string!= "":
-    json_file_name = file_name_string
-
-
+file_name_string = str(ws.cell(4,2).value) + "_" + str(ws.cell(5,2).value) + ".json"
 file_name_string = file_name_string.replace(" ","-")
 file_name_string = file_name_string.replace(":","-")
-
+if file_name_string!= "":
+    json_file_name = file_name_string
 
 json_dir = os.path.join(work_dir, json_file_name)
 print(json_dir)
@@ -48,6 +39,12 @@ print(json_dir)
 
 
 # 工具
+
+def getIntList(input_list):
+    result_list = []
+    for x in input_list:
+        result_list.append(int(x))
+    return  result_list
 
 def clean_null(input_value):
     empty_value = ""
@@ -82,13 +79,12 @@ def time2timestamp(input_string):
     return int(timestamp)
 
 
-
 container_dic = {}
 
 # 总配置
-container_dic.update({"id": ws.cell(4, 2).value})
+container_dic.update({"id": int(ws.cell(4, 2).value)})
 container_dic.update({"name": ws.cell(5, 2).value})
-container_dic.update({"coin_rate": ws.cell(6, 2).value})
+container_dic.update({"coin_rate": int(ws.cell(6, 2).value)})
 
 start_time =  str(ws.cell(7, 2).value)
 end_time = str(ws.cell(8, 2).value)
@@ -99,7 +95,7 @@ container_dic.update({"start_time": time2timestamp(start_time)})
 container_dic.update({"end_time": time2timestamp(end_time)})
 container_dic.update({"begin_time": time2timestamp(begin_time)})
 
-container_dic.update({"refresh_interval": ws.cell(10, 2).value})
+container_dic.update({"refresh_interval": int(ws.cell(10, 2).value)})
 
 print(" 总配置完成 ")
 
@@ -111,27 +107,27 @@ for x in range(3):
     if (ws.cell(17,1+x*10).value!= None):
         diff = x*10
         ticket_conf_list_unit_dic = {}
-        ticket_conf_list_unit_dic.update({"min_stage": ws.cell(14,2+diff).value})
-        ticket_conf_list_unit_dic.update({"max_stage": ws.cell(14,9+diff).value})
+        ticket_conf_list_unit_dic.update({"min_stage": int(ws.cell(14,2+diff).value)})
+        ticket_conf_list_unit_dic.update({"max_stage": int(ws.cell(14,9+diff).value)})
 
         ticket_levels_list = []
         ticket_conf_list_unit_dic.update({"ticket_levels": ticket_levels_list})
         row_index = 17
         while ws.cell(row_index,1).value!= None:
             ticket_levels_unit_dict = {}
-            ticket_levels_unit_dict.update({"level": ws.cell(row_index, 1+diff).value})
-            ticket_levels_unit_dict.update({"min": ws.cell(row_index, 2+diff).value})
-            ticket_levels_unit_dict.update({"max": ws.cell(row_index, 3+diff).value})
-            ticket_levels_unit_dict.update({"grade": ws.cell(row_index, 4+diff).value})
+            ticket_levels_unit_dict.update({"level": int(ws.cell(row_index, 1+diff).value)})
+            ticket_levels_unit_dict.update({"min": int(ws.cell(row_index, 2+diff).value)})
+            ticket_levels_unit_dict.update({"max": int(ws.cell(row_index, 3+diff).value)})
+            ticket_levels_unit_dict.update({"grade": int(ws.cell(row_index, 4+diff).value)})
 
             reward_dic = {}
             ticket_levels_unit_dict.update({"reward": reward_dic})
 
-            reward_dic.update({"prop_type": ws.cell(row_index, 5+diff).value})
-            reward_dic.update({"prop_id": ws.cell(row_index, 6+diff).value})
-            reward_dic.update({"prop_num": ws.cell(row_index, 7+diff).value})
-            reward_dic.update({"prop_color": ws.cell(row_index, 8+diff).value})
-            reward_dic.update({"chest_type": ws.cell(row_index, 9+diff).value})
+            reward_dic.update({"prop_type": int(ws.cell(row_index, 5+diff).value)})
+            reward_dic.update({"prop_id": int(ws.cell(row_index, 6+diff).value)})
+            reward_dic.update({"prop_num": int(ws.cell(row_index, 7+diff).value)})
+            reward_dic.update({"prop_color": int(ws.cell(row_index, 8+diff).value)})
+            reward_dic.update({"chest_type": int(ws.cell(row_index, 9+diff).value)})
 
             ticket_levels_list.append(ticket_levels_unit_dict)
 
@@ -151,22 +147,22 @@ for x in range(3):
         diff = x*10
         big_reward_list_unit_dic = {}
 
-        big_reward_list_unit_dic.update({"min_stage": ws.cell(56, 2+diff).value})
-        big_reward_list_unit_dic.update({"max_stage": ws.cell(56, 6+diff).value})
+        big_reward_list_unit_dic.update({"min_stage": int(ws.cell(56, 2+diff).value)})
+        big_reward_list_unit_dic.update({"max_stage": int(ws.cell(56, 6+diff).value)})
 
         big_rewards_list = []
         big_reward_list_unit_dic.update({"big_rewards": big_rewards_list})
         row_index = 60
         while ws.cell(row_index,1).value!= None:
             big_reward_unit_dic = {}
-            big_reward_unit_dic.update({"unlock_level": ws.cell(row_index,1+diff).value})
+            big_reward_unit_dic.update({"unlock_level": int(ws.cell(row_index,1+diff).value)})
 
             reward_dic = {}
-            reward_dic.update({"prop_type": ws.cell(row_index, 2+diff).value})
-            reward_dic.update({"prop_id": ws.cell(row_index, 3+diff).value})
-            reward_dic.update({"prop_num": ws.cell(row_index, 4+diff).value})
-            reward_dic.update({"prop_color": ws.cell(row_index, 5+diff).value})
-            reward_dic.update({"chest_type": ws.cell(row_index, 6+diff).value})
+            reward_dic.update({"prop_type": int(ws.cell(row_index, 2+diff).value)})
+            reward_dic.update({"prop_id": int(ws.cell(row_index, 3+diff).value)})
+            reward_dic.update({"prop_num": int(ws.cell(row_index, 4+diff).value)})
+            reward_dic.update({"prop_color": int(ws.cell(row_index, 5+diff).value)})
+            reward_dic.update({"chest_type": int(ws.cell(row_index, 6+diff).value)})
 
             big_reward_unit_dic.update({"reward": reward_dic})
 
@@ -190,8 +186,8 @@ row_index = 80
 while ws.cell(row_index, 1).value!= None:
     offer_list_unit_dic = {}
     offer_list_unit_dic.update( {"type": ws.cell(row_index, 1).value})
-    offer_list_unit_dic.update( {"offer_id": ws.cell(row_index, 2).value})
-    offer_list_unit_dic.update( {"consume_type": ws.cell(row_index, 3).value})
+    offer_list_unit_dic.update( {"offer_id":int(ws.cell(row_index, 2).value)})
+    offer_list_unit_dic.update( {"consume_type": int(ws.cell(row_index, 3).value)})
     offer_list_unit_dic.update( {"consume_num": ws.cell(row_index, 4).value})
 
     if ws.cell(row_index,5).value!=None:
@@ -202,11 +198,11 @@ while ws.cell(row_index, 1).value!= None:
             if ws.cell(row_index, 5+x*5).value!= None:
                 diff = x*5
                 reward_list_unit_dic = {}
-                reward_list_unit_dic.update({"prop_type": ws.cell(row_index, 5+diff).value})
-                reward_list_unit_dic.update({"prop_id": ws.cell(row_index, 6+diff).value})
-                reward_list_unit_dic.update({"prop_num": ws.cell(row_index, 7+diff).value})
-                reward_list_unit_dic.update({"prop_color": ws.cell(row_index, 8+diff).value})
-                reward_list_unit_dic.update({"chest_type": ws.cell(row_index, 9+diff).value})
+                reward_list_unit_dic.update({"prop_type": int(ws.cell(row_index, 5+diff).value)})
+                reward_list_unit_dic.update({"prop_id": int(ws.cell(row_index, 6+diff).value)})
+                reward_list_unit_dic.update({"prop_num": int(ws.cell(row_index, 7+diff).value)})
+                reward_list_unit_dic.update({"prop_color": int(ws.cell(row_index, 8+diff).value)})
+                reward_list_unit_dic.update({"chest_type": int(ws.cell(row_index, 9+diff).value)})
 
                 reward_list.append(reward_list_unit_dic)
 
@@ -229,8 +225,8 @@ for x in range(3):
     diff = x*5
     if ws.cell( 98, column_index+diff).value != None:
         ticket_reward_bg_list_unt_dic = {}
-        ticket_reward_bg_list_unt_dic.update({"min_stage": ws.cell(98, column_index+diff).value})
-        ticket_reward_bg_list_unt_dic.update({"max_stage": ws.cell(99, column_index+diff).value})
+        ticket_reward_bg_list_unt_dic.update({"min_stage": int(ws.cell(98, column_index+diff).value)})
+        ticket_reward_bg_list_unt_dic.update({"max_stage": int(ws.cell(99, column_index+diff).value)})
 
         ticket_reward_bg = {}
         ticket_reward_bg_list_unt_dic.update({"ticket_reward_bg": ticket_reward_bg})
@@ -259,6 +255,14 @@ for x in range(3):
         Gradienttop = [ws.cell(112, column_index+diff).value, ws.cell(112, column_index+diff+1).value, ws.cell(112, column_index+diff+2).value, ws.cell(112, column_index+diff+3).value]
         Gradientdown = [ws.cell(113, column_index+diff).value, ws.cell(113, column_index+diff+1).value, ws.cell(113, column_index+diff+2).value, ws.cell(113, column_index+diff+3).value]
 
+        tabRGB = getIntList(tabRGB)
+        tabRGB_sel = getIntList(tabRGB_sel)
+        tabRGB_outline_sel = getIntList(tabRGB_outline_sel)
+        outlineRGB = getIntList(outlineRGB)
+        projectionRGB = getIntList(projectionRGB)
+        Gradienttop = getIntList(Gradienttop)
+        Gradientdown = getIntList(Gradientdown)
+
         ticket_reward_bg.update({"tabRGB": tabRGB})
         ticket_reward_bg.update({"tabRGB_sel": tabRGB_sel})
         ticket_reward_bg.update({"tabRGB_outline_sel": tabRGB_outline_sel})
@@ -278,7 +282,7 @@ container_dic.update({"notify": notify_dic})
 notify_dic.update({"start_content": ws.cell(118, 3).value})
 notify_dic.update({"refresh_content": ws.cell(119, 3).value})
 notify_dic.update({"end_content": ws.cell(120, 3).value})
-notify_dic.update({"time_before_end": ws.cell(121, 3).value})
+notify_dic.update({"time_before_end": int(ws.cell(121, 3).value)})
 
 
 # ui_conf
@@ -295,8 +299,8 @@ ui_conf_dic.update({"token_model_effect": ws.cell(127, 3).value})
 ear_open_dic = {}
 container_dic.update({"ear_open": ear_open_dic})
 
-ear_open_dic.update({"A": ws.cell(130, 3).value})
-ear_open_dic.update({"B": ws.cell(131, 3).value})
+ear_open_dic.update({"A": int(ws.cell(130, 3).value)})
+ear_open_dic.update({"B": int(ws.cell(131, 3).value)})
 
 #   popup_config_ab
 
@@ -354,8 +358,6 @@ print("UI配置完成")
 with open(json_dir, "w") as json_file:
     json_str = json.dumps(container_dic, indent=4)
     json_file.write(json_str)
-
-
 
 
 

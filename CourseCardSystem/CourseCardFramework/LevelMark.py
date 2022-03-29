@@ -26,6 +26,17 @@ dic_cardDepository.update({"紫4": 19})
 dic_cardDepository.update({"传奇1": 20})
 dic_cardDepository.update({"传奇2": 21})
 
+dic_cardLevelProgress = {}
+dic_cardLevelProgress.update({"橙1": 23})
+dic_cardLevelProgress.update({"橙2": 24})
+dic_cardLevelProgress.update({"紫1": 25})
+dic_cardLevelProgress.update({"紫2": 26})
+dic_cardLevelProgress.update({"紫3": 27})
+dic_cardLevelProgress.update({"紫4": 28})
+dic_cardLevelProgress.update({"传奇1": 29})
+dic_cardLevelProgress.update({"传奇2": 30})
+
+
 dic_color = {}
 dic_color.update({"橙1": (255,165,79)})
 dic_color.update({"橙2": (255,165,79)})
@@ -81,12 +92,30 @@ while ws1.range((row_start, 3)).value != None:
     row_index_cardDepository = 30 + card_lv
     ws1.range((row_index_cardDepository, col_index)).color = dic_color[key_str]
 
+    # 对传奇卡张数的解析
+    # col = 11 是传奇卡的阵列
+    if ws1.range((row_start, 11)).value != None:
+        # 开始解析传奇卡等级
+        legen_car
+
+
+    # 列出所有进度需要的卡片等级
+    for key_str in dic_nowLevel.keys():
+        if card_string == key_str:
+            # 判断等级大小
+            now_level = dic_nowLevel[key_str]
+            if card_lv >= now_level:
+                dic_nowLevel[key_str] = card_lv
+                print("  Update - 卡片【" + str(card_string) + "】 当前最高等级 = " + str(card_lv))
+        else:
+            print("  Keep - 卡片【" + str(key_str) + "】 当前最高等级 = " + str(dic_nowLevel[key_str]))
+
+    for key_str in dic_cardLevelProgress.keys():
+        col_level_index = dic_cardLevelProgress[key_str]
+        ws1.range((row_start, col_level_index)).value = dic_nowLevel[key_str]
+
+
 
     row_start = row_start + 1
-
-
-# 列出所有进度需要的卡片等级
-
-
 
 
