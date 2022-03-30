@@ -10,6 +10,8 @@ Rare: 255,165,79
 
 import xlwings as xw
 import requests
+import string
+
 wb = xw.Book("CourseCardSystemThink.xlsx")
 ws1 = wb.sheets['Dungeon']
 
@@ -94,13 +96,27 @@ while ws1.range((row_start, 3)).value != None:
 
     # 对传奇卡张数的解析
     # col = 11 是传奇卡的阵列
+    legen_card = ""
+    legen_card_lv = 0
+
     if ws1.range((row_start, 11)).value != None:
-        # 开始解析传奇卡等级
-        legen_car
+        # 开始解析传奇卡
+        legen_card_str = str(ws1.range((row_start, 11)).value)
+        legen_card_str_list = legen_card_str.split("-")
+        # 去空格
+        legen_card = legen_card_str_list[0].strip()
+
+        # 解析等级
+        legen_card_str_lv = legen_card_str.split("Lv")
+        # 得等级
+        legen_card_lv = int(legen_card_str_lv[len(legen_card_str_lv)-1])
+
 
 
     # 列出所有进度需要的卡片等级
     for key_str in dic_nowLevel.keys():
+
+        # 紫卡和橙卡
         if card_string == key_str:
             # 判断等级大小
             now_level = dic_nowLevel[key_str]
@@ -109,11 +125,24 @@ while ws1.range((row_start, 3)).value != None:
                 print("  Update - 卡片【" + str(card_string) + "】 当前最高等级 = " + str(card_lv))
         else:
             print("  Keep - 卡片【" + str(key_str) + "】 当前最高等级 = " + str(dic_nowLevel[key_str]))
+        # 紫卡和橙卡
+
+        # 传奇卡
+        if legen_card == key_str:
+            # 判断等级大小
+            now_level = dic_nowLevel[key_str]
+            if legen_card_lv >= now_level:
+                dic_nowLevel[key_str] = legen_card_lv
+                print("  传奇卡 Update - 卡片【" + str(legen_card) + "】 当前最高等级 = " + str(legen_card_lv))
+        else:
+            print("  传奇卡 Keep - 卡片【" + str(key_str) + "】 当前最高等级 = " + str(dic_nowLevel[key_str]))
+        # 传奇卡
+
 
     for key_str in dic_cardLevelProgress.keys():
         col_level_index = dic_cardLevelProgress[key_str]
         ws1.range((row_start, col_level_index)).value = dic_nowLevel[key_str]
-
+        print(" 行 = " + str(row_start) + " 列 = " + str(col_level_index) + " 的值设置为 [" + str(dic_nowLevel[key_str]) + "]")
 
 
     row_start = row_start + 1
