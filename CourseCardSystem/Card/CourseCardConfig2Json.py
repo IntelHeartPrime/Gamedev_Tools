@@ -123,7 +123,7 @@ while ws1.range((row_index,4)).value != None:
 
         skills_list = []
         dic_ability.update({"skills": skills_list})
-        ability_column_start_index = 8
+        ability_column_start_index = 25
         while ws2.range((card_row_index,ability_column_start_index )).value != None:
             skills_list.append(int(ws2.range((card_row_index, ability_column_start_index)).value))
             ability_column_start_index = ability_column_start_index + 1
@@ -186,7 +186,7 @@ while ws1.range((row_index,4)).value != None:
         # evaluation_rule list添加
         # 获取 列索引
         column_start_index_str = ws3.range((info_row_index, 4)).value
-        split_column_start_index_str = column_start_index_str.split(',')
+        split_column_start_index_str = column_start_index_str.split(';')
 
         row_start_index = int(split_column_start_index_str[0])
         column_start_index = int(split_column_start_index_str[1])
