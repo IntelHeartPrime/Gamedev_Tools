@@ -159,7 +159,7 @@ while ws1.range((75, pay_rank_index * 7 + 2)).value != None:
     tickets_list.append(tickets_dic)
     tickets_dic.update({"money": ws1.range((75, pay_rank_index * 7 + 2)).value})
     tickets_dic.update({"type": int(ws1.range((76, pay_rank_index * 7 + 2)).value)})
-    tickets_dic.update({"cd": int(ws1.range((76, pay_rank_index * 7 + 4)).value)})
+    tickets_dic.update({"cd": int(ws1.range((75, pay_rank_index * 7 + 4)).value)})
     tickets_dic.update({"open_time": int(ws1.range((75, pay_rank_index * 7 + 6)).value)})
     tickets_dic.update({"end_before": int(ws1.range((76, pay_rank_index * 7 + 6)).value)})
 
@@ -229,6 +229,10 @@ unit_dic_inner.update({"pve_conf": pve_conf})
 
 pve_conf.update({"init_offer_chapter": int(wsPVE.range((3, 2)).value)})
 pve_conf.update({"free_card": int(wsPVE.range((4, 2)).value)})
+pve_conf.update({"on_hook_limit_time_sec": int(wsPVE.range((6, 2)).value)})
+pve_conf.update({"on_hook_receive_limit_sec": int(wsPVE.range((8, 2)).value)})
+
+
 
 on_hook_rule = []
 row_index = 122
@@ -243,12 +247,22 @@ while wsPVE.range((row_index, column_innner_index)).value is not None:
 
 pve_conf.update({"on_hook_rules": on_hook_rule})
 
+# tickets_update_mins
 tickets_update_mins = []
 pve_conf.update({"tickets_update_mins": tickets_update_mins})
 column_index = 2
 while wsPVE.range((5, column_index)).value != None:
     tickets_update_mins.append(int(wsPVE.range((5, column_index)).value))
     column_index = column_index + 1
+
+# shop_update_mins
+shop_update_mins = []
+pve_conf.update({"shop_update_mins": shop_update_mins})
+column_index = 2
+while wsPVE.range((5, column_index)).value != None:
+    shop_update_mins.append(int(wsPVE.range((15, column_index)).value))
+    column_index = column_index + 1
+
 
 pve_conf.update({"default_tickets": int(wsPVE.range((7, 2)).value)})
 
