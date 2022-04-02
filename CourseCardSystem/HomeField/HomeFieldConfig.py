@@ -93,9 +93,12 @@ unit_dic_inner.update({"signup_offer_list": sign_offer_list_dic})
 
 pve_list = []
 pvp_list = []
+tickets_list = []
 
 sign_offer_list_dic.update({"pve": pve_list})
 sign_offer_list_dic.update({"pvp": pvp_list})
+sign_offer_list_dic.update({"tickets": tickets_list})
+
 
 # pve_signup_offer
 pay_rank_index = 0
@@ -144,6 +147,36 @@ while ws1.range((25, pay_rank_index * 7 + 2)).value != None:
         column_index = column_index + 1
 
     pay_rank_index = pay_rank_index + 1
+
+# tickets_sign_up_offer
+
+
+pay_rank_index = 0
+
+while ws1.range((75, pay_rank_index * 7 + 2)).value != None:
+
+    tickets_dic = {}
+    tickets_list.append(tickets_dic)
+    tickets_dic.update({"money": ws1.range((75, pay_rank_index * 7 + 2)).value})
+    tickets_dic.update({"type": int(ws1.range((76, pay_rank_index * 7 + 2)).value)})
+    tickets_dic.update({"cd": int(ws1.range((76, pay_rank_index * 7 + 4)).value)})
+    tickets_dic.update({"open_time": int(ws1.range((75, pay_rank_index * 7 + 6)).value)})
+    tickets_dic.update({"end_before": int(ws1.range((76, pay_rank_index * 7 + 6)).value)})
+
+    sign_offer_id_list = []
+    tickets_dic.update({"signup_offer_id_list": sign_offer_id_list})
+
+    column_index = 0
+    while ws1.range((78, pay_rank_index * 7 + 2 + column_index)).value != None:
+        offer_id_list_dic = {}
+        sign_offer_id_list.append(offer_id_list_dic)
+        offer_id_list_dic.update({"money": ws1.range((78, pay_rank_index * 7 + 2 + column_index)).value})
+        offer_id_list_dic.update({"offer_id": int(ws1.range((79, pay_rank_index * 7 + 2 + column_index)).value)})
+
+        column_index = column_index + 1
+
+    pay_rank_index = pay_rank_index + 1
+
 
 # course_level_upgrade_rules
 course_level_upgrade_rules = []
@@ -194,6 +227,7 @@ print("总览配置完成")
 pve_conf = {}
 unit_dic_inner.update({"pve_conf": pve_conf})
 
+pve_conf.update({"init_offer_chapter": int(wsPVE.range((3, 2)).value)})
 pve_conf.update({"free_card": int(wsPVE.range((4, 2)).value)})
 
 on_hook_rule = []
@@ -341,8 +375,6 @@ while wsPVE.range((row_index_1, 17)).value != None:
 
 print("process_rewards 配置完成")
 
-# ui config
-pve_conf.update({"ui_config": []})
 
 ## pvp config
 
@@ -368,14 +400,17 @@ while wsPVP.range((row_pvp, 1)).value != None:
     dic.update({"small_level": int(wsPVP.range((row_pvp, 3)).value)})
     dic.update({"upgrade_score": int(wsPVP.range((row_pvp, 4)).value)})
     dic.update({"home_field_level_remote_limit": int(wsPVP.range((row_pvp, 5)).value)})
+    dic.update({"big_reward": int(wsPVP.range((row_pvp, 14)).value)})
 
     score_rules = {}
     dic.update({'score_rules': score_rules})
     score_rules.update({"big_win": int(wsPVP.range((row_pvp, 7)).value)})
     score_rules.update({"small_win": int(wsPVP.range((row_pvp, 8)).value)})
-    score_rules.update({"draw": int(wsPVP.range((row_pvp, 9)).value)})
-    score_rules.update({"small_lose": int(wsPVP.range((row_pvp, 10)).value)})
-    score_rules.update({"big_lose": int(wsPVP.range((row_pvp, 11)).value)})
+    score_rules.update({"mini_win": int(wsPVP.range((row_pvp, 9)).value)})
+    score_rules.update({"draw": int(wsPVP.range((row_pvp, 10)).value)})
+    score_rules.update({"mini_lose": int(wsPVP.range((row_pvp, 11)).value)})
+    score_rules.update({"small_lose": int(wsPVP.range((row_pvp, 12)).value)})
+    score_rules.update({"big_lose": int(wsPVP.range((row_pvp, 13)).value)})
 
     stage_conf.append(dic)
 
@@ -383,13 +418,13 @@ while wsPVP.range((row_pvp, 1)).value != None:
     dic.update({"reward": reward})
 
     column_jump = 0
-    while (wsPVP.range((row_pvp, column_jump * 6 + 13)).value) != None:
+    while (wsPVP.range((row_pvp, column_jump * 6 + 16)).value) != None:
         reward_dic = {}
-        reward_dic.update({"prop_id": int(wsPVP.range((row_pvp, column_jump * 6 + 13)).value)})
-        reward_dic.update({"prop_num": int(wsPVP.range((row_pvp, column_jump * 6 + 14)).value)})
-        reward_dic.update({"prop_type": int(wsPVP.range((row_pvp, column_jump * 6 + 15)).value)})
-        reward_dic.update({"prop_color": int(wsPVP.range((row_pvp, column_jump * 6 + 16)).value)})
-        reward_dic.update({"chest_type": int(wsPVP.range((row_pvp, column_jump * 6 + 17)).value)})
+        reward_dic.update({"prop_id": int(wsPVP.range((row_pvp, column_jump * 6 + 16)).value)})
+        reward_dic.update({"prop_num": int(wsPVP.range((row_pvp, column_jump * 6 + 17)).value)})
+        reward_dic.update({"prop_type": int(wsPVP.range((row_pvp, column_jump * 6 + 18)).value)})
+        reward_dic.update({"prop_color": int(wsPVP.range((row_pvp, column_jump * 6 + 19)).value)})
+        reward_dic.update({"chest_type": int(wsPVP.range((row_pvp, column_jump * 6 + 20)).value)})
 
         reward.append(reward_dic)
 
@@ -397,6 +432,12 @@ while wsPVP.range((row_pvp, 1)).value != None:
     row_pvp = row_pvp + 1
 
 print("pvp配置完成")
+
+# ui config
+ui_config_dic = {}
+unit_dic_inner.update({"ui_config": ui_config_dic})
+ui_config_dic.update({"map_vrew_scale": 1.4})
+print("ui_config配置完成")
 
 store_box_list = []
 unit_dic_inner.update({"store_box_list": store_box_list})
@@ -410,8 +451,9 @@ while wsPVP.range((row_index_store, 1)).value != None:
     chest_dic = {}
     chest_dic.update({"prop_id": int(wsPVP.range((row_index_store, 4)).value)})
     chest_dic.update({"prop_num": int(wsPVP.range((row_index_store, 5)).value)})
-    chest_dic.update({"prop_color": int(wsPVP.range((row_index_store, 6)).value)})
-    chest_dic.update({"chest_type": int(wsPVP.range((row_index_store, 7)).value)})
+    chest_dic.update({"prop_type": int(wsPVP.range((row_index_store, 6)).value)})
+    chest_dic.update({"prop_color": int(wsPVP.range((row_index_store, 7)).value)})
+    chest_dic.update({"chest_type": int(wsPVP.range((row_index_store, 8)).value)})
     dic.update({"chest": chest_dic})
     store_box_list.append(dic)
     row_index_store = row_index_store + 1
@@ -419,3 +461,4 @@ while wsPVP.range((row_index_store, 1)).value != None:
 with open(json_dir, "w") as json_file:
     json_str = json.dumps(HomeFieldConfig_list, indent=4)
     json_file.write(json_str)
+

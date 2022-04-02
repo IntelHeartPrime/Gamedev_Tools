@@ -1,0 +1,1728 @@
+{
+    "1001": {
+        "skill_id": 1001,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 3.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +3%"
+    },
+    "1002": {
+        "skill_id": 1002,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 6.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +6%"
+    },
+    "1003": {
+        "skill_id": 1003,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 9.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +9%"
+    },
+    "1004": {
+        "skill_id": 1004,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 12.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +12%"
+    },
+    "1005": {
+        "skill_id": 1005,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 15.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +15%"
+    },
+    "1006": {
+        "skill_id": 1006,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 18.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +18%"
+    },
+    "1007": {
+        "skill_id": 1007,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 21.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +21%"
+    },
+    "1008": {
+        "skill_id": 1008,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 24.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +24%"
+    },
+    "1009": {
+        "skill_id": 1009,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 27.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +27%"
+    },
+    "1010": {
+        "skill_id": 1010,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 30.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +30%"
+    },
+    "1011": {
+        "skill_id": 1011,
+        "skill_desc": "skill_power",
+        "skill_type": 2,
+        "skill_value": -10.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            0
+        ],
+        "ball_types": [],
+        "Note": "need_speed -10%"
+    },
+    "1012": {
+        "skill_id": 1012,
+        "skill_desc": "reduce_needle_speed",
+        "skill_type": 2,
+        "skill_value": -20.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            0
+        ],
+        "ball_types": [],
+        "Note": "need_speed -20%"
+    },
+    "1013": {
+        "skill_id": 1013,
+        "skill_desc": "reduce_needle_speed",
+        "skill_type": 2,
+        "skill_value": -30.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            0
+        ],
+        "ball_types": [],
+        "Note": "need_speed -30%"
+    },
+    "1014": {
+        "skill_id": 1014,
+        "skill_desc": "skill_ball_power",
+        "skill_type": 1,
+        "skill_value": 4.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            19
+        ],
+        "ball_types": [],
+        "Note": "ball_power +8%"
+    },
+    "1015": {
+        "skill_id": 1015,
+        "skill_desc": "skill_ball_power",
+        "skill_type": 1,
+        "skill_value": 13.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            19
+        ],
+        "ball_types": [],
+        "Note": "ball_power +8%"
+    },
+    "1016": {
+        "skill_id": 1016,
+        "skill_desc": "skill_ball_power",
+        "skill_type": 1,
+        "skill_value": 24.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            19
+        ],
+        "ball_types": [],
+        "Note": "ball_power +8%"
+    },
+    "1017": {
+        "skill_id": 1017,
+        "skill_desc": "skill_ball_power",
+        "skill_type": 1,
+        "skill_value": 28.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            19
+        ],
+        "ball_types": [],
+        "Note": "ball_power +8%"
+    },
+    "1018": {
+        "skill_id": 1018,
+        "skill_desc": "skill_ball_power",
+        "skill_type": 1,
+        "skill_value": 34.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            19
+        ],
+        "ball_types": [],
+        "Note": "ball_power +8%"
+    },
+    "1019": {
+        "skill_id": 1019,
+        "skill_desc": "skill_ball_power",
+        "skill_type": 1,
+        "skill_value": 44.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            19
+        ],
+        "ball_types": [],
+        "Note": "ball_power +8%"
+    },
+    "1020": {
+        "skill_id": 1020,
+        "skill_desc": "skill_ball_power",
+        "skill_type": 1,
+        "skill_value": 52.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            19
+        ],
+        "ball_types": [],
+        "Note": "ball_power +8%"
+    },
+    "1021": {
+        "skill_id": 1021,
+        "skill_desc": "skill_side_spin_up",
+        "skill_type": 6,
+        "skill_value": 20.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            19
+        ],
+        "ball_types": [],
+        "Note": "helm_side_spin +20"
+    },
+    "1022": {
+        "skill_id": 1022,
+        "skill_desc": "skill_side_spin_up",
+        "skill_type": 6,
+        "skill_value": 40.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            19
+        ],
+        "ball_types": [],
+        "Note": "helm_side_spin +20"
+    },
+    "1023": {
+        "skill_id": 1023,
+        "skill_desc": "skill_side_spin_up",
+        "skill_type": 6,
+        "skill_value": 50.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            19
+        ],
+        "ball_types": [],
+        "Note": "helm_side_spin +10"
+    },
+    "1024": {
+        "skill_id": 1024,
+        "skill_desc": "skill_side_spin_up",
+        "skill_type": 6,
+        "skill_value": 65.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            19
+        ],
+        "ball_types": [],
+        "Note": "helm_side_spin +15"
+    },
+    "1025": {
+        "skill_id": 1025,
+        "skill_desc": "skill_helm_reduce_wind",
+        "skill_type": 4,
+        "skill_value": 0.15,
+        "skill_value_type": 1,
+        "club_ids": [
+            19
+        ],
+        "ball_types": [],
+        "Note": "wind -10%"
+    },
+    "1026": {
+        "skill_id": 1026,
+        "skill_desc": "skill_reduce_wind",
+        "skill_type": 4,
+        "skill_value": 0.3,
+        "skill_value_type": 1,
+        "club_ids": [
+            19
+        ],
+        "ball_types": [],
+        "Note": "wind -10%"
+    },
+    "1027": {
+        "skill_id": 1027,
+        "skill_desc": "skill_bounce",
+        "skill_type": 3,
+        "skill_value": 30.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "ball_bounce +30%"
+    },
+    "1028": {
+        "skill_id": 1028,
+        "skill_desc": "skill_side_spin_up",
+        "skill_type": 6,
+        "skill_value": 20.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            20
+        ],
+        "ball_types": [],
+        "Note": "sniper_side_spin +20"
+    },
+    "1029": {
+        "skill_id": 1029,
+        "skill_desc": "skill_side_spin_up",
+        "skill_type": 6,
+        "skill_value": 40.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            20
+        ],
+        "ball_types": [],
+        "Note": "sniper_side_spin +20"
+    },
+    "1030": {
+        "skill_id": 1030,
+        "skill_desc": "skill_side_spin_up",
+        "skill_type": 6,
+        "skill_value": 50.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            20
+        ],
+        "ball_types": [],
+        "Note": "sniper_side_spin +10"
+    },
+    "1031": {
+        "skill_id": 1031,
+        "skill_desc": "skill_side_spin_up",
+        "skill_type": 6,
+        "skill_value": 65.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            20
+        ],
+        "ball_types": [],
+        "Note": "sniper_side_spin +15"
+    },
+    "1032": {
+        "skill_id": 1032,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 4.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +%4"
+    },
+    "1033": {
+        "skill_id": 1033,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 13.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +%9"
+    },
+    "1034": {
+        "skill_id": 1034,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 22.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +%9"
+    },
+    "1035": {
+        "skill_id": 1035,
+        "skill_desc": "skill_bounce",
+        "skill_type": 3,
+        "skill_value": 10.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "ball_bounce +10%"
+    },
+    "1036": {
+        "skill_id": 1036,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 31.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +%9"
+    },
+    "1037": {
+        "skill_id": 1037,
+        "skill_desc": "skill_bounce",
+        "skill_type": 3,
+        "skill_value": 20.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "ball_bounce +10%"
+    },
+    "1038": {
+        "skill_id": 1038,
+        "skill_desc": "skill_earth_power_up",
+        "skill_type": 1,
+        "skill_value": 11.5,
+        "skill_value_type": 0,
+        "club_ids": [
+            31
+        ],
+        "ball_types": [],
+        "Note": "Earth_power +%2.5"
+    },
+    "1039": {
+        "skill_id": 1039,
+        "skill_desc": "skill_top_spin_up",
+        "skill_type": 5,
+        "skill_value": 5.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            31
+        ],
+        "ball_types": [],
+        "Note": "Earth_top_spin +5"
+    },
+    "1040": {
+        "skill_id": 1040,
+        "skill_desc": "skill_earth_power_up",
+        "skill_type": 1,
+        "skill_value": 14.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            31
+        ],
+        "ball_types": [],
+        "Note": "Earth_power +%2.5"
+    },
+    "1041": {
+        "skill_id": 1041,
+        "skill_desc": "skill_top_spin_up",
+        "skill_type": 5,
+        "skill_value": 20.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            31
+        ],
+        "ball_types": [],
+        "Note": "Earth_top_spin +15"
+    },
+    "1042": {
+        "skill_id": 1042,
+        "skill_desc": "skill_top_spin_up",
+        "skill_type": 5,
+        "skill_value": 40.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            31
+        ],
+        "ball_types": [],
+        "Note": "Earth_top_spin +20"
+    },
+    "1043": {
+        "skill_id": 1043,
+        "skill_desc": "skill_earth_reduce_wind",
+        "skill_type": 4,
+        "skill_value": 0.3,
+        "skill_value_type": 1,
+        "club_ids": [
+            31
+        ],
+        "ball_types": [],
+        "Note": "Earth_wind -20%"
+    },
+    "1044": {
+        "skill_id": 1044,
+        "skill_desc": "skill_earth_power_up",
+        "skill_type": 1,
+        "skill_value": 9.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            31
+        ],
+        "ball_types": [],
+        "Note": "Earth_power +%9"
+    },
+    "1045": {
+        "skill_id": 1045,
+        "skill_desc": "reduce_needle_speed",
+        "skill_type": 2,
+        "skill_value": -10.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            0
+        ],
+        "ball_types": [],
+        "Note": "need_speed -10%"
+    },
+    "1046": {
+        "skill_id": 1046,
+        "skill_desc": "skill_earth_reduce_wind",
+        "skill_type": 4,
+        "skill_value": 0.1,
+        "skill_value_type": 1,
+        "club_ids": [
+            31
+        ],
+        "ball_types": [],
+        "Note": "Earth_wind -10%"
+    },
+    "1047": {
+        "skill_id": 1047,
+        "skill_desc": "reduce_needle_speed",
+        "skill_type": 2,
+        "skill_value": -20.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            0
+        ],
+        "ball_types": [],
+        "Note": "need_speed -20%"
+    },
+    "1048": {
+        "skill_id": 1048,
+        "skill_desc": "skill_top_spin_up",
+        "skill_type": 5,
+        "skill_value": 55.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            31
+        ],
+        "ball_types": [],
+        "Note": "Earth_top_spin +15"
+    },
+    "1049": {
+        "skill_id": 1049,
+        "skill_desc": "reduce_needle_speed",
+        "skill_type": 2,
+        "skill_value": -30.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            0
+        ],
+        "ball_types": [],
+        "Note": "need_speed -30%"
+    },
+    "1050": {
+        "skill_id": 1050,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 6.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +6%"
+    },
+    "1051": {
+        "skill_id": 1051,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 14.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +8%\uff0814\uff09"
+    },
+    "1052": {
+        "skill_id": 1052,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 22.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +8%\uff0822\uff09"
+    },
+    "1053": {
+        "skill_id": 1053,
+        "skill_desc": "skill_spinner_power_up",
+        "skill_type": 1,
+        "skill_value": 8.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            50
+        ],
+        "ball_types": [],
+        "Note": "Spinner_power +8%"
+    },
+    "1054": {
+        "skill_id": 1054,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 30.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +8%\uff0830\uff09"
+    },
+    "1055": {
+        "skill_id": 1055,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 38.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +8%\uff0838\uff09"
+    },
+    "1056": {
+        "skill_id": 1056,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 46.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +8%\uff0846\uff09"
+    },
+    "1057": {
+        "skill_id": 1057,
+        "skill_desc": "skill_bounce",
+        "skill_type": 3,
+        "skill_value": 15.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "ball_bounce +15%"
+    },
+    "1058": {
+        "skill_id": 1058,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 54.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +8%\uff0854\uff09"
+    },
+    "1059": {
+        "skill_id": 1059,
+        "skill_desc": "wind resistance",
+        "skill_type": 4,
+        "skill_value": 0.5,
+        "skill_value_type": 1,
+        "club_ids": [
+            50
+        ],
+        "ball_types": [],
+        "Note": "Spinner wind resistance50%"
+    },
+    "1060": {
+        "skill_id": 1060,
+        "skill_desc": "skill_bounce",
+        "skill_type": 3,
+        "skill_value": 30.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "ball_bounce +15%\uff0830\uff09"
+    },
+    "1061": {
+        "skill_id": 1061,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 60.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +6%"
+    },
+    "1062": {
+        "skill_id": 1062,
+        "skill_desc": "skill_side_spin_up",
+        "skill_type": 6,
+        "skill_value": 20.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            19
+        ],
+        "ball_types": [],
+        "Note": "Helm_side_spin +20"
+    },
+    "1097": {
+        "skill_id": 1097,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 20.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            50
+        ],
+        "ball_types": [],
+        "Note": "Spinner_power +12%\uff0820\uff09"
+    },
+    "1063": {
+        "skill_id": 1063,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 4.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +4%"
+    },
+    "1064": {
+        "skill_id": 1064,
+        "skill_desc": "skill_bounce",
+        "skill_type": 3,
+        "skill_value": 4.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball bounce +4%"
+    },
+    "1201": {
+        "skill_id": 1201,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 6.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +2%"
+    },
+    "1065": {
+        "skill_id": 1065,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 11.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +5%"
+    },
+    "1066": {
+        "skill_id": 1066,
+        "skill_desc": "skill_top_spin_up",
+        "skill_type": 5,
+        "skill_value": 10.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            31
+        ],
+        "ball_types": [],
+        "Note": "earth_top_spin +10"
+    },
+    "1067": {
+        "skill_id": 1067,
+        "skill_desc": "skill_bounce",
+        "skill_type": 3,
+        "skill_value": 10.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball bounce +10%"
+    },
+    "1068": {
+        "skill_id": 1068,
+        "skill_desc": "skill_bounce",
+        "skill_type": 3,
+        "skill_value": 8.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball bounce +4%"
+    },
+    "1069": {
+        "skill_id": 1069,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 14.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +3%"
+    },
+    "1070": {
+        "skill_id": 1070,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 19.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +5%"
+    },
+    "1071": {
+        "skill_id": 1071,
+        "skill_desc": "skill_top_spin_up",
+        "skill_type": 5,
+        "skill_value": 20.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            31
+        ],
+        "ball_types": [],
+        "Note": "earth_top_spin +10"
+    },
+    "1072": {
+        "skill_id": 1072,
+        "skill_desc": "skill_top_spin_up",
+        "skill_type": 5,
+        "skill_value": 20.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            32
+        ],
+        "ball_types": [],
+        "Note": "moon_top_spin +10"
+    },
+    "1073": {
+        "skill_id": 1073,
+        "skill_desc": "skill_bounce",
+        "skill_type": 3,
+        "skill_value": 13.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball bounce +5%"
+    },
+    "1074": {
+        "skill_id": 1074,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 23.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +4%"
+    },
+    "1075": {
+        "skill_id": 1075,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 29.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +6%"
+    },
+    "1202": {
+        "skill_id": 1202,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 32.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +3%"
+    },
+    "1076": {
+        "skill_id": 1076,
+        "skill_desc": "skill_top_spin_up",
+        "skill_type": 5,
+        "skill_value": 30.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            31
+        ],
+        "ball_types": [],
+        "Note": "earth_top_spin +10"
+    },
+    "1077": {
+        "skill_id": 1077,
+        "skill_desc": "skill_top_spin_up",
+        "skill_type": 5,
+        "skill_value": 30.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            32
+        ],
+        "ball_types": [],
+        "Note": "moon_top_spin +10"
+    },
+    "1078": {
+        "skill_id": 1078,
+        "skill_desc": "skill_earth_reduce_wind",
+        "skill_type": 4,
+        "skill_value": 0.2,
+        "skill_value_type": 1,
+        "club_ids": [
+            31
+        ],
+        "ball_types": [],
+        "Note": "Earth_wind -10%"
+    },
+    "1079": {
+        "skill_id": 1079,
+        "skill_desc": "skill_moon_reduce_wind",
+        "skill_type": 4,
+        "skill_value": 0.2,
+        "skill_value_type": 1,
+        "club_ids": [
+            32
+        ],
+        "ball_types": [],
+        "Note": "moon_wind -10%"
+    },
+    "1203": {
+        "skill_id": 1203,
+        "skill_desc": "reduce_needle_speed",
+        "skill_type": 2,
+        "skill_value": -10.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            0
+        ],
+        "ball_types": [],
+        "Note": "need_speed -10%"
+    },
+    "1204": {
+        "skill_id": 1204,
+        "skill_desc": "reduce_needle_speed",
+        "skill_type": 2,
+        "skill_value": -20.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            0
+        ],
+        "ball_types": [],
+        "Note": "need_speed -20%"
+    },
+    "1205": {
+        "skill_id": 1205,
+        "skill_desc": "reduce_needle_speed",
+        "skill_type": 2,
+        "skill_value": -30.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            0
+        ],
+        "ball_types": [],
+        "Note": "need_speed -30%"
+    },
+    "1080": {
+        "skill_id": 1080,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 8.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +8%"
+    },
+    "1081": {
+        "skill_id": 1081,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 16.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +8%"
+    },
+    "1082": {
+        "skill_id": 1082,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 24.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +8%"
+    },
+    "1083": {
+        "skill_id": 1083,
+        "skill_desc": "lava_power",
+        "skill_type": 1,
+        "skill_value": 20.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            55
+        ],
+        "ball_types": [],
+        "Note": "lava power+20"
+    },
+    "1084": {
+        "skill_id": 1084,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 29.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +5%"
+    },
+    "1085": {
+        "skill_id": 1085,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 34.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +5%"
+    },
+    "1086": {
+        "skill_id": 1086,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 39.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +5%"
+    },
+    "1087": {
+        "skill_id": 1087,
+        "skill_desc": "lava_power",
+        "skill_type": 1,
+        "skill_value": 35.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            55
+        ],
+        "ball_types": [],
+        "Note": "lava power+15"
+    },
+    "1088": {
+        "skill_id": 1088,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 44.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +5%"
+    },
+    "1089": {
+        "skill_id": 1089,
+        "skill_desc": "skill_moon_reduce_wind",
+        "skill_type": 4,
+        "skill_value": 0.1,
+        "skill_value_type": 1,
+        "club_ids": [
+            32
+        ],
+        "ball_types": [],
+        "Note": "moon_wind -10%"
+    },
+    "1090": {
+        "skill_id": 1090,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 49.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +5%"
+    },
+    "1091": {
+        "skill_id": 1091,
+        "skill_desc": "skill_moon_reduce_wind",
+        "skill_type": 4,
+        "skill_value": 0.2,
+        "skill_value_type": 1,
+        "club_ids": [
+            32
+        ],
+        "ball_types": [],
+        "Note": "moon_wind -10%"
+    },
+    "1092": {
+        "skill_id": 1092,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 54.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball power +5%"
+    },
+    "1093": {
+        "skill_id": 1093,
+        "skill_desc": "skill_moon_reduce_wind",
+        "skill_type": 4,
+        "skill_value": 0.4,
+        "skill_value_type": 1,
+        "club_ids": [
+            32
+        ],
+        "ball_types": [],
+        "Note": "moon_wind -20%"
+    },
+    "1094": {
+        "skill_id": 1094,
+        "skill_desc": "lava_power",
+        "skill_type": 1,
+        "skill_value": 55.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            55
+        ],
+        "ball_types": [],
+        "Note": "lava power+20"
+    },
+    "1095": {
+        "skill_id": 1095,
+        "skill_desc": "moon_power",
+        "skill_type": 1,
+        "skill_value": 20.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            32
+        ],
+        "ball_types": [],
+        "Note": "Moon power+20"
+    },
+    "1096": {
+        "skill_id": 1096,
+        "skill_desc": "skill_bounce",
+        "skill_type": 3,
+        "skill_value": 10.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "jump ball bounce +10%"
+    },
+    "1210": {
+        "skill_id": 1210,
+        "skill_desc": "reduce_needle_speed",
+        "skill_type": 2,
+        "skill_value": -10.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            0
+        ],
+        "ball_types": [],
+        "Note": "need_speed -10%"
+    },
+    "1211": {
+        "skill_id": 1211,
+        "skill_desc": "reduce_needle_speed",
+        "skill_type": 2,
+        "skill_value": -20.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            0
+        ],
+        "ball_types": [],
+        "Note": "need_speed -20%"
+    },
+    "1212": {
+        "skill_id": 1212,
+        "skill_desc": "reduce_needle_speed",
+        "skill_type": 2,
+        "skill_value": -30.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            0
+        ],
+        "ball_types": [],
+        "Note": "need_speed -30%"
+    },
+    "1132": {
+        "skill_id": 1132,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 5.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "None"
+    },
+    "1133": {
+        "skill_id": 1133,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 8.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "None"
+    },
+    "1134": {
+        "skill_id": 1134,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 11.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "None"
+    },
+    "1135": {
+        "skill_id": 1135,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 14.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "None"
+    },
+    "1136": {
+        "skill_id": 1136,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 17.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "None"
+    },
+    "1137": {
+        "skill_id": 1137,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 20.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "None"
+    },
+    "1138": {
+        "skill_id": 1138,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 23.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "None"
+    },
+    "1139": {
+        "skill_id": 1139,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 26.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "None"
+    },
+    "1140": {
+        "skill_id": 1140,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 29.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "None"
+    },
+    "1141": {
+        "skill_id": 1141,
+        "skill_desc": "skill_power",
+        "skill_type": 1,
+        "skill_value": 32.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "None"
+    },
+    "1142": {
+        "skill_id": 1142,
+        "skill_desc": "skill_support_line",
+        "skill_type": 7,
+        "skill_value": 10.0,
+        "skill_value_type": 1,
+        "club_ids": [],
+        "ball_types": [],
+        "Note": "None"
+    },
+    "1143": {
+        "skill_id": 1143,
+        "skill_desc": "skill_pheonix_power",
+        "skill_type": 1,
+        "skill_value": 10.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            63
+        ],
+        "ball_types": [],
+        "Note": "None"
+    },
+    "1144": {
+        "skill_id": 1144,
+        "skill_desc": "skill_bat_power",
+        "skill_type": 1,
+        "skill_value": 10.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            37
+        ],
+        "ball_types": [],
+        "Note": "None"
+    },
+    "1145": {
+        "skill_id": 1145,
+        "skill_desc": "skill_top_spin_up",
+        "skill_type": 5,
+        "skill_value": 10.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            63
+        ],
+        "ball_types": [],
+        "Note": "None"
+    },
+    "1146": {
+        "skill_id": 1146,
+        "skill_desc": "skill_support_line",
+        "skill_type": 7,
+        "skill_value": 20.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            0
+        ],
+        "ball_types": [],
+        "Note": "None"
+    },
+    "1147": {
+        "skill_id": 1147,
+        "skill_desc": "skill_pheonix_power",
+        "skill_type": 1,
+        "skill_value": 20.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            63
+        ],
+        "ball_types": [],
+        "Note": "None"
+    },
+    "1148": {
+        "skill_id": 1148,
+        "skill_desc": "skill_bat_power",
+        "skill_type": 1,
+        "skill_value": 20.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            37
+        ],
+        "ball_types": [],
+        "Note": "None"
+    },
+    "1149": {
+        "skill_id": 1149,
+        "skill_desc": "skill_top_spin_up",
+        "skill_type": 5,
+        "skill_value": 20.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            63
+        ],
+        "ball_types": [],
+        "Note": "None"
+    },
+    "1150": {
+        "skill_id": 1150,
+        "skill_desc": "reduce_needle_speed",
+        "skill_type": 2,
+        "skill_value": 30.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            0
+        ],
+        "ball_types": [],
+        "Note": "None"
+    },
+    "1151": {
+        "skill_id": 1151,
+        "skill_desc": "skill_pheonix_power",
+        "skill_type": 1,
+        "skill_value": 30.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            63
+        ],
+        "ball_types": [],
+        "Note": "None"
+    },
+    "1152": {
+        "skill_id": 1152,
+        "skill_desc": "skill_bat_power",
+        "skill_type": 1,
+        "skill_value": 30.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            37
+        ],
+        "ball_types": [],
+        "Note": "None"
+    },
+    "1153": {
+        "skill_id": 1153,
+        "skill_desc": "skill_top_spin_up",
+        "skill_type": 5,
+        "skill_value": 30.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            63
+        ],
+        "ball_types": [],
+        "Note": "None"
+    },
+    "1154": {
+        "skill_id": 1154,
+        "skill_desc": "skill_black_bear_power",
+        "skill_type": 1,
+        "skill_value": 5.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            13
+        ],
+        "ball_types": [],
+        "Note": "black_bear power+%5"
+    },
+    "1155": {
+        "skill_id": 1155,
+        "skill_desc": "skill_black_bear_power",
+        "skill_type": 1,
+        "skill_value": 10.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            13
+        ],
+        "ball_types": [],
+        "Note": "black_bear power+%10"
+    },
+    "1156": {
+        "skill_id": 1156,
+        "skill_desc": "skill_black_bear_power",
+        "skill_type": 1,
+        "skill_value": 15.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            13
+        ],
+        "ball_types": [],
+        "Note": "black_bear power+%15"
+    },
+    "1157": {
+        "skill_id": 1157,
+        "skill_desc": "skill_ball_bounce",
+        "skill_type": 3,
+        "skill_value": 5.0,
+        "skill_value_type": 0,
+        "club_ids": [],
+        "ball_types": [
+            2
+        ],
+        "Note": "ball_bounce+%5"
+    },
+    "1158": {
+        "skill_id": 1158,
+        "skill_desc": "skill_black_bear_power",
+        "skill_type": 1,
+        "skill_value": 23.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            13
+        ],
+        "ball_types": [],
+        "Note": "black_bear power+%23"
+    },
+    "1159": {
+        "skill_id": 1159,
+        "skill_desc": "skill_black_bear_power",
+        "skill_type": 1,
+        "skill_value": 31.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            13
+        ],
+        "ball_types": [],
+        "Note": "black_bear power+%31"
+    },
+    "1160": {
+        "skill_id": 1160,
+        "skill_desc": "skill_black_bear_power",
+        "skill_type": 1,
+        "skill_value": 39.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            13
+        ],
+        "ball_types": [],
+        "Note": "black_bear power+%39"
+    },
+    "1161": {
+        "skill_id": 1161,
+        "skill_desc": "skill_black_bear_reduce_wind",
+        "skill_type": 4,
+        "skill_value": 0.2,
+        "skill_value_type": 1,
+        "club_ids": [
+            13
+        ],
+        "ball_types": [],
+        "Note": "black_bear_wind-20%"
+    },
+    "1162": {
+        "skill_id": 1162,
+        "skill_desc": "skill_black_bear_side_spin",
+        "skill_type": 6,
+        "skill_value": 20.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            13
+        ],
+        "ball_types": [],
+        "Note": "black_bear side_spin +20"
+    },
+    "1163": {
+        "skill_id": 1163,
+        "skill_desc": "skill_black_bear_side_spin",
+        "skill_type": 6,
+        "skill_value": 40.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            13
+        ],
+        "ball_types": [],
+        "Note": "black_bear side_spin +20"
+    },
+    "1164": {
+        "skill_id": 1164,
+        "skill_desc": "skill_black_bear_side_spin",
+        "skill_type": 6,
+        "skill_value": 60.0,
+        "skill_value_type": 1,
+        "club_ids": [
+            13
+        ],
+        "ball_types": [],
+        "Note": "black_bear side_spin +20"
+    },
+    "1165": {
+        "skill_id": 1165,
+        "skill_desc": "reduce_needle_speed",
+        "skill_type": 2,
+        "skill_value": 10.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            0
+        ],
+        "ball_types": [],
+        "Note": "needle_speed-10%"
+    },
+    "1166": {
+        "skill_id": 1166,
+        "skill_desc": "skill_black_bear_power",
+        "skill_type": 1,
+        "skill_value": 47.0,
+        "skill_value_type": 0,
+        "club_ids": [
+            13
+        ],
+        "ball_types": [],
+        "Note": "black_bear power+%47"
+    },
+    "1167": {
+        "skill_id": 1167,
+        "skill_desc": "skill_sniper_reduce_wind",
+        "skill_type": 4,
+        "skill_value": 0.15,
+        "skill_value_type": 1,
+        "club_ids": [
+            20
+        ],
+        "ball_types": [],
+        "Note": "wind -10%"
+    },
+    "1168": {
+        "skill_id": 1168,
+        "skill_desc": "skill_sniper_reduce_wind",
+        "skill_type": 4,
+        "skill_value": 0.3,
+        "skill_value_type": 1,
+        "club_ids": [
+            20
+        ],
+        "ball_types": [],
+        "Note": "wind -10%"
+    },
+    "1169": {
+        "skill_id": 1169,
+        "skill_desc": "skill_spinner_reduce_wind",
+        "skill_type": 4,
+        "skill_value": 0.15,
+        "skill_value_type": 1,
+        "club_ids": [
+            50
+        ],
+        "ball_types": [],
+        "Note": "wind -10%"
+    },
+    "1170": {
+        "skill_id": 1170,
+        "skill_desc": "skill_spinner_reduce_wind",
+        "skill_type": 4,
+        "skill_value": 0.3,
+        "skill_value_type": 1,
+        "club_ids": [
+            50
+        ],
+        "ball_types": [],
+        "Note": "wind -10%"
+    }
+}
