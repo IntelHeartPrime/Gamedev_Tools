@@ -54,7 +54,7 @@ while ws.cell(row_index,5).value != None:
     unit_dic_inner.update({"skill_id": int(ws.cell(row_index, 5).value)})
     unit_dic_inner.update({"skill_desc": clean_null(ws.cell(row_index, 6).value)})
     unit_dic_inner.update({"skill_type": int(clean_null(int(ws.cell(row_index, 7).value)))})
-    unit_dic_inner.update({"skill_value": int(clean_null(int(ws.cell(row_index, 8).value)))})
+    unit_dic_inner.update({"skill_value": clean_null((ws.cell(row_index, 8).value))})
     unit_dic_inner.update({"skill_value_type": int(clean_null(int(ws.cell(row_index, 9).value)))})
 
     # clubs
