@@ -303,6 +303,8 @@
         "pve_conf": {
             "init_offer_chapter": 3,
             "free_card": 1,
+            "on_hook_limit_time_sec": 43200,
+            "on_hook_receive_limit_sec": 60,
             "on_hook_rules": [
                 {
                     "star": 1,
@@ -4303,6 +4305,9 @@
             "tickets_update_mins": [
                 420
             ],
+            "shop_update_mins": [
+                420
+            ],
             "default_tickets": 50,
             "tickets_shop": [
                 {
@@ -4316,6 +4321,12 @@
                     "consume_num": 850,
                     "consume_type": 2,
                     "get_num": 10
+                },
+                {
+                    "type": 3,
+                    "consume_num": 4000,
+                    "consume_type": 2,
+                    "get_num": 50
                 }
             ],
             "chapter_list": [

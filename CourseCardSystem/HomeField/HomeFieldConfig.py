@@ -281,6 +281,7 @@ while wsPVE.range((10, column_index)).value != None:
 # chapter_list
 
 chapter_list = []
+
 pve_conf.update({"chapter_list": chapter_list})
 
 row_index = 23
@@ -291,6 +292,8 @@ while wsPVE.range((row_index, 1)).value != None:
     dic.update({"name": wsPVE.range((row_index, 2)).value})
 
     level_id_list = str(wsPVE.range((row_index, 3)).value).split(',')
+    print("-------------------------------------------------------")
+    print("chapter config  id = " + str(int(wsPVE.range((row_index, 1)).value)))
 
     checkpoint = []
     dic.update({"checkpoint": checkpoint})
@@ -302,6 +305,10 @@ while wsPVE.range((row_index, 1)).value != None:
             if id == int(wsPVE.range((row_start_index, 5)).value):
                 # 读取此行数据作为奖励内容
                 dic = {}
+
+                print("     checkpoint config  id = " + str(int(wsPVE.range((row_start_index, 5)).value)))
+                print("     row index = " + str(row_start_index))
+
                 dic.update({"id": int(wsPVE.range((row_start_index, 6)).value)})
                 dic.update({"scene_id": int(wsPVE.range((row_start_index, 7)).value)})
                 dic.update({"side_story": int(wsPVE.range((row_start_index, 8)).value)})

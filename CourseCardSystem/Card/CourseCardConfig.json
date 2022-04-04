@@ -18,7 +18,7 @@
             {
                 "level": 1,
                 "max_star": 14,
-                "update_card": 1,
+                "update_card": 5,
                 "update_price": 5000,
                 "provide_exp": 100,
                 "tee": 1,
@@ -89,7 +89,7 @@
             {
                 "level": 2,
                 "max_star": 14,
-                "update_card": 5,
+                "update_card": 10,
                 "update_price": 8000,
                 "provide_exp": 200,
                 "tee": 1,
@@ -160,7 +160,7 @@
             {
                 "level": 3,
                 "max_star": 14,
-                "update_card": 10,
+                "update_card": 20,
                 "update_price": 20000,
                 "provide_exp": 300,
                 "tee": 1,
@@ -231,7 +231,7 @@
             {
                 "level": 4,
                 "max_star": 16,
-                "update_card": 20,
+                "update_card": 30,
                 "update_price": 40000,
                 "provide_exp": 400,
                 "tee": 2,
@@ -303,7 +303,7 @@
             {
                 "level": 5,
                 "max_star": 16,
-                "update_card": 30,
+                "update_card": 50,
                 "update_price": 80000,
                 "provide_exp": 500,
                 "tee": 2,
@@ -375,7 +375,7 @@
             {
                 "level": 6,
                 "max_star": 16,
-                "update_card": 50,
+                "update_card": 80,
                 "update_price": 100000,
                 "provide_exp": 600,
                 "tee": 2,
@@ -447,7 +447,7 @@
             {
                 "level": 7,
                 "max_star": 18,
-                "update_card": 80,
+                "update_card": 120,
                 "update_price": 200000,
                 "provide_exp": 700,
                 "tee": 3,
@@ -519,7 +519,7 @@
             {
                 "level": 8,
                 "max_star": 18,
-                "update_card": 120,
+                "update_card": 170,
                 "update_price": 300000,
                 "provide_exp": 800,
                 "tee": 3,
@@ -591,7 +591,7 @@
             {
                 "level": 9,
                 "max_star": 18,
-                "update_card": 170,
+                "update_card": 230,
                 "update_price": 300000,
                 "provide_exp": 900,
                 "tee": 3,
@@ -663,7 +663,7 @@
             {
                 "level": 10,
                 "max_star": 20,
-                "update_card": 230,
+                "update_card": 0,
                 "update_price": 500000,
                 "provide_exp": 1000,
                 "tee": 4,
@@ -742,63 +742,73 @@
                 "evaluation_rule": [
                     [
                         1,
-                        -1,
+                        -2,
                         -1
                     ],
                     [
                         2,
-                        -1,
-                        200
+                        -2,
+                        170
                     ],
                     [
                         3,
-                        -1,
-                        100
+                        -2,
+                        80
                     ],
                     [
                         4,
-                        -1,
+                        -2,
                         50
                     ],
                     [
                         5,
                         -2,
-                        -1
+                        20
                     ],
                     [
                         6,
-                        -2,
-                        200
+                        -3,
+                        -1
                     ],
                     [
                         7,
-                        -2,
-                        100
+                        -3,
+                        325
                     ],
                     [
                         8,
-                        -2,
-                        50
+                        -3,
+                        315
                     ],
                     [
                         9,
                         -3,
-                        -1
+                        295
                     ],
                     [
                         10,
                         -3,
-                        200
+                        285
                     ],
                     [
                         11,
                         -3,
-                        100
+                        275
                     ],
                     [
                         12,
                         -3,
-                        50
+                        230
+                    ],
+                    [
+                        13,
+                        -3,
+                        215
+                    ],
+                    [
+                        14,
+                        -3,
+                        210
                     ]
                 ]
             },
@@ -809,64 +819,84 @@
                 },
                 "evaluation_rule": [
                     [
-                        2,
+                        1,
                         -1,
+                        -1
+                    ],
+                    [
+                        2,
+                        -2,
                         -1
                     ],
                     [
                         3,
-                        -1,
-                        200
-                    ],
-                    [
-                        4,
-                        -1,
+                        -2,
                         100
                     ],
                     [
+                        4,
+                        -2,
+                        75
+                    ],
+                    [
                         5,
-                        -1,
-                        50
+                        -2,
+                        35
                     ],
                     [
                         6,
                         -2,
-                        -1
+                        20
                     ],
                     [
                         7,
                         -2,
-                        200
+                        10
                     ],
                     [
                         8,
-                        -2,
-                        100
-                    ],
-                    [
-                        9,
-                        -2,
-                        50
-                    ],
-                    [
-                        10,
                         -3,
                         -1
                     ],
                     [
+                        9,
+                        -3,
+                        420
+                    ],
+                    [
+                        10,
+                        -3,
+                        400
+                    ],
+                    [
                         11,
                         -3,
-                        200
+                        380
                     ],
                     [
                         12,
                         -3,
-                        100
+                        365
                     ],
                     [
                         13,
                         -3,
-                        50
+                        355
+                    ],
+                    [
+                        14,
+                        -3,
+                        335
+                    ],
+                    [
+                        15,
+                        -3,
+                        325
+                    ],
+                    [
+                        16,
+                        -3,
+                        315
                     ]
                 ]
             },
@@ -877,64 +907,94 @@
                 },
                 "evaluation_rule": [
                     [
-                        3,
+                        1,
                         -1,
                         -1
                     ],
                     [
-                        4,
+                        2,
                         -1,
-                        200
+                        150
+                    ],
+                    [
+                        3,
+                        -1,
+                        25
+                    ],
+                    [
+                        4,
+                        -2,
+                        150
                     ],
                     [
                         5,
-                        -1,
-                        100
+                        -2,
+                        130
                     ],
                     [
                         6,
-                        -1,
-                        50
+                        -2,
+                        100
                     ],
                     [
                         7,
                         -2,
-                        -1
+                        60
                     ],
                     [
                         8,
                         -2,
-                        200
+                        25
                     ],
                     [
                         9,
                         -2,
-                        100
+                        10
                     ],
                     [
                         10,
-                        -2,
-                        50
-                    ],
-                    [
-                        11,
                         -3,
                         -1
                     ],
                     [
+                        11,
+                        -3,
+                        420
+                    ],
+                    [
                         12,
                         -3,
-                        200
+                        410
                     ],
                     [
                         13,
                         -3,
-                        100
+                        400
                     ],
                     [
                         14,
                         -3,
-                        50
+                        386
+                    ],
+                    [
+                        15,
+                        -3,
+                        370
+                    ],
+                    [
+                        16,
+                        -3,
+                        360
+                    ],
+                    [
+                        17,
+                        -3,
+                        345
+                    ],
+                    [
+                        18,
+                        -3,
+                        330
                     ]
                 ]
             },
@@ -945,44 +1005,59 @@
                 },
                 "evaluation_rule": [
                     [
-                        4,
+                        1,
                         -1,
                         -1
                     ],
                     [
-                        5,
+                        2,
                         -1,
-                        200
+                        150
+                    ],
+                    [
+                        3,
+                        -1,
+                        50
+                    ],
+                    [
+                        4,
+                        -1,
+                        25
+                    ],
+                    [
+                        5,
+                        -2,
+                        -1
                     ],
                     [
                         6,
-                        -1,
-                        100
+                        -2,
+                        240
                     ],
                     [
                         7,
-                        -1,
-                        50
+                        -2,
+                        150
                     ],
                     [
                         8,
                         -2,
-                        -1
+                        100
                     ],
                     [
                         9,
                         -2,
-                        200
+                        75
                     ],
                     [
                         10,
                         -2,
-                        100
+                        50
                     ],
                     [
                         11,
                         -2,
-                        50
+                        25
                     ],
                     [
                         12,
@@ -992,17 +1067,42 @@
                     [
                         13,
                         -3,
-                        200
+                        470
                     ],
                     [
                         14,
                         -3,
-                        100
+                        410
                     ],
                     [
                         15,
                         -3,
-                        50
+                        395
+                    ],
+                    [
+                        16,
+                        -3,
+                        385
+                    ],
+                    [
+                        17,
+                        -3,
+                        370
+                    ],
+                    [
+                        18,
+                        -3,
+                        365
+                    ],
+                    [
+                        19,
+                        -3,
+                        359
+                    ],
+                    [
+                        20,
+                        -3,
+                        348
                     ]
                 ]
             }
@@ -1027,7 +1127,7 @@
             {
                 "level": 1,
                 "max_star": 14,
-                "update_card": 1,
+                "update_card": 5,
                 "update_price": 5000,
                 "provide_exp": 100,
                 "tee": 1,
@@ -1057,7 +1157,7 @@
             {
                 "level": 2,
                 "max_star": 14,
-                "update_card": 5,
+                "update_card": 10,
                 "update_price": 8000,
                 "provide_exp": 200,
                 "tee": 1,
@@ -1087,7 +1187,7 @@
             {
                 "level": 3,
                 "max_star": 14,
-                "update_card": 10,
+                "update_card": 20,
                 "update_price": 20000,
                 "provide_exp": 300,
                 "tee": 1,
@@ -1117,7 +1217,7 @@
             {
                 "level": 4,
                 "max_star": 16,
-                "update_card": 20,
+                "update_card": 30,
                 "update_price": 40000,
                 "provide_exp": 400,
                 "tee": 2,
@@ -1151,7 +1251,7 @@
             {
                 "level": 5,
                 "max_star": 16,
-                "update_card": 30,
+                "update_card": 50,
                 "update_price": 80000,
                 "provide_exp": 500,
                 "tee": 2,
@@ -1185,7 +1285,7 @@
             {
                 "level": 6,
                 "max_star": 16,
-                "update_card": 50,
+                "update_card": 80,
                 "update_price": 100000,
                 "provide_exp": 600,
                 "tee": 2,
@@ -1219,7 +1319,7 @@
             {
                 "level": 7,
                 "max_star": 18,
-                "update_card": 80,
+                "update_card": 120,
                 "update_price": 200000,
                 "provide_exp": 700,
                 "tee": 3,
@@ -1253,7 +1353,7 @@
             {
                 "level": 8,
                 "max_star": 18,
-                "update_card": 120,
+                "update_card": 170,
                 "update_price": 300000,
                 "provide_exp": 800,
                 "tee": 3,
@@ -1287,7 +1387,7 @@
             {
                 "level": 9,
                 "max_star": 18,
-                "update_card": 170,
+                "update_card": 230,
                 "update_price": 300000,
                 "provide_exp": 900,
                 "tee": 3,
@@ -1321,7 +1421,7 @@
             {
                 "level": 10,
                 "max_star": 20,
-                "update_card": 230,
+                "update_card": 0,
                 "update_price": 500000,
                 "provide_exp": 1000,
                 "tee": 4,
@@ -1748,7 +1848,7 @@
             {
                 "level": 1,
                 "max_star": 6,
-                "update_card": 1,
+                "update_card": 5,
                 "update_price": 1000,
                 "provide_exp": 100,
                 "tee": 1,
@@ -1778,7 +1878,7 @@
             {
                 "level": 2,
                 "max_star": 6,
-                "update_card": 5,
+                "update_card": 10,
                 "update_price": 3000,
                 "provide_exp": 200,
                 "tee": 1,
@@ -1808,7 +1908,7 @@
             {
                 "level": 3,
                 "max_star": 6,
-                "update_card": 10,
+                "update_card": 20,
                 "update_price": 6000,
                 "provide_exp": 300,
                 "tee": 1,
@@ -1838,7 +1938,7 @@
             {
                 "level": 4,
                 "max_star": 8,
-                "update_card": 20,
+                "update_card": 30,
                 "update_price": 8000,
                 "provide_exp": 400,
                 "tee": 2,
@@ -1873,7 +1973,7 @@
             {
                 "level": 5,
                 "max_star": 8,
-                "update_card": 30,
+                "update_card": 50,
                 "update_price": 10000,
                 "provide_exp": 500,
                 "tee": 2,
@@ -1908,7 +2008,7 @@
             {
                 "level": 6,
                 "max_star": 8,
-                "update_card": 50,
+                "update_card": 80,
                 "update_price": 20000,
                 "provide_exp": 600,
                 "tee": 2,
@@ -1943,7 +2043,7 @@
             {
                 "level": 7,
                 "max_star": 10,
-                "update_card": 80,
+                "update_card": 120,
                 "update_price": 40000,
                 "provide_exp": 700,
                 "tee": 3,
@@ -1978,7 +2078,7 @@
             {
                 "level": 8,
                 "max_star": 10,
-                "update_card": 120,
+                "update_card": 170,
                 "update_price": 80000,
                 "provide_exp": 800,
                 "tee": 3,
@@ -2013,7 +2113,7 @@
             {
                 "level": 9,
                 "max_star": 10,
-                "update_card": 170,
+                "update_card": 230,
                 "update_price": 100000,
                 "provide_exp": 900,
                 "tee": 3,
@@ -2048,7 +2148,7 @@
             {
                 "level": 10,
                 "max_star": 12,
-                "update_card": 230,
+                "update_card": 0,
                 "update_price": 200000,
                 "provide_exp": 1000,
                 "tee": 4,
@@ -2251,7 +2351,7 @@
                     [
                         4,
                         -2,
-                        42
+                        50
                     ],
                     [
                         5,
@@ -2261,7 +2361,7 @@
                     [
                         6,
                         -2,
-                        15
+                        10
                     ],
                     [
                         7,
@@ -2316,7 +2416,7 @@
             {
                 "level": 1,
                 "max_star": 10,
-                "update_card": 1,
+                "update_card": 5,
                 "update_price": 2000,
                 "provide_exp": 100,
                 "tee": 1,
@@ -2346,7 +2446,7 @@
             {
                 "level": 2,
                 "max_star": 10,
-                "update_card": 5,
+                "update_card": 10,
                 "update_price": 4000,
                 "provide_exp": 200,
                 "tee": 1,
@@ -2376,7 +2476,7 @@
             {
                 "level": 3,
                 "max_star": 10,
-                "update_card": 10,
+                "update_card": 20,
                 "update_price": 8000,
                 "provide_exp": 300,
                 "tee": 1,
@@ -2406,7 +2506,7 @@
             {
                 "level": 4,
                 "max_star": 12,
-                "update_card": 20,
+                "update_card": 30,
                 "update_price": 10000,
                 "provide_exp": 400,
                 "tee": 2,
@@ -2438,7 +2538,7 @@
             {
                 "level": 5,
                 "max_star": 12,
-                "update_card": 30,
+                "update_card": 50,
                 "update_price": 20000,
                 "provide_exp": 500,
                 "tee": 2,
@@ -2470,7 +2570,7 @@
             {
                 "level": 6,
                 "max_star": 12,
-                "update_card": 50,
+                "update_card": 80,
                 "update_price": 40000,
                 "provide_exp": 600,
                 "tee": 2,
@@ -2502,7 +2602,7 @@
             {
                 "level": 7,
                 "max_star": 14,
-                "update_card": 80,
+                "update_card": 120,
                 "update_price": 80000,
                 "provide_exp": 700,
                 "tee": 3,
@@ -2535,7 +2635,7 @@
             {
                 "level": 8,
                 "max_star": 14,
-                "update_card": 120,
+                "update_card": 170,
                 "update_price": 100000,
                 "provide_exp": 800,
                 "tee": 3,
@@ -2568,7 +2668,7 @@
             {
                 "level": 9,
                 "max_star": 14,
-                "update_card": 170,
+                "update_card": 230,
                 "update_price": 200000,
                 "provide_exp": 900,
                 "tee": 3,
@@ -2601,7 +2701,7 @@
             {
                 "level": 10,
                 "max_star": 16,
-                "update_card": 230,
+                "update_card": 0,
                 "update_price": 300000,
                 "provide_exp": 1000,
                 "tee": 4,
@@ -2648,58 +2748,48 @@
                     ],
                     [
                         2,
-                        -1,
-                        200
-                    ],
-                    [
-                        3,
-                        -1,
-                        100
-                    ],
-                    [
-                        4,
-                        -1,
-                        50
-                    ],
-                    [
-                        5,
                         -2,
                         -1
                     ],
                     [
-                        6,
+                        3,
                         -2,
-                        200
+                        70
+                    ],
+                    [
+                        4,
+                        -3,
+                        -1
+                    ],
+                    [
+                        5,
+                        -3,
+                        300
+                    ],
+                    [
+                        6,
+                        -3,
+                        285
                     ],
                     [
                         7,
-                        -2,
-                        100
+                        -3,
+                        270
                     ],
                     [
                         8,
-                        -2,
-                        50
+                        -3,
+                        255
                     ],
                     [
                         9,
                         -3,
-                        -1
+                        240
                     ],
                     [
                         10,
                         -3,
-                        200
-                    ],
-                    [
-                        11,
-                        -3,
-                        100
-                    ],
-                    [
-                        12,
-                        -3,
-                        50
+                        225
                     ]
                 ]
             },
@@ -2710,64 +2800,64 @@
                 },
                 "evaluation_rule": [
                     [
-                        2,
+                        1,
                         -1,
+                        -1
+                    ],
+                    [
+                        2,
+                        -2,
                         -1
                     ],
                     [
                         3,
-                        -1,
-                        200
-                    ],
-                    [
-                        4,
-                        -1,
+                        -2,
                         100
                     ],
                     [
+                        4,
+                        -2,
+                        45
+                    ],
+                    [
                         5,
-                        -1,
-                        50
+                        -2,
+                        15
                     ],
                     [
                         6,
-                        -2,
+                        -3,
                         -1
                     ],
                     [
                         7,
-                        -2,
-                        200
+                        -3,
+                        335
                     ],
                     [
                         8,
-                        -2,
-                        100
+                        -3,
+                        325
                     ],
                     [
                         9,
-                        -2,
-                        50
+                        -3,
+                        300
                     ],
                     [
                         10,
                         -3,
-                        -1
+                        285
                     ],
                     [
                         11,
                         -3,
-                        200
+                        275
                     ],
                     [
                         12,
                         -3,
-                        100
-                    ],
-                    [
-                        13,
-                        -3,
-                        50
+                        260
                     ]
                 ]
             },
@@ -2778,64 +2868,74 @@
                 },
                 "evaluation_rule": [
                     [
-                        3,
+                        1,
                         -1,
+                        -1
+                    ],
+                    [
+                        2,
+                        -1,
+                        70
+                    ],
+                    [
+                        3,
+                        -2,
                         -1
                     ],
                     [
                         4,
-                        -1,
-                        200
+                        -2,
+                        160
                     ],
                     [
                         5,
-                        -1,
+                        -2,
                         100
                     ],
                     [
                         6,
-                        -1,
-                        50
+                        -2,
+                        65
                     ],
                     [
                         7,
                         -2,
-                        -1
+                        15
                     ],
                     [
                         8,
-                        -2,
-                        200
+                        -3,
+                        -1
                     ],
                     [
                         9,
-                        -2,
-                        100
+                        -3,
+                        435
                     ],
                     [
                         10,
-                        -2,
-                        50
+                        -3,
+                        425
                     ],
                     [
                         11,
                         -3,
-                        -1
+                        415
                     ],
                     [
                         12,
                         -3,
-                        200
+                        405
                     ],
                     [
                         13,
                         -3,
-                        100
+                        390
                     ],
                     [
                         14,
                         -3,
-                        50
+                        380
                     ]
                 ]
             },
@@ -2846,64 +2946,84 @@
                 },
                 "evaluation_rule": [
                     [
-                        4,
+                        1,
                         -1,
+                        -1
+                    ],
+                    [
+                        2,
+                        -1,
+                        70
+                    ],
+                    [
+                        3,
+                        -1,
+                        110
+                    ],
+                    [
+                        4,
+                        -2,
                         -1
                     ],
                     [
                         5,
-                        -1,
-                        200
+                        -2,
+                        220
                     ],
                     [
                         6,
-                        -1,
-                        100
+                        -2,
+                        160
                     ],
                     [
                         7,
-                        -1,
-                        50
+                        -2,
+                        100
                     ],
                     [
                         8,
                         -2,
-                        -1
+                        65
                     ],
                     [
                         9,
                         -2,
-                        200
+                        15
                     ],
                     [
                         10,
-                        -2,
-                        100
-                    ],
-                    [
-                        11,
-                        -2,
-                        50
-                    ],
-                    [
-                        12,
                         -3,
                         -1
                     ],
                     [
+                        11,
+                        -3,
+                        315
+                    ],
+                    [
+                        12,
+                        -3,
+                        300
+                    ],
+                    [
                         13,
                         -3,
-                        200
+                        290
                     ],
                     [
                         14,
                         -3,
-                        100
+                        275
                     ],
                     [
                         15,
                         -3,
-                        50
+                        265
+                    ],
+                    [
+                        16,
+                        -3,
+                        240
                     ]
                 ]
             }
@@ -2928,7 +3048,7 @@
             {
                 "level": 1,
                 "max_star": 10,
-                "update_card": 1,
+                "update_card": 5,
                 "update_price": 2000,
                 "provide_exp": 100,
                 "tee": 1,
@@ -2958,7 +3078,7 @@
             {
                 "level": 2,
                 "max_star": 10,
-                "update_card": 5,
+                "update_card": 10,
                 "update_price": 4000,
                 "provide_exp": 200,
                 "tee": 1,
@@ -2988,7 +3108,7 @@
             {
                 "level": 3,
                 "max_star": 10,
-                "update_card": 10,
+                "update_card": 20,
                 "update_price": 8000,
                 "provide_exp": 300,
                 "tee": 1,
@@ -3018,7 +3138,7 @@
             {
                 "level": 4,
                 "max_star": 12,
-                "update_card": 20,
+                "update_card": 30,
                 "update_price": 10000,
                 "provide_exp": 400,
                 "tee": 2,
@@ -3051,7 +3171,7 @@
             {
                 "level": 5,
                 "max_star": 12,
-                "update_card": 30,
+                "update_card": 50,
                 "update_price": 20000,
                 "provide_exp": 500,
                 "tee": 2,
@@ -3084,7 +3204,7 @@
             {
                 "level": 6,
                 "max_star": 12,
-                "update_card": 50,
+                "update_card": 80,
                 "update_price": 40000,
                 "provide_exp": 600,
                 "tee": 2,
@@ -3117,7 +3237,7 @@
             {
                 "level": 7,
                 "max_star": 14,
-                "update_card": 80,
+                "update_card": 120,
                 "update_price": 80000,
                 "provide_exp": 700,
                 "tee": 3,
@@ -3152,7 +3272,7 @@
             {
                 "level": 8,
                 "max_star": 14,
-                "update_card": 120,
+                "update_card": 170,
                 "update_price": 100000,
                 "provide_exp": 800,
                 "tee": 3,
@@ -3187,7 +3307,7 @@
             {
                 "level": 9,
                 "max_star": 14,
-                "update_card": 170,
+                "update_card": 230,
                 "update_price": 200000,
                 "provide_exp": 900,
                 "tee": 3,
@@ -3222,7 +3342,7 @@
             {
                 "level": 10,
                 "max_star": 16,
-                "update_card": 230,
+                "update_card": 0,
                 "update_price": 300000,
                 "provide_exp": 1000,
                 "tee": 4,
@@ -3559,7 +3679,7 @@
             {
                 "level": 1,
                 "max_star": 10,
-                "update_card": 1,
+                "update_card": 5,
                 "update_price": 2000,
                 "provide_exp": 100,
                 "tee": 1,
@@ -3589,7 +3709,7 @@
             {
                 "level": 2,
                 "max_star": 10,
-                "update_card": 5,
+                "update_card": 10,
                 "update_price": 4000,
                 "provide_exp": 200,
                 "tee": 1,
@@ -3620,7 +3740,7 @@
             {
                 "level": 3,
                 "max_star": 10,
-                "update_card": 10,
+                "update_card": 20,
                 "update_price": 8000,
                 "provide_exp": 300,
                 "tee": 1,
@@ -3651,7 +3771,7 @@
             {
                 "level": 4,
                 "max_star": 12,
-                "update_card": 20,
+                "update_card": 30,
                 "update_price": 10000,
                 "provide_exp": 400,
                 "tee": 2,
@@ -3685,7 +3805,7 @@
             {
                 "level": 5,
                 "max_star": 12,
-                "update_card": 30,
+                "update_card": 50,
                 "update_price": 20000,
                 "provide_exp": 500,
                 "tee": 2,
@@ -3719,7 +3839,7 @@
             {
                 "level": 6,
                 "max_star": 12,
-                "update_card": 50,
+                "update_card": 80,
                 "update_price": 40000,
                 "provide_exp": 600,
                 "tee": 2,
@@ -3753,7 +3873,7 @@
             {
                 "level": 7,
                 "max_star": 14,
-                "update_card": 80,
+                "update_card": 120,
                 "update_price": 80000,
                 "provide_exp": 700,
                 "tee": 3,
@@ -3787,7 +3907,7 @@
             {
                 "level": 8,
                 "max_star": 14,
-                "update_card": 120,
+                "update_card": 170,
                 "update_price": 100000,
                 "provide_exp": 800,
                 "tee": 3,
@@ -3821,7 +3941,7 @@
             {
                 "level": 9,
                 "max_star": 14,
-                "update_card": 170,
+                "update_card": 230,
                 "update_price": 200000,
                 "provide_exp": 900,
                 "tee": 3,
@@ -3855,7 +3975,7 @@
             {
                 "level": 10,
                 "max_star": 16,
-                "update_card": 230,
+                "update_card": 0,
                 "update_price": 300000,
                 "provide_exp": 1000,
                 "tee": 4,
@@ -4203,7 +4323,7 @@
             {
                 "level": 1,
                 "max_star": 10,
-                "update_card": 1,
+                "update_card": 5,
                 "update_price": 2000,
                 "provide_exp": 100,
                 "tee": 1,
@@ -4233,7 +4353,7 @@
             {
                 "level": 2,
                 "max_star": 10,
-                "update_card": 5,
+                "update_card": 10,
                 "update_price": 4000,
                 "provide_exp": 200,
                 "tee": 1,
@@ -4263,7 +4383,7 @@
             {
                 "level": 3,
                 "max_star": 10,
-                "update_card": 10,
+                "update_card": 20,
                 "update_price": 8000,
                 "provide_exp": 300,
                 "tee": 1,
@@ -4293,7 +4413,7 @@
             {
                 "level": 4,
                 "max_star": 12,
-                "update_card": 20,
+                "update_card": 30,
                 "update_price": 10000,
                 "provide_exp": 400,
                 "tee": 2,
@@ -4324,7 +4444,7 @@
             {
                 "level": 5,
                 "max_star": 12,
-                "update_card": 30,
+                "update_card": 50,
                 "update_price": 20000,
                 "provide_exp": 500,
                 "tee": 2,
@@ -4355,7 +4475,7 @@
             {
                 "level": 6,
                 "max_star": 12,
-                "update_card": 50,
+                "update_card": 80,
                 "update_price": 40000,
                 "provide_exp": 600,
                 "tee": 2,
@@ -4386,7 +4506,7 @@
             {
                 "level": 7,
                 "max_star": 14,
-                "update_card": 80,
+                "update_card": 120,
                 "update_price": 80000,
                 "provide_exp": 700,
                 "tee": 3,
@@ -4419,7 +4539,7 @@
             {
                 "level": 8,
                 "max_star": 14,
-                "update_card": 120,
+                "update_card": 170,
                 "update_price": 100000,
                 "provide_exp": 800,
                 "tee": 3,
@@ -4452,7 +4572,7 @@
             {
                 "level": 9,
                 "max_star": 14,
-                "update_card": 170,
+                "update_card": 230,
                 "update_price": 200000,
                 "provide_exp": 900,
                 "tee": 3,
@@ -4485,7 +4605,7 @@
             {
                 "level": 10,
                 "max_star": 16,
-                "update_card": 230,
+                "update_card": 0,
                 "update_price": 300000,
                 "provide_exp": 1000,
                 "tee": 4,
@@ -4531,58 +4651,48 @@
                     ],
                     [
                         2,
-                        -1,
-                        200
+                        -2,
+                        -1
                     ],
                     [
                         3,
-                        -1,
-                        100
-                    ],
-                    [
-                        4,
-                        -1,
+                        -2,
                         50
                     ],
                     [
-                        5,
+                        4,
                         -2,
+                        100
+                    ],
+                    [
+                        5,
+                        -3,
                         -1
                     ],
                     [
                         6,
-                        -2,
-                        200
+                        -3,
+                        260
                     ],
                     [
                         7,
-                        -2,
-                        100
+                        -3,
+                        250
                     ],
                     [
                         8,
-                        -2,
-                        50
+                        -3,
+                        240
                     ],
                     [
                         9,
                         -3,
-                        -1
+                        230
                     ],
                     [
                         10,
                         -3,
                         200
-                    ],
-                    [
-                        11,
-                        -3,
-                        100
-                    ],
-                    [
-                        12,
-                        -3,
-                        50
                     ]
                 ]
             },
@@ -4593,64 +4703,64 @@
                 },
                 "evaluation_rule": [
                     [
-                        2,
+                        1,
                         -1,
+                        -1
+                    ],
+                    [
+                        2,
+                        -2,
                         -1
                     ],
                     [
                         3,
-                        -1,
-                        200
+                        -2,
+                        260
                     ],
                     [
                         4,
-                        -1,
-                        100
+                        -2,
+                        250
                     ],
                     [
                         5,
-                        -1,
-                        50
+                        -2,
+                        240
                     ],
                     [
                         6,
-                        -2,
+                        -3,
                         -1
                     ],
                     [
                         7,
-                        -2,
-                        200
+                        -3,
+                        260
                     ],
                     [
                         8,
-                        -2,
-                        100
+                        -3,
+                        250
                     ],
                     [
                         9,
-                        -2,
-                        50
+                        -3,
+                        240
                     ],
                     [
                         10,
                         -3,
-                        -1
+                        230
                     ],
                     [
                         11,
                         -3,
-                        200
+                        220
                     ],
                     [
                         12,
                         -3,
-                        100
-                    ],
-                    [
-                        13,
-                        -3,
-                        50
+                        210
                     ]
                 ]
             },
@@ -4661,64 +4771,74 @@
                 },
                 "evaluation_rule": [
                     [
-                        3,
+                        1,
                         -1,
+                        -1
+                    ],
+                    [
+                        2,
+                        -1,
+                        260
+                    ],
+                    [
+                        3,
+                        -2,
                         -1
                     ],
                     [
                         4,
-                        -1,
-                        200
+                        -2,
+                        250
                     ],
                     [
                         5,
-                        -1,
-                        100
+                        -2,
+                        240
                     ],
                     [
                         6,
-                        -1,
-                        50
+                        -2,
+                        230
                     ],
                     [
                         7,
                         -2,
-                        -1
+                        220
                     ],
                     [
                         8,
-                        -2,
-                        200
+                        -3,
+                        -1
                     ],
                     [
                         9,
-                        -2,
-                        100
+                        -3,
+                        250
                     ],
                     [
                         10,
-                        -2,
-                        50
+                        -3,
+                        240
                     ],
                     [
                         11,
                         -3,
-                        -1
+                        230
                     ],
                     [
                         12,
                         -3,
-                        200
+                        220
                     ],
                     [
                         13,
                         -3,
-                        100
+                        210
                     ],
                     [
                         14,
                         -3,
-                        50
+                        200
                     ]
                 ]
             },
@@ -4729,64 +4849,84 @@
                 },
                 "evaluation_rule": [
                     [
-                        4,
+                        1,
                         -1,
+                        -1
+                    ],
+                    [
+                        2,
+                        -1,
+                        240
+                    ],
+                    [
+                        3,
+                        -1,
+                        220
+                    ],
+                    [
+                        4,
+                        -2,
                         -1
                     ],
                     [
                         5,
-                        -1,
-                        200
+                        -2,
+                        240
                     ],
                     [
                         6,
-                        -1,
-                        100
+                        -2,
+                        220
                     ],
                     [
                         7,
-                        -1,
-                        50
+                        -2,
+                        200
                     ],
                     [
                         8,
                         -2,
-                        -1
+                        180
                     ],
                     [
                         9,
                         -2,
-                        200
+                        160
                     ],
                     [
                         10,
-                        -2,
-                        100
-                    ],
-                    [
-                        11,
-                        -2,
-                        50
-                    ],
-                    [
-                        12,
                         -3,
                         -1
                     ],
                     [
+                        11,
+                        -3,
+                        180
+                    ],
+                    [
+                        12,
+                        -3,
+                        160
+                    ],
+                    [
                         13,
                         -3,
-                        200
+                        140
                     ],
                     [
                         14,
                         -3,
-                        100
+                        120
                     ],
                     [
                         15,
                         -3,
-                        50
+                        100
+                    ],
+                    [
+                        16,
+                        -3,
+                        80
                     ]
                 ]
             }
@@ -4811,7 +4951,7 @@
             {
                 "level": 1,
                 "max_star": 6,
-                "update_card": 1,
+                "update_card": 5,
                 "update_price": 1000,
                 "provide_exp": 100,
                 "tee": 1,
@@ -4841,7 +4981,7 @@
             {
                 "level": 2,
                 "max_star": 6,
-                "update_card": 5,
+                "update_card": 10,
                 "update_price": 3000,
                 "provide_exp": 200,
                 "tee": 1,
@@ -4871,7 +5011,7 @@
             {
                 "level": 3,
                 "max_star": 6,
-                "update_card": 10,
+                "update_card": 20,
                 "update_price": 6000,
                 "provide_exp": 300,
                 "tee": 1,
@@ -4902,7 +5042,7 @@
             {
                 "level": 4,
                 "max_star": 8,
-                "update_card": 20,
+                "update_card": 30,
                 "update_price": 8000,
                 "provide_exp": 400,
                 "tee": 2,
@@ -4934,7 +5074,7 @@
             {
                 "level": 5,
                 "max_star": 8,
-                "update_card": 30,
+                "update_card": 50,
                 "update_price": 10000,
                 "provide_exp": 500,
                 "tee": 2,
@@ -4966,7 +5106,7 @@
             {
                 "level": 6,
                 "max_star": 8,
-                "update_card": 50,
+                "update_card": 80,
                 "update_price": 20000,
                 "provide_exp": 600,
                 "tee": 2,
@@ -4998,7 +5138,7 @@
             {
                 "level": 7,
                 "max_star": 10,
-                "update_card": 80,
+                "update_card": 120,
                 "update_price": 40000,
                 "provide_exp": 700,
                 "tee": 3,
@@ -5032,7 +5172,7 @@
             {
                 "level": 8,
                 "max_star": 10,
-                "update_card": 120,
+                "update_card": 170,
                 "update_price": 80000,
                 "provide_exp": 800,
                 "tee": 3,
@@ -5066,7 +5206,7 @@
             {
                 "level": 9,
                 "max_star": 10,
-                "update_card": 170,
+                "update_card": 230,
                 "update_price": 100000,
                 "provide_exp": 900,
                 "tee": 3,
@@ -5100,7 +5240,7 @@
             {
                 "level": 10,
                 "max_star": 12,
-                "update_card": 230,
+                "update_card": 0,
                 "update_price": 200000,
                 "provide_exp": 1000,
                 "tee": 4,
@@ -5147,58 +5287,28 @@
                     ],
                     [
                         2,
-                        -1,
-                        200
+                        -2,
+                        -1
                     ],
                     [
                         3,
-                        -1,
-                        100
+                        -2,
+                        40
                     ],
                     [
                         4,
-                        -1,
-                        50
+                        -3,
+                        -1
                     ],
                     [
                         5,
-                        -2,
-                        -1
+                        -3,
+                        190
                     ],
                     [
                         6,
-                        -2,
-                        200
-                    ],
-                    [
-                        7,
-                        -2,
-                        100
-                    ],
-                    [
-                        8,
-                        -2,
-                        50
-                    ],
-                    [
-                        9,
                         -3,
-                        -1
-                    ],
-                    [
-                        10,
-                        -3,
-                        200
-                    ],
-                    [
-                        11,
-                        -3,
-                        100
-                    ],
-                    [
-                        12,
-                        -3,
-                        50
+                        155
                     ]
                 ]
             },
@@ -5209,64 +5319,44 @@
                 },
                 "evaluation_rule": [
                     [
-                        2,
+                        1,
                         -1,
+                        -1
+                    ],
+                    [
+                        2,
+                        -2,
                         -1
                     ],
                     [
                         3,
-                        -1,
-                        200
+                        -2,
+                        60
                     ],
                     [
                         4,
-                        -1,
-                        100
+                        -2,
+                        25
                     ],
                     [
                         5,
-                        -1,
-                        50
+                        -3,
+                        -1
                     ],
                     [
                         6,
-                        -2,
-                        -1
+                        -3,
+                        200
                     ],
                     [
                         7,
-                        -2,
-                        200
+                        -3,
+                        170
                     ],
                     [
                         8,
-                        -2,
-                        100
-                    ],
-                    [
-                        9,
-                        -2,
-                        50
-                    ],
-                    [
-                        10,
                         -3,
-                        -1
-                    ],
-                    [
-                        11,
-                        -3,
-                        200
-                    ],
-                    [
-                        12,
-                        -3,
-                        100
-                    ],
-                    [
-                        13,
-                        -3,
-                        50
+                        150
                     ]
                 ]
             },
@@ -5277,64 +5367,54 @@
                 },
                 "evaluation_rule": [
                     [
-                        3,
+                        1,
                         -1,
                         -1
+                    ],
+                    [
+                        2,
+                        -2,
+                        -1
+                    ],
+                    [
+                        3,
+                        -2,
+                        70
                     ],
                     [
                         4,
-                        -1,
-                        200
+                        -2,
+                        45
                     ],
                     [
                         5,
-                        -1,
-                        100
+                        -2,
+                        25
                     ],
                     [
                         6,
-                        -1,
-                        50
+                        -3,
+                        -1
                     ],
                     [
                         7,
-                        -2,
-                        -1
+                        -3,
+                        210
                     ],
                     [
                         8,
-                        -2,
-                        200
+                        -3,
+                        180
                     ],
                     [
                         9,
-                        -2,
-                        100
+                        -3,
+                        150
                     ],
                     [
                         10,
-                        -2,
-                        50
-                    ],
-                    [
-                        11,
                         -3,
-                        -1
-                    ],
-                    [
-                        12,
-                        -3,
-                        200
-                    ],
-                    [
-                        13,
-                        -3,
-                        100
-                    ],
-                    [
-                        14,
-                        -3,
-                        50
+                        136
                     ]
                 ]
             },
@@ -5345,64 +5425,64 @@
                 },
                 "evaluation_rule": [
                     [
-                        4,
+                        1,
                         -1,
                         -1
+                    ],
+                    [
+                        2,
+                        -2,
+                        -1
+                    ],
+                    [
+                        3,
+                        -2,
+                        70
+                    ],
+                    [
+                        4,
+                        -2,
+                        50
                     ],
                     [
                         5,
-                        -1,
-                        200
+                        -2,
+                        25
                     ],
                     [
                         6,
-                        -1,
-                        100
+                        -2,
+                        10
                     ],
                     [
                         7,
-                        -1,
-                        50
-                    ],
-                    [
-                        8,
-                        -2,
+                        -3,
                         -1
                     ],
                     [
+                        8,
+                        -3,
+                        225
+                    ],
+                    [
                         9,
-                        -2,
-                        200
+                        -3,
+                        180
                     ],
                     [
                         10,
-                        -2,
-                        100
+                        -3,
+                        150
                     ],
                     [
                         11,
-                        -2,
-                        50
+                        -3,
+                        120
                     ],
                     [
                         12,
                         -3,
-                        -1
-                    ],
-                    [
-                        13,
-                        -3,
-                        200
-                    ],
-                    [
-                        14,
-                        -3,
-                        100
-                    ],
-                    [
-                        15,
-                        -3,
-                        50
+                        25
                     ]
                 ]
             }
