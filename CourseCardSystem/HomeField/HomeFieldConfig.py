@@ -88,9 +88,56 @@ unit_dic_inner.update({"unlock_conditions": dic_unlock_condition})
 dic_unlock_condition.update({"stage": int(ws1.range((12, 2)).value)})
 
 # signup_offer_list
-sign_offer_list_dic = {}
-unit_dic_inner.update({"signup_offer_list": sign_offer_list_dic})
+sign_offer_list = []
+unit_dic_inner.update({"signup_offer_list": sign_offer_list})
 
+daily_boost_offer_row_start = 16
+accelerate_offer_row_start = 25
+ticket_offer_row_start = 34
+
+def fill_offer_config( row_start ):
+
+    global sign_offer_list
+    '''
+    :param row_start:  开始的行数
+    '''
+    unit_list = []
+    sign_offer_list.append(unit_list)
+
+    unit_dic = {}
+    unit_list.append(unit_dic)
+
+
+
+    unit_dic.update({"name" : ws1.range((row_start, 2)).value})
+    unit_dic.update({"offer_type" : int(ws1.range((row_start+1, 2)).value)})
+    unit_dic.update({"money" : int(ws1.range((row_start+2, 2)).value)})
+    unit_dic.update({"type" : int(ws1.range((row_start+3, 2)).value)})
+
+    unit_dic.update({"start_time" : int(ws1.range((row_start, 5)).value)})
+    unit_dic.update({"refresh_time" : int(ws1.range((row_start+1, 5)).value)})
+    unit_dic.update({"end_before" : int(ws1.range((row_start+2, 5)).value)})
+
+    signup_offer_id_list = []
+    unit_dic.update({"signup_offer_id_list" : signup_offer_id_list})
+
+    column_index_start = 2
+    while ws1.range((row_start + 5,column_index_start)).value != None:
+        dic_add = {}
+        dic_add.update({"money": ws1.range((row_start+5, column_index_start)).value})
+        dic_add.update({"offer_id": ws1.range((row_start+6, column_index_start)).value})
+
+        signup_offer_id_list.append(dic_add)
+
+        column_index_start = column_index_start + 1
+
+fill_offer_config(daily_boost_offer_row_start)
+fill_offer_config(accelerate_offer_row_start)
+fill_offer_config(ticket_offer_row_start)
+
+
+
+'''
 pve_list = []
 pvp_list = []
 tickets_list = []
@@ -98,7 +145,6 @@ tickets_list = []
 sign_offer_list_dic.update({"pve": pve_list})
 sign_offer_list_dic.update({"pvp": pvp_list})
 sign_offer_list_dic.update({"tickets": tickets_list})
-
 
 # pve_signup_offer
 pay_rank_index = 0
@@ -177,12 +223,13 @@ while ws1.range((75, pay_rank_index * 7 + 2)).value != None:
 
     pay_rank_index = pay_rank_index + 1
 
+'''
+
 
 # course_level_upgrade_rules
 course_level_upgrade_rules = []
 unit_dic_inner.update({"course_level_upgrade_rules": course_level_upgrade_rules})
-
-row_index = 38
+row_index = 61
 while ws1.range((row_index, 1)).value != None:
     dic = {}
     dic.update({"level": int(ws1.range((row_index, 1)).value)})

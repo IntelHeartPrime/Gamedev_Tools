@@ -18,11 +18,12 @@
             {
                 "level": 1,
                 "max_star": 14,
-                "update_card": 5,
-                "update_price": 150000,
-                "provide_exp": 100,
+                "update_card": 0,
+                "update_price": 0,
+                "provide_exp": 10,
                 "tee": 1,
                 "par": 5,
+                "card_icon": "Ma-1-1-icon",
                 "map_icon": "Ma-1-1",
                 "skills": [
                     1001,
@@ -84,16 +85,17 @@
                 "wind_min": 6,
                 "wind_max": 8,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.0
+                "needle_speed_k": 1.2
             },
             {
                 "level": 2,
                 "max_star": 14,
-                "update_card": 10,
-                "update_price": 240000,
-                "provide_exp": 200,
+                "update_card": 5,
+                "update_price": 120000,
+                "provide_exp": 50,
                 "tee": 1,
                 "par": 5,
+                "card_icon": "Ma-1-2-icon",
                 "map_icon": "Ma-1-2",
                 "skills": [
                     1002,
@@ -155,16 +157,17 @@
                 "wind_min": 6,
                 "wind_max": 10,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.0
+                "needle_speed_k": 1.2
             },
             {
                 "level": 3,
                 "max_star": 14,
-                "update_card": 20,
-                "update_price": 600000,
-                "provide_exp": 300,
+                "update_card": 10,
+                "update_price": 150000,
+                "provide_exp": 100,
                 "tee": 1,
                 "par": 5,
+                "card_icon": "Ma-1-3-icon",
                 "map_icon": "Ma-1-3",
                 "skills": [
                     1003,
@@ -226,21 +229,30 @@
                 "wind_min": 8,
                 "wind_max": 10,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.0
+                "needle_speed_k": 1.2
             },
             {
                 "level": 4,
                 "max_star": 16,
-                "update_card": 30,
-                "update_price": 1200000,
-                "provide_exp": 400,
+                "update_card": 20,
+                "update_price": 200000,
+                "provide_exp": 200,
                 "tee": 2,
                 "par": 5,
+                "card_icon": "Ma-1-4-icon",
                 "map_icon": "Ma-1-4",
+                "update_limit": {
+                    "clubs_level": [
+                        {
+                            "club_id": 37,
+                            "club_level": 5
+                        }
+                    ]
+                },
                 "skills": [
                     1004,
                     1011,
-                    1067
+                    1226
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_01n_LV4",
@@ -298,21 +310,22 @@
                 "wind_min": 9,
                 "wind_max": 14,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.2
+                "needle_speed_k": 1.45
             },
             {
                 "level": 5,
                 "max_star": 16,
-                "update_card": 50,
-                "update_price": 2400000,
-                "provide_exp": 500,
+                "update_card": 30,
+                "update_price": 400000,
+                "provide_exp": 300,
                 "tee": 2,
                 "par": 5,
+                "card_icon": "Ma-1-5-icon",
                 "map_icon": "Ma-1-5",
                 "skills": [
                     1005,
                     1011,
-                    1067
+                    1226
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_01n_LV5",
@@ -370,21 +383,22 @@
                 "wind_min": 9,
                 "wind_max": 16,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.2
+                "needle_speed_k": 1.45
             },
             {
                 "level": 6,
                 "max_star": 16,
-                "update_card": 80,
-                "update_price": 3000000,
-                "provide_exp": 600,
+                "update_card": 50,
+                "update_price": 800000,
+                "provide_exp": 500,
                 "tee": 2,
                 "par": 5,
+                "card_icon": "Ma-1-6-icon",
                 "map_icon": "Ma-1-6",
                 "skills": [
                     1006,
                     1011,
-                    1067
+                    1226
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_01n_LV6",
@@ -442,21 +456,30 @@
                 "wind_min": 10,
                 "wind_max": 16,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.2
+                "needle_speed_k": 1.45
             },
             {
                 "level": 7,
                 "max_star": 18,
-                "update_card": 120,
-                "update_price": 6000000,
-                "provide_exp": 700,
+                "update_card": 80,
+                "update_price": 1000000,
+                "provide_exp": 800,
                 "tee": 3,
                 "par": 5,
+                "card_icon": "Ma-1-7-icon",
                 "map_icon": "Ma-1-7",
+                "update_limit": {
+                    "clubs_level": [
+                        {
+                            "club_id": 37,
+                            "club_level": 6
+                        }
+                    ]
+                },
                 "skills": [
                     1007,
                     1012,
-                    1067
+                    1226
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_01n_LV7",
@@ -514,21 +537,22 @@
                 "wind_min": 12,
                 "wind_max": 20,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.3
+                "needle_speed_k": 1.75
             },
             {
                 "level": 8,
                 "max_star": 18,
-                "update_card": 170,
-                "update_price": 9000000,
-                "provide_exp": 800,
+                "update_card": 120,
+                "update_price": 1200000,
+                "provide_exp": 1200,
                 "tee": 3,
                 "par": 5,
+                "card_icon": "Ma-1-8-icon",
                 "map_icon": "Ma-1-8",
                 "skills": [
                     1008,
                     1012,
-                    1067
+                    1226
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_01n_LV8",
@@ -586,21 +610,22 @@
                 "wind_min": 12,
                 "wind_max": 24,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.3
+                "needle_speed_k": 1.75
             },
             {
                 "level": 9,
                 "max_star": 18,
-                "update_card": 230,
-                "update_price": 9000000,
-                "provide_exp": 900,
+                "update_card": 170,
+                "update_price": 1500000,
+                "provide_exp": 1700,
                 "tee": 3,
                 "par": 5,
+                "card_icon": "Ma-1-9-icon",
                 "map_icon": "Ma-1-9",
                 "skills": [
                     1009,
                     1012,
-                    1067
+                    1226
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_01n_LV9",
@@ -658,21 +683,30 @@
                 "wind_min": 14,
                 "wind_max": 24,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.3
+                "needle_speed_k": 1.75
             },
             {
                 "level": 10,
                 "max_star": 20,
-                "update_card": 0,
-                "update_price": 15000000,
-                "provide_exp": 1000,
+                "update_card": 230,
+                "update_price": 1800000,
+                "provide_exp": 2300,
                 "tee": 4,
                 "par": 5,
+                "card_icon": "Ma-1-10-icon",
                 "map_icon": "Ma-1-10",
+                "update_limit": {
+                    "clubs_level": [
+                        {
+                            "club_id": 37,
+                            "club_level": 7
+                        }
+                    ]
+                },
                 "skills": [
                     1010,
                     1013,
-                    1067
+                    1226
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_01n_LV10",
@@ -730,7 +764,7 @@
                 "wind_min": 16,
                 "wind_max": 26,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.35
+                "needle_speed_k": 2.1
             }
         ],
         "card_stage_infos": [
@@ -1127,12 +1161,13 @@
             {
                 "level": 1,
                 "max_star": 14,
-                "update_card": 5,
-                "update_price": 150000,
-                "provide_exp": 100,
+                "update_card": 0,
+                "update_price": 0,
+                "provide_exp": 10,
                 "tee": 1,
                 "par": 5,
-                "map_icon": "Ma-1-1",
+                "card_icon": "Ma-2-1-icon",
+                "map_icon": "Ma-2-1",
                 "skills": [
                     1132
                 ],
@@ -1152,17 +1187,18 @@
                 "wind_min": 6,
                 "wind_max": 8,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.0
+                "needle_speed_k": 1.2
             },
             {
                 "level": 2,
                 "max_star": 14,
-                "update_card": 10,
-                "update_price": 240000,
-                "provide_exp": 200,
+                "update_card": 5,
+                "update_price": 120000,
+                "provide_exp": 50,
                 "tee": 1,
                 "par": 5,
-                "map_icon": "Ma-1-2",
+                "card_icon": "Ma-2-2-icon",
+                "map_icon": "Ma-2-2",
                 "skills": [
                     1133
                 ],
@@ -1182,17 +1218,18 @@
                 "wind_min": 6,
                 "wind_max": 10,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.0
+                "needle_speed_k": 1.2
             },
             {
                 "level": 3,
                 "max_star": 14,
-                "update_card": 20,
-                "update_price": 600000,
-                "provide_exp": 300,
+                "update_card": 10,
+                "update_price": 150000,
+                "provide_exp": 100,
                 "tee": 1,
                 "par": 5,
-                "map_icon": "Ma-1-3",
+                "card_icon": "Ma-2-3-icon",
+                "map_icon": "Ma-2-3",
                 "skills": [
                     1134
                 ],
@@ -1212,23 +1249,37 @@
                 "wind_min": 8,
                 "wind_max": 10,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.0
+                "needle_speed_k": 1.2
             },
             {
                 "level": 4,
                 "max_star": 16,
-                "update_card": 30,
-                "update_price": 1200000,
-                "provide_exp": 400,
+                "update_card": 20,
+                "update_price": 200000,
+                "provide_exp": 200,
                 "tee": 2,
                 "par": 5,
-                "map_icon": "Ma-1-4",
+                "card_icon": "Ma-2-4-icon",
+                "map_icon": "Ma-2-4",
+                "update_limit": {
+                    "clubs_level": [
+                        {
+                            "club_id": 37,
+                            "club_level": 5
+                        },
+                        {
+                            "club_id": 63,
+                            "club_level": 5
+                        }
+                    ]
+                },
                 "skills": [
                     1135,
                     1142,
                     1143,
                     1144,
-                    1145
+                    1145,
+                    1206
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_02n_LV4",
@@ -1246,17 +1297,18 @@
                 "wind_min": 9,
                 "wind_max": 14,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.2
+                "needle_speed_k": 1.45
             },
             {
                 "level": 5,
                 "max_star": 16,
-                "update_card": 50,
-                "update_price": 2400000,
-                "provide_exp": 500,
+                "update_card": 30,
+                "update_price": 400000,
+                "provide_exp": 300,
                 "tee": 2,
                 "par": 5,
-                "map_icon": "Ma-1-5",
+                "card_icon": "Ma-2-5-icon",
+                "map_icon": "Ma-2-5",
                 "skills": [
                     1136,
                     1142,
@@ -1280,17 +1332,18 @@
                 "wind_min": 9,
                 "wind_max": 16,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.2
+                "needle_speed_k": 1.45
             },
             {
                 "level": 6,
                 "max_star": 16,
-                "update_card": 80,
-                "update_price": 3000000,
-                "provide_exp": 600,
+                "update_card": 50,
+                "update_price": 800000,
+                "provide_exp": 500,
                 "tee": 2,
                 "par": 5,
-                "map_icon": "Ma-1-6",
+                "card_icon": "Ma-2-6-icon",
+                "map_icon": "Ma-2-6",
                 "skills": [
                     1137,
                     1142,
@@ -1314,23 +1367,37 @@
                 "wind_min": 10,
                 "wind_max": 16,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.2
+                "needle_speed_k": 1.45
             },
             {
                 "level": 7,
                 "max_star": 18,
-                "update_card": 120,
-                "update_price": 6000000,
-                "provide_exp": 700,
+                "update_card": 80,
+                "update_price": 1000000,
+                "provide_exp": 800,
                 "tee": 3,
                 "par": 5,
-                "map_icon": "Ma-1-7",
+                "card_icon": "Ma-2-7-icon",
+                "map_icon": "Ma-2-7",
+                "update_limit": {
+                    "clubs_level": [
+                        {
+                            "club_id": 37,
+                            "club_level": 6
+                        },
+                        {
+                            "club_id": 63,
+                            "club_level": 6
+                        }
+                    ]
+                },
                 "skills": [
                     1138,
                     1146,
                     1147,
                     1148,
-                    1149
+                    1149,
+                    1207
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_02n_LV7",
@@ -1348,17 +1415,18 @@
                 "wind_min": 12,
                 "wind_max": 20,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.25
+                "needle_speed_k": 1.75
             },
             {
                 "level": 8,
                 "max_star": 18,
-                "update_card": 170,
-                "update_price": 9000000,
-                "provide_exp": 800,
+                "update_card": 120,
+                "update_price": 1200000,
+                "provide_exp": 1200,
                 "tee": 3,
                 "par": 5,
-                "map_icon": "Ma-1-8",
+                "card_icon": "Ma-2-8-icon",
+                "map_icon": "Ma-2-8",
                 "skills": [
                     1139,
                     1146,
@@ -1382,17 +1450,18 @@
                 "wind_min": 12,
                 "wind_max": 24,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.25
+                "needle_speed_k": 1.75
             },
             {
                 "level": 9,
                 "max_star": 18,
-                "update_card": 230,
-                "update_price": 9000000,
-                "provide_exp": 900,
+                "update_card": 170,
+                "update_price": 1500000,
+                "provide_exp": 1700,
                 "tee": 3,
                 "par": 5,
-                "map_icon": "Ma-1-9",
+                "card_icon": "Ma-2-9-icon",
+                "map_icon": "Ma-2-9",
                 "skills": [
                     1140,
                     1146,
@@ -1416,17 +1485,30 @@
                 "wind_min": 14,
                 "wind_max": 24,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.25
+                "needle_speed_k": 1.75
             },
             {
                 "level": 10,
                 "max_star": 20,
-                "update_card": 0,
-                "update_price": 15000000,
-                "provide_exp": 1000,
+                "update_card": 230,
+                "update_price": 1800000,
+                "provide_exp": 2300,
                 "tee": 4,
                 "par": 5,
-                "map_icon": "Ma-1-10",
+                "card_icon": "Ma-2-10-icon",
+                "map_icon": "Ma-2-10",
+                "update_limit": {
+                    "clubs_level": [
+                        {
+                            "club_id": 37,
+                            "club_level": 7
+                        },
+                        {
+                            "club_id": 63,
+                            "club_level": 7
+                        }
+                    ]
+                },
                 "skills": [
                     1141,
                     1150,
@@ -1451,7 +1533,7 @@
                 "wind_min": 16,
                 "wind_max": 26,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.35
+                "needle_speed_k": 2.1
             }
         ],
         "card_stage_infos": [
@@ -1848,12 +1930,13 @@
             {
                 "level": 1,
                 "max_star": 6,
-                "update_card": 5,
-                "update_price": 30000,
-                "provide_exp": 100,
+                "update_card": 0,
+                "update_price": 0,
+                "provide_exp": 1,
                 "tee": 1,
                 "par": 5,
-                "map_icon": "Ma-1-1",
+                "card_icon": "Ma-3-1-icon",
+                "map_icon": "Ma-3-1",
                 "skills": [
                     1014
                 ],
@@ -1878,12 +1961,13 @@
             {
                 "level": 2,
                 "max_star": 6,
-                "update_card": 10,
-                "update_price": 90000,
-                "provide_exp": 200,
+                "update_card": 5,
+                "update_price": 30000,
+                "provide_exp": 5,
                 "tee": 1,
                 "par": 5,
-                "map_icon": "Ma-1-2",
+                "card_icon": "Ma-3-2-icon",
+                "map_icon": "Ma-3-2",
                 "skills": [
                     1015
                 ],
@@ -1908,12 +1992,13 @@
             {
                 "level": 3,
                 "max_star": 6,
-                "update_card": 20,
-                "update_price": 180000,
-                "provide_exp": 300,
+                "update_card": 10,
+                "update_price": 60000,
+                "provide_exp": 10,
                 "tee": 1,
                 "par": 5,
-                "map_icon": "Ma-1-3",
+                "card_icon": "Ma-3-3-icon",
+                "map_icon": "Ma-3-3",
                 "skills": [
                     1016
                 ],
@@ -1938,19 +2023,29 @@
             {
                 "level": 4,
                 "max_star": 8,
-                "update_card": 30,
-                "update_price": 240000,
-                "provide_exp": 400,
+                "update_card": 20,
+                "update_price": 120000,
+                "provide_exp": 20,
                 "tee": 2,
                 "par": 5,
-                "map_icon": "Ma-1-4",
+                "card_icon": "Ma-3-4-icon",
+                "map_icon": "Ma-3-4",
+                "update_limit": {
+                    "clubs_level": [
+                        {
+                            "club_id": 19,
+                            "club_level": 10
+                        }
+                    ]
+                },
                 "skills": [
                     1017,
                     1021,
                     1028,
                     1025,
                     1167,
-                    1169
+                    1169,
+                    1171
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_03n_LV4",
@@ -1968,24 +2063,26 @@
                 "wind_min": 8,
                 "wind_max": 10,
                 "debuff_k": 1.0,
-                "needle_speed_k": 0.95
+                "needle_speed_k": 1.0
             },
             {
                 "level": 5,
                 "max_star": 8,
-                "update_card": 50,
-                "update_price": 300000,
-                "provide_exp": 500,
+                "update_card": 30,
+                "update_price": 150000,
+                "provide_exp": 30,
                 "tee": 2,
                 "par": 5,
-                "map_icon": "Ma-1-5",
+                "card_icon": "Ma-3-5-icon",
+                "map_icon": "Ma-3-5",
                 "skills": [
                     1018,
                     1021,
                     1028,
                     1025,
                     1167,
-                    1169
+                    1169,
+                    1171
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_03n_LV5",
@@ -2003,24 +2100,26 @@
                 "wind_min": 8,
                 "wind_max": 14,
                 "debuff_k": 1.0,
-                "needle_speed_k": 0.95
+                "needle_speed_k": 1.0
             },
             {
                 "level": 6,
                 "max_star": 8,
-                "update_card": 80,
-                "update_price": 600000,
-                "provide_exp": 600,
+                "update_card": 50,
+                "update_price": 200000,
+                "provide_exp": 50,
                 "tee": 2,
                 "par": 5,
-                "map_icon": "Ma-1-6",
+                "card_icon": "Ma-3-6-icon",
+                "map_icon": "Ma-3-6",
                 "skills": [
                     1019,
                     1021,
                     1028,
                     1025,
                     1167,
-                    1169
+                    1169,
+                    1171
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_03n_LV6",
@@ -2038,24 +2137,34 @@
                 "wind_min": 9,
                 "wind_max": 14,
                 "debuff_k": 1.0,
-                "needle_speed_k": 0.95
+                "needle_speed_k": 1.0
             },
             {
                 "level": 7,
                 "max_star": 10,
-                "update_card": 120,
-                "update_price": 1200000,
-                "provide_exp": 700,
+                "update_card": 80,
+                "update_price": 400000,
+                "provide_exp": 80,
                 "tee": 3,
                 "par": 5,
-                "map_icon": "Ma-1-7",
+                "card_icon": "Ma-3-7-icon",
+                "map_icon": "Ma-3-7",
+                "update_limit": {
+                    "clubs_level": [
+                        {
+                            "club_id": 19,
+                            "club_level": 11
+                        }
+                    ]
+                },
                 "skills": [
                     1020,
                     1022,
                     1029,
                     1026,
                     1168,
-                    1170
+                    1170,
+                    1172
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_03n_LV7",
@@ -2073,24 +2182,26 @@
                 "wind_min": 10,
                 "wind_max": 16,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.0
+                "needle_speed_k": 1.1
             },
             {
                 "level": 8,
                 "max_star": 10,
-                "update_card": 170,
-                "update_price": 2400000,
-                "provide_exp": 800,
+                "update_card": 120,
+                "update_price": 800000,
+                "provide_exp": 120,
                 "tee": 3,
                 "par": 5,
-                "map_icon": "Ma-1-8",
+                "card_icon": "Ma-3-8-icon",
+                "map_icon": "Ma-3-8",
                 "skills": [
                     1020,
                     1023,
                     1030,
                     1026,
                     1168,
-                    1170
+                    1170,
+                    1172
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_03n_LV8",
@@ -2108,24 +2219,26 @@
                 "wind_min": 10,
                 "wind_max": 18,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.0
+                "needle_speed_k": 1.1
             },
             {
                 "level": 9,
                 "max_star": 10,
-                "update_card": 230,
-                "update_price": 3000000,
-                "provide_exp": 900,
+                "update_card": 170,
+                "update_price": 1000000,
+                "provide_exp": 170,
                 "tee": 3,
                 "par": 5,
-                "map_icon": "Ma-1-9",
+                "card_icon": "Ma-3-9-icon",
+                "map_icon": "Ma-3-9",
                 "skills": [
                     1020,
                     1024,
                     1031,
                     1026,
                     1168,
-                    1170
+                    1170,
+                    1172
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_03n_LV9",
@@ -2143,17 +2256,26 @@
                 "wind_min": 12,
                 "wind_max": 18,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.0
+                "needle_speed_k": 1.1
             },
             {
                 "level": 10,
                 "max_star": 12,
-                "update_card": 0,
-                "update_price": 6000000,
-                "provide_exp": 1000,
+                "update_card": 230,
+                "update_price": 1200000,
+                "provide_exp": 230,
                 "tee": 4,
                 "par": 5,
-                "map_icon": "Ma-1-10",
+                "card_icon": "Ma-3-10-icon",
+                "map_icon": "Ma-3-10",
+                "update_limit": {
+                    "clubs_level": [
+                        {
+                            "club_id": 19,
+                            "club_level": 12
+                        }
+                    ]
+                },
                 "skills": [
                     1020,
                     1024,
@@ -2161,6 +2283,7 @@
                     1026,
                     1168,
                     1170,
+                    1173,
                     1027
                 ],
                 "scene_show": {
@@ -2179,7 +2302,7 @@
                 "wind_min": 13,
                 "wind_max": 20,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.15
+                "needle_speed_k": 1.35
             }
         ],
         "card_stage_infos": [
@@ -2202,7 +2325,7 @@
                     [
                         3,
                         -2,
-                        40
+                        35
                     ],
                     [
                         4,
@@ -2212,7 +2335,7 @@
                     [
                         5,
                         -3,
-                        190
+                        200
                     ],
                     [
                         6,
@@ -2416,12 +2539,13 @@
             {
                 "level": 1,
                 "max_star": 10,
-                "update_card": 5,
-                "update_price": 60000,
-                "provide_exp": 100,
+                "update_card": 0,
+                "update_price": 0,
+                "provide_exp": 5,
                 "tee": 1,
                 "par": 5,
-                "map_icon": "Ma-1-1",
+                "card_icon": "Au-1-1-icon",
+                "map_icon": "Au-1-1",
                 "skills": [
                     1080
                 ],
@@ -2446,12 +2570,13 @@
             {
                 "level": 2,
                 "max_star": 10,
-                "update_card": 10,
-                "update_price": 120000,
-                "provide_exp": 200,
+                "update_card": 5,
+                "update_price": 60000,
+                "provide_exp": 25,
                 "tee": 1,
                 "par": 5,
-                "map_icon": "Ma-1-2",
+                "card_icon": "Au-1-2-icon",
+                "map_icon": "Au-1-2",
                 "skills": [
                     1081
                 ],
@@ -2476,12 +2601,13 @@
             {
                 "level": 3,
                 "max_star": 10,
-                "update_card": 20,
-                "update_price": 240000,
-                "provide_exp": 300,
+                "update_card": 10,
+                "update_price": 120000,
+                "provide_exp": 50,
                 "tee": 1,
                 "par": 5,
-                "map_icon": "Ma-1-3",
+                "card_icon": "Au-1-3-icon",
+                "map_icon": "Au-1-3",
                 "skills": [
                     1082
                 ],
@@ -2506,12 +2632,21 @@
             {
                 "level": 4,
                 "max_star": 12,
-                "update_card": 30,
-                "update_price": 300000,
-                "provide_exp": 400,
+                "update_card": 20,
+                "update_price": 150000,
+                "provide_exp": 100,
                 "tee": 2,
                 "par": 5,
-                "map_icon": "Ma-1-4",
+                "card_icon": "Au-1-4-icon",
+                "map_icon": "Au-1-4",
+                "update_limit": {
+                    "clubs_level": [
+                        {
+                            "club_id": 55,
+                            "club_level": 10
+                        }
+                    ]
+                },
                 "skills": [
                     1083,
                     1084,
@@ -2533,17 +2668,18 @@
                 "wind_min": 8,
                 "wind_max": 12,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.0
+                "needle_speed_k": 1.1
             },
             {
                 "level": 5,
                 "max_star": 12,
-                "update_card": 50,
-                "update_price": 600000,
-                "provide_exp": 500,
+                "update_card": 30,
+                "update_price": 200000,
+                "provide_exp": 150,
                 "tee": 2,
                 "par": 5,
-                "map_icon": "Ma-1-5",
+                "card_icon": "Au-1-5-icon",
+                "map_icon": "Au-1-5",
                 "skills": [
                     1083,
                     1085,
@@ -2565,17 +2701,18 @@
                 "wind_min": 8,
                 "wind_max": 15,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.0
+                "needle_speed_k": 1.1
             },
             {
                 "level": 6,
                 "max_star": 12,
-                "update_card": 80,
-                "update_price": 1200000,
-                "provide_exp": 600,
+                "update_card": 50,
+                "update_price": 400000,
+                "provide_exp": 250,
                 "tee": 2,
                 "par": 5,
-                "map_icon": "Ma-1-6",
+                "card_icon": "Au-1-6-icon",
+                "map_icon": "Au-1-6",
                 "skills": [
                     1083,
                     1086,
@@ -2597,17 +2734,26 @@
                 "wind_min": 10,
                 "wind_max": 15,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.0
+                "needle_speed_k": 1.1
             },
             {
                 "level": 7,
                 "max_star": 14,
-                "update_card": 120,
-                "update_price": 2400000,
-                "provide_exp": 700,
+                "update_card": 80,
+                "update_price": 800000,
+                "provide_exp": 400,
                 "tee": 3,
                 "par": 5,
-                "map_icon": "Ma-1-7",
+                "card_icon": "Au-1-7-icon",
+                "map_icon": "Au-1-7",
+                "update_limit": {
+                    "clubs_level": [
+                        {
+                            "club_id": 32,
+                            "club_level": 10
+                        }
+                    ]
+                },
                 "skills": [
                     1087,
                     1088,
@@ -2630,17 +2776,18 @@
                 "wind_min": 11,
                 "wind_max": 18,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.1
+                "needle_speed_k": 1.375
             },
             {
                 "level": 8,
                 "max_star": 14,
-                "update_card": 170,
-                "update_price": 3000000,
-                "provide_exp": 800,
+                "update_card": 120,
+                "update_price": 1000000,
+                "provide_exp": 600,
                 "tee": 3,
                 "par": 5,
-                "map_icon": "Ma-1-8",
+                "card_icon": "Au-1-8-icon",
+                "map_icon": "Au-1-8",
                 "skills": [
                     1087,
                     1090,
@@ -2663,17 +2810,18 @@
                 "wind_min": 11,
                 "wind_max": 21,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.1
+                "needle_speed_k": 1.375
             },
             {
                 "level": 9,
                 "max_star": 14,
-                "update_card": 230,
-                "update_price": 6000000,
-                "provide_exp": 900,
+                "update_card": 170,
+                "update_price": 1200000,
+                "provide_exp": 850,
                 "tee": 3,
                 "par": 5,
-                "map_icon": "Ma-1-9",
+                "card_icon": "Au-1-9-icon",
+                "map_icon": "Au-1-9",
                 "skills": [
                     1087,
                     1092,
@@ -2696,17 +2844,30 @@
                 "wind_min": 12,
                 "wind_max": 21,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.1
+                "needle_speed_k": 1.375
             },
             {
                 "level": 10,
                 "max_star": 16,
-                "update_card": 0,
-                "update_price": 9000000,
-                "provide_exp": 1000,
+                "update_card": 230,
+                "update_price": 1500000,
+                "provide_exp": 1150,
                 "tee": 4,
                 "par": 5,
-                "map_icon": "Ma-1-10",
+                "card_icon": "Au-1-10-icon",
+                "map_icon": "Au-1-10",
+                "update_limit": {
+                    "clubs_level": [
+                        {
+                            "club_id": 55,
+                            "club_level": 11
+                        },
+                        {
+                            "club_id": 32,
+                            "club_level": 11
+                        }
+                    ]
+                },
                 "skills": [
                     1093,
                     1094,
@@ -2731,7 +2892,7 @@
                 "wind_min": 14,
                 "wind_max": 23,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.2
+                "needle_speed_k": 1.7
             }
         ],
         "card_stage_infos": [
@@ -3048,11 +3209,12 @@
             {
                 "level": 1,
                 "max_star": 10,
-                "update_card": 5,
-                "update_price": 60000,
-                "provide_exp": 100,
+                "update_card": 0,
+                "update_price": 0,
+                "provide_exp": 5,
                 "tee": 1,
                 "par": 5,
+                "card_icon": "Ma-5-1-icon",
                 "map_icon": "Ma-5-1",
                 "skills": [
                     1032
@@ -3078,11 +3240,12 @@
             {
                 "level": 2,
                 "max_star": 10,
-                "update_card": 10,
-                "update_price": 120000,
-                "provide_exp": 200,
+                "update_card": 5,
+                "update_price": 60000,
+                "provide_exp": 25,
                 "tee": 1,
                 "par": 5,
+                "card_icon": "Ma-5-2-icon",
                 "map_icon": "Ma-5-2",
                 "skills": [
                     1033
@@ -3108,11 +3271,12 @@
             {
                 "level": 3,
                 "max_star": 10,
-                "update_card": 20,
-                "update_price": 240000,
-                "provide_exp": 300,
+                "update_card": 10,
+                "update_price": 120000,
+                "provide_exp": 50,
                 "tee": 1,
                 "par": 5,
+                "card_icon": "Ma-5-3-icon",
                 "map_icon": "Ma-5-3",
                 "skills": [
                     1034
@@ -3138,12 +3302,21 @@
             {
                 "level": 4,
                 "max_star": 12,
-                "update_card": 30,
-                "update_price": 300000,
-                "provide_exp": 400,
+                "update_card": 20,
+                "update_price": 150000,
+                "provide_exp": 100,
                 "tee": 2,
                 "par": 5,
+                "card_icon": "Ma-5-4-icon",
                 "map_icon": "Ma-5-4",
+                "update_limit": {
+                    "clubs_level": [
+                        {
+                            "club_id": 31,
+                            "club_level": 9
+                        }
+                    ]
+                },
                 "skills": [
                     1034,
                     1035,
@@ -3166,16 +3339,17 @@
                 "wind_min": 8,
                 "wind_max": 12,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.0
+                "needle_speed_k": 1.1
             },
             {
                 "level": 5,
                 "max_star": 12,
-                "update_card": 50,
-                "update_price": 600000,
-                "provide_exp": 500,
+                "update_card": 30,
+                "update_price": 200000,
+                "provide_exp": 150,
                 "tee": 2,
                 "par": 5,
+                "card_icon": "Ma-5-5-icon",
                 "map_icon": "Ma-5-5",
                 "skills": [
                     1035,
@@ -3199,16 +3373,17 @@
                 "wind_min": 8,
                 "wind_max": 15,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.0
+                "needle_speed_k": 1.1
             },
             {
                 "level": 6,
                 "max_star": 12,
-                "update_card": 80,
-                "update_price": 1200000,
-                "provide_exp": 600,
+                "update_card": 50,
+                "update_price": 400000,
+                "provide_exp": 250,
                 "tee": 2,
                 "par": 5,
+                "card_icon": "Ma-5-6-icon",
                 "map_icon": "Ma-5-6",
                 "skills": [
                     1036,
@@ -3232,17 +3407,30 @@
                 "wind_min": 10,
                 "wind_max": 15,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.0
+                "needle_speed_k": 1.1
             },
             {
                 "level": 7,
                 "max_star": 14,
-                "update_card": 120,
-                "update_price": 2400000,
-                "provide_exp": 700,
+                "update_card": 80,
+                "update_price": 800000,
+                "provide_exp": 400,
                 "tee": 3,
                 "par": 5,
+                "card_icon": "Ma-5-7-icon",
                 "map_icon": "Ma-5-7",
+                "update_limit": {
+                    "clubs_level": [
+                        {
+                            "club_id": 31,
+                            "club_level": 10
+                        },
+                        {
+                            "club_id": 32,
+                            "club_level": 10
+                        }
+                    ]
+                },
                 "skills": [
                     1036,
                     1037,
@@ -3267,16 +3455,17 @@
                 "wind_min": 11,
                 "wind_max": 18,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.1
+                "needle_speed_k": 1.375
             },
             {
                 "level": 8,
                 "max_star": 14,
-                "update_card": 170,
-                "update_price": 3000000,
-                "provide_exp": 800,
+                "update_card": 120,
+                "update_price": 1000000,
+                "provide_exp": 600,
                 "tee": 3,
                 "par": 5,
+                "card_icon": "Ma-5-8-icon",
                 "map_icon": "Ma-5-8",
                 "skills": [
                     1036,
@@ -3302,16 +3491,17 @@
                 "wind_min": 11,
                 "wind_max": 21,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.1
+                "needle_speed_k": 1.375
             },
             {
                 "level": 9,
                 "max_star": 14,
-                "update_card": 230,
-                "update_price": 6000000,
-                "provide_exp": 900,
+                "update_card": 170,
+                "update_price": 1200000,
+                "provide_exp": 850,
                 "tee": 3,
                 "par": 5,
+                "card_icon": "Ma-5-9-icon",
                 "map_icon": "Ma-5-9",
                 "skills": [
                     1036,
@@ -3337,17 +3527,30 @@
                 "wind_min": 12,
                 "wind_max": 21,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.1
+                "needle_speed_k": 1.375
             },
             {
                 "level": 10,
                 "max_star": 16,
-                "update_card": 0,
-                "update_price": 9000000,
-                "provide_exp": 1000,
+                "update_card": 230,
+                "update_price": 1500000,
+                "provide_exp": 1150,
                 "tee": 4,
                 "par": 5,
+                "card_icon": "Ma-5-10-icon",
                 "map_icon": "Ma-5-10",
+                "update_limit": {
+                    "clubs_level": [
+                        {
+                            "club_id": 31,
+                            "club_level": 11
+                        },
+                        {
+                            "club_id": 32,
+                            "club_level": 11
+                        }
+                    ]
+                },
                 "skills": [
                     1036,
                     1037,
@@ -3372,7 +3575,7 @@
                 "wind_min": 14,
                 "wind_max": 23,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.2
+                "needle_speed_k": 1.7
             }
         ],
         "card_stage_infos": [
@@ -3389,43 +3592,43 @@
                     ],
                     [
                         2,
-                        -1,
-                        100
+                        -2,
+                        -1
                     ],
                     [
                         3,
-                        -1,
+                        -2,
                         50
                     ],
                     [
                         4,
                         -2,
-                        -1
-                    ],
-                    [
-                        5,
-                        -2,
                         100
                     ],
                     [
+                        5,
+                        -3,
+                        -1
+                    ],
+                    [
                         6,
-                        -2,
-                        50
+                        -3,
+                        320
                     ],
                     [
                         7,
                         -3,
-                        -1
+                        310
                     ],
                     [
                         8,
                         -3,
-                        310
+                        300
                     ],
                     [
                         9,
                         -3,
-                        300
+                        260
                     ],
                     [
                         10,
@@ -3447,58 +3650,58 @@
                     ],
                     [
                         2,
-                        -1,
-                        200
+                        -2,
+                        -1
                     ],
                     [
                         3,
-                        -1,
+                        -2,
                         100
                     ],
                     [
                         4,
                         -2,
-                        -1
+                        50
                     ],
                     [
                         5,
                         -2,
-                        200
+                        25
                     ],
                     [
                         6,
-                        -2,
-                        100
-                    ],
-                    [
-                        7,
-                        -2,
-                        50
-                    ],
-                    [
-                        8,
                         -3,
                         -1
                     ],
                     [
+                        7,
+                        -3,
+                        350
+                    ],
+                    [
+                        8,
+                        -3,
+                        330
+                    ],
+                    [
                         9,
                         -3,
-                        300
+                        310
                     ],
                     [
                         10,
                         -3,
-                        200
+                        295
                     ],
                     [
                         11,
                         -3,
-                        100
+                        285
                     ],
                     [
                         12,
                         -3,
-                        50
+                        270
                     ]
                 ]
             },
@@ -3509,64 +3712,74 @@
                 },
                 "evaluation_rule": [
                     [
-                        3,
+                        1,
                         -1,
+                        -1
+                    ],
+                    [
+                        2,
+                        -1,
+                        100
+                    ],
+                    [
+                        3,
+                        -2,
                         -1
                     ],
                     [
                         4,
-                        -1,
-                        200
+                        -2,
+                        350
                     ],
                     [
                         5,
-                        -1,
-                        100
+                        -2,
+                        200
                     ],
                     [
                         6,
-                        -1,
-                        50
+                        -2,
+                        150
                     ],
                     [
                         7,
                         -2,
-                        -1
+                        50
                     ],
                     [
                         8,
-                        -2,
-                        200
+                        -3,
+                        -1
                     ],
                     [
                         9,
-                        -2,
-                        100
+                        -3,
+                        350
                     ],
                     [
                         10,
-                        -2,
-                        50
+                        -3,
+                        300
                     ],
                     [
                         11,
                         -3,
-                        -1
+                        290
                     ],
                     [
                         12,
                         -3,
-                        200
+                        280
                     ],
                     [
                         13,
                         -3,
-                        100
+                        265
                     ],
                     [
                         14,
                         -3,
-                        50
+                        255
                     ]
                 ]
             },
@@ -3584,72 +3797,72 @@
                     [
                         2,
                         -1,
-                        200
+                        150
                     ],
                     [
                         3,
                         -1,
-                        100
-                    ],
-                    [
-                        4,
-                        -1,
                         50
                     ],
                     [
+                        4,
+                        -2,
+                        -1
+                    ],
+                    [
                         5,
-                        -1,
-                        15
+                        -2,
+                        310
                     ],
                     [
                         6,
                         -2,
-                        -1
+                        250
                     ],
                     [
                         7,
                         -2,
-                        350
+                        150
                     ],
                     [
                         8,
                         -2,
-                        200
+                        100
                     ],
                     [
                         9,
                         -2,
-                        100
-                    ],
-                    [
-                        10,
-                        -2,
                         50
                     ],
                     [
-                        11,
-                        -2,
-                        15
-                    ],
-                    [
-                        12,
+                        10,
                         -3,
                         -1
                     ],
                     [
-                        13,
-                        -3,
-                        470
-                    ],
-                    [
-                        14,
+                        11,
                         -3,
                         360
                     ],
                     [
-                        15,
+                        12,
                         -3,
                         300
+                    ],
+                    [
+                        13,
+                        -3,
+                        250
+                    ],
+                    [
+                        14,
+                        -3,
+                        210
+                    ],
+                    [
+                        15,
+                        -3,
+                        160
                     ],
                     [
                         16,
@@ -3679,12 +3892,13 @@
             {
                 "level": 1,
                 "max_star": 10,
-                "update_card": 5,
-                "update_price": 60000,
-                "provide_exp": 100,
+                "update_card": 0,
+                "update_price": 0,
+                "provide_exp": 5,
                 "tee": 1,
                 "par": 5,
-                "map_icon": "Ma-1-1",
+                "card_icon": "Au-2-1-icon",
+                "map_icon": "Au-2-1",
                 "skills": [
                     1063
                 ],
@@ -3709,12 +3923,13 @@
             {
                 "level": 2,
                 "max_star": 10,
-                "update_card": 10,
-                "update_price": 120000,
-                "provide_exp": 200,
+                "update_card": 5,
+                "update_price": 60000,
+                "provide_exp": 25,
                 "tee": 1,
                 "par": 5,
-                "map_icon": "Ma-1-2",
+                "card_icon": "Au-2-2-icon",
+                "map_icon": "Au-2-2",
                 "skills": [
                     1201,
                     1064
@@ -3740,12 +3955,13 @@
             {
                 "level": 3,
                 "max_star": 10,
-                "update_card": 20,
-                "update_price": 240000,
-                "provide_exp": 300,
+                "update_card": 10,
+                "update_price": 120000,
+                "provide_exp": 50,
                 "tee": 1,
                 "par": 5,
-                "map_icon": "Ma-1-3",
+                "card_icon": "Au-2-3-icon",
+                "map_icon": "Au-2-3",
                 "skills": [
                     1065,
                     1064
@@ -3771,12 +3987,21 @@
             {
                 "level": 4,
                 "max_star": 12,
-                "update_card": 30,
-                "update_price": 300000,
-                "provide_exp": 400,
+                "update_card": 20,
+                "update_price": 150000,
+                "provide_exp": 100,
                 "tee": 2,
                 "par": 5,
-                "map_icon": "Ma-1-4",
+                "card_icon": "Au-2-4-icon",
+                "map_icon": "Au-2-4",
+                "update_limit": {
+                    "clubs_level": [
+                        {
+                            "club_id": 32,
+                            "club_level": 9
+                        }
+                    ]
+                },
                 "skills": [
                     1065,
                     1068,
@@ -3800,17 +4025,18 @@
                 "wind_min": 8,
                 "wind_max": 12,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.0
+                "needle_speed_k": 1.1
             },
             {
                 "level": 5,
                 "max_star": 12,
-                "update_card": 50,
-                "update_price": 600000,
-                "provide_exp": 500,
+                "update_card": 30,
+                "update_price": 200000,
+                "provide_exp": 150,
                 "tee": 2,
                 "par": 5,
-                "map_icon": "Ma-1-5",
+                "card_icon": "Au-2-5-icon",
+                "map_icon": "Au-2-5",
                 "skills": [
                     1069,
                     1068,
@@ -3834,17 +4060,18 @@
                 "wind_min": 8,
                 "wind_max": 15,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.0
+                "needle_speed_k": 1.1
             },
             {
                 "level": 6,
                 "max_star": 12,
-                "update_card": 80,
-                "update_price": 1200000,
-                "provide_exp": 600,
+                "update_card": 50,
+                "update_price": 400000,
+                "provide_exp": 250,
                 "tee": 2,
                 "par": 5,
-                "map_icon": "Ma-1-6",
+                "card_icon": "Au-2-6-icon",
+                "map_icon": "Au-2-6",
                 "skills": [
                     1070,
                     1068,
@@ -3868,17 +4095,26 @@
                 "wind_min": 10,
                 "wind_max": 15,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.0
+                "needle_speed_k": 1.1
             },
             {
                 "level": 7,
                 "max_star": 14,
-                "update_card": 120,
-                "update_price": 2400000,
-                "provide_exp": 700,
+                "update_card": 80,
+                "update_price": 800000,
+                "provide_exp": 400,
                 "tee": 3,
                 "par": 5,
-                "map_icon": "Ma-1-7",
+                "card_icon": "Au-2-7-icon",
+                "map_icon": "Au-2-7",
+                "update_limit": {
+                    "clubs_level": [
+                        {
+                            "club_id": 32,
+                            "club_level": 10
+                        }
+                    ]
+                },
                 "skills": [
                     1070,
                     1073,
@@ -3902,17 +4138,18 @@
                 "wind_min": 11,
                 "wind_max": 18,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.1
+                "needle_speed_k": 1.375
             },
             {
                 "level": 8,
                 "max_star": 14,
-                "update_card": 170,
-                "update_price": 3000000,
-                "provide_exp": 800,
+                "update_card": 120,
+                "update_price": 1000000,
+                "provide_exp": 600,
                 "tee": 3,
                 "par": 5,
-                "map_icon": "Ma-1-8",
+                "card_icon": "Au-2-8-icon",
+                "map_icon": "Au-2-8",
                 "skills": [
                     1074,
                     1073,
@@ -3936,17 +4173,18 @@
                 "wind_min": 11,
                 "wind_max": 21,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.1
+                "needle_speed_k": 1.375
             },
             {
                 "level": 9,
                 "max_star": 14,
-                "update_card": 230,
-                "update_price": 6000000,
-                "provide_exp": 900,
+                "update_card": 170,
+                "update_price": 1200000,
+                "provide_exp": 850,
                 "tee": 3,
                 "par": 5,
-                "map_icon": "Ma-1-9",
+                "card_icon": "Au-2-9-icon",
+                "map_icon": "Au-2-9",
                 "skills": [
                     1075,
                     1073,
@@ -3970,17 +4208,26 @@
                 "wind_min": 12,
                 "wind_max": 21,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.1
+                "needle_speed_k": 1.375
             },
             {
                 "level": 10,
                 "max_star": 16,
-                "update_card": 0,
-                "update_price": 9000000,
-                "provide_exp": 1000,
+                "update_card": 230,
+                "update_price": 1500000,
+                "provide_exp": 1150,
                 "tee": 4,
                 "par": 5,
-                "map_icon": "Ma-1-10",
+                "card_icon": "Au-2-10-icon",
+                "map_icon": "Au-2-10",
+                "update_limit": {
+                    "clubs_level": [
+                        {
+                            "club_id": 32,
+                            "club_level": 11
+                        }
+                    ]
+                },
                 "skills": [
                     1202,
                     1073,
@@ -4006,7 +4253,7 @@
                 "wind_min": 14,
                 "wind_max": 23,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.2
+                "needle_speed_k": 1.7
             }
         ],
         "card_stage_infos": [
@@ -4044,27 +4291,27 @@
                     [
                         6,
                         -3,
-                        260
+                        280
                     ],
                     [
                         7,
                         -3,
-                        250
+                        270
                     ],
                     [
                         8,
                         -3,
-                        240
+                        260
                     ],
                     [
                         9,
                         -3,
-                        230
+                        245
                     ],
                     [
                         10,
                         -3,
-                        200
+                        230
                     ]
                 ]
             },
@@ -4087,17 +4334,17 @@
                     [
                         3,
                         -2,
-                        260
+                        50
                     ],
                     [
                         4,
                         -2,
-                        250
+                        150
                     ],
                     [
                         5,
                         -2,
-                        240
+                        230
                     ],
                     [
                         6,
@@ -4107,32 +4354,32 @@
                     [
                         7,
                         -3,
-                        260
+                        350
                     ],
                     [
                         8,
                         -3,
-                        250
+                        340
                     ],
                     [
                         9,
                         -3,
-                        240
+                        330
                     ],
                     [
                         10,
                         -3,
-                        230
+                        315
                     ],
                     [
                         11,
                         -3,
-                        220
+                        300
                     ],
                     [
                         12,
                         -3,
-                        210
+                        280
                     ]
                 ]
             },
@@ -4150,7 +4397,7 @@
                     [
                         2,
                         -1,
-                        260
+                        50
                     ],
                     [
                         3,
@@ -4160,22 +4407,22 @@
                     [
                         4,
                         -2,
-                        250
+                        220
                     ],
                     [
                         5,
                         -2,
-                        240
+                        150
                     ],
                     [
                         6,
                         -2,
-                        230
+                        50
                     ],
                     [
                         7,
                         -2,
-                        220
+                        25
                     ],
                     [
                         8,
@@ -4185,32 +4432,32 @@
                     [
                         9,
                         -3,
-                        250
+                        330
                     ],
                     [
                         10,
                         -3,
-                        240
+                        320
                     ],
                     [
                         11,
                         -3,
-                        230
+                        310
                     ],
                     [
                         12,
                         -3,
-                        220
+                        295
                     ],
                     [
                         13,
                         -3,
-                        210
+                        280
                     ],
                     [
                         14,
                         -3,
-                        200
+                        260
                     ]
                 ]
             },
@@ -4228,12 +4475,12 @@
                     [
                         2,
                         -1,
-                        240
+                        150
                     ],
                     [
                         3,
                         -1,
-                        220
+                        50
                     ],
                     [
                         4,
@@ -4243,27 +4490,27 @@
                     [
                         5,
                         -2,
-                        240
+                        225
                     ],
                     [
                         6,
                         -2,
-                        220
+                        180
                     ],
                     [
                         7,
                         -2,
-                        200
+                        140
                     ],
                     [
                         8,
                         -2,
-                        180
+                        50
                     ],
                     [
                         9,
                         -2,
-                        160
+                        25
                     ],
                     [
                         10,
@@ -4273,32 +4520,32 @@
                     [
                         11,
                         -3,
-                        180
+                        330
                     ],
                     [
                         12,
                         -3,
-                        160
+                        320
                     ],
                     [
                         13,
                         -3,
-                        140
+                        310
                     ],
                     [
                         14,
                         -3,
-                        120
+                        295
                     ],
                     [
                         15,
                         -3,
-                        100
+                        280
                     ],
                     [
                         16,
                         -3,
-                        80
+                        260
                     ]
                 ]
             }
@@ -4323,12 +4570,13 @@
             {
                 "level": 1,
                 "max_star": 10,
-                "update_card": 5,
-                "update_price": 60000,
-                "provide_exp": 100,
+                "update_card": 0,
+                "update_price": 0,
+                "provide_exp": 5,
                 "tee": 1,
                 "par": 5,
-                "map_icon": "Ma-1-1",
+                "card_icon": "Au-3-1-icon",
+                "map_icon": "Au-3-1",
                 "skills": [
                     1154
                 ],
@@ -4353,12 +4601,13 @@
             {
                 "level": 2,
                 "max_star": 10,
-                "update_card": 10,
-                "update_price": 120000,
-                "provide_exp": 200,
+                "update_card": 5,
+                "update_price": 60000,
+                "provide_exp": 25,
                 "tee": 1,
                 "par": 5,
-                "map_icon": "Ma-1-2",
+                "card_icon": "Au-3-2-icon",
+                "map_icon": "Au-3-2",
                 "skills": [
                     1155
                 ],
@@ -4383,12 +4632,13 @@
             {
                 "level": 3,
                 "max_star": 10,
-                "update_card": 20,
-                "update_price": 240000,
-                "provide_exp": 300,
+                "update_card": 10,
+                "update_price": 120000,
+                "provide_exp": 50,
                 "tee": 1,
                 "par": 5,
-                "map_icon": "Ma-1-3",
+                "card_icon": "Au-3-3-icon",
+                "map_icon": "Au-3-3",
                 "skills": [
                     1156
                 ],
@@ -4413,15 +4663,25 @@
             {
                 "level": 4,
                 "max_star": 12,
-                "update_card": 30,
-                "update_price": 300000,
-                "provide_exp": 400,
+                "update_card": 20,
+                "update_price": 150000,
+                "provide_exp": 100,
                 "tee": 2,
                 "par": 5,
-                "map_icon": "Ma-1-4",
+                "card_icon": "Au-3-4-icon",
+                "map_icon": "Au-3-4",
+                "update_limit": {
+                    "clubs_level": [
+                        {
+                            "club_id": 13,
+                            "club_level": 9
+                        }
+                    ]
+                },
                 "skills": [
                     1157,
-                    1158
+                    1158,
+                    1220
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_07n_LV4",
@@ -4439,17 +4699,18 @@
                 "wind_min": 8,
                 "wind_max": 12,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.0
+                "needle_speed_k": 1.1
             },
             {
                 "level": 5,
                 "max_star": 12,
-                "update_card": 50,
-                "update_price": 600000,
-                "provide_exp": 500,
+                "update_card": 30,
+                "update_price": 200000,
+                "provide_exp": 150,
                 "tee": 2,
                 "par": 5,
-                "map_icon": "Ma-1-5",
+                "card_icon": "Au-3-5-icon",
+                "map_icon": "Au-3-5",
                 "skills": [
                     1157,
                     1159
@@ -4470,17 +4731,18 @@
                 "wind_min": 8,
                 "wind_max": 15,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.0
+                "needle_speed_k": 1.1
             },
             {
                 "level": 6,
                 "max_star": 12,
-                "update_card": 80,
-                "update_price": 1200000,
-                "provide_exp": 600,
+                "update_card": 50,
+                "update_price": 400000,
+                "provide_exp": 250,
                 "tee": 2,
                 "par": 5,
-                "map_icon": "Ma-1-6",
+                "card_icon": "Au-3-6-icon",
+                "map_icon": "Au-3-6",
                 "skills": [
                     1157,
                     1160
@@ -4501,22 +4763,32 @@
                 "wind_min": 10,
                 "wind_max": 15,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.0
+                "needle_speed_k": 1.1
             },
             {
                 "level": 7,
                 "max_star": 14,
-                "update_card": 120,
-                "update_price": 2400000,
-                "provide_exp": 700,
+                "update_card": 80,
+                "update_price": 800000,
+                "provide_exp": 400,
                 "tee": 3,
                 "par": 5,
-                "map_icon": "Ma-1-7",
+                "card_icon": "Au-3-7-icon",
+                "map_icon": "Au-3-7",
+                "update_limit": {
+                    "clubs_level": [
+                        {
+                            "club_id": 13,
+                            "club_level": 10
+                        }
+                    ]
+                },
                 "skills": [
                     1157,
                     1161,
                     1160,
-                    1162
+                    1162,
+                    1221
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_07n_LV7",
@@ -4534,17 +4806,18 @@
                 "wind_min": 11,
                 "wind_max": 18,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.1
+                "needle_speed_k": 1.375
             },
             {
                 "level": 8,
                 "max_star": 14,
-                "update_card": 170,
-                "update_price": 3000000,
-                "provide_exp": 800,
+                "update_card": 120,
+                "update_price": 1000000,
+                "provide_exp": 600,
                 "tee": 3,
                 "par": 5,
-                "map_icon": "Ma-1-8",
+                "card_icon": "Au-3-8-icon",
+                "map_icon": "Au-3-8",
                 "skills": [
                     1157,
                     1161,
@@ -4567,17 +4840,18 @@
                 "wind_min": 11,
                 "wind_max": 21,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.1
+                "needle_speed_k": 1.375
             },
             {
                 "level": 9,
                 "max_star": 14,
-                "update_card": 230,
-                "update_price": 6000000,
-                "provide_exp": 900,
+                "update_card": 170,
+                "update_price": 1200000,
+                "provide_exp": 850,
                 "tee": 3,
                 "par": 5,
-                "map_icon": "Ma-1-9",
+                "card_icon": "Au-3-9-icon",
+                "map_icon": "Au-3-9",
                 "skills": [
                     1157,
                     1161,
@@ -4600,23 +4874,33 @@
                 "wind_min": 12,
                 "wind_max": 21,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.1
+                "needle_speed_k": 1.375
             },
             {
                 "level": 10,
                 "max_star": 16,
-                "update_card": 0,
-                "update_price": 9000000,
-                "provide_exp": 1000,
+                "update_card": 230,
+                "update_price": 1500000,
+                "provide_exp": 1150,
                 "tee": 4,
                 "par": 5,
-                "map_icon": "Ma-1-10",
+                "card_icon": "Au-3-10-icon",
+                "map_icon": "Au-3-10",
+                "update_limit": {
+                    "clubs_level": [
+                        {
+                            "club_id": 13,
+                            "club_level": 11
+                        }
+                    ]
+                },
                 "skills": [
                     1157,
                     1161,
                     1164,
                     1165,
-                    1166
+                    1166,
+                    1222
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_07n_LV10",
@@ -4634,7 +4918,7 @@
                 "wind_min": 14,
                 "wind_max": 23,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.2
+                "needle_speed_k": 1.7
             }
         ],
         "card_stage_infos": [
@@ -4951,12 +5235,13 @@
             {
                 "level": 1,
                 "max_star": 6,
-                "update_card": 5,
-                "update_price": 30000,
-                "provide_exp": 100,
+                "update_card": 0,
+                "update_price": 0,
+                "provide_exp": 1,
                 "tee": 1,
                 "par": 5,
-                "map_icon": "Ma-1-1",
+                "card_icon": "Au-4-1-icon",
+                "map_icon": "Au-4-1",
                 "skills": [
                     1050
                 ],
@@ -4981,12 +5266,13 @@
             {
                 "level": 2,
                 "max_star": 6,
-                "update_card": 10,
-                "update_price": 90000,
-                "provide_exp": 200,
+                "update_card": 5,
+                "update_price": 30000,
+                "provide_exp": 5,
                 "tee": 1,
                 "par": 5,
-                "map_icon": "Ma-1-2",
+                "card_icon": "Au-4-2-icon",
+                "map_icon": "Au-4-2",
                 "skills": [
                     1051
                 ],
@@ -5011,12 +5297,13 @@
             {
                 "level": 3,
                 "max_star": 6,
-                "update_card": 20,
-                "update_price": 180000,
-                "provide_exp": 300,
+                "update_card": 10,
+                "update_price": 60000,
+                "provide_exp": 10,
                 "tee": 1,
                 "par": 5,
-                "map_icon": "Ma-1-3",
+                "card_icon": "Au-4-3-icon",
+                "map_icon": "Au-4-3",
                 "skills": [
                     1052,
                     1053
@@ -5042,16 +5329,26 @@
             {
                 "level": 4,
                 "max_star": 8,
-                "update_card": 30,
-                "update_price": 240000,
-                "provide_exp": 400,
+                "update_card": 20,
+                "update_price": 120000,
+                "provide_exp": 20,
                 "tee": 2,
                 "par": 5,
-                "map_icon": "Ma-1-4",
+                "card_icon": "Au-4-4-icon",
+                "map_icon": "Au-4-4",
+                "update_limit": {
+                    "clubs_level": [
+                        {
+                            "club_id": 19,
+                            "club_level": 10
+                        }
+                    ]
+                },
                 "skills": [
                     1054,
                     1053,
-                    1062
+                    1062,
+                    1223
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_08n_LV4",
@@ -5069,17 +5366,18 @@
                 "wind_min": 8,
                 "wind_max": 10,
                 "debuff_k": 1.0,
-                "needle_speed_k": 0.95
+                "needle_speed_k": 1.0
             },
             {
                 "level": 5,
                 "max_star": 8,
-                "update_card": 50,
-                "update_price": 300000,
-                "provide_exp": 500,
+                "update_card": 30,
+                "update_price": 150000,
+                "provide_exp": 30,
                 "tee": 2,
                 "par": 5,
-                "map_icon": "Ma-1-5",
+                "card_icon": "Au-4-5-icon",
+                "map_icon": "Au-4-5",
                 "skills": [
                     1055,
                     1053,
@@ -5101,17 +5399,18 @@
                 "wind_min": 8,
                 "wind_max": 14,
                 "debuff_k": 1.0,
-                "needle_speed_k": 0.95
+                "needle_speed_k": 1.0
             },
             {
                 "level": 6,
                 "max_star": 8,
-                "update_card": 80,
-                "update_price": 600000,
-                "provide_exp": 600,
+                "update_card": 50,
+                "update_price": 200000,
+                "provide_exp": 50,
                 "tee": 2,
                 "par": 5,
-                "map_icon": "Ma-1-6",
+                "card_icon": "Au-4-6-icon",
+                "map_icon": "Au-4-6",
                 "skills": [
                     1056,
                     1053,
@@ -5133,23 +5432,33 @@
                 "wind_min": 9,
                 "wind_max": 14,
                 "debuff_k": 1.0,
-                "needle_speed_k": 0.95
+                "needle_speed_k": 1.0
             },
             {
                 "level": 7,
                 "max_star": 10,
-                "update_card": 120,
-                "update_price": 1200000,
-                "provide_exp": 700,
+                "update_card": 80,
+                "update_price": 400000,
+                "provide_exp": 80,
                 "tee": 3,
                 "par": 5,
-                "map_icon": "Ma-1-7",
+                "card_icon": "Au-4-7-icon",
+                "map_icon": "Au-4-7",
+                "update_limit": {
+                    "clubs_level": [
+                        {
+                            "club_id": 19,
+                            "club_level": 11
+                        }
+                    ]
+                },
                 "skills": [
                     1056,
                     1053,
                     1057,
                     1062,
-                    1097
+                    1097,
+                    1224
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_08n_LV7",
@@ -5167,17 +5476,18 @@
                 "wind_min": 10,
                 "wind_max": 16,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.0
+                "needle_speed_k": 1.1
             },
             {
                 "level": 8,
                 "max_star": 10,
-                "update_card": 170,
-                "update_price": 2400000,
-                "provide_exp": 800,
+                "update_card": 120,
+                "update_price": 800000,
+                "provide_exp": 120,
                 "tee": 3,
                 "par": 5,
-                "map_icon": "Ma-1-8",
+                "card_icon": "Au-4-8-icon",
+                "map_icon": "Au-4-8",
                 "skills": [
                     1058,
                     1053,
@@ -5201,17 +5511,18 @@
                 "wind_min": 10,
                 "wind_max": 18,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.0
+                "needle_speed_k": 1.1
             },
             {
                 "level": 9,
                 "max_star": 10,
-                "update_card": 230,
-                "update_price": 3000000,
-                "provide_exp": 900,
+                "update_card": 170,
+                "update_price": 1000000,
+                "provide_exp": 170,
                 "tee": 3,
                 "par": 5,
-                "map_icon": "Ma-1-9",
+                "card_icon": "Au-4-9-icon",
+                "map_icon": "Au-4-9",
                 "skills": [
                     1061,
                     1053,
@@ -5235,24 +5546,34 @@
                 "wind_min": 12,
                 "wind_max": 18,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.0
+                "needle_speed_k": 1.1
             },
             {
                 "level": 10,
                 "max_star": 12,
-                "update_card": 0,
-                "update_price": 6000000,
-                "provide_exp": 1000,
+                "update_card": 230,
+                "update_price": 1200000,
+                "provide_exp": 230,
                 "tee": 4,
                 "par": 5,
-                "map_icon": "Ma-1-10",
+                "card_icon": "Au-4-10-icon",
+                "map_icon": "Au-4-10",
+                "update_limit": {
+                    "clubs_level": [
+                        {
+                            "club_id": 19,
+                            "club_level": 12
+                        }
+                    ]
+                },
                 "skills": [
                     1061,
                     1053,
                     1060,
                     1059,
                     1062,
-                    1097
+                    1097,
+                    1225
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_08n_LV10",
@@ -5270,7 +5591,7 @@
                 "wind_min": 13,
                 "wind_max": 20,
                 "debuff_k": 1.0,
-                "needle_speed_k": 1.15
+                "needle_speed_k": 1.35
             }
         ],
         "card_stage_infos": [

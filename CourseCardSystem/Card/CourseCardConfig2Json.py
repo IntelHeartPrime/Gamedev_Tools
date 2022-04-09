@@ -118,7 +118,31 @@ while ws1.range((row_index,4)).value != None:
         dic_ability.update({"provide_exp": int(ws2.range((card_row_index, 5)).value)})
         dic_ability.update({"tee": int(ws2.range((card_row_index, 6)).value)})
         dic_ability.update({"par": int(ws2.range((card_row_index, 7)).value)})
-        dic_ability.update({"map_icon": ws2.range((card_row_index, 23)).value})
+        dic_ability.update({"card_icon": ws2.range((card_row_index, 8)).value})
+        dic_ability.update({"map_icon": ws2.range((card_row_index, 9)).value})
+
+
+        # update limit 破阶条件
+        update_limit_dic = {}
+        if (ws2.range((card_row_index, 12)).value!= None) or (ws2.range((card_row_index, 13)).value!= None):
+            dic_ability.update({"update_limit": update_limit_dic})
+            if ws2.range((card_row_index, 12)).value!= None:
+                update_limit_dic.update({"field_legend_level": int(ws2.range((card_row_index, 12)).value)})
+            if ws2.range((card_row_index, 13)).value!= None:
+                clubs_level = []
+                update_limit_dic.update(({"clubs_level": clubs_level}))
+                str_content = str(ws2.range((card_row_index, 13)).value)
+                str_split1 = str_content.split(";")
+                for split1 in str_split1:
+                    str_split2 = split1.split(",")
+                    club_id = int(str_split2[0])
+                    club_level = int(str_split2[1])
+
+                    dic_add = {}
+                    dic_add.update({"club_id": club_id})
+                    dic_add.update({"club_level": club_level})
+
+                    clubs_level.append(dic_add)
 
 
         skills_list = []
