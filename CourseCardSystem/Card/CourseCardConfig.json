@@ -1314,7 +1314,8 @@
                     1142,
                     1143,
                     1144,
-                    1145
+                    1145,
+                    1206
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_02n_LV5",
@@ -1349,7 +1350,8 @@
                     1142,
                     1143,
                     1144,
-                    1145
+                    1145,
+                    1206
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_02n_LV6",
@@ -1432,7 +1434,8 @@
                     1146,
                     1147,
                     1148,
-                    1149
+                    1149,
+                    1207
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_02n_LV8",
@@ -1467,7 +1470,8 @@
                     1146,
                     1147,
                     1148,
-                    1149
+                    1149,
+                    1207
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_02n_LV9",
@@ -3214,8 +3218,8 @@
                 "provide_exp": 5,
                 "tee": 1,
                 "par": 5,
-                "card_icon": "Ma-5-1-icon",
-                "map_icon": "Ma-5-1",
+                "card_icon": "Ma-4-1-icon",
+                "map_icon": "Ma-4-1",
                 "skills": [
                     1032
                 ],
@@ -3245,8 +3249,8 @@
                 "provide_exp": 25,
                 "tee": 1,
                 "par": 5,
-                "card_icon": "Ma-5-2-icon",
-                "map_icon": "Ma-5-2",
+                "card_icon": "Ma-4-2-icon",
+                "map_icon": "Ma-4-2",
                 "skills": [
                     1033
                 ],
@@ -3276,8 +3280,8 @@
                 "provide_exp": 50,
                 "tee": 1,
                 "par": 5,
-                "card_icon": "Ma-5-3-icon",
-                "map_icon": "Ma-5-3",
+                "card_icon": "Ma-4-3-icon",
+                "map_icon": "Ma-4-3",
                 "skills": [
                     1034
                 ],
@@ -3307,8 +3311,8 @@
                 "provide_exp": 100,
                 "tee": 2,
                 "par": 5,
-                "card_icon": "Ma-5-4-icon",
-                "map_icon": "Ma-5-4",
+                "card_icon": "Ma-4-4-icon",
+                "map_icon": "Ma-4-4",
                 "update_limit": {
                     "clubs_level": [
                         {
@@ -3349,8 +3353,8 @@
                 "provide_exp": 150,
                 "tee": 2,
                 "par": 5,
-                "card_icon": "Ma-5-5-icon",
-                "map_icon": "Ma-5-5",
+                "card_icon": "Ma-4-5-icon",
+                "map_icon": "Ma-4-5",
                 "skills": [
                     1035,
                     1036,
@@ -3383,8 +3387,8 @@
                 "provide_exp": 250,
                 "tee": 2,
                 "par": 5,
-                "card_icon": "Ma-5-6-icon",
-                "map_icon": "Ma-5-6",
+                "card_icon": "Ma-4-6-icon",
+                "map_icon": "Ma-4-6",
                 "skills": [
                     1036,
                     1037,
@@ -3417,8 +3421,8 @@
                 "provide_exp": 400,
                 "tee": 3,
                 "par": 5,
-                "card_icon": "Ma-5-7-icon",
-                "map_icon": "Ma-5-7",
+                "card_icon": "Ma-4-7-icon",
+                "map_icon": "Ma-4-7",
                 "update_limit": {
                     "clubs_level": [
                         {
@@ -3465,8 +3469,8 @@
                 "provide_exp": 600,
                 "tee": 3,
                 "par": 5,
-                "card_icon": "Ma-5-8-icon",
-                "map_icon": "Ma-5-8",
+                "card_icon": "Ma-4-8-icon",
+                "map_icon": "Ma-4-8",
                 "skills": [
                     1036,
                     1037,
@@ -3501,8 +3505,8 @@
                 "provide_exp": 850,
                 "tee": 3,
                 "par": 5,
-                "card_icon": "Ma-5-9-icon",
-                "map_icon": "Ma-5-9",
+                "card_icon": "Ma-4-9-icon",
+                "map_icon": "Ma-4-9",
                 "skills": [
                     1036,
                     1037,
@@ -3537,8 +3541,8 @@
                 "provide_exp": 1150,
                 "tee": 4,
                 "par": 5,
-                "card_icon": "Ma-5-10-icon",
-                "map_icon": "Ma-5-10",
+                "card_icon": "Ma-4-10-icon",
+                "map_icon": "Ma-4-10",
                 "update_limit": {
                     "clubs_level": [
                         {
@@ -4713,7 +4717,8 @@
                 "map_icon": "Au-3-5",
                 "skills": [
                     1157,
-                    1159
+                    1159,
+                    1220
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_07n_LV5",
@@ -4745,7 +4750,8 @@
                 "map_icon": "Au-3-6",
                 "skills": [
                     1157,
-                    1160
+                    1160,
+                    1220
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_07n_LV6",
@@ -4822,7 +4828,8 @@
                     1157,
                     1161,
                     1160,
-                    1163
+                    1163,
+                    1221
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_07n_LV8",
@@ -4856,7 +4863,8 @@
                     1157,
                     1161,
                     1160,
-                    1164
+                    1164,
+                    1221
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_07n_LV9",
@@ -5381,7 +5389,8 @@
                 "skills": [
                     1055,
                     1053,
-                    1062
+                    1062,
+                    1223
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_08n_LV5",
@@ -5414,7 +5423,8 @@
                 "skills": [
                     1056,
                     1053,
-                    1062
+                    1062,
+                    1223
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_08n_LV6",
@@ -5493,7 +5503,8 @@
                     1053,
                     1057,
                     1062,
-                    1097
+                    1097,
+                    1224
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_08n_LV8",
@@ -5528,7 +5539,8 @@
                     1053,
                     1060,
                     1062,
-                    1097
+                    1097,
+                    1224
                 ],
                 "scene_show": {
                     "show_prefab": "game_HF_08n_LV9",

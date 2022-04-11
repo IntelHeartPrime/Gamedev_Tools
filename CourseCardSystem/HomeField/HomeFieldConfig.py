@@ -125,7 +125,7 @@ def fill_offer_config( row_start ):
     while ws1.range((row_start + 5,column_index_start)).value != None:
         dic_add = {}
         dic_add.update({"money": ws1.range((row_start+5, column_index_start)).value})
-        dic_add.update({"offer_id": ws1.range((row_start+6, column_index_start)).value})
+        dic_add.update({"offer_id": int(ws1.range((row_start+6, column_index_start)).value)})
 
         signup_offer_id_list.append(dic_add)
 
@@ -448,7 +448,6 @@ print("process_rewards 配置完成")
 
 pvp_conf = {}
 unit_dic_inner.update({"pvp_conf": pvp_conf})
-pvp_conf.update({"settle_start": int(wsPVP.range((3, 2)).value)})
 pvp_conf.update({"start_time": int(wsPVP.range((4, 2)).value)})
 pvp_conf.update({"end_time": int(wsPVP.range((5, 2)).value)})
 
