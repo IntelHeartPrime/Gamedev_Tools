@@ -87,6 +87,21 @@ dic_unlock_condition = {}
 unit_dic_inner.update({"unlock_conditions": dic_unlock_condition})
 dic_unlock_condition.update({"stage": int(ws1.range((12, 2)).value)})
 
+# push & mail
+push_dic = {}
+unit_dic_inner.update({"push": push_dic})
+push_dic.update({"end_content": ws1.range((91, 2)).value})
+push_dic.update({"start_content": ws1.range((92, 2)).value})
+push_dic.update({"on_hook_full_content": ws1.range((93, 2)).value})
+push_dic.update({"refresh_ticket_content": ws1.range((94, 2)).value})
+push_dic.update({"pvp_start_content": ws1.range((95, 2)).value})
+push_dic.update({"push_before_end_minute": int(ws1.range((96, 2)).value)})
+
+unit_dic_inner.update({"mail_title": ws1.range((100, 2)).value})
+unit_dic_inner.update({"mail_content": ws1.range((101, 2)).value})
+
+
+
 # signup_offer_list
 sign_offer_list = []
 unit_dic_inner.update({"signup_offer_list": sign_offer_list})
