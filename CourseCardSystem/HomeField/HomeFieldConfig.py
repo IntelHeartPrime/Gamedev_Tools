@@ -146,10 +146,50 @@ def fill_offer_config( row_start ):
 
         column_index_start = column_index_start + 1
 
+    print("某一offer配置完成")
+
+# fill_offer_config_separately
+def fill_offer_config_separately( row_start ):
+
+    global sign_offer_list
+    '''
+    :param row_start:  开始的行数
+    '''
+    unit_list = []
+    sign_offer_list.append(unit_list)
+
+    column_index_start = 2
+    while ws1.range((row_start,column_index_start)).value != None:
+        unit_dic = {}
+        unit_list.append(unit_dic)
+
+        unit_dic.update({"name" : ws1.range((row_start, column_index_start)).value})
+        unit_dic.update({"offer_type" : int(ws1.range((row_start+1, column_index_start)).value)})
+        unit_dic.update({"money" : int(ws1.range((row_start+2, column_index_start)).value)})
+        unit_dic.update({"type" : int(ws1.range((row_start+3, column_index_start)).value)})
+
+        unit_dic.update({"start_time" : int(ws1.range((row_start+5, column_index_start)).value)})
+        unit_dic.update({"refresh_time" : int(ws1.range((row_start+6, column_index_start)).value)})
+        unit_dic.update({"end_before" : int(ws1.range((row_start+7, column_index_start)).value)})
+
+        signup_offer_id_list = []
+        unit_dic.update({"signup_offer_id_list" : signup_offer_id_list})
+
+        dic_add = {}
+        dic_add.update({"money": ws1.range((row_start+9, column_index_start)).value})
+        dic_add.update({"offer_id": int(ws1.range((row_start+10, column_index_start)).value)})
+
+        signup_offer_id_list.append(dic_add)
+
+        column_index_start = column_index_start + 1
+
+    print("某一offer配置完成")
+
+
+
 fill_offer_config(daily_boost_offer_row_start)
 fill_offer_config(accelerate_offer_row_start)
-fill_offer_config(ticket_offer_row_start)
-
+fill_offer_config_separately(ticket_offer_row_start)
 
 
 '''
@@ -282,6 +322,9 @@ while ws1.range((row_index, 1)).value != None:
     course_level_upgrade_rules.append(dic)
 
     row_index = row_index + 1
+
+print("courselevel 配置完成")
+
 
 print("总览配置完成")
 

@@ -68,8 +68,8 @@ def dispose_config( chest_id, column_index):
         for unit in str_input_list1:
             dic_add = {}
             input_list2 = unit.split(",")
-            card_id = input_list2[0]
-            card_num = input_list2[1]
+            card_id = int(input_list2[0])
+            card_num = int(input_list2[1])
             dic_add.update({"card_id": card_id})
             dic_add.update({"card_num": card_num})
 
