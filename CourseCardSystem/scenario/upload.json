@@ -41,17 +41,29 @@
                 {
                     "card_id": 6,
                     "card_num": 2
-                }
-            ],
-            [
+                },
                 {
-                    "card_id": 6,
+                    "card_id": 7,
                     "card_num": 2
                 }
             ],
             [
                 {
                     "card_id": 6,
+                    "card_num": 2
+                },
+                {
+                    "card_id": 7,
+                    "card_num": 2
+                }
+            ],
+            [
+                {
+                    "card_id": 6,
+                    "card_num": 2
+                },
+                {
+                    "card_id": 7,
                     "card_num": 2
                 }
             ],
