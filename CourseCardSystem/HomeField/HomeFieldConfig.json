@@ -4479,7 +4479,7 @@
             "shop_update_mins": [
                 420
             ],
-            "default_tickets": 50,
+            "default_tickets": 6,
             "tickets_shop": [
                 {
                     "type": 1,
@@ -24788,7 +24788,7 @@
                     "star_num": 9,
                     "is_big_reward": 1,
                     "reward": {
-                        "prop_id": 224,
+                        "prop_id": 172,
                         "prop_num": 3,
                         "prop_type": 5,
                         "prop_color": 0,
@@ -24876,7 +24876,7 @@
                     "star_num": 60,
                     "is_big_reward": 1,
                     "reward": {
-                        "prop_id": 224,
+                        "prop_id": 227,
                         "prop_num": 3,
                         "prop_type": 5,
                         "prop_color": 0,
@@ -24964,7 +24964,7 @@
                     "star_num": 100,
                     "is_big_reward": 1,
                     "reward": {
-                        "prop_id": 224,
+                        "prop_id": 172,
                         "prop_num": 3,
                         "prop_type": 5,
                         "prop_color": 0,
@@ -25052,7 +25052,7 @@
                     "star_num": 135,
                     "is_big_reward": 1,
                     "reward": {
-                        "prop_id": 224,
+                        "prop_id": 227,
                         "prop_num": 5,
                         "prop_type": 5,
                         "prop_color": 0,
@@ -25140,7 +25140,7 @@
                     "star_num": 164,
                     "is_big_reward": 1,
                     "reward": {
-                        "prop_id": 224,
+                        "prop_id": 172,
                         "prop_num": 5,
                         "prop_type": 5,
                         "prop_color": 0,
@@ -25228,7 +25228,7 @@
                     "star_num": 194,
                     "is_big_reward": 1,
                     "reward": {
-                        "prop_id": 224,
+                        "prop_id": 227,
                         "prop_num": 5,
                         "prop_type": 5,
                         "prop_color": 0,
@@ -25316,7 +25316,7 @@
                     "star_num": 225,
                     "is_big_reward": 1,
                     "reward": {
-                        "prop_id": 224,
+                        "prop_id": 172,
                         "prop_num": 10,
                         "prop_type": 5,
                         "prop_color": 0,
@@ -25404,7 +25404,7 @@
                     "star_num": 260,
                     "is_big_reward": 1,
                     "reward": {
-                        "prop_id": 224,
+                        "prop_id": 227,
                         "prop_num": 10,
                         "prop_type": 5,
                         "prop_color": 0,
@@ -25492,7 +25492,7 @@
                     "star_num": 300,
                     "is_big_reward": 1,
                     "reward": {
-                        "prop_id": 224,
+                        "prop_id": 172,
                         "prop_num": 10,
                         "prop_type": 5,
                         "prop_color": 0,
@@ -25580,7 +25580,7 @@
                     "star_num": 340,
                     "is_big_reward": 1,
                     "reward": {
-                        "prop_id": 224,
+                        "prop_id": 227,
                         "prop_num": 10,
                         "prop_type": 5,
                         "prop_color": 0,
@@ -25668,7 +25668,7 @@
                     "star_num": 380,
                     "is_big_reward": 1,
                     "reward": {
-                        "prop_id": 224,
+                        "prop_id": 172,
                         "prop_num": 10,
                         "prop_type": 5,
                         "prop_color": 0,
@@ -25769,8 +25769,8 @@
             "start_time": 1647446400,
             "end_time": 1679487273,
             "battle_limit": {
-                "home_field_level": 0,
-                "star": 500
+                "home_field_level": 3,
+                "star": 100
             },
             "select_cards_num": 3,
             "stage_conf": [
@@ -25896,7 +25896,7 @@
                     },
                     "reward": [
                         {
-                            "prop_id": 260,
+                            "prop_id": 266,
                             "prop_num": 5,
                             "prop_type": 5,
                             "prop_color": 0,
@@ -26156,7 +26156,7 @@
                     },
                     "reward": [
                         {
-                            "prop_id": 260,
+                            "prop_id": 266,
                             "prop_num": 10,
                             "prop_type": 5,
                             "prop_color": 0,
@@ -26416,7 +26416,7 @@
                     },
                     "reward": [
                         {
-                            "prop_id": 260,
+                            "prop_id": 266,
                             "prop_num": 15,
                             "prop_type": 5,
                             "prop_color": 0,

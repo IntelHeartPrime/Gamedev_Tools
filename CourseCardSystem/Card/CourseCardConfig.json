@@ -3,7 +3,7 @@
         "id": 1,
         "name": "card_name_HF_01",
         "scene_name": "game_HF_01n",
-        "icon_small": "Icon_hole_1013",
+        "icon_small": "Img_yc_pve_01",
         "icon_big": "Icon_hole_1013",
         "atlas_name": "atlas_sceneminimap",
         "type": 2,
@@ -90,7 +90,7 @@
             {
                 "level": 2,
                 "max_star": 14,
-                "update_card": 5,
+                "update_card": 3,
                 "update_price": 120000,
                 "provide_exp": 50,
                 "tee": 1,
@@ -162,7 +162,7 @@
             {
                 "level": 3,
                 "max_star": 14,
-                "update_card": 10,
+                "update_card": 5,
                 "update_price": 150000,
                 "provide_exp": 100,
                 "tee": 1,
@@ -234,7 +234,7 @@
             {
                 "level": 4,
                 "max_star": 16,
-                "update_card": 20,
+                "update_card": 10,
                 "update_price": 200000,
                 "provide_exp": 200,
                 "tee": 2,
@@ -316,7 +316,7 @@
             {
                 "level": 5,
                 "max_star": 16,
-                "update_card": 30,
+                "update_card": 15,
                 "update_price": 400000,
                 "provide_exp": 300,
                 "tee": 2,
@@ -389,7 +389,7 @@
             {
                 "level": 6,
                 "max_star": 16,
-                "update_card": 50,
+                "update_card": 25,
                 "update_price": 800000,
                 "provide_exp": 500,
                 "tee": 2,
@@ -462,7 +462,7 @@
             {
                 "level": 7,
                 "max_star": 18,
-                "update_card": 80,
+                "update_card": 40,
                 "update_price": 1000000,
                 "provide_exp": 800,
                 "tee": 3,
@@ -544,7 +544,7 @@
             {
                 "level": 8,
                 "max_star": 18,
-                "update_card": 120,
+                "update_card": 60,
                 "update_price": 1200000,
                 "provide_exp": 1200,
                 "tee": 3,
@@ -617,7 +617,7 @@
             {
                 "level": 9,
                 "max_star": 18,
-                "update_card": 170,
+                "update_card": 100,
                 "update_price": 1500000,
                 "provide_exp": 1700,
                 "tee": 3,
@@ -690,7 +690,7 @@
             {
                 "level": 10,
                 "max_star": 20,
-                "update_card": 230,
+                "update_card": 130,
                 "update_price": 1800000,
                 "provide_exp": 2300,
                 "tee": 4,
@@ -1149,7 +1149,7 @@
         "id": 2,
         "name": "card_name_HF_02",
         "scene_name": "game_HF_02n",
-        "icon_small": "Icon_hole_1025",
+        "icon_small": "Img_yc_pve_01",
         "icon_big": "Icon_hole_1025",
         "atlas_name": "atlas_sceneminimap",
         "type": 2,
@@ -1195,7 +1195,7 @@
             {
                 "level": 2,
                 "max_star": 14,
-                "update_card": 5,
+                "update_card": 3,
                 "update_price": 120000,
                 "provide_exp": 50,
                 "tee": 1,
@@ -1226,7 +1226,7 @@
             {
                 "level": 3,
                 "max_star": 14,
-                "update_card": 10,
+                "update_card": 5,
                 "update_price": 150000,
                 "provide_exp": 100,
                 "tee": 1,
@@ -1257,7 +1257,7 @@
             {
                 "level": 4,
                 "max_star": 16,
-                "update_card": 20,
+                "update_card": 10,
                 "update_price": 200000,
                 "provide_exp": 200,
                 "tee": 2,
@@ -1306,7 +1306,7 @@
             {
                 "level": 5,
                 "max_star": 16,
-                "update_card": 30,
+                "update_card": 15,
                 "update_price": 400000,
                 "provide_exp": 300,
                 "tee": 2,
@@ -1342,7 +1342,7 @@
             {
                 "level": 6,
                 "max_star": 16,
-                "update_card": 50,
+                "update_card": 25,
                 "update_price": 800000,
                 "provide_exp": 500,
                 "tee": 2,
@@ -1378,7 +1378,7 @@
             {
                 "level": 7,
                 "max_star": 18,
-                "update_card": 80,
+                "update_card": 40,
                 "update_price": 1000000,
                 "provide_exp": 800,
                 "tee": 3,
@@ -1427,7 +1427,7 @@
             {
                 "level": 8,
                 "max_star": 18,
-                "update_card": 120,
+                "update_card": 60,
                 "update_price": 1200000,
                 "provide_exp": 1200,
                 "tee": 3,
@@ -1463,7 +1463,7 @@
             {
                 "level": 9,
                 "max_star": 18,
-                "update_card": 170,
+                "update_card": 100,
                 "update_price": 1500000,
                 "provide_exp": 1700,
                 "tee": 3,
@@ -1499,7 +1499,7 @@
             {
                 "level": 10,
                 "max_star": 20,
-                "update_card": 230,
+                "update_card": 130,
                 "update_price": 1800000,
                 "provide_exp": 2300,
                 "tee": 4,
@@ -1925,7 +1925,7 @@
         "id": 3,
         "name": "card_name_HF_03",
         "scene_name": "game_HF_03n",
-        "icon_small": "Icon_hole_1017",
+        "icon_small": "Img_yc_pve_01",
         "icon_big": "Icon_hole_1017",
         "atlas_name": "atlas_sceneminimap",
         "type": 2,
@@ -2537,7 +2537,7 @@
         "id": 4,
         "name": "card_name_HF_04",
         "scene_name": "game_HF_04n",
-        "icon_small": "Icon_hole_1032",
+        "icon_small": "Img_yc_pve_02",
         "icon_big": "Icon_hole_1032",
         "atlas_name": "atlas_sceneminimap",
         "type": 2,
@@ -3210,7 +3210,7 @@
         "id": 5,
         "name": "card_name_HF_05",
         "scene_name": "game_HF_05n",
-        "icon_small": "Icon_hole_1026",
+        "icon_small": "Img_yc_pve_01",
         "icon_big": "Icon_hole_1026",
         "atlas_name": "atlas_sceneminimap",
         "type": 2,
@@ -3617,12 +3617,12 @@
                     [
                         3,
                         -2,
-                        50
+                        100
                     ],
                     [
                         4,
                         -2,
-                        100
+                        50
                     ],
                     [
                         5,
@@ -3896,7 +3896,7 @@
         "id": 6,
         "name": "card_name_HF_06",
         "scene_name": "game_HF_06n",
-        "icon_small": "Icon_hole_1027",
+        "icon_small": "Img_yc_pve_02",
         "icon_big": "Icon_hole_1027",
         "atlas_name": "atlas_sceneminimap",
         "type": 2,
@@ -4298,12 +4298,12 @@
                     [
                         3,
                         -2,
-                        50
+                        100
                     ],
                     [
                         4,
                         -2,
-                        100
+                        50
                     ],
                     [
                         5,
@@ -4577,7 +4577,7 @@
         "id": 7,
         "name": "card_name_HF_07",
         "scene_name": "game_HF_07n",
-        "icon_small": "Icon_hole_1034",
+        "icon_small": "Img_yc_pve_02",
         "icon_big": "Icon_hole_1034",
         "atlas_name": "atlas_sceneminimap",
         "type": 2,
@@ -4970,12 +4970,12 @@
                     [
                         3,
                         -2,
-                        50
+                        100
                     ],
                     [
                         4,
                         -2,
-                        100
+                        50
                     ],
                     [
                         5,
@@ -5214,32 +5214,32 @@
                     [
                         11,
                         -3,
-                        180
+                        280
                     ],
                     [
                         12,
                         -3,
-                        160
+                        265
                     ],
                     [
                         13,
                         -3,
-                        140
+                        230
                     ],
                     [
                         14,
                         -3,
-                        120
+                        210
                     ],
                     [
                         15,
                         -3,
-                        100
+                        190
                     ],
                     [
                         16,
                         -3,
-                        80
+                        150
                     ]
                 ]
             }
@@ -5249,7 +5249,7 @@
         "id": 8,
         "name": "card_name_HF_08",
         "scene_name": "game_HF_08n",
-        "icon_small": "Icon_hole_1024",
+        "icon_small": "Img_yc_pve_02",
         "icon_big": "Icon_hole_1024",
         "atlas_name": "atlas_sceneminimap",
         "type": 2,
