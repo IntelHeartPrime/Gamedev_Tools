@@ -1,6 +1,7 @@
 [
     {
-        "id": 25,
+        "id": 2,
+        "game_id": 99,
         "name": "Home Field Challenge I",
         "show_time_start": 1616415273,
         "show_time_end": 1679487273,
@@ -4479,7 +4480,7 @@
             "shop_update_mins": [
                 420
             ],
-            "default_tickets": 6,
+            "default_tickets": 5,
             "tickets_shop": [
                 {
                     "type": 1,
@@ -24755,10 +24756,10 @@
                     "star_num": 2,
                     "is_big_reward": 0,
                     "reward": {
-                        "prop_id": 8,
-                        "prop_num": 1,
-                        "prop_type": 43,
-                        "prop_color": 2,
+                        "prop_id": 2,
+                        "prop_num": 2,
+                        "prop_type": 5,
+                        "prop_color": 0,
                         "chest_type": 0
                     }
                 },
@@ -24788,7 +24789,7 @@
                     "star_num": 9,
                     "is_big_reward": 1,
                     "reward": {
-                        "prop_id": 172,
+                        "prop_id": 266,
                         "prop_num": 3,
                         "prop_type": 5,
                         "prop_color": 0,
@@ -24876,7 +24877,7 @@
                     "star_num": 60,
                     "is_big_reward": 1,
                     "reward": {
-                        "prop_id": 227,
+                        "prop_id": 266,
                         "prop_num": 3,
                         "prop_type": 5,
                         "prop_color": 0,
@@ -24964,7 +24965,7 @@
                     "star_num": 100,
                     "is_big_reward": 1,
                     "reward": {
-                        "prop_id": 172,
+                        "prop_id": 266,
                         "prop_num": 3,
                         "prop_type": 5,
                         "prop_color": 0,
@@ -25052,7 +25053,7 @@
                     "star_num": 135,
                     "is_big_reward": 1,
                     "reward": {
-                        "prop_id": 227,
+                        "prop_id": 266,
                         "prop_num": 5,
                         "prop_type": 5,
                         "prop_color": 0,
@@ -25140,7 +25141,7 @@
                     "star_num": 164,
                     "is_big_reward": 1,
                     "reward": {
-                        "prop_id": 172,
+                        "prop_id": 266,
                         "prop_num": 5,
                         "prop_type": 5,
                         "prop_color": 0,
@@ -25228,7 +25229,7 @@
                     "star_num": 194,
                     "is_big_reward": 1,
                     "reward": {
-                        "prop_id": 227,
+                        "prop_id": 266,
                         "prop_num": 5,
                         "prop_type": 5,
                         "prop_color": 0,
@@ -25316,7 +25317,7 @@
                     "star_num": 225,
                     "is_big_reward": 1,
                     "reward": {
-                        "prop_id": 172,
+                        "prop_id": 266,
                         "prop_num": 10,
                         "prop_type": 5,
                         "prop_color": 0,
@@ -25404,7 +25405,7 @@
                     "star_num": 260,
                     "is_big_reward": 1,
                     "reward": {
-                        "prop_id": 227,
+                        "prop_id": 266,
                         "prop_num": 10,
                         "prop_type": 5,
                         "prop_color": 0,
@@ -25492,7 +25493,7 @@
                     "star_num": 300,
                     "is_big_reward": 1,
                     "reward": {
-                        "prop_id": 172,
+                        "prop_id": 266,
                         "prop_num": 10,
                         "prop_type": 5,
                         "prop_color": 0,
@@ -25580,7 +25581,7 @@
                     "star_num": 340,
                     "is_big_reward": 1,
                     "reward": {
-                        "prop_id": 227,
+                        "prop_id": 266,
                         "prop_num": 10,
                         "prop_type": 5,
                         "prop_color": 0,
@@ -25668,7 +25669,7 @@
                     "star_num": 380,
                     "is_big_reward": 1,
                     "reward": {
-                        "prop_id": 172,
+                        "prop_id": 266,
                         "prop_num": 10,
                         "prop_type": 5,
                         "prop_color": 0,
@@ -25766,7 +25767,7 @@
             ]
         },
         "pvp_conf": {
-            "start_time": 1647446400,
+            "start_time": 1649840400,
             "end_time": 1679487273,
             "battle_limit": {
                 "home_field_level": 3,
@@ -25896,11 +25897,11 @@
                     },
                     "reward": [
                         {
-                            "prop_id": 266,
-                            "prop_num": 5,
-                            "prop_type": 5,
-                            "prop_color": 0,
-                            "chest_type": 0
+                            "prop_id": 0,
+                            "prop_num": 1,
+                            "prop_type": 6,
+                            "prop_color": 6,
+                            "chest_type": 3
                         }
                     ]
                 },
@@ -26026,11 +26027,11 @@
                     },
                     "reward": [
                         {
-                            "prop_id": 0,
-                            "prop_num": 1,
-                            "prop_type": 6,
-                            "prop_color": 6,
-                            "chest_type": 3
+                            "prop_id": 266,
+                            "prop_num": 5,
+                            "prop_type": 5,
+                            "prop_color": 0,
+                            "chest_type": 0
                         }
                     ]
                 },
@@ -26156,11 +26157,11 @@
                     },
                     "reward": [
                         {
-                            "prop_id": 266,
-                            "prop_num": 10,
-                            "prop_type": 5,
-                            "prop_color": 0,
-                            "chest_type": 0
+                            "prop_id": 0,
+                            "prop_num": 1,
+                            "prop_type": 6,
+                            "prop_color": 6,
+                            "chest_type": 3
                         }
                     ]
                 },
@@ -26286,11 +26287,11 @@
                     },
                     "reward": [
                         {
-                            "prop_id": 0,
-                            "prop_num": 1,
-                            "prop_type": 6,
-                            "prop_color": 6,
-                            "chest_type": 3
+                            "prop_id": 266,
+                            "prop_num": 10,
+                            "prop_type": 5,
+                            "prop_color": 0,
+                            "chest_type": 0
                         }
                     ]
                 },
@@ -26416,11 +26417,11 @@
                     },
                     "reward": [
                         {
-                            "prop_id": 266,
-                            "prop_num": 15,
-                            "prop_type": 5,
-                            "prop_color": 0,
-                            "chest_type": 0
+                            "prop_id": 0,
+                            "prop_num": 1,
+                            "prop_type": 6,
+                            "prop_color": 6,
+                            "chest_type": 3
                         }
                     ]
                 },
@@ -26546,11 +26547,11 @@
                     },
                     "reward": [
                         {
-                            "prop_id": 0,
-                            "prop_num": 1,
-                            "prop_type": 6,
-                            "prop_color": 6,
-                            "chest_type": 3
+                            "prop_id": 266,
+                            "prop_num": 15,
+                            "prop_type": 5,
+                            "prop_color": 0,
+                            "chest_type": 0
                         }
                     ]
                 }

@@ -1,4 +1,22 @@
 {
+    "0": {
+        "id": 0,
+        "name": "",
+        "scene_name": "game_HF_prepare",
+        "icon_small": "",
+        "icon_big": "",
+        "atlas_name": "",
+        "type": 0,
+        "color": 0,
+        "hole": 0,
+        "hole_size": 0.0,
+        "par_dis": 0.0,
+        "eagle_dis": 0.0,
+        "flag_bounce": 0.0,
+        "camera_height": 0,
+        "ability": [],
+        "card_stage_infos": []
+    },
     "1": {
         "id": 1,
         "name": "card_name_HF_01",

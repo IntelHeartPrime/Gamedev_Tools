@@ -73,6 +73,8 @@ unit_dic_inner = {}
 HomeFieldConfig_list.append(unit_dic_inner)
 
 unit_dic_inner.update({"id": int(ws1.range((3, 2)).value)})
+unit_dic_inner.update({"game_id": int(ws1.range((13, 2)).value)})
+
 unit_dic_inner.update({"name": ws1.range((4, 2)).value})
 unit_dic_inner.update({"show_time_start": int(ws1.range((5, 2)).value)})
 unit_dic_inner.update({"show_time_end": int(ws1.range((6, 2)).value)})
