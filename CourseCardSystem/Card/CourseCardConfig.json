@@ -260,7 +260,7 @@
                 "card_icon": "Ma-1-4-icon",
                 "map_icon": "Ma-1-4",
                 "update_limit": {
-                    "field_legend_level": 10,
+                    "field_legend_level": 2,
                     "clubs_level": [
                         {
                             "club_id": 37,
@@ -488,7 +488,7 @@
                 "card_icon": "Ma-1-7-icon",
                 "map_icon": "Ma-1-7",
                 "update_limit": {
-                    "field_legend_level": 6,
+                    "field_legend_level": 5,
                     "clubs_level": [
                         {
                             "club_id": 37,
@@ -716,7 +716,7 @@
                 "card_icon": "Ma-1-10-icon",
                 "map_icon": "Ma-1-10",
                 "update_limit": {
-                    "field_legend_level": 10,
+                    "field_legend_level": 8,
                     "clubs_level": [
                         {
                             "club_id": 37,
@@ -1404,7 +1404,7 @@
                 "card_icon": "Ma-2-7-icon",
                 "map_icon": "Ma-2-7",
                 "update_limit": {
-                    "field_legend_level": 6,
+                    "field_legend_level": 5,
                     "clubs_level": [
                         {
                             "club_id": 37,
@@ -1525,7 +1525,7 @@
                 "card_icon": "Ma-2-10-icon",
                 "map_icon": "Ma-2-10",
                 "update_limit": {
-                    "field_legend_level": 10,
+                    "field_legend_level": 8,
                     "clubs_level": [
                         {
                             "club_id": 37,
@@ -2179,7 +2179,7 @@
                 "card_icon": "Ma-3-7-icon",
                 "map_icon": "Ma-3-7",
                 "update_limit": {
-                    "field_legend_level": 6,
+                    "field_legend_level": 5,
                     "clubs_level": [
                         {
                             "club_id": 19,
@@ -2299,7 +2299,7 @@
                 "card_icon": "Ma-3-10-icon",
                 "map_icon": "Ma-3-10",
                 "update_limit": {
-                    "field_legend_level": 10,
+                    "field_legend_level": 8,
                     "clubs_level": [
                         {
                             "club_id": 19,
@@ -2779,7 +2779,7 @@
                 "card_icon": "Au-1-7-icon",
                 "map_icon": "Au-1-7",
                 "update_limit": {
-                    "field_legend_level": 6,
+                    "field_legend_level": 5,
                     "clubs_level": [
                         {
                             "club_id": 32,
@@ -2890,7 +2890,7 @@
                 "card_icon": "Au-1-10-icon",
                 "map_icon": "Au-1-10",
                 "update_limit": {
-                    "field_legend_level": 10,
+                    "field_legend_level": 8,
                     "clubs_level": [
                         {
                             "club_id": 55,
@@ -3455,7 +3455,7 @@
                 "card_icon": "Ma-4-7-icon",
                 "map_icon": "Ma-4-7",
                 "update_limit": {
-                    "field_legend_level": 6,
+                    "field_legend_level": 5,
                     "clubs_level": [
                         {
                             "club_id": 31,
@@ -3576,7 +3576,7 @@
                 "card_icon": "Ma-4-10-icon",
                 "map_icon": "Ma-4-10",
                 "update_limit": {
-                    "field_legend_level": 10,
+                    "field_legend_level": 8,
                     "clubs_level": [
                         {
                             "club_id": 31,
@@ -4146,7 +4146,7 @@
                 "card_icon": "Au-2-7-icon",
                 "map_icon": "Au-2-7",
                 "update_limit": {
-                    "field_legend_level": 6,
+                    "field_legend_level": 5,
                     "clubs_level": [
                         {
                             "club_id": 32,
@@ -4260,7 +4260,7 @@
                 "card_icon": "Au-2-10-icon",
                 "map_icon": "Au-2-10",
                 "update_limit": {
-                    "field_legend_level": 10,
+                    "field_legend_level": 8,
                     "clubs_level": [
                         {
                             "club_id": 32,
@@ -4819,7 +4819,7 @@
                 "card_icon": "Au-3-7-icon",
                 "map_icon": "Au-3-7",
                 "update_limit": {
-                    "field_legend_level": 6,
+                    "field_legend_level": 5,
                     "clubs_level": [
                         {
                             "club_id": 13,
@@ -4933,7 +4933,7 @@
                 "card_icon": "Au-3-10-icon",
                 "map_icon": "Au-3-10",
                 "update_limit": {
-                    "field_legend_level": 10,
+                    "field_legend_level": 8,
                     "clubs_level": [
                         {
                             "club_id": 13,
@@ -5495,7 +5495,7 @@
                 "card_icon": "Au-4-7-icon",
                 "map_icon": "Au-4-7",
                 "update_limit": {
-                    "field_legend_level": 6,
+                    "field_legend_level": 5,
                     "clubs_level": [
                         {
                             "club_id": 19,
@@ -5612,7 +5612,7 @@
                 "card_icon": "Au-4-10-icon",
                 "map_icon": "Au-4-10",
                 "update_limit": {
-                    "field_legend_level": 10,
+                    "field_legend_level": 8,
                     "clubs_level": [
                         {
                             "club_id": 19,

@@ -25988,7 +25988,7 @@
             ],
             "process_rewards": [
                 {
-                    "star_num": 2,
+                    "star_num": 3,
                     "is_big_reward": 0,
                     "reward": {
                         "prop_id": 1,
@@ -25999,7 +25999,7 @@
                     }
                 },
                 {
-                    "star_num": 5,
+                    "star_num": 7,
                     "is_big_reward": 0,
                     "reward": {
                         "prop_id": 1010,
@@ -26010,7 +26010,7 @@
                     }
                 },
                 {
-                    "star_num": 9,
+                    "star_num": 10,
                     "is_big_reward": 0,
                     "reward": {
                         "prop_id": 1010,
@@ -26021,7 +26021,7 @@
                     }
                 },
                 {
-                    "star_num": 9,
+                    "star_num": 10,
                     "is_big_reward": 1,
                     "reward": {
                         "prop_id": 266,
