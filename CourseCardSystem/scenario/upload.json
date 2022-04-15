@@ -4,14 +4,14 @@
             [
                 {
                     "card_id": 8,
-                    "card_num": 1
+                    "card_num": 6
                 },
                 {
                     "card_id": 3,
                     "card_num": 6
                 },
                 {
-                    "card_id": 4,
+                    "card_id": 7,
                     "card_num": 2
                 }
             ]
@@ -19,11 +19,11 @@
         "1010": [
             [
                 {
-                    "card_id": 4,
+                    "card_id": 7,
                     "card_num": 4
                 },
                 {
-                    "card_id": 5,
+                    "card_id": 6,
                     "card_num": 1
                 },
                 {
@@ -33,104 +33,62 @@
             ],
             [
                 {
+                    "card_id": 6,
+                    "card_num": 5
+                },
+                {
+                    "card_id": 8,
+                    "card_num": 10
+                }
+            ],
+            [
+                {
+                    "card_id": 4,
+                    "card_num": 5
+                }
+            ],
+            [
+                {
+                    "card_id": 4,
+                    "card_num": 5
+                }
+            ],
+            [
+                {
+                    "card_id": 4,
+                    "card_num": 1
+                }
+            ],
+            [
+                {
                     "card_id": 5,
                     "card_num": 5
                 }
             ],
             [
                 {
-                    "card_id": 6,
-                    "card_num": 2
-                },
-                {
-                    "card_id": 7,
-                    "card_num": 2
-                }
-            ],
-            [
-                {
-                    "card_id": 6,
-                    "card_num": 2
-                },
-                {
-                    "card_id": 7,
-                    "card_num": 2
-                }
-            ],
-            [
-                {
-                    "card_id": 6,
-                    "card_num": 2
-                },
-                {
-                    "card_id": 7,
-                    "card_num": 2
-                }
-            ],
-            [
-                {
-                    "card_id": 6,
+                    "card_id": 5,
                     "card_num": 5
                 }
             ],
             [
                 {
-                    "card_id": 7,
-                    "card_num": 5
-                }
-            ],
-            [
-                {
-                    "card_id": 6,
-                    "card_num": 5
-                }
-            ],
-            [
-                {
-                    "card_id": 7,
-                    "card_num": 5
+                    "card_id": 5,
+                    "card_num": 1
                 }
             ]
         ],
         "1011": [
             [
                 {
-                    "card_id": 3,
-                    "card_num": 16
-                },
-                {
-                    "card_id": 6,
-                    "card_num": 15
-                }
-            ],
-            [
-                {
-                    "card_id": 6,
-                    "card_num": 1
-                },
-                {
-                    "card_id": 7,
-                    "card_num": 9
-                }
-            ],
-            [
-                {
                     "card_id": 4,
-                    "card_num": 10
-                },
-                {
-                    "card_id": 5,
-                    "card_num": 5
+                    "card_num": 16
                 }
             ],
             [
                 {
                     "card_id": 5,
-                    "card_num": 5
-                },
-                {
-                    "card_id": 6,
-                    "card_num": 5
+                    "card_num": 16
                 }
             ]
         ],
@@ -138,28 +96,14 @@
             [
                 {
                     "card_id": 4,
-                    "card_num": 10
+                    "card_num": 16
                 },
                 {
                     "card_id": 5,
-                    "card_num": 10
+                    "card_num": 16
                 },
                 {
                     "card_id": 1,
-                    "card_num": 1
-                }
-            ],
-            [
-                {
-                    "card_id": 6,
-                    "card_num": 10
-                },
-                {
-                    "card_id": 7,
-                    "card_num": 10
-                },
-                {
-                    "card_id": 2,
                     "card_num": 1
                 }
             ]

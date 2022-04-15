@@ -42,6 +42,22 @@ def clean_null(input_value):
         return empty_value
     return input_value
 
+# 工具—判断是否是数字
+def is_number(s):
+    try:
+        float(s)
+        return True
+    except ValueError:
+        pass
+
+    try:
+        import unicodedata
+        unicodedata.numeric(s)
+        return True
+    except (TypeError, ValueError):
+        pass
+
+    return False
 
 # 工具 解析字符串
 def ParsingStringPathPos(path_pos_str):
@@ -302,7 +318,14 @@ while ws1.range((row_index, 1)).value != None:
             title_dic.update({"title": str(title)})
         else:
             title_dic.update({"title": str(ws1.range((row_index, column_innner_index)).value)})
-        title_dic.update({"value": int(ws1.range((row_index, column_innner_index + 1)).value)})
+
+        # 判断此值是否为数字
+        transfer_value = str(ws1.range((row_index, column_innner_index + 1)).value)
+        if is_number(transfer_value):
+            title_dic.update({"value": int(ws1.range((row_index, column_innner_index + 1)).value)})
+        else:
+            title_dic.update({"value": ws1.range((row_index, column_innner_index + 1)).value})
+
         new_content.append(title_dic)
         column_innner_index = column_innner_index + 2
     dic.update({"new_content": new_content})
@@ -342,7 +365,7 @@ pve_conf.update({"on_hook_receive_limit_sec": int(wsPVE.range((8, 2)).value)})
 
 
 on_hook_rule = []
-row_index = 122
+row_index = 177
 column_innner_index = 2
 while wsPVE.range((row_index, column_innner_index)).value is not None:
     hook_rule_dic = {}
