@@ -2,6 +2,20 @@
     {
         "id": 25,
         "game_id": 99,
+        "color_tours": [
+            {
+                "color": 2,
+                "tour_id": 98
+            },
+            {
+                "color": 3,
+                "tour_id": 97
+            },
+            {
+                "color": 4,
+                "tour_id": 96
+            }
+        ],
         "name": "Home Field Challenge I",
         "show_time_start": 1616415273,
         "show_time_end": 1679487273,

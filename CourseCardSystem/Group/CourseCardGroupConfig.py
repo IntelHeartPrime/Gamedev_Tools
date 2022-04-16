@@ -46,13 +46,15 @@ while ws.range((row_index,1)).value != None:
     unit_dic_inner.update({"id": int(ws.range((row_index, 1)).value)})
     unit_dic_inner.update({"name": ws.range((row_index, 2)).value})
     unit_dic_inner.update({"is_active": ws.range((row_index, 3)).value})
+    unit_dic_inner.update({"color": int(ws.range((row_index, 4)).value)})
+
 
     course_card = []
     unit_dic_inner.update({"course_cards" : course_card})
 
-    column_index_start = 4
+    column_index_start = 5
     while ws.range((row_index, column_index_start)).value != None:
-        unit_dic_add= {}
+        unit_dic_add = {}
         unit_dic_add.update({"id": int(ws.range((row_index, column_index_start)).value)})
         course_card.append(unit_dic_add)
         column_index_start = column_index_start + 1
