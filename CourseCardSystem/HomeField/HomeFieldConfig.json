@@ -1,21 +1,7 @@
 [
     {
-        "id": 16,
+        "id": 25,
         "game_id": 99,
-        "color_tours": [
-            {
-                "color": 2,
-                "tour_id": 98
-            },
-            {
-                "color": 3,
-                "tour_id": 97
-            },
-            {
-                "color": 4,
-                "tour_id": 96
-            }
-        ],
         "name": "Home Field Challenge I",
         "show_time_start": 1616415273,
         "show_time_end": 1679487273,
@@ -7208,7 +7194,7 @@
                                     "star": 5,
                                     "reward": [
                                         {
-                                            "prop_id": 0,
+                                            "prop_id": 1,
                                             "prop_num": 1,
                                             "prop_type": 5,
                                             "prop_color": 0,
@@ -7246,7 +7232,7 @@
                                     "star": 7,
                                     "reward": [
                                         {
-                                            "prop_id": 0,
+                                            "prop_id": 1,
                                             "prop_num": 1,
                                             "prop_type": 5,
                                             "prop_color": 0,
@@ -7487,7 +7473,7 @@
                                     "star": 5,
                                     "reward": [
                                         {
-                                            "prop_id": 0,
+                                            "prop_id": 1,
                                             "prop_num": 1,
                                             "prop_type": 5,
                                             "prop_color": 0,
@@ -7525,7 +7511,7 @@
                                     "star": 7,
                                     "reward": [
                                         {
-                                            "prop_id": 0,
+                                            "prop_id": 1,
                                             "prop_num": 1,
                                             "prop_type": 5,
                                             "prop_color": 0,
@@ -7766,7 +7752,7 @@
                                     "star": 5,
                                     "reward": [
                                         {
-                                            "prop_id": 0,
+                                            "prop_id": 1,
                                             "prop_num": 1,
                                             "prop_type": 5,
                                             "prop_color": 0,
@@ -7804,7 +7790,7 @@
                                     "star": 7,
                                     "reward": [
                                         {
-                                            "prop_id": 0,
+                                            "prop_id": 1,
                                             "prop_num": 1,
                                             "prop_type": 5,
                                             "prop_color": 0,
@@ -9223,7 +9209,7 @@
                                     "star": 5,
                                     "reward": [
                                         {
-                                            "prop_id": 0,
+                                            "prop_id": 1,
                                             "prop_num": 1,
                                             "prop_type": 5,
                                             "prop_color": 0,
@@ -9261,7 +9247,7 @@
                                     "star": 7,
                                     "reward": [
                                         {
-                                            "prop_id": 0,
+                                            "prop_id": 1,
                                             "prop_num": 1,
                                             "prop_type": 5,
                                             "prop_color": 0,
@@ -9502,7 +9488,7 @@
                                     "star": 5,
                                     "reward": [
                                         {
-                                            "prop_id": 0,
+                                            "prop_id": 1,
                                             "prop_num": 1,
                                             "prop_type": 5,
                                             "prop_color": 0,
@@ -9540,7 +9526,7 @@
                                     "star": 7,
                                     "reward": [
                                         {
-                                            "prop_id": 0,
+                                            "prop_id": 1,
                                             "prop_num": 1,
                                             "prop_type": 5,
                                             "prop_color": 0,
@@ -9781,7 +9767,7 @@
                                     "star": 5,
                                     "reward": [
                                         {
-                                            "prop_id": 0,
+                                            "prop_id": 1,
                                             "prop_num": 1,
                                             "prop_type": 5,
                                             "prop_color": 0,
@@ -9819,7 +9805,7 @@
                                     "star": 7,
                                     "reward": [
                                         {
-                                            "prop_id": 0,
+                                            "prop_id": 1,
                                             "prop_num": 1,
                                             "prop_type": 5,
                                             "prop_color": 0,
@@ -24694,7 +24680,7 @@
                                     "star": 7,
                                     "reward": [
                                         {
-                                            "prop_id": 0,
+                                            "prop_id": 1,
                                             "prop_num": 1,
                                             "prop_type": 5,
                                             "prop_color": 0,
@@ -24732,7 +24718,7 @@
                                     "star": 9,
                                     "reward": [
                                         {
-                                            "prop_id": 0,
+                                            "prop_id": 1,
                                             "prop_num": 1,
                                             "prop_type": 5,
                                             "prop_color": 0,
@@ -24770,7 +24756,7 @@
                                     "star": 11,
                                     "reward": [
                                         {
-                                            "prop_id": 0,
+                                            "prop_id": 1,
                                             "prop_num": 1,
                                             "prop_type": 5,
                                             "prop_color": 0,
@@ -25087,7 +25073,7 @@
                                     "star": 7,
                                     "reward": [
                                         {
-                                            "prop_id": 0,
+                                            "prop_id": 1,
                                             "prop_num": 1,
                                             "prop_type": 5,
                                             "prop_color": 0,
@@ -25125,7 +25111,7 @@
                                     "star": 9,
                                     "reward": [
                                         {
-                                            "prop_id": 0,
+                                            "prop_id": 1,
                                             "prop_num": 1,
                                             "prop_type": 5,
                                             "prop_color": 0,
@@ -25163,7 +25149,7 @@
                                     "star": 11,
                                     "reward": [
                                         {
-                                            "prop_id": 0,
+                                            "prop_id": 1,
                                             "prop_num": 1,
                                             "prop_type": 5,
                                             "prop_color": 0,
