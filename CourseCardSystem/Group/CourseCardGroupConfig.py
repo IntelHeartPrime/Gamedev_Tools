@@ -46,7 +46,7 @@ while ws.range((row_index,1)).value != None:
     unit_dic_inner.update({"id": int(ws.range((row_index, 1)).value)})
     unit_dic_inner.update({"name": ws.range((row_index, 2)).value})
     unit_dic_inner.update({"is_active": ws.range((row_index, 3)).value})
-    unit_dic_inner.update({"color": int(ws.range((row_index, 4)).value)})
+    unit_dic_inner.update({"id": int(ws.range((row_index, 4)).value)})
 
 
     course_card = []

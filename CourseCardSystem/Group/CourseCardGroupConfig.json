@@ -1,9 +1,8 @@
 {
     "99": {
-        "id": 99,
+        "id": 0,
         "name": "all",
         "is_active": true,
-        "color": 0,
         "course_cards": [
             {
                 "id": 999999999
@@ -34,60 +33,107 @@
             }
         ]
     },
-    "98": {
-        "id": 98,
-        "name": "rare",
+    "1": {
+        "id": 1,
+        "name": "card_1",
         "is_active": true,
-        "color": 2,
-        "course_cards": [
-            {
-                "id": 999999999
-            },
-            {
-                "id": 3
-            },
-            {
-                "id": 8
-            }
-        ]
-    },
-    "97": {
-        "id": 97,
-        "name": "epic",
-        "is_active": true,
-        "color": 3,
-        "course_cards": [
-            {
-                "id": 999999999
-            },
-            {
-                "id": 4
-            },
-            {
-                "id": 5
-            },
-            {
-                "id": 6
-            },
-            {
-                "id": 7
-            }
-        ]
-    },
-    "96": {
-        "id": 96,
-        "name": "legend",
-        "is_active": true,
-        "color": 4,
         "course_cards": [
             {
                 "id": 999999999
             },
             {
                 "id": 1
+            }
+        ]
+    },
+    "2": {
+        "id": 2,
+        "name": "card_2",
+        "is_active": true,
+        "course_cards": [
+            {
+                "id": 999999999
             },
             {
                 "id": 2
+            }
+        ]
+    },
+    "3": {
+        "id": 3,
+        "name": "card_3",
+        "is_active": true,
+        "course_cards": [
+            {
+                "id": 999999999
+            },
+            {
+                "id": 3
+            }
+        ]
+    },
+    "4": {
+        "id": 4,
+        "name": "card_4",
+        "is_active": true,
+        "course_cards": [
+            {
+                "id": 999999999
+            },
+            {
+                "id": 4
+            }
+        ]
+    },
+    "5": {
+        "id": 5,
+        "name": "card_5",
+        "is_active": true,
+        "course_cards": [
+            {
+                "id": 999999999
+            },
+            {
+                "id": 5
+            }
+        ]
+    },
+    "6": {
+        "id": 6,
+        "name": "card_6",
+        "is_active": true,
+        "course_cards": [
+            {
+                "id": 999999999
+            },
+            {
+                "id": 6
+            }
+        ]
+    },
+    "7": {
+        "id": 7,
+        "name": "card_7",
+        "is_active": true,
+        "course_cards": [
+            {
+                "id": 999999999
+            },
+            {
+                "id": 7
+            }
+        ]
+    },
+    "8": {
+        "id": 8,
+        "name": "card_8",
+        "is_active": true,
+        "course_cards": [
+            {
+                "id": 999999999
+            },
+            {
+                "id": 8
             }
         ]
     }

@@ -91,6 +91,7 @@ HomeFieldConfig_list.append(unit_dic_inner)
 unit_dic_inner.update({"id": int(ws1.range((3, 2)).value)})
 unit_dic_inner.update({"game_id": int(ws1.range((13, 2)).value)})
 
+'''
 # color tours
 color_tours_list = []
 unit_dic_inner.update({"color_tours": color_tours_list})
@@ -104,7 +105,7 @@ while ws1.range((107, column_index_start)).value != None:
 
     column_index_start =column_index_start +1
 
-
+'''
 
 unit_dic_inner.update({"name": ws1.range((4, 2)).value})
 unit_dic_inner.update({"show_time_start": int(ws1.range((5, 2)).value)})
