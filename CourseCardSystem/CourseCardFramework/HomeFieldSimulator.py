@@ -8,6 +8,11 @@
 '''
 
 '''
+交互式GUI用什么来写
+用 Dear PyGUI 
+
+'''
+'''
 配合 jupyternoteebook进行设计
 '''
 
@@ -116,7 +121,7 @@ class player():
 
 import xlwings as xw
 
-wb = xw.Book("SimulatorRead.xlsx")
+wb = xw.Book("CourseCardSystem/CourseCardFramework/SimulatorRead.xlsx")
 ws_gameMatrix = wb.sheets['gameMatrix']
 ws_levelMatrix = wb.sheets['levelMatrix']
 ws_dungeon = wb.sheets['dungeon']
@@ -132,6 +137,10 @@ tick_min = 5 # 一个tick所持续的分钟数
 card_name_id = {}  # 球场卡名字：id 的字典
 main_level_list = [] # 主线关卡 card_level类的list
 side_level_list = [] # 支线关卡 { level_index( "8-1") : card_level }
+
+upgrade_coin_per_sec = [] # 升级币挂每秒获取速度 挂机
+chest_coin_per_sec = [] # 宝箱币每秒获取速度 挂机
+
 
 
 ''' 
@@ -160,7 +169,7 @@ def Read_card_name_id():
     print(card_name_id)
 
 
-
+'''读取主线，读取支线'''
 def Read_levels():
     global card_name_id
     global main_level_list
@@ -213,7 +222,7 @@ def Read_levels():
         if ws_dungeon.range((row, 14)).value != None:
 
             card1 = Card_level()
-            card1.name = str(ws_dungeon.range((row_start, 2)).value)
+            card1.name = str(ws_dungeon.range((row, 2)).value)
 
             # 根据名字找id
             if len(card_name_id.keys()) > 1:
@@ -221,29 +230,76 @@ def Read_levels():
                     if x == card1.name:
                         card1.id = card_name_id[x]
 
-            card1.name = ws_dungeon.range((row_start, 14)).value
-            card1.level = int(ws_dungeon.range((row_start, 15)).value)
-            card1.chapter_id = int(str(ws_dungeon.range((row_start, 16)).value).split("-")[0])
-            card1.chapter_index = int(str(ws_dungeon.range((row_start, 16)).value).split("-")[1])
+            card1.name = ws_dungeon.range((row, 14)).value
+            card1.level = int(ws_dungeon.range((row, 15)).value)
+            card1.chapter_id = int(str(ws_dungeon.range((row, 16)).value).split("-")[0])
+            card1.chapter_index = int(str(ws_dungeon.range((row, 16)).value).split("-")[1])
             card1.side_story = True
 
-            card1.par_star = int(ws_dungeon.range((row_start, 17)).value)
-            card1.birde_star = int(ws_dungeon.range((row_start, 18)).value)
-            card1.eagle_star = int(ws_dungeon.range((row_start, 19)).value)
-            card1.albatross_star = int(ws_dungeon.range((row_start, 20)).value)
-            card1.max_star = int(ws_dungeon.range((row_start, 21)).value)
+            card1.par_star = int(ws_dungeon.range((row, 17)).value)
+            card1.birde_star = int(ws_dungeon.range((row, 18)).value)
+            card1.eagle_star = int(ws_dungeon.range((row, 19)).value)
+            card1.albatross_star = int(ws_dungeon.range((row, 20)).value)
+            card1.max_star = int(ws_dungeon.range((row, 21)).value)
 
-            card1.region_tee = int(ws_dungeon.range((row_start, 1)).value)
+            card1.region_tee = int(ws_dungeon.range((row, 1)).value)
 
-            card1.ave_star_ave_upgarde_coin = int(ws_dungeon.range((row_start, 22)).value)
-            card1.ave_star_out_reward_diamond = int(ws_dungeon.range((row_start, 23)).value)
+            card1.ave_star_ave_upgarde_coin = int(ws_dungeon.range((row, 22)).value)
+            card1.ave_star_out_reward_diamond = int(ws_dungeon.range((row, 23)).value)
 
             card1.print_info()
 
-            level_index = ws_dungeon.range((row_start, 16)).value
+            level_index = ws_dungeon.range((row, 16)).value
             side_story_dic = {}
             side_story_dic.update({str(level_index): card1})
-            
+
+            side_level_list.append(side_story_dic)    
+
+
+
+
+''' 读取挂机数据'''
+def Read_Idle():
+    global upgrade_coin_per_sec
+    global chest_coin_per_sec
+
+    coin_column = 28
+    chest_column = 29
+
+    row_start = 3
+    while ws_levelMatrix.range((row_start, coin_column)).value != None:
+        upgrade_coin_per_sec.append(int(ws_levelMatrix.range((row_start, coin_column)).value))
+        chest_coin_per_sec.append(int(ws_levelMatrix.range((row_start, chest_column)).value))
+
+        row_start = row_start + 1
+
+    print(" ")
+    print(" 挂机数据读取完毕 ")
+    print("upgrade_coin_per_sec = ")
+    print(upgrade_coin_per_sec)
+    print("chest_coin_per_sec = ")
+    print(chest_coin_per_sec)
+
+
+''' 读取卡牌升级消耗数据 '''
+def Read_Card_Upgrade():
+    # 读取橙卡
+    # 读取紫卡
+    # 读取传奇卡
+    # 组成一个dic
+    '''
+    {
+        "id": [
+            [ upgrade_num_list],
+            [ upgrade_coin_list],
+            [ get_courseExp]
+        ],
+    }
+    '''
+    rare_start_column = 11
+    epic_start_column = 16
+    legen_start_column = 21
+
 
 
 ''' PVE '''
@@ -259,3 +315,7 @@ Read_card_name_id()
 player1 = player()
 player1.initialCardList()
 Read_levels()
+print(side_level_list)
+Read_Idle()
+
+
