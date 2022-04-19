@@ -99,6 +99,7 @@ while ws1.range((row_index,1)).value != None:
     unit_dic_inner.update({"camera_height": int(ws1.range((row_index, 17)).value)})
 
 
+
     # Config ability # Waiting..
 
     ability_list = []
@@ -121,6 +122,11 @@ while ws1.range((row_index,1)).value != None:
             dic_ability.update({"par": int(ws2.range((card_row_index, 7)).value)})
             dic_ability.update({"card_icon": ws2.range((card_row_index, 8)).value})
             dic_ability.update({"map_icon": ws2.range((card_row_index, 9)).value})
+
+            # x_limit & z_limit
+            dic_ability.update({"x_limit": ws2.range((card_row_index, 23)).value})
+            dic_ability.update({"z_limit": ws2.range((card_row_index, 24)).value})
+
 
 
             # update limit 破阶条件
