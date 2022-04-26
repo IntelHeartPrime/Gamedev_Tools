@@ -12,6 +12,20 @@
         "unlock_conditions": {
             "stage": 12
         },
+        "color_tours": [
+            {
+                "color": 2,
+                "tour_id": 98
+            },
+            {
+                "color": 3,
+                "tour_id": 97
+            },
+            {
+                "color": 4,
+                "tour_id": 96
+            }
+        ],
         "push": {
             "end_content": "Course rival is ending",
             "start_content": "Course rival has started",
@@ -27546,19 +27560,19 @@
                     "home_field_level_remote_limit": 0,
                     "big_reward": 0,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 2,
-                        "small_lose": 3,
-                        "big_lose": 4
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 10,
+                        "small_lose": 12,
+                        "big_lose": 15
                     },
                     "reward": [
                         {
                             "prop_id": 0,
-                            "prop_num": 10,
-                            "prop_type": 7,
+                            "prop_num": 15,
+                            "prop_type": 44,
                             "prop_color": 3,
                             "chest_type": 0
                         }
@@ -27568,17 +27582,17 @@
                     "id": 2,
                     "grade": 1,
                     "small_level": 2,
-                    "upgrade_score": 40,
+                    "upgrade_score": 101,
                     "home_field_level_remote_limit": 0,
                     "big_reward": 0,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 2,
-                        "small_lose": 3,
-                        "big_lose": 4
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 10,
+                        "small_lose": 12,
+                        "big_lose": 15
                     },
                     "reward": [
                         {
@@ -27594,17 +27608,17 @@
                     "id": 3,
                     "grade": 1,
                     "small_level": 3,
-                    "upgrade_score": 80,
+                    "upgrade_score": 201,
                     "home_field_level_remote_limit": 0,
                     "big_reward": 0,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 2,
-                        "small_lose": 3,
-                        "big_lose": 4
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 10,
+                        "small_lose": 12,
+                        "big_lose": 15
                     },
                     "reward": [
                         {
@@ -27620,22 +27634,22 @@
                     "id": 4,
                     "grade": 1,
                     "small_level": 4,
-                    "upgrade_score": 120,
+                    "upgrade_score": 301,
                     "home_field_level_remote_limit": 0,
                     "big_reward": 0,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 2,
-                        "small_lose": 3,
-                        "big_lose": 4
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 10,
+                        "small_lose": 12,
+                        "big_lose": 15
                     },
                     "reward": [
                         {
                             "prop_id": 0,
-                            "prop_num": 100,
+                            "prop_num": 50,
                             "prop_type": 2,
                             "prop_color": 0,
                             "chest_type": 0
@@ -27646,17 +27660,17 @@
                     "id": 5,
                     "grade": 1,
                     "small_level": 5,
-                    "upgrade_score": 160,
+                    "upgrade_score": 401,
                     "home_field_level_remote_limit": 0,
                     "big_reward": 1,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 2,
-                        "small_lose": 3,
-                        "big_lose": 4
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 10,
+                        "small_lose": 12,
+                        "big_lose": 15
                     },
                     "reward": [
                         {
@@ -27672,23 +27686,23 @@
                     "id": 6,
                     "grade": 2,
                     "small_level": 1,
-                    "upgrade_score": 200,
+                    "upgrade_score": 501,
                     "home_field_level_remote_limit": 4,
                     "big_reward": 0,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 4,
-                        "small_lose": 6,
-                        "big_lose": 8
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 20,
+                        "small_lose": 25,
+                        "big_lose": 30
                     },
                     "reward": [
                         {
                             "prop_id": 0,
-                            "prop_num": 15,
-                            "prop_type": 7,
+                            "prop_num": 20,
+                            "prop_type": 44,
                             "prop_color": 3,
                             "chest_type": 0
                         }
@@ -27698,17 +27712,17 @@
                     "id": 7,
                     "grade": 2,
                     "small_level": 2,
-                    "upgrade_score": 245,
+                    "upgrade_score": 601,
                     "home_field_level_remote_limit": 4,
                     "big_reward": 0,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 4,
-                        "small_lose": 6,
-                        "big_lose": 8
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 20,
+                        "small_lose": 25,
+                        "big_lose": 30
                     },
                     "reward": [
                         {
@@ -27724,17 +27738,17 @@
                     "id": 8,
                     "grade": 2,
                     "small_level": 3,
-                    "upgrade_score": 290,
+                    "upgrade_score": 701,
                     "home_field_level_remote_limit": 4,
                     "big_reward": 0,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 4,
-                        "small_lose": 6,
-                        "big_lose": 8
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 20,
+                        "small_lose": 25,
+                        "big_lose": 30
                     },
                     "reward": [
                         {
@@ -27750,22 +27764,22 @@
                     "id": 9,
                     "grade": 2,
                     "small_level": 4,
-                    "upgrade_score": 335,
+                    "upgrade_score": 801,
                     "home_field_level_remote_limit": 4,
                     "big_reward": 0,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 4,
-                        "small_lose": 6,
-                        "big_lose": 8
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 20,
+                        "small_lose": 25,
+                        "big_lose": 30
                     },
                     "reward": [
                         {
                             "prop_id": 0,
-                            "prop_num": 200,
+                            "prop_num": 100,
                             "prop_type": 2,
                             "prop_color": 0,
                             "chest_type": 0
@@ -27776,17 +27790,17 @@
                     "id": 10,
                     "grade": 2,
                     "small_level": 5,
-                    "upgrade_score": 380,
+                    "upgrade_score": 901,
                     "home_field_level_remote_limit": 4,
                     "big_reward": 1,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 4,
-                        "small_lose": 6,
-                        "big_lose": 8
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 20,
+                        "small_lose": 25,
+                        "big_lose": 30
                     },
                     "reward": [
                         {
@@ -27802,23 +27816,23 @@
                     "id": 11,
                     "grade": 3,
                     "small_level": 1,
-                    "upgrade_score": 425,
+                    "upgrade_score": 1001,
                     "home_field_level_remote_limit": 6,
                     "big_reward": 0,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 8,
-                        "small_lose": 12,
-                        "big_lose": 16
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 30,
+                        "small_lose": 35,
+                        "big_lose": 40
                     },
                     "reward": [
                         {
                             "prop_id": 0,
-                            "prop_num": 20,
-                            "prop_type": 7,
+                            "prop_num": 25,
+                            "prop_type": 44,
                             "prop_color": 3,
                             "chest_type": 0
                         }
@@ -27828,17 +27842,17 @@
                     "id": 12,
                     "grade": 3,
                     "small_level": 2,
-                    "upgrade_score": 475,
+                    "upgrade_score": 1101,
                     "home_field_level_remote_limit": 6,
                     "big_reward": 0,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 8,
-                        "small_lose": 12,
-                        "big_lose": 16
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 30,
+                        "small_lose": 35,
+                        "big_lose": 40
                     },
                     "reward": [
                         {
@@ -27854,17 +27868,17 @@
                     "id": 13,
                     "grade": 3,
                     "small_level": 3,
-                    "upgrade_score": 525,
+                    "upgrade_score": 1201,
                     "home_field_level_remote_limit": 6,
                     "big_reward": 0,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 8,
-                        "small_lose": 12,
-                        "big_lose": 16
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 30,
+                        "small_lose": 35,
+                        "big_lose": 40
                     },
                     "reward": [
                         {
@@ -27880,22 +27894,22 @@
                     "id": 14,
                     "grade": 3,
                     "small_level": 4,
-                    "upgrade_score": 575,
+                    "upgrade_score": 1301,
                     "home_field_level_remote_limit": 6,
                     "big_reward": 0,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 8,
-                        "small_lose": 12,
-                        "big_lose": 16
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 30,
+                        "small_lose": 35,
+                        "big_lose": 40
                     },
                     "reward": [
                         {
                             "prop_id": 0,
-                            "prop_num": 300,
+                            "prop_num": 150,
                             "prop_type": 2,
                             "prop_color": 0,
                             "chest_type": 0
@@ -27906,17 +27920,17 @@
                     "id": 15,
                     "grade": 3,
                     "small_level": 5,
-                    "upgrade_score": 625,
+                    "upgrade_score": 1401,
                     "home_field_level_remote_limit": 6,
                     "big_reward": 1,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 8,
-                        "small_lose": 12,
-                        "big_lose": 16
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 30,
+                        "small_lose": 35,
+                        "big_lose": 40
                     },
                     "reward": [
                         {
@@ -27932,23 +27946,23 @@
                     "id": 16,
                     "grade": 4,
                     "small_level": 1,
-                    "upgrade_score": 675,
+                    "upgrade_score": 1501,
                     "home_field_level_remote_limit": 8,
                     "big_reward": 0,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 10,
-                        "small_lose": 15,
-                        "big_lose": 20
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 50,
+                        "small_lose": 55,
+                        "big_lose": 60
                     },
                     "reward": [
                         {
                             "prop_id": 0,
-                            "prop_num": 25,
-                            "prop_type": 7,
+                            "prop_num": 30,
+                            "prop_type": 44,
                             "prop_color": 3,
                             "chest_type": 0
                         }
@@ -27958,17 +27972,17 @@
                     "id": 17,
                     "grade": 4,
                     "small_level": 2,
-                    "upgrade_score": 730,
+                    "upgrade_score": 1601,
                     "home_field_level_remote_limit": 8,
                     "big_reward": 0,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 10,
-                        "small_lose": 15,
-                        "big_lose": 20
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 50,
+                        "small_lose": 55,
+                        "big_lose": 60
                     },
                     "reward": [
                         {
@@ -27984,17 +27998,17 @@
                     "id": 18,
                     "grade": 4,
                     "small_level": 3,
-                    "upgrade_score": 785,
+                    "upgrade_score": 1701,
                     "home_field_level_remote_limit": 8,
                     "big_reward": 0,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 10,
-                        "small_lose": 15,
-                        "big_lose": 20
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 50,
+                        "small_lose": 55,
+                        "big_lose": 60
                     },
                     "reward": [
                         {
@@ -28010,22 +28024,22 @@
                     "id": 19,
                     "grade": 4,
                     "small_level": 4,
-                    "upgrade_score": 840,
+                    "upgrade_score": 1801,
                     "home_field_level_remote_limit": 8,
                     "big_reward": 0,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 10,
-                        "small_lose": 15,
-                        "big_lose": 20
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 50,
+                        "small_lose": 55,
+                        "big_lose": 60
                     },
                     "reward": [
                         {
                             "prop_id": 0,
-                            "prop_num": 400,
+                            "prop_num": 200,
                             "prop_type": 2,
                             "prop_color": 0,
                             "chest_type": 0
@@ -28036,17 +28050,17 @@
                     "id": 20,
                     "grade": 4,
                     "small_level": 5,
-                    "upgrade_score": 895,
+                    "upgrade_score": 1901,
                     "home_field_level_remote_limit": 8,
                     "big_reward": 1,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 10,
-                        "small_lose": 15,
-                        "big_lose": 20
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 50,
+                        "small_lose": 55,
+                        "big_lose": 60
                     },
                     "reward": [
                         {
@@ -28062,17 +28076,17 @@
                     "id": 21,
                     "grade": 5,
                     "small_level": 1,
-                    "upgrade_score": 950,
+                    "upgrade_score": 2001,
                     "home_field_level_remote_limit": 10,
                     "big_reward": 0,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 13,
-                        "small_lose": 20,
-                        "big_lose": 26
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 60,
+                        "small_lose": 70,
+                        "big_lose": 80
                     },
                     "reward": [
                         {
@@ -28088,17 +28102,17 @@
                     "id": 22,
                     "grade": 5,
                     "small_level": 2,
-                    "upgrade_score": 1010,
+                    "upgrade_score": 2101,
                     "home_field_level_remote_limit": 10,
                     "big_reward": 0,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 13,
-                        "small_lose": 20,
-                        "big_lose": 26
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 60,
+                        "small_lose": 70,
+                        "big_lose": 80
                     },
                     "reward": [
                         {
@@ -28114,17 +28128,17 @@
                     "id": 23,
                     "grade": 5,
                     "small_level": 3,
-                    "upgrade_score": 1070,
+                    "upgrade_score": 2201,
                     "home_field_level_remote_limit": 10,
                     "big_reward": 0,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 13,
-                        "small_lose": 20,
-                        "big_lose": 26
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 60,
+                        "small_lose": 70,
+                        "big_lose": 80
                     },
                     "reward": [
                         {
@@ -28140,22 +28154,22 @@
                     "id": 24,
                     "grade": 5,
                     "small_level": 4,
-                    "upgrade_score": 1130,
+                    "upgrade_score": 2301,
                     "home_field_level_remote_limit": 10,
                     "big_reward": 0,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 13,
-                        "small_lose": 20,
-                        "big_lose": 26
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 60,
+                        "small_lose": 70,
+                        "big_lose": 80
                     },
                     "reward": [
                         {
                             "prop_id": 0,
-                            "prop_num": 500,
+                            "prop_num": 250,
                             "prop_type": 2,
                             "prop_color": 0,
                             "chest_type": 0
@@ -28166,17 +28180,17 @@
                     "id": 25,
                     "grade": 5,
                     "small_level": 5,
-                    "upgrade_score": 1190,
+                    "upgrade_score": 2401,
                     "home_field_level_remote_limit": 10,
                     "big_reward": 1,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 13,
-                        "small_lose": 20,
-                        "big_lose": 26
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 60,
+                        "small_lose": 70,
+                        "big_lose": 80
                     },
                     "reward": [
                         {
@@ -28192,17 +28206,17 @@
                     "id": 26,
                     "grade": 6,
                     "small_level": 1,
-                    "upgrade_score": 1250,
+                    "upgrade_score": 2501,
                     "home_field_level_remote_limit": 12,
                     "big_reward": 0,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 16,
-                        "small_lose": 24,
-                        "big_lose": 32
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 60,
+                        "small_lose": 70,
+                        "big_lose": 80
                     },
                     "reward": [
                         {
@@ -28218,17 +28232,17 @@
                     "id": 27,
                     "grade": 6,
                     "small_level": 2,
-                    "upgrade_score": 1315,
+                    "upgrade_score": 2601,
                     "home_field_level_remote_limit": 12,
                     "big_reward": 0,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 16,
-                        "small_lose": 24,
-                        "big_lose": 32
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 60,
+                        "small_lose": 70,
+                        "big_lose": 80
                     },
                     "reward": [
                         {
@@ -28244,17 +28258,17 @@
                     "id": 28,
                     "grade": 6,
                     "small_level": 3,
-                    "upgrade_score": 1385,
+                    "upgrade_score": 2701,
                     "home_field_level_remote_limit": 12,
                     "big_reward": 0,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 16,
-                        "small_lose": 24,
-                        "big_lose": 32
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 60,
+                        "small_lose": 70,
+                        "big_lose": 80
                     },
                     "reward": [
                         {
@@ -28270,22 +28284,22 @@
                     "id": 29,
                     "grade": 6,
                     "small_level": 4,
-                    "upgrade_score": 1460,
+                    "upgrade_score": 2801,
                     "home_field_level_remote_limit": 12,
                     "big_reward": 0,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 16,
-                        "small_lose": 24,
-                        "big_lose": 32
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 60,
+                        "small_lose": 70,
+                        "big_lose": 80
                     },
                     "reward": [
                         {
                             "prop_id": 0,
-                            "prop_num": 600,
+                            "prop_num": 300,
                             "prop_type": 2,
                             "prop_color": 0,
                             "chest_type": 0
@@ -28296,17 +28310,17 @@
                     "id": 30,
                     "grade": 6,
                     "small_level": 5,
-                    "upgrade_score": 1545,
+                    "upgrade_score": 2901,
                     "home_field_level_remote_limit": 12,
                     "big_reward": 1,
                     "score_rules": {
-                        "big_win": 30,
-                        "small_win": 15,
-                        "mini_win": 10,
-                        "draw": 5,
-                        "mini_lose": 16,
-                        "small_lose": 24,
-                        "big_lose": 32
+                        "big_win": 80,
+                        "small_win": 70,
+                        "mini_win": 60,
+                        "draw": 25,
+                        "mini_lose": 60,
+                        "small_lose": 70,
+                        "big_lose": 80
                     },
                     "reward": [
                         {

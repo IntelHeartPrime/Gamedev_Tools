@@ -1,51 +1,68 @@
 
 from openpyxl import load_workbook
 import json
-
-
+import requests
 
 def clean_null(input_value):
+    ''' clean_Null 添加功能，如果判断为float，则转换为int'''
     empty_value = ""
     if input_value == None:
         return empty_value
-    return input_value
+    if type(input_value) == type(1.0):
+        # 判断其是否无小数，若是，则转换为int
+        change_value = int(input_value)
+        if float(input_value) == change_value:
+            return int(input_value)
+        else:
+            return  input_value
+    else:
+        return  input_value
+
+
+# 1. 下载
+# 2. 覆盖本地
+# 3. 开始转换
+url_download = 'https://docs.google.com/spreadsheets/d/1PQajTFgVHyMPFqzOaBUrRRsFLwaga8KuSjgHVzNR2s8/export?format=xlsx'
+xlsx_file = requests.get(url_download)
+open('tot.xlsx', 'wb').write(xlsx_file.content)
 
 
 
-wb = load_workbook("e2j.xlsx")
+wb = load_workbook("tot.xlsx")
 ws = wb.active
 
 json_dir = "Excel_to_Json.json"
 
 unit_dic = {}
-unit_dic.update({"id": clean_null(ws.cell(2,2).value)})
-unit_dic.update({"show_time_start": clean_null(ws.cell(3,2).value)})
-unit_dic.update({"start_time": clean_null(ws.cell(4,2).value)})
-unit_dic.update({"show_time_end": clean_null(ws.cell(5,2).value)})
-unit_dic.update({"end_time": clean_null(ws.cell(6,2).value)})
-unit_dic.update({"join_before_end_time": clean_null(ws.cell(7,2).value)})
+
+unit_dic.update({"id": int(clean_null(ws.cell(2,2).value))})
+unit_dic.update({"show_time_start": int(clean_null(ws.cell(3,2).value))})
+unit_dic.update({"start_time": int(clean_null(ws.cell(4,2).value))})
+unit_dic.update({"show_time_end": int(clean_null(ws.cell(5,2).value))})
+unit_dic.update({"end_time": int(clean_null(ws.cell(6,2).value))})
+unit_dic.update({"join_before_end_min": int(clean_null(ws.cell(7,2).value))})
 min_level = {}
 unit_dic.update({"unlock_conditions": min_level})
-min_level.update({"min_level": clean_null(ws.cell(8,4).value)})
+min_level.update({"min_level": int(clean_null(ws.cell(8,4).value))})
 
 replay_shop = []
 unit_dic.update({"replay_shop": replay_shop})
 column_index = 2
 while ws.cell(11,column_index).value!=None:
     unit = {}
-    unit.update(({"type": clean_null(ws.cell(11,column_index).value)}))
-    unit.update(({"consume_num": clean_null(ws.cell(12,column_index).value)}))
-    unit.update(({"consume_type": clean_null(ws.cell(13,column_index).value)}))
-    unit.update(({"get_num": clean_null(ws.cell(14,column_index).value)}))
+    unit.update(({"type": int(clean_null(ws.cell(11,column_index).value))}))
+    unit.update(({"consume_num": int(clean_null(ws.cell(12,column_index).value))}))
+    unit.update(({"consume_type": int(clean_null(ws.cell(13,column_index).value))}))
+    unit.update(({"get_num": int(clean_null(ws.cell(14,column_index).value))}))
     if ws.cell(15,column_index).value != None:
-        unit.update(({"value_off": clean_null(ws.cell(15,column_index).value)}))
+        unit.update(({"value_off": int(clean_null(ws.cell(15,column_index).value))}))
     replay_shop.append(unit)
     column_index += 1
 
 update_min = []
 column_index2 = 2
 while ws.cell(17,column_index2).value!=None:
-    update_min.append(ws.cell(17,column_index2).value)
+    update_min.append(int(ws.cell(17, column_index2).value))
     column_index2 += 1
 unit_dic.update({"update_mins": update_min})
 
@@ -54,13 +71,13 @@ unit_dic.update({"basic_reward": basic_reward})
 column_index3 = 2
 while ws.cell(20,column_index3).value!=None:
     reward = {}
-    reward.update(({"min_dis": clean_null(ws.cell(20,column_index3).value)}))
-    reward.update(({"max_dis": clean_null(ws.cell(21,column_index3).value)}))
-    reward.update(({"reward_coins": clean_null(ws.cell(22,column_index3).value)}))
+    reward.update(({"min_dis": int(clean_null(ws.cell(20,column_index3).value))}))
+    reward.update(({"max_dis": int(clean_null(ws.cell(21,column_index3).value))}))
+    reward.update(({"reward_coins": int(clean_null(ws.cell(22,column_index3).value))}))
     basic_reward.append(reward)
     column_index3 += 1
 
-unit_dic.update({"cumulative_reward_repeat_index": ws.cell(24, 2).value})
+unit_dic.update({"cumulative_reward_repeat_index": int(ws.cell(24, 2).value)})
 
 cumulative_reward = []
 unit_dic.update({"cumulative_reward":cumulative_reward})
@@ -68,18 +85,18 @@ column_index4 = 2
 while ws.cell(26,column_index4).value!=None:
     cumulative = {}
     cumulative_reward.append(cumulative)
-    cumulative.update(({"require_coins": clean_null(ws.cell(26,column_index4).value)}))
+    cumulative.update(({"require_coins": clean_null(int(ws.cell(26,column_index4).value))}))
     c_reward = {}
     cumulative.update(({"reward": c_reward}))
-    c_reward.update(({"prop_id": clean_null(ws.cell(28,column_index4).value)}))
-    c_reward.update(({"prop_num": clean_null(ws.cell(29, column_index4).value)}))
-    c_reward.update(({"prop_type": clean_null(ws.cell(30, column_index4).value)}))
-    c_reward.update(({"prop_color": clean_null(ws.cell(31, column_index4).value)}))
-    c_reward.update(({"chest_type": clean_null(ws.cell(32, column_index4).value)}))
+    c_reward.update(({"prop_id": int(clean_null(ws.cell(28,column_index4).value))}))
+    c_reward.update(({"prop_num": int(clean_null(ws.cell(29, column_index4).value))}))
+    c_reward.update(({"prop_type": int(clean_null(ws.cell(30, column_index4).value))}))
+    c_reward.update(({"prop_color": int(clean_null(ws.cell(31, column_index4).value))}))
+    c_reward.update(({"chest_type": int(clean_null(ws.cell(32, column_index4).value))}))
     column_index4 += 1
 
 ai_rule = []
-unit_dic.update({"ai_rule":ai_rule})
+unit_dic.update({"ai_rules":ai_rule})
 column_index5 = 2
 while ws.cell(35,column_index5).value!=None:
     ai = {}
@@ -96,35 +113,62 @@ ui_config = {}
 ui_config.update({"game_timeline_config":game_timeline_config})
 unit_dic.update({"ui_config":ui_config})
 column_index6 = 2
-while ws.cell(43,column_index6).value!=None:
+while ws.cell(342,column_index6).value!=None:
     config = {}
-    config.update(({"time": clean_null(ws.cell(43,column_index6).value)}))
-    config.update(({"type": clean_null(ws.cell(44,column_index6).value)}))
-    config.update(({"index": clean_null(ws.cell(45,column_index6).value)}))
-    config.update(({"path": clean_null(ws.cell(46, column_index6).value)}))
-    if ws.cell(48, column_index6).value != None:
-        prefab_parent = {}
-        prefab_parent.update({"prefab_parent": prefab_parent})
-        prefab_parent.update(({"index": clean_null(ws.cell(48, column_index6).value)}))
-        prefab_parent.update(({"node": clean_null(ws.cell(49, column_index6).value)}))
-    if ws.cell(50, column_index6).value != None:
-        main = True if ws.cell(50, column_index6).value == "true" else False
+    config.update(({"time": clean_null(ws.cell(342,column_index6).value)}))
+    config.update(({"type": clean_null(ws.cell(343,column_index6).value)}))
+    config.update(({"index": clean_null(ws.cell(344,column_index6).value)}))
+    if ws.cell(345, column_index6).value != None:
+        config.update(({"path": clean_null(ws.cell(345, column_index6).value)}))
+
+    if ws.cell(346, column_index6).value != None:
+        config.update(({"destory_index": clean_null(ws.cell(346, column_index6).value)}))
+
+    if ws.cell(348, column_index6).value != None:
+        main = True if str(ws.cell(348, column_index6).value) == "True" else False
         config.update(({"is_main": main}))
-    if ws.cell(51, column_index6).value != None:
-        loop = True if ws.cell(51, column_index6).value == "true" else False
+    if ws.cell(349, column_index6).value != None:
+        loop = True if str(ws.cell(349, column_index6).value) == "True" else False
         config.update(({"is_loop": loop}))
-    if ws.cell(53, column_index6).value != None:
+
+
+    # move_data
+    if ws.cell(352, column_index6).value != None:
+        move_data = {}
+        config.update(({"move_data": move_data}))
+        move_data.update({"target_index": clean_null(ws.cell(352, column_index6).value)})
+
+        move_offSet = {}
+        move_data.update({"move_offSet": move_offSet})
+
+        move_offSet.update({"x": clean_null(ws.cell(356, column_index6).value)})
+        move_offSet.update({"y": clean_null(ws.cell(357, column_index6).value)})
+        move_offSet.update({"z": clean_null(ws.cell(358, column_index6).value)})
+
+        move_data.update({"ease_enum": clean_null(ws.cell(353, column_index6).value)})
+        move_data.update({"time": clean_null(ws.cell(354, column_index6).value)})
+
+
+
+    # offSet
+    if ws.cell(364, column_index6).value != None:
         offset = {}
         config.update(({"offSet": offset}))
-        offset.update({"x": clean_null(ws.cell(53, column_index6).value)})
-        offset.update({"y": clean_null(ws.cell(54, column_index6).value)})
-        offset.update({"z": clean_null(ws.cell(55, column_index6).value)})
-    if ws.cell(56, column_index6).value != None:
-        offset.update({"destory_index": clean_null(ws.cell(56, column_index6).value)})
+        offset.update({"x": clean_null(ws.cell(364, column_index6).value)})
+        offset.update({"y": clean_null(ws.cell(365, column_index6).value)})
+        offset.update({"z": clean_null(ws.cell(366, column_index6).value)})
 
     game_timeline_config.append(config)
     column_index6 += 1
 
+if ws.cell(370, 2).value != None:
+    ui_config.update({"ui_snowman_logo_icon": clean_null(ws.cell(370, 2).value)})
+
+
+
+
+print("UI config completed")
+# 开始配置Event
 event_list = []
 unit_dic.update({"event_list":event_list})
 
@@ -138,16 +182,16 @@ if ws.cell(58,2).value!=None:
     if ws.cell(60,2).value != None:
         unlock_rules.update({"unlock_holes": clean_null(ws.cell(60,2).value)})
         unlock_rules.update({"unlock_seperator": clean_null(ws.cell(61, 2).value)})
-    event1.update(({"quanlifying": clean_null(ws.cell(63,2).value)}))
+    event1.update(({"qualifying": clean_null(ws.cell(63,2).value)}))
     battle_limit = {}
     event1.update(({"battle_limit": battle_limit}))
     balls, club_color, clubs = [], [], []
     battle_limit.update(balls)
     battle_limit.update(club_color)
     battle_limit.update(clubs)
-    battle_limit.update({"club_color": balls})
+    battle_limit.update({"balls": balls})
+    battle_limit.update({"club_color": clubs})
     battle_limit.update({"clubs": club_color})
-    battle_limit.update({"balls": clubs})
     column_index7 = 2
     while ws.cell(66, column_index7).value != None:
         balls.append(ws.cell(66,column_index7).value)
@@ -157,18 +201,18 @@ if ws.cell(58,2).value!=None:
     event1.update({"start_time": clean_null(ws.cell(70,2).value)})
     event1.update({"settle_before_next_min": clean_null(ws.cell(71,2).value)})
     default_replay = []
-    event1.update({"default_play": default_replay})
+    event1.update({"default_replay": default_replay})
     if ws.cell(72, 2).value != None:
         column_index8 = 2
         while ws.cell(72, column_index8).value != None:
-            default_replay.append(ws.cell(72, column_index8).value)
+            default_replay.append(clean_null(ws.cell(72, column_index8).value))
             column_index8 += 1
     rank_score = []
     event1.update({"rank_score": rank_score})
     if ws.cell(73, 2).value != None:
         column_index9 = 2
         while ws.cell(73, column_index9).value != None:
-            rank_score.append(ws.cell(73, column_index9).value)
+            rank_score.append(clean_null(ws.cell(73, column_index9).value))
             column_index9 += 1
     event1.update({"num_per_group": clean_null(ws.cell(74,2).value)})
     event1.update({"promote_rank": clean_null(ws.cell(75,2).value)})
@@ -186,8 +230,8 @@ if ws.cell(58,2).value!=None:
     type1.update({"group_rule_list": group_rule_list})
     rule_list = {}
     group_rule_list.append(rule_list)
-    rule_list.update({"min_trophy": clean_null(ws.cell(82, 2).value)})
-    rule_list.update({"max_trophy": clean_null(ws.cell(83, 2).value)})
+    rule_list.update({"min_trophy": clean_null(ws.cell(83, 2).value)})
+    rule_list.update({"max_trophy": clean_null(ws.cell(84, 2).value)})
     prize_list = []
     type1.update({"prize_list": prize_list})
     rank_column = 2
@@ -203,12 +247,16 @@ if ws.cell(58,2).value!=None:
         reward.update({"prop_color": clean_null(ws.cell(91, rank_column).value)})
         rank_column += 1
     type1.update(({"tour_id": clean_null(ws.cell(93, 2).value)}))
+
+
+    # 关于offer的逻辑
     signup_offer_list = []
     type1.update({"signup_offer_list": signup_offer_list})
     offer = {}
     signup_offer_list.append(offer)
     offer.update({"money": clean_null(ws.cell(95, 2).value)})
     offer.update({"type": clean_null(ws.cell(96, 2).value)})
+
     signup_offer_id_list = []
     offer.update({"signup_offer_id_list": signup_offer_id_list})
     id_column = 2
@@ -219,13 +267,16 @@ if ws.cell(58,2).value!=None:
         signup_offer_id_list.append(id)
         id_column += 1
 
+
+    # 关于offer的逻辑
+
     scene_list = []
     type1.update({"scene_list": scene_list})
     scene_column = 2
     while ws.cell(102, scene_column).value != None:
         scene = {}
         scene_list.append(scene)
-        signup_offer_list.append(offer)
+        # signup_offer_list.append(offer)
         scene.update({"id": clean_null(ws.cell(102, scene_column).value)})
         scene.update({"min_dis": clean_null(ws.cell(103, scene_column).value)})
         scene.update({"max_dis": clean_null(ws.cell(104, scene_column).value)})
@@ -293,7 +344,7 @@ if ws.cell(58,2).value!=None:
         scene2 = {}
         scene_list2.append(scene2)
 
-        signup_offer_list2.append(offer)
+        # signup_offer_list2.append(offer)
         scene2.update({"id": clean_null(ws.cell(134, scene_column).value)})
         scene2.update({"min_dis": clean_null(ws.cell(135, scene_column).value)})
         scene2.update({"max_dis": clean_null(ws.cell(136, scene_column).value)})
@@ -308,6 +359,8 @@ if ws.cell(58,2).value!=None:
             prop2.update({"prop_num": clean_null(ws.cell(141, scene_column).value)})
         scene_column += 1
 
+print("Event1 completed")
+
 
 # event2
 if ws.cell(143, 2).value != None:
@@ -319,16 +372,17 @@ if ws.cell(143, 2).value != None:
     if ws.cell(145, 2).value != None:
         unlock_rules3.update({"unlock_holes": clean_null(ws.cell(145, 2).value)})
         unlock_rules3.update({"unlock_seperator": clean_null(ws.cell(146, 2).value)})
-    event2.update(({"quanlifying": clean_null(ws.cell(148, 2).value)}))
+    event2.update(({"qualifying": clean_null(ws.cell(148, 2).value)}))
     battle_limit3 = {}
     event2.update(({"battle_limit": battle_limit3}))
     balls3, club_color3, clubs3 = [], [], []
     battle_limit3.update(balls3)
     battle_limit3.update(club_color3)
     battle_limit3.update(clubs3)
+    battle_limit3.update({"balls": clubs3})
     battle_limit3.update({"club_color": balls3})
     battle_limit3.update({"clubs": club_color3})
-    battle_limit3.update({"balls": clubs3})
+
     column_index7 = 2
     while ws.cell(151, column_index7).value != None:
         balls3.append(ws.cell(151, column_index7).value)
@@ -336,20 +390,20 @@ if ws.cell(143, 2).value != None:
         clubs3.append(ws.cell(153, column_index7).value)
         column_index7 += 1
     event2.update({"start_time": clean_null(ws.cell(155, 2).value)})
-    event2.update({"settle_before_next_min": clean_null(ws.cell(154, 2).value)})
+    event2.update({"settle_before_next_min": clean_null(ws.cell(156, 2).value)})
     default_replay3 = []
-    event2.update({"default_play": default_replay3})
+    event2.update({"default_replay": default_replay3})
     if ws.cell(157, 2).value != None:
         column_index8 = 2
         while ws.cell(157, column_index8).value != None:
-            default_replay3.append(ws.cell(157, column_index8).value)
+            default_replay3.append(clean_null(ws.cell(157, column_index8).value))
             column_index8 += 1
     rank_score3 = []
     event2.update({"rank_score": rank_score3})
     if ws.cell(158, 2).value != None:
         column_index9 = 2
         while ws.cell(158, column_index9).value != None:
-            rank_score3.append(ws.cell(158, column_index9).value)
+            rank_score3.append(clean_null(ws.cell(158, column_index9).value))
             column_index9 += 1
     event2.update({"num_per_group": clean_null(ws.cell(159, 2).value)})
     event2.update({"promote_rank": clean_null(ws.cell(160, 2).value)})
@@ -368,18 +422,17 @@ if ws.cell(143, 2).value != None:
     rule_list3 = {}
     group_rule_list3.append(rule_list)
     type3.update({"group_rule_list": group_rule_list3})
-    rule_list3.update({"min_trophy": clean_null(ws.cell(167, 2).value)})
-    rule_list3.update({"max_trophy": clean_null(ws.cell(168, 2).value)})
+    rule_list3.update({"min_trophy": clean_null(ws.cell(168, 2).value)})
+    rule_list3.update({"max_trophy": clean_null(ws.cell(169, 2).value)})
     prize_list3 = []
     type3.update({"prize_list": prize_list3})
     rank_column = 2
     while ws.cell(171, rank_column).value != None:
-        if(ws.cell(170,rank_column).value != None):
-            rank3 = {}
-            prize_list3.append(rank3)
-        rank.update({"rank": clean_null(ws.cell(171, rank_column).value)})
+        rank3 = {}
+        prize_list3.append(rank3)
+        rank3.update({"rank": clean_null(ws.cell(171, rank_column).value)})
         reward3 = {}
-        rank.update(({"reward": reward3}))
+        rank3.update(({"reward": reward3}))
         reward3.update({"prop_id": clean_null(ws.cell(173, rank_column).value)})
         reward3.update({"prop_num": clean_null(ws.cell(174, rank_column).value)})
         reward3.update({"prop_type": clean_null(ws.cell(175, rank_column).value)})
@@ -408,7 +461,7 @@ if ws.cell(143, 2).value != None:
     while ws.cell(187, scene_column).value != None:
         scene3 = {}
         scene_list3.append(scene3)
-        signup_offer_list3.append(offer3)
+        # signup_offer_list3.append(offer3)
         scene3.update({"id": clean_null(ws.cell(187, scene_column).value)})
         scene3.update({"min_dis": clean_null(ws.cell(188, scene_column).value)})
         scene3.update({"max_dis": clean_null(ws.cell(189, scene_column).value)})
@@ -434,8 +487,8 @@ if ws.cell(143, 2).value != None:
     type4.update({"group_rule_list": group_rule_list4})
     rule_list4 = {}
     group_rule_list4.append(rule_list4)
-    rule_list4.update({"min_trophy": clean_null(ws.cell(199, 2).value)})
-    rule_list4.update({"max_trophy": clean_null(ws.cell(200, 2).value)})
+    rule_list4.update({"min_trophy": clean_null(ws.cell(200, 2).value)})
+    rule_list4.update({"max_trophy": clean_null(ws.cell(201, 2).value)})
     prize_list4 = []
     type4.update({"prize_list": prize_list4})
     rank_column = 2
@@ -473,7 +526,7 @@ if ws.cell(143, 2).value != None:
     while ws.cell(219, scene_column).value != None:
         scene4 = {}
         scene_list4.append(scene4)
-        signup_offer_list2.append(offer4)
+        # signup_offer_list2.append(offer4)
         scene4.update({"id": clean_null(ws.cell(219, scene_column).value)})
         scene4.update({"min_dis": clean_null(ws.cell(220, scene_column).value)})
         scene4.update({"max_dis": clean_null(ws.cell(221, scene_column).value)})
@@ -488,6 +541,8 @@ if ws.cell(143, 2).value != None:
             prop4.update({"prop_num": clean_null(ws.cell(226, scene_column).value)})
         scene_column += 1
 
+print("Event2 completed")
+
 # event3
 if ws.cell(228, 2).value != None:
     event3 = {}
@@ -498,16 +553,17 @@ if ws.cell(228, 2).value != None:
     if ws.cell(230, 2).value != None:
         unlock_rules5.update({"unlock_holes": clean_null(ws.cell(230, 2).value)})
         unlock_rules5.update({"unlock_seperator": clean_null(ws.cell(231, 2).value)})
-    event3.update(({"quanlifying": clean_null(ws.cell(233, 2).value)}))
+    event3.update(({"qualifying": clean_null(ws.cell(233, 2).value)}))
     battle_limit5 = {}
     event3.update(({"battle_limit": battle_limit5}))
     balls5, club_color5, clubs5 = [], [], []
     battle_limit5.update(balls5)
     battle_limit5.update(club_color5)
     battle_limit5.update(clubs5)
+    battle_limit5.update({"balls": clubs5})
     battle_limit5.update({"club_color": balls5})
     battle_limit5.update({"clubs": club_color5})
-    battle_limit5.update({"balls": clubs5})
+
     column_index7 = 2
     while ws.cell(236, column_index7).value != None:
         balls5.append(ws.cell(236, column_index7).value)
@@ -517,18 +573,18 @@ if ws.cell(228, 2).value != None:
     event3.update({"start_time": clean_null(ws.cell(240, 2).value)})
     event3.update({"settle_before_next_min": clean_null(ws.cell(241, 2).value)})
     default_replay5 = []
-    event3.update({"default_play": default_replay5})
+    event3.update({"default_replay": default_replay5})
     if ws.cell(242, 2).value != None:
         column_index8 = 2
         while ws.cell(242, column_index8).value != None:
-            default_replay5.append(ws.cell(242, column_index8).value)
+            default_replay5.append(clean_null(ws.cell(242, column_index8).value))
             column_index8 += 1
     rank_score5 = []
     event3.update({"rank_score": rank_score5})
     if ws.cell(243, 2).value != None:
         column_index9 = 2
         while ws.cell(243, column_index9).value != None:
-            rank_score5.append(ws.cell(243, column_index9).value)
+            rank_score5.append(clean_null(ws.cell(243, column_index9).value))
             column_index9 += 1
     event3.update({"num_per_group": clean_null(ws.cell(244, 2).value)})
     event3.update({"promote_rank": clean_null(ws.cell(245, 2).value)})
@@ -547,15 +603,15 @@ if ws.cell(228, 2).value != None:
     type5.update({"group_rule_list": group_rule_list5})
     rule_list5 = {}
     group_rule_list5.append(rule_list)
-    rule_list5.update({"min_trophy": clean_null(ws.cell(252, 2).value)})
-    rule_list5.update({"max_trophy": clean_null(ws.cell(253, 2).value)})
+    rule_list5.update({"min_trophy": clean_null(ws.cell(253, 2).value)})
+    rule_list5.update({"max_trophy": clean_null(ws.cell(254, 2).value)})
     prize_list5 = []
     type5.update({"prize_list": prize_list5})
     rank_column = 2
     while ws.cell(256, rank_column).value != None:
         rank5 = {}
         prize_list5.append(rank5)
-        rank.update({"rank": clean_null(ws.cell(256, rank_column).value)})
+        rank5.update({"rank": clean_null(ws.cell(256, rank_column).value)})
         reward5 = {}
         rank5.update(({"reward": reward5}))
         reward5.update({"prop_id": clean_null(ws.cell(258, rank_column).value)})
@@ -573,7 +629,7 @@ if ws.cell(228, 2).value != None:
     signup_offer_id_list5 = []
     offer5.update({"signup_offer_id_list": signup_offer_id_list5})
     id_column = 2
-    while ws.cell(183, id_column).value != None:
+    while ws.cell(268, id_column).value != None:
         id5 = {}
         id5.update({"money": clean_null(ws.cell(268, id_column).value)})
         id5.update({"offer_id": clean_null(ws.cell(269, id_column).value)})
@@ -586,7 +642,7 @@ if ws.cell(228, 2).value != None:
     while ws.cell(272, scene_column).value != None:
         scene5 = {}
         scene_list5.append(scene5)
-        signup_offer_list5.append(offer5)
+        # signup_offer_list5.append(offer5)
         scene5.update({"id": clean_null(ws.cell(272, scene_column).value)})
         scene5.update({"min_dis": clean_null(ws.cell(273, scene_column).value)})
         scene5.update({"max_dis": clean_null(ws.cell(274, scene_column).value)})
@@ -612,8 +668,8 @@ if ws.cell(228, 2).value != None:
     type6.update({"group_rule_list": group_rule_list6})
     rule_list6 = {}
     group_rule_list6.append(rule_list6)
-    rule_list6.update({"min_trophy": clean_null(ws.cell(284, 2).value)})
-    rule_list6.update({"max_trophy": clean_null(ws.cell(285, 2).value)})
+    rule_list6.update({"min_trophy": clean_null(ws.cell(285, 2).value)})
+    rule_list6.update({"max_trophy": clean_null(ws.cell(286, 2).value)})
     prize_list6 = []
     type6.update({"prize_list": prize_list6})
     rank_column = 2
@@ -651,11 +707,11 @@ if ws.cell(228, 2).value != None:
     while ws.cell(304, scene_column).value != None:
         scene6 = {}
         scene_list6.append(scene6)
-        signup_offer_list2.append(offer6)
+        # signup_offer_list2.append(offer6)
         scene6.update({"id": clean_null(ws.cell(304, scene_column).value)})
         scene6.update({"min_dis": clean_null(ws.cell(305, scene_column).value)})
         scene6.update({"max_dis": clean_null(ws.cell(306, scene_column).value)})
-        if ws.cell(208, scene_column).value != None:
+        if ws.cell(308, scene_column).value != None:
             scene_reward6 = []
             prop6 = {}
             scene6.update({"reward": scene_reward6})
@@ -666,12 +722,14 @@ if ws.cell(228, 2).value != None:
             prop6.update({"prop_num": clean_null(ws.cell(311, scene_column).value)})
         scene_column += 1
 
+print("Event3 completed")
+
 push = {}
 unit_dic.update({"push":push})
 push.update({"round_end_content": clean_null(ws.cell(314, 2).value)})
 push.update({"round_start_content": clean_null(ws.cell(315, 2).value)})
 push.update({"push_before_end_min": clean_null(ws.cell(316, 2).value)})
-push.update({"refresh_ticket_connect": clean_null(ws.cell(317, 2).value)})
+push.update({"refresh_ticket_content": clean_null(ws.cell(317, 2).value)})
 push.update({"unlock_holes_content": clean_null(ws.cell(318, 2).value)})
 
 
@@ -679,11 +737,8 @@ unit_dic.update({"mail_title": clean_null(ws.cell(320, 2).value)})
 unit_dic.update({"mail_content": clean_null(ws.cell(322, 2).value)})
 unit_dic.update({"mail_rank_content": clean_null(ws.cell(324, 2).value)})
 new_battle_limit = {}
-unit_dic.update({"battle_limit":new_battle_limit})
 new_club_color, new_clubs, new_balls = [], [], []
-new_battle_limit.update({"club_color":new_club_color})
-new_battle_limit.update({"clubs":new_clubs})
-new_battle_limit.update({"balls":new_balls})
+
 
 clubs_column = 2
 while ws.cell(327, clubs_column).value != None:
@@ -700,11 +755,27 @@ while ws.cell(329, clubs_column).value != None:
     new_club_color.append(ws.cell(329, clubs_column).value)
     clubs_column += 1
 
+len_new_balls = len(new_balls)
+len_new_club_color = len(new_club_color)
+len_new_clubs = len(new_clubs)
+
+if len_new_balls > 0:
+    new_battle_limit.update({"balls": new_balls})
+if len_new_club_color > 0:
+    new_battle_limit.update({"club_color": new_club_color})
+if len_new_clubs > 0:
+    new_battle_limit.update({"clubs": new_clubs})
+
+# 只要有任何一个list > 0 ，即添加new_battle_limit
+if len_new_balls>0 or len_new_club_color >0 or len_new_clubs>0:
+    unit_dic.update({"battle_limit": new_battle_limit})
+
+print("Push completed")
+
 
 
 with open(json_dir, "w") as json_file:
     json_str = json.dumps(unit_dic, indent=4)
     json_file.write(json_str)
-
 
 
