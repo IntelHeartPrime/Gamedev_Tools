@@ -2,16 +2,6 @@
     {
         "id": 1,
         "game_id": 99,
-        "name": "Home Field Challenge I",
-        "show_time_start": 1650438000,
-        "show_time_end": 1651647600,
-        "start_time": 1650438000,
-        "end_time": 1651647600,
-        "shop_coins_per_diamond": 240,
-        "card_coins_per_diamond": 240,
-        "unlock_conditions": {
-            "stage": 12
-        },
         "color_tours": [
             {
                 "color": 2,
@@ -26,6 +16,16 @@
                 "tour_id": 96
             }
         ],
+        "name": "Home Field Challenge I",
+        "show_time_start": 1650438000,
+        "show_time_end": 1651647600,
+        "start_time": 1650438000,
+        "end_time": 1651647600,
+        "shop_coins_per_diamond": 240,
+        "card_coins_per_diamond": 240,
+        "unlock_conditions": {
+            "stage": 12
+        },
         "push": {
             "end_content": "Course rival is ending",
             "start_content": "Course rival has started",
@@ -27817,7 +27817,7 @@
                     "grade": 3,
                     "small_level": 1,
                     "upgrade_score": 1001,
-                    "home_field_level_remote_limit": 6,
+                    "home_field_level_remote_limit": 5,
                     "big_reward": 0,
                     "score_rules": {
                         "big_win": 80,
@@ -27843,7 +27843,7 @@
                     "grade": 3,
                     "small_level": 2,
                     "upgrade_score": 1101,
-                    "home_field_level_remote_limit": 6,
+                    "home_field_level_remote_limit": 5,
                     "big_reward": 0,
                     "score_rules": {
                         "big_win": 80,
@@ -27869,7 +27869,7 @@
                     "grade": 3,
                     "small_level": 3,
                     "upgrade_score": 1201,
-                    "home_field_level_remote_limit": 6,
+                    "home_field_level_remote_limit": 5,
                     "big_reward": 0,
                     "score_rules": {
                         "big_win": 80,
@@ -27895,7 +27895,7 @@
                     "grade": 3,
                     "small_level": 4,
                     "upgrade_score": 1301,
-                    "home_field_level_remote_limit": 6,
+                    "home_field_level_remote_limit": 5,
                     "big_reward": 0,
                     "score_rules": {
                         "big_win": 80,
@@ -27921,7 +27921,7 @@
                     "grade": 3,
                     "small_level": 5,
                     "upgrade_score": 1401,
-                    "home_field_level_remote_limit": 6,
+                    "home_field_level_remote_limit": 5,
                     "big_reward": 1,
                     "score_rules": {
                         "big_win": 80,
@@ -27947,7 +27947,7 @@
                     "grade": 4,
                     "small_level": 1,
                     "upgrade_score": 1501,
-                    "home_field_level_remote_limit": 8,
+                    "home_field_level_remote_limit": 6,
                     "big_reward": 0,
                     "score_rules": {
                         "big_win": 80,
@@ -27973,7 +27973,7 @@
                     "grade": 4,
                     "small_level": 2,
                     "upgrade_score": 1601,
-                    "home_field_level_remote_limit": 8,
+                    "home_field_level_remote_limit": 6,
                     "big_reward": 0,
                     "score_rules": {
                         "big_win": 80,
@@ -27999,7 +27999,7 @@
                     "grade": 4,
                     "small_level": 3,
                     "upgrade_score": 1701,
-                    "home_field_level_remote_limit": 8,
+                    "home_field_level_remote_limit": 6,
                     "big_reward": 0,
                     "score_rules": {
                         "big_win": 80,
@@ -28025,7 +28025,7 @@
                     "grade": 4,
                     "small_level": 4,
                     "upgrade_score": 1801,
-                    "home_field_level_remote_limit": 8,
+                    "home_field_level_remote_limit": 6,
                     "big_reward": 0,
                     "score_rules": {
                         "big_win": 80,
@@ -28051,7 +28051,7 @@
                     "grade": 4,
                     "small_level": 5,
                     "upgrade_score": 1901,
-                    "home_field_level_remote_limit": 8,
+                    "home_field_level_remote_limit": 6,
                     "big_reward": 1,
                     "score_rules": {
                         "big_win": 80,
@@ -28077,7 +28077,7 @@
                     "grade": 5,
                     "small_level": 1,
                     "upgrade_score": 2001,
-                    "home_field_level_remote_limit": 10,
+                    "home_field_level_remote_limit": 7,
                     "big_reward": 0,
                     "score_rules": {
                         "big_win": 80,
@@ -28103,7 +28103,7 @@
                     "grade": 5,
                     "small_level": 2,
                     "upgrade_score": 2101,
-                    "home_field_level_remote_limit": 10,
+                    "home_field_level_remote_limit": 7,
                     "big_reward": 0,
                     "score_rules": {
                         "big_win": 80,
@@ -28129,7 +28129,7 @@
                     "grade": 5,
                     "small_level": 3,
                     "upgrade_score": 2201,
-                    "home_field_level_remote_limit": 10,
+                    "home_field_level_remote_limit": 7,
                     "big_reward": 0,
                     "score_rules": {
                         "big_win": 80,
@@ -28155,7 +28155,7 @@
                     "grade": 5,
                     "small_level": 4,
                     "upgrade_score": 2301,
-                    "home_field_level_remote_limit": 10,
+                    "home_field_level_remote_limit": 7,
                     "big_reward": 0,
                     "score_rules": {
                         "big_win": 80,
@@ -28181,7 +28181,7 @@
                     "grade": 5,
                     "small_level": 5,
                     "upgrade_score": 2401,
-                    "home_field_level_remote_limit": 10,
+                    "home_field_level_remote_limit": 7,
                     "big_reward": 1,
                     "score_rules": {
                         "big_win": 80,
@@ -28207,7 +28207,7 @@
                     "grade": 6,
                     "small_level": 1,
                     "upgrade_score": 2501,
-                    "home_field_level_remote_limit": 12,
+                    "home_field_level_remote_limit": 8,
                     "big_reward": 0,
                     "score_rules": {
                         "big_win": 80,
@@ -28233,7 +28233,7 @@
                     "grade": 6,
                     "small_level": 2,
                     "upgrade_score": 2601,
-                    "home_field_level_remote_limit": 12,
+                    "home_field_level_remote_limit": 8,
                     "big_reward": 0,
                     "score_rules": {
                         "big_win": 80,
@@ -28259,7 +28259,7 @@
                     "grade": 6,
                     "small_level": 3,
                     "upgrade_score": 2701,
-                    "home_field_level_remote_limit": 12,
+                    "home_field_level_remote_limit": 8,
                     "big_reward": 0,
                     "score_rules": {
                         "big_win": 80,
@@ -28285,7 +28285,7 @@
                     "grade": 6,
                     "small_level": 4,
                     "upgrade_score": 2801,
-                    "home_field_level_remote_limit": 12,
+                    "home_field_level_remote_limit": 8,
                     "big_reward": 0,
                     "score_rules": {
                         "big_win": 80,
@@ -28311,7 +28311,7 @@
                     "grade": 6,
                     "small_level": 5,
                     "upgrade_score": 2901,
-                    "home_field_level_remote_limit": 12,
+                    "home_field_level_remote_limit": 8,
                     "big_reward": 1,
                     "score_rules": {
                         "big_win": 80,
