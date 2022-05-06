@@ -264,8 +264,6 @@ with open(csv_file_path) as csvfile:
         index += 1
 
 
-# 对结果进行排序处理
-# 对所有的组合进行排序，取结果最大的前4个组合轮番写入新的Sheet之中
 
 
 
