@@ -4,13 +4,13 @@ import time
 
 import os
 work_dir = os.getcwd()
-xlsx_dir = "Tournament/TournamentConfig.xlsx"
+xlsx_dir = "TournamentConfig.xlsx"
 
 workbook_dir = os.path.join(work_dir, xlsx_dir)
 print(workbook_dir)
 
 
-json_file_name = "/Tournament/TournamentConfig.json"
+json_file_name = "TournamentConfig.json"
 
 wb = load_workbook(workbook_dir)
 ws = wb.active
