@@ -1,0 +1,72 @@
+[
+    {
+        "prop_id": 19,
+        "prop_type": 1,
+        "prop_num": 0,
+        "prop_level": 3,
+        "is_use": 1
+    },
+    {
+        "prop_id": 13,
+        "prop_type": 1,
+        "prop_num": 0,
+        "prop_level": 2,
+        "is_use": 2
+    },
+    {
+        "prop_id": 26,
+        "prop_type": 2,
+        "prop_num": 0,
+        "prop_level": 1,
+        "is_use": 1
+    },
+    {
+        "prop_id": 20,
+        "prop_type": 2,
+        "prop_num": 0,
+        "prop_level": 4,
+        "is_use": 2
+    },
+    {
+        "prop_id": 21,
+        "prop_type": 3,
+        "prop_num": 0,
+        "prop_level": 2,
+        "is_use": 1
+    },
+    {
+        "prop_id": 33,
+        "prop_type": 3,
+        "prop_num": 0,
+        "prop_level": 2,
+        "is_use": 2
+    },
+    {
+        "prop_id": 23,
+        "prop_type": 5,
+        "prop_num": 0,
+        "prop_level": 2,
+        "is_use": 1
+    },
+    {
+        "prop_id": 35,
+        "prop_type": 5,
+        "prop_num": 0,
+        "prop_level": 2,
+        "is_use": 2
+    },
+    {
+        "prop_id": 18,
+        "prop_type": 6,
+        "prop_num": 0,
+        "prop_level": 1,
+        "is_use": 1
+    },
+    {
+        "prop_id": 30,
+        "prop_type": 6,
+        "prop_num": 0,
+        "prop_level": 1,
+        "is_use": 2
+    }
+]
