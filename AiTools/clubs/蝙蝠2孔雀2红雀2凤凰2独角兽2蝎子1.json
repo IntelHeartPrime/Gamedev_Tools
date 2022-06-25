@@ -1,69 +1,69 @@
 [
     {
-        "prop_id": 19,
+        "prop_id": 37,
         "prop_type": 1,
         "prop_num": 0,
-        "prop_level": 5,
+        "prop_level": 3,
         "is_use": 1
     },
     {
-        "prop_id": 13,
+        "prop_id": 31,
         "prop_type": 1,
         "prop_num": 0,
-        "prop_level": 2,
+        "prop_level": 6,
         "is_use": 2
     },
     {
-        "prop_id": 26,
+        "prop_id": 63,
         "prop_type": 2,
         "prop_num": 0,
         "prop_level": 2,
         "is_use": 1
     },
     {
-        "prop_id": 20,
+        "prop_id": 38,
         "prop_type": 2,
         "prop_num": 0,
-        "prop_level": 4,
+        "prop_level": 2,
         "is_use": 2
     },
     {
-        "prop_id": 27,
+        "prop_id": 45,
         "prop_type": 3,
         "prop_num": 0,
         "prop_level": 2,
         "is_use": 1
     },
     {
-        "prop_id": 33,
+        "prop_id": 39,
         "prop_type": 3,
         "prop_num": 0,
         "prop_level": 2,
         "is_use": 2
     },
     {
-        "prop_id": 23,
+        "prop_id": 40,
         "prop_type": 5,
         "prop_num": 0,
         "prop_level": 2,
         "is_use": 1
     },
     {
-        "prop_id": 35,
+        "prop_id": 41,
         "prop_type": 5,
         "prop_num": 0,
         "prop_level": 2,
         "is_use": 2
     },
     {
-        "prop_id": 18,
+        "prop_id": 60,
         "prop_type": 6,
         "prop_num": 0,
         "prop_level": 1,
         "is_use": 1
     },
     {
-        "prop_id": 30,
+        "prop_id": 42,
         "prop_type": 6,
         "prop_num": 0,
         "prop_level": 1,
