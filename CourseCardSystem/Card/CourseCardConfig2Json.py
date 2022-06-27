@@ -61,9 +61,7 @@ def ParsingStringPathPos( path_pos_str ):
     print(" 解析路径数据后 " + str(result_list))
     return result_list
 
-
 row_index = 3
-
 unit_dic = {}
 
 while ws1.range((row_index,1)).value != None:
