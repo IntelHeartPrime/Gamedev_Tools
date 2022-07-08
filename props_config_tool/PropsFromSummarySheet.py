@@ -31,6 +31,12 @@ json_file_name = "props_new"
 list_all = []
 dic_x0x1 = {}
 
+
+# par_disc & eagle_disc list
+course_id_disc = []
+par_disc = []
+eagle_disc = []
+
 class Club_prop:
     def __init__(self):
         self.club_id = 0
@@ -55,8 +61,8 @@ class Club_unit:
         # type = 3  Iron
         # type = 5  Wedge
         # type = 6  SandWedge
-        type1_list = [19, 31, 37, 64]
-        type2_list = [26, 32, 38, 63]
+        type1_list = [13,19, 31, 37, 64]
+        type2_list = [26, 32, 38, 63, 28, 8]
         type3_list = [27, 39, 45]
         type6_list = [60]
 
@@ -160,8 +166,25 @@ def ExchangeConfig( sheet_name, tour_id ):
         print(" 开始 ，处理第 " + str(row) + " 行数据")
         if ws1.range((row, biaodi_column_index)).value != None:
 
+
             course_id = int(ws1.range((row, biaodi_column_index)).value)
             print("course_id = " + str(course_id))
+
+
+            ''' 处理所有par_disc & eagle_disc '''
+            col_par_disc = 0
+            col_eagle_disc = 0
+            for y in range(1, 50):
+                if ws1.range((2, y)).value == "par_disc":
+                    col_par_disc = y
+                if ws1.range((2, y)).value == "eagle_disc":
+                    col_eagle_disc = y
+
+            # 取每个stage 的par_disc & eagle_disc 从而进行计算
+            course_id_disc.append(course_id)
+            par_disc.append(ws1.range((row, col_par_disc)).value)
+            eagle_disc.append(ws1.range((row, col_eagle_disc)).value)
+
 
             ''' 普通场 or 决胜场'''
             course_type = 0  # 1是普通场，2是决胜场
@@ -288,9 +311,9 @@ def ExchangeConfig( sheet_name, tour_id ):
                         club_prop_first.append(club)
                     for club in club_prop_type2:
                         club_prop_second.append(club)
-                if len(club_prop_type5) > 0:
+                if len(club_prop_type6) > 0:
                     print("type6 为first ")
-                    for club in club_prop_type5:
+                    for club in club_prop_type6:
                         club_prop_first.append(club)
                     for club in club_prop_type2:
                         club_prop_second.append(club)
@@ -349,6 +372,7 @@ def ExchangeConfig( sheet_name, tour_id ):
                     club1_dic.update({"level": club1.club_lv})
                     club1_dic.update({"w": first_club_weight})
 
+
     ''' x0x1 的转换 '''
     # 取 x0,x1 所在的行坐标
 
@@ -371,6 +395,7 @@ def ExchangeConfig( sheet_name, tour_id ):
             list_x0x1.append(dic)
 
     dic_x0x1.update({str(tour_id): list_x0x1})
+
 
 
 
@@ -398,4 +423,17 @@ def Export2Json(fileName, dataContainer):
 
 Export2Json(json_file_name, list_all)
 Export2Json("x0x1", dic_x0x1)
+
+# 将数据写入到Excel中
+ws2 = wb.sheets["par_disc&eagle_disc"]
+
+row = 1
+
+for x in range(len(course_id_disc)):
+    ws2.range((row, 6)).value = course_id_disc[x]
+    ws2.range((row, 7)).value = par_disc[x]
+    ws2.range((row, 8)).value = eagle_disc[x]
+
+    row += 1
+
 
