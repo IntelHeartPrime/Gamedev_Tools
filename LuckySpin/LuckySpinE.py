@@ -2,12 +2,12 @@
 items_pool1 = [
     "legen_chip",
     "coin1",
-    "diamond",
+    "diamond1",
     "ball1",
     "card1",
-    "coin2",
+    "diamond2",
     "ball2",
-    "coinOrCard"
+    "card2"
 ]
 
 container_combination = []
@@ -53,11 +53,11 @@ ws1 = wb.sheets['Sheet1']
 
 def ReadWeightMatrix():
     row_start = 4
-    col_start = 4
+    col_start = 5
 
-    for x in range(4,12):
+    for x in range(row_start, row_start+8):
         list_cache = []
-        for y in range(4,12):
+        for y in range(col_start, col_start+8):
             list_cache.append(int(ws1.range((x, y)).value))
 
         Weight_Matrix.append(list_cache)
@@ -67,9 +67,9 @@ def ReadWeightMatrix():
         print(unit)
     print(" --- 读取权重矩阵完毕 ---")
 
-    for y in range(4,12):
+    for y in range(col_start, col_start + 8):
         list_cache = []
-        for x in range(4,12):
+        for x in range(row_start, row_start + 8):
             list_cache.append(int(ws1.range((x, y)).value))
 
         Weight_Matrix_use.append(list_cache)
@@ -182,7 +182,7 @@ for i in range(len(e_container)):
     item = items_pool1[i]
     e = e_container[i]
 
-    ws1.range((4+i, 12)).value = e
+    ws1.range((4 +i, 14)).value = e
     print(str(item) + "," + str(e))
 
 # 将结果输入到Excel中
