@@ -10,4 +10,4 @@ def postContentToMyFlomo( string_input ):
 
 
 
-postContentToMyFlomo("看数据不能只看平均的数据，根据平均数据使用2-8定律反推最活跃玩家数据，从而制定你的活动目标 #游戏/数值策划")
+postContentToMyFlomo("专注是快乐的基础之一 #专注 #快乐")
