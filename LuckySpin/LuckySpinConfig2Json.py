@@ -7,10 +7,9 @@ import requests
 # 2. 覆盖本地
 # 3. 开始转换
 
-#url_download = 'https://docs.google.com/spreadsheets/d/1y5lsly6S_ELAoXatQEurS-g_Tt9C80qxZCXthsevAzs/export?format=xlsx'
-#xlsx_file = requests.get(url_download)
-#open('CourseCardConfig.xlsx', 'wb').write(xlsx_file.content)
-
+url_download = 'https://docs.google.com/spreadsheets/d/1SIcCTEro3ea7NjZwF8jOE8PGL_7BWR0a8261sUiZIxg/export?format=xlsx'
+xlsx_file = requests.get(url_download)
+open('LuckySpinConfig.xlsx', 'wb').write(xlsx_file.content)
 
 wb = xw.Book("LuckySpinConfig.xlsx")
 wsC = wb.sheets['Config']
@@ -44,8 +43,9 @@ dic_Parent.update({"name": wsC.range((4, 2)).value})
 dic_Parent.update({"start_time": int(wsC.range((5, 2)).value)})
 dic_Parent.update({"end_time": int(wsC.range((6, 2)).value)})
 dic_Parent.update({"unlock_stage": int(wsC.range((7, 2)).value)})
-dic_Parent.update({"grand_prize_index": int(wsC.range((8, 2)).value)})
+dic_Parent.update({"grand_prize_Index": int(wsC.range((8, 2)).value)})
 dic_Parent.update({"reset_pop_up_interval": int(wsC.range((9, 2)).value)})
+dic_Parent.update({"shards_ep": int(wsC.range((9, 2)).value)})
 
 spin_update_mins = []
 dic_Parent.update({"spin_update_mins": spin_update_mins})
