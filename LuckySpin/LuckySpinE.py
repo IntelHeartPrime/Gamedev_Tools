@@ -49,7 +49,7 @@ Weight_Matrix_use = [] # 二维list ，每次的每个物品为一个list
 
 import xlwings as xw
 wb = xw.Book("LuckySpinSystem.xlsx")
-ws1 = wb.sheets['Sheet1']
+ws1 = wb.sheets['s19']
 
 def ReadWeightMatrix():
     row_start = 4

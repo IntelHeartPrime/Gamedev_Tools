@@ -45,7 +45,17 @@ dic_Parent.update({"end_time": int(wsC.range((6, 2)).value)})
 dic_Parent.update({"unlock_stage": int(wsC.range((7, 2)).value)})
 dic_Parent.update({"grand_prize_Index": int(wsC.range((8, 2)).value)})
 dic_Parent.update({"reset_pop_up_interval": int(wsC.range((9, 2)).value)})
-dic_Parent.update({"shards_ep": int(wsC.range((9, 2)).value)})
+dic_Parent.update({"shards_ep": int(wsC.range((10, 2)).value)})
+dic_Parent.update({"mail_title": int(wsC.range((66, 2)).value)})
+dic_Parent.update({"mail_content": int(wsC.range((67, 2)).value)})
+
+''' notify '''
+notify = {}
+dic_Parent.update({"notify": notify})
+notify.update({"start_content": wsC.range((58, 2)).value})
+notify.update({"refresh_content": wsC.range((59, 2)).value})
+notify.update({"end_content": wsC.range((60, 2)).value})
+notify.update({"time_mins_before_end": int(wsC.range((61, 2)).value)})
 
 spin_update_mins = []
 dic_Parent.update({"spin_update_mins": spin_update_mins})
